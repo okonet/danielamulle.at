@@ -19,13 +19,20 @@ module.exports = {
           "autoprefixer-loader?browsers=last 2 version"
         ]
       },
+      { test: /\.scss$/, loaders: [
+          "style-loader",
+          "css-loader",
+          "autoprefixer-loader?browsers=last 2 version",
+          "sass-loader"
+        ]
+      },
       { test: /\.(png|svg|jpg)$/, loader: "url?limit=15000" }
     ]
   },
   resolve: {
     root: path.join(__dirname, "src"),
     modulesDirectories: ["node_modules"],
-    extensions: ["", ".webpack.js", ".js", ".css"],
+    extensions: ["", ".webpack.js", ".js", ".css", ".scss"],
     alias: {}
   }
 };

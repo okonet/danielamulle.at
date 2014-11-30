@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+@import "./css/nav/nav";
+
+section {
+  margin: 0;
+  padding: 1em;
+  padding-left: 33%;
+  height: 90vh;
+}
+
+#home {
+  background-color: #bbdbe0;
+}
+#speciality {
+  background-color: #bbdbe0;
+}
+#prices {
+  background-color: #b4cd79;
+}
+#about {
+  background-color: #e1b92b;
+}
+#contact {
+  background-color: #373b44;
+  height: 100vh;
+}
