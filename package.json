@@ -1,0 +1,24 @@
+{
+  "name": "danielamulle.at",
+  "version": "0.0.1",
+  "private": true,
+  "description": "danielamulle.at public website",
+  "main": "",
+  "scripts": {
+    "start": "./node_modules/.bin/webpack-dev-server webpack/hot/dev-server ./src/index.js -h -c -d",
+    "postinstall": "./node_modules/.bin/webpack -p",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Andrey Okonetchnikov",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer-loader": "^1.0.0",
+    "css-loader": "^0.9.0",
+    "file-loader": "^0.8.1",
+    "style-loader": "^0.8.2",
+    "url-loader": "^0.5.5",
+    "webpack": "^1.4.13",
+    "webpack-dev-server": "^1.6.6"
+  }
+}
