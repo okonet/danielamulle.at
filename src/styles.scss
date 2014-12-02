@@ -13,9 +13,8 @@ section {
   height: 90vh;
 }
 
-#home {
-  background-color: #bbdbe0;
-}
+@import "./css/home/home";
+
 #speciality {
   background-color: #bbdbe0;
 }
