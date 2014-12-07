@@ -26,7 +26,8 @@ module.exports = {
           "sass-loader?imagePath=./css"
         ]
       },
-      { test: /\.(png|svg|jpg)$/, loader: "url?limit=15000" }
+      { test: /\.(png|svg|jpg)$/, loader: "url?limit=15000" },
+      { test: /\.(ttf|otf|eot|woff|woff2)$/, loader: "file" },
     ]
   },
   resolve: {
