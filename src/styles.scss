@@ -5,16 +5,26 @@ body {
 }
 
 @import "./css/nav/nav";
+@import "./css/logo/logo";
 
 section {
   margin: 0;
   padding: 1em;
   padding-left: 33%;
   height: 90vh;
+
+  h2 {
+    position: sticky;
+    top: 30px;
+    font-size: 3em;
+  }
 }
 
-@import "./css/home/home";
-
+#home {
+  background: #bbdbe0 image-url('home/photo.jpg') no-repeat;
+  background-size: cover;
+  height: 60vh;
+}
 #speciality {
   background-color: #bbdbe0;
 }
@@ -27,4 +37,14 @@ section {
 #contact {
   background-color: #373b44;
   height: 100vh;
+}
+
+.tagline {
+  position: absolute;
+  top: 20vh;
+  margin-left: 90px;
+  font-size: calc(3vh);
+  width: calc(35% - 90px);
+  min-width: 10em;
+  border: 1px solid #000;
 }

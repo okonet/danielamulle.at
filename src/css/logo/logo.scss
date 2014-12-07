@@ -1,0 +1,31 @@
+.logo {
+  position: fixed;
+  top: 20px;
+  margin: 0;
+  margin-left: 20px;
+  padding: 0;
+  width: 30%;
+
+  display: inline-block;
+  padding-left: 70px;
+  text-decoration: none;
+  color: #000;
+
+  &:before {
+    position: absolute;
+    left: 0;
+    width: 65px;
+    height: 65px;
+    background: image-url("logo/logo@2x.png");
+    background-size: 65px;
+    content: "";
+  }
+
+  &__title {
+    font-size: 65%;
+  }
+
+  &__name {
+    font-size: 1.3em;
+  }
+}

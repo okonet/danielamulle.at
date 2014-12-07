@@ -1,10 +1,37 @@
 .nav {
   position: fixed;
+  top: 35vh;
   margin: 0;
+  margin-left: 70px;
   padding: 0;
   width: 30%;
 
+  &__ul {
+    margin: 0;
+    padding: 0;
+    padding-left: 14px;
+  }
+
   &__item {
-    // border: 1px solid #000;
+    margin: 1em 0;
+    padding: 0;
+    list-style: none;
+
+    &:before {
+      position: absolute;
+      left: 0;
+      margin-top: 2px;
+      width: 7px;
+      height: 7px;
+      border: 2px solid #000;
+      border-radius: 7px;
+      content: "";
+    }
+
+    &_active {
+      &:before {
+        background-color: #000;
+      }
+    }
   }
 }
