@@ -68,10 +68,9 @@ section {
 
 .tagline {
   position: absolute;
-  top: 20vh;
+  top: calc(50vh - 250px);
   margin-left: 90px;
   font-size: calc(3vh);
   width: calc(35% - 90px);
   min-width: 10em;
-  border: 1px solid #000;
 }

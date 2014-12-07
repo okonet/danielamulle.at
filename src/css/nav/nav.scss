@@ -1,6 +1,6 @@
 .nav {
   position: fixed;
-  top: 35vh;
+  top: calc(50vh - 100px);
   margin: 0;
   margin-left: 70px;
   padding: 0;
@@ -9,7 +9,7 @@
   &__ul {
     margin: 0;
     padding: 0;
-    padding-left: 14px;
+    padding-left: 18px;
   }
 
   &__item {
@@ -20,17 +20,19 @@
     &:before {
       position: absolute;
       left: 0;
-      margin-top: 2px;
-      width: 7px;
-      height: 7px;
-      border: 2px solid #000;
-      border-radius: 7px;
+      margin-top: 4px;
+      width: 9px;
+      height: 9px;
+      border: 2px solid rgba(#fff, .5);
+      border-radius: 9px;
       content: "";
     }
 
     &_active {
+      font-weight: bold;
+
       &:before {
-        background-color: #000;
+        background-color: rgba(#fff, 1);
       }
     }
   }
