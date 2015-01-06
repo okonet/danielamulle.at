@@ -1,37 +1,17 @@
-@font-face {
-    font-family: 'questa';
-    src: url('fonts/questa_regular_macroman/2-Questa_Regular-webfont.eot');
-    src: url('fonts/questa_regular_macroman/2-Questa_Regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/questa_regular_macroman/2-Questa_Regular-webfont.woff2') format('woff2'),
-         url('fonts/questa_regular_macroman/2-Questa_Regular-webfont.woff') format('woff'),
-         url('fonts/questa_regular_macroman/2-Questa_Regular-webfont.ttf') format('truetype'),
-         url('fonts/questa_regular_macroman/2-Questa_Regular-webfont.svg#questaregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'questa_sans';
-    src: url('fonts/questasans_regular_macroman/2-Questa_Sans_Regular-webfont.eot');
-    src: url('fonts/questasans_regular_macroman/2-Questa_Sans_Regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/questasans_regular_macroman/2-Questa_Sans_Regular-webfont.woff2') format('woff2'),
-         url('fonts/questasans_regular_macroman/2-Questa_Sans_Regular-webfont.woff') format('woff'),
-         url('fonts/questasans_regular_macroman/2-Questa_Sans_Regular-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
+@import 'fonts';
+@import "./css/nav/nav";
+@import "./css/logo/logo";
+
 
 body {
   margin: 0;
   padding: 0;
-  font-family: questa_sans, sans-serif;
+  font-family: "Questa Sans", sans-serif;
 }
 
 h1, h2, h3, h4 {
-  font-family: questa, sans-serif;
+  font-family: "Questa", sans-serif;
 }
-
-@import "./css/nav/nav";
-@import "./css/logo/logo";
 
 section {
   margin: 0;
