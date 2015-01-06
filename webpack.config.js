@@ -23,7 +23,7 @@ module.exports = {
           "style-loader",
           "css-loader",
           "autoprefixer-loader?browsers=last 2 version",
-          "sass-loader?imagePath=./css"
+          "sass-loader?imagePath=./css&includePaths[]=./src/css"
         ]
       },
       { test: /\.(png|svg|jpg)$/, loader: "url?limit=15000" },
