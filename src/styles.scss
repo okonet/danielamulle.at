@@ -1,23 +1,26 @@
 @import 'fonts';
+
+$fontFamilyMain: "Questa Sans", sans-serif;
+$fontFamilySec: "Questa", sans-serif;
+
 @import "./css/nav/nav";
 @import "./css/logo/logo";
-
 
 body {
   margin: 0;
   padding: 0;
-  font-family: "Questa Sans", sans-serif;
+  font-family: $fontFamilyMain;
 }
 
 h1, h2, h3, h4 {
-  font-family: "Questa", sans-serif;
+  font-family: $fontFamilySec;
 }
 
 section {
   margin: 0;
   padding: 1em;
-  padding-left: 260px;
-  font-family: questa, serif;
+  padding-left: 300px;
+  font-family: $fontFamilySec;
   height: 90vh;
 
   h2 {
