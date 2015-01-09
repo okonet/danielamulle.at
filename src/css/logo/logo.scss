@@ -28,13 +28,17 @@
     font-size: 9pt;
     line-height: 12px;
     font-family: $fontFamilySec;
+    color: rgba(#213134, .85);
     font-weight: 100;
+    font-style: italic;
   }
 
   &__name {
     margin: 0 0 .25em 0;
-    font-size: 20pt;
+    color: #213134;
+    font-size: 13pt;
     font-weight: normal;
-    letter-spacing: -1px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
   }
 }
