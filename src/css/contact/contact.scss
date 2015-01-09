@@ -2,7 +2,8 @@ $contactTextColor: darken($contactSectionBg, 30%);
 $contactTextColorActive: darken($contactSectionBg, 50%);
 
 #contact {
-  background-color: $contactSectionBg;
+  @include sectionBg($contactSectionBg);
+  height: 100vh;
 
   h2 {
     color: $contactTextColor;

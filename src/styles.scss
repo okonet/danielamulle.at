@@ -8,6 +8,11 @@ $aboutSectionBg: #e1b92b;
 $specialitySectionBg: #aacadf;
 $contactSectionBg: #8b8671;
 
+@mixin sectionBg($bgColor) {
+  background-color: $bgColor;
+  background: radial-gradient(ellipse at 50% 0, lighten($bgColor, 10%), $bgColor 70%, darken($bgColor, 10%));
+}
+
 @import "./css/nav/nav";
 @import "./css/logo/logo";
 @import "./css/prices/prices";
@@ -60,17 +65,6 @@ section {
   height: 90vh;
   background: image-url('home/photo.jpg') 50% 50% no-repeat;
   background-size: cover;
-
-  // .wrapper {
-  //   height: 100%;
-  // }
-}
-#speciality {
-  background-color: $specialitySectionBg;
-}
-#contact {
-  background-color: $contactSectionBg;
-  // height: 100vh;
 }
 
 .tagline {

@@ -1,5 +1,5 @@
 #about {
-  background-color: $aboutSectionBg;
+  @include sectionBg($aboutSectionBg);
 
   h2 {
     color: darken($aboutSectionBg, 30%);
