@@ -1,10 +1,13 @@
 .nav {
   position: fixed;
   top: calc(50vh - 100px);
+  top: 100px;
   margin: 0;
-  margin-left: 70px;
+  margin-left: -300px + 70px;
   padding: 0;
+  font-family: $fontFamilySec;
   width: 30%;
+  transform: translateZ(0);
 
   &__ul {
     margin: 0;
@@ -17,14 +20,20 @@
     padding: 0;
     list-style: none;
 
+    a {
+      color: rgba(#000, .85);
+      text-decoration: none;
+    }
+
     &:before {
       position: absolute;
       left: 0;
-      margin-top: 4px;
-      width: 9px;
-      height: 9px;
-      border: 2px solid rgba(#fff, .5);
-      border-radius: 9px;
+      margin-top: 5px;
+      width: 10px;
+      height: 10px;
+      border: 2px solid rgba(#000, .25);
+      border-radius: 6px;
+      box-sizing: border-box;
       content: "";
     }
 
@@ -32,8 +41,22 @@
       font-weight: bold;
 
       &:before {
-        background-color: rgba(#fff, 1);
+        background-color: rgba(#000, .5);
+        border: none;
       }
     }
+
+    // &_speciality:before {
+    //   border-color: $specialitySectionBg;
+    // }
+    // &_prices:before {
+    //   border-color: $pricesSectionBg;
+    // }
+    // &_about:before {
+    //   border-color: $aboutSectionBg;
+    // }
+    // &_contact:before {
+    //   border-color: $contactSectionBg;
+    // }
   }
 }

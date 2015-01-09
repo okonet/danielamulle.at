@@ -1,0 +1,33 @@
+.prices {
+  background-color: $pricesSectionBg;
+  overflow: hidden;
+
+  h2 {
+    color: darken($pricesSectionBg, 30%);
+  }
+  dl {
+    margin: 0;
+    padding: 0;
+  }
+  dt, dd {
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item {
+    float: left;
+    padding-right: 3%;
+    width: 33%;
+    box-sizing: border-box;
+
+    &:nth-child(3) {
+      padding-right: 0;
+    }
+    &:nth-child(4) {
+      clear: left;
+      margin-left: 33%;
+      border-top: 1px solid #000;
+      width: 66%;
+    }
+  }
+}

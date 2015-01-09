@@ -1,27 +1,54 @@
 @import 'fonts';
 
-$fontFamilyMain: "Questa Sans", sans-serif;
-$fontFamilySec: "Questa", sans-serif;
+$fontFamilyMain: "Georgia", serif;
+$fontFamilySec: "Aller", sans-serif;
 
+$pricesSectionBg: #72b673;
+$aboutSectionBg: #e1b92b;
+$specialitySectionBg: #aacadf;
+$contactSectionBg: #8b8671;
+
+// @import "./css/parallax/parallax";
 @import "./css/nav/nav";
 @import "./css/logo/logo";
+@import "./css/prices/prices";
+@import "./css/about/about";
+@import "./css/speciality/speciality";
+@import "./css/contact/contact";
 
 body {
   margin: 0;
   padding: 0;
   font-family: $fontFamilyMain;
+  font-size: 12pt;
 }
 
 h1, h2, h3, h4 {
   font-family: $fontFamilySec;
 }
 
+h1, h2 {
+  font-weight: lighter;
+}
+
+// manage container width :
+.wrapper {
+  max-width : 960px;
+  margin : 0 auto;
+  box-sizing: border-box;
+}
+
 section {
   margin: 0;
-  padding: 1em;
-  padding-left: 300px;
-  font-family: $fontFamilySec;
-  height: 90vh;
+  // padding: 1em;
+  // font-family: $fontFamilySec;
+  // height: 18vh;
+  // max-height: 800px;
+
+  .wrapper {
+    padding: 1em;
+    padding-left: 300px;
+  }
 
   h2 {
     position: sticky;
@@ -31,29 +58,33 @@ section {
 }
 
 #home {
-  background: #bbdbe0 image-url('home/photo.jpg') no-repeat;
+  height: 90vh;
+  background: image-url('home/photo.jpg') 50% 50% no-repeat;
   background-size: cover;
-  height: 100vh;
+
+  // .wrapper {
+  //   height: 100%;
+  // }
 }
 #speciality {
-  background-color: #bbdbe0;
-}
-#prices {
-  background-color: #b4cd79;
-}
-#about {
-  background-color: #e1b92b;
+  background-color: $specialitySectionBg;
 }
 #contact {
-  background-color: #373b44;
-  height: 100vh;
+  background-color: $contactSectionBg;
+  // height: 100vh;
 }
 
 .tagline {
   position: absolute;
   top: calc(50vh - 250px);
-  margin-left: 90px;
+  top: 250px;
+  // left: 0;
+  margin-left: 90px - 300px;
   font-size: calc(3vh);
   width: calc(35% - 90px);
   min-width: 10em;
 }
+
+// .content {
+//   max-width: 720px;
+// }
