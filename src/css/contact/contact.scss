@@ -1,7 +1,28 @@
+$contactTextColor: darken($contactSectionBg, 30%);
+$contactTextColorActive: darken($contactSectionBg, 50%);
+
 #contact {
   background-color: $contactSectionBg;
 
   h2 {
-    color: darken($contactSectionBg, 30%);
+    color: $contactTextColor;
+  }
+}
+.contact {
+  &__phone {
+    font-size: 130%;
+  }
+  &__email {
+    font-size: 85%;
+  }
+  a[href] {
+    color: $contactTextColor;
+    text-decoration: none;
+    border-bottom: 1px solid rgba($contactTextColor, .35);
+
+    &:hover,
+    &:active {
+      color: $contactTextColorActive;
+    }
   }
 }
