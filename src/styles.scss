@@ -9,8 +9,28 @@ $specialitySectionBg: #aacadf;
 $contactSectionBg: #8b8671;
 
 @mixin sectionBg($bgColor) {
+  $textColor: darken($bgColor, 30%);
+  $textColorActive: darken($bgColor, 40%);
+
   background-color: $bgColor;
   background: radial-gradient(ellipse at 50% 0, lighten($bgColor, 10%), $bgColor 70%, darken($bgColor, 10%));
+
+  h2 {
+    color: darken($bgColor, 30%);
+
+    a {
+      display: inline-block;
+      color: $textColor;
+      text-decoration: none;
+      border-bottom: 1px solid rgba($textColor, .25);
+      height: 1.15em;
+
+      &:hover {
+        color: $textColorActive;
+        border-bottom-color: rgba($textColorActive, .5);
+      }
+    }
+  }
 }
 
 @import "./css/nav/nav";
@@ -35,7 +55,6 @@ h1, h2 {
   font-weight: lighter;
 }
 
-// manage container width :
 .wrapper {
   max-width : 960px;
   margin : 0 auto;
@@ -44,36 +63,57 @@ h1, h2 {
 
 section {
   margin: 0;
-  // padding: 1em;
-  // font-family: $fontFamilySec;
-  // height: 18vh;
-  // max-height: 800px;
+  height: 10vh;
+  overflow: hidden;
+  transition: all .5s;
 
   .wrapper {
-    padding: 1em;
-    padding-left: 300px;
+    clip-path: inset(0px 0px 120px 0px);
   }
 
   h2 {
-    position: sticky;
-    top: 30px;
-    font-size: 3em;
+    margin-left: 70px;
+    font-size: 1.5em;
+    transition: all .5s;
+  }
+  .content {
+    padding: 0 60px 2em 70px;
+  }
+
+  &.active {
+    height: auto;
+    min-height: 90vh;
+
+    .wrapper {
+      clip-path: none;
+    }
+
+    h2 {
+      position: sticky;
+      margin-top: 2em;
+      font-size: 3em;
+
+      a {
+        border-bottom: none !important;
+      }
+    }
   }
 }
 
 #home {
-  height: 90vh;
-  background: image-url('home/photo.jpg') 50% 50% no-repeat;
+  height: 60vh;
+  background: image-url('home/photo.jpg') 25% 25% no-repeat;
   background-size: cover;
 }
 
 .tagline {
   position: absolute;
   top: calc(50vh - 250px);
-  top: 250px;
-  // left: 0;
-  margin-left: 90px - 300px;
-  font-size: calc(3vh);
+  // top: 250px;
+  margin-left: 70px;
+  font-family: $fontFamilySec;
+  font-size: 1.5em;
+  font-weight: bold;
   width: calc(35% - 90px);
   min-width: 10em;
 }

@@ -1,7 +1,3 @@
 #speciality {
   @include sectionBg($specialitySectionBg);
-
-  h2 {
-    color: darken($specialitySectionBg, 30%);
-  }
 }

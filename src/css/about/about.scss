@@ -1,10 +1,6 @@
 #about {
   @include sectionBg($aboutSectionBg);
 
-  h2 {
-    color: darken($aboutSectionBg, 30%);
-  }
-
   dt, dd {
     margin: 0 0 1em 0;
     padding: 0;

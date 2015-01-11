@@ -3,10 +3,9 @@ $contactTextColorActive: darken($contactSectionBg, 50%);
 
 #contact {
   @include sectionBg($contactSectionBg);
-  height: 100vh;
 
-  h2 {
-    color: $contactTextColor;
+  &.active {
+    height: 100vh;
   }
 }
 .contact {

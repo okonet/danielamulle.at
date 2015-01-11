@@ -1,10 +1,10 @@
 .prices {
   @include sectionBg($pricesSectionBg);
-  overflow: hidden;
 
-  h2 {
-    color: darken($pricesSectionBg, 30%);
+  .content {
+    overflow: hidden;
   }
+
   dl {
     margin: 0;
     padding: 0;
