@@ -1,4 +1,9 @@
 require('./styles.scss');
+skrollr = require('skrollr')
+
+skrollr.init({
+  smoothScrolling: false
+})
 
 var d = document
 var links = d.querySelectorAll('h2 a')
