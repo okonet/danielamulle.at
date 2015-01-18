@@ -18,7 +18,8 @@ document.addEventListener('DOMContentLoaded', function () {
   var sections = $$('section');
   var links = $$('h2 a');
   var scroller = skrollr.init({
-    smoothScrolling: false
+    smoothScrolling: true,
+    forceHeight: false
   });
 
   links.forEach(function(link) {
@@ -50,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function () {
   scroller.on('render', function (evt) {
     var activeSectionIdx = 0;
     for(var idx = 0; idx < offsets.length; idx++) {
-      if (evt.curTop >= offsets[idx] && evt.curTop <= offsets[idx+1]) {
+      if (evt.curTop >= offsets[idx] && (evt.curTop <= offsets[idx+1] - 150 || idx === offsets.length - 1)) {
         activeSectionIdx = idx;
         break;
       }
