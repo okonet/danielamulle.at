@@ -16,6 +16,7 @@ function $$(selector) {
 document.addEventListener('DOMContentLoaded', function () {
     var sections = $$('section')
     var links = $$('h2 a')
+    var navItems = $$('.nav__item')
     var scroller = skrollr.init({
         smoothScrolling: false,
         forceHeight: false,
@@ -35,7 +36,6 @@ document.addEventListener('DOMContentLoaded', function () {
             scroller.animateTo(offset, {
                 duration: 250
             })
-            console.log(offset)
 
             section.classList.toggle('active')
 
@@ -53,19 +53,22 @@ document.addEventListener('DOMContentLoaded', function () {
     scroller.on('render', function (evt) {
         var activeSectionIdx = 0
         for (var idx = 0; idx < offsets.length; idx++) {
-            if (evt.curTop >= offsets[idx] && (evt.curTop <= offsets[idx + 1] - 150 || idx === offsets.length - 1)) {
+            if (evt.curTop >= offsets[idx] && (evt.curTop <= offsets[idx + 1] || idx === offsets.length - 1)) {
                 activeSectionIdx = idx;
                 break;
             }
         }
 
-
         sections.forEach(function (section) {
             section.classList.remove('active')
         });
 
+        navItems.forEach(function (item) {
+            item.classList.remove('active')
+        });
+
         sections[activeSectionIdx].classList.add('active');
-        //console.log(activeSectionIdx);
+        navItems[activeSectionIdx].classList.add('active');
     });
 
 

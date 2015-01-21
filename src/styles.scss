@@ -120,19 +120,31 @@ section {
 }
 
 #home {
-  height: 90vh;
+  height: 100vh;
   background: image-url('home/photo.jpg') 25% 25% no-repeat;
   background-size: cover;
 }
 
-.tagline {
+.banner {
   position: absolute;
-  // top: calc(50vh - 250px);
-  top: 250px;
+  bottom: 0;
+  background: linear-gradient(rgba(#fff, 1), rgba(#fff, .85));
+  width: 100%;
+}
+
+.tagline {
+//  top: 250px;
   margin-left: 70px;
+  margin-right: 70px;
+//  padding-bottom: 3vmax;
   font-family: $fontFamilySec;
-  font-size: 1.5em;
-  font-weight: bold;
-  width: calc(35% - 90px);
-  min-width: 10em;
+  font-size: 4vmax;
+  font-weight: 100;
+  line-height: 1.5;
+  color: transparent;
+  background: image-url('home/photo.jpg') 25% 100% no-repeat;
+  background-size: 200%;
+  -webkit-background-clip: text;
+  text-align: center;
+//  height: 15vh;
 }
