@@ -4,9 +4,9 @@ $fontFamilyMain: "Georgia", serif;
 $fontFamilySec: "Aller", sans-serif;
 
 $textColorMain: #213134;
+$specialitySectionBg: #94d2df;
 $pricesSectionBg: #73b683;
 $aboutSectionBg: #ffa480;
-$specialitySectionBg: #94d2df;
 $contactSectionBg: #b88cdf;
 
 @mixin sectionBg($bgColor) {

@@ -14,9 +14,11 @@ function $$(selector) {
 
 
 document.addEventListener('DOMContentLoaded', function () {
+    var logoEl = $('.logo')
     var sections = $$('section')
     var links = $$('h2 a')
     var navItems = $$('.nav__item')
+    var activeSectionIdx = 0
     var scroller = skrollr.init({
         smoothScrolling: false,
         forceHeight: false,
@@ -51,24 +53,29 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     scroller.on('render', function (evt) {
-        var activeSectionIdx = 0
+        var newActiveSectionIdx = 0
         for (var idx = 0; idx < offsets.length; idx++) {
             if (evt.curTop >= offsets[idx] && (evt.curTop <= offsets[idx + 1] || idx === offsets.length - 1)) {
-                activeSectionIdx = idx;
+                newActiveSectionIdx = idx;
                 break;
             }
         }
 
-        sections.forEach(function (section) {
-            section.classList.remove('active')
-        });
+        if (newActiveSectionIdx !== activeSectionIdx) {
+            var activeSectionName = sections[activeSectionIdx].id;
+            var newActiveSectionName = sections[newActiveSectionIdx].id;
 
-        navItems.forEach(function (item) {
-            item.classList.remove('active')
-        });
+            logoEl.classList.remove('logo_' + activeSectionName);
+            logoEl.classList.add('logo_' + newActiveSectionName);
 
-        sections[activeSectionIdx].classList.add('active');
-        navItems[activeSectionIdx].classList.add('active');
+            sections[activeSectionIdx].classList.remove('active');
+            navItems[activeSectionIdx].classList.remove('active');
+
+            sections[newActiveSectionIdx].classList.add('active');
+            navItems[newActiveSectionIdx].classList.add('active');
+
+            activeSectionIdx = newActiveSectionIdx;
+        }
     });
 
 

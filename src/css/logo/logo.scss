@@ -1,41 +1,73 @@
 .logo {
   position: fixed;
-  top: 20px;
+  top: 0;
+//  left: 20px;
   margin: 0;
-  padding: 0;
-  width: 180px;
+  padding: 20px;
+//  background: linear-gradient(rgba(#fff, 0), rgba(#fff, 0));
+  background: rgba(#fff, 0);
+  width: 100%;
   z-index: 1;
+//  border: 1px solid #000;
 
-  display: inline-block;
-  padding-left: 70px;
-  text-decoration: none;
-  color: #000;
 
-  transform: translateZ(0);
+  &_speciality &__link {
+//    background: linear-gradient(rgba($specialitySectionBg, 1), rgba(#fff, 0));
+//    background: rgba($specialitySectionBg, .5);
+    color: rgba(darken($specialitySectionBg, 30%), 0);
+  }
+  &_prices &__link {
+//    background: linear-gradient(rgba($pricesSectionBg, 1), rgba(#fff, 0));
+//    background: rgba($pricesSectionBg, .5);
+    color: rgba(darken($pricesSectionBg, 30%), 0);
+  }
+  &_about &__link {
+//    background: linear-gradient(rgba($aboutSectionBg, 1), rgba(#fff, 0));
+//    background: rgba($aboutSectionBg, 1);
+    color: rgba(darken($aboutSectionBg, 30%), 0);
+  }
+  &_contact &__link {
+//    background: linear-gradient(rgba($contactSectionBg, 1), rgba(#fff, 0));
+//    background: rgba($contactSectionBg, .5);
+    color: rgba(darken($contactSectionBg, 30%), 0);
+  }
 
-  &:before {
-    position: absolute;
-    left: 0;
-    width: 65px;
-    height: 65px;
-    background: image-url("logo/logo@2x.png");
-    background-size: 65px;
-    content: "";
+  &__link {
+    display: inline-block;
+    padding-left: 70px;
+    color: $textColorMain;
+    text-decoration: none;
+    width: 180px;
+    transform: translateZ(0);
+    transition: color .5s;
+
+    &:hover {
+      color: $textColorMain !important;
+    }
+
+    &:before {
+      position: absolute;
+      left: 0;
+      width: 65px;
+      height: 65px;
+      background: image-url("logo/logo@2x.png");
+      background-size: 65px;
+      content: "";
+    }
   }
 
   &__title {
     margin: 1em 0 0;
     font-size: 9pt;
-    line-height: 12px;
+    line-height: 10pt;
     font-family: $fontFamilySec;
-    color: rgba($textColorMain, .85);
     font-weight: 100;
     font-style: italic;
+    opacity: .85;
   }
 
   &__name {
     margin: 0 0 .25em 0;
-    color: $textColorMain;
     font-size: 13pt;
     font-weight: normal;
     letter-spacing: 2px;
