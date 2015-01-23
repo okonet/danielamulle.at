@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function () {
     scroller.on('render', function (evt) {
         var newActiveSectionIdx = 0
         for (var idx = 0; idx < offsets.length; idx++) {
-            if (evt.curTop >= offsets[idx] && (evt.curTop <= offsets[idx + 1] || idx === offsets.length - 1)) {
+            if (evt.curTop >= offsets[idx] - 150 && (evt.curTop <= offsets[idx + 1] - 150 || idx === offsets.length - 1)) {
                 newActiveSectionIdx = idx;
                 break;
             }
