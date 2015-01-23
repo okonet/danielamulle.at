@@ -3,6 +3,7 @@
 
   .content {
     overflow: hidden;
+    columns: 3 250px;
   }
 
   dl {
@@ -15,19 +16,28 @@
   }
 
   &__item {
-    float: left;
-    padding-right: 3%;
-    width: 33%;
-    box-sizing: border-box;
-
-    &:nth-child(3) {
-      padding-right: 0;
+    &:not(:nth-child(1)) h3 {
+      -webkit-column-break-before: always;
+      break-before: always;
     }
+//    float: left;
+//    padding-right: 3%;
+//    width: 33%;
+//    box-sizing: border-box;
+//
+//    &:nth-child(3) {
+//      padding-right: 0;
+//    }
     &:nth-child(4) {
-      clear: left;
-      margin-left: 33%;
-      border-top: 1px solid #000;
-      width: 66%;
+      -webkit-column-break-before: always;
+      break-before: column;
+      border: 1px solid #000;
+
+//      column-span: all;
+//      clear: left;
+//      margin-left: 33%;
+//      border-top: 1px solid #000;
+//      width: 66%;
     }
   }
 }
