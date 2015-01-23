@@ -5,7 +5,7 @@
   "description": "danielamulle.at public website",
   "main": "",
   "scripts": {
-    "start": "./node_modules/.bin/webpack-dev-server webpack/hot/dev-server ./src/index.js -h -c -d --port 8081",
+    "start": "./node_modules/.bin/webpack-dev-server --hot --inline --colors --debug --port 8081",
     "postinstall": "./node_modules/.bin/webpack -p",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
