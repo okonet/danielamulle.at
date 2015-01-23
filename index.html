@@ -12,85 +12,57 @@
   </head>
   <body>
 
-    <section id="home">
+  <nav class="nav">
+    <ul class="nav__ul">
+      <li class="nav__item active">
+        <a href="/">Home</a>
+      </li>
+      <li class="nav__item nav__item_speciality">
+        <a href="#speciality">Spezialgebiete</a>
+      </li>
+      <li class="nav__item nav__item_prices">
+        <a href="#prices">Angebot &amp; Kosten</a>
+      </li>
+      <li class="nav__item nav__item_about">
+        <a href="#about">Qualifikation</a>
+      </li>
+      <li class="nav__item nav__item_contact">
+        <a href="#contact">Kontakt</a>
+      </li>
+    </ul>
+  </nav>
+
+
+    <section id="home"
+             data-0="transform: translate3d(0vw, 0vh, 0)"
+                         data-100p="transform: translate3d(0vw, -10vh, 0)">
       <div class="wrapper">
         <a
             `href="#home"
             class="nav__logo logo"
-            data-0="transform: translateY(30vh) scale(1)"
-            data-50p="transform: translateY(0vh) scale(.8)"
+            data-0="transform: translate3d(0vw, 30vh, 0)"
+            data-50p="transform: translate3d(0vw, 0vh, 0)"
         >
           <p class="logo__title">Diätologin &amp; Ernährungswissenschafterin</p>
           <h1 class="logo__name">Daniela Mulle</h1>
         </a>
 
-        <nav class="nav">
-          <ul class="nav__ul">
-            <li class="nav__item active">
-              <a href="/">Home</a>
-            </li>
-            <li class="nav__item nav__item_speciality">
-              <a href="#speciality">Spezialgebiete</a>
-            </li>
-            <li class="nav__item nav__item_prices">
-              <a href="#prices">Angebot &amp; Kosten</a>
-            </li>
-            <li class="nav__item nav__item_about">
-              <a href="#about">Qualifikation</a>
-            </li>
-            <li class="nav__item nav__item_contact">
-              <a href="#contact">Kontakt</a>
-            </li>
-          </ul>
-        </nav>
-
       </div>
-      <div class="banner">
+    </section>
+
+    <section id="speciality" class="speciality">
         <div class="wrapper">
-          <p class="tagline">Ernährungstherapie &amp; -beratung bei speziellen Ernährungsbedürfnissen.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- <section id="speciality"> -->
-    <section
-      id="speciality"
-      class="speciality"
-      data-bottom-top=""
-      data-top-top=""
-    >
-    <!-- <section id="speciality" data-bottom-top="transform:translate(0,-100%)" data-top-top="transform:translate(0,0%)"> -->
-      <div class="wrapper">
-        <h2
-          data-anchor-target="#speciality"
-          data-150-top="transform: translate(0px, 0px);"
-          data-top="transform: translate(190px, 30px);"
-        >
-          <a href="#speciality">Spezialgebiete</a>
-        </h2>
-        <article class="content">
-
-          <p>Ernährungstherapie &amp; -beratung bei  speziellen Ernährungsbedürfnissen so wie  Krebs, Gewichtsverlust, Schluckstörungen, Lebensmittelunverträglichkeite,  Zuckerkrankheit, Erhöhte Blutfette &amp; Cholesterin, Gicht,
+          <h2>Ernährungstherapie &amp; –beratung bei speziellen Ernährungsbedürfnissen.</h2>
+          <article class="content">
+            <p>Ernährungstherapie &amp; -beratung bei  speziellen Ernährungsbedürfnissen so wie  Krebs, Gewichtsverlust, Schluckstörungen, Lebensmittelunverträglichkeite,  Zuckerkrankheit, Erhöhte Blutfette &amp; Cholesterin, Gicht,
           Übergewicht.</p>
-        </article>
-      </div>
+          </article>
+        </div>
     </section>
 
-    <section
-      id="prices"
-      class="prices"
-      data-bottom-top=""
-      data-top-top=""
-    >
-
+    <section id="prices" class="prices">
       <div class="wrapper">
-        <h2
-          data-anchor-target="#prices"
-          data-150-top="transform: translate(0px, 0px);"
-          data-top="transform: translate(190px, 30px);"
-        >
-          <a href="#prices">Angebot &amp; Kosten</a>
-        </h2>
+        <h2>Angebot &amp; Kosten</h2>
         <article class="content">
           <dl class="prices__list">
 
@@ -139,19 +111,9 @@
       </div>
     </section>
 
-    <section
-      id="about"
-      data-bottom-top=""
-      data-top-top=""
-    >
+    <section id="about">
       <div class="wrapper">
-        <h2
-          data-anchor-target="#about"
-          data-150-top="transform: translate(0px, 0px);"
-          data-top="transform: translate(190px, 30px);"
-        >
-          <a href="#about">Qualifikation</a>
-        </h2>
+        <h2>Qualifikation</h2>
         <article class="content">
           <h3>Ausbildung</h3>
           <dl>
@@ -202,20 +164,9 @@
       </div>
     </section>
 
-    <section
-      id="contact"
-      class="contact vcard"
-      data-bottom-top=""
-      data-top-top=""
-    >
+    <section id="contact" class="contact vcard">
       <div class="wrapper">
-        <h2
-          data-anchor-target="#contact"
-          data-150-top="transform: translate(0px, 0px);"
-          data-top="transform: translate(190px, 30px);"
-        >
-          <a href="#contact">Kontakt</a>
-        </h2>
+        <h2>Kontakt</h2>
         <article class="content">
           <p class="contact__phone">
             +<a href="tel:+436509700569" class="tel">43&nbsp;650&nbsp;970-05-69</a>
@@ -226,6 +177,13 @@
         </article>
       </div>
     </section>
+  
+    <footer class="footer">
+      <div class="wrapper">
+        <p class="footer__copy">&copy; Daniela Mulle, 2015.</p>
+        <p class="footer__producer">Design &amp; Development &mdash; <a href="http://okonet.ru">Andrey Okonetchnikov</a></p>
+      </div>
+    </footer>
 
     <script src="build/main.js" type="text/javascript" charset="utf-8"></script>
   </body>
