@@ -16,8 +16,10 @@ function $$(selector) {
 document.addEventListener('DOMContentLoaded', function () {
     var logoEl = $('.logo')
     var sections = $$('section')
-    var links = $$('h2 a')
+    var links = $$('.nav__link')
+    var menuEl = $('.nav')
     var navItems = $$('.nav__item')
+    var navToggleEl = $('.nav__hamburger')
     var activeSectionIdx = 0
     var scroller = skrollr.init({
         smoothScrolling: false,
@@ -27,6 +29,10 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
+    navToggleEl.addEventListener('click', function (event) {
+        menuEl.classList.toggle('nav_open')
+    }, false)
+
     links.forEach(function (link) {
         link.addEventListener('click', function (event) {
             event.preventDefault()
@@ -35,11 +41,18 @@ document.addEventListener('DOMContentLoaded', function () {
             var id = href.replace('#', '')
             var section = d.getElementById(id)
             var offset = scroller.relativeToAbsolute(section, 'top', 'top')
-            scroller.animateTo(offset, {
-                duration: 250
-            })
 
-            section.classList.toggle('active')
+            // Close menu
+            menuEl.classList.remove('nav_open')
+            window.setTimeout(function () {
+
+                scroller.animateTo(offset, {
+                    duration: 250
+                })
+
+                section.classList.toggle('active')
+
+            }, 750)
 
             if (activeSection !== null && activeSection.id !== id) {
                 activeSection.classList.remove('active')

@@ -13,25 +13,28 @@
   <body>
 
     <nav class="nav">
-      <ul class="nav__ul">
-        <li class="nav__item active">
-          <a href="/">Home</a>
-        </li>
-        <li class="nav__item nav__item_speciality">
-          <a href="#speciality">Spezialgebiete</a>
-        </li>
-        <li class="nav__item nav__item_prices">
-          <a href="#prices">Angebot &amp; Kosten</a>
-        </li>
-        <li class="nav__item nav__item_about">
-          <a href="#about">Qualifikation</a>
-        </li>
-        <li class="nav__item nav__item_contact">
-          <a href="#contact">Kontakt</a>
-        </li>
-      </ul>
+        <button class="nav__hamburger">Toggle navigation</button>
+        <menu class="nav__menu nav__menu_open">
+          <ul class="nav__ul">
+            <li class="nav__item nav__item_home">
+              <a href="#home" class="nav__link">Home</a>
+            </li>
+            <li class="nav__item nav__item_speciality">
+              <a href="#speciality" class="nav__link">Spezialgebiete</a>
+            </li>
+            <li class="nav__item nav__item_prices">
+              <a href="#prices" class="nav__link">Angebot &amp; Kosten</a>
+            </li>
+            <li class="nav__item nav__item_about">
+              <a href="#about" class="nav__link">Qualifikation</a>
+            </li>
+            <li class="nav__item nav__item_contact">
+              <a href="#contact" class="nav__link">Kontakt</a>
+            </li>
+          </ul>
+        </menu>
     </nav>
-
+    
     <div class="logo">
       <a
           href="#home"

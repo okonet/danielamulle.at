@@ -1,0 +1,58 @@
+$scroll-indicator-color: #000;
+
+.scroll-indicator {
+  position: fixed;
+  top: calc(50vh - 100px);
+  right: 0px;
+  margin: 0;
+  margin-left: 50px;
+  padding: 0;
+  font-family: $fontFamilySec;
+  width: 20px;
+  transform: translateZ(0);
+  z-index: 1;
+
+  &__ul {
+    margin: 0;
+    padding: 0;
+    padding-left: 18px;
+  }
+
+  &__item {
+    margin: 1em 0;
+    padding: 0;
+    list-style: none;
+
+    a {
+      color: rgba(#000, .85);
+      text-decoration: none;
+      white-space: nowrap;
+      visibility: hidden;
+      overflow: hidden;
+    }
+
+    &:before {
+      position: absolute;
+      left: -20px;
+      margin-top: 5px;
+      width: 12px;
+      height: 12px;
+      background-color: rgba($scroll-indicator-color, 0);
+      border: 2px solid rgba($scroll-indicator-color, .5);
+      border-radius: 50%;
+      box-sizing: border-box;
+      content: "";
+      opacity: 1;
+      transition: all .5s;
+    }
+
+    &.active {
+      font-weight: bold;
+
+      &:before {
+        background-color: rgba($scroll-indicator-color, .65);
+        border-color: rgba($scroll-indicator-color, 0);
+      }
+    }
+  }
+}
