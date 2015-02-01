@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
         link.addEventListener('click', function (event) {
             event.preventDefault()
             var activeSection = $('section.active')
-            var href = event.target.attributes['href'].value
+            var href = link.attributes['href'].value
             var id = href.replace('#', '')
             var section = d.getElementById(id)
             var offset = id === 'home' ? 0 : scroller.relativeToAbsolute(section, 'top', 'top')
