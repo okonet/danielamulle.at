@@ -3,41 +3,40 @@
 
   .content {
     overflow: hidden;
-    columns: 3 250px;
   }
 
-  dl {
+  &__list {
     margin: 0;
     padding: 0;
-  }
-  dt, dd {
-    margin: 0;
-    padding: 0;
+    list-style: none;
+//    overflow: hidden;
   }
 
   &__item {
-    &:not(:nth-child(1)) h3 {
-      -webkit-column-break-before: always;
-      break-before: always;
+    &_last {
+      margin-left: calc(30% + 20px) !important;
+      padding-left: 10px;
+      border-top: 1px solid rgba($textColorMain, .25);
     }
-//    float: left;
-//    padding-right: 3%;
-//    width: 33%;
-//    box-sizing: border-box;
-//
-//    &:nth-child(3) {
-//      padding-right: 0;
-//    }
-    &:nth-child(4) {
-      -webkit-column-break-before: always;
-      break-before: column;
-      border: 1px solid #000;
+  }
 
-//      column-span: all;
-//      clear: left;
-//      margin-left: 33%;
-//      border-top: 1px solid #000;
-//      width: 66%;
-    }
+  &__price {
+    font-size: 85%;
+    font-weight: lighter;
+    font-family: $fontFamilySec;
+  }
+
+  &__cols {
+    display: flex;
+    margin: 0 -10px;
+    overflow: hidden;
+  }
+  &__col {
+    flex: 0 0 30%;
+    margin: 0 10px;
+    box-sizing: border-box;
+  }
+  &__col_2 {
+    flex-basis: 60%;
   }
 }
