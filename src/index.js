@@ -18,9 +18,10 @@ document.addEventListener('DOMContentLoaded', function () {
     var sections = $$('section')
     var links = $$('.nav__link')
     var menuEl = $('.nav')
-    var navItems = $$('.nav__item')
+    var navPages = $$('.nav__page')
     var navToggleEl = $('.nav__hamburger')
     var activeSectionIdx = 0
+    var currOffset = 0
     var scroller = skrollr.init({
         smoothScrolling: false,
         forceHeight: false,
@@ -41,18 +42,21 @@ document.addEventListener('DOMContentLoaded', function () {
             var id = href.replace('#', '')
             var section = d.getElementById(id)
             var offset = scroller.relativeToAbsolute(section, 'top', 'top')
+            var duration = Math.round(Math.abs(currOffset - offset)/3)
+            currOffset = offset
 
             // Close menu
             menuEl.classList.remove('nav_open')
             window.setTimeout(function () {
 
                 scroller.animateTo(offset, {
-                    duration: 250
+                    duration: duration,
+                    easing: 'outCubic'
                 })
 
                 section.classList.toggle('active')
 
-            }, 750)
+            }, 500)
 
             if (activeSection !== null && activeSection.id !== id) {
                 activeSection.classList.remove('active')
@@ -82,10 +86,10 @@ document.addEventListener('DOMContentLoaded', function () {
             logoEl.classList.add('logo_' + newActiveSectionName);
 
             sections[activeSectionIdx].classList.remove('active');
-            navItems[activeSectionIdx].classList.remove('active');
+            navPages[activeSectionIdx].classList.remove('active');
 
             sections[newActiveSectionIdx].classList.add('active');
-            navItems[newActiveSectionIdx].classList.add('active');
+            navPages[newActiveSectionIdx].classList.add('active');
 
             activeSectionIdx = newActiveSectionIdx;
         }
