@@ -1,4 +1,4 @@
-$nav-color: #000;
+$nav-color: rgba($textColorMain, .65);
 
 .nav {
 
@@ -9,36 +9,57 @@ $nav-color: #000;
     margin: 0;
     padding: 0;
     font-family: $fontFamilySec;
+    background: rgba(#000, .5);
+    opacity: 0;
     width: 100%;
     height: 100%;
-    transform: translate3d(100%, 40vh, 0);
-//    transition: transform .75s cubic-bezier(0.770, 0.000, 0.175, 1.000);
-//
-    clip-path: circle(0px at 100% 0%);
-    transition: -webkit-clip-path .75s 1ms cubic-bezier(0.770, 0.000, 0.175, 1.000),
-                transform 0s 1s,
-                background .25s .45s;
     z-index: 99999;
-
+    transform: translate3d(0, -100vh, 0);
+    transition: transform .5s cubic-bezier(0.770, 0.000, 0.175, 1.000),
+                 opacity .5s cubic-bezier(0.770, 0.000, 0.175, 1.000);
   }
 
   &_open &__menu {
-    background: rgba(#000, .5);
+    opacity: 1;
     transform: translate3d(0, 0, 0);
-    clip-path: circle(150vmax at 100% 0%);
-    transition: -webkit-clip-path .75s 1ms cubic-bezier(0.770, 0.000, 0.175, 1.000),
-                    transform 0s 0s;
+  }
 
-    .nav__item {
-      &:hover {
-        background-color: rgba(#000, .5);
+  &__ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item {
+    $height: (100vh / length($sections));
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 5vmax;
+    line-height: $height;
+    height: $height;
+    cursor: pointer;
+
+    @each $name, $color in $sections {
+      &_#{$name} {
+        background: sectionGradient($color, .9);
+
+        & > a {
+          $linkColor: lighten($color, 25%);
+          color: $linkColor;
+          text-shadow: 0 -1px 0 rgba(#000, .25);
+        }
+
+        &:hover {
+          background: sectionGradient($color), rgba($textColorMain, .5);
+          background-blend-mode: multiply;
+        }
       }
     }
-    .nav__link {
-      visibility: inherit;
-      color: #fff;
-      opacity: 1;
-    }
+  }
+
+  &__link {
+    text-decoration: none;
+    white-space: nowrap;
   }
 
   &__hamburger {
@@ -48,7 +69,7 @@ $nav-color: #000;
     text-indent: 99999px;
     white-space: nowrap;
     border: none;
-    background: linear-gradient(rgba(#fff,0) 44%, #fff 44%, #fff 56%, rgba(#fff,0) 56%);
+    background: linear-gradient(rgba($nav-color,0) 44%, $nav-color 44%, $nav-color 56%, rgba($nav-color,0) 56%);
     width: 30px;
     height: 30px;
     cursor: pointer;
@@ -59,93 +80,83 @@ $nav-color: #000;
     &:before,
     &:after {
       position: absolute;
+      top: 43%;
       left: 0;
       width: 100%;
       height: 4px;
-      background-color: #fff;
+      background-color: $nav-color;
       transform: none;
-      transition: transform .5s;
+      transition: transform .25s ease-in-out;
       content: "";
     }
+
     &:before {
-      top: 2px;
+      margin-top: -10px;
     }
+
     &:after {
-      bottom: 2px;
+      margin-top: 10px;
     }
+
     &:hover:before {
-       top: 0;
+      margin-top: -12px;
     }
+
     &:hover:after {
-       bottom: 0;
+      margin-top: 12px;
     }
   }
+
   &_open &__hamburger {
     background: none;
 
     &:before {
-      top: 2px!important;
-      transform: translateY(11px) rotate(45deg);
+      margin-top: 0;
+      transform: rotate(45deg);
 
     }
     &:after {
-      bottom: 2px!important;
-      transform: translateY(-11px) rotate(-45deg);
+      margin-top: 0;
+      transform: rotate(-45deg);
     }
   }
 
-  &__ul {
+  //  Pages indicators
+  &__pages {
+    position: fixed;
+    right: 20px;
+    top: calc(50% - 60px);
     margin: 0;
     padding: 0;
-//    padding-left: 18px;
+    z-index: 100;
   }
+    &__page {
+      display: block;
+      margin: 0;
+      padding: 0;
+      height: 40px;
+      list-style: none;
 
-  &__item {
-    margin: 1em 0;
-    padding: 0;
-    list-style: none;
-
-    &:before {
-      position: absolute;
-      left: -20px;
-      margin-top: 5px;
-      width: 12px;
-      height: 12px;
-      background-color: rgba($nav-color, 0);
-      border: 2px solid rgba($nav-color, .5);
-      border-radius: 50%;
-      box-sizing: border-box;
-      content: "";
-      opacity: 1;
-      transition: all .5s;
-    }
-
-    &.active {
       &:before {
-        background-color: rgba($nav-color, .65);
-        border-color: rgba($nav-color, 0);
+        position: absolute;
+        left: -20px;
+        margin-top: 5px;
+        width: 12px;
+        height: 12px;
+        background-color: rgba($nav-color, 0);
+        border: 2px solid rgba($nav-color, .5);
+        border-radius: 50%;
+        box-sizing: border-box;
+        content: "";
+        opacity: 1;
+        transition: all .5s;
+      }
+
+      &.active {
+        &:before {
+          background-color: rgba($nav-color, .65);
+          border-color: rgba($nav-color, 0);
+        }
       }
     }
-  }
-
-  &__link {
-    color: rgba(#000, .85);
-    text-decoration: none;
-    white-space: nowrap;
-    opacity: 0;
-  }
-
-  &__menu__open &__ul {
-    margin: 0;
-    padding: 0;
-  }
-
-  &__menu_open &__item {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    line-height: 20vh;
-    font-size: 5vmax;
-    height: 20vh;
-  }
 }
