@@ -15,7 +15,7 @@ function $$(selector) {
 
 document.addEventListener('DOMContentLoaded', function () {
     var logoEl = $('.logo')
-    var sections = $$('section')
+    var sections = $$('.section')
     var links = $$('.logo__link, .nav__link')
     var menuEl = $('.nav')
     var navPages = $$('.nav__page')
