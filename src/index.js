@@ -16,7 +16,7 @@ function $$(selector) {
 document.addEventListener('DOMContentLoaded', function () {
     var logoEl = $('.logo')
     var sections = $$('section')
-    var links = $$('.nav__link')
+    var links = $$('.logo__link, .nav__link')
     var menuEl = $('.nav')
     var navPages = $$('.nav__page')
     var navToggleEl = $('.nav__hamburger')
@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function () {
             var href = event.target.attributes['href'].value
             var id = href.replace('#', '')
             var section = d.getElementById(id)
-            var offset = scroller.relativeToAbsolute(section, 'top', 'top')
+            var offset = id === 'home' ? 0 : scroller.relativeToAbsolute(section, 'top', 'top')
             var duration = Math.round(Math.abs(currOffset - offset)/3)
             currOffset = offset
 
