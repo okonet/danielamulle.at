@@ -1,36 +1,11 @@
 .logo {
   position: fixed;
   top: 0;
-//  left: 20px;
   margin: 0;
   padding: 20px;
-//  background: linear-gradient(rgba(#fff, 0), rgba(#fff, 0));
   background: rgba(#fff, 0);
   width: 100%;
   z-index: 1;
-//  border: 1px solid #000;
-
-
-  &_speciality &__link {
-//    background: linear-gradient(rgba($specialitySectionBg, 1), rgba(#fff, 0));
-//    background: rgba($specialitySectionBg, .5);
-    color: rgba(darken($specialitySectionBg, 30%), 0);
-  }
-  &_prices &__link {
-//    background: linear-gradient(rgba($pricesSectionBg, 1), rgba(#fff, 0));
-//    background: rgba($pricesSectionBg, .5);
-    color: rgba(darken($pricesSectionBg, 30%), 0);
-  }
-  &_about &__link {
-//    background: linear-gradient(rgba($aboutSectionBg, 1), rgba(#fff, 0));
-//    background: rgba($aboutSectionBg, 1);
-    color: rgba(darken($aboutSectionBg, 30%), 0);
-  }
-  &_contact &__link {
-//    background: linear-gradient(rgba($contactSectionBg, 1), rgba(#fff, 0));
-//    background: rgba($contactSectionBg, .5);
-    color: rgba(darken($contactSectionBg, 30%), 0);
-  }
 
   &__link {
     display: inline-block;
