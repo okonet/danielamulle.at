@@ -1,3 +1,9 @@
 #speciality {
   @include sectionBg(map-get($sections, speciality));
+  margin-top: calc(100vh - 12em);
+
+  h2 {
+    margin: 0 70px;
+    text-align: center;
+  }
 }

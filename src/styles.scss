@@ -5,7 +5,7 @@ $fontFamilySec: "Aller", sans-serif;
 
 $textColorMain: #213134;
 
-$sections: (speciality: #94d2df, prices: #73b683, about: #ffa480, contact: #b88cdf);
+$sections: (home: #ff4d78, speciality: #94d2df, prices: #73b683, about: #ffa480, contact: #b88cdf);
 
 @function sectionGradient($color, $alpha: 1) {
   $alpha: 1 - $alpha;
@@ -21,28 +21,17 @@ $sections: (speciality: #94d2df, prices: #73b683, about: #ffa480, contact: #b88c
 
   h2 {
     $tc: darken($bgColor, 30%);
+    margin: 0;
+    margin-left: 70px;
+    padding-top: 98px;
     font-family: $fontFamilySec;
-    font-size: 5vmax;
+    font-size: 4vmax;
     font-weight: 100;
-    text-align: center;
     color: $tc;
     background: linear-gradient(45deg, #2d463c, #537c88, #a58666, #6b0637);
     background-size: 1024px;
     -webkit-background-clip: text;
     -webkit-text-fill-color: rgba($tc, .5);
-
-    a {
-      display: inline-block;
-      color: $textColor;
-      text-decoration: none;
-      border-bottom: 1px solid rgba($textColor, .25);
-      height: 1.15em;
-
-      &:hover {
-        color: $textColorActive;
-        border-bottom-color: rgba($textColorActive, .5);
-      }
-    }
   }
 }
 
@@ -64,6 +53,7 @@ body {
 
 h1, h2, h3, h4 {
   font-family: $fontFamilySec;
+  line-height: 1.5;
 }
 
 h1, h2 {
@@ -80,12 +70,10 @@ h1, h2 {
 section {
   position: relative;
   margin: 0;
-  overflow: hidden;
   min-height: 100vh;
   transform: translateZ(0);
 
   .content {
-    margin-top: 70px;
     padding: 0 60px 2em 70px;
   }
 }
@@ -97,11 +85,4 @@ section {
   height: 100vh;
   background: image-url('home/photo.jpg') 25% 25% no-repeat;
   background-size: cover;
-}
-
-#speciality {
-//  top: 60vh;
-  font-size: 3vmax;
-  line-height: 1.3;
-  margin-top: calc(100vh - 8em);
 }

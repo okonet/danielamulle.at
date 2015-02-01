@@ -2,10 +2,11 @@
   position: fixed;
   top: 0;
   margin: 0;
-  padding: 20px;
+  padding: 10px 20px;
   background: rgba(#fff, 0);
   width: 100%;
   z-index: 1;
+  transform: translateZ(0);
 
   &__link {
     display: inline-block;
@@ -13,12 +14,6 @@
     color: $textColorMain;
     text-decoration: none;
     width: 180px;
-    transform: translateZ(0);
-    transition: color .5s;
-
-    &:hover {
-      color: $textColorMain !important;
-    }
 
     &:before {
       position: absolute;
