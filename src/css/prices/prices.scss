@@ -1,5 +1,5 @@
 .prices {
-  @include sectionBg($pricesSectionBg);
+  @include sectionBg(map-get($sections, prices));
 
   .content {
     overflow: hidden;

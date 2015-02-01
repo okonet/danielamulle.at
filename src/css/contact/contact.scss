@@ -1,12 +1,13 @@
-$contactTextColor: darken($contactSectionBg, 30%);
-$contactTextColorActive: darken($contactSectionBg, 50%);
 
 #contact {
-  @include sectionBg($contactSectionBg);
+  @include sectionBg(map-get($sections, contact));
 
   height: 100vh;
 }
 .contact {
+  $sectionColor: map-get($sections, contact);
+  $sectionTextColor: darken($sectionColor, 30%);
+  $sectionTextColorActive: darken($sectionColor, 50%);
   &__phone {
     font-size: 130%;
   }
@@ -14,13 +15,13 @@ $contactTextColorActive: darken($contactSectionBg, 50%);
     font-size: 85%;
   }
   a[href] {
-    color: $contactTextColor;
+    color: $sectionTextColor;
     text-decoration: none;
-    border-bottom: 1px solid rgba($contactTextColor, .35);
+    border-bottom: 1px solid rgba($sectionTextColor, .35);
 
     &:hover,
     &:active {
-      color: $contactTextColorActive;
+      color: $sectionTextColorActive;
     }
   }
 }
