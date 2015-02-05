@@ -5,7 +5,7 @@ $fontFamilySec: "Aller", sans-serif;
 
 $textColorMain: #213134;
 
-$sections: (home: #ff4d78, speciality: #94d2df, prices: #73b683, about: #ffa480, contact: #b88cdf);
+$sections: (speciality: #86c4d1, prices: #73b683, about: #daa185, contact: #bb74b1);
 
 @function sectionGradient($color, $alpha: 1) {
   $alpha: 1 - $alpha;
