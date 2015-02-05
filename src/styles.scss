@@ -28,10 +28,6 @@ $sections: (home: #ff4d78, speciality: #94d2df, prices: #73b683, about: #ffa480,
     font-size: 4vmax;
     font-weight: 100;
     color: $tc;
-    background: linear-gradient(45deg, #2d463c, #537c88, #a58666, #6b0637);
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: rgba($tc, .5);
   }
 }
 
@@ -70,13 +66,18 @@ h1, h2 {
 .section {
   position: relative;
   margin: 0;
-  overflow: hidden;
   min-height: 100vh;
   transform: translateZ(0);
 
   .content {
     padding: 0 60px 2em 70px;
   }
+}
+
+.amp {
+  font-family: Baskerville, "Goudy Old Style", "Palatino", "Book Antiqua", serif;
+  font-size: 110%;
+  font-style: italic;
 }
 
 #home {
