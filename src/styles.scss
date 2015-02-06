@@ -1,35 +1,6 @@
 @import 'fonts';
 
-$fontFamilyMain: "Georgia", serif;
-$fontFamilySec: "Aller", sans-serif;
-
-$textColorMain: #213134;
-
-$sections: (speciality: #86c4d1, prices: #73b683, about: #daa185, contact: #bb74b1);
-
-@function sectionGradient($color, $alpha: 1) {
-  $alpha: 1 - $alpha;
-  @return linear-gradient(-45deg, transparentize(adjust_hue($color, 35deg), $alpha), transparentize($color, $alpha));
-}
-
-@mixin sectionBg($bgColor) {
-  $textColor: darken($bgColor, 30%);
-  $textColorActive: darken($bgColor, 40%);
-
-  background-color: $bgColor;
-  background: sectionGradient($bgColor);
-
-  h2 {
-    margin: 0;
-    margin-left: 70px;
-    padding-top: 98px;
-    font-family: $fontFamilySec;
-    font-size: 4vmax;
-    font-weight: 100;
-    color: $textColor;
-  }
-}
-
+@import 'css/vars';
 @import "css/nav";
 @import "css/logo";
 @import "css/prices";
@@ -38,11 +9,16 @@ $sections: (speciality: #86c4d1, prices: #73b683, about: #daa185, contact: #bb74
 @import "css/contact";
 @import "css/footer";
 
+// IE needs this
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+  display: block;
+}
+
 body {
   margin: 0;
   padding: 0;
-  font-family: $fontFamilyMain;
-  font-size: 12pt;
+  font: 12pt/1.5 $fontFamilyMain;
   color: $textColorMain;
 }
 
@@ -87,5 +63,4 @@ h1, h2 {
   height: 100vh;
   background: image-url('home_bg.jpg') 25% 25% no-repeat;
   background-size: cover;
-//  background-blend-mode: screen;
 }
