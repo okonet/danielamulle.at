@@ -1,4 +1,3 @@
-require('./css/html5reset-1.6.1.css');
 require('./styles.scss');
 skrollr = require('skrollr');
 
