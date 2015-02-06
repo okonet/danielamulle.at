@@ -17,17 +17,16 @@ $sections: (speciality: #86c4d1, prices: #73b683, about: #daa185, contact: #bb74
   $textColorActive: darken($bgColor, 40%);
 
   background-color: $bgColor;
-  background: sectionGradient($bgColor);//linear-gradient(-45deg, transparentize(adjust_hue($bgColor, 35deg), 0.0), transparentize($bgColor, 0));
+  background: sectionGradient($bgColor);
 
   h2 {
-    $tc: darken($bgColor, 30%);
     margin: 0;
     margin-left: 70px;
     padding-top: 98px;
     font-family: $fontFamilySec;
     font-size: 4vmax;
     font-weight: 100;
-    color: $tc;
+    color: $textColor;
   }
 }
 
@@ -76,15 +75,32 @@ h1, h2 {
 
 .amp {
   font-family: Baskerville, "Goudy Old Style", "Palatino", "Book Antiqua", serif;
-  font-size: 110%;
+  font-size: 130%;
   font-style: italic;
 }
 
 #home {
+  $color: map_get($sections, speciality);
   position: fixed;
   top: 0;
   width: 100%;
   height: 100vh;
-  background: image-url('home/photo.jpg') 25% 25% no-repeat;
-  background-size: cover;
+  background: //linear-gradient(rgba($color, 0) 50%, rgba($color, .75) 80%),
+                linear-gradient(
+                                90deg,
+                                rgba(#50b667, .5),
+                                transparent
+                ),
+                linear-gradient(
+                                rgba(#61a5d1, .5),
+                                transparent
+                ),
+                linear-gradient(
+                                -90deg,
+                                rgba(coral, .75),
+                                transparent
+                ),
+                image-url('home/photo.jpg') 25% 25% no-repeat;
+  background-size: 100%, 100%, 100%, cover;
+  background-blend-mode: screen;
 }
