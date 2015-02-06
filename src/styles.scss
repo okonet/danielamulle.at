@@ -30,13 +30,13 @@ $sections: (speciality: #86c4d1, prices: #73b683, about: #daa185, contact: #bb74
   }
 }
 
-@import "./css/nav/nav";
-@import "./css/logo/logo";
-@import "./css/prices/prices";
-@import "./css/about/about";
-@import "./css/speciality/speciality";
-@import "./css/contact/contact";
-@import "./css/footer/footer";
+@import "css/nav";
+@import "css/logo";
+@import "css/prices";
+@import "css/about";
+@import "css/speciality";
+@import "css/contact";
+@import "css/footer";
 
 body {
   margin: 0;
@@ -85,7 +85,7 @@ h1, h2 {
   top: 0;
   width: 100%;
   height: 100vh;
-  background: image-url('home/home_bg.jpg') 25% 25% no-repeat;
+  background: image-url('home_bg.jpg') 25% 25% no-repeat;
   background-size: cover;
 //  background-blend-mode: screen;
 }
