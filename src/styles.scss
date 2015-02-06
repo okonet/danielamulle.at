@@ -85,22 +85,7 @@ h1, h2 {
   top: 0;
   width: 100%;
   height: 100vh;
-  background: //linear-gradient(rgba($color, 0) 50%, rgba($color, .75) 80%),
-                linear-gradient(
-                                90deg,
-                                rgba(#50b667, .5),
-                                transparent
-                ),
-                linear-gradient(
-                                rgba(#61a5d1, .5),
-                                transparent
-                ),
-                linear-gradient(
-                                -90deg,
-                                rgba(coral, .75),
-                                transparent
-                ),
-                image-url('home/photo.jpg') 25% 25% no-repeat;
-  background-size: 100%, 100%, 100%, cover;
-  background-blend-mode: screen;
+  background: image-url('home/home_bg.jpg') 25% 25% no-repeat;
+  background-size: cover;
+//  background-blend-mode: screen;
 }

@@ -1,14 +1,15 @@
 #speciality {
   $bgColor: map-get($sections, speciality);
-  $textColor: darken($bgColor, 40%);
+  $textColor: #fff;
 //  $textColor: #fff;
   @include sectionBg($bgColor);
-  margin-top: calc(100vh);
+  margin-top: 100vh;
 
   h2 {
     position: relative;
     top: 0;
     margin: 0 70px 70px 70px;
+    font-size: 18px;
     font-size: 2.5vmax;
     text-align: center;
     color: $textColor;
