@@ -25,18 +25,4 @@
     font-weight: lighter;
     font-family: $fontFamilySec;
   }
-
-  &__cols {
-    display: flex;
-    margin: 0 -10px;
-    overflow: hidden;
-  }
-  &__col {
-    flex: 0 0 30%;
-    margin: 0 10px;
-    box-sizing: border-box;
-  }
-  &__col_2 {
-    flex-basis: 60%;
-  }
 }

@@ -45,6 +45,7 @@ h1, h2 {
   transform: translateZ(0);
 
   .content {
+    position: relative;
     padding: 0 60px 2em 70px;
   }
 }
@@ -63,4 +64,19 @@ h1, h2 {
   height: 100vh;
   background: url('./css/home_bg.jpg') 25% 25% no-repeat;
   background-size: cover;
+}
+
+.cols {
+  display: flex;
+  margin: 0 -10px;
+  overflow: hidden;
+}
+.col {
+  flex: 0 0 30%;
+  margin: 0 10px;
+  box-sizing: border-box;
+
+  &_2 {
+    flex-basis: 60%;
+  }
 }
