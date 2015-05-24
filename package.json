@@ -6,7 +6,10 @@
   "main": "",
   "scripts": {
     "start": "./node_modules/.bin/webpack-dev-server --hot --inline --colors --debug --port 8081",
-    "postinstall": "./node_modules/.bin/webpack -p",
+    "clean": "rm -rf build",
+    "build": "./node_modules/.bin/webpack -p",
+    "deploy": "surge build",
+    "production": "npm run clean && npm run build && npm run deploy",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Andrey Okonetchnikov",
@@ -21,6 +24,7 @@
     "node-sass": "^3.1.2",
     "sass-loader": "^1.0.2",
     "style-loader": "^0.8.2",
+    "surge": "^0.12.0",
     "url-loader": "^0.5.5",
     "webpack": "^1.4.13",
     "webpack-dev-server": "^1.6.6"
