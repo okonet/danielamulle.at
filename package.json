@@ -6,9 +6,9 @@
   "main": "",
   "scripts": {
     "start": "./node_modules/.bin/webpack-dev-server --hot --inline --colors --debug --port 8081",
-    "clean": "rm -rf build",
-    "build": "./node_modules/.bin/webpack -p",
-    "deploy": "surge build",
+    "clean": "rm -rf _build",
+    "build": "NODE_ENV=production ./node_modules/.bin/webpack -p",
+    "deploy": "surge _build",
     "production": "npm run clean && npm run build && npm run deploy",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -23,6 +23,7 @@
     "file-loader": "^0.8.1",
     "node-sass": "^3.1.2",
     "sass-loader": "^1.0.2",
+    "static-site-generator-webpack-plugin": "^1.0.0",
     "style-loader": "^0.8.2",
     "surge": "^0.12.0",
     "url-loader": "^0.5.5",
