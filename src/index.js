@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var navPages = $$('.nav__page')
     var navToggleEl = $('.nav__hamburger')
     var activeSectionIdx = 0
-    var currOffset = 0
+    var previousOffset = 0
     var scroller = skrollr.init({
         smoothScrolling: false,
         forceHeight: false,
@@ -36,19 +36,20 @@ document.addEventListener('DOMContentLoaded', function () {
 
     links.forEach(function (link) {
         link.addEventListener('click', function (event) {
-            event.preventDefault()
             var activeSection = $('section.active')
             var href = link.attributes['href'].value
             var id = href.replace('#', '')
             var section = d.getElementById(id)
             var offset = id === 'home' ? 0 : scroller.relativeToAbsolute(section, 'top', 'top')
-            var duration = Math.round(Math.abs(currOffset - offset)/3)
-            currOffset = offset
+            var duration = Math.round(Math.abs(previousOffset - offset)/3)
+            var currentScrollOffset = scroller.getScrollTop()
+            previousOffset = offset
 
             // Close menu
             menuEl.classList.remove('nav_open')
             window.setTimeout(function () {
 
+                scroller.setScrollTop(currentScrollOffset)
                 scroller.animateTo(offset, {
                     duration: duration,
                     easing: 'outCubic'
