@@ -1,13 +1,12 @@
-
-#contact {
-  @include sectionBg(map-get($sections, contact));
-
-  height: 100vh;
-}
 .contact {
   $sectionColor: map-get($sections, contact);
   $sectionTextColor: darken($sectionColor, 30%);
   $sectionTextColorActive: darken($sectionColor, 50%);
+  @include sectionBg(map-get($sections, contact));
+
+  min-height: calc(100vh - 30px);
+  margin-bottom: 0 !important;
+
   &__phone {
     font-size: 130%;
   }

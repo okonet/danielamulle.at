@@ -31,6 +31,21 @@ h1, h2 {
   font-weight: lighter;
 }
 
+.tagline {
+  position: fixed;
+  top: 0;
+  margin: 0 70px;
+  padding-top: 0;
+  //padding-bottom: 20vh;
+  //font-size: 18px;
+  font-size: 3.5vmax;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(#000, .5);
+  color: #fff;
+  transform: translateZ(0);
+  z-index: 1;
+}
+
 .wrapper {
   margin : 0 auto;
   padding: 0 20px;
@@ -40,13 +55,33 @@ h1, h2 {
 
 .section {
   position: relative;
-  margin: 0;
-  min-height: 100vh;
+  margin: 0px 0;
+  //min-height: 100vh;
+  z-index: 2;
   transform: translateZ(0);
+
+  header {
+    margin : 0 auto;
+    padding: 0 20px;
+    max-width : 960px;
+    height: 200px;
+  }
 
   .content {
     position: relative;
-    padding: 0 60px 2em 70px;
+    padding: 2em 60px 2em 70px;
+  }
+
+  h2 {
+    position: absolute;
+    top: 0px;
+    margin: 0;
+    margin-left: 70px;
+    padding-top: 18px;
+    font-family: $fontFamilySec;
+    font-size: 300%;
+    //font-size: 4vmax;
+    font-weight: 100;
   }
 }
 
@@ -60,10 +95,12 @@ h1, h2 {
   $color: map_get($sections, speciality);
   position: fixed;
   top: 0;
+  margin: 0;
   width: 100%;
   height: 100vh;
   background: url('./css/home_bg.jpg') 25% 25% no-repeat;
   background-size: cover;
+  z-index: auto;
 }
 
 .cols {
@@ -78,5 +115,52 @@ h1, h2 {
 
   &_2 {
     flex-basis: 60%;
+  }
+}
+
+
+.parallax {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  //border: 1px solid #f00;
+
+  &__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    //visibility: hidden;
+    opacity: 0;
+    //border: 1px solid #000;
+    transition: opacity .25s;
+
+    .skrollable-between & {
+      //visibility: visible;
+      opacity: 1;
+    }
+
+    &_speciality {
+      background-image: url('./css/home_bg.jpg');
+    }
+
+    &_prices {
+      background-image: url('./css/prices.jpg');
+    }
+
+    &_about {
+      background-image: url('./css/about.jpg');
+    }
+
+    &_contact {
+      background-image: url('./css/contact.jpg');
+    }
   }
 }

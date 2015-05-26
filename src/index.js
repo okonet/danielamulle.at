@@ -47,16 +47,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
             // Close menu
             menuEl.classList.remove('nav_open')
-            window.setTimeout(function () {
 
+            window.setTimeout(function () {
                 scroller.setScrollTop(currentScrollOffset)
+            }, 0)
+
+            window.setTimeout(function () {
                 scroller.animateTo(offset, {
                     duration: duration,
                     easing: 'outCubic'
                 })
-
                 section.classList.toggle('active')
-
             }, 500)
 
             if (activeSection !== null && activeSection.id !== id) {

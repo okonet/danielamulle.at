@@ -1,4 +1,4 @@
-#about {
+.about {
   $sectionColor: map-get($sections, about);
   @include sectionBg($sectionColor);
 

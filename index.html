@@ -14,8 +14,12 @@
 
 <div class="logo">
 	<a href="#home" class="logo__link">
-		<p class="logo__title">Diätologin &amp; Ernährungswissenschafterin</p>
-		<h1 class="logo__name">Daniela Mulle</h1>
+		<div class="logo__text"
+				data-0="opacity: 1"
+				data-100p="opacity: 0">
+			<p class="logo__title">Diätologin &amp; Ernährungswissenschafterin</p>
+			<h1 class="logo__name">Daniela Mulle</h1>
+		</div>
 	</a>
 </div>
 
@@ -46,17 +50,83 @@
 	</ul>
 </nav>
 
+<div
+		class="parallax"
+		data-anchor-target="#speciality"
+		data-bottom-top="transform:translate3d(0px, 0%, 0px)"
+		data-top-bottom="transform:translate3d(0px, 0%, 0px)">
 
-<section id="home" class="section"
-         data-0="transform: translate3d(0vw, 0vh, 0)"
-         data-100p="transform: translate3d(0vw, -10vh, 0)">
-</section>
+	<div
+			class="parallax__image parallax__image_speciality"
+			data-anchor-target="#speciality"
+			data-bottom-top="transform: translate3d(0px, 0%, 0px);"
+			data-top-bottom="transform: translate3d(0px, -50%, 0px);"
+			></div>
+	<!--the +/-80% translation can be adjusted to control the speed difference of the image-->
+</div>
+
+<div
+		class="parallax"
+		data-anchor-target="#prices"
+		data-bottom-top="transform:translate3d(0px, 0%, 0px)"
+		data-top-bottom="transform:translate3d(0px, 0%, 0px)">
+
+	<div
+			class="parallax__image parallax__image_prices"
+			data-anchor-target="#prices"
+			data-bottom-top="transform: translate3d(0px, 0%, 0px);"
+			data-top-bottom="transform: translate3d(0px, -50%, 0px);"
+			></div>
+	<!--the +/-80% translation can be adjusted to control the speed difference of the image-->
+</div>
+
+<div
+		class="parallax"
+		data-anchor-target="#about"
+		data-bottom-top="transform:translate3d(0px, 0%, 0px)"
+		data-top-bottom="transform:translate3d(0px, 0%, 0px)">
+
+	<div
+			class="parallax__image parallax__image_about"
+			data-anchor-target="#about"
+			data-bottom-top="transform: translate3d(0px, 0%, 0px);"
+			data-top-bottom="transform: translate3d(0px, -50%, 0px);"
+			></div>
+	<!--the +/-80% translation can be adjusted to control the speed difference of the image-->
+</div>
+
+<div
+		class="parallax"
+		data-anchor-target="#contact"
+		data-bottom-top="transform:translate3d(0px, 0%, 0px)"
+		data-top-bottom="transform:translate3d(0px, 0%, 0px)">
+
+	<div
+			class="parallax__image parallax__image_contact"
+			data-anchor-target="#contact"
+			data-bottom-top="transform: translate3d(0px, 0%, 0px);"
+			data-top-bottom="transform: translate3d(0px, -50%, 0px);"
+			></div>
+	<!--the +/-80% translation can be adjusted to control the speed difference of the image-->
+</div>
+
+
+<!--<section id="home" class="section"-->
+         <!--data-0="transform: translate3d(0vw, 0vh, 0)"-->
+         <!--data-100p="transform: translate3d(0vw, -10vh, 0)">-->
+<!--</section>-->
+
+<h1 class="tagline"
+		data-0="top: 50vh; opacity: 1;"
+		data-100p="top: 0vh; opacity: 1;"
+		data-120p="top: 0vh; opacity: 0;">
+	Ernährungstherapie <span class="amp">&amp;</span> Ernährungsberatung
+	bei speziellen Ernährungsbedürfnissen.
+</h1>
+
+<div id="scrollr-body">
 
 <section id="speciality" class="section speciality">
-	<h2
-			data-0="transform: translate3d(0, -100%, 0);"
-			data-100p="transform: translate3d(0, 0%, 0);"
-			>Ernährungstherapie <span class="amp">&amp;</span> Ernährungsberatung bei speziellen Ernährungsbedürfnissen.</h2>
 	<div class="wrapper">
 
 		<article class="content">
@@ -138,8 +208,10 @@
 </section>
 
 <section id="prices" class="section prices">
-	<div class="wrapper">
+	<header>
 		<h2>Angebot &amp; Kosten</h2>
+	</header>
+	<div class="wrapper">
 		<article class="content">
 			<div class="cols prices__list">
 				<div class="col prices__item">
@@ -190,9 +262,11 @@
 	</div>
 </section>
 
-<section id="about" class="section">
-	<div class="wrapper">
+<section id="about" class="section about">
+	<header>
 		<h2>Qualifikation</h2>
+	</header>
+	<div class="wrapper">
 		<article class="content">
 			<h3>Ausbildung</h3>
 			<dl>
@@ -244,8 +318,10 @@
 </section>
 
 <section id="contact" class="section contact vcard">
-	<div class="wrapper">
+	<header>
 		<h2>Kontakt</h2>
+	</header>
+	<div class="wrapper">
 		<article class="content">
 			<p class="contact__phone">
 				+<a href="tel:+436509700569" class="tel">43&nbsp;650&nbsp;970-05-69</a>
@@ -263,6 +339,8 @@
 		<p class="footer__producer">Design &amp; Development &mdash; <a href="http://okonet.ru">Andrey Okonetchnikov</a></p>
 	</div>
 </footer>
+
+</div>
 
 <script src="index.js" type="text/javascript" charset="utf-8"></script>
 </body>

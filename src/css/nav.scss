@@ -54,7 +54,7 @@ $nav-color: $textColorMain;
 
     @each $name, $color in $sections {
       &_#{$name} {
-        background: sectionGradient($color, .9);
+        background: sectionGradient($color);
 
         & > a {
           $linkColor: lighten($color, 25%);
@@ -63,7 +63,10 @@ $nav-color: $textColorMain;
         }
 
         &:hover {
-          background: sectionGradient($color), rgba($textColorMain, .5);
+          & > a {
+            color: #fff;
+          }
+          background: darken(sectionGradient($color), 10%);
           background-blend-mode: multiply;
         }
       }

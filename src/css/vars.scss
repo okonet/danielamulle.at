@@ -3,27 +3,29 @@ $fontFamilySec: "Aller", sans-serif;
 
 $textColorMain: #213134;
 
-$sections: (speciality: #86c4d1, prices: #73b683, about: #daa185, contact: #bb74b1);
+$sections: (
+        speciality: #86c4d1,
+        prices: #73b683,
+        about: #daa185,
+        contact: #bb74b1);
 
 @function sectionGradient($color, $alpha: 1) {
   $alpha: 1 - $alpha;
-  @return linear-gradient(-45deg, transparentize(adjust_hue($color, 35deg), $alpha), transparentize($color, $alpha));
+  //@return linear-gradient(-45deg, transparentize(adjust_hue($color, 35deg), $alpha), transparentize($color, $alpha));
+  @return transparentize(adjust_hue($color, 20deg), $alpha);
 }
 
 @mixin sectionBg($bgColor) {
   $textColor: darken($bgColor, 30%);
   $textColorActive: darken($bgColor, 40%);
 
-  background-color: $bgColor;
-  background: sectionGradient($bgColor);
+  .wrapper {
+    background-color: $bgColor;
+    background: sectionGradient($bgColor);
+  }
+
 
   h2 {
-    margin: 0;
-    margin-left: 70px;
-    padding-top: 98px;
-    font-family: $fontFamilySec;
-    font-size: 4vmax;
-    font-weight: 100;
     color: $textColor;
   }
 }

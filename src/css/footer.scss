@@ -1,14 +1,15 @@
 .footer {
-  position: fixed;
+  //position: fixed;
   bottom: 0;
   font-family: $fontFamilySec;
   font-weight: 100;
   font-style: italic;
   font-size: 11px;
   text-align: center;
-  background: rgba(#000, 0.1);
+  //background: rgba(#fff, 0.5);
   width: 100%;
   transform: translateZ(0);
+  z-index: 99;
 
   &__copy {
     float: left;
