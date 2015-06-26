@@ -81,12 +81,6 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         if (newActiveSectionIdx !== activeSectionIdx) {
-            var activeSectionName = sections[activeSectionIdx].id;
-            var newActiveSectionName = sections[newActiveSectionIdx].id;
-
-            logoEl.classList.remove('logo_' + activeSectionName);
-            logoEl.classList.add('logo_' + newActiveSectionName);
-
             sections[activeSectionIdx].classList.remove('active');
             navPages[activeSectionIdx].classList.remove('active');
 
