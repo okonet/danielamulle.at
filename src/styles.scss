@@ -91,18 +91,6 @@ h1, h2 {
   font-style: italic;
 }
 
-#home {
-  $color: map_get($sections, speciality);
-  position: fixed;
-  top: 0;
-  margin: 0;
-  width: 100%;
-  height: 100vh;
-  background: url('./css/home_bg.jpg') 25% 25% no-repeat;
-  background-size: cover;
-  z-index: auto;
-}
-
 .cols {
   display: flex;
   margin: 0 -10px;
@@ -124,43 +112,34 @@ h1, h2 {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  overflow: hidden;
-  //border: 1px solid #f00;
+  height: 150%;
 
-  &__image {
+  &:after {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 150%;
+    height: 100%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    //visibility: hidden;
-    opacity: 0;
-    //border: 1px solid #000;
-    transition: opacity .25s;
+    transform: translateZ(0);
+    content: "";
+  }
 
-    .skrollable-between & {
-      //visibility: visible;
-      opacity: 1;
-    }
+  &_speciality:after {
+    background-image: url('./css/home_bg.jpg');
+  }
 
-    &_speciality {
-      background-image: url('./css/home_bg.jpg');
-    }
+  &_prices:after {
+    background-image: url('./css/prices.jpg');
+  }
 
-    &_prices {
-      background-image: url('./css/prices.jpg');
-    }
+  &_about:after {
+    background-image: url('./css/about.jpg');
+  }
 
-    &_about {
-      background-image: url('./css/about.jpg');
-    }
-
-    &_contact {
-      background-image: url('./css/contact.jpg');
-    }
+  &_contact:after {
+    background-image: url('./css/contact.jpg');
   }
 }
