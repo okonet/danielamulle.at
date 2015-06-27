@@ -20,6 +20,24 @@ body {
   padding: 0;
   font: 12pt/1.5 $fontFamilyMain;
   color: $textColorMain;
+
+  //background: url('./css/home_bg.jpg') center center no-repeat;
+  //background-size: cover;
+  //background-attachment: fixed;
+
+  //&:before {
+  //  position: fixed;
+  //  top: 0;
+  //  left: 0;
+  //  width: 100%;
+  //  height: 100%;
+  //  background: url('./css/home_bg.jpg') center center no-repeat;
+  //  background-size: cover;
+  //  //background-attachment: fixed;
+  //  //transform: translateZ(0);
+  //  content: "";
+  //  z-index: -1;
+  //}
 }
 
 h1, h2, h3, h4 {
@@ -42,8 +60,12 @@ h1, h2 {
   text-align: center;
   text-shadow: 0 1px 0 rgba(#000, .5);
   color: #fff;
-  transform: translateZ(0);
+  height: 100%;
   z-index: 1;
+}
+
+#scrollr-body {
+  transform: translateZ(0);
 }
 
 .wrapper {
@@ -55,10 +77,10 @@ h1, h2 {
 
 .section {
   position: relative;
-  margin: 0px 0;
+  margin: 0;
   //min-height: 100vh;
-  z-index: 2;
-  transform: translateZ(0);
+  //z-index: 2;
+  //transform: translateZ(0);
 
   header {
     margin : 0 auto;
@@ -107,19 +129,34 @@ h1, h2 {
 }
 
 
+.parallax-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateZ(0);
+}
+
 .parallax {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 150%;
+  height: 100%;
+  transform: translateZ(0);
+  visibility: hidden;
+
+  &.skrollable-between {
+    visibility: visible;
+  }
 
   &:after {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 150%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

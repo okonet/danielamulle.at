@@ -50,36 +50,42 @@
 	</ul>
 </nav>
 
-<div
-		class="parallax parallax_speciality"
-		data-anchor-target="#speciality"
-		data-bottom-top="transform:translate(0px, 0%)"
-		data-top-bottom="transform:translate(0px, -50%)">
-</div>
+<div class="parallax-container"
+     data-start="transform:translate3d(0, 0%, 0)"
+     data-end="transform:translate3d(0, -50%, 0)">
 
-<div
+	<div class="parallax parallax_speciality"
+	     data-anchor-target="#speciality"
+	     data-bottom-top=""
+		data-top-bottom=""></div>
+
+	<div
 		class="parallax parallax_prices"
 		data-anchor-target="#prices"
-		data-20p-bottom-top="opacity:0; transform:translate(0px, 0%)"
-		data-0-bottom-top="opacity:1; transform:translate(0px, 0%)"
-		data-top-bottom="opacity:1; transform:translate(0px, -50%)">
-</div>
+		data-20p-bottom-top="opacity:0;"
+		data-0-bottom-top="opacity:1;"
+		data-top-bottom="">
+	</div>
 
-<div
+	<div
 		class="parallax parallax_about"
 		data-anchor-target="#about"
-		data-20p-bottom-top="opacity:0; transform:translate(0px, 0%)"
-		data-0-bottom-top="opacity:1; transform:translate(0px, 0%)"
-		data-top-bottom="opacity:1; transform:translate(0px, -50%)">
-</div>
+		data-20p-bottom-top="opacity:0"
+		data-0-bottom-top="opacity:1;"
+		data-top-bottom="">
+	</div>
 
-<div
+	<div
 		class="parallax parallax_contact"
 		data-anchor-target="#contact"
-		data-20p-bottom-top="opacity:0; transform:translate(0px, 0%)"
-		data-0-bottom-top="opacity:1; transform:translate(0px, 0%)"
-		data-top-bottom="opacity:1; transform:translate(0px, -50%)">
+		data-20p-bottom-top="opacity:0;"
+		data-0-bottom-top="opacity:1;"
+		data-top-bottom="">
+	</div>
+
 </div>
+
+<div data-0="background-image:!url(kitten1.jpg);" data-100="background-image:!url(kitten2.jpg)"></div>
 
 
 <!--<section id="home" class="section"-->
@@ -88,9 +94,9 @@
 <!--</section>-->
 
 <h1 class="tagline"
-		data-0="top: 50vh; opacity: 1;"
-		data-100p="top: 0vh; opacity: 1;"
-		data-120p="top: 0vh; opacity: 0;">
+		data-0="transform:translate3d(0,50%,0); opacity: 1;"
+		data-100p="transform:translate3d(0,0%,0); opacity: 1;"
+		data-120p="transform:translate3d(0,0%,0); opacity: 0;">
 	Ernährungstherapie <span class="amp">&amp;</span> Ernährungsberatung
 	bei speziellen Ernährungsbedürfnissen.
 </h1>
