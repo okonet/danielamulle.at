@@ -1,12 +1,15 @@
 var fs = require('fs');
 var path = require('path');
+var webpack = require('webpack');
 var isProduction = process.env.NODE_ENV === 'production';
 var StaticSiteGeneratorPlugin = require('static-site-generator-webpack-plugin');
 
 var html = fs.readFileSync('index.html', {encoding: 'utf8'});
 var plugins = isProduction ? [
     new StaticSiteGeneratorPlugin('index.js', ['/'], { html: html })
-] : [];
+] : [
+    new webpack.HotModuleReplacementPlugin()
+];
 
 module.exports = {
     entry: "./index.js",
@@ -18,7 +21,7 @@ module.exports = {
         /* IMPORTANT!
          * You must compile a module that can
          * can be required in a Node context: */
-        libraryTarget: 'umd'
+        libraryTarget: 'umd',
     },
     plugins: plugins,
     module: {
@@ -45,5 +48,14 @@ module.exports = {
         modulesDirectories: ["node_modules"],
         extensions: ["", ".webpack.js", ".js", ".css", ".scss"],
         alias: {}
+    },
+    devServer: {
+        host: '10.0.1.2',
+        port: 8081,
+        hot: true,
+        inline: true,
+        progress: true,
+        publicPath: "/",
+        stats: {colors: true}
     }
 };
