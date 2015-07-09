@@ -11,19 +11,13 @@ $sections: (
 
 @function sectionGradient($color, $alpha: 1) {
   $alpha: 1 - $alpha;
-  //@return linear-gradient(-45deg, transparentize(adjust_hue($color, 35deg), $alpha), transparentize($color, $alpha));
-  @return transparentize(adjust_hue($color, 20deg), $alpha);
+  @return linear-gradient(-45deg, transparentize(adjust_hue($color, 35deg), $alpha), transparentize($color, $alpha));
+  //@return transparentize(adjust_hue($color, 20deg), $alpha);
 }
 
 @mixin sectionBg($bgColor) {
   $textColor: darken($bgColor, 30%);
   $textColorActive: darken($bgColor, 40%);
-
-  .wrapper {
-    background-color: $bgColor;
-    background: sectionGradient($bgColor);
-  }
-
 
   h2 {
     color: $textColor;

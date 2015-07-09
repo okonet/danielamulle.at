@@ -71,10 +71,12 @@ document.addEventListener('DOMContentLoaded', function () {
         return scroller.relativeToAbsolute(section, 'top', 'top')
     });
 
-    scroller.on('render', function (evt) {
+    scroller.on('render', function (data) {
         var newActiveSectionIdx = 0
         for (var idx = 0; idx < offsets.length; idx++) {
-            if (evt.curTop >= offsets[idx] - 150 && (evt.curTop <= offsets[idx + 1] - 150 || idx === offsets.length - 1)) {
+            if (data.curTop >= offsets[idx] - 150
+                && (data.curTop <= offsets[idx + 1] - 150
+                || idx === offsets.length - 1)) {
                 newActiveSectionIdx = idx;
                 break;
             }

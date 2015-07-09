@@ -25,19 +25,19 @@ body {
   //background-size: cover;
   //background-attachment: fixed;
 
-  //&:before {
-  //  position: fixed;
-  //  top: 0;
-  //  left: 0;
-  //  width: 100%;
-  //  height: 100%;
-  //  background: url('./css/home_bg.jpg') center center no-repeat;
-  //  background-size: cover;
-  //  //background-attachment: fixed;
-  //  //transform: translateZ(0);
-  //  content: "";
-  //  z-index: -1;
-  //}
+  &:before {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('./css/home_bg.jpg') center center no-repeat;
+    background-size: cover;
+    //background-attachment: fixed;
+    transform: translateZ(0);
+    content: "";
+    z-index: -1;
+  }
 }
 
 h1, h2, h3, h4 {
@@ -64,9 +64,9 @@ h1, h2 {
   z-index: 1;
 }
 
-#scrollr-body {
-  transform: translateZ(0);
-}
+//#scrollr-body {
+//  transform: translateZ(0);
+//}
 
 .wrapper {
   margin : 0 auto;
@@ -76,8 +76,9 @@ h1, h2 {
 }
 
 .section {
-  position: relative;
+//  position: relative;
   margin: 0;
+  padding-bottom: 80vh;
   //min-height: 100vh;
   //z-index: 2;
   //transform: translateZ(0);
@@ -86,25 +87,26 @@ h1, h2 {
     margin : 0 auto;
     padding: 0 20px;
     max-width : 960px;
-    height: 200px;
+    //height: 200px;
   }
 
   .content {
-    position: relative;
+    //position: relative;
     padding: 2em 60px 2em 70px;
   }
 
   h2 {
-    position: absolute;
-    top: 0px;
     margin: 0;
     margin-left: 70px;
     padding-top: 18px;
     font-family: $fontFamilySec;
     font-size: 300%;
-    //font-size: 4vmax;
     font-weight: 100;
   }
+}
+
+#home {
+  height: 40vh;
 }
 
 .amp {
@@ -135,6 +137,7 @@ h1, h2 {
   left: 0;
   width: 100%;
   height: 100%;
+  z-index: -1;
   transform: translateZ(0);
 }
 
@@ -146,6 +149,7 @@ h1, h2 {
   height: 100%;
   transform: translateZ(0);
   visibility: hidden;
+  z-index: -1;
 
   &.skrollable-between {
     visibility: visible;
@@ -157,26 +161,28 @@ h1, h2 {
     left: 0;
     width: 100%;
     height: 150%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    //background-repeat: no-repeat;
+    //background-position: center;
+    //background-size: cover;
     transform: translateZ(0);
     content: "";
+    z-index: -1;
   }
 
   &_speciality:after {
-    background-image: url('./css/home_bg.jpg');
+    //background-image: url('./css/home_bg.jpg');
+    background: sectionGradient(map-get($sections, speciality));
   }
 
   &_prices:after {
-    background-image: url('./css/prices.jpg');
+    background: sectionGradient(map-get($sections, prices));
   }
 
   &_about:after {
-    background-image: url('./css/about.jpg');
+    background: sectionGradient(map-get($sections, about));
   }
 
   &_contact:after {
-    background-image: url('./css/contact.jpg');
+    background: sectionGradient(map-get($sections, contact));
   }
 }

@@ -2,7 +2,7 @@
   $bgColor: map-get($sections, speciality);
   $textColor: #fff;
   @include sectionBg($bgColor);
-  margin-top: 100vh !important;
+  //margin-top: 100vh !important;
   z-index: auto !important;
 
   a {
