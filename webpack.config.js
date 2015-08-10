@@ -50,7 +50,8 @@ module.exports = {
         alias: {}
     },
     devServer: {
-        host: '10.0.1.2',
+        //host: '10.0.1.2',
+        host: 'localhost',
         port: 8081,
         hot: true,
         inline: true,
