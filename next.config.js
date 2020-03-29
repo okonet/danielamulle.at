@@ -1,18 +1,17 @@
-module.exports = {
-  webpack: config => {
+const smartypants = require("@silvenon/remark-smartypants");
+const withMDX = require("next-mdx-frontmatter")({
+  extension: /\.mdx?$/,
+  MDXOptions: {
+    remarkPlugins: [smartypants],
+  },
+});
+module.exports = withMDX({
+  webpack: (config) => {
     // Fixes npm packages that depend on `fs` module
     config.node = {
-      fs: 'empty'
-    }
+      fs: "empty",
+    };
 
-    config.module.rules.push(
-        {
-          test: /\.md$/,
-          loader: 'frontmatter-markdown-loader',
-          options: { mode: ['react-component'] }
-        }
-    )
-
-    return config
-  }
-}
+    return config;
+  },
+});

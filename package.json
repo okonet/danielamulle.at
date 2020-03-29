@@ -13,14 +13,18 @@
     "posttest": "npm run format"
   },
   "dependencies": {
+    "@mdx-js/react": "^1.5.8",
     "next": "^9.3.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },
   "devDependencies": {
+    "@mdx-js/mdx": "^1.5.8",
+    "@silvenon/remark-smartypants": "^0.1.1",
     "frontmatter-markdown-loader": "^3.3.0",
     "husky": ">=4",
     "lint-staged": ">=10",
+    "next-mdx-frontmatter": "^0.0.3",
     "prettier": "^2.0.2"
   },
   "husky": {

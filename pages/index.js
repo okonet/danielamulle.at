@@ -1,30 +1,28 @@
-import React from 'react'
-import Link from 'next/link'
-import Head from '../components/head'
-import Nav from '../components/nav'
-import { attributes, react as HomeContent } from '../content/home.md';
+import React from "react";
+import Head from "../components/head";
+import Nav from "../components/nav";
+import HomeContent, { cats, title } from "../content/home.md";
 
 const Home = () => {
-  let { title, cats } = attributes;
   return (
-      <div>
-        <Head title="Home"/>
-        <Nav/>
+    <div>
+      <Head title="Home" />
+      <Nav />
 
-        <div className="hero">
-          <h1 className="title">{title}</h1>
-          <HomeContent />
-            <ul>
-                {cats.map((cat, k) => (
-                    <li key={k}>
-                        <h2>{cat.name}</h2>
-                        <p>{cat.description}</p>
-                    </li>
-                ))}
-            </ul>
-        </div>
+      <div className="hero">
+        <h1 className="title">{title}</h1>
+        <HomeContent />
+        <ul>
+          {cats.map((cat, k) => (
+            <li key={k}>
+              <h2>{cat.name}</h2>
+              <p>{cat.description}</p>
+            </li>
+          ))}
+        </ul>
+      </div>
 
-        <style jsx>{`
+      <style jsx>{`
         .hero {
           width: 100%;
           color: #333;
@@ -70,8 +68,8 @@ const Home = () => {
           color: #333;
         }
       `}</style>
-      </div>
+    </div>
   );
-}
+};
 
-export default Home
+export default Home;
