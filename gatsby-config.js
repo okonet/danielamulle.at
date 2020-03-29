@@ -23,7 +23,8 @@ module.exports = {
       resolve: "gatsby-theme-ui-blog",
       options: {
         basePath: `/blog`,
-        contentPath: 'content/blog'
+        assetPath: 'content/assets',
+        contentPath: 'content/posts'
       }
     },
     "gatsby-plugin-theme-ui",
