@@ -8,7 +8,9 @@
   "scripts": {
     "dev": "next",
     "build": "next build && next export",
-    "start": "next start"
+    "start": "next start",
+    "format": "prettier --loglevel warn --write \"**/*.{js,css,md}\"",
+    "posttest": "npm run format"
   },
   "dependencies": {
     "next": "^9.3.2",
@@ -16,6 +18,17 @@
     "react-dom": "^16.13.1"
   },
   "devDependencies": {
-    "frontmatter-markdown-loader": "^3.3.0"
+    "frontmatter-markdown-loader": "^3.3.0",
+    "husky": ">=4",
+    "lint-staged": ">=10",
+    "prettier": "^2.0.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,css,md}": "prettier --write"
   }
 }
