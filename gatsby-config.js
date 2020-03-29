@@ -22,7 +22,8 @@ module.exports = {
     {
       resolve: "gatsby-theme-ui-blog",
       options: {
-        basePath: `/blog`
+        basePath: `/blog`,
+        contentPath: 'content/blog'
       }
     },
     "gatsby-plugin-theme-ui",
