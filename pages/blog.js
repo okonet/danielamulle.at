@@ -1,17 +1,14 @@
 import fs from "fs";
 import path from "path";
 import React from "react";
-import dynamic from "next/dynamic";
+import Link from "next/link";
 
 function Post(props) {
-  console.log(props);
-  const DynamicPost = dynamic(() =>
-    import(`../content/posts/${props.filename}`)
-  );
   return (
     <li>
-      <h3>{props.filename}</h3>
-      <DynamicPost />
+      <Link href={`blog/${props.filename.replace(".md", "")}`}>
+        <a>{props.filename}</a>
+      </Link>
     </li>
   );
 }
@@ -33,6 +30,8 @@ export async function getStaticProps() {
   const posts = filenames.map((filename) => {
     const filePath = path.join(postsDirectory, filename);
     const fileContents = fs.readFileSync(filePath, "utf8");
+    // const meta = import(`../content/posts/${filename}`)
+    // console.log(meta);
 
     return {
       filename,
