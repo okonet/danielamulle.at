@@ -18,9 +18,9 @@ module.exports = {
     ],
   },
   plugins: [
+    "gatsby-plugin-react-helmet",
     "gatsby-plugin-netlify-cms",
     "gatsby-plugin-theme-ui",
-    "gatsby-plugin-react-helmet",
     {
       resolve: "gatsby-plugin-mdx",
       options: {
@@ -75,5 +75,6 @@ module.exports = {
         icon: "src/images/gatsby-icon.png", // This path is relative to the root of the site.
       },
     },
+    // "gatsby-plugin-no-javascript",
   ],
 };
