@@ -3,6 +3,10 @@ module.exports = {
     title: "My Blog Title",
     author: "Daniela Mulle",
     description: "My site description...",
+    social: [{
+      name: "Facebook",
+      url: "facebook.com"
+    }]
   },
   plugins: [
     "gatsby-plugin-react-helmet",
