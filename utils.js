@@ -1,5 +1,5 @@
 module.exports = (themeOptions) => {
-  const basePath = themeOptions.basePath || `/`;
+  const basePath = themeOptions.basePath || `/posts`;
   const contentPath = themeOptions.contentPath || `content/posts`;
   const assetPath = themeOptions.assetPath || `content/assets`;
 

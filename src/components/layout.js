@@ -5,12 +5,11 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from "react"
-import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
-
-import Header from "./header"
-import "./layout.css"
+import React from "react";
+import PropTypes from "prop-types";
+import { graphql, useStaticQuery } from "gatsby";
+import { Container, Flex } from "theme-ui";
+import Link from "./Link";
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -18,34 +17,33 @@ const Layout = ({ children }) => {
       site {
         siteMetadata {
           title
+          author
         }
       }
     }
-  `)
+  `);
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
-        <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
-      </div>
+      <Container as="header">
+        <Flex as="nav">
+          <Link href="/">Home</Link>
+          <Link to="/blog/">Blog</Link>
+          <Link href="/about/">About</Link>
+        </Flex>
+      </Container>
+
+      <Container as="main">{children}</Container>
+
+      <Container as="footer">
+        © {data.site.siteMetadata.author}, {new Date().getFullYear()}
+      </Container>
     </>
-  )
-}
+  );
+};
 
 Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-}
+  children: PropTypes.node.isRequired
+};
 
-export default Layout
+export default Layout;

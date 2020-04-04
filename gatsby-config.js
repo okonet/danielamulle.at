@@ -1,21 +1,12 @@
 module.exports = {
   siteMetadata: {
     title: "My Blog Title",
-
-    author: "My Name",
-
+    author: "Daniela Mulle",
     description: "My site description...",
-
-    social: [
-      {
-        name: "Twitter",
-        url: "https://twitter.com/gatsbyjs",
-      },
-      {
-        name: "GitHub",
-        url: "https://github.com/gatsbyjs",
-      },
-    ],
+    social: [{
+      name: "Facebook",
+      url: "facebook.com"
+    }]
   },
   plugins: [
     "gatsby-plugin-react-helmet",

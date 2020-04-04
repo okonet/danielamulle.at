@@ -1,9 +1,9 @@
-const fs = require(`fs`);
-const path = require(`path`);
-const mkdirp = require(`mkdirp`);
-const Debug = require(`debug`);
-const { createFilePath } = require(`gatsby-source-filesystem`);
-const { urlResolve, createContentDigest } = require(`gatsby-core-utils`);
+const fs = require("fs");
+const path = require("path");
+const mkdirp = require("mkdirp");
+const Debug = require("debug");
+const { createFilePath } = require("gatsby-source-filesystem");
+const { urlResolve, createContentDigest } = require("gatsby-core-utils");
 const withDefaults = require("./utils");
 
 const debug = Debug(`my-blog`);
@@ -19,7 +19,7 @@ exports.onPreBootstrap = ({ store }, themeOptions) => {
   ];
 
   dirs.forEach((dir) => {
-    debug(`Initializing ${dir} directory`);
+    debug("Initializing ${dir} directory");
     if (!fs.existsSync(dir)) {
       mkdirp.sync(dir);
     }
@@ -32,7 +32,7 @@ const mdxResolverPassthrough = (fieldName) => async (
   context,
   info
 ) => {
-  const type = info.schema.getType(`Mdx`);
+  const type = info.schema.getType("Mdx");
   const mdxNode = context.nodeModel.getNodeById({
     id: source.parent,
   });
@@ -58,34 +58,34 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
 
   createTypes(
     schema.buildObjectType({
-      name: `MdxBlogPost`,
+      name: "MdxBlogPost",
       fields: {
-        id: { type: `ID!` },
+        id: { type: "ID!" },
         title: {
-          type: `String!`,
+          type: "String!",
         },
         slug: {
-          type: `String!`,
+          type: "String!",
         },
-        date: { type: `Date!`, extensions: { dateformat: {} } },
-        tags: { type: `[String]!` },
-        keywords: { type: `[String]!` },
+        date: { type: "Date!", extensions: { dateformat: {} } },
+        tags: { type: "[String]!" },
+        keywords: { type: "[String]!" },
         excerpt: {
-          type: `String!`,
+          type: "String!",
           args: {
             pruneLength: {
-              type: `Int`,
+              type: "Int",
               defaultValue: 140,
             },
           },
-          resolve: mdxResolverPassthrough(`excerpt`),
+          resolve: mdxResolverPassthrough("excerpt"),
         },
         body: {
-          type: `String!`,
-          resolve: mdxResolverPassthrough(`body`),
+          type: "String!",
+          resolve: mdxResolverPassthrough("body"),
         },
       },
-      interfaces: [`Node`, `BlogPost`],
+      interfaces: ["Node", "BlogPost"],
     })
   );
 };
@@ -100,7 +100,7 @@ exports.onCreateNode = async (
   const { contentPath, basePath } = withDefaults(themeOptions);
 
   // Make sure it's an MDX node
-  if (node.internal.type !== `Mdx`) {
+  if (node.internal.type !== "Mdx") {
     return;
   }
 
@@ -108,7 +108,7 @@ exports.onCreateNode = async (
   const fileNode = getNode(node.parent);
   const source = fileNode.sourceInstanceName;
 
-  if (node.internal.type === `Mdx` && source === contentPath) {
+  if (node.internal.type === "Mdx" && source === contentPath) {
     let slug;
     if (node.frontmatter.slug) {
       if (path.isAbsolute(node.frontmatter.slug)) {
@@ -129,7 +129,7 @@ exports.onCreateNode = async (
       slug = urlResolve(basePath, filePath);
     }
     // normalize use of trailing slash
-    slug = slug.replace(/\/*$/, `/`);
+    slug = slug.replace(/\/*$/, "/");
     const fieldData = {
       title: node.frontmatter.title,
       tags: node.frontmatter.tags || [],
@@ -146,10 +146,10 @@ exports.onCreateNode = async (
       parent: node.id,
       children: [],
       internal: {
-        type: `MdxBlogPost`,
+        type: "MdxBlogPost",
         contentDigest: createContentDigest(fieldData),
         content: JSON.stringify(fieldData),
-        description: `Mdx implementation of the BlogPost interface`,
+        description: "Mdx implementation of the BlogPost interface",
       },
     });
     createParentChildLink({ parent: node, child: getNode(mdxBlogPostId) });
@@ -157,8 +157,8 @@ exports.onCreateNode = async (
 };
 
 // These templates are simply data-fetching wrappers that import components
-const PostTemplate = require.resolve(`./src/templates/post-query`);
-const PostsTemplate = require.resolve(`./src/templates/posts-query`);
+const PostTemplate = require.resolve("./src/templates/post-query");
+const PostsTemplate = require.resolve("./src/templates/posts-query");
 
 exports.createPages = async ({ graphql, actions, reporter }, themeOptions) => {
   const { createPage } = actions;
