@@ -11,6 +11,7 @@ import PropTypes from "prop-types";
 import { graphql, useStaticQuery } from "gatsby";
 import { Container, Flex } from "theme-ui";
 import Link from "./Link";
+import Logo from "./Logo";
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -27,6 +28,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Container as="header">
+          <Logo/>
         <Flex as="nav">
           <Link href="/">Home</Link>
           <Link to="/posts/">Blog</Link>
