@@ -28,7 +28,7 @@ const Layout = ({ children }) => {
       <Container as="header">
         <Flex as="nav">
           <Link href="/">Home</Link>
-          <Link to="/blog/">Blog</Link>
+          <Link to="/posts/">Blog</Link>
           <Link href="/about/">About</Link>
         </Flex>
       </Container>
