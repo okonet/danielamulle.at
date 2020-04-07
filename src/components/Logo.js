@@ -1,6 +1,6 @@
-import React from "react";
-import { graphql, useStaticQuery } from "gatsby";
-import { Box, Flex, Text } from "theme-ui";
+import React from "react"
+import { graphql, useStaticQuery } from "gatsby"
+import { Box, Flex, Text } from "theme-ui"
 
 function Logo(props) {
   const data = useStaticQuery(graphql`
@@ -13,7 +13,7 @@ function Logo(props) {
         }
       }
     }
-  `);
+  `)
 
   return (
     <Flex>
@@ -30,7 +30,7 @@ function Logo(props) {
         </Text>
       </Box>
     </Flex>
-  );
+  )
 }
 
-export default Logo;
+export default Logo

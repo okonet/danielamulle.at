@@ -2,9 +2,9 @@
 // const path = require("path");
 // const mkdirp = require("mkdirp");
 // const Debug = require("debug");
-const { createFilePath } = require("gatsby-source-filesystem");
+const { createFilePath } = require("gatsby-source-filesystem")
 // const { urlResolve, createContentDigest } = require("gatsby-core-utils");
-const withDefaults = require("./utils");
+const withDefaults = require("./utils")
 //
 // const debug = Debug(`my-blog`);
 //
@@ -94,24 +94,24 @@ const withDefaults = require("./utils");
 // Create fields for post slugs and source
 // This will change with schema customization with work
 exports.onCreateNode = async ({ node, getNode, actions }) => {
-  const { createNodeField } = actions;
+  const { createNodeField } = actions
   if (node.internal.type === `Mdx`) {
-    const slug = createFilePath({ node, getNode, basePath: `posts` });
+    const slug = createFilePath({ node, getNode, basePath: `posts` })
     createNodeField({
       node,
       name: `slug`,
       value: slug,
-    });
+    })
   }
-};
+}
 //
 // These templates are simply data-fetching wrappers that import components
-const PostTemplate = require.resolve("./src/templates/post-query");
-const PostsTemplate = require.resolve("./src/templates/posts-query");
+const PostTemplate = require.resolve("./src/templates/post-query")
+const PostsTemplate = require.resolve("./src/templates/posts-query")
 
 exports.createPages = async ({ graphql, actions, reporter }, themeOptions) => {
-  const { createPage } = actions;
-  const { basePath } = withDefaults(themeOptions);
+  const { createPage } = actions
+  const { basePath } = withDefaults(themeOptions)
 
   const result = await graphql(`
     {
@@ -129,21 +129,21 @@ exports.createPages = async ({ graphql, actions, reporter }, themeOptions) => {
         }
       }
     }
-  `);
+  `)
 
   if (result.errors) {
-    reporter.panic(result.errors);
+    reporter.panic(result.errors)
   }
 
   // Create Posts and Post pages.
-  const { allMdx } = result.data;
-  const posts = allMdx.edges;
+  const { allMdx } = result.data
+  const posts = allMdx.edges
 
   // Create a page for each Post
   posts.forEach(({ node: post }, index) => {
-    const previous = index === posts.length - 1 ? null : posts[index + 1];
-    const next = index === 0 ? null : posts[index - 1];
-    const { slug } = post.fields;
+    const previous = index === posts.length - 1 ? null : posts[index + 1]
+    const next = index === 0 ? null : posts[index - 1]
+    const { slug } = post.fields
     createPage({
       path: slug,
       component: PostTemplate,
@@ -152,13 +152,13 @@ exports.createPages = async ({ graphql, actions, reporter }, themeOptions) => {
         previousId: previous ? previous.node.id : undefined,
         nextId: next ? next.node.id : undefined,
       },
-    });
-  });
+    })
+  })
 
   // // Create the Posts page
   createPage({
     path: basePath,
     component: PostsTemplate,
     context: {},
-  });
-};
+  })
+}

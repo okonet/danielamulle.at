@@ -6,12 +6,12 @@
  */
 
 import "typeface-pacifico"
-import React from "react";
-import PropTypes from "prop-types";
-import { graphql, useStaticQuery } from "gatsby";
-import { Container, Flex } from "theme-ui";
-import Link from "./Link";
-import Logo from "./Logo";
+import React from "react"
+import PropTypes from "prop-types"
+import { graphql, useStaticQuery } from "gatsby"
+import { Container, Flex } from "theme-ui"
+import Link from "./Link"
+import Logo from "./Logo"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -23,12 +23,12 @@ const Layout = ({ children }) => {
         }
       }
     }
-  `);
+  `)
 
   return (
     <>
       <Container as="header">
-          <Logo/>
+        <Logo />
         <Flex as="nav">
           <Link href="/">Home</Link>
           <Link to="/posts/">Blog</Link>
@@ -42,11 +42,11 @@ const Layout = ({ children }) => {
         © {data.site.siteMetadata.author}, {new Date().getFullYear()}
       </Container>
     </>
-  );
-};
+  )
+}
 
 Layout.propTypes = {
-  children: PropTypes.node.isRequired
-};
+  children: PropTypes.node.isRequired,
+}
 
-export default Layout;
+export default Layout
