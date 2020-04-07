@@ -1,6 +1,7 @@
+/* @jsx jsx */
 import React from "react"
-import { graphql, useStaticQuery } from "gatsby"
-import { Box, Flex, Text } from "theme-ui"
+import { Box, jsx, Text } from "theme-ui"
+import { graphql, Link, useStaticQuery } from "gatsby"
 
 function Logo(props) {
   const data = useStaticQuery(graphql`
@@ -16,20 +17,42 @@ function Logo(props) {
   `)
 
   return (
-    <Flex>
+    <Link
+      to={"/"}
+      activeClassName="active"
+      sx={{
+        display: "inline-flex",
+        textDecoration: "none",
+        "> img": {
+          transition: "transform 0.5s",
+        },
+        ":hover:not(.active) > img": {
+          transform: "rotate(360deg)",
+        },
+      }}
+    >
       <img {...data.image.childImageSharp.fixed} alt="Logo" />
       <Box sx={{ ml: 2 }}>
-        <Text as="p" sx={{ m: 0, fontFamily: "body", fontSize: 0 }}>
+        <Text
+          as="p"
+          sx={{ m: 0, color: "text", fontFamily: "body", fontSize: 0 }}
+        >
           Diätologin & Ernährungswissenschafterin
         </Text>
         <Text
           as="h1"
-          sx={{ m: 0, fontFamily: "heading", fontWeight: "body", fontSize: 5 }}
+          sx={{
+            m: 0,
+            color: "text",
+            fontFamily: "heading",
+            fontWeight: "body",
+            fontSize: 5,
+          }}
         >
           Daniela Mulle
         </Text>
       </Box>
-    </Flex>
+    </Link>
   )
 }
 
