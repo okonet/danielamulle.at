@@ -1,12 +1,9 @@
 import React from "react"
-import { Grid } from "theme-ui"
-
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
-import Link from "../components/Link"
+import { Box } from "theme-ui"
 import { graphql, useStaticQuery } from "gatsby"
-import Img from "gatsby-image"
+import Layout from "../components/layout"
+import SEO from "../components/seo"
+import Home from "../../content/home.md"
 
 const IndexPage = () => {
   const portrait = useStaticQuery(graphql`
@@ -24,7 +21,7 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO title="Home" />
-      <Grid
+      <Box
         gap={3}
         sx={{
           height: "100vh",
@@ -33,10 +30,8 @@ const IndexPage = () => {
           backgroundPosition: "right bottom",
         }}
       >
-        <h1>Hi people</h1>
-        <p>Welcome to your new Gatsby site.</p>
-        <p>Now go build something great.</p>
-      </Grid>
+        <Home />
+      </Box>
     </Layout>
   )
 }

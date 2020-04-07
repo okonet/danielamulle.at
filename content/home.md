@@ -1,0 +1,8 @@
+# Hallo!
+
+Ich heiße Daniela Mulle und ich bin Diätologin & Ernährungswissenschafterin aus Leidenschaft. Ich habe mich im Lauf meiner Arbeit auf folgende Bereiche spezialisiert:
+
+- Lebensmittelunverträglichkeiten,
+- Reizdarm-Syndrom,
+- Nährstoff-Lücken,
+- Krebs & Ernährung sowie Bioelektrische Impedanzanalyse (BIA).

@@ -26,11 +26,17 @@ export default {
     body: "normal",
     caps: "0.2em",
   },
+  radii: {
+    small: 2,
+    medium: 5,
+    round: 99999,
+  },
   layout: {
     narrow: {
       maxWidth: 800,
     },
     container: {
+      p: 4,
       maxWidth: 1024,
     },
   },

@@ -54,9 +54,6 @@ module.exports = {
           { resolve: "gatsby-remark-smartypants" },
         ],
         remarkPlugins: [require("remark-slug")],
-        defaultLayouts: {
-          default: require.resolve("./src/components/layout.js"),
-        },
       },
     },
     {
