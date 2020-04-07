@@ -1,0 +1,17 @@
+# Wie
+
+## Wie ich dich unterstütze
+
+Du und deine Ernährungsthemen stehen bei mir im Mittelpunkt: Zuerst bespreche ich mit dir dein alltägliches Essen & Trinken, sowie deine aktuellen Beschwerden & Anliegen. Daraus ergibt sich dein individueller Ernährungs(therapie)plan. Mit auf dich abgestimmten Empfehlungen und passenden Tipps & Tricks helfe ich dir, diesen Plan in deinem Alltag zu realisieren. Dabei kannst du entscheiden, ob ich dir den Weg zu deinem Ernährungsziel zeigen, oder dich bis an dein Ernährungsziel begleiten soll.
+
+### Beratung
+
+Wir erheben zuerst den Istzustand. Gemeinsam erarbeiten wir daraus deinen perönlichen Ernährungs(therapie)plan. Ich beantworte all deine Fragen, und zeige dir mit erprobten Tipps & Empfehlungen den Weg zu deinem Ernährungsziel
+
+### Coaching
+
+Falls du umfangreichere Beschwerden oder Anliegen hast, bin ich gerne deine Begleiterin auf deinem Weg zum Ernährungsziel. Dazu sehen oder hören wir uns regelmäßig
+
+### Messung
+
+Mit der BIA (Bioelektrische Impedanzanalyse) bestimme ich den genauen Muskel-, Wasser- und Fettgehalt deines Körpers. So können wir z.B. den Erfolg deiner Ernährungsumstellung ideal kontrollieren und optimieren

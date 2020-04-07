@@ -1,10 +1,13 @@
 import React from "react"
 import { Box, Flex } from "theme-ui"
 import { graphql, useStaticQuery } from "gatsby"
+import Img from "gatsby-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Home from "../../content/home.md"
-import Img from "gatsby-image"
+import How from "../../content/how.md"
+import Focus from "../../content/focus.md"
+import About from "../../content/about.md"
 
 const IndexPage = () => {
   const portrait = useStaticQuery(graphql`
@@ -45,6 +48,10 @@ const IndexPage = () => {
           <Img fluid={imgData} />
         </Box>
       </Flex>
+
+      <How />
+      <Focus />
+      <About />
     </Layout>
   )
 }

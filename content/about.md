@@ -1,0 +1,11 @@
+# Über mich
+
+Ich bin Diätologin & Ernährungswissenschafterin aus Leidenschaft. Ich habe mich im Lauf meiner Arbeit auf folgende Bereiche spezialisiert: Lebensmittelunverträglichkeiten, Reizdarm-Syndrom, Nährstoff-Lücken, Krebs & Ernährung sowie Bioelektrische Impedanzanalyse (BIA). Privat bin ich stolze Mutter zweier Buben, geboren Mai 2015 und Juni 2018, die mich auf Trab halten. Meine Hobbies sind Sport – Laufen, Radfahren, Dressurreiten, Schwimmen, Snowboarden – Kulinarik und Ensemblegesang.
+
+## Ausbildung
+
+Studium der Ernährungswissenschaften in Wien mit Auslandsaufenthalt in Cork (Irland), Diplomarbeit in Sydney (Australien), Lehrgang “Angewandte Ernährungstherapie” der FH St. Pölten, Zertifikats-Ausbildung „FODMAP-arme Ernährung bei Reizdarmsyndrom“ der Monash University Melbourne (Australien), regelmäßige Fortbildungen im In- und Ausland
+
+## Berufserfahrung
+
+Wilhelminenspital Wien, Kinderklinik AKH Wien, Onkologische Ambulanz und -Tagesklinik AKH Wien, Landesklinikum Tulln, Reha-Zentrum für Neurologie -Herz-Kreislauf – Lunge & Onkologie in Münster/Tirol, SVA-Gesundheitszentrum Wien, Wiener Privatklinik, Allergiefachklinik in Inzell/Deutschland
