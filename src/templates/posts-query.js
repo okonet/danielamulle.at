@@ -11,6 +11,7 @@ export const query = graphql`
     ) {
       edges {
         node {
+          id
           fields {
             slug
           }
@@ -18,6 +19,13 @@ export const query = graphql`
             date(locale: "de", formatString: "DD MMMM YYYY")
             description
             title
+            coverImage {
+              childImageSharp {
+                fluid(maxWidth: 300) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
           }
         }
       }

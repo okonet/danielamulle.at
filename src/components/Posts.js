@@ -1,21 +1,28 @@
 import React from "react"
+import { Grid, Card } from "theme-ui"
 import SEO from "../components/seo"
 import Layout from "../components/layout"
 import Link from "../components/Link"
+import Img from "gatsby-image"
 
 export default ({ data }) => {
-  console.log(data)
   return (
     <Layout>
       <SEO title="Blog" />
-      <ul>
+      <Grid gap={4} columns={2}>
         {data.allMdx.edges.map(({ node: post }) => (
-          <li key={post.id}>
-            <Link to={post.fields.slug}>{post.frontmatter.title}</Link>
-          </li>
+          <Link to={post.fields.slug}>
+            <Card key={post.id}>
+              {post.frontmatter.coverImage && (
+                <Img
+                  fluid={post.frontmatter.coverImage.childImageSharp.fluid}
+                />
+              )}
+              {post.frontmatter.title}
+            </Card>
+          </Link>
         ))}
-      </ul>
-      <pre>{JSON.stringify(data, null, 2)}</pre>
+      </Grid>
     </Layout>
   )
 }
