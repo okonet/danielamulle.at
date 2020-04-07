@@ -1,9 +1,10 @@
 import React from "react"
-import { Box } from "theme-ui"
+import { Box, Flex } from "theme-ui"
 import { graphql, useStaticQuery } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Home from "../../content/home.md"
+import Img from "gatsby-image"
 
 const IndexPage = () => {
   const portrait = useStaticQuery(graphql`
@@ -21,17 +22,29 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO title="Home" />
-      <Box
-        gap={3}
-        sx={{
-          height: "100vh",
-          backgroundImage: `url(${imgData.src})`,
-          backgroundRepeat: "no-repeat",
-          backgroundPosition: "right bottom",
-        }}
+      <Flex
+        sx={
+          {
+            // height: "100vh",
+          }
+        }
       >
-        <Home />
-      </Box>
+        <Box
+          sx={{
+            flex: 1,
+          }}
+        >
+          <Home />
+        </Box>
+        <Box
+          sx={{
+            flex: 1,
+            width: "50%",
+          }}
+        >
+          <Img fluid={imgData} />
+        </Box>
+      </Flex>
     </Layout>
   )
 }
