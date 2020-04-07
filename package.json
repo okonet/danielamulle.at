@@ -30,16 +30,26 @@
     "gatsby-remark-copy-linked-files": "^2.2.1",
     "gatsby-remark-smartypants": "^2.2.1",
     "gatsby-transformer-sharp": "^2.4.3",
+    "husky": ">=4",
+    "lint-staged": ">=10",
     "prettier": "^1.19.1",
     "remark-slug": "^6.0.0"
   },
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop -H 0.0.0.0",
-    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "format": "prettier --loglevel warn --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx,json,md}": "prettier --write"
   }
 }
