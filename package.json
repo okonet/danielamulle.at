@@ -37,6 +37,7 @@
   },
   "scripts": {
     "build": "gatsby build",
+    "predevelop": "npm run clean",
     "develop": "gatsby develop -H 0.0.0.0",
     "format": "prettier --loglevel warn --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
