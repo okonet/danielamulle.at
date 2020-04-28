@@ -1,8 +1,22 @@
+import { shade, tint } from "polished"
+
+// Creates each four darker and lighter accents from passed hex color
+const createAccents = (color, length = 4, steps = 0.25) => {
+  const darkAccents = Array.from({ length: length - 1 }, (_, index) =>
+    shade(Math.min(steps * (index + 1), 1), color)
+  )
+  const lightAccents = Array.from({ length }, (_, index) =>
+    tint(Math.min(steps * index, 1), color)
+  )
+
+  return [...darkAccents.reverse(), ...lightAccents]
+}
+
 const palette = {
-  pink: ["#e23871"],
-  cyan: ["#05a8cd"],
-  orange: ["#ff9c00"],
-  green: ["#74a308"],
+  pink: createAccents("#e23871"),
+  cyan: createAccents("#05a8cd"),
+  orange: createAccents("#ff9c00"),
+  green: createAccents("#74a308"),
 }
 
 export default {

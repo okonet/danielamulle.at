@@ -12,18 +12,15 @@ const NavLink = React.forwardRef((props, ref) => {
       {...rest}
       sx={{
         position: "relative",
-        color: "text",
+        color: activeColor,
         textDecoration: "none",
         fontFamily: "heading",
-        fontSize: 3,
-        transition: "all 0.25s",
+        fontSize: 4,
         "&:hover": {
           color: activeColor,
-          fontSize: 5,
         },
         "&.active": {
           color: activeColor,
-          fontSize: 5,
         },
         ...sx,
       }}
@@ -35,17 +32,17 @@ const screens = [
   {
     title: "Home",
     to: "/",
-    color: "#ff0055",
+    color: "pink.3",
   },
   {
     title: "Rezepte",
     to: "/posts",
-    color: "#0099ff",
+    color: "orange.3",
   },
   {
     title: "About",
     to: "/about",
-    color: "#22cc88",
+    color: "green.3",
   },
 ]
 
@@ -57,7 +54,7 @@ const Navigation = (props) => {
       sx={{
         transform: "translateZ(0)",
         alignItems: "center",
-        gap: 3,
+        gap: 4,
         ...props.sx,
       }}
     >
