@@ -8,9 +8,9 @@ export default {
   },
   fonts: {
     body:
-      'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif',
-    heading: "Pacifico, Georgia, serif",
-    monospace: "MonoLisa, Menlo, monospace",
+      '"IBM Plex Serif", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif',
+    heading: '"IBM Plex Sans", Georgia, serif',
+    monospace: '"IBM Plex Mono", MonoLisa, Menlo, monospace',
   },
   fontSizes: [12, 14, 16, 20, 24, 32, 48, 64],
   fontWeights: {

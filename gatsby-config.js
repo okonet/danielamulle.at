@@ -11,6 +11,28 @@ module.exports = {
     ],
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: "IBM Plex Sans",
+            subsets: ["latin-ext"],
+            variants: ["400", "400i", "700", "700i"],
+          },
+          {
+            family: "IBM Plex Serif",
+            subsets: ["latin-ext"],
+            variants: ["400", "400i", "700", "700i"],
+          },
+          {
+            family: "IBM Plex Mono",
+            subsets: ["latin-ext"],
+            variants: ["400", "400i", "700", "700i"],
+          },
+        ],
+      },
+    },
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-netlify-cms",
     "gatsby-plugin-theme-ui",
