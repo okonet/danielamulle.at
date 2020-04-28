@@ -1,5 +1,13 @@
+const palette = {
+  pink: ["#e23871"],
+  cyan: ["#05a8cd"],
+  orange: ["#ff9c00"],
+  green: ["#74a308"],
+}
+
 export default {
   colors: {
+    ...palette,
     text: "#26150e",
     background: "#EDC596",
     primary: "#07c",

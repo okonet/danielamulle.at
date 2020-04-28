@@ -5,6 +5,7 @@
   "description": "danielamulle.at public website",
   "author": "Andrey Okonetchnikov <andrey@okonet.ru>",
   "dependencies": {
+    "@component-driven/react-design-tokens": "^2.1.0",
     "gatsby": "^2.19.45",
     "gatsby-image": "^2.2.44",
     "gatsby-plugin-manifest": "^2.2.48",

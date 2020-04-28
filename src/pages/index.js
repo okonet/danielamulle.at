@@ -26,11 +26,9 @@ const IndexPage = () => {
     <Layout>
       <SEO title="Home" />
       <Flex
-        sx={
-          {
-            // height: "100vh",
-          }
-        }
+        sx={{
+          height: "100vh",
+        }}
       >
         <Box
           sx={{

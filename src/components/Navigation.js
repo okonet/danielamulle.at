@@ -38,7 +38,7 @@ const screens = [
     color: "#ff0055",
   },
   {
-    title: "Blog",
+    title: "Rezepte",
     to: "/posts",
     color: "#0099ff",
   },
