@@ -20,4 +20,8 @@ collections:
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Cover", name: "coverImage", widget: "image" }
+      - { label: "Time to prepare (minutes)", name: "timeToCook", widget: "number" }
       - { label: "Body", name: "body", widget: "markdown" }
+      - label: "Ingredients"
+        name: "ingredients"
+        widget: "list"

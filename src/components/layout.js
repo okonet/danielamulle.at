@@ -8,7 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { graphql, useStaticQuery } from "gatsby"
-import { Container, Flex } from "theme-ui"
+import { Box, Container, Flex } from "theme-ui"
 import Logo from "./Logo"
 import Navigation from "./Navigation"
 
@@ -26,14 +26,16 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Container as="header">
-        <Flex>
-          <Logo />
-          <Navigation sx={{ ml: "auto" }} />
-        </Flex>
-      </Container>
+      <Box as={"header"} sx={{ bg: "orange.6", p: 4 }}>
+        <Container>
+          <Flex>
+            <Logo />
+            <Navigation sx={{ ml: "auto" }} />
+          </Flex>
+        </Container>
+      </Box>
 
-      <Container as="main">{children}</Container>
+      <main>{children}</main>
 
       <Container as="footer">
         © {data.site.siteMetadata.author}, {new Date().getFullYear()}

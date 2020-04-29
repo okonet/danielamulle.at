@@ -11,6 +11,16 @@ export const query = graphql`
       frontmatter {
         title
         date(locale: "de", formatString: "DD MMMM YYYY")
+        timeToCook
+        ingredients
+        coverImage {
+          absolutePath
+          childImageSharp {
+            fluid(maxWidth: 400) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
       body
     }

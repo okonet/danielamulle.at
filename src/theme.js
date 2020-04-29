@@ -23,7 +23,7 @@ export default {
   colors: {
     ...palette,
     text: "#26150e",
-    background: "#EDC596",
+    background: "#fff",
     primary: "#07c",
     secondary: "#05a",
     muted: "#f6f6f6",
@@ -53,12 +53,14 @@ export default {
     medium: 5,
     round: 99999,
   },
+  shadows: {
+    float: "0px 4px 16px rgba(29, 78, 105, 0.05);",
+  },
   layout: {
     narrow: {
       maxWidth: 800,
     },
     container: {
-      p: 4,
       maxWidth: 1024,
     },
   },
