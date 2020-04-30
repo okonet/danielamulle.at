@@ -3,9 +3,8 @@ import React from "react"
 import { jsx } from "theme-ui"
 import { Link } from "gatsby"
 
-export default (props) => (
+export default ({ sx, ...props }) => (
   <Link
-    {...props}
     activeClassName="active"
     sx={{
       color: "inherit",
@@ -15,6 +14,8 @@ export default (props) => (
       "&.active": {
         color: "accent",
       },
+      ...sx,
     }}
+    {...props}
   />
 )

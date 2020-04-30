@@ -4,6 +4,7 @@ import Img from "gatsby-image"
 import { Box, Container, Flex, Grid, Styled, ThemeProvider } from "theme-ui"
 import Layout from "./layout"
 import { recipesTheme } from "../theme"
+import Link from "../components/Link"
 
 export default ({ data }) => {
   return (
@@ -13,6 +14,18 @@ export default ({ data }) => {
           <Container>
             <Grid gap={2} columns={[1, 2]}>
               <Box>
+                <Link
+                  to={"/posts"}
+                  sx={{
+                    color: "orange.2",
+                    fontSize: 0,
+                    fontFamily: "monospace",
+                    fontWeight: "heading",
+                    textDecoration: "none",
+                  }}
+                >
+                  ← Rezepte
+                </Link>
                 <Styled.h1>{data.mdx.frontmatter.title}</Styled.h1>
                 <Box>
                   <datetime>{data.mdx.frontmatter.date}</datetime>
@@ -50,14 +63,33 @@ export default ({ data }) => {
         >
           <Styled.h2>Zutaten</Styled.h2>
           {data.mdx.frontmatter.ingredients && (
-            <ul>
+            <Box
+              as="ul"
+              sx={{
+                mt: 3,
+                pl: 0,
+                listStyle: "none",
+                fontFamily: "monospace",
+                fontSize: 0,
+              }}
+            >
               {data.mdx.frontmatter.ingredients.map((item) => (
-                <li key={item}>{item}</li>
+                <Box
+                  as="li"
+                  key={item}
+                  sx={{
+                    mb: 2,
+                  }}
+                >
+                  {item}
+                </Box>
               ))}
-            </ul>
+            </Box>
           )}
         </Box>
-        <MDXRenderer>{data.mdx.body}</MDXRenderer>
+        <Box sx={{ my: 4 }}>
+          <MDXRenderer>{data.mdx.body}</MDXRenderer>
+        </Box>
       </Container>
     </Layout>
   )

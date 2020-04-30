@@ -73,11 +73,14 @@ const theme = {
       color: "accent",
     },
     h1: {
+      m: 0,
+      mb: 4,
       color: "accent",
       fontSize: 3,
       fontFamily: "body",
     },
     h2: {
+      m: 0,
       color: "text",
       fontSize: 1,
       fontWeight: "bold",
