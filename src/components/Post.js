@@ -5,74 +5,76 @@ import { Box, Container, Flex, Grid, Styled, ThemeProvider } from "theme-ui"
 import Layout from "./layout"
 import { recipesTheme } from "../theme"
 import Link from "../components/Link"
+import Section from "./Section"
 
 export default ({ data }) => {
   return (
     <Layout>
-      <ThemeProvider theme={recipesTheme}>
-        <Box sx={{ bg: "background" }}>
-          <Container>
-            <Grid gap={2} columns={[1, 2]}>
-              <Box>
-                <Link
-                  to={"/posts"}
-                  sx={{
-                    color: "muted",
-                    fontSize: 0,
-                    fontFamily: "monospace",
-                    fontWeight: "heading",
-                    textDecoration: "none",
-                  }}
-                >
-                  ← Rezepte
-                </Link>
-                <Styled.h1>{data.mdx.frontmatter.title}</Styled.h1>
-                <Grid
-                  gap={2}
-                  sx={{
-                    fontFamily: "monospace",
-                    color: "muted",
-                  }}
-                >
-                  <Box as="p">
-                    <datetime>{data.mdx.frontmatter.date}</datetime>
-                  </Box>
-                  <Box as="p">
-                    Zeit:{" "}
-                    <datetime> {data.mdx.frontmatter.timeToCook} min</datetime>
-                  </Box>
-                </Grid>
+      <Section name="recipes">
+        <Grid gap={2} columns={[1, 2]}>
+          <Box>
+            <Link
+              to={"/posts"}
+              sx={{
+                color: "muted",
+                fontSize: 0,
+                fontFamily: "monospace",
+                fontWeight: "heading",
+                textDecoration: "none",
+              }}
+            >
+              ← Rezepte
+            </Link>
+            <Styled.h1>{data.mdx.frontmatter.title}</Styled.h1>
+            <Grid
+              gap={2}
+              sx={{
+                fontSize: 0,
+                fontFamily: "monospace",
+                color: "muted",
+                mb: 4,
+              }}
+            >
+              <Box as="p">
+                <datetime>{data.mdx.frontmatter.date}</datetime>
               </Box>
-              <Box
-                sx={{
-                  p: [0, 2],
-                  mb: [0, -5],
-                  bg: "gray.6",
-                  transform: ["none", "rotate(4deg)"],
-                  boxShadow: ["none", "float"],
-                }}
-              >
-                <Img
-                  fluid={data.mdx.frontmatter.coverImage.childImageSharp.fluid}
-                />
+              <Box as="p">
+                Zeit:{" "}
+                <datetime> {data.mdx.frontmatter.timeToCook} min</datetime>
               </Box>
             </Grid>
-          </Container>
-        </Box>
-      </ThemeProvider>
-      <Container>
-        <Box
-          sx={{
-            p: 4,
-            mx: -4,
-            mt: [0, -4],
-            bg: "background",
-            borderRadius: "medium",
-            boxShadow: ["none", "float"],
-          }}
-        >
-          <Styled.h2>Zutaten</Styled.h2>
-          {data.mdx.frontmatter.ingredients && (
+          </Box>
+          <Box
+            sx={{
+              p: [0, 2],
+              mb: [-4, -5],
+              mx: [-4, 0],
+              bg: "gray.6",
+              transform: ["none", "rotate(4deg)"],
+              boxShadow: ["none", "float"],
+              height: "fit-content",
+            }}
+          >
+            <Img
+              fluid={data.mdx.frontmatter.coverImage.childImageSharp.fluid}
+            />
+          </Box>
+        </Grid>
+      </Section>
+      <Section>
+        {data.mdx.frontmatter.ingredients && (
+          <Box
+            sx={{
+              p: [0, 4],
+              mx: [0, -2],
+              mt: [0, -5],
+              bg: "background",
+              borderRadius: ["none", "medium"],
+              boxShadow: ["none", "float"],
+            }}
+          >
+            <Styled.h2>Zutaten</Styled.h2>
+
             <Box
               as="ul"
               sx={{
@@ -95,12 +97,12 @@ export default ({ data }) => {
                 </Box>
               ))}
             </Box>
-          )}
-        </Box>
+          </Box>
+        )}
         <Box sx={{ my: 4 }}>
           <MDXRenderer>{data.mdx.body}</MDXRenderer>
         </Box>
-      </Container>
+      </Section>
     </Layout>
   )
 }

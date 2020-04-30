@@ -12,7 +12,9 @@ export default ({ data }) => {
       <SEO title="Rezepte" />
       <Section name="recipes">
         <Styled.h1>Rezepte für jeden Tag</Styled.h1>
-        <Grid gap={4} columns={3}>
+      </Section>
+      <Section>
+        <Grid gap={4} columns={[1, 3]}>
           {data.allMdx.edges.map(({ node: post }) => (
             <Link to={post.fields.slug}>
               <Card key={post.id}>

@@ -77,7 +77,7 @@ const theme = {
       m: 0,
       mb: 4,
       color: "accent",
-      fontSize: 3,
+      fontSize: [2, 3],
       fontFamily: "body",
     },
     h2: {

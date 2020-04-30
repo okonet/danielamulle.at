@@ -1,7 +1,7 @@
 import * as React from "react"
 import * as PropTypes from "prop-types"
 import { Box, Container, ThemeProvider } from "theme-ui"
-import { aboutTheme, howTheme, recipesTheme, whatTheme } from "../theme"
+import theme, { aboutTheme, howTheme, recipesTheme, whatTheme } from "../theme"
 
 function getTheme(name) {
   switch (name) {
@@ -18,24 +18,26 @@ function getTheme(name) {
       return recipesTheme
     }
     default: {
-      return recipesTheme
+      return theme
     }
   }
 }
 
-function Section({ name, ...props }) {
+function Section({ name, children, sx, ...props }) {
   const theme = getTheme(name)
   return (
     <ThemeProvider theme={theme}>
       <Box
+        as="section"
         sx={{
-          overflow: "hidden",
+          p: 4,
           bg: "background",
           color: "text",
-          height: "100vh",
+          ...sx,
         }}
+        {...props}
       >
-        <Container {...props} />
+        <Container>{children}</Container>
       </Box>
     </ThemeProvider>
   )
