@@ -2,6 +2,7 @@
 import React from "react"
 import { Box, jsx, Text } from "theme-ui"
 import { graphql, Link, useStaticQuery } from "gatsby"
+import Img from "gatsby-image"
 
 function Logo(props) {
   const data = useStaticQuery(graphql`
@@ -22,16 +23,17 @@ function Logo(props) {
       activeClassName="active"
       sx={{
         display: "inline-flex",
+        alignItems: "center",
         textDecoration: "none",
-        "> img": {
+        "> .gatsby-image-wrapper": {
           transition: "transform 0.5s",
         },
-        ":hover:not(.active) > img": {
+        ":hover:not(.active) > .gatsby-image-wrapper": {
           transform: "rotate(360deg)",
         },
       }}
     >
-      <img {...data.image.childImageSharp.fixed} alt="Logo" />
+      <Img fixed={data.image.childImageSharp.fixed} alt="Logo" />
       <Box sx={{ ml: 2 }}>
         <Text
           as="p"
