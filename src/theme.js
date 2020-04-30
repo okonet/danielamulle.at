@@ -56,7 +56,7 @@ const theme = {
   },
   shadows: {
     none: "none",
-    float: "0px 4px 16px rgba(29, 78, 105, 0.05);",
+    float: "0px 4px 16px rgba(25, 25, 25, 0.075);",
   },
   layout: {
     narrow: {
@@ -119,7 +119,7 @@ export const recipesTheme = {
     ...theme.colors,
     text: palette.orange[1],
     background: palette.orange[6],
-    muted: palette.orange[4],
+    muted: "#ACA18F",
     accent: palette.orange[3],
   },
 }

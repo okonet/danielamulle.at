@@ -9,8 +9,10 @@ function Hint(props) {
         p: 3,
         mx: -3,
         my: 3,
-        bg: "teal.6",
-        color: "teal.3",
+        bg: "gray.5",
+        color: "gray.2",
+        borderLeft: "4px solid",
+        borderLeftColor: "orange.3",
         borderRadius: "medium",
         fontStyle: "italic",
         "> *": {

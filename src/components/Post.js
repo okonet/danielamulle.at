@@ -17,7 +17,7 @@ export default ({ data }) => {
                 <Link
                   to={"/posts"}
                   sx={{
-                    color: "orange.2",
+                    color: "muted",
                     fontSize: 0,
                     fontFamily: "monospace",
                     fontWeight: "heading",
@@ -27,12 +27,21 @@ export default ({ data }) => {
                   ← Rezepte
                 </Link>
                 <Styled.h1>{data.mdx.frontmatter.title}</Styled.h1>
-                <Box>
-                  <datetime>{data.mdx.frontmatter.date}</datetime>
-                </Box>
-                <Box>
-                  <datetime>{data.mdx.frontmatter.timeToCook} min</datetime>
-                </Box>
+                <Grid
+                  gap={2}
+                  sx={{
+                    fontFamily: "monospace",
+                    color: "muted",
+                  }}
+                >
+                  <Box as="p">
+                    <datetime>{data.mdx.frontmatter.date}</datetime>
+                  </Box>
+                  <Box as="p">
+                    Zeit:{" "}
+                    <datetime> {data.mdx.frontmatter.timeToCook} min</datetime>
+                  </Box>
+                </Grid>
               </Box>
               <Box
                 sx={{
@@ -58,6 +67,7 @@ export default ({ data }) => {
             mx: -4,
             mt: [0, -4],
             bg: "background",
+            borderRadius: "medium",
             boxShadow: ["none", "float"],
           }}
         >
@@ -70,7 +80,7 @@ export default ({ data }) => {
                 pl: 0,
                 listStyle: "none",
                 fontFamily: "monospace",
-                fontSize: 0,
+                fontSize: 1,
               }}
             >
               {data.mdx.frontmatter.ingredients.map((item) => (
