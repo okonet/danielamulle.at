@@ -18,6 +18,7 @@ export const palette = {
   cyan: createAccents("#05a8cd"),
   orange: createAccents("#ff9c00"),
   green: createAccents("#74a308"),
+  teal: createAccents("#01817D"),
 }
 
 const theme = {
@@ -25,7 +26,7 @@ const theme = {
     ...palette,
     text: palette.gray[1],
     background: palette.gray[6],
-    muted: palette.gray[5],
+    muted: palette.gray[4],
     accent: "#07c",
   },
   fonts: {
@@ -108,7 +109,7 @@ export const aboutTheme = {
     ...theme.colors,
     text: palette.pink[1],
     background: palette.pink[6],
-    muted: palette.pink[5],
+    muted: palette.pink[4],
     accent: palette.pink[3],
   },
 }
@@ -118,7 +119,7 @@ export const recipesTheme = {
     ...theme.colors,
     text: palette.orange[1],
     background: palette.orange[6],
-    muted: palette.orange[5],
+    muted: palette.orange[4],
     accent: palette.orange[3],
   },
 }
@@ -128,7 +129,7 @@ export const whatTheme = {
     ...theme.colors,
     text: palette.cyan[1],
     background: palette.cyan[6],
-    muted: palette.cyan[5],
+    muted: palette.cyan[4],
     accent: palette.cyan[3],
   },
 }
@@ -138,7 +139,7 @@ export const howTheme = {
     ...theme.colors,
     text: palette.green[1],
     background: palette.green[6],
-    muted: palette.green[5],
+    muted: palette.green[4],
     accent: palette.green[3],
   },
 }
