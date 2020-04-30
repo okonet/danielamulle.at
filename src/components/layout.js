@@ -8,11 +8,12 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { graphql, useStaticQuery } from "gatsby"
-import { Box, Container, Flex } from "theme-ui"
+import { Box, Container, Flex, ThemeProvider } from "theme-ui"
 import Logo from "./Logo"
 import Navigation from "./Navigation"
+import { default as defaultTheme } from "../theme"
 
-const Layout = ({ children }) => {
+const Layout = ({ theme = defaultTheme, children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -26,14 +27,20 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Box as={"header"} sx={{ bg: "orange.6", p: 4 }}>
-        <Container>
-          <Flex>
-            <Logo />
-            <Navigation sx={{ ml: "auto" }} />
-          </Flex>
-        </Container>
-      </Box>
+      <ThemeProvider theme={theme}>
+        <Box as={"header"} sx={{ bg: "background", p: 4 }}>
+          <Container variant="full">
+            <Box
+              sx={{
+                display: ["block", "flex"],
+              }}
+            >
+              <Logo />
+              <Navigation sx={{ ml: "auto" }} />
+            </Box>
+          </Container>
+        </Box>
+      </ThemeProvider>
 
       <main>{children}</main>
 

@@ -27,7 +27,7 @@ const theme = {
     text: palette.gray[1],
     background: palette.gray[6],
     muted: palette.gray[4],
-    accent: "#07c",
+    accent: palette.green[3],
   },
   fonts: {
     body:
@@ -59,11 +59,11 @@ const theme = {
     float: "0px 4px 16px rgba(25, 25, 25, 0.075);",
   },
   layout: {
-    narrow: {
-      maxWidth: 800,
+    full: {
+      maxWidth: 1024,
     },
     container: {
-      maxWidth: 1024,
+      maxWidth: 880,
     },
   },
   styles: {

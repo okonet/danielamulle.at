@@ -9,7 +9,7 @@ import Section from "./Section"
 
 export default ({ data }) => {
   return (
-    <Layout>
+    <Layout theme={recipesTheme}>
       <Section name="recipes">
         <Grid gap={2} columns={[1, 2]}>
           <Box>

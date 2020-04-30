@@ -5,10 +5,11 @@ import Layout from "../components/layout"
 import Link from "../components/Link"
 import Img from "gatsby-image"
 import Section from "./Section"
+import { recipesTheme } from "../theme"
 
 export default ({ data }) => {
   return (
-    <Layout>
+    <Layout theme={recipesTheme}>
       <SEO title="Rezepte" />
       <Section name="recipes">
         <Styled.h1>Rezepte für jeden Tag</Styled.h1>

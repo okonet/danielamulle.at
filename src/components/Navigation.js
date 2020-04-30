@@ -1,10 +1,11 @@
 /* @jsx jsx */
 import React from "react"
-import { Flex, jsx } from "theme-ui"
+import { Flex, jsx, ThemeProvider } from "theme-ui"
 import { Link } from "gatsby"
+import theme, { aboutTheme, recipesTheme, whatTheme } from "../theme"
 
 const NavLink = React.forwardRef((props, ref) => {
-  const { activeColor, sx, ...rest } = props
+  const { sx, ...rest } = props
   return (
     <Link
       ref={ref}
@@ -12,15 +13,15 @@ const NavLink = React.forwardRef((props, ref) => {
       {...rest}
       sx={{
         position: "relative",
-        color: activeColor,
+        color: "accent",
         textDecoration: "none",
         fontFamily: "heading",
         fontSize: 2,
         "&:hover": {
-          color: activeColor,
+          color: "accent",
         },
         "&.active": {
-          color: activeColor,
+          color: "accent",
         },
         ...sx,
       }}
@@ -32,17 +33,22 @@ const screens = [
   {
     title: "Home",
     to: "/",
-    color: "pink.3",
+    theme,
+  },
+  {
+    title: "Was & Wie",
+    to: "/offers",
+    theme: whatTheme,
+  },
+  {
+    title: "Über mich",
+    to: "/about",
+    theme: aboutTheme,
   },
   {
     title: "Rezepte",
     to: "/posts",
-    color: "orange.3",
-  },
-  {
-    title: "About",
-    to: "/about",
-    color: "green.3",
+    theme: recipesTheme,
   },
 ]
 
@@ -54,15 +60,19 @@ const Navigation = (props) => {
       sx={{
         transform: "translateZ(0)",
         alignItems: "center",
-        gap: 4,
+        "* + *": {
+          ml: 3,
+        },
         ...props.sx,
       }}
     >
-      {screens.map(({ title, color, to }) => {
+      {screens.map(({ title, theme, to }) => {
         return (
-          <NavLink key={to} to={to} activeColor={color}>
-            {title}
-          </NavLink>
+          <ThemeProvider theme={theme}>
+            <NavLink key={to} to={to}>
+              {title}
+            </NavLink>
+          </ThemeProvider>
         )
       })}
     </Flex>

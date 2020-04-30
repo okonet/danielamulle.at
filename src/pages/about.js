@@ -11,7 +11,7 @@ import About from "../../content/sections/about.mdx"
 import Section from "../components/Section"
 import { aboutTheme, howTheme, recipesTheme, whatTheme } from "../theme"
 
-const IndexPage = () => {
+export default () => {
   const portrait = useStaticQuery(graphql`
     query {
       placeholderImage: file(relativePath: { eq: "portrait.png" }) {
@@ -25,42 +25,11 @@ const IndexPage = () => {
   `)
   const imgData = portrait.placeholderImage.childImageSharp.fluid
   return (
-    <Layout>
-      <SEO title="Home" />
-
-      <Section>
-        <Flex>
-          <Box
-            sx={{
-              flex: 1,
-            }}
-          >
-            <Home />
-          </Box>
-          <Box
-            sx={{
-              flex: 1,
-              width: "50%",
-            }}
-          >
-            <Img fluid={imgData} />
-          </Box>
-        </Flex>
-      </Section>
-
-      <Section name="what">
-        <How />
-      </Section>
-
-      <Section name="how">
-        <Focus />
-      </Section>
-
+    <Layout theme={aboutTheme}>
+      <SEO title="Über mich" />
       <Section name="about">
         <About />
       </Section>
     </Layout>
   )
 }
-
-export default IndexPage
