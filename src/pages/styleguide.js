@@ -1,7 +1,9 @@
 import React from "react"
 import { Colors } from "@component-driven/react-design-tokens"
-import { Box } from "theme-ui"
-import theme from "../theme"
+import { Box, Container, Styled } from "theme-ui"
+import theme, * as themes from "../theme"
+
+const sections = ["about", "how", "what", "recipes"]
 
 export default () => {
   return (
@@ -11,7 +13,20 @@ export default () => {
         bg: "#fff",
       }}
     >
-      <Colors theme={theme} />
+      <Container>
+        <Styled.h1>Palette</Styled.h1>
+        <Colors theme={{ colors: themes.palette }} />
+
+        <Styled.h1>Default theme</Styled.h1>
+        <Colors theme={theme} />
+
+        {sections.map((sectionName) => (
+          <>
+            <Styled.h1>Section "{sectionName}" theme</Styled.h1>
+            <Colors theme={themes[`${sectionName}Theme`]} />
+          </>
+        ))}
+      </Container>
     </Box>
   )
 }

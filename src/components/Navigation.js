@@ -15,7 +15,7 @@ const NavLink = React.forwardRef((props, ref) => {
         color: activeColor,
         textDecoration: "none",
         fontFamily: "heading",
-        fontSize: 4,
+        fontSize: 2,
         "&:hover": {
           color: activeColor,
         },

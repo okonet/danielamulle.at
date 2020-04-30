@@ -35,7 +35,7 @@ function Logo(props) {
       <Box sx={{ ml: 2 }}>
         <Text
           as="p"
-          sx={{ m: 0, color: "text", fontFamily: "body", fontSize: 0 }}
+          sx={{ m: 0, color: "text", fontFamily: "heading", fontSize: 0 }}
         >
           Diätologin & Ernährungswissenschafterin
         </Text>
@@ -45,8 +45,8 @@ function Logo(props) {
             m: 0,
             color: "text",
             fontFamily: "heading",
-            fontWeight: "body",
-            fontSize: 5,
+            fontWeight: "heading",
+            fontSize: 2,
           }}
         >
           Daniela Mulle

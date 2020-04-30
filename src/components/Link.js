@@ -10,10 +10,10 @@ export default (props) => (
     sx={{
       color: "inherit",
       "&:hover": {
-        color: "primary",
+        color: "accent",
       },
       "&.active": {
-        color: "primary",
+        color: "accent",
       },
     }}
   />

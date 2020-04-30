@@ -12,21 +12,21 @@ const createAccents = (color, length = 4, steps = 0.25) => {
   return [...darkAccents.reverse(), ...lightAccents]
 }
 
-const palette = {
+export const palette = {
+  gray: createAccents("#ccc", 4, 0.42),
   pink: createAccents("#e23871"),
   cyan: createAccents("#05a8cd"),
   orange: createAccents("#ff9c00"),
   green: createAccents("#74a308"),
 }
 
-export default {
+const theme = {
   colors: {
     ...palette,
-    text: "#26150e",
-    background: "#fff",
-    primary: "#07c",
-    secondary: "#05a",
-    muted: "#f6f6f6",
+    text: palette.gray[1],
+    background: palette.gray[6],
+    muted: palette.gray[5],
+    accent: "#07c",
   },
   fonts: {
     body:
@@ -34,7 +34,7 @@ export default {
     heading: '"IBM Plex Sans", Georgia, serif',
     monospace: '"IBM Plex Mono", MonoLisa, Menlo, monospace',
   },
-  fontSizes: [12, 14, 16, 20, 24, 32, 48, 64],
+  fontSizes: [13, 16, 24, 48],
   fontWeights: {
     body: 400,
     heading: 700,
@@ -54,6 +54,7 @@ export default {
     round: 99999,
   },
   shadows: {
+    none: "none",
     float: "0px 4px 16px rgba(29, 78, 105, 0.05);",
   },
   layout: {
@@ -69,7 +70,18 @@ export default {
       fontFamily: "body",
     },
     a: {
-      color: "primary",
+      color: "accent",
+    },
+    h1: {
+      color: "accent",
+      fontSize: 3,
+      fontFamily: "body",
+    },
+    h2: {
+      color: "text",
+      fontSize: 1,
+      fontWeight: "bold",
+      fontFamily: "heading",
     },
   },
   cards: {
@@ -87,3 +99,45 @@ export default {
     },
   },
 }
+
+export const aboutTheme = {
+  colors: {
+    ...theme.colors,
+    text: palette.pink[1],
+    background: palette.pink[6],
+    muted: palette.pink[5],
+    accent: palette.pink[3],
+  },
+}
+
+export const recipesTheme = {
+  colors: {
+    ...theme.colors,
+    text: palette.orange[1],
+    background: palette.orange[6],
+    muted: palette.orange[5],
+    accent: palette.orange[3],
+  },
+}
+
+export const whatTheme = {
+  colors: {
+    ...theme.colors,
+    text: palette.cyan[1],
+    background: palette.cyan[6],
+    muted: palette.cyan[5],
+    accent: palette.cyan[3],
+  },
+}
+
+export const howTheme = {
+  colors: {
+    ...theme.colors,
+    text: palette.green[1],
+    background: palette.green[6],
+    muted: palette.green[5],
+    accent: palette.green[3],
+  },
+}
+
+export default theme

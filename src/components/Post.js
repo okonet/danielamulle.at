@@ -1,51 +1,54 @@
 import React from "react"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import Img from "gatsby-image"
-import { Box, Container, Flex, Grid } from "theme-ui"
+import { Box, Container, Flex, Grid, Styled, ThemeProvider } from "theme-ui"
 import Layout from "./layout"
+import { recipesTheme } from "../theme"
 
 export default ({ data }) => {
   return (
     <Layout>
-      <Box sx={{ bg: "orange.6" }}>
-        <Container>
-          <Grid gap={2} columns={2}>
-            <Box>
-              <h1>{data.mdx.frontmatter.title}</h1>
+      <ThemeProvider theme={recipesTheme}>
+        <Box sx={{ bg: "background" }}>
+          <Container>
+            <Grid gap={2} columns={[1, 2]}>
               <Box>
-                <datetime>{data.mdx.frontmatter.date}</datetime>
+                <Styled.h1>{data.mdx.frontmatter.title}</Styled.h1>
+                <Box>
+                  <datetime>{data.mdx.frontmatter.date}</datetime>
+                </Box>
+                <Box>
+                  <datetime>{data.mdx.frontmatter.timeToCook} min</datetime>
+                </Box>
               </Box>
-              <Box>
-                <datetime>{data.mdx.frontmatter.timeToCook} min</datetime>
+              <Box
+                sx={{
+                  p: [0, 2],
+                  mb: [0, -5],
+                  bg: "gray.6",
+                  transform: ["none", "rotate(4deg)"],
+                  boxShadow: ["none", "float"],
+                }}
+              >
+                <Img
+                  fluid={data.mdx.frontmatter.coverImage.childImageSharp.fluid}
+                />
               </Box>
-            </Box>
-            <Box
-              sx={{
-                p: 2,
-                mb: -5,
-                bg: "background",
-                transform: "rotate(4deg)",
-                boxShadow: "float",
-              }}
-            >
-              <Img
-                fluid={data.mdx.frontmatter.coverImage.childImageSharp.fluid}
-              />
-            </Box>
-          </Grid>
-        </Container>
-      </Box>
+            </Grid>
+          </Container>
+        </Box>
+      </ThemeProvider>
       <Container>
         <Box
           sx={{
             p: 4,
             mx: -4,
-            mt: -4,
+            mt: [0, -4],
             bg: "background",
-            boxShadow: "float",
+            boxShadow: ["none", "float"],
           }}
         >
-          <h2>Zutaten</h2>
+          <Styled.h2>Zutaten</Styled.h2>
           {data.mdx.frontmatter.ingredients && (
             <ul>
               {data.mdx.frontmatter.ingredients.map((item) => (
