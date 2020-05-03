@@ -24,15 +24,17 @@ const IndexPage = () => {
     }
   `)
   const imgData = portrait.placeholderImage.childImageSharp.fluid
+  console.log(imgData)
   return (
     <Layout>
       <SEO title="Home" />
 
-      <Section>
+      <Section sx={{ minHeight: "100%" }}>
         <Flex>
           <Box
             sx={{
               flex: 1,
+              width: "50%",
             }}
           >
             <Home />
@@ -46,18 +48,6 @@ const IndexPage = () => {
             <Img fluid={imgData} />
           </Box>
         </Flex>
-      </Section>
-
-      <Section name="what">
-        <How />
-      </Section>
-
-      <Section name="how">
-        <Focus />
-      </Section>
-
-      <Section name="about">
-        <About />
       </Section>
     </Layout>
   )

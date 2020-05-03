@@ -26,8 +26,8 @@ const Layout = ({ theme = defaultTheme, children }) => {
   `)
 
   return (
-    <>
-      <ThemeProvider theme={theme}>
+    <ThemeProvider theme={theme}>
+      <Flex sx={{ flexDirection: "column", minHeight: "100vh" }}>
         <Box as={"header"} sx={{ bg: "background", p: 4 }}>
           <Container variant="full">
             <Box
@@ -40,14 +40,21 @@ const Layout = ({ theme = defaultTheme, children }) => {
             </Box>
           </Container>
         </Box>
-      </ThemeProvider>
 
-      <main>{children}</main>
+        <Flex
+          as="main"
+          sx={{ flexDirection: "column", flexGrow: 1, bg: "background" }}
+        >
+          {children}
+        </Flex>
 
-      <Container as="footer">
-        © {data.site.siteMetadata.author}, {new Date().getFullYear()}
-      </Container>
-    </>
+        <Box as="footer" sx={{ py: 4, flexShrink: 1, bg: "background" }}>
+          <Container>
+            © {data.site.siteMetadata.author}, {new Date().getFullYear()}
+          </Container>
+        </Box>
+      </Flex>
+    </ThemeProvider>
   )
 }
 
