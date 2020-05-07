@@ -62,18 +62,20 @@ export default ({ data }) => {
         </Grid>
       </Section>
       <Section>
-        {data.mdx.frontmatter.ingredients && (
-          <Box
-            sx={{
-              px: [0, 4],
-              py: [0, 3],
-              mx: [0, -2],
-              mt: [0, -5],
-              bg: "background",
-              borderRadius: ["none", "medium"],
-              boxShadow: ["none", "float"],
-            }}
-          >
+        <Grid
+          gap={4}
+          columns={2}
+          sx={{
+            px: [0, 4],
+            py: [0, 4],
+            mx: [0, -2],
+            mt: [0, -5],
+            bg: "background",
+            borderRadius: ["none", "medium"],
+            boxShadow: ["none", "float"],
+          }}
+        >
+          <Box>
             <Styled.h2>Zutaten</Styled.h2>
             <Box
               as="ul"
@@ -98,8 +100,31 @@ export default ({ data }) => {
               ))}
             </Box>
           </Box>
-        )}
+          <Box>
+            <Styled.h2>
+              Näherungswerte <small>per 100g</small>
+            </Styled.h2>
+            <Grid
+              as="dl"
+              gap={2}
+              columns={2}
+              sx={{
+                mt: 3,
+                pl: 0,
+                listStyle: "none",
+                fontFamily: "monospace",
+                fontSize: 1,
+              }}
+            >
+              <Box as="dt">Fette</Box>
+              <Box as="dd">{data.mdx.frontmatter.nutrition.fat}</Box>
+              <Box as="dt">Kalorien</Box>
+              <Box as="dd">{data.mdx.frontmatter.nutrition.cal}</Box>
+            </Grid>
+          </Box>
+        </Grid>
         <Box sx={{ my: 4 }}>
+          <Styled.h2>Zubereitung</Styled.h2>
           <MDXRenderer>{data.mdx.body}</MDXRenderer>
         </Box>
       </Section>

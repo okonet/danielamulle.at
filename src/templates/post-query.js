@@ -13,6 +13,10 @@ export const query = graphql`
         date(locale: "de", formatString: "DD MMMM YYYY")
         timeToCook
         ingredients
+        nutrition {
+          fat
+          cal
+        }
         coverImage {
           absolutePath
           childImageSharp {

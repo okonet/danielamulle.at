@@ -35,3 +35,9 @@ collections:
         name: "ingredients"
         widget: "ingredientList"
       - { label: "Body", name: "body", widget: "markdown" }
+      - label: "Nutrition Facts"
+        name: "nutrition"
+        widget: "object"
+        fields:
+          - {label: "Fat", name: "fat", widget: "number"}
+          - {label: "Calories", name: "cal", widget: "number"}
