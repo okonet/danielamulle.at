@@ -1,6 +1,6 @@
 /* @jsx jsx */
 import React from "react"
-import { Box, jsx } from "theme-ui"
+import { jsx } from "theme-ui"
 import { List } from "immutable"
 
 function valueToString(value) {
