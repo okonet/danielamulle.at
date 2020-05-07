@@ -1,0 +1,12 @@
+/**
+ * The default export of `netlify-cms-app` is an object with all of the Netlify CMS
+ * extension registration methods, such as `registerWidget` and
+ * `registerPreviewTemplate`.
+ */
+import CMS from "netlify-cms-app"
+import { IngredientListWidget } from "../components/IngredientList"
+
+/**
+ * Register the imported widget:
+ */
+CMS.registerWidget("ingredientList", IngredientListWidget)

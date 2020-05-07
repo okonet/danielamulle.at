@@ -34,7 +34,10 @@ module.exports = {
       },
     },
     "gatsby-plugin-react-helmet",
-    "gatsby-plugin-netlify-cms",
+    {
+      resolve: "gatsby-plugin-netlify-cms",
+      options: { modulePath: `${__dirname}/src/cms/cms.js` },
+    },
     "gatsby-plugin-theme-ui",
     {
       resolve: "gatsby-source-filesystem",

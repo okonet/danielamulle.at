@@ -32,7 +32,6 @@ export default ({ data }) => {
                 fontSize: 0,
                 fontFamily: "monospace",
                 color: "muted",
-                mb: 4,
               }}
             >
               <Box as="p">
