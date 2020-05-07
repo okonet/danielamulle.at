@@ -82,10 +82,26 @@ const theme = {
     },
     h2: {
       m: 0,
+      mt: 4,
       color: "text",
       fontSize: 1,
       fontWeight: "bold",
       fontFamily: "heading",
+    },
+    ul: {
+      my: 3,
+      pl: 0,
+      listStyle: "none",
+      fontFamily: "monospace",
+      fontSize: 1,
+    },
+    ol: {
+      p: 0,
+      pl: 3,
+      mt: 3,
+    },
+    li: {
+      mb: 3,
     },
   },
   cards: {
