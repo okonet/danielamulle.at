@@ -91,9 +91,6 @@ const theme = {
     ul: {
       my: 2,
       pl: 0,
-      listStyle: "none",
-      fontFamily: "monospace",
-      fontSize: 1,
     },
     ol: {
       p: 0,
