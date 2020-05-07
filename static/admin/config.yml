@@ -13,6 +13,8 @@ collections:
     folder: "content/sections"
     extension: "mdx"
     format: "frontmatter"
+    editor:
+      preview: false
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
