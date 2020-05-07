@@ -4,14 +4,14 @@ import { Box, jsx } from "theme-ui"
 import { List } from "immutable"
 
 function valueToString(value) {
-  return value ? value.join(",").replace(/,([^\s]|$)/g, "\n$1") : ""
+  return value ? value.map((v) => `- ${v}`).join("\n") : ""
 }
 
 export class IngredientListWidget extends React.Component {
   render() {
     const { value, onChange, forID, classNameWrapper } = this.props
     const handleChange = (e) => {
-      onChange(List(e.target.value.split("\n")))
+      onChange(List(e.target.value.replace(/- /g, "").split("\n")))
     }
     return (
       <textarea

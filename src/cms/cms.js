@@ -4,7 +4,7 @@
  * `registerPreviewTemplate`.
  */
 import CMS from "netlify-cms-app"
-import { IngredientListWidget } from "../components/IngredientList"
+import { IngredientListWidget } from "./IngredientList"
 
 /**
  * Register the imported widget:
