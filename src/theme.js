@@ -82,14 +82,14 @@ const theme = {
     },
     h2: {
       m: 0,
-      mt: 4,
+      my: 2,
       color: "text",
       fontSize: 1,
       fontWeight: "bold",
       fontFamily: "heading",
     },
     ul: {
-      my: 3,
+      my: 2,
       pl: 0,
       listStyle: "none",
       fontFamily: "monospace",

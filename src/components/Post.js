@@ -29,6 +29,7 @@ export default ({ data }) => {
             <Grid
               gap={2}
               sx={{
+                mb: 3,
                 fontSize: 0,
                 fontFamily: "monospace",
                 color: "muted",
@@ -64,7 +65,8 @@ export default ({ data }) => {
         {data.mdx.frontmatter.ingredients && (
           <Box
             sx={{
-              p: [0, 4],
+              px: [0, 4],
+              py: [0, 3],
               mx: [0, -2],
               mt: [0, -5],
               bg: "background",
@@ -73,7 +75,6 @@ export default ({ data }) => {
             }}
           >
             <Styled.h2>Zutaten</Styled.h2>
-
             <Box
               as="ul"
               sx={{
