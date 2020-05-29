@@ -118,6 +118,7 @@ const theme = {
 }
 
 export const aboutTheme = {
+  ...theme,
   colors: {
     ...theme.colors,
     text: palette.pink[1],
@@ -125,19 +126,11 @@ export const aboutTheme = {
     muted: palette.pink[4],
     accent: palette.pink[3],
   },
-}
-
-export const recipesTheme = {
-  colors: {
-    ...theme.colors,
-    text: palette.orange[1],
-    background: palette.orange[6],
-    muted: "#ACA18F",
-    accent: palette.orange[3],
-  },
+  coverImageId: "9aOswReDKPo",
 }
 
 export const whatTheme = {
+  ...theme,
   colors: {
     ...theme.colors,
     text: palette.cyan[1],
@@ -145,15 +138,29 @@ export const whatTheme = {
     muted: palette.cyan[4],
     accent: palette.cyan[3],
   },
+  coverImageId: "08bOYnH_r_E",
 }
 
 export const howTheme = {
+  ...theme,
   colors: {
     ...theme.colors,
     text: palette.green[1],
     background: palette.green[6],
     muted: palette.green[4],
     accent: palette.green[3],
+  },
+  coverImageId: "sTPy-oeA3h0",
+}
+
+export const recipesTheme = {
+  ...theme,
+  colors: {
+    ...theme.colors,
+    text: palette.orange[1],
+    background: palette.orange[6],
+    muted: "#ACA18F",
+    accent: palette.orange[3],
   },
 }
 
