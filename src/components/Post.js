@@ -10,8 +10,8 @@ import Section from "./Section"
 export default ({ data }) => {
   return (
     <Layout theme={recipesTheme}>
-      <Section theme={recipesTheme}>
-        <Grid gap={2} columns={[1, 2]}>
+      <Section theme={recipesTheme} sx={{ py: 4 }}>
+        <Grid gap={2} columns={[1, 2]} sx={{ position: "relative" }}>
           <Box>
             <Link
               to={"/posts"}
@@ -46,6 +46,10 @@ export default ({ data }) => {
           </Box>
           <Box
             sx={{
+              position: "absolute",
+              top: 0,
+              right: 0,
+              width: "50%",
               p: [0, 2],
               mb: [-4, -5],
               mx: [-4, 0],
@@ -53,6 +57,7 @@ export default ({ data }) => {
               transform: ["none", "rotate(4deg)"],
               boxShadow: ["none", "float"],
               height: "fit-content",
+              zIndex: 2,
             }}
           >
             <Img
@@ -61,7 +66,7 @@ export default ({ data }) => {
           </Box>
         </Grid>
       </Section>
-      <Section>
+      <Section sx={{ py: 4 }}>
         <Grid
           gap={4}
           columns={2}
