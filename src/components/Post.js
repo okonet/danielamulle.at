@@ -3,14 +3,14 @@ import { MDXRenderer } from "gatsby-plugin-mdx"
 import Img from "gatsby-image"
 import { Box, Container, Flex, Grid, Styled, ThemeProvider } from "theme-ui"
 import Layout from "./layout"
-import { recipesTheme } from "../theme"
+import theme, { recipesTheme } from "../theme"
 import Link from "../components/Link"
 import Section from "./Section"
 
 export default ({ data }) => {
   return (
     <Layout theme={recipesTheme}>
-      <Section name="recipes">
+      <Section theme={recipesTheme}>
         <Grid gap={2} columns={[1, 2]}>
           <Box>
             <Link

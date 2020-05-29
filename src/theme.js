@@ -1,7 +1,7 @@
 import { shade, tint } from "polished"
 
 // Creates each four darker and lighter accents from passed hex color
-const createAccents = (color, length = 4, steps = 0.25) => {
+const createAccents = (color, length = 4, steps = 0.3) => {
   const darkAccents = Array.from({ length: length - 1 }, (_, index) =>
     shade(Math.min(steps * (index + 1), 1), color)
   )

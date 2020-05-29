@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: "My Blog Title",
+    title: "Daniela Mulle — Diätologin & Ernährungswissenschafterin",
     author: "Daniela Mulle",
-    description: "My site description...",
+    description: "Diätologin & Ernährungswissenschafterin",
     social: [
       {
         name: "Facebook",

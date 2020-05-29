@@ -27,27 +27,42 @@ const IndexPage = () => {
   console.log(imgData)
   return (
     <Layout>
-      <SEO title="Home" />
+      <SEO title="Willkommen" />
 
-      <Section sx={{ minHeight: "100%" }}>
-        <Flex>
+      <Flex sx={{ px: 4, flexGrow: 1 }}>
+        <Container
+          sx={{
+            display: ["block", "flex"],
+            flexGrow: 1,
+          }}
+        >
           <Box
             sx={{
               flex: 1,
-              width: "50%",
             }}
           >
             <Home />
           </Box>
-          <Box
+          <Flex
             sx={{
               flex: 1,
-              width: "50%",
+              alignItems: "flex-end",
             }}
           >
-            <Img fluid={imgData} />
-          </Box>
-        </Flex>
+            <Box sx={{ display: ["none", "block"], width: "100%" }}>
+              <Img fluid={imgData} />
+            </Box>
+          </Flex>
+        </Container>
+      </Flex>
+      <Section theme={whatTheme}>
+        <How />
+      </Section>
+      <Section theme={howTheme}>
+        <Focus />
+      </Section>
+      <Section theme={aboutTheme}>
+        <About />
       </Section>
     </Layout>
   )

@@ -11,7 +11,7 @@ export default ({ data }) => {
   return (
     <Layout theme={recipesTheme}>
       <SEO title="Rezepte" />
-      <Section name="recipes">
+      <Section theme={recipesTheme}>
         <Styled.h1>Rezepte für jeden Tag</Styled.h1>
       </Section>
       <Section>
