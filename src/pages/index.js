@@ -1,5 +1,5 @@
 import React from "react"
-import { Box, Container, Flex, ThemeProvider } from "theme-ui"
+import { Box, Container, Flex } from "theme-ui"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 import Layout from "../components/layout"
@@ -9,7 +9,12 @@ import How from "../../content/sections/how.mdx"
 import Focus from "../../content/sections/focus.mdx"
 import About from "../../content/sections/about.mdx"
 import Section from "../components/Section"
-import { aboutTheme, howTheme, recipesTheme, whatTheme } from "../theme"
+import { aboutTheme, howTheme, whatTheme } from "../theme"
+import {
+  ParallaxContainer,
+  ParallaxGroup,
+  ParallaxLayer,
+} from "../components/Parallax"
 
 const IndexPage = () => {
   const portrait = useStaticQuery(graphql`
@@ -28,42 +33,44 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO title="Willkommen" />
-
-      <Flex sx={{ px: 4, flexGrow: 1 }}>
-        <Container
-          sx={{
-            display: ["block", "flex"],
-            flexGrow: 1,
-          }}
-        >
-          <Box
+      <ParallaxContainer>
+        <Flex sx={{ px: 4, flexGrow: 1 }}>
+          <Container
             sx={{
-              flex: 1,
+              display: ["block", "flex"],
+              flexGrow: 1,
             }}
           >
-            <Home />
-          </Box>
-          <Flex
-            sx={{
-              flex: 1,
-              alignItems: "flex-end",
-            }}
-          >
-            <Box sx={{ display: ["none", "block"], width: "100%" }}>
-              <Img fluid={imgData} />
+            <Box
+              sx={{
+                flex: 1,
+              }}
+            >
+              <Home />
             </Box>
-          </Flex>
-        </Container>
-      </Flex>
-      <Section theme={whatTheme}>
-        <How />
-      </Section>
-      <Section theme={howTheme}>
-        <Focus />
-      </Section>
-      <Section theme={aboutTheme}>
-        <About />
-      </Section>
+            <Flex
+              sx={{
+                flex: 1,
+                alignItems: "flex-end",
+              }}
+            >
+              <Box sx={{ display: ["none", "block"], width: "100%" }}>
+                <Img fluid={imgData} />
+              </Box>
+            </Flex>
+          </Container>
+        </Flex>
+
+        <Section theme={whatTheme}>
+          <How />
+        </Section>
+        <Section theme={howTheme}>
+          <Focus />
+        </Section>
+        <Section theme={aboutTheme}>
+          <About />
+        </Section>
+      </ParallaxContainer>
     </Layout>
   )
 }

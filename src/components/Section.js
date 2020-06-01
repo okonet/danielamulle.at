@@ -1,7 +1,9 @@
+/** @jsx jsx */
 import * as React from "react"
 import * as PropTypes from "prop-types"
-import { Box, Container, ThemeProvider } from "theme-ui"
+import { jsx, Box, Container, ThemeProvider } from "theme-ui"
 import { default as defaultTheme } from "../theme"
+import { ParallaxGroup, ParallaxLayer } from "./Parallax"
 
 function unsplashURL(imageId) {
   return `//source.unsplash.com/${imageId}/2560x1920`
@@ -28,36 +30,38 @@ function Section({
   }
   return (
     <ThemeProvider theme={theme}>
-      <Box
+      <ParallaxGroup
         as="section"
         sx={{
-          position: "relative",
           p: 4,
           py: 6,
           backgroundColor: "background",
           color: "text",
-          zIndex: 0,
           ...sx,
         }}
         {...props}
       >
         {imageId && (
-          <Box
-            sx={{
-              // content: "''",
-              position: "absolute",
-              top: 0,
-              left: 0,
-              width: "100%",
-              height: "100%",
-              zIndex: -1,
-              opacity: 0.1,
-              ...imageStyles,
-            }}
-          />
+          <ParallaxLayer depth={1}>
+            <Box
+              sx={{
+                // content: "''",
+                position: "absolute",
+                top: 0,
+                left: 0,
+                width: "100%",
+                height: "100%",
+                zIndex: -1,
+                opacity: 0.1,
+                ...imageStyles,
+              }}
+            />
+          </ParallaxLayer>
         )}
-        <Container>{children}</Container>
-      </Box>
+        <ParallaxLayer sx={{ display: "flex", alignItems: "center" }}>
+          <Container>{children}</Container>
+        </ParallaxLayer>
+      </ParallaxGroup>
     </ThemeProvider>
   )
 }

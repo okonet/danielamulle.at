@@ -28,7 +28,7 @@ const Layout = ({ theme = defaultTheme, children }) => {
   return (
     <ThemeProvider theme={theme}>
       <Flex sx={{ flexDirection: "column", minHeight: "100vh" }}>
-        <Box as={"header"} sx={{ bg: "background", p: 4 }}>
+        <Box as={"header"} sx={{ p: 4 }}>
           <Container variant="full">
             <Box
               sx={{
