@@ -10,11 +10,6 @@ import Focus from "../../content/sections/focus.mdx"
 import About from "../../content/sections/about.mdx"
 import Section from "../components/Section"
 import { aboutTheme, howTheme, whatTheme } from "../theme"
-import {
-  ParallaxContainer,
-  ParallaxGroup,
-  ParallaxLayer,
-} from "../components/Parallax"
 
 const IndexPage = () => {
   const portrait = useStaticQuery(graphql`
@@ -29,7 +24,6 @@ const IndexPage = () => {
     }
   `)
   const imgData = portrait.placeholderImage.childImageSharp.fluid
-  console.log(imgData)
   return (
     <Layout>
       <SEO title="Willkommen" />
