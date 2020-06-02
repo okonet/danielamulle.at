@@ -25,7 +25,7 @@ function Section({
       backgroundSize: "cover",
       backgroundRepeat: "no-repeat",
       backgroundPosition: "center",
-      backgroundBlendMode: "multiply",
+      backgroundBlendMode: "overlay",
     }
   }
   return (
@@ -42,25 +42,18 @@ function Section({
         {...props}
       >
         {imageId && (
-          <ParallaxLayer depth={1}>
-            <Box
-              sx={{
-                // content: "''",
-                position: "absolute",
-                top: 0,
-                left: 0,
-                width: "100%",
-                height: "100%",
-                zIndex: -1,
-                opacity: 0.1,
-                ...imageStyles,
-              }}
-            />
-          </ParallaxLayer>
+          <ParallaxLayer
+            depth={1}
+            sx={{
+              opacity: 1,
+              backgroundColor: "background",
+              ...imageStyles,
+            }}
+          />
         )}
-        <ParallaxLayer sx={{ display: "flex", alignItems: "center" }}>
-          <Container>{children}</Container>
-        </ParallaxLayer>
+        <Container sx={{ position: "relative", zIndex: 1 }}>
+          {children}
+        </Container>
       </ParallaxGroup>
     </ThemeProvider>
   )
