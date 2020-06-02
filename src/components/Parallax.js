@@ -3,7 +3,6 @@ import styled from "@emotion/styled"
 
 export const ParallaxGroup = styled.div`
   position: relative;
-  height: 100vh;
   overflow: hidden;
   transform-style: preserve-3d;
 `
@@ -31,9 +30,9 @@ ParallaxContainer.defaultProps = {
 export const ParallaxLayer = styled.div`
   position: absolute;
   top: 0;
-  right: 0;
-  bottom: 0;
   left: 0;
+  width: 100%;
+  height: 100vh;
   transform: ${(props) =>
     `translateZ(${props.depth * -1}px) scale(${props.depth + 1})`};
 `

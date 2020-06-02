@@ -33,44 +33,43 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO title="Willkommen" />
-      <ParallaxContainer>
-        <Flex sx={{ px: 4, flexGrow: 1 }}>
-          <Container
+
+      <Flex sx={{ px: 4, flexGrow: 1 }}>
+        <Container
+          sx={{
+            display: ["block", "flex"],
+            flexGrow: 1,
+          }}
+        >
+          <Box
             sx={{
-              display: ["block", "flex"],
-              flexGrow: 1,
+              flex: 1,
             }}
           >
-            <Box
-              sx={{
-                flex: 1,
-              }}
-            >
-              <Home />
+            <Home />
+          </Box>
+          <Flex
+            sx={{
+              flex: 1,
+              alignItems: "flex-end",
+            }}
+          >
+            <Box sx={{ display: ["none", "block"], width: "100%" }}>
+              <Img fluid={imgData} />
             </Box>
-            <Flex
-              sx={{
-                flex: 1,
-                alignItems: "flex-end",
-              }}
-            >
-              <Box sx={{ display: ["none", "block"], width: "100%" }}>
-                <Img fluid={imgData} />
-              </Box>
-            </Flex>
-          </Container>
-        </Flex>
+          </Flex>
+        </Container>
+      </Flex>
 
-        <Section theme={whatTheme}>
-          <How />
-        </Section>
-        <Section theme={howTheme}>
-          <Focus />
-        </Section>
-        <Section theme={aboutTheme}>
-          <About />
-        </Section>
-      </ParallaxContainer>
+      <Section theme={whatTheme}>
+        <How />
+      </Section>
+      <Section theme={howTheme}>
+        <Focus />
+      </Section>
+      <Section theme={aboutTheme}>
+        <About />
+      </Section>
     </Layout>
   )
 }
