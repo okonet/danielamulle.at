@@ -5,23 +5,12 @@ import { jsx, Box, Container, ThemeProvider } from "theme-ui"
 import { default as defaultTheme } from "../theme"
 import { ParallaxGroup, ParallaxLayer } from "./Parallax"
 
-function unsplashURL(imageId) {
-  return `//source.unsplash.com/${imageId}/2560x1920`
-}
-
-function Section({
-  theme = defaultTheme,
-  coverImageId,
-  children,
-  sx,
-  ...props
-}) {
-  let imageId = coverImageId || theme.coverImageId
+function Section({ theme = defaultTheme, coverSrc, children, sx, ...props }) {
+  let imageSrc = coverSrc || theme.coverSrc
   let imageStyles = {}
-  if (imageId) {
-    const src = unsplashURL(imageId)
+  if (imageSrc) {
     imageStyles = {
-      backgroundImage: `url(${src})`,
+      backgroundImage: `url(${imageSrc})`,
       backgroundSize: "cover",
       backgroundRepeat: "no-repeat",
       backgroundPosition: "center",
@@ -41,7 +30,7 @@ function Section({
         }}
         {...props}
       >
-        {imageId && (
+        {imageSrc && (
           <ParallaxLayer
             depth={1}
             sx={{
@@ -63,9 +52,9 @@ Section.propTypes = {
   theme: PropTypes.object,
 
   /**
-   * Image ID on Unsplash.com
+   * Cover image
    */
-  coverImageSrc: PropTypes.string,
+  coverSrc: PropTypes.string,
 }
 
 export default Section

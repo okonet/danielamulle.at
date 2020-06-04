@@ -12,6 +12,10 @@ const createAccents = (color, length = 4, steps = 0.3) => {
   return [...darkAccents.reverse(), ...lightAccents]
 }
 
+function unsplashURL(imageId) {
+  return `//source.unsplash.com/${imageId}/2560x1920`
+}
+
 export const palette = {
   gray: createAccents("#ccc", 4, 0.42),
   pink: createAccents("#e23871"),
@@ -126,7 +130,7 @@ export const aboutTheme = {
     muted: palette.pink[4],
     accent: palette.pink[3],
   },
-  coverImageId: "9aOswReDKPo",
+  coverSrc: unsplashURL("9aOswReDKPo"),
 }
 
 export const whatTheme = {
@@ -138,7 +142,7 @@ export const whatTheme = {
     muted: palette.cyan[4],
     accent: palette.cyan[3],
   },
-  coverImageId: "08bOYnH_r_E",
+  coverSrc: unsplashURL("08bOYnH_r_E"),
 }
 
 export const howTheme = {
@@ -150,7 +154,7 @@ export const howTheme = {
     muted: palette.green[4],
     accent: palette.green[3],
   },
-  coverImageId: "sTPy-oeA3h0",
+  coverSrc: unsplashURL("sTPy-oeA3h0"),
 }
 
 export const recipesTheme = {
