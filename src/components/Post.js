@@ -16,7 +16,7 @@ export default ({ data }) => {
       <ParallaxGroup
         as="section"
         sx={{
-          minHeight: 500,
+          minHeight: [300, 500],
         }}
       >
         <ParallaxLayer depth={1}>
@@ -34,7 +34,7 @@ export default ({ data }) => {
               display: "flex",
               flexDirection: "column",
               justifyContent: "flex-end",
-              minHeight: 500,
+              minHeight: [300, 500],
             }}
           >
             <Grid gap={3} sx={{ my: 3 }}>
