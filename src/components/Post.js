@@ -2,6 +2,7 @@
 import React from "react"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import Img from "gatsby-image"
+import { transparentize } from "@theme-ui/color"
 import { Box, Container, Grid, jsx, Styled } from "theme-ui"
 import Layout from "./layout"
 import { recipesTheme } from "../theme"
@@ -28,16 +29,8 @@ export default ({ data }) => {
           />
         </ParallaxLayer>
         <ParallaxLayer>
-          <Container
-            sx={{
-              p: 4,
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "flex-end",
-              minHeight: [300, 500],
-            }}
-          >
-            <Grid gap={3} sx={{ my: 3 }}>
+          <Container>
+            <Grid gap={2} sx={{ my: 4 }}>
               <Link
                 to={"/posts"}
                 sx={{
@@ -53,32 +46,32 @@ export default ({ data }) => {
               <Styled.h1 sx={{ m: 0 }}>
                 <Styled.strong
                   sx={{
-                    p: 1,
-                    lineHeight: 1.45,
                     display: "inline",
-                    bg: "accent",
+                    p: 1,
+                    lineHeight: 1.46,
+                    bg: transparentize("text", 0.25),
                     color: "background",
                   }}
                 >
                   {data.mdx.frontmatter.title}
                 </Styled.strong>
               </Styled.h1>
-              <Grid
-                gap={2}
-                sx={{
-                  fontSize: 0,
-                  fontFamily: "monospace",
-                  color: "muted",
-                }}
-              >
-                <Box as="p">
-                  <datetime>{data.mdx.frontmatter.date}</datetime>
+              <Styled.p sx={{ m: 0 }}>
+                <Box
+                  as="time"
+                  sx={{
+                    display: "inline",
+                    p: 1,
+                    fontSize: 0,
+                    fontFamily: "monospace",
+                    fontWeight: "body",
+                    bg: transparentize("text", 0.25),
+                    color: "background",
+                  }}
+                >
+                  {data.mdx.frontmatter.date}
                 </Box>
-                <Box as="p">
-                  Zeit:{" "}
-                  <datetime> {data.mdx.frontmatter.timeToCook} min</datetime>
-                </Box>
-              </Grid>
+              </Styled.p>
             </Grid>
           </Container>
         </ParallaxLayer>
@@ -128,8 +121,13 @@ export default ({ data }) => {
           </Box>
           <Box>
             <Styled.h2>
-              Näherungswerte <small>per 100g</small>
+              Zubereitungszeit {data.mdx.frontmatter.timeToCook} min
             </Styled.h2>
+
+            <Styled.h2>
+              Nahrungswerte <small>per 100g</small>
+            </Styled.h2>
+
             <Grid
               as="dl"
               gap={2}

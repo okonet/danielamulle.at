@@ -7,6 +7,7 @@
   "dependencies": {
     "@component-driven/react-design-tokens": "^2.1.0",
     "@emotion/styled": "^10.0.27",
+    "@theme-ui/color": "^0.3.1",
     "gatsby": "^2.19.45",
     "gatsby-image": "^2.2.44",
     "gatsby-plugin-manifest": "^2.2.48",

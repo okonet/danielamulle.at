@@ -22,7 +22,7 @@ export const palette = {
   cyan: createAccents("#05a8cd"),
   orange: createAccents("#ff9c00"),
   green: createAccents("#74a308"),
-  teal: createAccents("#01817D"),
+  teal: createAccents("#1e5f92"),
 }
 
 const theme = {
@@ -161,9 +161,9 @@ export const recipesTheme = {
   ...theme,
   colors: {
     ...theme.colors,
-    text: palette.orange[1],
-    background: palette.orange[6],
-    muted: "#ACA18F",
+    text: palette.teal[1],
+    background: palette.teal[6],
+    muted: palette.teal[4],
     accent: palette.orange[3],
   },
 }
