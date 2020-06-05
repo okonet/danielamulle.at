@@ -1,37 +1,36 @@
 ---
-title: Hirselaibchen
+title: Ofengemüse mit Kichererbsen & Feta
 date: 2020-06-04T12:14:36.395Z
 description: Blah
 coverImage: ../assets/20200531-dsc02898.jpg
 timeToCook: 30
 ingredients:
-  - 1 Hokkaido-Kürbis
-  - 1 Zwiebel
-  - 3 Knoblauchzehen
-  - 3 Handvoll rote Linsen
-  - 1 Dose Kokosmilch
-  - 2 TL Currypulver
-  - 1 TL Ingwer gemahlen oder ein daumengroßes Stück frischen Ingwer
-  - 1 TL Koriander gemahlen
-  - >-
-    1-2 Stängel Zitronengras (wenn du diese Spezialzutat nicht hast, geht es auch ohne)
-
-  - "Chili, wenn du es gerne scharf magst"
-  - Sojasauce zum Ablöschen
-  - Rapsöl zum Anbraten
+  - 1 mittelgroßer Karfiol (Blumenkohl)
+  - 6 mittelgroße Kartoffeln
+  - 4 Karotten
+  - 2 Pastinaken
+  - 1 große rote Zwiebel oder ½ Bund Frühlingszwiebel
+  - 4 5 Knoblauchzehen
+  - 150 g Fetakäse
+  - 1 Dose gekochte Kichererbsen
+  - "Rosmarin frisch oder getrocknet (oder andere Kräuter, nach Lust & Laune)"
+  - Olivenund Rapsöl (falls ihr beides zuhause habt)
+  - "Salz, Pfeffer"
 nutrition:
   fat: 5
   cal: 256
 ---
 
-1. Für dein Curry den Kürbis in Würfel klein schneiden, ebenso die Zwiebel und den Knoblauch und schon ist die Schnibbelarbeit zu Ende.
-2. Kürbis und Zwiebeln gemeinsam in Öl anbraten, bis Letztere glasig sind. Gib den Knoblauch hinzu und lösche alles mit einem Schuss (so wie Jamie Oliver Olivenöl nutzt, also gern ein bisschen mehr) Sojasauce ab.
-3. Nun kannst du deinem Curry auch den nötigen Geschmack geben, indem du all die Gewürze hinzufügst. Frische Gewürze wie Ingwer und Zitronengras möglichst klein schneiden.
+1. Karfiol in Röschen zerteilen, Strunk in kleine Stücke schneiden und mitverwenden oder für eine Gemüsesuppe aufheben
+2. Kartoffel heiß waschen und mit der Schale vierteln
+3. Karotten & Pastinake schälen, schräg in schmale Scheiben schneiden (< 0,5 mm)
+4. Zwiebel schälen und 1/8eln bzw. Frühlingszwiebel putzen und in ca. 3 cm lange Stücke schneiden
+5. Knoblauch schälen und halbieren
+6. Gemüse in eine große Auflaufform oder auf ein Backblech geben
+7. mit Olivenund Rapsöl übergießen
+8. mit Rosmarin bestreuen, salzen und pfeffern
+9. bei 180 Grad Heißluft ca. 40 Min backen
+10. währenddessen Fetakäse in Würfel schneiden und Kichererbsen abgießen
+11. 10 Minuten vor Ende der Backzeit Feta & Kichererbsen zugeben und fertigbacken.
 
-   > Tipp: um möglichst wenig Ingwer zu verschwenden, kannst du die Schale ganz einfach mit der Kante eines Teelöffels abkratzen. Ganz frischen Ingwer muss man übrigens garnicht schälen.
-
-4. Gib dann auch die roten Linsen gemeinsam mit einer Tasse Wasser dazu und lass alles kräftig köcheln. Die Kokosmilch kannst du auch gleich hinzufügen, dann haben deine Zutaten genug Zeit, ihre Geschmäcker zu einem leckeren Curry zu entfalten. Nun muss alles so lange köcheln, bis der Kürbis und die Linsen weich sind.
-
-   ![Image](../assets/20200516-dsc02805.jpg "Caption")
-
-   ![Image 2]("Caption")
+    Natürlich könnt ihr einfach eurer Lieblingsgemüse verwenden, super eignen sich z.B. auch Kürbis, Zucchini, Aubergine, getrocknete Tomaten, Mais oder Oliven. Wenn ihr Oliven- und Rapsöl 50:50 verwendet, freut sich euer Körper über den tollen Fettmix aus omega-9 (Olive) und omega-3 (Raps).
