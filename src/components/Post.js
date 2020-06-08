@@ -1,81 +1,90 @@
+/** @jsx jsx */
 import React from "react"
 import { MDXRenderer } from "gatsby-plugin-mdx"
-import Img from "gatsby-image"
-import { Box, Container, Flex, Grid, Styled, ThemeProvider } from "theme-ui"
+import { transparentize } from "@theme-ui/color"
+import { Box, Container, Grid, jsx, Styled } from "theme-ui"
 import Layout from "./layout"
-import theme, { recipesTheme } from "../theme"
+import { recipesTheme } from "../theme"
 import Link from "../components/Link"
 import Section from "./Section"
 
 export default ({ data }) => {
+  console.log(data.mdx.frontmatter.coverImage.childImageSharp.fixed)
   return (
     <Layout theme={recipesTheme}>
-      <Section theme={recipesTheme}>
-        <Grid gap={2} columns={[1, 2]}>
-          <Box>
-            <Link
-              to={"/posts"}
-              sx={{
-                color: "muted",
-                fontSize: 0,
-                fontFamily: "monospace",
-                fontWeight: "heading",
-                textDecoration: "none",
-              }}
-            >
-              ← Rezepte
-            </Link>
-            <Styled.h1>{data.mdx.frontmatter.title}</Styled.h1>
-            <Grid
-              gap={2}
-              sx={{
-                mb: 3,
-                fontSize: 0,
-                fontFamily: "monospace",
-                color: "muted",
-              }}
-            >
-              <Box as="p">
-                <datetime>{data.mdx.frontmatter.date}</datetime>
-              </Box>
-              <Box as="p">
-                Zeit:{" "}
-                <datetime> {data.mdx.frontmatter.timeToCook} min</datetime>
-              </Box>
-            </Grid>
-          </Box>
-          <Box
+      <Section
+        theme={recipesTheme}
+        coverSrc={data.mdx.frontmatter.coverImage.childImageSharp.fixed.srcSet}
+      >
+        <Grid gap={2} sx={{ mt: 6, mb: 4 }}>
+          <Link
+            to={"/posts"}
             sx={{
-              p: [0, 2],
-              mb: [-4, -5],
-              mx: [-4, 0],
-              bg: "gray.6",
-              transform: ["none", "rotate(4deg)"],
-              boxShadow: ["none", "float"],
-              height: "fit-content",
+              color: "muted",
+              fontSize: 0,
+              fontFamily: "monospace",
+              fontWeight: "heading",
+              textDecoration: "none",
             }}
           >
-            <Img
-              fluid={data.mdx.frontmatter.coverImage.childImageSharp.fluid}
-            />
-          </Box>
+            ← Rezepte
+          </Link>
+          <Styled.h1 sx={{ m: 0 }}>
+            <Styled.strong
+              sx={{
+                display: "inline",
+                p: 1,
+                lineHeight: 1.46,
+                bg: transparentize("text", 0.25),
+                color: "background",
+              }}
+            >
+              {data.mdx.frontmatter.title}
+            </Styled.strong>
+          </Styled.h1>
+          <Styled.p sx={{ m: 0 }}>
+            <Box
+              as="time"
+              sx={{
+                display: "inline",
+                p: 1,
+                fontSize: 0,
+                fontFamily: "monospace",
+                fontWeight: "body",
+                bg: transparentize("text", 0.25),
+                color: "background",
+              }}
+            >
+              {data.mdx.frontmatter.date}
+            </Box>
+          </Styled.p>
         </Grid>
       </Section>
-      <Section>
+
+      <Container variant="full">
         <Grid
-          gap={4}
-          columns={2}
+          gap={3}
+          columns={[1, 12]}
           sx={{
-            px: [0, 4],
+            position: "relative",
+            mt: [3, -5],
+            px: [4, 0],
             py: [0, 4],
-            mx: [0, -2],
-            mt: [0, -5],
-            bg: "background",
-            borderRadius: ["none", "medium"],
-            boxShadow: ["none", "float"],
+            zIndex: 1,
           }}
         >
-          <Box>
+          <Box
+            sx={{
+              order: [1, 2],
+              gridColumn: [1, "2 / span 7"],
+              px: [0, 5],
+              py: [0, 4],
+              ml: [0, -5],
+              bg: "background",
+              borderRadius: ["none", "medium"],
+              boxShadow: ["none", "float"],
+            }}
+          >
             <Styled.h2>Zutaten</Styled.h2>
             <Box
               as="ul"
@@ -100,10 +109,22 @@ export default ({ data }) => {
               ))}
             </Box>
           </Box>
-          <Box>
+          <Box
+            sx={{
+              order: [1, 2],
+              mt: [3, 5],
+              mb: [4, 0],
+              gridColumn: [1, "9 / span 4"],
+            }}
+          >
             <Styled.h2>
-              Näherungswerte <small>per 100g</small>
+              Zubereitungszeit {data.mdx.frontmatter.timeToCook} min
             </Styled.h2>
+
+            <Styled.h2>
+              Nahrungswerte <small>per 100g</small>
+            </Styled.h2>
+
             <Grid
               as="dl"
               gap={2}
@@ -123,11 +144,27 @@ export default ({ data }) => {
             </Grid>
           </Box>
         </Grid>
-        <Box sx={{ my: 4 }}>
-          <Styled.h2>Zubereitung</Styled.h2>
-          <MDXRenderer>{data.mdx.body}</MDXRenderer>
-        </Box>
-      </Section>
+      </Container>
+      <Container variant="full">
+        <Grid
+          gap={3}
+          columns={[1, 12]}
+          sx={{
+            px: [4, 0],
+            py: [0, 4],
+          }}
+        >
+          <Box
+            sx={{
+              gridColumnStart: [1, 2],
+              gridColumnEnd: [1, 10],
+            }}
+          >
+            <Styled.h2>Zubereitung</Styled.h2>
+            <MDXRenderer>{data.mdx.body}</MDXRenderer>
+          </Box>
+        </Grid>
+      </Container>
     </Layout>
   )
 }

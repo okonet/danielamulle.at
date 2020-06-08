@@ -1,5 +1,5 @@
 import React from "react"
-import { Box, Container, Flex, ThemeProvider } from "theme-ui"
+import { Box, Container, Flex } from "theme-ui"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 import Layout from "../components/layout"
@@ -9,7 +9,7 @@ import How from "../../content/sections/how.mdx"
 import Focus from "../../content/sections/focus.mdx"
 import About from "../../content/sections/about.mdx"
 import Section from "../components/Section"
-import { aboutTheme, howTheme, recipesTheme, whatTheme } from "../theme"
+import { aboutTheme, howTheme, whatTheme } from "../theme"
 
 const IndexPage = () => {
   const portrait = useStaticQuery(graphql`
@@ -24,7 +24,6 @@ const IndexPage = () => {
     }
   `)
   const imgData = portrait.placeholderImage.childImageSharp.fluid
-  console.log(imgData)
   return (
     <Layout>
       <SEO title="Willkommen" />
@@ -55,13 +54,14 @@ const IndexPage = () => {
           </Flex>
         </Container>
       </Flex>
-      <Section theme={whatTheme}>
+
+      <Section theme={whatTheme} blendMode="overlay" id="offers">
         <How />
       </Section>
-      <Section theme={howTheme}>
+      <Section theme={howTheme} blendMode="overlay">
         <Focus />
       </Section>
-      <Section theme={aboutTheme}>
+      <Section theme={aboutTheme} blendMode="overlay" id="about">
         <About />
       </Section>
     </Layout>

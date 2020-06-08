@@ -1,4 +1,4 @@
-import { shade, tint } from "polished"
+import { shade, tint, modularScale } from "polished"
 
 // Creates each four darker and lighter accents from passed hex color
 const createAccents = (color, length = 4, steps = 0.3) => {
@@ -12,16 +12,21 @@ const createAccents = (color, length = 4, steps = 0.3) => {
   return [...darkAccents.reverse(), ...lightAccents]
 }
 
+function unsplashURL(imageId) {
+  return `//source.unsplash.com/${imageId}/2560x1920`
+}
+
 export const palette = {
   gray: createAccents("#ccc", 4, 0.42),
   pink: createAccents("#e23871"),
   cyan: createAccents("#05a8cd"),
   orange: createAccents("#ff9c00"),
   green: createAccents("#74a308"),
-  teal: createAccents("#01817D"),
+  teal: createAccents("#1e5f92"),
 }
 
 const theme = {
+  space: [0, 4, 8, 16, 32, 64, 128],
   colors: {
     ...palette,
     text: palette.gray[1],
@@ -60,10 +65,10 @@ const theme = {
   },
   layout: {
     full: {
-      maxWidth: 1024,
+      maxWidth: 1016, // 12 x (70px + 16px gap)
     },
     container: {
-      maxWidth: 880,
+      maxWidth: 844, // 10 x (70px + 16px gap)
     },
   },
   styles: {
@@ -101,23 +106,10 @@ const theme = {
       mb: 3,
     },
   },
-  cards: {
-    primary: {
-      padding: 2,
-      borderRadius: 4,
-      bg: "white",
-      boxShadow: "0 0 8px rgba(0, 0, 0, 0.125)",
-    },
-    compact: {
-      padding: 1,
-      borderRadius: 2,
-      border: "1px solid",
-      borderColor: "muted",
-    },
-  },
 }
 
 export const aboutTheme = {
+  ...theme,
   colors: {
     ...theme.colors,
     text: palette.pink[1],
@@ -125,19 +117,11 @@ export const aboutTheme = {
     muted: palette.pink[4],
     accent: palette.pink[3],
   },
-}
-
-export const recipesTheme = {
-  colors: {
-    ...theme.colors,
-    text: palette.orange[1],
-    background: palette.orange[6],
-    muted: "#ACA18F",
-    accent: palette.orange[3],
-  },
+  coverSrc: unsplashURL("9aOswReDKPo"),
 }
 
 export const whatTheme = {
+  ...theme,
   colors: {
     ...theme.colors,
     text: palette.cyan[1],
@@ -145,15 +129,29 @@ export const whatTheme = {
     muted: palette.cyan[4],
     accent: palette.cyan[3],
   },
+  coverSrc: unsplashURL("08bOYnH_r_E"),
 }
 
 export const howTheme = {
+  ...theme,
   colors: {
     ...theme.colors,
     text: palette.green[1],
     background: palette.green[6],
     muted: palette.green[4],
     accent: palette.green[3],
+  },
+  coverSrc: unsplashURL("sTPy-oeA3h0"),
+}
+
+export const recipesTheme = {
+  ...theme,
+  colors: {
+    ...theme.colors,
+    text: palette.teal[1],
+    // background: palette.teal[6],
+    muted: palette.teal[4],
+    accent: palette.orange[3],
   },
 }
 

@@ -34,7 +34,7 @@ function Logo(props) {
       }}
     >
       <Img fixed={data.image.childImageSharp.fixed} alt="Logo" />
-      <Box sx={{ ml: 2 }}>
+      <Box sx={{ ml: 1 }}>
         <Text
           as="p"
           sx={{ m: 0, color: "text", fontFamily: "heading", fontSize: 0 }}

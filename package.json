@@ -6,6 +6,8 @@
   "author": "Andrey Okonetchnikov <andrey@okonet.ru>",
   "dependencies": {
     "@component-driven/react-design-tokens": "^2.1.0",
+    "@emotion/styled": "^10.0.27",
+    "@theme-ui/color": "^0.3.1",
     "gatsby": "^2.19.45",
     "gatsby-image": "^2.2.44",
     "gatsby-plugin-manifest": "^2.2.48",
@@ -27,6 +29,8 @@
   "devDependencies": {
     "@mdx-js/mdx": "^1.5.8",
     "@mdx-js/react": "^1.5.8",
+    "babel-plugin-emotion": "^10.0.33",
+    "babel-preset-gatsby": "^0.4.7",
     "gatsby-plugin-mdx": "^1.1.4",
     "gatsby-plugin-sharp": "^2.5.3",
     "gatsby-remark-copy-linked-files": "^2.2.1",

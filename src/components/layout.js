@@ -12,6 +12,7 @@ import { Box, Container, Flex, ThemeProvider } from "theme-ui"
 import Logo from "./Logo"
 import Navigation from "./Navigation"
 import { default as defaultTheme } from "../theme"
+import { transparentize } from "@theme-ui/color"
 
 const Layout = ({ theme = defaultTheme, children }) => {
   const data = useStaticQuery(graphql`
@@ -28,10 +29,21 @@ const Layout = ({ theme = defaultTheme, children }) => {
   return (
     <ThemeProvider theme={theme}>
       <Flex sx={{ flexDirection: "column", minHeight: "100vh" }}>
-        <Box as={"header"} sx={{ bg: "background", p: 4 }}>
+        <Box
+          as={"header"}
+          sx={{
+            p: 4,
+            position: "sticky",
+            top: 0,
+            bg: transparentize("background", 0.75),
+            backdropFilter: "blur(16px)",
+            zIndex: 10,
+          }}
+        >
           <Container variant="full">
             <Box
               sx={{
+                pl: 3,
                 display: ["block", "flex"],
               }}
             >
@@ -48,7 +60,7 @@ const Layout = ({ theme = defaultTheme, children }) => {
           {children}
         </Flex>
 
-        <Box as="footer" sx={{ py: 4, flexShrink: 1, bg: "background" }}>
+        <Box as="footer" sx={{ py: 4, flexShrink: 1 }}>
           <Container>
             © {data.site.siteMetadata.author}, {new Date().getFullYear()}
           </Container>
