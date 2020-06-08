@@ -64,17 +64,19 @@ export default ({ data }) => {
       <Container variant="full">
         <Grid
           gap={3}
-          columns={12}
+          columns={[1, 12]}
           sx={{
             position: "relative",
-            mt: -5,
+            mt: [3, -5],
+            px: [4, 0],
             py: [0, 4],
             zIndex: 1,
           }}
         >
           <Box
             sx={{
-              gridColumn: "2 / span 7",
+              order: [1, 2],
+              gridColumn: [1, "2 / span 7"],
               px: [0, 5],
               py: [0, 4],
               ml: [0, -5],
@@ -109,8 +111,10 @@ export default ({ data }) => {
           </Box>
           <Box
             sx={{
-              mt: 5,
-              gridColumn: "9 / span 4",
+              order: [1, 2],
+              mt: [3, 5],
+              mb: [4, 0],
+              gridColumn: [1, "9 / span 4"],
             }}
           >
             <Styled.h2>
@@ -144,15 +148,16 @@ export default ({ data }) => {
       <Container variant="full">
         <Grid
           gap={3}
-          columns={12}
+          columns={[1, 12]}
           sx={{
+            px: [4, 0],
             py: [0, 4],
           }}
         >
           <Box
             sx={{
-              gridColumnStart: 2,
-              gridColumnEnd: 10,
+              gridColumnStart: [1, 2],
+              gridColumnEnd: [1, 10],
             }}
           >
             <Styled.h2>Zubereitung</Styled.h2>
