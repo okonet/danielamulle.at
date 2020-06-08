@@ -1,4 +1,4 @@
-import { shade, tint } from "polished"
+import { shade, tint, modularScale } from "polished"
 
 // Creates each four darker and lighter accents from passed hex color
 const createAccents = (color, length = 4, steps = 0.3) => {
@@ -26,6 +26,7 @@ export const palette = {
 }
 
 const theme = {
+  space: [0, 4, 8, 16, 32, 64, 128],
   colors: {
     ...palette,
     text: palette.gray[1],
@@ -64,10 +65,10 @@ const theme = {
   },
   layout: {
     full: {
-      maxWidth: 1024,
+      maxWidth: 1016, // 12 x (70px + 16px gap)
     },
     container: {
-      maxWidth: 880,
+      maxWidth: 844, // 10 x (70px + 16px gap)
     },
   },
   styles: {
@@ -103,20 +104,6 @@ const theme = {
     },
     li: {
       mb: 3,
-    },
-  },
-  cards: {
-    primary: {
-      padding: 2,
-      borderRadius: 4,
-      bg: "white",
-      boxShadow: "0 0 8px rgba(0, 0, 0, 0.125)",
-    },
-    compact: {
-      padding: 1,
-      borderRadius: 2,
-      border: "1px solid",
-      borderColor: "muted",
     },
   },
 }

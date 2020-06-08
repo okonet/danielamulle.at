@@ -1,7 +1,6 @@
 /** @jsx jsx */
 import React from "react"
 import { MDXRenderer } from "gatsby-plugin-mdx"
-import Img from "gatsby-image"
 import { transparentize } from "@theme-ui/color"
 import { Box, Container, Grid, jsx, Styled } from "theme-ui"
 import Layout from "./layout"
@@ -17,7 +16,7 @@ export default ({ data }) => {
         theme={recipesTheme}
         coverSrc={data.mdx.frontmatter.coverImage.childImageSharp.fixed.srcSet}
       >
-        <Grid gap={2} sx={{ my: 4 }}>
+        <Grid gap={2} sx={{ mt: 6, mb: 4 }}>
           <Link
             to={"/posts"}
             sx={{
@@ -62,19 +61,23 @@ export default ({ data }) => {
         </Grid>
       </Section>
 
-      <Section sx={{ py: 4 }}>
+      <Container variant="full">
         <Grid
-          gap={4}
-          columns={[1, 2]}
+          gap={3}
+          columns={12}
           sx={{
+            position: "relative",
+            mt: -5,
             py: [0, 4],
-            mx: [0, -2],
+            zIndex: 1,
           }}
         >
           <Box
             sx={{
-              px: [0, 4],
-              py: [0, 3],
+              gridColumn: "2 / span 7",
+              px: [0, 5],
+              py: [0, 4],
+              ml: [0, -5],
               bg: "background",
               borderRadius: ["none", "medium"],
               boxShadow: ["none", "float"],
@@ -104,7 +107,12 @@ export default ({ data }) => {
               ))}
             </Box>
           </Box>
-          <Box>
+          <Box
+            sx={{
+              mt: 5,
+              gridColumn: "9 / span 4",
+            }}
+          >
             <Styled.h2>
               Zubereitungszeit {data.mdx.frontmatter.timeToCook} min
             </Styled.h2>
@@ -132,11 +140,26 @@ export default ({ data }) => {
             </Grid>
           </Box>
         </Grid>
-        <Box sx={{ my: 4 }}>
-          <Styled.h2>Zubereitung</Styled.h2>
-          <MDXRenderer>{data.mdx.body}</MDXRenderer>
-        </Box>
-      </Section>
+      </Container>
+      <Container variant="full">
+        <Grid
+          gap={3}
+          columns={12}
+          sx={{
+            py: [0, 4],
+          }}
+        >
+          <Box
+            sx={{
+              gridColumnStart: 2,
+              gridColumnEnd: 10,
+            }}
+          >
+            <Styled.h2>Zubereitung</Styled.h2>
+            <MDXRenderer>{data.mdx.body}</MDXRenderer>
+          </Box>
+        </Grid>
+      </Container>
     </Layout>
   )
 }
