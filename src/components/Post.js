@@ -8,74 +8,59 @@ import Layout from "./layout"
 import { recipesTheme } from "../theme"
 import Link from "../components/Link"
 import Section from "./Section"
-import { ParallaxGroup, ParallaxLayer } from "./Parallax"
 
 export default ({ data }) => {
-  console.log(data.mdx.frontmatter.coverImage.childImageSharp.fluid)
+  console.log(data.mdx.frontmatter.coverImage.childImageSharp.fixed)
   return (
     <Layout theme={recipesTheme}>
-      <ParallaxGroup
-        as="section"
-        sx={{
-          minHeight: [300, 500],
-        }}
+      <Section
+        theme={recipesTheme}
+        coverSrc={data.mdx.frontmatter.coverImage.childImageSharp.fixed.srcSet}
       >
-        <ParallaxLayer depth={1}>
-          <Img
-            fluid={data.mdx.frontmatter.coverImage.childImageSharp.fluid}
+        <Grid gap={2} sx={{ my: 4 }}>
+          <Link
+            to={"/posts"}
             sx={{
-              minHeight: 600,
+              color: "muted",
+              fontSize: 0,
+              fontFamily: "monospace",
+              fontWeight: "heading",
+              textDecoration: "none",
             }}
-          />
-        </ParallaxLayer>
-        <ParallaxLayer>
-          <Container>
-            <Grid gap={2} sx={{ my: 4 }}>
-              <Link
-                to={"/posts"}
-                sx={{
-                  color: "muted",
-                  fontSize: 0,
-                  fontFamily: "monospace",
-                  fontWeight: "heading",
-                  textDecoration: "none",
-                }}
-              >
-                ← Rezepte
-              </Link>
-              <Styled.h1 sx={{ m: 0 }}>
-                <Styled.strong
-                  sx={{
-                    display: "inline",
-                    p: 1,
-                    lineHeight: 1.46,
-                    bg: transparentize("text", 0.25),
-                    color: "background",
-                  }}
-                >
-                  {data.mdx.frontmatter.title}
-                </Styled.strong>
-              </Styled.h1>
-              <Styled.p sx={{ m: 0 }}>
-                <Box
-                  as="time"
-                  sx={{
-                    display: "inline",
-                    p: 1,
-                    fontSize: 0,
-                    fontFamily: "monospace",
-                    fontWeight: "body",
-                    bg: transparentize("text", 0.25),
-                    color: "background",
-                  }}
-                >
-                  {data.mdx.frontmatter.date}
-                </Box>
-              </Styled.p>
-            </Grid>
-          </Container>
-        </ParallaxLayer>
-      </ParallaxGroup>
+          >
+            ← Rezepte
+          </Link>
+          <Styled.h1 sx={{ m: 0 }}>
+            <Styled.strong
+              sx={{
+                display: "inline",
+                p: 1,
+                lineHeight: 1.46,
+                bg: transparentize("text", 0.25),
+                color: "background",
+              }}
+            >
+              {data.mdx.frontmatter.title}
+            </Styled.strong>
+          </Styled.h1>
+          <Styled.p sx={{ m: 0 }}>
+            <Box
+              as="time"
+              sx={{
+                display: "inline",
+                p: 1,
+                fontSize: 0,
+                fontFamily: "monospace",
+                fontWeight: "body",
+                bg: transparentize("text", 0.25),
+                color: "background",
+              }}
+            >
+              {data.mdx.frontmatter.date}
+            </Box>
+          </Styled.p>
+        </Grid>
+      </Section>
 
       <Section sx={{ py: 4 }}>
         <Grid

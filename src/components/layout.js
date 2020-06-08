@@ -12,7 +12,6 @@ import { Box, Container, Flex, ThemeProvider } from "theme-ui"
 import Logo from "./Logo"
 import Navigation from "./Navigation"
 import { default as defaultTheme } from "../theme"
-import { ParallaxContainer } from "./Parallax"
 
 const Layout = ({ theme = defaultTheme, children }) => {
   const data = useStaticQuery(graphql`
@@ -28,38 +27,36 @@ const Layout = ({ theme = defaultTheme, children }) => {
 
   return (
     <ThemeProvider theme={theme}>
-      <ParallaxContainer>
-        <Flex sx={{ flexDirection: "column", minHeight: "100vh" }}>
-          <Box
-            as={"header"}
-            sx={{ p: 4, position: "sticky", top: 0, zIndex: 10 }}
-          >
-            <Container variant="full">
-              <Box
-                sx={{
-                  display: ["block", "flex"],
-                }}
-              >
-                <Logo />
-                <Navigation sx={{ ml: "auto" }} />
-              </Box>
-            </Container>
-          </Box>
+      <Flex sx={{ flexDirection: "column", minHeight: "100vh" }}>
+        <Box
+          as={"header"}
+          sx={{ p: 4, position: "sticky", top: 0, zIndex: 10 }}
+        >
+          <Container variant="full">
+            <Box
+              sx={{
+                display: ["block", "flex"],
+              }}
+            >
+              <Logo />
+              <Navigation sx={{ ml: "auto" }} />
+            </Box>
+          </Container>
+        </Box>
 
-          <Flex
-            as="main"
-            sx={{ flexDirection: "column", flexGrow: 1, bg: "background" }}
-          >
-            {children}
-          </Flex>
-
-          <Box as="footer" sx={{ py: 4, flexShrink: 1 }}>
-            <Container>
-              © {data.site.siteMetadata.author}, {new Date().getFullYear()}
-            </Container>
-          </Box>
+        <Flex
+          as="main"
+          sx={{ flexDirection: "column", flexGrow: 1, bg: "background" }}
+        >
+          {children}
         </Flex>
-      </ParallaxContainer>
+
+        <Box as="footer" sx={{ py: 4, flexShrink: 1 }}>
+          <Container>
+            © {data.site.siteMetadata.author}, {new Date().getFullYear()}
+          </Container>
+        </Box>
+      </Flex>
     </ThemeProvider>
   )
 }

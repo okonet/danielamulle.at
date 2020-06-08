@@ -33,4 +33,4 @@ nutrition:
 10. währenddessen Fetakäse in Würfel schneiden und Kichererbsen abgießen
 11. 10 Minuten vor Ende der Backzeit Feta & Kichererbsen zugeben und fertigbacken.
 
-    Natürlich könnt ihr einfach eurer Lieblingsgemüse verwenden, super eignen sich z.B. auch Kürbis, Zucchini, Aubergine, getrocknete Tomaten, Mais oder Oliven. Wenn ihr Oliven- und Rapsöl 50:50 verwendet, freut sich euer Körper über den tollen Fettmix aus omega-9 (Olive) und omega-3 (Raps).
+Natürlich könnt ihr einfach eurer Lieblingsgemüse verwenden, super eignen sich z.B. auch Kürbis, Zucchini, Aubergine, getrocknete Tomaten, Mais oder Oliven. Wenn ihr Oliven- und Rapsöl 50:50 verwendet, freut sich euer Körper über den tollen Fettmix aus omega-9 (Olive) und omega-3 (Raps).

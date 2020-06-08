@@ -162,7 +162,7 @@ export const recipesTheme = {
   colors: {
     ...theme.colors,
     text: palette.teal[1],
-    background: palette.teal[6],
+    // background: palette.teal[6],
     muted: palette.teal[4],
     accent: palette.orange[3],
   },

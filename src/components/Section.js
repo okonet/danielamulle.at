@@ -1,40 +1,59 @@
 /** @jsx jsx */
 import * as React from "react"
 import * as PropTypes from "prop-types"
-import { jsx, Box, Container, ThemeProvider } from "theme-ui"
+import { Box, Container, jsx, ThemeProvider } from "theme-ui"
 import { default as defaultTheme } from "../theme"
-import { ParallaxGroup, ParallaxLayer } from "./Parallax"
 
-function Section({ theme = defaultTheme, coverSrc, children, sx, ...props }) {
+function Section({
+  theme = defaultTheme,
+  coverSrc,
+  blendMode = "normal",
+  children,
+  sx,
+  ...props
+}) {
   let imageSrc = coverSrc || theme.coverSrc
   let imageStyles = {}
   if (imageSrc) {
+    let bgSrc = `url(${imageSrc})`
+    let srcSet = imageSrc.split(",")
+    if (srcSet.length >= 2) {
+      bgSrc = `image-set(${srcSet.map((s) =>
+        s.replace(/(.+) (.+x)/, 'url("$1") $2')
+      )})`
+    }
+    console.log(bgSrc)
     imageStyles = {
-      backgroundImage: `url(${imageSrc})`,
+      backgroundImage: bgSrc,
       backgroundSize: "cover",
       backgroundRepeat: "no-repeat",
       backgroundPosition: "center",
-      backgroundBlendMode: "overlay",
+      backgroundBlendMode: blendMode,
     }
   }
   return (
     <ThemeProvider theme={theme}>
-      <ParallaxGroup
+      <Box
         as="section"
         sx={{
+          position: "relative",
           p: 4,
-          py: 6,
-          backgroundColor: "background",
+          py: 5,
+          bg: "background",
           color: "text",
           ...sx,
         }}
         {...props}
       >
         {imageSrc && (
-          <ParallaxLayer
-            depth={1}
+          <Box
             sx={{
-              opacity: 1,
+              position: "absolute",
+              top: 0,
+              left: 0,
+              width: "100%",
+              height: "100%",
+              zIndex: 0,
               backgroundColor: "background",
               ...imageStyles,
             }}
@@ -43,7 +62,7 @@ function Section({ theme = defaultTheme, coverSrc, children, sx, ...props }) {
         <Container sx={{ position: "relative", zIndex: 1 }}>
           {children}
         </Container>
-      </ParallaxGroup>
+      </Box>
     </ThemeProvider>
   )
 }
