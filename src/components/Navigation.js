@@ -5,11 +5,12 @@ import { Link } from "gatsby"
 import theme, { aboutTheme, recipesTheme, whatTheme } from "../theme"
 
 const NavLink = React.forwardRef((props, ref) => {
-  const { sx, ...rest } = props
+  const { sx, to, ...rest } = props
   return (
     <Link
       ref={ref}
       activeClassName="active"
+      to={to}
       {...rest}
       sx={{
         position: "relative",
@@ -37,12 +38,12 @@ const screens = [
   },
   {
     title: "Was & Wie",
-    to: "/offers",
+    to: "/#offers",
     theme: whatTheme,
   },
   {
     title: "Über mich",
-    to: "/about",
+    to: "/#about",
     theme: aboutTheme,
   },
   {
