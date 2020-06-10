@@ -9,12 +9,15 @@ import Link from "../components/Link"
 import Section from "./Section"
 
 export default ({ data }) => {
-  console.log(data.mdx.frontmatter.coverImage.childImageSharp.fixed)
+  console.log(data)
+  console.log(data.mdxRecipe.frontmatter.coverImage.childImageSharp.fixed)
   return (
     <Layout theme={recipesTheme}>
       <Section
         theme={recipesTheme}
-        coverSrc={data.mdx.frontmatter.coverImage.childImageSharp.fixed.srcSet}
+        coverSrc={
+          data.mdxRecipe.frontmatter.coverImage.childImageSharp.fixed.srcSet
+        }
       >
         <Grid gap={2} sx={{ mt: 6, mb: 4 }}>
           <Link
@@ -39,7 +42,7 @@ export default ({ data }) => {
                 color: "background",
               }}
             >
-              {data.mdx.frontmatter.title}
+              {data.mdxRecipe.frontmatter.title}
             </Styled.strong>
           </Styled.h1>
           <Styled.p sx={{ m: 0 }}>
@@ -55,7 +58,7 @@ export default ({ data }) => {
                 color: "background",
               }}
             >
-              {data.mdx.frontmatter.date}
+              {data.mdxRecipe.frontmatter.date}
             </Box>
           </Styled.p>
         </Grid>
@@ -96,7 +99,7 @@ export default ({ data }) => {
                 fontSize: 1,
               }}
             >
-              {data.mdx.frontmatter.ingredients.map((item) => (
+              {data.mdxRecipe.frontmatter.ingredients.map((item) => (
                 <Box
                   as="li"
                   key={item}
@@ -118,30 +121,10 @@ export default ({ data }) => {
             }}
           >
             <Styled.h2>
-              Zubereitungszeit {data.mdx.frontmatter.timeToCook} min
+              Zubereitungszeit {data.mdxRecipe.frontmatter.timeToCook} min
             </Styled.h2>
 
-            <Styled.h2>
-              Nahrungswerte <small>per 100g</small>
-            </Styled.h2>
-
-            <Grid
-              as="dl"
-              gap={2}
-              columns={2}
-              sx={{
-                mt: 3,
-                pl: 0,
-                listStyle: "none",
-                fontFamily: "monospace",
-                fontSize: 1,
-              }}
-            >
-              <Box as="dt">Fette</Box>
-              <Box as="dd">{data.mdx.frontmatter.nutrition.fat}</Box>
-              <Box as="dt">Kalorien</Box>
-              <Box as="dd">{data.mdx.frontmatter.nutrition.cal}</Box>
-            </Grid>
+            <Styled.h2>Unter</Styled.h2>
           </Box>
         </Grid>
       </Container>
@@ -161,7 +144,7 @@ export default ({ data }) => {
             }}
           >
             <Styled.h2>Zubereitung</Styled.h2>
-            <MDXRenderer>{data.mdx.body}</MDXRenderer>
+            <MDXRenderer>{data.mdxRecipe.body}</MDXRenderer>
           </Box>
         </Grid>
       </Container>

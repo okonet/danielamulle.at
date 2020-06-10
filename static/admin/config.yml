@@ -35,9 +35,24 @@ collections:
         name: "ingredients"
         widget: "ingredientList"
       - { label: "Body", name: "body", widget: "markdown" }
-      - label: "Nutrition Facts"
-        name: "nutrition"
-        widget: "object"
+      - label: 'Categories'
+        name: 'categories'
+        widget: 'list'
+        required: true
         fields:
-          - {label: "Fat", name: "fat", widget: "number"}
-          - {label: "Calories", name: "cal", widget: "number"}
+          - label: 'Category'
+            name: 'category'
+            widget: 'relation'
+            collection: 'recipeCategories'
+            searchFields: ['title']
+            valueField: 'title'
+  - name: recipeCategories
+    label: Recipe Category
+    editor:
+      preview: false
+    folder: content/recipeCategories
+    slug: '{{slug}}'
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - { label: Title, name: title, widget: string }
+      - { label: Description, name: description, widget: markdown, required: false }

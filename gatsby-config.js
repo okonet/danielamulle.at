@@ -49,6 +49,13 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
+        path: "content/recipeCategories",
+        name: "content/recipeCategories",
+      },
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
         path: "content/assets",
         name: "content/assets",
       },

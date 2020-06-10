@@ -16,9 +16,6 @@ ingredients:
   - "Rosmarin frisch oder getrocknet (oder andere Kräuter, nach Lust & Laune)"
   - Olivenund Rapsöl (falls ihr beides zuhause habt)
   - "Salz, Pfeffer"
-nutrition:
-  fat: 5
-  cal: 256
 ---
 
 1. Karfiol in Röschen zerteilen, Strunk in kleine Stücke schneiden und mitverwenden oder für eine Gemüsesuppe aufheben

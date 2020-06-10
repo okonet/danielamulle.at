@@ -18,10 +18,10 @@ export default ({ data }) => {
 
       <Container variant="full">
         <Grid gap={4} columns={[1, 3]}>
-          {data.allMdx.edges.map(({ node: post }) => (
+          {data.allMdxRecipe.nodes.map((post) => (
             <Card key={post.id}>
               {post.frontmatter.coverImage && (
-                <Link to={post.fields.slug}>
+                <Link to={post.slug}>
                   <Img
                     fluid={post.frontmatter.coverImage.childImageSharp.fluid}
                   />
@@ -42,7 +42,7 @@ export default ({ data }) => {
                     mb: 2,
                   }}
                 >
-                  <Link to={post.fields.slug}>{post.frontmatter.title}</Link>
+                  <Link to={post.slug}>{post.frontmatter.title}</Link>
                 </Text>
                 <Text as="p">
                   <Box

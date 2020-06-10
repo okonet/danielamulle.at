@@ -16,12 +16,10 @@ ingredients:
   - >-
     1-2 Stängel Zitronengras (wenn du diese Spezialzutat nicht hast, geht es auch ohne)
 
+
   - "Chili, wenn du es gerne scharf magst"
   - Sojasauce zum Ablöschen
   - Rapsöl zum Anbraten
-nutrition:
-  fat: 5
-  cal: 256
 ---
 
 1. Für dein Curry den Kürbis in Würfel klein schneiden, ebenso die Zwiebel und den Knoblauch und schon ist die Schnibbelarbeit zu Ende.
