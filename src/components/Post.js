@@ -9,8 +9,6 @@ import Link from "../components/Link"
 import Section from "./Section"
 
 export default ({ data }) => {
-  console.log(data)
-  console.log(data.mdxRecipe.frontmatter.coverImage.childImageSharp.fixed)
   return (
     <Layout theme={recipesTheme}>
       <Section

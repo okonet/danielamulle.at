@@ -22,7 +22,6 @@ function Section({
         s.replace(/(.+) (.+x)/, 'url("$1") $2')
       )})`
     }
-    console.log(bgSrc)
     imageStyles = {
       backgroundImage: bgSrc,
       backgroundSize: "cover",
