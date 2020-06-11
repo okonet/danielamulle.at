@@ -1,8 +1,7 @@
 ---
-title: Hirselaibchen mit Knoblauchdip
-date: 2020-06-04T11:55:43.451Z
-description: Testsing
-coverImage: ../assets/20200516-dsc02803.jpg
+title: Vegane Hirselaibchen mit Knoblauchdip 2
+date: 2020-03-29T13:29:06.230Z
+coverImage: ../assets/20200512-dsc02747.jpg
 timeToCook: 30
 ingredients:
   - 1 Hokkaido-Kürbis
@@ -16,10 +15,12 @@ ingredients:
   - >-
     1-2 Stängel Zitronengras (wenn du diese Spezialzutat nicht hast, geht es auch ohne)
 
-
   - "Chili, wenn du es gerne scharf magst"
   - Sojasauce zum Ablöschen
   - Rapsöl zum Anbraten
+categories:
+  - category: Snacks
+  - category: Test
 ---
 
 1. Für dein Curry den Kürbis in Würfel klein schneiden, ebenso die Zwiebel und den Knoblauch und schon ist die Schnibbelarbeit zu Ende.
@@ -30,6 +31,6 @@ ingredients:
 
 4. Gib dann auch die roten Linsen gemeinsam mit einer Tasse Wasser dazu und lass alles kräftig köcheln. Die Kokosmilch kannst du auch gleich hinzufügen, dann haben deine Zutaten genug Zeit, ihre Geschmäcker zu einem leckeren Curry zu entfalten. Nun muss alles so lange köcheln, bis der Kürbis und die Linsen weich sind.
 
-![Image](../assets/20200516-dsc02805.jpg "Caption")
+![Image](../assets/20200512-dsc02746.jpg "Caption")
 
-![Image 2]("Caption")
+![Image 2](../assets/20200512-dsc02740.jpg "Caption")

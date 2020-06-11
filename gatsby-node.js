@@ -1,13 +1,32 @@
-// const fs = require("fs");
-// const path = require("path");
-// const mkdirp = require("mkdirp");
+const fs = require("fs")
+const path = require("path")
+const mkdirp = require("mkdirp")
 const crypto = require("crypto")
 const Debug = require("debug")
+const pkg = require("./package.json")
 const { createFilePath } = require("gatsby-source-filesystem")
-// const { urlResolve, createContentDigest } = require("gatsby-core-utils");
 const withDefaults = require("./utils")
-//
-const debug = Debug(`my-blog`)
+
+const debug = Debug(pkg.name)
+
+// Ensure that content directories exist at site-level
+exports.onPreBootstrap = ({ store }, themeOptions) => {
+  const { program } = store.getState()
+  const { contentPath, assetPath, recipesPath } = withDefaults(themeOptions)
+
+  const dirs = [
+    path.join(program.directory, recipesPath),
+    path.join(program.directory, contentPath),
+    path.join(program.directory, assetPath),
+  ]
+
+  dirs.forEach((dir) => {
+    debug("Initializing ${dir} directory")
+    if (!fs.existsSync(dir)) {
+      mkdirp.sync(dir)
+    }
+  })
+}
 
 const mdxResolverPassthrough = (fieldName) => async (
   source,
@@ -29,15 +48,17 @@ const mdxResolverPassthrough = (fieldName) => async (
 exports.sourceNodes = ({ actions, schema }) => {
   const { createTypes } = actions
   const typeDefs = `
-    interface Category @nodeInterface {
+    type CategoriesJson implements Node {
       id: ID!
-      title: String!
-      slug: String!
     }
     
     type MdxFrontmatter implements Node {
       title: String!
-      categories: [Category]
+      date: Date! @dateformat
+      coverImage: File
+      timeToCook: Int
+      categories: [CategoriesJson] @link(from: "categories.category")
+      ingredients: [String]
     }
     
     interface Post @nodeInterface {
@@ -75,172 +96,77 @@ exports.sourceNodes = ({ actions, schema }) => {
 }
 
 // exports.createResolvers = ({ createResolvers, schema }) => {
-//   createResolvers({
-//     Recipe: {
-//       categories: {
-//         //     type: `[Category]`,
-//         async resolve(source, args, context, info) {
-//           const availableCategories = source[info.fieldName]
-//           if (!availableCategories) return null
-//           const categories = availableCategories.map((cat) => cat.category)
-//           console.log(categories)
-//           const nodes = await context.nodeModel.runQuery({
-//             query: {
-//               filter: { fileAbsolutePath: { regex: "/recipeCategories/" } },
-//             },
-//             type: "Mdx",
-//           })
-//           // return null
-//           return nodes.filter((node) =>
-//             categories.includes(node.frontmatter.title)
-//           )
-//         },
+// createResolvers({
+//   MdxRecipe: {
+//     categories: {
+//       type: `[CategoriesJson]`,
+//       resolve(source, args, context, info) {
+//         const assignedCategories = source.frontmatter[info.fieldName]
+//         console.log(assignedCategories)
+//         if (!assignedCategories) {
+//           return null
+//         }
+//
+//         const ids = assignedCategories.map((cat) => cat.category)
+//         return context.nodeModel.getNodesByIds({
+//           ids,
+//           type: `CategoriesJson`,
+//         })
 //       },
 //     },
-//     Category: {
-//       title: {
-//         async resolve(source, args, context, info) {
-//           const node = await context.nodeModel.getNodeById({
-//             id: source.id,
-//           })
-//           return node.frontmatter.title
-//         },
-//       },
-//       slug: {
-//         async resolve(source, args, context, info) {
-//           const node = await context.nodeModel.getNodeById({
-//             id: source.id,
-//           })
-//           return node.fields.slug
-//         },
-//       },
-//     },
-//     // Query: {
-//     //   allCategories: {
-//     //     type: `[Category!]!`,
-//     //     async resolve(source, args, context, info) {
-//     //       const nodes = await context.nodeModel.runQuery({
-//     //         query: {
-//     //           filter: { fileAbsolutePath: { regex: "/recipeCategories/" } },
-//     //         },
-//     //         type: "Mdx",
-//     //       })
-//     //       const categories = nodes.map((mdx) => ({
-//     //         id: mdx.id,
-//     //         title: mdx.frontmatter.title,
-//     //         slug: mdx.fields.slug,
-//     //       }))
-//     //       return categories
-//     //     },
-//     //   },
-//     // },
-//   })
+//   },
+// })
 // }
 
-// // Ensure that content directories exist at site-level
-// exports.onPreBootstrap = ({ store }, themeOptions) => {
-//   const { program } = store.getState();
-//   const { contentPath, assetPath } = withDefaults(themeOptions);
-//
-//   const dirs = [
-//     path.join(program.directory, contentPath),
-//     path.join(program.directory, assetPath),
-//   ];
-//
-//   dirs.forEach((dir) => {
-//     debug("Initializing ${dir} directory");
-//     if (!fs.existsSync(dir)) {
-//       mkdirp.sync(dir);
-//     }
-//   });
-// };
-//
-//
-// exports.createSchemaCustomization = ({ actions, schema }) => {
-//   const { createTypes } = actions;
-//   createTypes(`interface BlogPost @nodeInterface {
-//       id: ID!
-//       title: String!
-//       body: String!
-//       slug: String!
-//       date: Date! @dateformat
-//       tags: [String]!
-//       keywords: [String]!
-//       excerpt: String!
-//   }`);
-//
-//   createTypes(
-//     schema.buildObjectType({
-//       name: "MdxBlogPost",
-//       fields: {
-//         id: { type: "ID!" },
-//         title: {
-//           type: "String!",
-//         },
-//         slug: {
-//           type: "String!",
-//         },
-//         date: { type: "Date!", extensions: { dateformat: {} } },
-//         tags: { type: "[String]!" },
-//         keywords: { type: "[String]!" },
-//         excerpt: {
-//           type: "String!",
-//           args: {
-//             pruneLength: {
-//               type: "Int",
-//               defaultValue: 140,
-//             },
-//           },
-//           resolve: mdxResolverPassthrough("excerpt"),
-//         },
-//         body: {
-//           type: "String!",
-//           resolve: mdxResolverPassthrough("body"),
-//         },
-//       },
-//       interfaces: ["Node", "BlogPost"],
-//     })
-//   );
-// };
-//
-
 exports.onCreateNode = ({ node, actions, getNode, createNodeId }) => {
+  const { recipesPath, categoriesPath } = withDefaults()
   const { createNodeField, createNode, createParentChildLink } = actions
+
+  if (node.internal.type === `CategoriesJson`) {
+    const slug = createFilePath({ node, getNode, basePath: `categories` })
+    createNodeField({
+      node,
+      name: `slug`,
+      value: slug,
+    })
+  }
 
   if (node.internal.type === `Mdx`) {
     const { frontmatter } = node
     const parent = getNode(node.parent)
+    switch (parent.sourceInstanceName) {
+      case recipesPath: {
+        const slug = createFilePath({ node, getNode, basePath: `` })
+        const fieldData = {
+          title: node.frontmatter.title,
+          slug,
+        }
 
-    if (parent.sourceInstanceName === "content/posts") {
-      const slug = createFilePath({ node, getNode, basePath: `` })
-      const fieldData = {
-        title: node.frontmatter.title,
-        slug,
+        createNode({
+          ...fieldData,
+          frontmatter,
+          // Required fields.
+          id: createNodeId(`${node.id} >>> MdxRecipe`),
+          parent: node.id,
+          children: [],
+          internal: {
+            type: `MdxRecipe`,
+            contentDigest: crypto
+              .createHash(`md5`)
+              .update(JSON.stringify(fieldData))
+              .digest(`hex`),
+            content: JSON.stringify(fieldData),
+            description: `Satisfies the interface for Mdx`,
+          },
+        })
+        createParentChildLink({
+          parent: parent,
+          child: node,
+        })
+        break
       }
-
-      console.log(fieldData)
-
-      createNode({
-        ...fieldData,
-        frontmatter,
-        // Required fields.
-        id: createNodeId(`${node.id} >>> MdxRecipe`),
-        parent: node.id,
-        children: [],
-        internal: {
-          type: `MdxRecipe`,
-          contentDigest: crypto
-            .createHash(`md5`)
-            .update(JSON.stringify(fieldData))
-            .digest(`hex`),
-          content: JSON.stringify(fieldData),
-          description: `Satisfies the MdxRecipe interface for Mdx`,
-        },
-      })
-      createParentChildLink({
-        parent: parent,
-        child: node,
-      })
+      default: {
+      }
     }
   }
 }
@@ -260,12 +186,6 @@ exports.createPages = async ({ graphql, actions, reporter }, themeOptions) => {
         limit: 1000
       ) {
         edges {
-          previous {
-            id
-          }
-          next {
-            id
-          }
           node {
             id
             slug

@@ -14,13 +14,18 @@ export const query = graphql`
         slug
         frontmatter {
           date(locale: "de", formatString: "DD MMMM YYYY")
-          description
           title
           coverImage {
             childImageSharp {
               fluid(maxWidth: 300) {
                 ...GatsbyImageSharpFluid
               }
+            }
+          }
+          categories {
+            id
+            fields {
+              slug
             }
           }
         }

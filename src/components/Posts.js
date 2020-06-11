@@ -1,11 +1,10 @@
 import React from "react"
-import { Box, Card, Container, Grid, Styled, Text } from "theme-ui"
+import { Badge, Box, Card, Container, Grid, jsx, Styled, Text } from "theme-ui"
 import SEO from "../components/seo"
 import Layout from "../components/layout"
 import Link from "../components/Link"
 import Img from "gatsby-image"
 import { recipesTheme } from "../theme"
-import { transparentize } from "@theme-ui/color"
 
 export default ({ data }) => {
   return (
@@ -57,6 +56,13 @@ export default ({ data }) => {
                     {post.frontmatter.date}
                   </Box>
                 </Text>
+                {post.frontmatter.categories && (
+                  <Text as="p">
+                    {post.frontmatter.categories.map((category) => (
+                      <Text key={category.id}>{category.id}</Text>
+                    ))}
+                  </Text>
+                )}
               </Box>
             </Card>
           ))}

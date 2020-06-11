@@ -1,3 +1,7 @@
+const withDefaults = require("./utils")
+
+const { assetPath, recipesPath, categoriesPath, contentPath } = withDefaults()
+
 module.exports = {
   siteMetadata: {
     title: "Daniela Mulle — Diätologin & Ernährungswissenschafterin",
@@ -39,25 +43,26 @@ module.exports = {
       options: { modulePath: `${__dirname}/src/cms/cms.js` },
     },
     "gatsby-plugin-theme-ui",
+    "gatsby-transformer-json",
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        path: "content/posts",
-        name: "content/posts",
+        path: recipesPath,
+        name: recipesPath,
       },
     },
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        path: "content/recipeCategories",
-        name: "content/recipeCategories",
+        path: categoriesPath,
+        name: categoriesPath,
       },
     },
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        path: "content/assets",
-        name: "content/assets",
+        path: assetPath,
+        name: assetPath,
       },
     },
     {

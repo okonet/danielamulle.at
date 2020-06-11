@@ -20,6 +20,12 @@ export const query = graphql`
             }
           }
         }
+        categories {
+          id
+          fields {
+            slug
+          }
+        }
       }
       body
     }

@@ -2,13 +2,14 @@
 import React from "react"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import { transparentize } from "@theme-ui/color"
-import { Box, Container, Grid, jsx, Styled } from "theme-ui"
+import { Box, Container, Grid, Text, jsx, Styled } from "theme-ui"
 import Layout from "./layout"
 import { recipesTheme } from "../theme"
 import Link from "../components/Link"
 import Section from "./Section"
 
 export default ({ data }) => {
+  console.log(data)
   return (
     <Layout theme={recipesTheme}>
       <Section
@@ -122,7 +123,14 @@ export default ({ data }) => {
               Zubereitungszeit {data.mdxRecipe.frontmatter.timeToCook} min
             </Styled.h2>
 
-            <Styled.h2>Unter</Styled.h2>
+            {data.mdxRecipe.frontmatter.categories && (
+              <>
+                <Styled.h2>Unter</Styled.h2>
+                {data.mdxRecipe.frontmatter.categories.map((category) => (
+                  <Text>{category.id}</Text>
+                ))}
+              </>
+            )}
           </Box>
         </Grid>
       </Container>

@@ -18,17 +18,16 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
-  - name: "blog"
-    label: "Blog"
-    folder: "content/posts"
+  - name: "recipes"
+    label: "Recipes"
+    folder: "content/recipes"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "{{slug}}"
     editor:
       preview: false
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Description", name: "description", widget: "string" }
       - { label: "Cover", name: "coverImage", widget: "image" }
       - { label: "Time to prepare (minutes)", name: "timeToCook", widget: "number" }
       - label: "Ingredients"
@@ -43,16 +42,18 @@ collections:
           - label: 'Category'
             name: 'category'
             widget: 'relation'
-            collection: 'recipeCategories'
-            searchFields: ['title']
-            valueField: 'title'
-  - name: recipeCategories
-    label: Recipe Category
+            collection: categories
+            searchFields: ['id']
+            valueField: 'id'
+  - name: categories
+    label: Categories
+    format: json
     editor:
       preview: false
-    folder: content/recipeCategories
+    folder: content/categories
+    identifier_field: id
     slug: '{{slug}}'
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
-      - { label: Title, name: title, widget: string }
+      - { label: Title, name: id, widget: string }
       - { label: Description, name: description, widget: markdown, required: false }
