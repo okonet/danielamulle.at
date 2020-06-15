@@ -10,7 +10,6 @@ import Section from "./Section"
 import { recipesPath } from "../../paths"
 
 export default ({ data }) => {
-  console.log(data)
   return (
     <Layout theme={recipesTheme}>
       <Section
