@@ -54,6 +54,7 @@ exports.sourceNodes = ({ actions, schema }) => {
   const typeDefs = `
     type CategoriesJson implements Node {
       id: ID!
+      recipes: [MdxRecipe]
     }
     
     type MdxFrontmatter implements Node {
@@ -99,28 +100,28 @@ exports.sourceNodes = ({ actions, schema }) => {
   )
 }
 
-// exports.createResolvers = ({ createResolvers, schema }) => {
-// createResolvers({
-//   MdxRecipe: {
-//     categories: {
-//       type: `[CategoriesJson]`,
-//       resolve(source, args, context, info) {
-//         const assignedCategories = source.frontmatter[info.fieldName]
-//         console.log(assignedCategories)
-//         if (!assignedCategories) {
-//           return null
-//         }
-//
-//         const ids = assignedCategories.map((cat) => cat.category)
-//         return context.nodeModel.getNodesByIds({
-//           ids,
-//           type: `CategoriesJson`,
-//         })
-//       },
-//     },
-//   },
-// })
-// }
+exports.createResolvers = ({ createResolvers, schema }) => {
+  createResolvers({
+    CategoriesJson: {
+      recipes: {
+        type: "[MdxRecipe]",
+        resolve(source, args, context, info) {
+          return context.nodeModel.runQuery({
+            query: {
+              filter: {
+                frontmatter: {
+                  categories: { elemMatch: { id: { eq: source.id } } },
+                },
+              },
+            },
+            type: `MdxRecipe`,
+            firstOnly: false,
+          })
+        },
+      },
+    },
+  })
+}
 
 exports.onCreateNode = ({ node, actions, getNode, createNodeId }) => {
   const { createNodeField, createNode, createParentChildLink } = actions
@@ -175,8 +176,9 @@ exports.onCreateNode = ({ node, actions, getNode, createNodeId }) => {
 }
 
 // These templates are simply data-fetching wrappers that import components
-const PostTemplate = require.resolve("./src/templates/post-query")
-const PostsTemplate = require.resolve("./src/templates/posts-query")
+const RecipePostTemplate = require.resolve("./src/templates/post-query")
+const RecipePostsTemplate = require.resolve("./src/templates/posts-query")
+const CategoryTemplate = require.resolve("./src/templates/category-query")
 
 exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions
@@ -193,6 +195,14 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
           }
         }
       }
+      allCategoriesJson(sort: { fields: [id], order: DESC }) {
+        nodes {
+          id
+          fields {
+            slug
+          }
+        }
+      }
     }
   `)
 
@@ -201,7 +211,8 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   }
 
   // Create Posts and Post pages.
-  const { allMdxRecipe } = result.data
+  const { allMdxRecipe, allCategoriesJson } = result.data
+  const categories = allCategoriesJson.nodes
   const posts = allMdxRecipe.edges
 
   // Create a page for each Post
@@ -210,7 +221,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     const next = index === 0 ? null : posts[index - 1]
     createPage({
       path: post.slug,
-      component: PostTemplate,
+      component: RecipePostTemplate,
       context: {
         id: post.id,
         previousId: previous ? previous.node.id : undefined,
@@ -219,10 +230,20 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     })
   })
 
-  // // Create the Posts page
+  categories.forEach(({ id, fields }) => {
+    createPage({
+      path: fields.slug,
+      component: CategoryTemplate,
+      context: {
+        id,
+      },
+    })
+  })
+
+  // Create the Recipes page
   createPage({
     path: recipesPath,
-    component: PostsTemplate,
+    component: RecipePostsTemplate,
     context: {},
   })
 }

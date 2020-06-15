@@ -8,18 +8,22 @@ import { recipesTheme } from "../theme"
 import RecipeCard from "./RecipeCard"
 
 export default ({ data }) => {
+  const { categoriesJson: category } = data
+  console.log(category)
   return (
     <Layout theme={recipesTheme}>
-      <SEO title="Rezepte" />
+      <SEO title={category.id} />
 
       <Container>
-        <Styled.h1>Rezepte für jeden Tag</Styled.h1>
+        <Styled.h1>
+          {category.id} <small>({category.recipes.length})</small>
+        </Styled.h1>
       </Container>
 
       <Container variant="full">
         <Grid gap={4} columns={[1, 3]}>
-          {data.allMdxRecipe.nodes.map((post) => (
-            <RecipeCard {...post} key={post.id} />
+          {category.recipes.map((recipe) => (
+            <RecipeCard {...recipe} key={recipe.id} />
           ))}
         </Grid>
       </Container>
