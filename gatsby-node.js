@@ -5,19 +5,23 @@ const crypto = require("crypto")
 const Debug = require("debug")
 const pkg = require("./package.json")
 const { createFilePath } = require("gatsby-source-filesystem")
-const withDefaults = require("./utils")
+const {
+  basePath,
+  contentPath,
+  recipesPath,
+  categoriesPath,
+  assetPath,
+} = require("./paths")
 
 const debug = Debug(pkg.name)
 
 // Ensure that content directories exist at site-level
-exports.onPreBootstrap = ({ store }, themeOptions) => {
+exports.onPreBootstrap = ({ store }) => {
   const { program } = store.getState()
-  const { contentPath, assetPath, recipesPath } = withDefaults(themeOptions)
-
   const dirs = [
-    path.join(program.directory, recipesPath),
-    path.join(program.directory, contentPath),
-    path.join(program.directory, assetPath),
+    path.join(program.directory, basePath, recipesPath),
+    path.join(program.directory, basePath, contentPath),
+    path.join(program.directory, basePath, assetPath),
   ]
 
   dirs.forEach((dir) => {
@@ -119,15 +123,14 @@ exports.sourceNodes = ({ actions, schema }) => {
 // }
 
 exports.onCreateNode = ({ node, actions, getNode, createNodeId }) => {
-  const { recipesPath, categoriesPath } = withDefaults()
   const { createNodeField, createNode, createParentChildLink } = actions
 
   if (node.internal.type === `CategoriesJson`) {
-    const slug = createFilePath({ node, getNode, basePath: `categories` })
+    const slug = createFilePath({ node, getNode, basePath })
     createNodeField({
       node,
       name: `slug`,
-      value: slug,
+      value: `${categoriesPath}${slug}`,
     })
   }
 
@@ -136,10 +139,10 @@ exports.onCreateNode = ({ node, actions, getNode, createNodeId }) => {
     const parent = getNode(node.parent)
     switch (parent.sourceInstanceName) {
       case recipesPath: {
-        const slug = createFilePath({ node, getNode, basePath: `` })
+        const slug = createFilePath({ node, getNode, basePath })
         const fieldData = {
           title: node.frontmatter.title,
-          slug,
+          slug: `${recipesPath}${slug}`,
         }
 
         createNode({
@@ -175,10 +178,8 @@ exports.onCreateNode = ({ node, actions, getNode, createNodeId }) => {
 const PostTemplate = require.resolve("./src/templates/post-query")
 const PostsTemplate = require.resolve("./src/templates/posts-query")
 
-exports.createPages = async ({ graphql, actions, reporter }, themeOptions) => {
+exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions
-  const { basePath } = withDefaults(themeOptions)
-
   const result = await graphql(`
     {
       allMdxRecipe(
@@ -220,7 +221,7 @@ exports.createPages = async ({ graphql, actions, reporter }, themeOptions) => {
 
   // // Create the Posts page
   createPage({
-    path: basePath,
+    path: recipesPath,
     component: PostsTemplate,
     context: {},
   })

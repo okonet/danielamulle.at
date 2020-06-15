@@ -2,11 +2,12 @@
 import React from "react"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import { transparentize } from "@theme-ui/color"
-import { Box, Container, Grid, Text, jsx, Styled } from "theme-ui"
+import { Box, Container, Grid, jsx, Styled, Text } from "theme-ui"
 import Layout from "./layout"
 import { recipesTheme } from "../theme"
 import Link from "../components/Link"
 import Section from "./Section"
+import { recipesPath } from "../../paths"
 
 export default ({ data }) => {
   console.log(data)
@@ -20,7 +21,7 @@ export default ({ data }) => {
       >
         <Grid gap={2} sx={{ mt: 6, mb: 4 }}>
           <Link
-            to={"/posts"}
+            to={recipesPath}
             sx={{
               color: "muted",
               fontSize: 0,

@@ -1,6 +1,10 @@
-const withDefaults = require("./utils")
-
-const { assetPath, recipesPath, categoriesPath, contentPath } = withDefaults()
+const {
+  basePath,
+  assetPath,
+  recipesPath,
+  categoriesPath,
+  contentPath,
+} = require("./paths")
 
 module.exports = {
   siteMetadata: {
@@ -47,21 +51,21 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        path: recipesPath,
+        path: `${basePath}/${recipesPath}`,
         name: recipesPath,
       },
     },
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        path: categoriesPath,
+        path: `${basePath}/${categoriesPath}`,
         name: categoriesPath,
       },
     },
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        path: assetPath,
+        path: `${basePath}/${assetPath}`,
         name: assetPath,
       },
     },

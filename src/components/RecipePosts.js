@@ -1,5 +1,5 @@
 import React from "react"
-import { Badge, Box, Card, Container, Grid, jsx, Styled, Text } from "theme-ui"
+import { Box, Card, Container, Grid, Styled, Text } from "theme-ui"
 import SEO from "../components/seo"
 import Layout from "../components/layout"
 import Link from "../components/Link"
@@ -59,7 +59,9 @@ export default ({ data }) => {
                 {post.frontmatter.categories && (
                   <Text as="p">
                     {post.frontmatter.categories.map((category) => (
-                      <Text key={category.id}>{category.id}</Text>
+                      <Link to={category.fields.slug} key={category.id}>
+                        {category.id}
+                      </Link>
                     ))}
                   </Text>
                 )}
