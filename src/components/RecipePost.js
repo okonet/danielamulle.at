@@ -18,43 +18,45 @@ export default ({ data }) => {
           data.mdxRecipe.frontmatter.coverImage.childImageSharp.fixed.srcSet
         }
       >
-        <Grid gap={2} sx={{ mt: 6, mb: 4 }}>
+        <Grid
+          gap={2}
+          sx={{
+            mt: 6,
+            mb: 4,
+            "& > * > *": {
+              display: "inline",
+              p: 1,
+              lineHeight: 1.46,
+              bg: transparentize("text", 0.25),
+              color: "background",
+            },
+            "& > a:hover > *": {
+              bg: transparentize("accent", 0.25),
+              color: "text",
+            },
+          }}
+        >
           <Link
             to={recipesPath}
             sx={{
-              color: "muted",
               fontSize: 0,
               fontFamily: "monospace",
               fontWeight: "heading",
               textDecoration: "none",
             }}
           >
-            ← Rezepte
+            <span>← Rezepte</span>
           </Link>
           <Styled.h1 sx={{ m: 0 }}>
-            <Styled.strong
-              sx={{
-                display: "inline",
-                p: 1,
-                lineHeight: 1.46,
-                bg: transparentize("text", 0.25),
-                color: "background",
-              }}
-            >
-              {data.mdxRecipe.frontmatter.title}
-            </Styled.strong>
+            <Styled.strong>{data.mdxRecipe.frontmatter.title}</Styled.strong>
           </Styled.h1>
           <Styled.p sx={{ m: 0 }}>
             <Box
               as="time"
               sx={{
-                display: "inline",
-                p: 1,
                 fontSize: 0,
                 fontFamily: "monospace",
                 fontWeight: "body",
-                bg: transparentize("text", 0.25),
-                color: "background",
               }}
             >
               {data.mdxRecipe.frontmatter.date}
