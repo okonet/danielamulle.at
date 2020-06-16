@@ -2,62 +2,71 @@
 import React from "react"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import { transparentize } from "@theme-ui/color"
-import { Box, Container, Grid, jsx, Styled } from "theme-ui"
+import { Box, Container, Grid, jsx, Styled, Text } from "theme-ui"
 import Layout from "./layout"
-import { recipesTheme } from "../theme"
-import Link from "../components/Link"
+import Link from "./Link"
 import Section from "./Section"
+import { recipesTheme } from "../theme"
+import { recipesPath } from "../../paths"
+import Tag from "./Tag"
+import CategoryTags from "./CategoryTags"
 
 export default ({ data }) => {
-  console.log(data.mdx.frontmatter.coverImage.childImageSharp.fixed)
   return (
     <Layout theme={recipesTheme}>
       <Section
         theme={recipesTheme}
-        coverSrc={data.mdx.frontmatter.coverImage.childImageSharp.fixed.srcSet}
+        coverSrc={
+          data.mdxRecipe.frontmatter.coverImage.childImageSharp.fixed.srcSet
+        }
       >
-        <Grid gap={2} sx={{ mt: 6, mb: 4 }}>
-          <Link
-            to={"/posts"}
-            sx={{
-              color: "muted",
-              fontSize: 0,
-              fontFamily: "monospace",
-              fontWeight: "heading",
-              textDecoration: "none",
-            }}
-          >
-            ← Rezepte
-          </Link>
-          <Styled.h1 sx={{ m: 0 }}>
-            <Styled.strong
+        <Grid
+          gap={2}
+          sx={{
+            mt: 6,
+            mb: 4,
+            "& > * > *": {
+              display: "inline",
+              p: 1,
+              lineHeight: 1.46,
+              bg: transparentize("text", 0.25),
+              color: "background",
+            },
+          }}
+        >
+          <Box as="nav">
+            <Link
+              to={recipesPath}
               sx={{
-                display: "inline",
-                p: 1,
-                lineHeight: 1.46,
-                bg: transparentize("text", 0.25),
+                fontSize: 0,
+                fontFamily: "monospace",
+                fontWeight: "heading",
+                textDecoration: "none",
                 color: "background",
+                ":hover": {
+                  bg: transparentize("accent", 0.25),
+                  color: "text",
+                },
               }}
             >
-              {data.mdx.frontmatter.title}
-            </Styled.strong>
+              ← Rezepte
+            </Link>
+          </Box>
+          <Styled.h1 sx={{ m: 0 }}>
+            <Styled.strong>{data.mdxRecipe.frontmatter.title}</Styled.strong>
           </Styled.h1>
-          <Styled.p sx={{ m: 0 }}>
+          <Box as="p">
             <Box
               as="time"
               sx={{
-                display: "inline",
-                p: 1,
                 fontSize: 0,
                 fontFamily: "monospace",
                 fontWeight: "body",
-                bg: transparentize("text", 0.25),
-                color: "background",
               }}
             >
-              {data.mdx.frontmatter.date}
+              {data.mdxRecipe.frontmatter.date}
             </Box>
-          </Styled.p>
+          </Box>
         </Grid>
       </Section>
 
@@ -96,7 +105,7 @@ export default ({ data }) => {
                 fontSize: 1,
               }}
             >
-              {data.mdx.frontmatter.ingredients.map((item) => (
+              {data.mdxRecipe.frontmatter.ingredients.map((item) => (
                 <Box
                   as="li"
                   key={item}
@@ -118,30 +127,14 @@ export default ({ data }) => {
             }}
           >
             <Styled.h2>
-              Zubereitungszeit {data.mdx.frontmatter.timeToCook} min
+              Zubereitungszeit {data.mdxRecipe.frontmatter.timeToCook} min
             </Styled.h2>
 
-            <Styled.h2>
-              Nahrungswerte <small>per 100g</small>
-            </Styled.h2>
-
-            <Grid
-              as="dl"
-              gap={2}
-              columns={2}
-              sx={{
-                mt: 3,
-                pl: 0,
-                listStyle: "none",
-                fontFamily: "monospace",
-                fontSize: 1,
-              }}
-            >
-              <Box as="dt">Fette</Box>
-              <Box as="dd">{data.mdx.frontmatter.nutrition.fat}</Box>
-              <Box as="dt">Kalorien</Box>
-              <Box as="dd">{data.mdx.frontmatter.nutrition.cal}</Box>
-            </Grid>
+            {data.mdxRecipe.frontmatter.categories && (
+              <CategoryTags
+                categories={data.mdxRecipe.frontmatter.categories}
+              />
+            )}
           </Box>
         </Grid>
       </Container>
@@ -161,7 +154,7 @@ export default ({ data }) => {
             }}
           >
             <Styled.h2>Zubereitung</Styled.h2>
-            <MDXRenderer>{data.mdx.body}</MDXRenderer>
+            <MDXRenderer>{data.mdxRecipe.body}</MDXRenderer>
           </Box>
         </Grid>
       </Container>

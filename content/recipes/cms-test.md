@@ -1,7 +1,6 @@
 ---
-title: Vegane Hirselaibchen mit Knoblauchdip
+title: Vegane Hirselaibchen mit Knoblauchdip 2
 date: 2020-03-29T13:29:06.230Z
-description: Testsing
 coverImage: ../assets/20200512-dsc02747.jpg
 timeToCook: 30
 ingredients:
@@ -19,9 +18,9 @@ ingredients:
   - "Chili, wenn du es gerne scharf magst"
   - Sojasauce zum Ablöschen
   - Rapsöl zum Anbraten
-nutrition:
-  fat: 5
-  cal: 256
+categories:
+  - category: Snacks
+  - category: Test
 ---
 
 1. Für dein Curry den Kürbis in Würfel klein schneiden, ebenso die Zwiebel und den Knoblauch und schon ist die Schnibbelarbeit zu Ende.

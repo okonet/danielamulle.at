@@ -1,22 +1,17 @@
 import { graphql } from "gatsby"
-import PostPage from "../components/Post"
+import PostPage from "../components/RecipePage"
 
 export default PostPage
 
 export const query = graphql`
   query PostPageQuery($id: String!, $previousId: String, $nextId: String) {
-    mdx(id: { eq: $id }) {
+    mdxRecipe(id: { eq: $id }) {
       id
-      excerpt
       frontmatter {
         title
         date(locale: "de", formatString: "DD MMMM YYYY")
         timeToCook
         ingredients
-        nutrition {
-          fat
-          cal
-        }
         coverImage {
           absolutePath
           childImageSharp {
@@ -25,20 +20,24 @@ export const query = graphql`
             }
           }
         }
+        categories {
+          id
+          fields {
+            slug
+          }
+        }
       }
       body
     }
-    previous: mdx(id: { eq: $previousId }) {
+    previous: mdxRecipe(id: { eq: $previousId }) {
       id
-      excerpt
       frontmatter {
         title
         date(locale: "de", formatString: "DD MMMM YYYY")
       }
     }
-    next: mdx(id: { eq: $nextId }) {
+    next: mdxRecipe(id: { eq: $nextId }) {
       id
-      excerpt
       frontmatter {
         title
         date(locale: "de", formatString: "DD MMMM YYYY")

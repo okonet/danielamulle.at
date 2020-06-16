@@ -1,7 +1,6 @@
 ---
 title: Ofengemüse mit Kichererbsen & Feta
 date: 2020-06-04T12:14:36.395Z
-description: Blah
 coverImage: ../assets/20200531-dsc02898.jpg
 timeToCook: 30
 ingredients:
@@ -16,9 +15,9 @@ ingredients:
   - "Rosmarin frisch oder getrocknet (oder andere Kräuter, nach Lust & Laune)"
   - Olivenund Rapsöl (falls ihr beides zuhause habt)
   - "Salz, Pfeffer"
-nutrition:
-  fat: 5
-  cal: 256
+categories:
+  - category: Snacks
+  - category: Test
 ---
 
 1. Karfiol in Röschen zerteilen, Strunk in kleine Stücke schneiden und mitverwenden oder für eine Gemüsesuppe aufheben

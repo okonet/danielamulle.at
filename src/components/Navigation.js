@@ -3,6 +3,7 @@ import React from "react"
 import { Flex, jsx, ThemeProvider } from "theme-ui"
 import { Link } from "gatsby"
 import theme, { aboutTheme, recipesTheme, whatTheme } from "../theme"
+import { recipesPath } from "../../paths"
 
 const NavLink = React.forwardRef((props, ref) => {
   const { sx, to, ...rest } = props
@@ -48,7 +49,7 @@ const screens = [
   },
   {
     title: "Rezepte",
-    to: "/posts",
+    to: `/${recipesPath}`,
     theme: recipesTheme,
   },
 ]
@@ -69,7 +70,7 @@ const Navigation = (props) => {
     >
       {screens.map(({ title, theme, to }) => {
         return (
-          <ThemeProvider theme={theme}>
+          <ThemeProvider theme={theme} key={to}>
             <NavLink key={to} to={to}>
               {title}
             </NavLink>

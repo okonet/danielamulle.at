@@ -1,33 +1,37 @@
 import { graphql } from "gatsby"
-import Posts from "../components/Posts"
+import Posts from "../components/Recipes"
 
 export default Posts
 
 export const query = graphql`
+  fragment RecipeMeta on MdxRecipe {
+    id
+    slug
+    frontmatter {
+      date(locale: "de", formatString: "DD MMMM YYYY")
+      title
+      coverImage {
+        childImageSharp {
+          fluid(maxWidth: 300) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      categories {
+        id
+        fields {
+          slug
+        }
+      }
+    }
+  }
   query PostsQuery {
-    allMdx(
+    allMdxRecipe(
       sort: { fields: [frontmatter___date, frontmatter___title], order: DESC }
       limit: 1000
     ) {
-      edges {
-        node {
-          id
-          fields {
-            slug
-          }
-          frontmatter {
-            date(locale: "de", formatString: "DD MMMM YYYY")
-            description
-            title
-            coverImage {
-              childImageSharp {
-                fluid(maxWidth: 300) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-          }
-        }
+      nodes {
+        ...RecipeMeta
       }
     }
   }
