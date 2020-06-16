@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import Link from "./Link"
 import Img from "gatsby-image"
 import { Box, Card, Text } from "theme-ui"
-import Group from "react-group"
+import CategoryTags from "./CategoryTags"
 
 RecipeCard.propTypes = {
   slug: PropTypes.string.isRequired,
@@ -26,7 +26,14 @@ function RecipeCard({ frontmatter, slug }) {
   return (
     <Card>
       {frontmatter.coverImage && (
-        <Link to={slug}>
+        <Link
+          to={slug}
+          sx={{
+            display: "block",
+            borderRadius: "medium",
+            overflow: "hidden",
+          }}
+        >
           <Img fluid={frontmatter.coverImage.childImageSharp.fluid} />
         </Link>
       )}
@@ -61,13 +68,14 @@ function RecipeCard({ frontmatter, slug }) {
           </Box>
         </Text>
         {frontmatter.categories && (
-          <Group as="p" separator=", ">
-            {frontmatter.categories.map((category) => (
-              <Link to={category.fields.slug} key={category.id}>
-                #{category.id}
-              </Link>
-            ))}
-          </Group>
+          <Box
+            sx={{
+              mx: -2,
+              my: 2,
+            }}
+          >
+            <CategoryTags categories={frontmatter.categories} />
+          </Box>
         )}
       </Box>
     </Card>

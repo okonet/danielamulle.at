@@ -8,6 +8,8 @@ import Link from "./Link"
 import Section from "./Section"
 import { recipesTheme } from "../theme"
 import { recipesPath } from "../../paths"
+import Tag from "./Tag"
+import CategoryTags from "./CategoryTags"
 
 export default ({ data }) => {
   return (
@@ -129,12 +131,9 @@ export default ({ data }) => {
             </Styled.h2>
 
             {data.mdxRecipe.frontmatter.categories && (
-              <>
-                <Styled.h2>Unter</Styled.h2>
-                {data.mdxRecipe.frontmatter.categories.map((category) => (
-                  <Text>{category.id}</Text>
-                ))}
-              </>
+              <CategoryTags
+                categories={data.mdxRecipe.frontmatter.categories}
+              />
             )}
           </Box>
         </Grid>
