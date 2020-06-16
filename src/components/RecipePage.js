@@ -4,9 +4,9 @@ import { MDXRenderer } from "gatsby-plugin-mdx"
 import { transparentize } from "@theme-ui/color"
 import { Box, Container, Grid, jsx, Styled, Text } from "theme-ui"
 import Layout from "./layout"
-import { recipesTheme } from "../theme"
-import Link from "../components/Link"
+import Link from "./Link"
 import Section from "./Section"
+import { recipesTheme } from "../theme"
 import { recipesPath } from "../../paths"
 
 export default ({ data }) => {
@@ -30,27 +30,30 @@ export default ({ data }) => {
               bg: transparentize("text", 0.25),
               color: "background",
             },
-            "& > a:hover > *": {
-              bg: transparentize("accent", 0.25),
-              color: "text",
-            },
           }}
         >
-          <Link
-            to={recipesPath}
-            sx={{
-              fontSize: 0,
-              fontFamily: "monospace",
-              fontWeight: "heading",
-              textDecoration: "none",
-            }}
-          >
-            <span>← Rezepte</span>
-          </Link>
+          <Box as="nav">
+            <Link
+              to={recipesPath}
+              sx={{
+                fontSize: 0,
+                fontFamily: "monospace",
+                fontWeight: "heading",
+                textDecoration: "none",
+                color: "background",
+                ":hover": {
+                  bg: transparentize("accent", 0.25),
+                  color: "text",
+                },
+              }}
+            >
+              ← Rezepte
+            </Link>
+          </Box>
           <Styled.h1 sx={{ m: 0 }}>
             <Styled.strong>{data.mdxRecipe.frontmatter.title}</Styled.strong>
           </Styled.h1>
-          <Styled.p sx={{ m: 0 }}>
+          <Box as="p">
             <Box
               as="time"
               sx={{
@@ -61,7 +64,7 @@ export default ({ data }) => {
             >
               {data.mdxRecipe.frontmatter.date}
             </Box>
-          </Styled.p>
+          </Box>
         </Grid>
       </Section>
 

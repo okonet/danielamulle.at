@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 import Link from "./Link"
 import Img from "gatsby-image"
 import { Box, Card, Text } from "theme-ui"
+import Group from "react-group"
 
 RecipeCard.propTypes = {
   slug: PropTypes.string.isRequired,
@@ -60,13 +61,13 @@ function RecipeCard({ frontmatter, slug }) {
           </Box>
         </Text>
         {frontmatter.categories && (
-          <Text as="p">
+          <Group as="p" separator=", ">
             {frontmatter.categories.map((category) => (
               <Link to={category.fields.slug} key={category.id}>
-                {category.id}
+                #{category.id}
               </Link>
             ))}
-          </Text>
+          </Group>
         )}
       </Box>
     </Card>
