@@ -50,7 +50,7 @@ export default ({ data }) => {
             </Link>
           </Box>
           <Styled.h1 sx={{ m: 0 }}>
-            <Styled.strong>{data.mdxRecipe.frontmatter.title}</Styled.strong>
+            <span>{data.mdxRecipe.frontmatter.title}</span>
           </Styled.h1>
           <Box as="p">
             <Box

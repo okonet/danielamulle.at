@@ -17,8 +17,10 @@ const NavLink = React.forwardRef((props, ref) => {
         position: "relative",
         color: "accent",
         textDecoration: "none",
-        fontFamily: "heading",
-        fontSize: 2,
+        fontFamily: "monospace",
+        letterSpacing: ["body", "condensed"],
+        fontSize: [1, 2],
+        whiteSpace: "nowrap",
         "&:hover": {
           color: "accent",
         },

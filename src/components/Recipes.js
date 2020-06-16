@@ -13,7 +13,7 @@ export default ({ data }) => {
       <SEO title="Rezepte" />
 
       <Container>
-        <Styled.h1>Rezepte für jeden Tag</Styled.h1>
+        <Styled.h1>Rezepte</Styled.h1>
       </Container>
 
       <Container variant="full">

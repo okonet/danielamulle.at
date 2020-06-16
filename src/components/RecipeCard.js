@@ -48,7 +48,8 @@ function RecipeCard({ frontmatter, slug }) {
           sx={{
             color: "accent",
             fontSize: 1,
-            fontFamily: "body",
+            fontFamily: "heading",
+            fontWeight: "heading",
             mb: 2,
           }}
         >
