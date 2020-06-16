@@ -15,8 +15,8 @@ export const query = graphql`
         coverImage {
           absolutePath
           childImageSharp {
-            fixed(width: 1024) {
-              ...GatsbyImageSharpFixed
+            fluid(maxWidth: 1024) {
+              ...GatsbyImageSharpFluid
             }
           }
         }

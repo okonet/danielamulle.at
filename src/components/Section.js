@@ -1,12 +1,14 @@
 /** @jsx jsx */
 import * as React from "react"
 import * as PropTypes from "prop-types"
+import Img from "gatsby-image"
 import { Box, Container, jsx, ThemeProvider } from "theme-ui"
 import { default as defaultTheme } from "../theme"
 
 function Section({
   theme = defaultTheme,
   coverSrc,
+  coverFluid,
   blendMode = "normal",
   children,
   sx,
@@ -55,6 +57,19 @@ function Section({
               zIndex: 0,
               backgroundColor: "background",
               ...imageStyles,
+            }}
+          />
+        )}
+        {coverFluid && (
+          <Img
+            fluid={coverFluid}
+            style={{
+              position: "absolute",
+              top: 0,
+              left: 0,
+              width: "100%",
+              height: "100%",
+              zIndex: 0,
             }}
           />
         )}
