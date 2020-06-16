@@ -32,7 +32,7 @@ const Layout = ({ theme = defaultTheme, children }) => {
         <Box
           as={"header"}
           sx={{
-            p: 4,
+            py: 3,
             position: "sticky",
             top: 0,
             bg: transparentize("background", 0.75),
@@ -43,12 +43,12 @@ const Layout = ({ theme = defaultTheme, children }) => {
           <Container variant="full">
             <Box
               sx={{
-                pl: 3,
-                display: ["block", "flex"],
+                px: [0, 0, 3],
+                display: ["block", "block", "flex"],
               }}
             >
               <Logo />
-              <Navigation sx={{ ml: "auto" }} />
+              <Navigation sx={{ ml: "auto", mt: 3 }} />
             </Box>
           </Container>
         </Box>

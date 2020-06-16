@@ -29,11 +29,6 @@ module.exports = {
             variants: ["400", "400i", "700", "700i"],
           },
           {
-            family: "IBM Plex Serif",
-            subsets: ["latin-ext"],
-            variants: ["400", "400i", "700", "700i"],
-          },
-          {
             family: "IBM Plex Mono",
             subsets: ["latin-ext"],
             variants: ["400", "400i", "700", "700i"],

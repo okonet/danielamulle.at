@@ -2,13 +2,12 @@
 import React from "react"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import { transparentize } from "@theme-ui/color"
-import { Box, Container, Grid, jsx, Styled, Text } from "theme-ui"
+import { Box, Container, Grid, jsx, Styled } from "theme-ui"
 import Layout from "./layout"
 import Link from "./Link"
 import Section from "./Section"
 import { recipesTheme } from "../theme"
 import { recipesPath } from "../../paths"
-import Tag from "./Tag"
 import CategoryTags from "./CategoryTags"
 
 export default ({ data }) => {
@@ -16,9 +15,7 @@ export default ({ data }) => {
     <Layout theme={recipesTheme}>
       <Section
         theme={recipesTheme}
-        coverSrc={
-          data.mdxRecipe.frontmatter.coverImage.childImageSharp.fixed.srcSet
-        }
+        coverFluid={data.mdxRecipe.frontmatter.coverImage.childImageSharp.fluid}
       >
         <Grid
           gap={2}
@@ -53,7 +50,7 @@ export default ({ data }) => {
             </Link>
           </Box>
           <Styled.h1 sx={{ m: 0 }}>
-            <Styled.strong>{data.mdxRecipe.frontmatter.title}</Styled.strong>
+            <span>{data.mdxRecipe.frontmatter.title}</span>
           </Styled.h1>
           <Box as="p">
             <Box

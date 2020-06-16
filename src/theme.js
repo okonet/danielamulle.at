@@ -17,7 +17,9 @@ function unsplashURL(imageId) {
 }
 
 export const palette = {
-  gray: createAccents("#ccc", 4, 0.42),
+  white: "#fff",
+  black: "#000",
+  gray: createAccents("#bac0c8"),
   pink: createAccents("#e23871"),
   cyan: createAccents("#05a8cd"),
   orange: createAccents("#ff9c00"),
@@ -29,22 +31,20 @@ const theme = {
   space: [0, 4, 8, 16, 32, 64, 128],
   colors: {
     ...palette,
-    text: palette.gray[1],
-    background: palette.gray[6],
-    muted: palette.gray[4],
+    text: palette.gray[0],
+    background: palette.white,
+    muted: palette.gray[3],
     accent: palette.green[3],
   },
   fonts: {
-    body:
-      '"IBM Plex Serif", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif',
-    heading: '"IBM Plex Sans", Georgia, serif',
+    body: '"IBM Plex Sans", Georgia, serif',
+    heading: '"IBM Plex Mono", MonoLisa, Menlo, monospace',
     monospace: '"IBM Plex Mono", MonoLisa, Menlo, monospace',
   },
   fontSizes: [13, 16, 24, 48],
   fontWeights: {
     body: 400,
     heading: 700,
-    bold: 700,
   },
   lineHeights: {
     body: 1.5,
@@ -52,9 +52,11 @@ const theme = {
   },
   letterSpacings: {
     body: "normal",
+    condensed: -0.8,
     caps: "0.2em",
   },
   radii: {
+    none: 0,
     small: 2,
     medium: 5,
     round: 99999,
@@ -65,9 +67,11 @@ const theme = {
   },
   layout: {
     full: {
+      px: [3, 3, 0],
       maxWidth: 1016, // 12 x (70px + 16px gap)
     },
     container: {
+      px: [3, 3, 0],
       maxWidth: 844, // 10 x (70px + 16px gap)
     },
   },
@@ -83,14 +87,15 @@ const theme = {
       mb: 4,
       color: "accent",
       fontSize: [2, 3],
-      fontFamily: "body",
+      fontWeight: "body",
+      fontFamily: "heading",
     },
     h2: {
       m: 0,
       my: 2,
       color: "text",
       fontSize: 1,
-      fontWeight: "bold",
+      fontWeight: "heading",
       fontFamily: "heading",
     },
     ul: {
@@ -150,7 +155,7 @@ export const recipesTheme = {
     ...theme.colors,
     text: palette.teal[1],
     // background: palette.teal[6],
-    muted: palette.teal[4],
+    // muted: palette.teal[4],
     accent: palette.orange[3],
   },
 }
