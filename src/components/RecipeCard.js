@@ -15,7 +15,7 @@ RecipeCard.propTypes = {
           slug: PropTypes.string,
         }),
       })
-    ).isRequired,
+    ),
     coverImage: PropTypes.object.isRequired,
     date: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,

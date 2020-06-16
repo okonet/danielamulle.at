@@ -70,7 +70,7 @@ const Navigation = (props) => {
     >
       {screens.map(({ title, theme, to }) => {
         return (
-          <ThemeProvider theme={theme}>
+          <ThemeProvider theme={theme} key={to}>
             <NavLink key={to} to={to}>
               {title}
             </NavLink>
