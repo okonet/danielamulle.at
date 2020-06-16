@@ -55,6 +55,7 @@ const theme = {
     caps: "0.2em",
   },
   radii: {
+    none: 0,
     small: 2,
     medium: 5,
     round: 99999,

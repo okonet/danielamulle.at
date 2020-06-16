@@ -30,7 +30,7 @@ function RecipeCard({ frontmatter, slug }) {
           to={slug}
           sx={{
             display: "block",
-            borderRadius: "medium",
+            borderRadius: ["none", "medium"],
             overflow: "hidden",
           }}
         >
