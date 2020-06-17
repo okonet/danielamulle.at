@@ -6,26 +6,24 @@ import { Box, Card, Text } from "theme-ui"
 import CategoryTags from "./CategoryTags"
 
 RecipeCard.propTypes = {
+  categories: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string,
+      fields: PropTypes.shape({
+        slug: PropTypes.string,
+      }),
+    })
+  ),
+  coverImage: PropTypes.object.isRequired,
+  date: PropTypes.string.isRequired,
   slug: PropTypes.string.isRequired,
-  frontmatter: PropTypes.shape({
-    categories: PropTypes.arrayOf(
-      PropTypes.shape({
-        id: PropTypes.string,
-        fields: PropTypes.shape({
-          slug: PropTypes.string,
-        }),
-      })
-    ),
-    coverImage: PropTypes.object.isRequired,
-    date: PropTypes.string.isRequired,
-    title: PropTypes.string.isRequired,
-  }),
+  title: PropTypes.string.isRequired,
 }
 
-function RecipeCard({ frontmatter, slug }) {
+function RecipeCard({ coverImage, categories, date, slug, title }) {
   return (
     <Card>
-      {frontmatter.coverImage && (
+      {coverImage && (
         <Link
           to={slug}
           sx={{
@@ -34,7 +32,7 @@ function RecipeCard({ frontmatter, slug }) {
             overflow: "hidden",
           }}
         >
-          <Img fluid={frontmatter.coverImage.childImageSharp.fluid} />
+          <Img fluid={coverImage.childImageSharp.fluid} />
         </Link>
       )}
       <Box
@@ -53,7 +51,7 @@ function RecipeCard({ frontmatter, slug }) {
             mb: 2,
           }}
         >
-          <Link to={slug}>{frontmatter.title}</Link>
+          <Link to={slug}>{title}</Link>
         </Text>
         <Text as="p">
           <Box
@@ -65,17 +63,17 @@ function RecipeCard({ frontmatter, slug }) {
               color: "muted",
             }}
           >
-            {frontmatter.date}
+            {date}
           </Box>
         </Text>
-        {frontmatter.categories && (
+        {categories && (
           <Box
             sx={{
               mx: -2,
               my: 2,
             }}
           >
-            <CategoryTags categories={frontmatter.categories} />
+            <CategoryTags categories={categories} />
           </Box>
         )}
       </Box>

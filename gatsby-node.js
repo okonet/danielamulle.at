@@ -54,67 +54,43 @@ exports.sourceNodes = ({ actions, schema }) => {
   const typeDefs = `
     type CategoriesJson implements Node {
       id: ID!
-      recipes: [MdxRecipe]
+      recipes: [Recipe]
     }
     
-    type MdxFrontmatter implements Node {
-      title: String!
-      date: Date! @dateformat
-      coverImage: File
-      timeToCook: Int
-      categories: [CategoriesJson] @link(from: "categories.category")
-      ingredients: [String]
-    }
-    
-    interface Post @nodeInterface {
+    type Recipe implements Node {
       id: ID!
+      date: Date @dateformat
+      slug: String
       title: String
-      body: String!
-      slug: String!
-      frontmatter: MdxFrontmatter!
+      body: String
+      coverImage: File
+      ingredients: [String]
+      categories: [CategoriesJson] @link(from: "categories.category")
+      timeToCook: Int
     }
   `
   createTypes(typeDefs)
-
-  createTypes(
-    schema.buildObjectType({
-      name: `MdxRecipe`,
-      fields: {
-        id: { type: `ID!` },
-        title: {
-          type: "String!",
-        },
-        slug: {
-          type: "String!",
-        },
-        frontmatter: {
-          type: "MdxFrontmatter!",
-        },
-        body: {
-          type: "String!",
-          resolve: mdxResolverPassthrough("body"),
-        },
-      },
-      interfaces: [`Node`, `Post`],
-    })
-  )
 }
 
 exports.createResolvers = ({ createResolvers, schema }) => {
   createResolvers({
+    Recipe: {
+      body: {
+        type: "String",
+        resolve: mdxResolverPassthrough("body"),
+      },
+    },
     CategoriesJson: {
       recipes: {
-        type: "[MdxRecipe]",
+        type: "[Recipe]",
         resolve(source, args, context, info) {
           return context.nodeModel.runQuery({
             query: {
               filter: {
-                frontmatter: {
-                  categories: { elemMatch: { id: { eq: source.id } } },
-                },
+                categories: { elemMatch: { id: { eq: source.id } } },
               },
             },
-            type: `MdxRecipe`,
+            type: `Recipe`,
             firstOnly: false,
           })
         },
@@ -142,25 +118,24 @@ exports.onCreateNode = ({ node, actions, getNode, createNodeId }) => {
       case recipesPath: {
         const slug = createFilePath({ node, getNode, basePath })
         const fieldData = {
-          title: node.frontmatter.title,
+          ...frontmatter,
           slug: `${recipesPath}${slug}`,
         }
 
         createNode({
           ...fieldData,
-          frontmatter,
           // Required fields.
-          id: createNodeId(`${node.id} >>> MdxRecipe`),
+          id: createNodeId(`${node.id} >>> Recipe`),
           parent: node.id,
           children: [],
           internal: {
-            type: `MdxRecipe`,
+            type: `Recipe`,
             contentDigest: crypto
               .createHash(`md5`)
               .update(JSON.stringify(fieldData))
               .digest(`hex`),
             content: JSON.stringify(fieldData),
-            description: `Satisfies the interface for Mdx`,
+            // description: `Satisfies the interface for Mdx`,
           },
         })
         createParentChildLink({
@@ -184,10 +159,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions
   const result = await graphql(`
     {
-      allMdxRecipe(
-        sort: { fields: [frontmatter___date, frontmatter___title], order: DESC }
-        limit: 1000
-      ) {
+      allRecipe(sort: { fields: [date, title], order: DESC }, limit: 1000) {
         edges {
           node {
             id
@@ -211,9 +183,9 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   }
 
   // Create Posts and Post pages.
-  const { allMdxRecipe, allCategoriesJson } = result.data
+  const { allRecipe, allCategoriesJson } = result.data
   const categories = allCategoriesJson.nodes
-  const posts = allMdxRecipe.edges
+  const posts = allRecipe.edges
 
   // Create a page for each Post
   posts.forEach(({ node: post }, index) => {
