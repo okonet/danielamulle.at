@@ -5,7 +5,7 @@ export default PostPage
 
 export const query = graphql`
   query PostPageQuery($id: String!, $previousId: String, $nextId: String) {
-    mdxRecipe(id: { eq: $id }) {
+    recipe(id: { eq: $id }) {
       id
       title
       date(locale: "de", formatString: "DD MMMM YYYY")
@@ -27,12 +27,12 @@ export const query = graphql`
       }
       body
     }
-    previous: mdxRecipe(id: { eq: $previousId }) {
+    previous: recipe(id: { eq: $previousId }) {
       id
       title
       date(locale: "de", formatString: "DD MMMM YYYY")
     }
-    next: mdxRecipe(id: { eq: $nextId }) {
+    next: recipe(id: { eq: $nextId }) {
       id
       title
       date(locale: "de", formatString: "DD MMMM YYYY")

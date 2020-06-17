@@ -4,7 +4,7 @@ import Posts from "../components/Recipes"
 export default Posts
 
 export const query = graphql`
-  fragment RecipeMeta on MdxRecipe {
+  fragment RecipeMeta on Recipe {
     id
     slug
     date(locale: "de", formatString: "DD MMMM YYYY")
@@ -24,7 +24,7 @@ export const query = graphql`
     }
   }
   query PostsQuery {
-    allMdxRecipe(sort: { fields: [date, title], order: DESC }, limit: 1000) {
+    allRecipe(sort: { fields: [date, title], order: DESC }, limit: 1000) {
       nodes {
         ...RecipeMeta
       }

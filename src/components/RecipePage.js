@@ -19,7 +19,7 @@ export default ({ data }) => {
     categories,
     ingredients,
     timeToCook,
-  } = data.mdxRecipe
+  } = data.recipe
   return (
     <Layout theme={recipesTheme}>
       <Section

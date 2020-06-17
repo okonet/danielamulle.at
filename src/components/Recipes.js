@@ -18,7 +18,7 @@ export default ({ data }) => {
 
       <Container variant="full">
         <Grid gap={4} columns={[1, 3]}>
-          {data.allMdxRecipe.nodes.map((post) => (
+          {data.allRecipe.nodes.map((post) => (
             <RecipeCard {...post} key={post.id} />
           ))}
         </Grid>

@@ -54,10 +54,10 @@ exports.sourceNodes = ({ actions, schema }) => {
   const typeDefs = `
     type CategoriesJson implements Node {
       id: ID!
-      recipes: [MdxRecipe]
+      recipes: [Recipe]
     }
     
-    type MdxRecipe implements Node {
+    type Recipe implements Node {
       id: ID!
       date: Date @dateformat
       slug: String
@@ -74,7 +74,7 @@ exports.sourceNodes = ({ actions, schema }) => {
 
 exports.createResolvers = ({ createResolvers, schema }) => {
   createResolvers({
-    MdxRecipe: {
+    Recipe: {
       body: {
         type: "String",
         resolve: mdxResolverPassthrough("body"),
@@ -82,7 +82,7 @@ exports.createResolvers = ({ createResolvers, schema }) => {
     },
     CategoriesJson: {
       recipes: {
-        type: "[MdxRecipe]",
+        type: "[Recipe]",
         resolve(source, args, context, info) {
           return context.nodeModel.runQuery({
             query: {
@@ -90,7 +90,7 @@ exports.createResolvers = ({ createResolvers, schema }) => {
                 categories: { elemMatch: { id: { eq: source.id } } },
               },
             },
-            type: `MdxRecipe`,
+            type: `Recipe`,
             firstOnly: false,
           })
         },
@@ -125,17 +125,17 @@ exports.onCreateNode = ({ node, actions, getNode, createNodeId }) => {
         createNode({
           ...fieldData,
           // Required fields.
-          id: createNodeId(`${node.id} >>> MdxRecipe`),
+          id: createNodeId(`${node.id} >>> Recipe`),
           parent: node.id,
           children: [],
           internal: {
-            type: `MdxRecipe`,
+            type: `Recipe`,
             contentDigest: crypto
               .createHash(`md5`)
               .update(JSON.stringify(fieldData))
               .digest(`hex`),
             content: JSON.stringify(fieldData),
-            description: `Satisfies the interface for Mdx`,
+            // description: `Satisfies the interface for Mdx`,
           },
         })
         createParentChildLink({
@@ -159,7 +159,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions
   const result = await graphql(`
     {
-      allMdxRecipe(sort: { fields: [date, title], order: DESC }, limit: 1000) {
+      allRecipe(sort: { fields: [date, title], order: DESC }, limit: 1000) {
         edges {
           node {
             id
@@ -183,9 +183,9 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   }
 
   // Create Posts and Post pages.
-  const { allMdxRecipe, allCategoriesJson } = result.data
+  const { allRecipe, allCategoriesJson } = result.data
   const categories = allCategoriesJson.nodes
-  const posts = allMdxRecipe.edges
+  const posts = allRecipe.edges
 
   // Create a page for each Post
   posts.forEach(({ node: post }, index) => {
