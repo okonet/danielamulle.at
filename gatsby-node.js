@@ -142,13 +142,13 @@ exports.onCreateNode = ({ node, actions, getNode, createNodeId }) => {
       case recipesPath: {
         const slug = createFilePath({ node, getNode, basePath })
         const fieldData = {
+          frontmatter,
           title: node.frontmatter.title,
           slug: `${recipesPath}${slug}`,
         }
 
         createNode({
           ...fieldData,
-          frontmatter,
           // Required fields.
           id: createNodeId(`${node.id} >>> MdxRecipe`),
           parent: node.id,
