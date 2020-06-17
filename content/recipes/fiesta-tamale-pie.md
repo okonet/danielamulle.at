@@ -17,7 +17,13 @@ ingredients:
   - 250 ml Pflanzendrink oder Kuhmilch
   - 2 Eier
   - 200 g geriebener Käse
-categories: []
+categories:
+  - category: Hauptspeisen
+  - category: gut vorzubereiten
+  - category: eiweißreich
+  - category: fruktosearm
+  - category: laktosefrei
+  - category: glutenfrei
 ---
 1. Zwiebel fein hacken und mit dem Knoblauch in Pflanzenöl goldgelb anbraten
 2. eingeweichtes Sojagranulat beigeben und einige Minuten anbraten
