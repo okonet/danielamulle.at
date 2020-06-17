@@ -7,29 +7,24 @@ export const query = graphql`
   fragment RecipeMeta on MdxRecipe {
     id
     slug
-    frontmatter {
-      date(locale: "de", formatString: "DD MMMM YYYY")
-      title
-      coverImage {
-        childImageSharp {
-          fluid(maxWidth: 300) {
-            ...GatsbyImageSharpFluid
-          }
+    date(locale: "de", formatString: "DD MMMM YYYY")
+    title
+    coverImage {
+      childImageSharp {
+        fluid(maxWidth: 300) {
+          ...GatsbyImageSharpFluid
         }
       }
-      categories {
-        id
-        fields {
-          slug
-        }
+    }
+    categories {
+      id
+      fields {
+        slug
       }
     }
   }
   query PostsQuery {
-    allMdxRecipe(
-      sort: { fields: [frontmatter___date, frontmatter___title], order: DESC }
-      limit: 1000
-    ) {
+    allMdxRecipe(sort: { fields: [date, title], order: DESC }, limit: 1000) {
       nodes {
         ...RecipeMeta
       }

@@ -11,11 +11,20 @@ import { recipesPath } from "../../paths"
 import CategoryTags from "./CategoryTags"
 
 export default ({ data }) => {
+  const {
+    body,
+    coverImage,
+    date,
+    title,
+    categories,
+    ingredients,
+    timeToCook,
+  } = data.mdxRecipe
   return (
     <Layout theme={recipesTheme}>
       <Section
         theme={recipesTheme}
-        coverFluid={data.mdxRecipe.frontmatter.coverImage.childImageSharp.fluid}
+        coverFluid={coverImage.childImageSharp.fluid}
       >
         <Grid
           gap={2}
@@ -50,7 +59,7 @@ export default ({ data }) => {
             </Link>
           </Box>
           <Styled.h1 sx={{ m: 0 }}>
-            <span>{data.mdxRecipe.frontmatter.title}</span>
+            <span>{title}</span>
           </Styled.h1>
           <Box as="p">
             <Box
@@ -61,7 +70,7 @@ export default ({ data }) => {
                 fontWeight: "body",
               }}
             >
-              {data.mdxRecipe.frontmatter.date}
+              {date}
             </Box>
           </Box>
         </Grid>
@@ -102,7 +111,7 @@ export default ({ data }) => {
                 fontSize: 1,
               }}
             >
-              {data.mdxRecipe.frontmatter.ingredients.map((item) => (
+              {ingredients.map((item) => (
                 <Box
                   as="li"
                   key={item}
@@ -123,15 +132,9 @@ export default ({ data }) => {
               gridColumn: [1, "9 / span 4"],
             }}
           >
-            <Styled.h2>
-              Zubereitungszeit {data.mdxRecipe.frontmatter.timeToCook} min
-            </Styled.h2>
+            <Styled.h2>Zubereitungszeit {timeToCook} min</Styled.h2>
 
-            {data.mdxRecipe.frontmatter.categories && (
-              <CategoryTags
-                categories={data.mdxRecipe.frontmatter.categories}
-              />
-            )}
+            {categories && <CategoryTags categories={categories} />}
           </Box>
         </Grid>
       </Container>
@@ -151,7 +154,7 @@ export default ({ data }) => {
             }}
           >
             <Styled.h2>Zubereitung</Styled.h2>
-            <MDXRenderer>{data.mdxRecipe.body}</MDXRenderer>
+            <MDXRenderer>{body}</MDXRenderer>
           </Box>
         </Grid>
       </Container>

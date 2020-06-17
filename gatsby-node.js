@@ -57,51 +57,29 @@ exports.sourceNodes = ({ actions, schema }) => {
       recipes: [MdxRecipe]
     }
     
-    type MdxFrontmatter implements Node {
-      title: String!
-      date: Date! @dateformat
-      coverImage: File
-      timeToCook: Int
-      categories: [CategoriesJson] @link(from: "categories.category")
-      ingredients: [String]
-    }
-    
-    interface Post @nodeInterface {
+    type MdxRecipe implements Node {
       id: ID!
+      date: Date @dateformat
+      slug: String
       title: String
-      body: String!
-      slug: String!
-      frontmatter: MdxFrontmatter!
+      body: String
+      coverImage: File
+      ingredients: [String]
+      categories: [CategoriesJson] @link(from: "categories.category")
+      timeToCook: Int
     }
   `
   createTypes(typeDefs)
-
-  createTypes(
-    schema.buildObjectType({
-      name: `MdxRecipe`,
-      fields: {
-        id: { type: `ID!` },
-        title: {
-          type: "String!",
-        },
-        slug: {
-          type: "String!",
-        },
-        frontmatter: {
-          type: "MdxFrontmatter!",
-        },
-        body: {
-          type: "String!",
-          resolve: mdxResolverPassthrough("body"),
-        },
-      },
-      interfaces: [`Node`, `Post`],
-    })
-  )
 }
 
 exports.createResolvers = ({ createResolvers, schema }) => {
   createResolvers({
+    MdxRecipe: {
+      body: {
+        type: "String",
+        resolve: mdxResolverPassthrough("body"),
+      },
+    },
     CategoriesJson: {
       recipes: {
         type: "[MdxRecipe]",
@@ -109,9 +87,7 @@ exports.createResolvers = ({ createResolvers, schema }) => {
           return context.nodeModel.runQuery({
             query: {
               filter: {
-                frontmatter: {
-                  categories: { elemMatch: { id: { eq: source.id } } },
-                },
+                categories: { elemMatch: { id: { eq: source.id } } },
               },
             },
             type: `MdxRecipe`,
@@ -142,8 +118,7 @@ exports.onCreateNode = ({ node, actions, getNode, createNodeId }) => {
       case recipesPath: {
         const slug = createFilePath({ node, getNode, basePath })
         const fieldData = {
-          frontmatter,
-          title: node.frontmatter.title,
+          ...frontmatter,
           slug: `${recipesPath}${slug}`,
         }
 
@@ -184,10 +159,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions
   const result = await graphql(`
     {
-      allMdxRecipe(
-        sort: { fields: [frontmatter___date, frontmatter___title], order: DESC }
-        limit: 1000
-      ) {
+      allMdxRecipe(sort: { fields: [date, title], order: DESC }, limit: 1000) {
         edges {
           node {
             id
