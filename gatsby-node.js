@@ -3,6 +3,7 @@ const path = require("path")
 const mkdirp = require("mkdirp")
 const crypto = require("crypto")
 const Debug = require("debug")
+const slug = require("slug")
 const pkg = require("./package.json")
 const { createFilePath } = require("gatsby-source-filesystem")
 const {
@@ -52,9 +53,11 @@ const mdxResolverPassthrough = (fieldName) => async (
 exports.sourceNodes = ({ actions, schema }) => {
   const { createTypes } = actions
   const typeDefs = `
-    type CategoriesJson implements Node {
+    type Category implements Node {
       id: ID!
+      slug: String!
       recipes: [Recipe]
+      isTag: Boolean
     }
     
     type Recipe implements Node {
@@ -65,7 +68,8 @@ exports.sourceNodes = ({ actions, schema }) => {
       body: String
       coverImage: File
       ingredients: [String]
-      categories: [CategoriesJson] @link(from: "categories.category")
+      category: [Category] @link(from: "category.value")
+      tags: [Category] @link(from: "tags.value")
       timeToCook: Int
     }
   `
@@ -80,14 +84,16 @@ exports.createResolvers = ({ createResolvers, schema }) => {
         resolve: mdxResolverPassthrough("body"),
       },
     },
-    CategoriesJson: {
+    Category: {
       recipes: {
         type: "[Recipe]",
         resolve(source, args, context, info) {
           return context.nodeModel.runQuery({
             query: {
               filter: {
-                categories: { elemMatch: { id: { eq: source.id } } },
+                [source.isTag ? "tags" : "category"]: {
+                  elemMatch: { id: { eq: source.id } },
+                },
               },
             },
             type: `Recipe`,
@@ -99,18 +105,36 @@ exports.createResolvers = ({ createResolvers, schema }) => {
   })
 }
 
-exports.onCreateNode = ({ node, actions, getNode, createNodeId }) => {
-  const { createNodeField, createNode, createParentChildLink } = actions
-
-  if (node.internal.type === `CategoriesJson`) {
-    const slug = createFilePath({ node, getNode, basePath })
-    createNodeField({
-      node,
-      name: `slug`,
-      value: `${categoriesPath}${slug}`,
+exports.onCreateNode = ({
+  node,
+  actions,
+  getNode,
+  createNodeId,
+  createContentDigest,
+}) => {
+  const { createNode, createParentChildLink } = actions
+  if (node.internal.type === `ContentJson`) {
+    ;["categories", "tags"].forEach((key) => {
+      if (node[key] == null) {
+        return
+      }
+      node[key].forEach((obj) => {
+        const jsonNode = {
+          ...obj,
+          slug: slug(obj.id),
+          isTag: key === "tags",
+          children: [],
+          parent: node.id,
+          internal: {
+            contentDigest: createContentDigest(obj),
+            type: `Category`,
+          },
+        }
+        createNode(jsonNode)
+        createParentChildLink({ parent: node, child: jsonNode })
+      })
     })
   }
-
   if (node.internal.type === `Mdx`) {
     const { frontmatter } = node
     const parent = getNode(node.parent)
@@ -155,67 +179,59 @@ const RecipePostTemplate = require.resolve("./src/templates/post-query")
 const RecipePostsTemplate = require.resolve("./src/templates/posts-query")
 const CategoryTemplate = require.resolve("./src/templates/category-query")
 
-exports.createPages = async ({ graphql, actions, reporter }) => {
-  const { createPage } = actions
-  const result = await graphql(`
-    {
-      allRecipe(sort: { fields: [date, title], order: DESC }, limit: 1000) {
-        edges {
-          node {
-            id
-            slug
-          }
-        }
-      }
-      allCategoriesJson(sort: { fields: [id], order: DESC }) {
-        nodes {
-          id
-          fields {
-            slug
-          }
-        }
-      }
-    }
-  `)
-
-  if (result.errors) {
-    reporter.panic(result.errors)
-  }
-
-  // Create Posts and Post pages.
-  const { allRecipe, allCategoriesJson } = result.data
-  const categories = allCategoriesJson.nodes
-  const posts = allRecipe.edges
-
-  // Create a page for each Post
-  posts.forEach(({ node: post }, index) => {
-    const previous = index === posts.length - 1 ? null : posts[index + 1]
-    const next = index === 0 ? null : posts[index - 1]
-    createPage({
-      path: post.slug,
-      component: RecipePostTemplate,
-      context: {
-        id: post.id,
-        previousId: previous ? previous.node.id : undefined,
-        nextId: next ? next.node.id : undefined,
-      },
-    })
-  })
-
-  categories.forEach(({ id, fields }) => {
-    createPage({
-      path: fields.slug,
-      component: CategoryTemplate,
-      context: {
-        id,
-      },
-    })
-  })
-
-  // Create the Recipes page
-  createPage({
-    path: recipesPath,
-    component: RecipePostsTemplate,
-    context: {},
-  })
-}
+// exports.createPages = async ({ graphql, actions, reporter }) => {
+//   const { createPage } = actions
+//   const result = await graphql(`
+//     {
+//       allRecipe(sort: { fields: [date, title], order: DESC }, limit: 1000) {
+//         edges {
+//           node {
+//             id
+//             slug
+//           }
+//         }
+//       }
+//     }
+//   `)
+//
+//   if (result.errors) {
+//     reporter.panic(result.errors)
+//   }
+//
+//   // Create Posts and Post pages.
+//   const { allRecipe, allCategoriesJson } = result.data
+//   // const categories = allCategoriesJson.nodes
+//   const posts = allRecipe.edges
+//
+//   // Create a page for each Post
+//   posts.forEach(({ node: post }, index) => {
+//     const previous = index === posts.length - 1 ? null : posts[index + 1]
+//     const next = index === 0 ? null : posts[index - 1]
+//     createPage({
+//       path: post.slug,
+//       component: RecipePostTemplate,
+//       context: {
+//         id: post.id,
+//         previousId: previous ? previous.node.id : undefined,
+//         nextId: next ? next.node.id : undefined,
+//       },
+//     })
+//   })
+//
+//   // categories.forEach(({ id, fields }) => {
+//   //   createPage({
+//   //     path: fields.slug,
+//   //     component: CategoryTemplate,
+//   //     context: {
+//   //       id,
+//   //     },
+//   //   })
+//   // })
+//
+//   // Create the Recipes page
+//   createPage({
+//     path: recipesPath,
+//     component: RecipePostsTemplate,
+//     context: {},
+//   })
+// }

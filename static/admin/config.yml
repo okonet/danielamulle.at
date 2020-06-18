@@ -29,31 +29,50 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Cover", name: "coverImage", widget: "image" }
+      - label: 'Category'
+        name: 'category'
+        widget: 'file-relation'
+        collection: recipe_config
+        file: categories
+        target_field: categories
+        id_field: id
+        required: true
+      - label: 'Tags'
+        name: 'tags'
+        widget: 'file-relation'
+        collection: recipe_config
+        file: tags
+        target_field: tags
+        id_field: id
+        required: false
+        multiple: true
       - { label: "Time to prepare (minutes)", name: "timeToCook", widget: "number" }
       - label: "Ingredients"
         name: "ingredients"
         widget: "ingredientList"
       - { label: "Body", name: "body", widget: "markdown" }
-      - label: 'Categories'
-        name: 'categories'
-        widget: 'list'
-        required: true
-        fields:
-          - label: 'Category'
-            name: 'category'
-            widget: 'relation'
-            collection: categories
-            searchFields: ['id']
-            valueField: 'id'
-  - name: categories
-    label: Categories
+
+  - name: recipe_config
+    label: Recipes Config
     format: json
     editor:
       preview: false
-    folder: content/categories
-    identifier_field: id
-    slug: '{{slug}}'
-    create: true # Allow users to create new documents in this collection
-    fields: # The fields each document in this collection have
-      - { label: Title, name: id, widget: string }
-      - { label: Description, name: description, widget: markdown, required: false }
+    files:
+      - label: "Categories"
+        name: "categories"
+        file: "content/categories.json"
+        fields:
+          - label: "Recipe Category Items"
+            widget: "list"
+            name: "categories"
+            fields:
+              - {label: Name, name: id, widget: string}
+      - label: "Tags"
+        name: "tags"
+        file: "content/tags.json"
+        fields:
+          - label: "Recipe Tag Items"
+            widget: "list"
+            name: "tags"
+            fields:
+              - {label: Name, name: id, widget: string}

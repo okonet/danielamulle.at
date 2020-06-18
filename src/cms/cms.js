@@ -5,8 +5,10 @@
  */
 import CMS from "netlify-cms-app"
 import { IngredientListWidget } from "./IngredientList"
+import { Control, Preview } from "@ncwidgets/file-relation"
 
 /**
  * Register the imported widget:
  */
 CMS.registerWidget("ingredientList", IngredientListWidget)
+CMS.registerWidget("file-relation", Control, Preview)

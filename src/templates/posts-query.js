@@ -12,7 +12,7 @@ export const query = graphql`
     coverImage {
       childImageSharp {
         fluid(maxWidth: 300) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_tracedSVG
         }
       }
     }

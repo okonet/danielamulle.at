@@ -42,7 +42,12 @@ module.exports = {
       options: { modulePath: `${__dirname}/src/cms/cms.js` },
     },
     "gatsby-plugin-theme-ui",
-    "gatsby-transformer-json",
+    {
+      resolve: `gatsby-transformer-json`,
+      // options: {
+      //   typeName: ({ node, object, isArray }) => object.id,
+      // },
+    },
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -53,8 +58,8 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        path: `${basePath}/${categoriesPath}`,
-        name: categoriesPath,
+        path: `${basePath}`,
+        name: basePath,
       },
     },
     {

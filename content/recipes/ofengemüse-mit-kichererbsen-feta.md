@@ -2,6 +2,14 @@
 title: Ofengemüse mit Kichererbsen & Feta
 date: 2020-06-17T16:19:32.796Z
 coverImage: ../assets/img_6072.jpg
+category:
+  - value: Hauptspeisen
+    label: Hauptspeisen
+tags:
+  - value: gut vorzubereiten
+    label: gut vorzubereiten
+  - value: vegetarian
+    label: vegetarian
 timeToCook: 30
 ingredients:
   - 1 mittelgroßer Karfiol (Blumenkohl)

@@ -1,0 +1,22 @@
+{
+  "categories": [
+    {
+      "id": "Hauptspeisen"
+    },
+    {
+      "id": "Suppen"
+    },
+    {
+      "id": "Salate"
+    },
+    {
+      "id": "Aufstriche/Saucen/Dips"
+    },
+    {
+      "id": "Snacks"
+    },
+    {
+      "id": "Süßes"
+    }
+  ]
+}

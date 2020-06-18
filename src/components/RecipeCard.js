@@ -2,7 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import Link from "./Link"
 import Img from "gatsby-image"
-import { Box, Card, Text } from "theme-ui"
+import { AspectRatio, Box, Card, Text } from "theme-ui"
 import CategoryTags from "./CategoryTags"
 
 RecipeCard.propTypes = {
@@ -32,7 +32,9 @@ function RecipeCard({ coverImage, categories, date, slug, title }) {
             overflow: "hidden",
           }}
         >
-          <Img fluid={coverImage.childImageSharp.fluid} />
+          <AspectRatio ratio={1.5}>
+            <Img fluid={coverImage.childImageSharp.fluid} fadeIn={true} />
+          </AspectRatio>
         </Link>
       )}
       <Box
