@@ -13,6 +13,8 @@ ingredients:
   - 2 EL gehackte Petersilie
   - 2 EL gerösteter Sesam
   - scharfe Paprika oder Chiliflocken (optional)
+categories:
+  - category: Salate
 ---
 1. Rotraut reiben oder in feine Streifen schneiden
 2. mit 1 TL Salz verkneten
@@ -23,4 +25,4 @@ ingredients:
 7. Datteln und Feta unter das Rotkraut mischen
 8. mit Petersilie, Sesam (und Chiliflocken) bestreut servieren  
 
-Ein phänomenaler Salat, den du unbedingt probieren solltest - du wirst ihn lieben! Die Idee stammt von [Emilie Wegner](https://emiliestreats.de/), einer jungen Ernährungswissenschafterin aus Deutschland. Der Salat schmeckt übrigens am besten, wenn er einige Stunden  oder sogar über Nacht im Kühlschrank durchziehen kann. Du kannst den Salat auch problemlos einige Tage im Kühlschrank aufheben. 
+Ein phänomenaler Salat, den du unbedingt probieren solltest - du wirst ihn lieben! Die Idee stammt von [Emilie Wegner](https://emiliestreats.de/), einer jungen Ernährungswissenschafterin aus Deutschland. Der Salat schmeckt übrigens am besten, wenn er einige Stunden  oder sogar über Nacht im Kühlschrank durchziehen kann. Du kannst ihn auch problemlos einige Tage im Kühlschrank aufheben. 
