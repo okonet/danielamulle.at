@@ -42,7 +42,7 @@ function Logo(props) {
             color: "muted",
             fontFamily: "monospace",
             fontSize: 0,
-            letterSpacing: -0.8,
+            letterSpacing: "condensed",
           }}
         >
           Diätologin & <br />
