@@ -1,9 +1,11 @@
 import React from "react"
-import { Container, Grid, Styled } from "theme-ui"
+import { Container, Grid, Heading, Styled } from "theme-ui"
 import SEO from "../components/seo"
 import Layout from "../components/layout"
 import { recipesTheme } from "../theme"
 import RecipeCard from "./RecipeCard"
+import Link from "./Link"
+import Tag from "./Tag"
 
 export default ({ data }) => {
   const { allCategory } = data
@@ -19,8 +21,9 @@ export default ({ data }) => {
         <>
           <Container>
             <Styled.h2>
-              {category.id} {category.recipes.length}
+              <Link to={category.slug}>{category.id}</Link>
             </Styled.h2>
+            <Tag>{category.recipes.length}</Tag>
           </Container>
           {category.recipes.length > 0 && (
             <Container variant="full">

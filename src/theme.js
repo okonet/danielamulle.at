@@ -65,6 +65,36 @@ const theme = {
     none: "none",
     float: "0px 4px 16px rgba(25, 25, 25, 0.075);",
   },
+  textStyles: {
+    title: {
+      m: 0,
+      mb: 4,
+      color: "accent",
+      fontSize: [2, 3],
+      fontWeight: "body",
+      fontFamily: "heading",
+    },
+    subTitle: {
+      m: 0,
+      mb: 4,
+      color: "text",
+      fontSize: [1, 2],
+      fontWeight: "body",
+      fontFamily: "heading",
+    },
+    sectionTitle: {
+      m: 0,
+      my: 2,
+      color: "text",
+      fontSize: 1,
+      fontWeight: "heading",
+      fontFamily: "heading",
+    },
+    body: {
+      fontFamily: "body",
+      fontSize: 1,
+    },
+  },
   layout: {
     full: {
       px: [3, 3, 0],
@@ -83,20 +113,13 @@ const theme = {
       color: "accent",
     },
     h1: {
-      m: 0,
-      mb: 4,
-      color: "accent",
-      fontSize: [2, 3],
-      fontWeight: "body",
-      fontFamily: "heading",
+      variant: "textStyles.title",
     },
     h2: {
-      m: 0,
-      my: 2,
-      color: "text",
-      fontSize: 1,
-      fontWeight: "heading",
-      fontFamily: "heading",
+      variant: "textStyles.subTitle",
+    },
+    h3: {
+      variant: "textStyles.sectionTitle",
     },
     ul: {
       my: 2,
