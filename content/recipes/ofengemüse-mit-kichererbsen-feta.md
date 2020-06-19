@@ -10,7 +10,7 @@ tags:
     label: gut vorzubereiten
   - value: vegetarian
     label: vegetarian
-timeToCook: 30
+timeToCook: "30 min"
 ingredients:
   - 1 mittelgroßer Karfiol
   - 6 mittelgroße Kartoffeln
