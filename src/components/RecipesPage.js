@@ -27,7 +27,7 @@ export default ({ data }) => {
           </Container>
           {category.recipes.length > 0 && (
             <Container variant="full">
-              <Grid gap={4} columns={[1, 3]}>
+              <Grid gap={2} columns={[1, 3]} sx={{ mb: 4 }}>
                 {category.recipes.map((recipe) => (
                   <RecipeCard {...recipe} key={recipe.id} />
                 ))}

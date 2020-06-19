@@ -62,18 +62,6 @@ export default ({ data }) => {
           <Styled.h1 sx={{ m: 0 }}>
             <span>{title}</span>
           </Styled.h1>
-          <Box as="p">
-            <Box
-              as="time"
-              sx={{
-                fontSize: 0,
-                fontFamily: "monospace",
-                fontWeight: "body",
-              }}
-            >
-              {date}
-            </Box>
-          </Box>
         </Grid>
       </Section>
 

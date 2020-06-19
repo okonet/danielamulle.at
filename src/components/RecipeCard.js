@@ -2,8 +2,9 @@ import React from "react"
 import PropTypes from "prop-types"
 import Link from "./Link"
 import Img from "gatsby-image"
-import { AspectRatio, Box, Card, Text } from "theme-ui"
+import { AspectRatio, Box, Flex, Styled } from "theme-ui"
 import CategoryTags from "./CategoryTags"
+import { transparentize } from "@theme-ui/color"
 
 RecipeCard.propTypes = {
   categories: PropTypes.arrayOf(
@@ -22,64 +23,50 @@ RecipeCard.propTypes = {
 
 function RecipeCard({ coverImage, categories, date, slug, title }) {
   return (
-    <Card>
-      {coverImage && (
-        <Link
-          to={slug}
-          sx={{
-            display: "block",
-            borderRadius: ["none", "medium"],
-            overflow: "hidden",
-          }}
-        >
-          <AspectRatio ratio={1.5}>
-            <Img fluid={coverImage.childImageSharp.fluid} fadeIn={true} />
-          </AspectRatio>
-        </Link>
-      )}
-      <Box
+    <Box>
+      <Link
+        to={slug}
         sx={{
-          px: 3,
-          py: 2,
+          display: "block",
+          overflow: "hidden",
         }}
       >
-        <Text
-          as="h2"
-          sx={{
-            color: "accent",
-            fontSize: 1,
-            fontFamily: "heading",
-            fontWeight: "heading",
-            mb: 2,
-          }}
-        >
-          <Link to={slug}>{title}</Link>
-        </Text>
-        <Text as="p">
-          <Box
-            as="time"
+        <AspectRatio ratio={1.5}>
+          <Img
+            fluid={coverImage.childImageSharp.fluid}
+            fadeIn={true}
+            className="image"
+          />
+          <Flex
             sx={{
-              fontSize: 0,
-              fontFamily: "monospace",
-              fontWeight: "body",
-              color: "muted",
+              flexDirection: "column",
+              position: "absolute",
+              bottom: 0,
+              left: 0,
+              p: 3,
+              width: "100%",
+              "& > * > *": {
+                display: "inline",
+                p: 1,
+                lineHeight: 1.46,
+                bg: transparentize("text", 0.25),
+                backdropFilter: "blur(4px)",
+                color: "background",
+              },
             }}
           >
-            {date}
-          </Box>
-        </Text>
-        {categories && (
-          <Box
-            sx={{
-              mx: -2,
-              my: 2,
-            }}
-          >
-            <CategoryTags categories={categories} />
-          </Box>
-        )}
-      </Box>
-    </Card>
+            <Styled.h3>
+              <span>{title}</span>
+            </Styled.h3>
+            {categories && (
+              <Box>
+                <CategoryTags categories={categories} />
+              </Box>
+            )}
+          </Flex>
+        </AspectRatio>
+      </Link>
+    </Box>
   )
 }
 
