@@ -56,7 +56,7 @@ exports.sourceNodes = ({ actions, schema }) => {
     type Category implements Node {
       id: ID!
       slug: String!
-      recipes: [Recipe]
+      recipes: [Recipe]!
       isTag: Boolean
     }
     
@@ -87,18 +87,23 @@ exports.createResolvers = ({ createResolvers, schema }) => {
     Category: {
       recipes: {
         type: "[Recipe]",
-        resolve(source, args, context, info) {
-          return context.nodeModel.runQuery({
+        async resolve(source, args, context, info) {
+          const res = await context.nodeModel.runQuery({
             query: {
               filter: {
                 [source.isTag ? "categories" : "category"]: {
                   elemMatch: { id: { eq: source.id } },
                 },
               },
+              sort: { fields: ["title"], order: ["ASC"] },
             },
             type: "Recipe",
             firstOnly: false,
           })
+          if (res === null) {
+            return []
+          }
+          return res
         },
       },
     },

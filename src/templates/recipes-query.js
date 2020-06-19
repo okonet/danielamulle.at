@@ -26,9 +26,13 @@ export const query = graphql`
     }
   }
   query PostsQuery {
-    allRecipe(sort: { fields: [date, title], order: DESC }, limit: 1000) {
+    allCategory(filter: { isTag: { eq: false } }) {
       nodes {
-        ...RecipeMeta
+        id
+        slug
+        recipes {
+          ...RecipeMeta
+        }
       }
     }
   }
