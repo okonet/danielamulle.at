@@ -8,7 +8,7 @@ category:
 tags:
   - value: vegan
     label: vegan
-timeToCook: 0
+timeToCook: "30 min vorbereiten, 60 min backen"
 ingredients:
   - 1 große Zwiebel
   - 1 gepresste Knoblauchzehe
