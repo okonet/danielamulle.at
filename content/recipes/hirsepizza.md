@@ -36,4 +36,4 @@ ingredients:
 8. bei 180 Grad Heißluft ca. 30 Minuten backen, bis die Pizza schön braun geworden ist
 9. vor dem Servieren noch mit etwas Olivenöl beträufeln
 
-Statt Hirse kannst du z.B. auch Quinoa, Polenta, Bulgur oder auch Buchweizen verwenden. Die Pizza ist auch ausgekühlt ein leckerer Snack für zwischendurch
+Statt Hirse kannst du z.B. auch Quinoa, Polenta, Bulgur oder auch Buchweizen verwenden. Die Pizza ist auch ausgekühlt ein leckerer Snack für zwischendurch.
