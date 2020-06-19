@@ -9,7 +9,7 @@ import RecipeCard from "./RecipeCard"
 import { recipesPath } from "../../paths"
 
 export default ({ data }) => {
-  const { categoriesJson: category } = data
+  const { category } = data
   return (
     <Layout theme={recipesTheme}>
       <SEO title={category.id} />

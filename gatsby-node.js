@@ -96,7 +96,7 @@ exports.createResolvers = ({ createResolvers, schema }) => {
                 },
               },
             },
-            type: `Recipe`,
+            type: "Recipe",
             firstOnly: false,
           })
         },
@@ -121,13 +121,13 @@ exports.onCreateNode = ({
       node[key].forEach((obj) => {
         const jsonNode = {
           ...obj,
-          slug: slug(obj.id),
+          slug: `${categoriesPath}/${slug(obj.id)}`,
           isTag: key === "tags",
           children: [],
           parent: node.id,
           internal: {
             contentDigest: createContentDigest(obj),
-            type: `Category`,
+            type: "Category",
           },
         }
         createNode(jsonNode)
@@ -135,7 +135,7 @@ exports.onCreateNode = ({
       })
     })
   }
-  if (node.internal.type === `Mdx`) {
+  if (node.internal.type === "Mdx") {
     const { frontmatter } = node
     const parent = getNode(node.parent)
     switch (parent.sourceInstanceName) {
@@ -153,13 +153,12 @@ exports.onCreateNode = ({
           parent: node.id,
           children: [],
           internal: {
-            type: `Recipe`,
+            type: "Recipe",
             contentDigest: crypto
-              .createHash(`md5`)
+              .createHash("md5")
               .update(JSON.stringify(fieldData))
-              .digest(`hex`),
+              .digest("hex"),
             content: JSON.stringify(fieldData),
-            // description: `Satisfies the interface for Mdx`,
           },
         })
         createParentChildLink({
@@ -179,59 +178,65 @@ const RecipePostTemplate = require.resolve("./src/templates/post-query")
 const RecipePostsTemplate = require.resolve("./src/templates/posts-query")
 const CategoryTemplate = require.resolve("./src/templates/category-query")
 
-// exports.createPages = async ({ graphql, actions, reporter }) => {
-//   const { createPage } = actions
-//   const result = await graphql(`
-//     {
-//       allRecipe(sort: { fields: [date, title], order: DESC }, limit: 1000) {
-//         edges {
-//           node {
-//             id
-//             slug
-//           }
-//         }
-//       }
-//     }
-//   `)
-//
-//   if (result.errors) {
-//     reporter.panic(result.errors)
-//   }
-//
-//   // Create Posts and Post pages.
-//   const { allRecipe, allCategoriesJson } = result.data
-//   // const categories = allCategoriesJson.nodes
-//   const posts = allRecipe.edges
-//
-//   // Create a page for each Post
-//   posts.forEach(({ node: post }, index) => {
-//     const previous = index === posts.length - 1 ? null : posts[index + 1]
-//     const next = index === 0 ? null : posts[index - 1]
-//     createPage({
-//       path: post.slug,
-//       component: RecipePostTemplate,
-//       context: {
-//         id: post.id,
-//         previousId: previous ? previous.node.id : undefined,
-//         nextId: next ? next.node.id : undefined,
-//       },
-//     })
-//   })
-//
-//   // categories.forEach(({ id, fields }) => {
-//   //   createPage({
-//   //     path: fields.slug,
-//   //     component: CategoryTemplate,
-//   //     context: {
-//   //       id,
-//   //     },
-//   //   })
-//   // })
-//
-//   // Create the Recipes page
-//   createPage({
-//     path: recipesPath,
-//     component: RecipePostsTemplate,
-//     context: {},
-//   })
-// }
+exports.createPages = async ({ graphql, actions, reporter }) => {
+  const { createPage } = actions
+  const result = await graphql(`
+    {
+      allRecipe(sort: { fields: [date, title], order: DESC }, limit: 1000) {
+        edges {
+          node {
+            id
+            slug
+          }
+        }
+      }
+      allCategory {
+        nodes {
+          id
+          slug
+        }
+      }
+    }
+  `)
+
+  if (result.errors) {
+    reporter.panic(result.errors)
+  }
+
+  // Create Posts and Post pages.
+  const { allRecipe, allCategory } = result.data
+  const categories = allCategory.nodes
+  const posts = allRecipe.edges
+
+  // Create a page for each Post
+  posts.forEach(({ node: post }, index) => {
+    const previous = index === posts.length - 1 ? null : posts[index + 1]
+    const next = index === 0 ? null : posts[index - 1]
+    createPage({
+      path: post.slug,
+      component: RecipePostTemplate,
+      context: {
+        id: post.id,
+        previousId: previous ? previous.node.id : undefined,
+        nextId: next ? next.node.id : undefined,
+      },
+    })
+  })
+
+  categories.forEach(({ id, slug }) => {
+    createPage({
+      path: slug,
+      component: CategoryTemplate,
+      context: {
+        id,
+      },
+    })
+  })
+
+  // Create the Recipes page
+  createPage({
+    path: recipesPath,
+    component: RecipePostsTemplate,
+    context: {},
+  })
+}

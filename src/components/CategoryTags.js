@@ -6,7 +6,7 @@ function CategoryTags({ categories }) {
   return (
     <Group as="p" separator=", ">
       {categories.map((category) => (
-        <Tag to={category.fields.slug} key={category.id}>
+        <Tag to={category.slug} key={category.id}>
           #{category.id}
         </Tag>
       ))}

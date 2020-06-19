@@ -19,11 +19,13 @@ export const query = graphql`
           }
         }
       }
+      category {
+        id
+        slug
+      }
       categories {
         id
-        fields {
-          slug
-        }
+        slug
       }
       body
     }

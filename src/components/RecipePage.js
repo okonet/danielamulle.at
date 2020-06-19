@@ -16,6 +16,7 @@ export default ({ data }) => {
     coverImage,
     date,
     title,
+    category,
     categories,
     ingredients,
     timeToCook,

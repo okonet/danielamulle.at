@@ -5,7 +5,7 @@ export default CategoryPage
 
 export const query = graphql`
   query CategoryQuery($id: String!) {
-    categoriesJson(id: { eq: $id }) {
+    category(id: { eq: $id }) {
       id
       recipes {
         ...RecipeMeta
