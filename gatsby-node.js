@@ -174,8 +174,8 @@ exports.onCreateNode = ({
 }
 
 // These templates are simply data-fetching wrappers that import components
-const RecipePostTemplate = require.resolve("./src/templates/post-query")
-const RecipePostsTemplate = require.resolve("./src/templates/posts-query")
+const RecipeTemplate = require.resolve("./src/templates/recipe-query")
+const RecipesTemplate = require.resolve("./src/templates/recipes-query")
 const CategoryTemplate = require.resolve("./src/templates/category-query")
 
 exports.createPages = async ({ graphql, actions, reporter }) => {
@@ -214,7 +214,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     const next = index === 0 ? null : posts[index - 1]
     createPage({
       path: post.slug,
-      component: RecipePostTemplate,
+      component: RecipeTemplate,
       context: {
         id: post.id,
         previousId: previous ? previous.node.id : undefined,
@@ -236,7 +236,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   // Create the Recipes page
   createPage({
     path: recipesPath,
-    component: RecipePostsTemplate,
+    component: RecipesTemplate,
     context: {},
   })
 }

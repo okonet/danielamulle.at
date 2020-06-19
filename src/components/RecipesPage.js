@@ -1,9 +1,7 @@
 import React from "react"
-import { Box, Card, Container, Grid, Styled, Text } from "theme-ui"
+import { Container, Grid, Styled } from "theme-ui"
 import SEO from "../components/seo"
 import Layout from "../components/layout"
-import Link from "../components/Link"
-import Img from "gatsby-image"
 import { recipesTheme } from "../theme"
 import RecipeCard from "./RecipeCard"
 
