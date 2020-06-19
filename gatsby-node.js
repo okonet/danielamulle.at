@@ -70,7 +70,7 @@ exports.sourceNodes = ({ actions, schema }) => {
       ingredients: [String]
       category: [Category] @link(from: "category.value")
       categories: [Category] @link(from: "tags.value")
-      timeToCook: Int
+      timeToCook: String
     }
   `
   createTypes(typeDefs)
