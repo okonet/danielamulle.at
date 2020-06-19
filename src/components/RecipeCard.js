@@ -21,7 +21,7 @@ RecipeCard.propTypes = {
   title: PropTypes.string.isRequired,
 }
 
-function RecipeCard({ coverImage, categories, date, slug, title }) {
+function RecipeCard({ coverImage, categories, slug, title }) {
   return (
     <Box>
       <Link

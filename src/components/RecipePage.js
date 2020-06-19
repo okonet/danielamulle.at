@@ -14,7 +14,6 @@ export default ({ data }) => {
   const {
     body,
     coverImage,
-    date,
     title,
     category,
     categories,

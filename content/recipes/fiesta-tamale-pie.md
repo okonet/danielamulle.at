@@ -1,7 +1,7 @@
 ---
 title: Fiesta Tamale Pie
 date: 2020-06-16T15:19:11.375Z
-coverImage: ../assets/dsc03028.jpg
+coverImage: ../assets/DSC03026.jpg
 category:
   - value: Hauptspeisen
     label: Hauptspeisen
@@ -14,6 +14,7 @@ ingredients:
   - 1 gepresste Knoblauchzehe
   - >-
     150 g Sojagranulat in 300 ml heißem Wasser eingeweicht (als Alternative zu 500 g Faschiertem)
+
 
   - 1 große Dose Tomaten passiert oder gehackt (ca. 500 ml)
   - 1 Dose Mais (ca. 200 g)

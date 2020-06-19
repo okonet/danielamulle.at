@@ -12,7 +12,6 @@ export const query = graphql`
       timeToCook
       ingredients
       coverImage {
-        absolutePath
         childImageSharp {
           fluid(maxWidth: 1024) {
             ...GatsbyImageSharpFluid

@@ -62,12 +62,12 @@ exports.sourceNodes = ({ actions, schema }) => {
     
     type Recipe implements Node {
       id: ID!
-      date: Date! @dateformat
-      slug: String!
-      title: String!
-      body: String!
-      coverImage: File!
-      ingredients: [String]!
+      date: Date @dateformat
+      slug: String
+      title: String
+      body: String
+      coverImage: File
+      ingredients: [String]
       category: [Category] @link(from: "category.value")
       categories: [Category] @link(from: "tags.value")
       timeToCook: String
