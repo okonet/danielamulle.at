@@ -69,7 +69,7 @@ exports.sourceNodes = ({ actions, schema }) => {
       coverImage: File
       ingredients: [String]
       category: [Category] @link(from: "category.value")
-      tags: [Category] @link(from: "tags.value")
+      categories: [Category] @link(from: "tags.value")
       timeToCook: Int
     }
   `
@@ -91,7 +91,7 @@ exports.createResolvers = ({ createResolvers, schema }) => {
           return context.nodeModel.runQuery({
             query: {
               filter: {
-                [source.isTag ? "tags" : "category"]: {
+                [source.isTag ? "categories" : "category"]: {
                   elemMatch: { id: { eq: source.id } },
                 },
               },
