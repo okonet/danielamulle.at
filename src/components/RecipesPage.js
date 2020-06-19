@@ -1,5 +1,5 @@
 import React from "react"
-import { Container, Grid, Heading, Styled } from "theme-ui"
+import { Container, Grid, Styled } from "theme-ui"
 import SEO from "../components/seo"
 import Layout from "../components/layout"
 import { recipesTheme } from "../theme"
@@ -21,9 +21,9 @@ export default ({ data }) => {
         <>
           <Container>
             <Styled.h2>
-              <Link to={category.slug}>{category.id}</Link>
+              <Link to={category.slug}>{category.id}</Link>{" "}
+              <Tag>{category.recipes.length}</Tag>
             </Styled.h2>
-            <Tag>{category.recipes.length}</Tag>
           </Container>
           {category.recipes.length > 0 && (
             <Container variant="full">
