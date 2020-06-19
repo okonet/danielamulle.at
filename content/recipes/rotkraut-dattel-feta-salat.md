@@ -2,7 +2,10 @@
 title: Rotkraut-Dattel-Feta-Salat
 date: 2020-06-18T08:57:17.575Z
 coverImage: ../assets/20200407-dsc02417.jpeg
-timeToCook: "30 min"
+category:
+  - value: Salate
+    label: Salate
+timeToCook: 30 min
 ingredients:
   - 1 kleiner Kopf Rotkraut
   - 1/2 Tasse Datteln
