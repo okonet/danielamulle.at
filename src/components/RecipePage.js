@@ -133,7 +133,7 @@ export default ({ data }) => {
               gridColumn: [1, "9 / span 4"],
             }}
           >
-            <Styled.h2>Zubereitungszeit {timeToCook} min</Styled.h2>
+            <Styled.h3>Zubereitungszeit {timeToCook} min</Styled.h3>
 
             {categories && <CategoryTags categories={categories} />}
           </Box>

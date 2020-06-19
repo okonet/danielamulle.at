@@ -45,6 +45,8 @@ const theme = {
   fontWeights: {
     body: 400,
     heading: 700,
+    normal: 400,
+    bold: 700,
   },
   lineHeights: {
     body: 1.5,
@@ -52,7 +54,7 @@ const theme = {
   },
   letterSpacings: {
     body: "normal",
-    condensed: -0.8,
+    condensed: -0.5,
     caps: "0.2em",
   },
   radii: {
@@ -64,6 +66,41 @@ const theme = {
   shadows: {
     none: "none",
     float: "0px 4px 16px rgba(25, 25, 25, 0.075);",
+  },
+  textStyles: {
+    title: {
+      m: 0,
+      mb: 4,
+      color: "accent",
+      fontSize: [2, 3],
+      fontWeight: "normal",
+      fontFamily: "heading",
+      lineHeight: "heading",
+    },
+    subTitle: {
+      m: 0,
+      mb: 4,
+      color: "accent",
+      fontSize: 2,
+      fontWeight: "normal",
+      fontFamily: "heading",
+      lineHeight: "heading",
+    },
+    sectionTitle: {
+      m: 0,
+      my: 2,
+      color: "text",
+      fontSize: 1,
+      fontWeight: "bold",
+      fontFamily: "heading",
+      lineHeight: "body",
+    },
+    body: {
+      fontSize: 1,
+      fontFamily: "body",
+      fontWeight: "normal",
+      lineHeight: "body",
+    },
   },
   layout: {
     full: {
@@ -83,20 +120,13 @@ const theme = {
       color: "accent",
     },
     h1: {
-      m: 0,
-      mb: 4,
-      color: "accent",
-      fontSize: [2, 3],
-      fontWeight: "body",
-      fontFamily: "heading",
+      variant: "textStyles.title",
     },
     h2: {
-      m: 0,
-      my: 2,
-      color: "text",
-      fontSize: 1,
-      fontWeight: "heading",
-      fontFamily: "heading",
+      variant: "textStyles.subTitle",
+    },
+    h3: {
+      variant: "textStyles.sectionTitle",
     },
     ul: {
       my: 2,
