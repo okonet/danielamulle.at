@@ -1,1 +1,39 @@
----title: Hirsepizzadate: 2020-06-19T10:01:16.320ZcoverImage: ../assets/DSC03008.jpgcategory:  - value: Hauptspeisen    label: Hauptspeisentags:  - value: glutenfrei    label: glutenfreitimeToCook: 30 und 30 Minuten Backzeitingredients:  - 250 g Hirse  - 250 ml Pflanzendrink (oder Kuhmilch) + 250 ml Wasser  - ½ Gemüsesuppenwürfel oder 1 TL Salz  - 150 g geriebener Käse  - 60 g Margarine  - 2 Eier  - 3 EL Kräuter deiner Wahl  - Salz und Pfeffer  - ca. 300 ml passierte Tomaten oder Tomatensauce  - >-    nach Lust & Laune, z.B.: Thunfisch, Zwiebelringe (rot oder gelb), Frühlingszwiebel, Schinken, Mozzarella, Bergkäse, Tofu, Paprika, Mais, Oliven, Rucola, Kohl, etc.  - "Basilikum, Oregano "  - Olivenöl---1. Hirse in Pflanzendrink, Wasser + Suppenwürfel bzw. Salz kurz aufkochen2. bei niedriger Hitze ca. 20 Minuten ausdünsten3. Margarine und Käse in die halbwarme Hirsemasse rühren, Eier und Kräuter untermischen4. Masse mit nassen Händen fingerdick auf einem befetteten Backblech verteilen5. Passierte Tomaten draufstreichen, Basilikum, Salz und Pfeffer darüberstreuen6. weiter wie eine Pizza belegen7. zum Abschluss mit Oregano bestreuen8. bei 180 Grad Heißluft ca. 30 Minuten backen, bis die Pizza schön braun geworden ist9. vor dem Servieren noch mit etwas Olivenöl beträufelnStatt Hirse kannst du z.B. auch Quinoa, Polenta, Bulgur oder auch Buchweizen verwenden. Die Pizza ist auch ausgekühlt ein leckerer Snack für zwischendurch.
+---
+title: Hirsepizza
+date: 2020-06-19T10:01:16.320Z
+coverImage: ../assets/DSC03007.jpg
+category:
+  - value: Hauptspeisen
+    label: Hauptspeisen
+tags:
+  - value: glutenfrei
+    label: glutenfrei
+timeToCook: 30 und 30 Minuten Backzeit
+ingredients:
+  - 250 g Hirse
+  - 250 ml Pflanzendrink (oder Kuhmilch) + 250 ml Wasser
+  - ½ Gemüsesuppenwürfel oder 1 TL Salz
+  - 150 g geriebener Käse
+  - 60 g Margarine
+  - 2 Eier
+  - 3 EL Kräuter deiner Wahl
+  - Salz und Pfeffer
+  - ca. 300 ml passierte Tomaten oder Tomatensauce
+  - >-
+    nach Lust & Laune, z.B.: Thunfisch, Zwiebelringe (rot oder gelb), Frühlingszwiebel, Schinken, Mozzarella, Bergkäse, Tofu, Paprika, Mais, Oliven, Rucola, Kohl, etc.
+
+  - "Basilikum, Oregano "
+  - Olivenöl
+---
+
+1. Hirse in Pflanzendrink, Wasser + Suppenwürfel bzw. Salz kurz aufkochen
+2. bei niedriger Hitze ca. 20 Minuten ausdünsten
+3. Margarine und Käse in die halbwarme Hirsemasse rühren, Eier und Kräuter untermischen
+4. Masse mit nassen Händen fingerdick auf einem befetteten Backblech verteilen
+5. Passierte Tomaten draufstreichen, Basilikum, Salz und Pfeffer darüberstreuen
+6. weiter wie eine Pizza belegen
+7. zum Abschluss mit Oregano bestreuen
+8. bei 180 Grad Heißluft ca. 30 Minuten backen, bis die Pizza schön braun geworden ist
+9. vor dem Servieren noch mit etwas Olivenöl beträufeln
+
+Statt Hirse kannst du z.B. auch Quinoa, Polenta, Bulgur oder auch Buchweizen verwenden. Die Pizza ist auch ausgekühlt ein leckerer Snack für zwischendurch
