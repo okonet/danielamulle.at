@@ -44,4 +44,4 @@ ingredients:
 7. Sauce in eine tiefe Auflaufform einfüllen, Überguss darüber verteilen
 8. mit dem Käse bestreuen und ca. 45 Minuten bei 170 Grad Heißluft backen
 
-Perfekter Begleiter ist ein Gurken- oder Kohlrabisalat mit Rahmdressing. 
+> Perfekter Begleiter ist ein Gurken- oder Kohlrabisalat mit Rahmdressing. 
