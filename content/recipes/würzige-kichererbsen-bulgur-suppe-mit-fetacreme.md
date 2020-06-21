@@ -46,12 +46,12 @@ ingredients:
 4. Zwiebel in einem großen Topf bei mittlerer Hitze in Rapsöl anrösten und ca. 5 Minuten weiterbraten
 5. Knoblauch, Karotten und Sellerie zugeben und nochmal 5 Minuten braten
 6. Paprikapaste, Kreuzkümmel, Koriander und Kümmel unterrühren und einige Minuten weiterkochen, bis alles duftet
-6. Kichererbsen, 1 TL Salz und frisch gemahlenen Pfeffer zugeben
-7. mit Suppe aufgießen und aufkochen
-8. auf niedrige Stufe zurückdrehen und 10 Minuten köcheln lassen
-9. währenddessen Bulgur in der doppelten Menge Wasser bissfest kochen und danach sofort mit kaltem Wasser abseihen
+7. Kichererbsen, 1 TL Salz und frisch gemahlenen Pfeffer zugeben
+8. mit Suppe aufgießen und aufkochen
+9. auf niedrige Stufe zurückdrehen und 10 Minuten köcheln lassen
+10. währenddessen Bulgur in der doppelten Menge Wasser bissfest kochen und danach sofort mit kaltem Wasser abseihen
 11. für die Fetacreme zerbröselten Feta, Sauerrahm und Kräuter in einem kleinen Blender oder mit dem Püriersta einige Minuten cremig mixen und mit Salz und Pfeffer abschmecken
 12. Bulgur einige Mintuen vor dem Servieren in die fertige Suppe geben und nochmals einige Minuten köcheln
-13. Suppe in Schüsseln oder Tellern anrichten, eventuell mit einigen Löffeln Fetacreme verfeinern und sofort servieren
+13. Suppe in Schüsseln oder Tellern anrichten, mit einigen Löffeln Fetacreme verfeinern und sofort servieren
 
-> Diese gehaltvolle Suppe kannst du durchaus auch als Hauptgericht genießen. Wenn du statt Bulgur Vollkorncouscous verwendest, wird die Getreideeinlage etwas feiner. Du kannst ihn direkt in die fertige Suppe geben, und sparst dir dadurch die extra Kochzeit (Punkt 9)
+> Diese gehaltvolle Suppe kannst du durchaus auch als Hauptgericht genießen. Wenn du statt Bulgur Vollkorncouscous verwendest, wird die Getreideeinlage etwas feiner. Du kannst ihn direkt in die fertige Suppe geben, und sparst dir dadurch die extra Kochzeit (Punkt 10)
