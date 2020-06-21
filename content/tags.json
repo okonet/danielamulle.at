@@ -1,22 +1,28 @@
 {
   "tags": [
     {
-      "id": "glutenfrei"
+      "id": "vegetarisch"
     },
     {
-      "id": "fruktosefrei"
-    },
-    {
-      "id": "fruktosearm"
-    },
-    {
-      "id": "eiweißreich"
+      "id": "vegan"
     },
     {
       "id": "gut vorzubereiten"
     },
     {
-      "id": "histaminarm"
+      "id": "zum Mitnehmen"
+    },
+    {
+      "id": "Süßes"
+    },
+    {
+      "id": "eiweißreich"
+    },
+    {
+      "id": "fruktosearm"
+    },
+    {
+      "id": "fruktosefrei"
     },
     {
       "id": "laktosearm"
@@ -25,16 +31,10 @@
       "id": "laktosefrei"
     },
     {
-      "id": "vegan"
+      "id": "histaminarm"
     },
     {
-      "id": "vegetarisch"
-    },
-    {
-      "id": "zum Mitnehmen"
-    },
-    {
-      "id": "Süßes"
+      "id": "glutenfrei"
     }
   ]
 }
