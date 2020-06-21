@@ -20,6 +20,7 @@ tags:
     label: fruktosearm
 timeToCook: '30 Minuten vorbereiten, 45 Minuten backen'
 ingredients:
+  - 'für 4 Personen:'
   - 1 große Zwiebel
   - 1 gepresste Knoblauchzehe
   - >-
