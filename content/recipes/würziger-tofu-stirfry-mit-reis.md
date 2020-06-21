@@ -12,6 +12,10 @@ tags:
     label: fruktosefrei
   - value: laktosefrei
     label: laktosefrei
+  - value: histaminfrei
+    label: histaminfrei
+  - value: glutenfrei
+    label: glutenfrei
 timeToCook: 45 Minuten
 ingredients:
   - 'für 4 GenießerInnen:'
