@@ -49,8 +49,8 @@ ingredients:
 7. Kichererbsen, 1 TL Salz und frisch gemahlenen Pfeffer zugeben
 8. mit Suppe aufgießen und aufkochen
 9. auf niedrige Stufe zurückdrehen und 10 Minuten köcheln lassen
-10. währenddessen Bulgur in der doppelten Menge Wasser bissfest kochen und danach sofort mit kaltem Wasser abseihen
-11. für die Fetacreme zerbröselten Feta, Sauerrahm und Kräuter in einem kleinen Blender oder mit dem Püriersta einige Minuten cremig mixen und mit Salz und Pfeffer abschmecken
+10. währenddessen Bulgur in der doppelten Menge Wasser bissfest kochen, und danach sofort abseihen und mit kaltem Wasser abschrecken
+11. für die Fetacreme zerbröselten Feta, Sauerrahm und Kräuter in einem kleinen Blender oder mit dem Pürierstab einige Minuten cremig mixen und mit Salz und Pfeffer abschmecken
 12. Bulgur einige Mintuen vor dem Servieren in die fertige Suppe geben und nochmals einige Minuten köcheln
 13. Suppe in Schüsseln oder Tellern anrichten, mit einigen Löffeln Fetacreme verfeinern und sofort servieren
 
