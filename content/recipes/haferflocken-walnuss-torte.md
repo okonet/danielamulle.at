@@ -1,0 +1,47 @@
+---
+title: Haferflocken-Walnuss-Torte
+date: 2020-06-21T14:52:49.096Z
+coverImage: ../assets/20200509-dsc02635.jpeg
+category:
+  - value: Kuchen & Kekserl
+    label: Kuchen & Kekserl
+tags:
+  - value: vegetarisch
+    label: vegetarisch
+  - value: gut vorzubereiten
+    label: gut vorzubereiten
+  - value: zum Mitnehmen
+    label: zum Mitnehmen
+  - value: Süßes
+    label: Süßes
+  - value: laktosefrei
+    label: laktosefrei
+  - value: glutenfrei
+    label: glutenfrei
+timeToCook: 20 Minuten vorbereiten + ca. 50 Minuten backen
+ingredients:
+  - 'für 1 Springform mit 24 cm Durchmesser:'
+  - 100 g Haferflocken
+  - 100 g geriebene Walnüsse oder Haselnüsse
+  - 100 g Kokosraspeln
+  - 100 g Honig
+  - 150 g Margarine
+  - 3 Bananen
+  - 2 Eier
+  - 1 großer Apfel
+  - 1/2 TL Zimt
+  - Prise Salz
+  - 1 EL Backpulver
+  - 3 EL ungesüsstes Kakaopulver
+  - Margarine zum Ausfetten der Form
+  - Haferflocken zum Ausstreuen der Form
+  - gehackte Nüsse zum Belegen
+---
+1. Apfel schälen und fein reiben, Bananen zerdrücken
+2. alle Zutaten gut miteinander vermixen
+2. Springform befetten und mit Haferflocken ausstreuen
+3. mit grob gehackten Nüssen bestreuen
+4. bei 170 Grad ca. 50 Minuten backen
+5. die Torte nicht stürzen, sondern nur den Rand der Form entfernen
+
+Wenn du möchtest kannst du die Torte mit Schokolade glasieren oder mit Staubzucker bestreuen. Sie schmeckt supersaftig-schokoladig, und ist noch dazu vollgepackt mit Mineral- und Ballaststoffen sowie gesunden Fetten
