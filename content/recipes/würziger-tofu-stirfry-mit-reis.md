@@ -22,7 +22,7 @@ ingredients:
   - 1 EL Chilipulver
   - 1 TL gemahlenen Kreuzkümmel
   - 1/4 TL gemahlenen Zimt
-  - 'Salz, Pfeffer'
+  - Salz und Pfeffer
   - 1 TL Apfelessig
   - Olivenöl
   - frischen Koriander und Frühlingszwiebel
