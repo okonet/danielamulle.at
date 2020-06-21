@@ -42,4 +42,4 @@ ingredients:
 5. falls dir die Konsistenz zu fest ist mit etwas Datteleinweichwasser verdünnen
 6. Schokohumus in Schüsseln füllen und genießen
 
-> Diese Nascherei ist im handumdrehen fertig, echt lecker & noch dazu gesund. Natürlich kannst du die Süsse nach deinem Geschmack anpassen. *Für eine fruktosefreie Variante nimm' statt den Trockenfrüchten einfach mehr Reissirup.
+> Diese Nascherei ist im handumdrehen fertig, echt lecker & noch dazu gesund. Natürlich kannst du die Süsse nach deinem Geschmack anpassen. *Für eine fruktosefreie Variante nimm' statt den Trockenfrüchten mehr Reissirup.
