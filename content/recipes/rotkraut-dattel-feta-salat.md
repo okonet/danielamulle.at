@@ -5,6 +5,19 @@ coverImage: ../assets/20200407-dsc02417.jpeg
 category:
   - value: Salate
     label: Salate
+tags:
+  - value: vegan
+    label: vegan
+  - value: gut vorzubereiten
+    label: gut vorzubereiten
+  - value: zum Mitnehmen
+    label: zum Mitnehmen
+  - value: laktosefrei
+    label: laktosefrei
+  - value: histaminarm
+    label: histaminarm
+  - value: glutenfrei
+    label: glutenfrei
 timeToCook: 30 min
 ingredients:
   - 1 kleiner Kopf Rotkraut
@@ -17,7 +30,6 @@ ingredients:
   - 2 EL gerösteter Sesam
   - scharfe Paprika oder Chiliflocken (optional)
 ---
-
 1. Rotraut reiben oder in feine Streifen schneiden
 2. mit 1 TL Salz verkneten
 3. mit Zitronensaft, Olivenöl und Pfeffer kräftig würzen
