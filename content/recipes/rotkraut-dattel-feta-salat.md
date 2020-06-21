@@ -20,6 +20,7 @@ tags:
     label: glutenfrei
 timeToCook: 30 min
 ingredients:
+  - 'für 4 Personen:'
   - 1 kleiner Kopf Rotkraut
   - 1/2 Tasse Datteln
   - 150 g Fetakäse
