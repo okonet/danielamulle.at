@@ -33,14 +33,13 @@ ingredients:
   - 1 EL Nussmus (optional)
   - '2-3 EL Honig, Ahornsirup oder Reissirup (=fruktosefrei)'
   - eventuell gehackte Nüsse oder Schokoraspeln zum Bestreuen
-  - Obst deiner Wahl zum Dippen
+  - Obst deiner Wahl zum Dippen (optional)
 ---
 1. Datteln/Feigen 15 Minuten in kochendem Wasser einweichen
 2. Kichererbsen gut abseihen
 3. Datteln/Feigen aus dem Einweichwasser nehmen
 4. alle Zutaten in einem Blender zu einer dicken, cremigen Sauce pürieren
 5. falls dir die Konsistenz zu fest ist mit etwas Datteleinweichwasser verdünnen
-6. dein Lieblingsobst aufschneiden
-7. Schokohumus in Schüsseln füllen und drauflosdippen
+6. Schokohumus in Schüsseln füllen und genießen
 
 > Diese Nascherei ist im handumdrehen fertig, echt lecker & noch dazu gesund. Natürlich kannst du die Süsse nach deinem Geschmack anpassen. *Für eine fruktosefreie Variante nimm' statt den Trockenfrüchten einfach mehr Reissirup.
