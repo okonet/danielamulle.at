@@ -18,7 +18,7 @@ tags:
     label: glutenfrei
 timeToCook: 45 Minuten
 ingredients:
-  - 'für 4 GenießerInnen:'
+  - 'für 4 Personen:'
   - 1 kleine Zwiebel
   - 2 große Knoblauchzehen
   - 2 große Karotten
