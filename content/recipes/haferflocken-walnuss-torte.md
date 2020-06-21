@@ -44,4 +44,4 @@ ingredients:
 4. bei 170 Grad ca. 50 Minuten backen
 5. die Torte nicht stürzen, sondern nur den Rand der Form entfernen
 
-Wenn du möchtest kannst du die Torte mit Schokolade glasieren oder mit Staubzucker bestreuen. Sie schmeckt supersaftig-schokoladig, und ist noch dazu vollgepackt mit Mineral- und Ballaststoffen sowie gesunden Fetten
+> Wenn du möchtest kannst du die Torte mit Schokolade glasieren oder mit Staubzucker bestreuen. Sie schmeckt supersaftig-schokoladig, und ist noch dazu vollgepackt mit Mineral- und Ballaststoffen sowie gesunden Fetten
