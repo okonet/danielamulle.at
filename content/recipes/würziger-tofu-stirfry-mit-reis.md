@@ -44,4 +44,4 @@ ingredients:
 9. Essig unterrühren und mit Salz & Pfeffer abschmecken
 10. mit gehacktem Koriander und Frühlingszwiebeln bestreut auf Reis servieren
 
-Der Tofu-Stirfry hält sich problemlos einige Tage im Kühlschrank, sodass du daraus mehrere Gerichten verwenden kannst. Hier ein paar Ideen: in einer Tomatensauce zur Pasta, in einer Eierspeise, als pikante Füllung für Palatschinken, Tacos oder Tortillas, als Eiweiß-Booster in einem Eintopf, Auflauf oder Getreidesalat
+> Der Tofu-Stirfry hält sich problemlos einige Tage im Kühlschrank, sodass du daraus mehrere Gerichten verwenden kannst. Hier ein paar Ideen: in einer Tomatensauce zur Pasta, in einer Eierspeise, als pikante Füllung für Palatschinken, Tacos oder Tortillas, als Eiweiß-Booster in einem Eintopf, Auflauf oder Getreidesalat
