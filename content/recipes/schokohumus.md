@@ -18,18 +18,20 @@ tags:
     label: eiweißreich
   - value: laktosefrei
     label: laktosefrei
+  - value: fruktosefrei
+    label: fruktosefrei
 timeToCook: 15 Minuten einweichen + 10 Minuten zubereiten
 ingredients:
   - 'für 4 Naschkatzen:'
   - 400 g gekochte Kichererbsen
-  - 6 Stück getrocknete Datteln oder Feigen
+  - 6 Stück getrocknete Datteln oder Feigen*
   - 3 gehäufte EL ungesüßtes Kakaopulver
   - 1 Pkg. Vanillezucker
   - 1/8 TL Salz
   - 2 EL Nussmus oder Erdnussbutter
   - 5 EL Pflanzendrink (oder Kuhmilch)
   - 1 EL Nussmus (optional)
-  - '2-3 EL Honig, Ahornoder Reissirup oder Rohzucker'
+  - '2-3 EL Honig, Ahornsirup oder Reissirup (=fruktosefrei)'
   - eventuell gehackte Nüsse oder Schokoraspeln zum Bestreuen
   - Obst deiner Wahl zum Dippen
 ---
@@ -41,4 +43,4 @@ ingredients:
 6. dein Lieblingsobst aufschneiden
 7. Schokohumus in Schüsseln füllen und drauflosdippen
 
-> Diese Nascherei ist im handumdrehen fertig, echt lecker & noch dazu gesund. Natürlich kannst du die Süsse nach deinem Geschmack anpassen 
+> Diese Nascherei ist im handumdrehen fertig, echt lecker & noch dazu gesund. Natürlich kannst du die Süsse nach deinem Geschmack anpassen. *Für eine fruktosefreie Variante nimm' statt den Trockenfrüchten einfach mehr Reissirup.
