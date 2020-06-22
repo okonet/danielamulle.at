@@ -1,4 +1,5 @@
 import { shade, tint, modularScale } from "polished"
+import { transparentize } from "@theme-ui/color"
 
 // Creates each four darker and lighter accents from passed hex color
 const createAccents = (color, length = 4, steps = 0.3) => {

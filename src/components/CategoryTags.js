@@ -4,10 +4,10 @@ import Tag from "./Tag"
 
 function CategoryTags({ categories }) {
   return (
-    <Group as="p" separator=", ">
+    <Group as="p" separator=" ">
       {categories.map((category) => (
         <Tag to={category.slug} key={category.id}>
-          #{category.id}
+          {category.id}
         </Tag>
       ))}
     </Group>

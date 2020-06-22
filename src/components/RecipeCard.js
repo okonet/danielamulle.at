@@ -2,9 +2,11 @@ import React from "react"
 import PropTypes from "prop-types"
 import Link from "./Link"
 import Img from "gatsby-image"
-import { AspectRatio, Box, Flex, Styled } from "theme-ui"
+import { AspectRatio, Box, Flex, Styled, Text } from "theme-ui"
 import CategoryTags from "./CategoryTags"
 import { transparentize } from "@theme-ui/color"
+import Tag from "./Tag"
+import Group from "react-group"
 
 RecipeCard.propTypes = {
   categories: PropTypes.arrayOf(
@@ -21,7 +23,13 @@ RecipeCard.propTypes = {
   title: PropTypes.string.isRequired,
 }
 
-function RecipeCard({ coverImage, categories, slug, title }) {
+function RecipeCard({ coverImage, categories, slug, title, ...props }) {
+  const gradient = () => (theme) => {
+    return `linear-gradient(
+            ${transparentize("text", 0)(theme)}, 
+            ${transparentize("text", 1)(theme)}
+        )`
+  }
   return (
     <Box>
       <Link
@@ -41,26 +49,45 @@ function RecipeCard({ coverImage, categories, slug, title }) {
             sx={{
               flexDirection: "column",
               position: "absolute",
-              bottom: 0,
+              top: 0,
               left: 0,
-              p: 3,
               width: "100%",
-              "& > * > *": {
-                display: "inline",
-                p: 1,
-                lineHeight: 1.46,
-                bg: transparentize("text", 0.25),
-                backdropFilter: "blur(4px)",
-                color: "background",
-              },
+              height: "100%",
             }}
           >
-            <Styled.h3>
-              <span>{title}</span>
-            </Styled.h3>
+            <Text
+              sx={{
+                variant: "textStyles.sectionTitle",
+                my: 0,
+                p: 3,
+                backgroundImage: gradient,
+              }}
+            >
+              <Text sx={{ color: "background" }}>{title}</Text>
+            </Text>
             {categories && (
-              <Box>
-                <CategoryTags categories={categories} />
+              <Box
+                sx={{
+                  mx: 3,
+                  mt: "auto",
+                  mb: 2,
+                }}
+              >
+                <Group as="p" separator=" ">
+                  {categories.map((category) => (
+                    <Tag
+                      to={category.slug}
+                      key={category.id}
+                      sx={{
+                        bg: transparentize("text", 0.5),
+                        backdropFilter: "blur(4px)",
+                        color: "muted",
+                      }}
+                    >
+                      {category.id}
+                    </Tag>
+                  ))}
+                </Group>
               </Box>
             )}
           </Flex>

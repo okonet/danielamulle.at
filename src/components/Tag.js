@@ -2,15 +2,15 @@ import React from "react"
 import { Link } from "gatsby"
 import { Box } from "theme-ui"
 
-export default function({ children, to }) {
+export default function({ children, to, sx }) {
   return (
     <Box
       as={Link}
       to={to}
       sx={{
         display: "inline-block",
-        px: 2,
-        py: 1,
+        px: 1,
+        py: 0,
         fontSize: 0,
         fontFamily: "monospace",
         textDecoration: "none",
@@ -21,6 +21,7 @@ export default function({ children, to }) {
           bg: "teal.3",
         },
         borderRadius: "round",
+        ...sx,
       }}
     >
       {children}
