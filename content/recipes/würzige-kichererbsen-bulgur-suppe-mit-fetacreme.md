@@ -14,10 +14,10 @@ tags:
     label: gut vorzubereiten
   - value: eiweißreich
     label: eiweißreich
-  - value: fruktosefrei
-    label: fruktosefrei
   - value: laktosefrei
     label: laktosefrei
+  - value: fruktosearm
+    label: fruktosearm
 timeToCook: 30 Minuten vorbereiten + 30 Minuten kochen
 ingredients:
   - 'für 4 Personen:'
@@ -33,7 +33,7 @@ ingredients:
   - '1,2 l Gemüsesuppe'
   - 100 g grober Bulgur
   - Rapsöl
-  - Salz und Peffer
+  - Salz und Pfeffer
   - 'für die Fetacreme (optional):'
   - 100 g Fetakäse
   - 60 g Sauerrahm
