@@ -8,11 +8,11 @@ function Hint(props) {
       sx={{
         p: 3,
         mx: -3,
-        my: 3,
-        bg: "gray.5",
-        color: "gray.2",
+        my: 4,
+        bg: "white",
+        color: "muted",
         borderLeft: "4px solid",
-        borderLeftColor: "orange.3",
+        borderLeftColor: "muted",
         borderRadius: "medium",
         fontStyle: "italic",
         "> *": {

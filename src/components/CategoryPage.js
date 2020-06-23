@@ -12,10 +12,12 @@ export default ({ data }) => {
   const { category } = data
   return (
     <Layout theme={recipesTheme}>
-      <SEO title={category.id} />
+      <SEO title={`Rezepte: ${category.id}`} />
 
       <Container>
-        <Styled.h1>{category.id}</Styled.h1>
+        <Styled.h1>
+          Rezepte: <em>{category.id}</em>
+        </Styled.h1>
       </Container>
 
       {category.recipes ? (

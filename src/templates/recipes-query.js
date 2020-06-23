@@ -26,10 +26,11 @@ export const query = graphql`
     }
   }
   query PostsQuery {
-    allCategory(filter: { isTag: { eq: false } }) {
+    allCategory {
       nodes {
         id
         slug
+        isTag
         recipes {
           ...RecipeMeta
         }

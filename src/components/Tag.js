@@ -9,13 +9,13 @@ export default function({ children, to, sx }) {
       to={to}
       sx={{
         display: "inline-block",
-        px: 1,
-        py: 0,
+        px: 2,
+        py: 1,
         fontSize: 0,
         fontFamily: "monospace",
         textDecoration: "none",
         color: "teal.4",
-        bg: "teal.6",
+        bg: "white",
         ":hover": {
           color: "teal.6",
           bg: "teal.3",
