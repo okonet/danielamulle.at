@@ -8,11 +8,13 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { graphql, useStaticQuery } from "gatsby"
-import { Box, Container, Flex, ThemeProvider } from "theme-ui"
+import { Box, Container, Flex, Styled, ThemeProvider } from "theme-ui"
 import Logo from "./Logo"
 import Navigation from "./Navigation"
 import { default as defaultTheme } from "../theme"
 import { transparentize } from "@theme-ui/color"
+import Link from "./Link"
+import Group from "react-group"
 
 const Layout = ({ theme = defaultTheme, children }) => {
   const data = useStaticQuery(graphql`
@@ -62,7 +64,13 @@ const Layout = ({ theme = defaultTheme, children }) => {
 
         <Box as="footer" sx={{ py: 4, flexShrink: 1 }}>
           <Container>
-            © {data.site.siteMetadata.author}, {new Date().getFullYear()}
+            <Group as="nav" separator=" | ">
+              <Link to="/impressum">Impressum</Link>
+              <Link to="/datenschutz">Datenschutz</Link>
+            </Group>
+            <Styled.p>
+              © {data.site.siteMetadata.author}, {new Date().getFullYear()}
+            </Styled.p>
           </Container>
         </Box>
       </Flex>
