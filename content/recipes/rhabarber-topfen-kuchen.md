@@ -16,13 +16,13 @@ tags:
     label: eiweißreich
 timeToCook: 30 Minuten vorbereiten + 45 Minuten backen
 ingredients:
-  - 'für 1 Tortenspringform mit 25 cm Durchmesser:'
+  - 'für 1 Springform mit 25 cm Durchmesser:'
   - '300 g Vollkornmehl (Dinkel, Weizen)'
   - 120 g Margarine
   - 3 EL brauner Zucker
   - 'Prise Salz '
   - etwas kaltes Wasser
-  - 50 g Margarine oder Butter
+  - 50 g Margarine
   - 50 g brauner Zucker
   - 1 Pkg Vanillezucker
   - 350 g Topfen
