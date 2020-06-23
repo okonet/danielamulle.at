@@ -12,12 +12,12 @@ tags:
     label: gut vorzubereiten
   - value: eiweißreich
     label: eiweißreich
-  - value: fruktosefrei
-    label: fruktosefrei
   - value: laktosefrei
     label: laktosefrei
   - value: glutenfrei
     label: glutenfrei
+  - value: fruktosearm
+    label: fruktosearm
 timeToCook: 30 Minuten vorbereiten + 45 Minuten köcheln
 ingredients:
   - 'für 4 Personen:'
