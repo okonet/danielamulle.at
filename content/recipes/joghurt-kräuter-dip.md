@@ -18,9 +18,11 @@ tags:
     label: histaminfrei
   - value: glutenfrei
     label: glutenfrei
+  - value: vegan
+    label: vegan
 timeToCook: 15 Minuten
 ingredients:
-  - '150 g Naturjoghurt '
+  - '150 g (Soja)joghurt '
   - frische Kräuter deiner Wahl
   - 1 Knoblauchzehe
   - 1/2 TL Zitronensaft
@@ -28,6 +30,7 @@ ingredients:
 ---
 1. Kräuter fein hacken
 2. mit dem Joghurt vermengen
-3. mit Salz, Pfeffer und Zitronensaft abschmecken
+3. mit Salz, Pfeffer und Zitronensaft abschmecken  
+
 
 <span>Photo by <a href="https://unsplash.com/@richwilliamsmith?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Rich Smith</a> on <a href="/s/photos/herbs?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
