@@ -55,4 +55,4 @@ ingredients:
 11. ca. 1 Stunde köcheln lassen, dabei immer wieder mal umrühren
 12. nochmals abschmecken und mit Sauerrahm & frischen Korianderblättern garniert servieren
 
-> Wir essen dazu sehr gerne Naturreis, du kannst das Chili aber auch mit frischem Brot & Gebäck, gekochten Kartoffeln, Couscous oder Basmatireis servieren. Natürlich kannst du das Chili auch klassisch mit 500 g Bio-Faschiertem. Es schmeckt übrigens in jedem Fall am 2. Tag aufgewärmt noch aromatischer
+> Ich esse dazu sehr gerne Naturreis, du kannst das Chili aber auch mit frischem Brot & Gebäck, gekochten Kartoffeln, Couscous oder Basmatireis servieren. Natürlich kannst du das Chili auch klassisch mit 500 g Bio-Faschiertem. Es schmeckt übrigens in jedem Fall am 2. Tag aufgewärmt noch aromatischer
