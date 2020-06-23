@@ -1,5 +1,5 @@
 ---
-title: Linsencurry mit Süßkartoffeln & Spinat
+title: Rotes Linsencurry mit Süßkartoffeln & Spinat
 date: 2020-06-23T13:12:11.830Z
 coverImage: ../assets/DSC03002.jpg
 category:
