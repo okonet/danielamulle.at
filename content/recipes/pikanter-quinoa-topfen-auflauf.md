@@ -8,6 +8,12 @@ category:
 tags:
   - value: vegetarisch
     label: vegetarisch
+  - value: eiweißreich
+    label: eiweißreich
+  - value: fruktosearm
+    label: fruktosearm
+  - value: histaminarm
+    label: histaminarm
 timeToCook: 20 Minuten vorbereiten + 40 Minuten backen
 ingredients:
   - 'für 5 Personen:'
