@@ -24,7 +24,7 @@ tags:
     label: glutenfrei
 timeToCook: 15 Minuten
 ingredients:
-  - 200 ml (Soja)Joghurt
+  - 200 ml (Soja)joghurt
   - abgeriebene Schale 1/2 Bio-Zitrone
   - etwas Zitronensaft
   - 10 g frisches Basilikum
@@ -33,5 +33,6 @@ ingredients:
 1. Basilikum kleinschneiden
 2. mit Joghurt und Zitronenschale vermischen
 3. mit Zitronensaft und Pfeffer abschmecken
+
 
 <span>Photo by <a href="https://unsplash.com/@courtneymcook?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Courtney Cook</a> on <a href="/s/photos/lemon-basil?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
