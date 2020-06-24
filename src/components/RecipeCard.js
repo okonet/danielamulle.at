@@ -2,11 +2,8 @@ import React from "react"
 import PropTypes from "prop-types"
 import Link from "./Link"
 import Img from "gatsby-image"
-import { AspectRatio, Box, Flex, Styled, Text } from "theme-ui"
-import CategoryTags from "./CategoryTags"
+import { AspectRatio, Box, Flex, Text } from "theme-ui"
 import { transparentize } from "@theme-ui/color"
-import Tag from "./Tag"
-import Group from "react-group"
 
 RecipeCard.propTypes = {
   categories: PropTypes.arrayOf(
@@ -26,17 +23,24 @@ RecipeCard.propTypes = {
 function RecipeCard({ coverImage, categories, slug, title, ...props }) {
   const gradient = () => (theme) => {
     return `linear-gradient(
-            ${transparentize("text", 0)(theme)}, 
-            ${transparentize("text", 1)(theme)}
+            ${transparentize("text", 1)(theme)}, 
+            ${transparentize("text", 0)(theme)}
         )`
   }
   return (
-    <Box>
+    <Box
+      sx={{
+        borderRadius: "medium",
+        overflow: "hidden",
+        boxShadow: "float",
+      }}
+    >
       <Link
         to={slug}
         sx={{
           display: "block",
           overflow: "hidden",
+          bg: "white",
         }}
       >
         <AspectRatio ratio={1.5}>
@@ -49,10 +53,9 @@ function RecipeCard({ coverImage, categories, slug, title, ...props }) {
             sx={{
               flexDirection: "column",
               position: "absolute",
-              top: 0,
+              bottom: 0,
               left: 0,
               width: "100%",
-              height: "100%",
             }}
           >
             <Text
@@ -65,31 +68,6 @@ function RecipeCard({ coverImage, categories, slug, title, ...props }) {
             >
               <Text sx={{ color: "background" }}>{title}</Text>
             </Text>
-            {categories && (
-              <Box
-                sx={{
-                  mx: 3,
-                  mt: "auto",
-                  mb: 2,
-                }}
-              >
-                <Group as="p" separator=" ">
-                  {categories.map((category) => (
-                    <Tag
-                      to={category.slug}
-                      key={category.id}
-                      sx={{
-                        bg: transparentize("text", 0.5),
-                        backdropFilter: "blur(4px)",
-                        color: "muted",
-                      }}
-                    >
-                      {category.id}
-                    </Tag>
-                  ))}
-                </Group>
-              </Box>
-            )}
           </Flex>
         </AspectRatio>
       </Link>

@@ -2,7 +2,7 @@ import { shade, tint, modularScale } from "polished"
 import { transparentize } from "@theme-ui/color"
 
 // Creates each four darker and lighter accents from passed hex color
-const createAccents = (color, length = 4, steps = 0.3) => {
+const createAccents = (color, length = 4, steps = 0.32) => {
   const darkAccents = Array.from({ length: length - 1 }, (_, index) =>
     shade(Math.min(steps * (index + 1), 1), color)
   )
@@ -20,7 +20,7 @@ function unsplashURL(imageId) {
 export const palette = {
   white: "#fff",
   black: "#000",
-  gray: createAccents("#bac0c8"),
+  gray: createAccents("#92969b"),
   pink: createAccents("#e23871"),
   cyan: createAccents("#05a8cd"),
   orange: createAccents("#ff9c00"),
@@ -71,7 +71,6 @@ const theme = {
   textStyles: {
     title: {
       m: 0,
-      mb: 4,
       color: "accent",
       fontSize: [2, 3],
       fontWeight: "normal",
@@ -80,7 +79,6 @@ const theme = {
     },
     subTitle: {
       m: 0,
-      mb: 4,
       color: "accent",
       fontSize: 2,
       fontWeight: "normal",
@@ -89,7 +87,6 @@ const theme = {
     },
     sectionTitle: {
       m: 0,
-      my: 2,
       color: "text",
       fontSize: 1,
       fontWeight: "bold",
@@ -122,12 +119,15 @@ const theme = {
     },
     h1: {
       variant: "textStyles.title",
+      mt: 4,
     },
     h2: {
       variant: "textStyles.subTitle",
+      mt: 4,
     },
     h3: {
       variant: "textStyles.sectionTitle",
+      mt: 3,
     },
     ul: {
       my: 2,
@@ -185,8 +185,8 @@ export const recipesTheme = {
   colors: {
     ...theme.colors,
     text: palette.teal[1],
-    // background: palette.teal[6],
-    // muted: palette.teal[4],
+    background: palette.teal[6],
+    // muted: palette.teal[3],
     accent: palette.orange[3],
   },
 }

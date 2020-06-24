@@ -57,7 +57,7 @@ const Layout = ({ theme = defaultTheme, children }) => {
 
         <Flex
           as="main"
-          sx={{ my: 4, flexDirection: "column", flexGrow: 1, bg: "background" }}
+          sx={{ flexDirection: "column", flexGrow: 1, bg: "background" }}
         >
           {children}
         </Flex>

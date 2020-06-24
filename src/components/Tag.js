@@ -2,29 +2,24 @@ import React from "react"
 import { Link } from "gatsby"
 import { Box } from "theme-ui"
 
-export default function({ children, to, sx }) {
+export default function(props) {
   return (
     <Box
-      as={Link}
-      to={to}
+      as="span"
       sx={{
         display: "inline-block",
-        px: 1,
-        py: 0,
+        px: 2,
         fontSize: 0,
         fontFamily: "monospace",
-        textDecoration: "none",
-        color: "teal.4",
-        bg: "teal.6",
-        ":hover": {
-          color: "teal.6",
-          bg: "teal.3",
-        },
+        lineHeight: 1.75,
+        color: "muted",
+        bg: "white",
         borderRadius: "round",
-        ...sx,
+        "> a": {
+          textDecoration: "none",
+        },
       }}
-    >
-      {children}
-    </Box>
+      {...props}
+    />
   )
 }
