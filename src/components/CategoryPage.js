@@ -1,9 +1,9 @@
+/* @jsx jsx */
 import React from "react"
-import { Box, Card, Container, Grid, Styled, Text } from "theme-ui"
+import { jsx, Container, Grid, Styled, Text } from "theme-ui"
 import SEO from "../components/seo"
 import Layout from "../components/layout"
 import Link from "../components/Link"
-import Img from "gatsby-image"
 import { recipesTheme } from "../theme"
 import RecipeCard from "./RecipeCard"
 import { recipesPath } from "../../paths"
@@ -15,7 +15,7 @@ export default ({ data }) => {
       <SEO title={`Rezepte: ${category.id}`} />
 
       <Container>
-        <Styled.h1>
+        <Styled.h1 sx={{ mb: 3 }}>
           Rezepte: <em>{category.id}</em>
         </Styled.h1>
       </Container>
