@@ -3,8 +3,8 @@ title: Kicher-Cookies
 date: 2020-06-21T17:09:53.713Z
 coverImage: ../assets/DSC03072.jpg
 category:
-  - value: Kuchen & Kekserl & Co
-    label: Kuchen & Kekserl & Co
+  - value: 'Kuchen, Kekserl & Co'
+    label: 'Kuchen, Kekserl & Co'
 tags:
   - value: vegan
     label: vegan
