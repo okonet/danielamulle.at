@@ -2,11 +2,8 @@ import React from "react"
 import PropTypes from "prop-types"
 import Link from "./Link"
 import Img from "gatsby-image"
-import { AspectRatio, Box, Flex, Styled, Text } from "theme-ui"
-import CategoryTags from "./CategoryTags"
+import { AspectRatio, Box, Flex, Text } from "theme-ui"
 import { transparentize } from "@theme-ui/color"
-import Tag from "./Tag"
-import Group from "react-group"
 
 RecipeCard.propTypes = {
   categories: PropTypes.arrayOf(
@@ -59,7 +56,6 @@ function RecipeCard({ coverImage, categories, slug, title, ...props }) {
               bottom: 0,
               left: 0,
               width: "100%",
-              // height: "100%",
             }}
           >
             <Text

@@ -35,14 +35,14 @@ export default ({ data }) => {
           {tags && (
             <Group as="nav" separator={" "}>
               {tags.map((category) => (
-                <Box as="span" sx={{ display: "inline-block", my: 1 }}>
+                <Tag sx={{ my: 1, color: "text" }}>
                   <Link to={category.slug} key={category.id}>
                     {category.id}
                   </Link>
                   <Text as="span" sx={{ px: 1, fontSize: 0, color: "muted" }}>
                     ×{category.recipes.length}
                   </Text>
-                </Box>
+                </Tag>
               ))}
             </Group>
           )}

@@ -8,7 +8,8 @@ import Link from "./Link"
 import Section from "./Section"
 import { recipesTheme } from "../theme"
 import { recipesPath } from "../../paths"
-import CategoryTags from "./CategoryTags"
+import Tag from "./Tag"
+import Group from "react-group"
 
 export default ({ data }) => {
   const {
@@ -123,8 +124,20 @@ export default ({ data }) => {
             <Styled.h3>Zubereitungszeit</Styled.h3>
             <Styled.p>{timeToCook}</Styled.p>
 
-            <Styled.h3>Kategorien</Styled.h3>
-            {categories && <CategoryTags categories={categories} />}
+            {categories && (
+              <>
+                <Styled.h3>Kategorien</Styled.h3>
+                <Box sx={{ my: 2, mx: -2 }}>
+                  <Group as="p" separator=" ">
+                    {categories.map((category) => (
+                      <Tag key={category.id} sx={{ my: 1 }}>
+                        <Link to={category.slug}>{category.id}</Link>
+                      </Tag>
+                    ))}
+                  </Group>
+                </Box>
+              </>
+            )}
           </Box>
         </Grid>
       </Container>
