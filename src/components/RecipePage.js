@@ -84,7 +84,7 @@ export default ({ data }) => {
               px: [0, 5],
               py: [0, 4],
               ml: [0, -5],
-              bg: "background",
+              bg: "white",
               borderRadius: ["none", "medium"],
               boxShadow: ["none", "float"],
             }}
