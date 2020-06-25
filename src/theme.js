@@ -105,7 +105,7 @@ const theme = {
   },
   layout: {
     full: {
-      px: [3, 3, 0],
+      px: 3,
       maxWidth: 1016, // 12 x (70px + 16px gap)
     },
     container: {
