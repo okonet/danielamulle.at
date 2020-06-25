@@ -64,6 +64,9 @@ const theme = {
     medium: 5,
     round: 99999,
   },
+  borders: {
+    thin: "1px solid",
+  },
   shadows: {
     none: "none",
     float: "0px 4px 16px rgba(25, 25, 25, 0.075);",

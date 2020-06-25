@@ -13,8 +13,9 @@ export default function(props) {
         fontFamily: "monospace",
         lineHeight: 1.75,
         color: "muted",
-        bg: "white",
         borderRadius: "round",
+        border: "thin",
+        borderColor: "gray.5",
         "> a": {
           textDecoration: "none",
         },
