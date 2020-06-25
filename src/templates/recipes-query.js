@@ -26,15 +26,21 @@ export const query = graphql`
     }
   }
   query PostsQuery {
-    allCategory {
+    allCategory(filter: { isTag: { eq: true } }) {
       nodes {
         id
         slug
-        isTag
-        recipes {
-          ...RecipeMeta
-        }
+        recipeCount
       }
+    }
+    allRecipe {
+      nodes {
+        ...RecipeMeta
+      }
+    }
+    localSearchRecipes {
+      index
+      store
     }
   }
 `

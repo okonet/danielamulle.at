@@ -57,6 +57,7 @@ exports.sourceNodes = ({ actions, schema }) => {
       id: ID!
       slug: String!
       recipes: [Recipe]!
+      recipeCount: Int!,
       isTag: Boolean
     }
     
@@ -106,6 +107,26 @@ exports.createResolvers = ({ createResolvers, schema }) => {
           return res
         },
       },
+      recipeCount: {
+        type: "Int!",
+        async resolve(source, args, context, info) {
+          const res = await context.nodeModel.runQuery({
+            query: {
+              filter: {
+                [source.isTag ? "categories" : "category"]: {
+                  elemMatch: { id: { eq: source.id } },
+                },
+              },
+            },
+            type: "Recipe",
+            firstOnly: false,
+          })
+          if (res === null) {
+            return 0
+          }
+          return res.length
+        },
+      },
     },
   })
 }
@@ -126,7 +147,7 @@ exports.onCreateNode = ({
       node[key].forEach((obj) => {
         const jsonNode = {
           ...obj,
-          slug: `${categoriesPath}/${slug(obj.id)}`,
+          slug: `/${categoriesPath}/${slug(obj.id)}`,
           isTag: key === "tags",
           children: [],
           parent: node.id,
@@ -148,7 +169,7 @@ exports.onCreateNode = ({
         const slug = createFilePath({ node, getNode, basePath })
         const fieldData = {
           ...frontmatter,
-          slug: `${recipesPath}${slug}`,
+          slug: `/${recipesPath}${slug}`,
         }
 
         createNode({
