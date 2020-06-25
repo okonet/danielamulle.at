@@ -22,7 +22,7 @@ ingredients:
   - 5 EL Maiskörner (110 g)
   - 1 gepresste Knoblauchzehe
   - 500 g Magertopfen
-  - 130 g Joghurt
+  - 130 g (Soja)joghurt
   - 300 g Quinoa
   - '4 EL Kräuter, z.B. Thymian, Oregano & Basilikum'
   - 250 g geriebener Käse
@@ -30,7 +30,7 @@ ingredients:
 ---
 1. Quinoa in 600 ml Wasser oder Gemüsesuppe weichkochen
 2. einstweilen Paprika und Tomaten waschen und in kleine Würfel schneiden
-3. Topfen, Sauerrahm, Tomaten, Paprika, Mais und Knoblauch gut verrühren, salzen und pfeffern
+3. Topfen, Joghurt, Tomaten, Paprika, Mais und Knoblauch gut verrühren, salzen und pfeffern
 4. gekochten Quinoa mit Salz und Pfeffer abschmecken und 150 g Käse sowie die Kräuter unterrühren
 5. Backofen auf 200 Grad vorheizen
 6. Topfenmasse und Quinoa abwechselnd in eine befettete Auflaufform schichten: Quinoa-Topfen-Quinoa-Topfen-Quinoa
