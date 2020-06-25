@@ -1,0 +1,45 @@
+---
+title: Griechisches Spalterbsenpüree aka Fava
+date: 2020-06-25T19:21:15.530Z
+coverImage: ../assets/20200605-dsc02939.jpg
+category:
+  - value: Aufstriche/Saucen/Dips
+    label: Aufstriche/Saucen/Dips
+tags:
+  - value: vegan
+    label: vegan
+  - value: gut vorzubereiten
+    label: gut vorzubereiten
+  - value: zum Mitnehmen
+    label: zum Mitnehmen
+  - value: eiweißreich
+    label: eiweißreich
+  - value: fruktosefrei
+    label: fruktosefrei
+  - value: laktosefrei
+    label: laktosefrei
+  - value: glutenfrei
+    label: glutenfrei
+timeToCook: 15 Minuten zubereiten + ca. 60 Minuten Kochzeit
+ingredients:
+  - 'für 4 Personen:'
+  - 300 g gelbe Spalterbsen
+  - 3 mittelgroße Zwiebeln
+  - 2 Lorbeerblätter
+  - 1/4 TL Kurkumapulver (optional)
+  - 1 große Knoblauchzehe
+  - 40 ml Olivenöl
+  - 40 ml Rapsöl oder Walnussöl
+  - 2 EL Zitronensaft
+  - Salz und Pfeffer
+---
+1. Zwiebel schälen, einen davon vierteln und mit den Spalterbsen, Lorbeerblättern und Kurkuma in einen großen Topf geben
+2. mit Wasser bedecken und aufkochen
+3. danach auf kleine Hitze zurückschalten und ca. 1 Stunden weichkochen, dabei eventuell noch Wasser nachfüllen
+4. währenddessen restliche Zwiebel fein hacken und in Olivenöl ca. 10 - 15 Minuten goldbraun braten
+5. du kannst die Spalterbsen abseihen sobald sie beginnen zerfallen, dabei ca. 1/2 Tasse Kochwasser aufheben
+6. Lorbeerblätter entfernen, die gekochte Zwiebel bei den Erbsen lassen
+7. die Spalterbsen mit der Hälfte der gebratenen Zwiebeln, Knoblauch, 2 EL Zitronensaft, je 3 EL Oliven- und Raps/Walnussöl, 4 EL Erbsenkochwasser, 1 TL Salz und 1/2 TL frisch gemahlenen Pfeffer  in einem Blender oder mit dem Pürierstab glattmixen
+8. in eine Schüssel füllen und mit den restlichen Zwiebeln garnieren
+
+>Falls du eine Humus-Fan bist, dann probiere unbedingt diese Rezeptinspiration: Fava ist sozusagen das "griechische Humus", wobei hier nicht Kicher- sondern  ursprünglich Platterbsen (Lathyrus sativus) die Basis bilden. Fava wird in Griechenland sehr gerne als Vorspeise gegessen. Es hält sich im Kühlschrank gut verschlossen ca. 3 Tage, und ist genauso wie Humus sehr eiweißreich. Fava schmeckt toll als Brotaufstrich oder Dip für Gemüse, ideal zum Mitnehmen für's nächste Picknick oder die Grillparty
