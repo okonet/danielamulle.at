@@ -1,9 +1,8 @@
 /* @jsx jsx */
 import React from "react"
-import { Box, Flex, Container, Grid, jsx, Styled, Text } from "theme-ui"
+import { Box, Container, Grid, jsx, Text } from "theme-ui"
 import { useFlexSearch } from "react-use-flexsearch"
 import groupBy from "lodash.groupby"
-import keyBy from "lodash.keyby"
 import SEO from "../components/seo"
 import Group from "react-group"
 import Layout from "../components/layout"
