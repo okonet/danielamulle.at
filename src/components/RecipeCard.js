@@ -40,15 +40,18 @@ function RecipeCard({ coverImage, categories, slug, title, ...props }) {
         sx={{
           display: "block",
           overflow: "hidden",
-          bg: "white",
+          bg: "teal.1",
         }}
       >
         <AspectRatio ratio={1.5}>
-          <Img
-            fluid={coverImage.childImageSharp.fluid}
-            fadeIn={true}
-            className="image"
-          />
+          {coverImage && (
+            <Img
+              fluid={coverImage.childImageSharp.fluid}
+              fadeIn={true}
+              backgroundColor="#1e5f92"
+              className="image"
+            />
+          )}
           <Flex
             sx={{
               flexDirection: "column",
