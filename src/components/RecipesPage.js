@@ -1,6 +1,6 @@
 /* @jsx jsx */
 import React from "react"
-import { Box, Container, Grid, jsx, Text } from "theme-ui"
+import { Container, Flex, Grid, jsx, Text } from "theme-ui"
 import { useFlexSearch } from "react-use-flexsearch"
 import groupBy from "lodash.groupby"
 import SEO from "../components/seo"
@@ -30,17 +30,37 @@ export default ({ data }) => {
       <Container>
         <Content />
 
-        <input
-          type="search"
-          value={query}
-          onChange={(event) => setQuery(event.target.value)}
-        />
-
-        <Box as="aside">
+        <Flex
+          as="aside"
+          sx={{
+            flexWrap: "wrap",
+            alignItems: "baseline",
+          }}
+        >
+          <input
+            type="search"
+            value={query}
+            onChange={(event) => setQuery(event.target.value)}
+            placeholder="Zutaten oder Kategorie..."
+            sx={{
+              p: 1,
+              px: 2,
+              mb: 1,
+              fontSize: 0,
+              fontFamily: "monospace",
+              border: "thin",
+              borderColor: "gray.5",
+              borderRadius: "medium",
+              minWidth: 225,
+            }}
+          />
+          <Text sx={{ mx: 2, fontSize: 0, color: "muted" }}>
+            {" oder wähle eine Kategorie: "}
+          </Text>
           {tags && (
             <Group as="nav" separator={" "}>
               {tags.map((tag) => (
-                <Tag key={tag.id} sx={{ my: 1, color: "text" }}>
+                <Tag key={tag.id} sx={{ my: 1, mr: 2, color: "text" }}>
                   <Link to={tag.slug} key={tag.id}>
                     {tag.id}
                   </Link>
@@ -54,7 +74,7 @@ export default ({ data }) => {
               ))}
             </Group>
           )}
-        </Box>
+        </Flex>
       </Container>
 
       {Object.entries(groupedRecipes).map(([category, recipe]) => (
