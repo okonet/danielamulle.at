@@ -12,7 +12,6 @@ import Content from "../../content/sections/recipes.mdx"
 
 export default ({ data }) => {
   const { allCategory } = data
-  console.log(allCategory)
   const mainCategories = allCategory.nodes.filter((cat) => !cat.isTag)
   const tags = allCategory.nodes.filter((cat) => cat.isTag)
 
@@ -23,15 +22,7 @@ export default ({ data }) => {
       <Container>
         <Content />
 
-        <Box
-          as="aside"
-          sx={
-            {
-              // gridColumnStart: 1,
-              // gridColumnEnd: [1, 3]
-            }
-          }
-        >
+        <Box as="aside">
           {tags && (
             <Group as="nav" separator={" "}>
               {tags.map((category) => (
