@@ -7,9 +7,10 @@ export default ({ sx, ...props }) => (
   <Link
     activeClassName="active"
     sx={{
-      color: "inherit",
+      color: "link",
+      textDecoration: "none",
       "&:hover": {
-        color: "accent",
+        textDecoration: "underline",
       },
       "&.active": {
         color: "accent",
