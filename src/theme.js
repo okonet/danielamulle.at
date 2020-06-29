@@ -23,7 +23,7 @@ export const palette = {
   gray: createAccents("#92969b"),
   pink: createAccents("#e23871"),
   cyan: createAccents("#05a8cd"),
-  orange: createAccents("#ff9c00"),
+  orange: createAccents("#ff8400"),
   green: createAccents("#74a308"),
   teal: createAccents("#1e5f92"),
 }
