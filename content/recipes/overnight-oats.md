@@ -24,7 +24,7 @@ tags:
     label: laktosefrei
   - value: glutenfrei
     label: glutenfrei
-timeToCook: '10 Minuten + '
+timeToCook: '10 Minuten vorbereiten + über Nacht durchziehen '
 ingredients:
   - 'für 2 Personen:'
   - 100 g Haferflocken (bei Bedarf glutenfrei)
