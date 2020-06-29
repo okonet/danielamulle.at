@@ -36,6 +36,7 @@ const theme = {
     background: palette.white,
     muted: palette.gray[3],
     accent: palette.green[3],
+    link: palette.teal[3],
   },
   fonts: {
     body: '"IBM Plex Sans", Georgia, serif',
