@@ -62,14 +62,6 @@ export default ({ data }) => {
             {title}
           </Styled.h1>
 
-          {description && (
-            <Styled.p
-              sx={{ variant: "textStyles.lead", gridColumn: [1, "1 / span 8"] }}
-            >
-              {description}
-            </Styled.p>
-          )}
-
           <Box
             sx={{
               gridColumn: [1, "10 / span 3"],
@@ -96,40 +88,13 @@ export default ({ data }) => {
 
           <Box
             sx={{
-              gridColumn: [1, "1 / span 7"],
-            }}
-          >
-            <Styled.h2>Zutaten</Styled.h2>
-            <Box
-              as="ul"
-              sx={{
-                mt: 3,
-                pl: 0,
-                listStyle: "none",
-                fontFamily: "monospace",
-                fontSize: 1,
-              }}
-            >
-              {ingredients.map((item) => (
-                <Box
-                  as="li"
-                  key={item}
-                  sx={{
-                    mb: 2,
-                  }}
-                >
-                  {item}
-                </Box>
-              ))}
-            </Box>
-          </Box>
-          <Box
-            sx={{
               gridColumnStart: [1, 1],
-              gridColumnEnd: [1, 10],
+              gridColumnEnd: [1, 9],
+              "& > p:first-child": {
+                variant: "textStyles.lead",
+              },
             }}
           >
-            <Styled.h2>Zubereitung</Styled.h2>
             <MDXRenderer>{body}</MDXRenderer>
           </Box>
         </Grid>

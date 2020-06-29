@@ -20,11 +20,11 @@ tags:
     label: glutenfrei
 timeToCook: 20 Minuten vorbereiten + ca. 45 Minuten kochen
 ingredients:
-  - 'für 4 Personen:'
+  - "für 4 Personen:"
   - 3 mittelgroße Karotten
   - 2 mittelgroße rote Zwiebeln
   - 3 gepresste Knoblauchzehen
-  - '250 g Pilze, z.B. Cremechampignons'
+  - "250 g Pilze, z.B. Cremechampignons"
   - 400 g gekochte Bohnen (Dose)
   - 1/8 l trockenen Rotwein
   - 500 ml Gemüsesuppe
@@ -36,6 +36,30 @@ ingredients:
   - Olivenöl
   - Salz und Pfeffer
 ---
+
+Dieses Gericht beweist, dass Eintöpfe kein Fleisch brauchen, um so richtig herzhaft-vollmundig zu schmecken - probier's aus, du wirst begeistert sein! Mein Lieblingsbegleiter dieses Stews ist gekochte Polenta, aber er schmeckt auch einfach nur mit frischem Vollkornbrot herrlich
+
+<Ingredients amount="4 Personen">
+
+- 3 mittelgroße Karotten
+- 2 mittelgroße rote Zwiebeln
+- 3 gepresste Knoblauchzehen
+- 250 g Pilze, z.B. Cremechampignons
+- 400 g gekochte Bohnen (Dose)
+- 1/8 l trockenen Rotwein
+- 500 ml Gemüsesuppe
+- 2 EL Tomatenmark
+- 5 Thymianstängel
+- 4 Wacholderbeeren
+- 1 Lorbeerblatt
+- 2 EL gehackte Petersilie
+- Olivenöl
+- Salz und Pfeffer
+
+</Ingredients>
+
+## Zubereitung
+
 1. Zwiebel schälen, Karotten waschen und beides kleinschneiden
 2. Champignons putzen und vierteln
 3. Bohnen abseihen und gut abschwemmen
@@ -46,5 +70,3 @@ ingredients:
 8. Bohnen, Gemüsesuppe, 1 TL Salz und 1/2 TL Pfeffer untermischen und aufkochen
 9. auf kleine Stufe zurückschalten und halb zugedeckt ca. 30 Minuten köcheln, bis die Sauce eingedickt ist
 10. Thymianstängel & Lorbeerblatt entfernen und Petersilie einrühren, mit Salz und Pfeffer abschmecken
-
->Dieses Gericht beweist, dass Eintöpfe kein Fleisch brauchen, um so richtig herzhaft-vollmundig zu schmecken - probier's aus, du wirst begeistert sein! Mein Lieblingsbegleiter dieses Stews ist gekochte Polenta, aber  er schmeckt auch einfach nur mit frischem Vollkornbrot herrlich
