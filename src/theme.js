@@ -32,7 +32,7 @@ const theme = {
   space: [0, 4, 8, 16, 32, 64, 128],
   colors: {
     ...palette,
-    text: palette.gray[0],
+    text: palette.gray[1],
     background: palette.white,
     muted: palette.gray[3],
     accent: palette.green[3],
@@ -92,12 +92,20 @@ const theme = {
     sectionTitle: {
       m: 0,
       color: "text",
-      fontSize: 1,
+      fontSize: 0,
       fontWeight: "bold",
       fontFamily: "heading",
       lineHeight: "body",
     },
+    lead: {
+      color: "text",
+      fontSize: [1, 2, 2],
+      fontFamily: "body",
+      fontWeight: "normal",
+      lineHeight: "body",
+    },
     body: {
+      color: "text",
       fontSize: 1,
       fontFamily: "body",
       fontWeight: "normal",
@@ -131,19 +139,36 @@ const theme = {
     },
     h3: {
       variant: "textStyles.sectionTitle",
-      mt: 3,
+      mt: 4,
+    },
+    p: {
+      my: 3,
     },
     ul: {
       my: 2,
       pl: 0,
+      listStyle: "none",
+      "li::before": {
+        variant: "textStyles.sectionTitle",
+        color: "teal.5",
+        content: '"— "',
+      },
     },
     ol: {
       p: 0,
-      pl: 3,
       mt: 3,
+      listStyle: "none",
+      counterReset: "steps",
+      "li::before": {
+        variant: "textStyles.sectionTitle",
+        color: "teal.5",
+        counterIncrement: "steps",
+        content: 'counters(steps, ".") ". "',
+      },
     },
     li: {
       mb: 3,
+      variant: "textStyles.body",
     },
   },
 }
@@ -190,7 +215,7 @@ export const recipesTheme = {
     ...theme.colors,
     text: palette.teal[1],
     background: palette.teal[6],
-    // muted: palette.teal[3],
+    // muted: palette.teal[4],
     accent: palette.orange[3],
   },
 }
