@@ -26,7 +26,7 @@ tags:
     label: vegan
 timeToCook: 10 Minuten vorbereiten + 20 Minuten backen
 ingredients:
-  - 'für 6 Personen als Snack '
+  - 'für 6 Personen als Snack: '
   - '2 Tassen feinblättrige Haferflocken (bei Bedarf glutenfrei)  '
   - '2 Tassen Pflanzendrink (oder Kuhmilch)  '
   - 1 Ei (optional)
@@ -47,4 +47,4 @@ ingredients:
 7. etwas ausgekühlt in Stücke schneiden  
 8. warm oder kalt genießen
 
->Die Gebackenen Haferflocken sind eine Frühstücksidee, die super schmeckt und im Handumdrehn Ofen ist. Ich backe sie immer schon am Vortag, und wärme sie dann in der Früh nur noch auf. Die Gebackenen Haferflocken schmecken köstlich mit Sauerrahm, Naturjoghurt oder Skyr, eventuell mit etwas Zucker oder Honig vermischt. Als Geschmacksvariation kannst du die Flocken vor dem Backen mit Kokosraspeln, Sonnenblumenkernen, Sesam, Mandelhobel oder geriebener Schokolade bestreuen, und auch Trockenfrüchte oder anderes frisches Obst statt den Beeren verwenden.
+>Die Gebackenen Haferflocken sind eine Frühstücksidee, die super schmeckt und im Handumdrehn im Ofen ist. Ich backe sie immer schon am Vortag, und wärme sie dann in der Früh nur noch auf. Die Gebackenen Haferflocken schmecken köstlich mit Sauerrahm, Naturjoghurt oder Skyr, eventuell mit etwas Zucker oder Honig vermischt. Als Geschmacksvariation kannst du die Flocken vor dem Backen mit Kokosraspeln, Sonnenblumenkernen, Sesam, Mandelhobel oder geriebener Schokolade bestreuen, und auch Trockenfrüchte oder anderes frisches Obst statt den Beeren verwenden.
