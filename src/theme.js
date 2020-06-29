@@ -40,7 +40,7 @@ const theme = {
   },
   fonts: {
     body: '"IBM Plex Sans", Georgia, serif',
-    heading: '"IBM Plex Mono", MonoLisa, Menlo, monospace',
+    heading: '"IBM Plex Sans", MonoLisa, Menlo, monospace',
     monospace: '"IBM Plex Mono", MonoLisa, Menlo, monospace',
   },
   fontSizes: [13, 16, 24, 48],
