@@ -1,16 +1,16 @@
 /* @jsx jsx */
 import React from "react"
-import { Container, Flex, Grid, jsx, Text } from "theme-ui"
+import { Container, Flex, jsx, Text } from "theme-ui"
 import { useFlexSearch } from "react-use-flexsearch"
 import groupBy from "lodash.groupby"
 import SEO from "../components/seo"
 import Group from "react-group"
 import Layout from "../components/layout"
 import { recipesTheme } from "../theme"
-import RecipeCard from "./RecipeCard"
 import Link from "./Link"
 import Tag from "./Tag"
 import Content from "../../content/sections/recipes.mdx"
+import RecipesList from "./RecipesList"
 
 export default ({ data }) => {
   const { allCategory, allRecipe } = data
@@ -28,7 +28,9 @@ export default ({ data }) => {
       <SEO title="Rezepte" />
 
       <Container>
-        <Content />
+        <Text sx={{ variant: "textStyles.lead" }}>
+          <Content />
+        </Text>
 
         <Flex
           as="aside"
@@ -77,24 +79,7 @@ export default ({ data }) => {
         </Flex>
       </Container>
 
-      {Object.entries(groupedRecipes).map(([category, recipe]) => (
-        <React.Fragment key={category}>
-          <Container>
-            <Text as="h2" sx={{ variant: "textStyles.subTitle", my: 3 }}>
-              {category} <Tag>{recipe.length}</Tag>
-            </Text>
-          </Container>
-          <Container variant={"full"}>
-            {recipe.length > 0 && (
-              <Grid gap={3} columns={[1, 2, 3]} sx={{ mb: 4 }}>
-                {recipe.map((recipe) => (
-                  <RecipeCard {...recipe} key={recipe.id} />
-                ))}
-              </Grid>
-            )}
-          </Container>
-        </React.Fragment>
-      ))}
+      <RecipesList recipes={groupedRecipes} />
     </Layout>
   )
 }
