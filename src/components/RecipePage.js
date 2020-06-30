@@ -92,7 +92,7 @@ export default ({ data }) => {
             sx={{
               gridColumnStart: [1, 1],
               gridColumnEnd: [1, 9],
-              "& > p:first-child": {
+              "& > p:first-of-type": {
                 variant: "textStyles.lead",
               },
             }}
