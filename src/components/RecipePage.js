@@ -28,7 +28,7 @@ export default ({ data }) => {
         fluid={coverImage.childImageSharp.fluid}
         style={{
           position: "relative",
-          maxHeight: 440,
+          maxHeight: 500,
         }}
       />
       <Container
@@ -37,7 +37,7 @@ export default ({ data }) => {
           px: 4,
           pl: [4, 5],
           py: 4,
-          mt: -4,
+          mt: -5,
           bg: "white",
           borderRadius: ["none", "none", "medium"],
           // boxShadow: ["none", "float"],
