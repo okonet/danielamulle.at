@@ -57,7 +57,7 @@ export default ({ data, location, navigate }) => {
             type="search"
             value={query}
             onChange={handleChange}
-            placeholder="Zutaten oder Kategorie..."
+            placeholder="Filter nach Zutaten..."
             sx={{
               p: 1,
               px: 2,
