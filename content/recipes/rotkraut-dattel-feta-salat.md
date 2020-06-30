@@ -21,7 +21,7 @@ tags:
 timeToCook: 30 min
 ---
 
-Ein phänomenaler Salat, den du unbedingt probieren solltest - du wirst ihn lieben! Die Idee stammt von [Emilie Wegner](https://emiliestreats.de/), einer jungen Ernährungswissenschaftlerin aus Deutschland. Der Salat schmeckt übrigens am besten, wenn er einige Stunden oder sogar über Nacht im Kühlschrank durchziehen kann. Du kannst ihn auch problemlos einige Tage im Kühlschrank aufheben.
+Ein phänomenaler Salat, den du unbedingt probieren solltest! Die Idee stammt von [Emilie Wegner](https://emiliestreats.de/), einer jungen Ernährungswissenschaftlerin aus Deutschland.
 
 <Ingredients yields="4 Personen">
 
@@ -48,3 +48,5 @@ Ein phänomenaler Salat, den du unbedingt probieren solltest - du wirst ihn lieb
 8. mit Petersilie, Sesam (und Chiliflocken) bestreut servieren
 
 </Preparation>
+
+Der Salat schmeckt übrigens am besten, wenn er einige Stunden oder sogar über Nacht im Kühlschrank durchziehen kann. Du kannst ihn auch problemlos einige Tage im Kühlschrank aufheben.

@@ -23,6 +23,8 @@ tags:
 timeToCook: 20 Minuten vorbereiten + 15 Minuten braten
 ---
 
+Die Pancakes kannst du dir zu Frühstück, Jause aber auch zum Nachmittagskaffee schmecken lassen.
+
 <Ingredients yields="ca. 15 Stück, je nach Größe">
 
 - 250 g Vollkornmehl (Dinkel oder Weizen)
@@ -48,4 +50,4 @@ timeToCook: 20 Minuten vorbereiten + 15 Minuten braten
 
 </Preparation>
 
-> Statt den Hollerblüten kannst du je nach Lust & Laune auch Kokos- oder Schokoraspeln, geriebene Nüsse, Sesam, Rosinen, etc. verwenden. Die Pancakes kannst du dir zu Frühstück, Jause aber auch zum Nachmittagskaffee schmecken lassen
+Statt den Hollerblüten kannst du je nach Lust & Laune auch Kokos- oder Schokoraspeln, geriebene Nüsse, Sesam, Rosinen, etc. verwenden.
