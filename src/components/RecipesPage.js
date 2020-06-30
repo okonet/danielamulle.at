@@ -1,5 +1,5 @@
 /* @jsx jsx */
-import React, { useCallback, useEffect } from "react"
+import React, { useCallback } from "react"
 import { Container, Flex, jsx, Text } from "theme-ui"
 import { useFlexSearch } from "react-use-flexsearch"
 import groupBy from "lodash.groupby"
@@ -15,7 +15,7 @@ import RecipesList from "./RecipesList"
 export default ({ data, location, navigate }) => {
   const { allCategory, allRecipe } = data
   const searchParams = new URLSearchParams(location.search)
-  const [query, setQuery] = React.useState(searchParams.get("q"))
+  const query = searchParams.get("q") || ""
   const { index, store } = data.localSearchRecipes
   const results = useFlexSearch(query, index, JSON.parse(store))
   const resIds = results.map((res) => res.id)
@@ -25,16 +25,16 @@ export default ({ data, location, navigate }) => {
     : allRecipe.nodes
   const groupedRecipes = groupBy(filteredRecipes, (node) => node.category[0].id)
 
-  useEffect(() => {
-    searchParams.set("q", query)
-    navigate(`${location.pathname}?${searchParams.toString()}`, {
-      replace: true,
-    })
-  }, [query])
-
   const handleChange = useCallback((event) => {
     const searchQuery = event.target.value
-    setQuery(searchQuery)
+    searchParams.set("q", searchQuery)
+    const nextUrl =
+      searchQuery !== ""
+        ? `${location.pathname}?${searchParams.toString()}`
+        : location.pathname
+    navigate(nextUrl, {
+      replace: true,
+    })
   }, [])
 
   return (
