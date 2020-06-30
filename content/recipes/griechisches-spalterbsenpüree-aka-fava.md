@@ -43,7 +43,7 @@ Falls du eine Humus-Fan bist, dann probiere unbedingt diese Rezeptinspiration: F
 1. Zwiebel schälen, einen davon vierteln und mit den Spalterbsen, Lorbeerblättern und Kurkuma in einen großen Topf geben
 2. mit Wasser bedecken und aufkochen
 3. danach auf kleine Hitze zurückschalten und ca. 1 Stunden weichkochen, dabei eventuell noch Wasser nachfüllen
-4. währenddessen restliche Zwiebel fein hacken und in Olivenöl ca. 10 - 15 Minuten goldbraun braten
+4. währenddessen restliche Zwiebel fein hacken und in Olivenöl ca. 10--15 Minuten goldbraun braten
 5. du kannst die Spalterbsen abseihen sobald sie beginnen zerfallen, dabei ca. 1/2 Tasse Kochwasser aufheben
 6. Lorbeerblätter entfernen, die gekochte Zwiebel bei den Erbsen lassen
 7. die Spalterbsen mit der Hälfte der gebratenen Zwiebeln, Knoblauch, 2 EL Zitronensaft, je 3 EL Oliven- und Raps/Walnussöl, 4 EL Erbsenkochwasser, 1 TL Salz und 1/2 TL frisch gemahlenen Pfeffer in einem Blender oder mit dem Pürierstab glattmixen
