@@ -65,15 +65,15 @@ exports.sourceNodes = ({ actions, schema }) => {
     
     type Recipe implements Node {
       id: ID!
-      date: Date @dateformat
-      slug: String
-      title: String
       body: String
-      coverImage: File
-      ingredients: [String]
-      category: [Category] @link(from: "category.value")
       categories: [Category] @link(from: "tags.value")
+      category: [Category] @link(from: "category.value")
+      coverImage: File
+      date: Date @dateformat
+      ingredients: [String]
+      slug: String
       timeToCook: String
+      title: String
     }
   `
   createTypes(typeDefs)

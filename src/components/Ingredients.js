@@ -1,11 +1,10 @@
 import React from "react"
-import { Box, jsx, Styled } from "theme-ui"
+import { Box, Styled } from "theme-ui"
 
-function Ingredients({ amount, children }) {
-  console.log(children)
+function Ingredients({ yields, children }) {
   return (
     <>
-      <Styled.h2>Zutaten für {amount}</Styled.h2>
+      <Styled.h2>Zutaten {yields && `für ${yields}`}</Styled.h2>
       <Box
         as="section"
         sx={{

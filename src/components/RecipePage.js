@@ -17,7 +17,6 @@ export default ({ data }) => {
     title,
     category,
     categories,
-    ingredients,
     timeToCook,
   } = data.recipe
   const description =
