@@ -17,14 +17,19 @@ tags:
   - value: histaminarm
     label: histaminarm
 timeToCook: 15 Minuten vorbereiten + ca. 40 Minuten backen
-ingredients:
-  - 'für 4 Personen:'
-  - 12 mittelgroße Kartoffeln
-  - Räuchertofu oder Hartkäse
-  - 2 EL gehackter Rosmarin
-  - Olivenöl
-  - Salz und Pfeffer
 ---
+
+<Ingredients yields="4 Personen">
+
+- 12 mittelgroße Kartoffeln
+- Räuchertofu oder Hartkäse
+- 2 EL gehackter Rosmarin
+- Olivenöl
+- Salz und Pfeffer
+
+</Ingredients>
+<Preparation>
+
 1. Backofen auf 200 Grad vorheizen
 2. Kartoffeln heiß waschen
 3. in Fächer schneiden, dazu zwischen 2 Kochlöffelstiele legen, damit du die Kartoffeln nicht ganz durchschneidest
@@ -35,4 +40,6 @@ ingredients:
 8. Kartoffeln aus dem Ofen nehmen und Tofu bzw. Käse in den Kartoffelfächer stecken
 9. mit Rosmarin bestreuen und noch ca. 10 Minuten im Backofen bräunen
 
->Dazu passt ein großer gemischter Salat oder Ofengemüse dass du natürlich gleich am selben Blech zubereiten kannst.
+</Preparation>
+
+> Dazu passt ein großer gemischter Salat oder Ofengemüse dass du natürlich gleich am selben Blech zubereiten kannst.

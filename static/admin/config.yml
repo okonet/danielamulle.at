@@ -47,9 +47,6 @@ collections:
         required: false
         multiple: true
       - { label: "Time to prepare", name: "timeToCook", widget: "string", required: false }
-      - label: "Ingredients"
-        name: "ingredients"
-        widget: "ingredientList"
       - { label: "Body", name: "body", widget: "markdown" }
 
   - name: recipe_config

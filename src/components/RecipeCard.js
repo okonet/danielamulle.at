@@ -64,6 +64,7 @@ function RecipeCard({ coverImage, categories, slug, title, ...props }) {
             <Text
               sx={{
                 variant: "textStyles.sectionTitle",
+                fontSize: 1,
                 my: 0,
                 p: 3,
                 backgroundImage: gradient,

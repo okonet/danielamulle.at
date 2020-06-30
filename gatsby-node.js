@@ -4,6 +4,8 @@ const mkdirp = require("mkdirp")
 const crypto = require("crypto")
 const Debug = require("debug")
 const slug = require("slug")
+const visit = require("unist-util-visit")
+const toString = require("mdast-util-to-string")
 const pkg = require("./package.json")
 const { createFilePath } = require("gatsby-source-filesystem")
 const {
@@ -57,20 +59,21 @@ exports.sourceNodes = ({ actions, schema }) => {
       id: ID!
       slug: String!
       recipes: [Recipe]!
+      recipeCount: Int!,
       isTag: Boolean
     }
     
     type Recipe implements Node {
       id: ID!
-      date: Date @dateformat
-      slug: String
-      title: String
       body: String
-      coverImage: File
-      ingredients: [String]
-      category: [Category] @link(from: "category.value")
       categories: [Category] @link(from: "tags.value")
+      category: [Category] @link(from: "category.value")
+      coverImage: File
+      date: Date @dateformat
+      ingredients: [String]
+      slug: String
       timeToCook: String
+      title: String
     }
   `
   createTypes(typeDefs)
@@ -82,6 +85,28 @@ exports.createResolvers = ({ createResolvers, schema }) => {
       body: {
         type: "String",
         resolve: mdxResolverPassthrough("body"),
+      },
+      ingredients: {
+        type: "[String]",
+        async resolve(source, args, context, info) {
+          // We use `ingredients` for the search functionality so ingredients need to be extracted as strings
+          const ast = await mdxResolverPassthrough("mdxAST")(
+            source,
+            args,
+            context,
+            info
+          )
+          let res = []
+          visit(ast, "jsx", (node, index, parent) => {
+            if (node.value.startsWith("<Ingredients")) {
+              const nextSibling = parent.children[index + 1]
+              visit(nextSibling, "listItem", (li) => {
+                res.push(toString(li))
+              })
+            }
+          })
+          return res
+        },
       },
     },
     Category: {
@@ -106,6 +131,26 @@ exports.createResolvers = ({ createResolvers, schema }) => {
           return res
         },
       },
+      recipeCount: {
+        type: "Int!",
+        async resolve(source, args, context, info) {
+          const res = await context.nodeModel.runQuery({
+            query: {
+              filter: {
+                [source.isTag ? "categories" : "category"]: {
+                  elemMatch: { id: { eq: source.id } },
+                },
+              },
+            },
+            type: "Recipe",
+            firstOnly: false,
+          })
+          if (res === null) {
+            return 0
+          }
+          return res.length
+        },
+      },
     },
   })
 }
@@ -126,7 +171,7 @@ exports.onCreateNode = ({
       node[key].forEach((obj) => {
         const jsonNode = {
           ...obj,
-          slug: `${categoriesPath}/${slug(obj.id)}`,
+          slug: `/${categoriesPath}/${slug(obj.id)}`,
           isTag: key === "tags",
           children: [],
           parent: node.id,
@@ -148,7 +193,7 @@ exports.onCreateNode = ({
         const slug = createFilePath({ node, getNode, basePath })
         const fieldData = {
           ...frontmatter,
-          slug: `${recipesPath}${slug}`,
+          slug: `/${recipesPath}${slug}`,
         }
 
         createNode({

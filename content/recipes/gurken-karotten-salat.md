@@ -21,17 +21,24 @@ tags:
   - value: glutenfrei
     label: glutenfrei
 timeToCook: 15 Minuten
-ingredients:
-  - 'für 4 Personen:'
-  - 1 mittelgroße Gurke
-  - 1 mittelgroße Karotte
-  - 1 kleine rote Zwiebel
-  - 2 EL frisches Basilikum oder Minze
-  - ca. 50 g zerbröselter Fetakäse
-  - 1 Handvoll ganze Walnüsse
-  - Salz und Pfeffer
-  - Olivenöl und weißer Balsamicoessig
 ---
+
+Ein Salat gehört für mich überall dazu, wo Obst oder Gemüse nicht ohnehin bereits die Hauptrolle spielt. Hier bekommt die Gurke mal ganz andere Salat-Partner, darunter einen recht farbenfrohen.
+
+<Ingredients yields="4 Personen">
+
+- 1 mittelgroße Gurke
+- 1 mittelgroße Karotte
+- 1 kleine rote Zwiebel
+- 2 EL frisches Basilikum oder Minze
+- ca. 50 g zerbröselter Fetakäse
+- 1 Handvoll ganze Walnüsse
+- Salz und Pfeffer
+- Olivenöl und weißer Balsamicoessig
+
+</Ingredients>
+<Preparation>
+
 1. Gurke längs halbieren, vierteln und in dünne Stücke schneiden
 2. Zwiebel schälen, halbieren und in Ringe schneiden
 3. Karotten putzen und mit dem Gemüseschäler in Streifen schneiden
@@ -40,4 +47,4 @@ ingredients:
 6. alle Zutaten in einer Salatschüssel vermischen
 7. mit Olivenöl, Balsamicoessig, Salz und frisch geriebenem Pfeffer marinieren und genießen
 
->Ein Salat gehört für mich überall dazu, wo Obst oder Gemüse nicht ohnehin bereits die Hauptrolle spielt. Hier bekommt die Gurke mal ganz andere Salat-Partner, darunter einen recht farbenfrohen
+</Preparation>

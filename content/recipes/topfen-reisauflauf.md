@@ -21,26 +21,33 @@ tags:
   - value: glutenfrei
     label: glutenfrei
 timeToCook: 20 Minuten vorbereiten + ca. 35 Minuten backen
-ingredients:
-  - 'für 4 Personen:'
-  - 200 g Vollkornreis
-  - 200 ml Pflanzendrink (oder Kuhmilch)
-  - 3 Eier
-  - 60 g brauner Zucker (4 EL)
-  - 1 Pkg. Vanillezucker
-  - Prise Salz
-  - Saft und Schale 1/2 Bio-Zitrone
-  - 250 g Magertopfen
-  - 250 g Beeren
-  - Rapsöl oder Walnussöl
-  - Staubzucker zum Bestäuben
 ---
-1. Vollkornreis in 200 ml Wasser + 200 ml Pflanzendrink  oder Kuhmilch weichkochen
-2. einstweilen Eiklar mit 1 EL Zucker, dem Vanillezucker und einer Prise Salz zu Schnee schlagen, kühl stellen
-4. Dotter, Zucker und 1 Schuß Pflanzenöl cremig mixen, Topfen, Zitronensaft und-schale unterrühren
-5. mit Vollkornreis und Beeren vermischen
-6. Schnee vorsichtig unterheben und die Masse in eine befettete Auflaufform füllen
-7. bei 180 Grad ca. 35 Minuten backen, bis der Auflauf schön goldbraun ist
-8. ein wenig abkühlen lassen und dann mit Staubzucker bestreut servieren
 
->Statt den Beeren kannst du auch Kirschen verwenden, ein geriebener Apfel oder eine Birne passen ebenfalls super. Ich hab diesmal eine Schneehaube gemacht: dazu den Schnee erst am Ende der Backzeit schlagen (Punkt 2), auf dem Auflauf verteilen und noch ein paar Minuten im Ofen bräunen
+<Ingredients yields="4 Personen">
+
+- 200 g Vollkornreis
+- 200 ml Pflanzendrink (oder Kuhmilch)
+- 3 Eier
+- 60 g brauner Zucker (4 EL)
+- 1 Pkg. Vanillezucker
+- Prise Salz
+- Saft und Schale 1/2 Bio-Zitrone
+- 250 g Magertopfen
+- 250 g Beeren
+- Rapsöl oder Walnussöl
+- Staubzucker zum Bestäuben
+
+</Ingredients>
+<Preparation>
+
+1. Vollkornreis in 200 ml Wasser + 200 ml Pflanzendrink oder Kuhmilch weichkochen
+2. einstweilen Eiklar mit 1 EL Zucker, dem Vanillezucker und einer Prise Salz zu Schnee schlagen, kühl stellen
+3. Dotter, Zucker und 1 Schuß Pflanzenöl cremig mixen, Topfen, Zitronensaft und-schale unterrühren
+4. mit Vollkornreis und Beeren vermischen
+5. Schnee vorsichtig unterheben und die Masse in eine befettete Auflaufform füllen
+6. bei 180 Grad ca. 35 Minuten backen, bis der Auflauf schön goldbraun ist
+7. ein wenig abkühlen lassen und dann mit Staubzucker bestreut servieren
+
+</Preparation>
+
+> Statt den Beeren kannst du auch Kirschen verwenden, ein geriebener Apfel oder eine Birne passen ebenfalls super. Ich hab diesmal eine Schneehaube gemacht: dazu den Schnee erst am Ende der Backzeit schlagen (Punkt 2), auf dem Auflauf verteilen und noch ein paar Minuten im Ofen bräunen.

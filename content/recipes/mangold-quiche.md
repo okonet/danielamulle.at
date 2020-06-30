@@ -17,34 +17,41 @@ tags:
   - value: histaminfrei
     label: histaminfrei
 timeToCook: 30 Minuten vorbereiten + ca. 40 Minuten backen
-ingredients:
-  - für 1 Quiche mit 25 cm Durchmesser
-  - '150 g Vollkornmehl (Dinkel, Weizen)'
-  - 60 g Margarine
-  - '½ Teelöffel Salz, etwas kaltes Wasser'
-  - 250 ml Sauerrahm
-  - 2 Eier
-  - ca. 1/8 l Wasser
-  - 200 g Fetakäse
-  - 1 große rote Zwiebel
-  - 1 kleiner Mangold (400 g)
-  - 2 EL Thymian
-  - abgeriebene Schale von 1/2 Bio-Zitrone
-  - Salz und Pfeffer
-  - Rapsöl
-  - Sesam zum Bestreuen
 ---
+
+<Ingredients yields="1 Quiche mit 25 cm Durchmesser">
+
+- '150 g Vollkornmehl (Dinkel, Weizen)'
+- 60 g Margarine
+- '½ Teelöffel Salz, etwas kaltes Wasser'
+- 250 ml Sauerrahm
+- 2 Eier
+- ca. 1/8 l Wasser
+- 200 g Fetakäse
+- 1 große rote Zwiebel
+- 1 kleiner Mangold (400 g)
+- 2 EL Thymian
+- abgeriebene Schale von 1/2 Bio-Zitrone
+- Salz und Pfeffer
+- Rapsöl
+- Sesam zum Bestreuen
+
+</Ingredients>
+<Preparation>
+
 1. Mehl und Salz in einer Rührschüssel mit Margarine mixen
 2. ein wenig kaltes Wasser zufügen und weiter mixen, bis ein Teig entsteht
 3. zu einer Kugel formen, flachdrücken und im Kühlschrank rasten lassen
 4. für den Überguss Sauerrahm mit den Eiern, ca. 1/8 l Wasser, Thymian, Zitronenschale, Salz & Pfeffer mixen
-5. Zwiebel in dünne Ringe schneiden 
-6. Mangold putzen, abwaschen und in dünne Streifen schneiden 
+5. Zwiebel in dünne Ringe schneiden
+6. Mangold putzen, abwaschen und in dünne Streifen schneiden
 7. Zwiebelringe in einer großen Pfanne in Rapsöl goldbraun anbraten
 8. Mangoldstiele unterrühren und 5 Minuten mitbraten
 9. Mangoldblätter zugeben und noch einige Minuten weiterbraten, Herd ausschalten
-11. Feta mit den Händen über die Mangoldmischung bröseln, verrühren und mit Salz & Pfeffer abschmecken
-12. Teig auf bemehlter Arbeitsfläche ca. 0,5 cm dick ausrollen
-13. Quicheform (alternativ Auflauf- oder Tortenform) damit auslegen und überall mit einer Gabel einstechen
-14. Mangoldmischung daraufgeben, Überguss darübergiessen und mit Sesam bestreuen 
-15. im vorgeheizten Rohr bei 180 Grad Heißluft ca. 40 Minuten  goldbraun backen
+10. Feta mit den Händen über die Mangoldmischung bröseln, verrühren und mit Salz & Pfeffer abschmecken
+11. Teig auf bemehlter Arbeitsfläche ca. 0,5 cm dick ausrollen
+12. Quicheform (alternativ Auflauf- oder Tortenform) damit auslegen und überall mit einer Gabel einstechen
+13. Mangoldmischung daraufgeben, Überguss darübergiessen und mit Sesam bestreuen
+14. im vorgeheizten Rohr bei 180 Grad Heißluft ca. 40 Minuten goldbraun backen
+
+</Preparation>

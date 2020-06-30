@@ -17,23 +17,29 @@ tags:
   - value: glutenfrei
     label: glutenfrei
 timeToCook: 45 Minuten
-ingredients:
-  - 'für 4 Personen:'
-  - 1 kleine Zwiebel
-  - 2 große Knoblauchzehen
-  - 2 große Karotten
-  - 500 g festen Tofu
-  - 1 EL Chilipulver
-  - 1 TL gemahlenen Kreuzkümmel
-  - 1/4 TL gemahlenen Zimt
-  - Salz und Pfeffer
-  - 1 TL Apfelessig
-  - Olivenöl
-  - frischen Koriander und Frühlingszwiebel
-  - Wildreis oder Basmatireis zum Servieren
-  - ''
 ---
-1. Zwiebel schälen und fein hacken, Knoblauch pressen
+
+Der Tofu-Stirfry hält sich problemlos einige Tage im Kühlschrank, sodass du daraus mehrere Gerichten verwenden kannst. Hier ein paar Ideen: in einer Tomatensauce zur Pasta, in einer Eierspeise, als pikante Füllung für Palatschinken, Tacos oder Tortillas, als Eiweiß-Booster in einem Eintopf, Auflauf oder Getreidesalat.
+
+<Ingredients yields="4 Personen">
+
+- 1 kleine Zwiebel
+- 2 große Knoblauchzehen
+- 2 große Karotten
+- 500 g festen Tofu
+- 1 EL Chilipulver
+- 1 TL gemahlenen Kreuzkümmel
+- 1/4 TL gemahlenen Zimt
+- Salz und Pfeffer
+- 1 TL Apfelessig
+- Olivenöl
+- frischen Koriander und Frühlingszwiebel
+- Wildreis oder Basmatireis zum Servieren
+
+</Ingredients>
+<Preparation>
+
+1. Zwiebel schälen und fein hacken, Knoblauch pressen
 2. Karotten längs vierteln und in dünne Stücke schneiden
 3. Zwiebel & Knoblauch im Wok oder einer großen Pfanne in Olivenöl bei mittlerer Hitze goldbraun braten
 4. Karotten zugeben, salzen und pfeffern und 5 Minuten weichkochen
@@ -44,4 +50,4 @@ ingredients:
 9. Essig unterrühren und mit Salz & Pfeffer abschmecken
 10. mit gehacktem Koriander und Frühlingszwiebeln bestreut auf Reis servieren
 
-> Der Tofu-Stirfry hält sich problemlos einige Tage im Kühlschrank, sodass du daraus mehrere Gerichten verwenden kannst. Hier ein paar Ideen: in einer Tomatensauce zur Pasta, in einer Eierspeise, als pikante Füllung für Palatschinken, Tacos oder Tortillas, als Eiweiß-Booster in einem Eintopf, Auflauf oder Getreidesalat
+</Preparation>

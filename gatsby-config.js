@@ -76,6 +76,48 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: "gatsby-plugin-local-search",
+      options: {
+        name: "recipes",
+        engine: "flexsearch",
+        // engineOptions: "match",
+        query: `
+          {
+            allRecipe {
+              nodes {
+                id
+                title
+                ingredients
+                category {
+                  id
+                }
+                categories {
+                  id
+                }
+              }
+            }
+          }
+        `,
+
+        ref: "id",
+
+        index: ["title", "ingredients", "category", "categories"],
+
+        store: ["id"],
+
+        normalizer: ({ data }) =>
+          data.allRecipe.nodes.map(
+            ({ id, title, ingredients, category, categories }) => ({
+              id,
+              title,
+              ingredients,
+              category: category.id,
+              categories: categories.map((cat) => cat.id),
+            })
+          ),
+      },
+    },
     "gatsby-transformer-sharp",
     "gatsby-plugin-sharp",
     {

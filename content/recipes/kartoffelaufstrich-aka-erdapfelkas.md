@@ -21,16 +21,23 @@ tags:
   - value: glutenfrei
     label: glutenfrei
 timeToCook: 30 Minuten kochen + 20 Minuten zubereiten
-ingredients:
-  - 'für 4 Personen:'
-  - 500 g Kartoffeln
-  - 1 mittelgroße Zwiebel
-  - 1 Becher Sauerrahm
-  - 2 EL Rapsoder Walnussöl
-  - 2 TL Kümmel
-  - Salz und Pfeffer
-  - etwas Paprikapulver und Kräuter zum Garnieren
 ---
+
+Perfekter Begleiter ist ein Stück Vollkornbrot. Erdapfelkas ist aber auch eine tolle Beilage zu gegrilltem oder gebratenem Fleisch, schmeckt zur Brettljause oder als Dip für verschiedenes Gemüse.
+
+<Ingredients yields="4 Personen">
+
+- 500 g Kartoffeln
+- 1 mittelgroße Zwiebel
+- 1 Becher Sauerrahm
+- 2 EL Rapsöl oder Walnussöl
+- 2 TL Kümmel
+- Salz und Pfeffer
+- etwas Paprikapulver und Kräuter zum Garnieren
+
+</Ingredients>
+<Preparation>
+
 1. Kartoffeln weichkochen
 2. einstweilen Zwiebel schälen und sehr fein hacken
 3. Kartoffeln noch heiß schälen und vierteln
@@ -39,4 +46,4 @@ ingredients:
 6. mindestens 3 Stunden im Kühlschrank durchziehen lassen
 7. mit Paprikapulver & Kräutern bestreut servieren
 
-> Perfekter Begleiter ist ein Stück Vollkornbrot. Erdapfelkas ist aber auch eine tolle Beilage zu gegrilltem oder gebratenem Fleisch, schmeckt zur Brettljause oder als Dip für verschiedenes Gemüse
+</Preparation>

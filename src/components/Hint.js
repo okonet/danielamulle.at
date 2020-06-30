@@ -7,6 +7,7 @@ function Hint(props) {
     <Box
       sx={{
         p: 3,
+        py: 1,
         mx: -3,
         my: 4,
         bg: "white",

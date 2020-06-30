@@ -23,7 +23,7 @@ export const palette = {
   gray: createAccents("#92969b"),
   pink: createAccents("#e23871"),
   cyan: createAccents("#05a8cd"),
-  orange: createAccents("#ff9c00"),
+  orange: createAccents("#ff8400"),
   green: createAccents("#74a308"),
   teal: createAccents("#1e5f92"),
 }
@@ -32,17 +32,18 @@ const theme = {
   space: [0, 4, 8, 16, 32, 64, 128],
   colors: {
     ...palette,
-    text: palette.gray[0],
+    text: palette.gray[1],
     background: palette.white,
     muted: palette.gray[3],
     accent: palette.green[3],
+    link: palette.teal[3],
   },
   fonts: {
     body: '"IBM Plex Sans", Georgia, serif',
-    heading: '"IBM Plex Mono", MonoLisa, Menlo, monospace',
+    heading: '"IBM Plex Sans", MonoLisa, Menlo, monospace',
     monospace: '"IBM Plex Mono", MonoLisa, Menlo, monospace',
   },
-  fontSizes: [13, 16, 24, 48],
+  fontSizes: ["0.85rem", "1rem", "1.5rem", "4rem"],
   fontWeights: {
     body: 400,
     heading: 700,
@@ -63,6 +64,9 @@ const theme = {
     small: 2,
     medium: 5,
     round: 99999,
+  },
+  borders: {
+    thin: "1px solid",
   },
   shadows: {
     none: "none",
@@ -88,12 +92,20 @@ const theme = {
     sectionTitle: {
       m: 0,
       color: "text",
-      fontSize: 1,
+      fontSize: 0,
       fontWeight: "bold",
       fontFamily: "heading",
       lineHeight: "body",
     },
+    lead: {
+      color: "text",
+      fontSize: [1, 2, 2],
+      fontFamily: "body",
+      fontWeight: "normal",
+      lineHeight: "body",
+    },
     body: {
+      color: "text",
       fontSize: 1,
       fontFamily: "body",
       fontWeight: "normal",
@@ -102,7 +114,7 @@ const theme = {
   },
   layout: {
     full: {
-      px: [3, 3, 0],
+      px: 3,
       maxWidth: 1016, // 12 x (70px + 16px gap)
     },
     container: {
@@ -127,19 +139,36 @@ const theme = {
     },
     h3: {
       variant: "textStyles.sectionTitle",
-      mt: 3,
+      mt: 4,
+    },
+    p: {
+      my: 3,
     },
     ul: {
       my: 2,
       pl: 0,
+      listStyle: "none",
+      "li::before": {
+        variant: "textStyles.sectionTitle",
+        color: "teal.5",
+        content: '"— "',
+      },
     },
     ol: {
       p: 0,
-      pl: 3,
       mt: 3,
+      listStyle: "none",
+      counterReset: "steps",
+      "li::before": {
+        variant: "textStyles.sectionTitle",
+        color: "teal.5",
+        counterIncrement: "steps",
+        content: 'counters(steps, ".") ". "',
+      },
     },
     li: {
       mb: 3,
+      variant: "textStyles.body",
     },
   },
 }
@@ -186,7 +215,7 @@ export const recipesTheme = {
     ...theme.colors,
     text: palette.teal[1],
     background: palette.teal[6],
-    // muted: palette.teal[3],
+    // muted: palette.teal[4],
     accent: palette.orange[3],
   },
 }

@@ -10,7 +10,6 @@ export const query = graphql`
       title
       date(locale: "de", formatString: "DD MMMM YYYY")
       timeToCook
-      ingredients
       coverImage {
         childImageSharp {
           fluid(maxWidth: 1024) {
