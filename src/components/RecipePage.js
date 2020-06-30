@@ -45,15 +45,18 @@ export default ({ data }) => {
         }}
       >
         <Grid gap={0} columns={[1, 12]}>
-          <Box as="nav" sx={{ color: "muted", gridColumn: [1, "1 / span 8"] }}>
-            <Group separator=" / ">
-              <Link to={recipesPath}>Rezepte</Link>
+          <Box
+            as="nav"
+            sx={{ color: "muted", fontSize: 0, gridColumn: [1, "1 / span 8"] }}
+          >
+            <Group separator=" → ">
+              <Link to={recipesPath}>Alle Rezepte</Link>
               <Link to={mainCategory.slug}>{mainCategory.id}</Link>
             </Group>
           </Box>
           <Styled.h1
             sx={{
-              mt: 0,
+              mt: 1,
               gridColumn: [1, "1 / span 12"],
               ":first-letter": { textTransform: "uppercase" },
             }}
