@@ -1,5 +1,5 @@
 /* @jsx jsx */
-import React from "react"
+import React, { useCallback, useEffect } from "react"
 import { Container, Flex, jsx, Text } from "theme-ui"
 import { useFlexSearch } from "react-use-flexsearch"
 import groupBy from "lodash.groupby"
@@ -12,9 +12,10 @@ import Tag from "./Tag"
 import Content from "../../content/sections/recipes.mdx"
 import RecipesList from "./RecipesList"
 
-export default ({ data }) => {
+export default ({ data, location, navigate }) => {
   const { allCategory, allRecipe } = data
-  const [query, setQuery] = React.useState("")
+  const searchParams = new URLSearchParams(location.search)
+  const [query, setQuery] = React.useState(searchParams.get("q"))
   const { index, store } = data.localSearchRecipes
   const results = useFlexSearch(query, index, JSON.parse(store))
   const resIds = results.map((res) => res.id)
@@ -23,6 +24,19 @@ export default ({ data }) => {
     ? allRecipe.nodes.filter((recipe) => resIds.includes(recipe.id))
     : allRecipe.nodes
   const groupedRecipes = groupBy(filteredRecipes, (node) => node.category[0].id)
+
+  useEffect(() => {
+    searchParams.set("q", query)
+    navigate(`${location.pathname}?${searchParams.toString()}`, {
+      replace: true,
+    })
+  }, [query])
+
+  const handleChange = useCallback((event) => {
+    const searchQuery = event.target.value
+    setQuery(searchQuery)
+  }, [])
+
   return (
     <Layout theme={recipesTheme}>
       <SEO title="Rezepte" />
@@ -42,7 +56,7 @@ export default ({ data }) => {
           <input
             type="search"
             value={query}
-            onChange={(event) => setQuery(event.target.value)}
+            onChange={handleChange}
             placeholder="Zutaten oder Kategorie..."
             sx={{
               p: 1,
