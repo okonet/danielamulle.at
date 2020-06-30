@@ -42,7 +42,7 @@ Dieses Gericht beweist, dass Eintöpfe kein Fleisch brauchen, um so richtig herz
 
 </Ingredients>
 
-## Zubereitung
+<Preparation>
 
 1. Zwiebel schälen, Karotten waschen und beides kleinschneiden
 2. Champignons putzen und vierteln
@@ -54,3 +54,5 @@ Dieses Gericht beweist, dass Eintöpfe kein Fleisch brauchen, um so richtig herz
 8. Bohnen, Gemüsesuppe, 1 TL Salz und 1/2 TL Pfeffer untermischen und aufkochen
 9. auf kleine Stufe zurückschalten und halb zugedeckt ca. 30 Minuten köcheln, bis die Sauce eingedickt ist
 10. Thymianstängel & Lorbeerblatt entfernen und Petersilie einrühren, mit Salz und Pfeffer abschmecken
+
+</Preparation>

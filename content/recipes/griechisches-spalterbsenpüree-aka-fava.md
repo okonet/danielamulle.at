@@ -21,18 +21,24 @@ tags:
   - value: glutenfrei
     label: glutenfrei
 timeToCook: 15 Minuten zubereiten + ca. 60 Minuten Kochzeit
-ingredients:
-  - "für 4 Personen:"
-  - 300 g gelbe Spalterbsen
-  - 3 mittelgroße Zwiebeln
-  - 2 Lorbeerblätter
-  - 1/4 TL Kurkumapulver (optional)
-  - 1 große Knoblauchzehe
-  - 40 ml Olivenöl
-  - 40 ml Rapsöl oder Walnussöl
-  - 2 EL Zitronensaft
-  - Salz und Pfeffer
 ---
+
+Falls du eine Humus-Fan bist, dann probiere unbedingt diese Rezeptinspiration: Fava ist sozusagen das "griechische Humus", wobei hier nicht Kicher- sondern ursprünglich Platterbsen (_Lathyrus sativus_) die Basis bilden. Fava wird in Griechenland sehr gerne als Vorspeise gegessen. Es hält sich im Kühlschrank gut verschlossen ca. 3 Tage, und ist genauso wie Humus sehr eiweißreich. Fava schmeckt toll als Brotaufstrich oder Dip für Gemüse, ideal zum Mitnehmen für's nächste Picknick oder die Grillparty
+
+<Ingredients yields="4 Personen">
+
+- 300 g gelbe Spalterbsen
+- 3 mittelgroße Zwiebeln
+- 2 Lorbeerblätter
+- 1/4 TL Kurkumapulver (optional)
+- 1 große Knoblauchzehe
+- 40 ml Olivenöl
+- 40 ml Rapsöl oder Walnussöl
+- 2 EL Zitronensaft
+- Salz und Pfeffer
+
+</Ingredients>
+<Preparation>
 
 1. Zwiebel schälen, einen davon vierteln und mit den Spalterbsen, Lorbeerblättern und Kurkuma in einen großen Topf geben
 2. mit Wasser bedecken und aufkochen
@@ -43,4 +49,4 @@ ingredients:
 7. die Spalterbsen mit der Hälfte der gebratenen Zwiebeln, Knoblauch, 2 EL Zitronensaft, je 3 EL Oliven- und Raps/Walnussöl, 4 EL Erbsenkochwasser, 1 TL Salz und 1/2 TL frisch gemahlenen Pfeffer in einem Blender oder mit dem Pürierstab glattmixen
 8. in eine Schüssel füllen und mit den restlichen Zwiebeln garnieren
 
-> Falls du eine Humus-Fan bist, dann probiere unbedingt diese Rezeptinspiration: Fava ist sozusagen das "griechische Humus", wobei hier nicht Kicher- sondern ursprünglich Platterbsen (Lathyrus sativus) die Basis bilden. Fava wird in Griechenland sehr gerne als Vorspeise gegessen. Es hält sich im Kühlschrank gut verschlossen ca. 3 Tage, und ist genauso wie Humus sehr eiweißreich. Fava schmeckt toll als Brotaufstrich oder Dip für Gemüse, ideal zum Mitnehmen für's nächste Picknick oder die Grillparty
+</Preparation>

@@ -23,12 +23,21 @@ tags:
   - value: glutenfrei
     label: glutenfrei
 timeToCook: 15 Minuten
-ingredients:
-  - 100 g Fetakäse
-  - 60 g Sauerrahm
-  - 15 g frischer Koriander
-  - 15 g frische Minze
-  - Salz und Pfeffer
 ---
-1. zerbröselten Feta, Sauerrahm und Kräuter in einem kleinen Blender oder mit dem Püriersta einige Minuten cremig mixen
+
+<Ingredients>
+
+- 100 g Fetakäse
+- 60 g Sauerrahm
+- 15 g frischer Koriander
+- 15 g frische Minze
+- Salz und Pfeffer
+
+</Ingredients>
+
+<Preparation>
+
+1. zerbröselten Feta, Sauerrahm und Kräuter in einem kleinen Blender oder mit dem Pürierstab einige Minuten cremig mixen
 2. mit Salz & Pfeffer abschmecken
+
+</Preparation>

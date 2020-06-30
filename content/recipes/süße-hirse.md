@@ -21,18 +21,25 @@ tags:
   - value: glutenfrei
     label: glutenfrei
 timeToCook: 10 Minuten vorbereiten + ca. 30 Minuten kochen
-ingredients:
-  - 'für 6 Personen als Jause:'
-  - 200 g Hirse
-  - '500 ml Fruchtsaft, z.B. Orange'
-  - 1 Pkg Vanillezucker
-  - 250 ml (Soja)joghurt
-  - 200 ml Beerensauce zum Servieren
 ---
+
+Ich koche Beerensauce & Hirse immer schon am Vorabend, sodass ich in der Früh alles nur noch aufwärmen brauche. Zum Mitnehmen für unterwegs kannst Du die Hirse & Beerensauce perfekt in einem Schraubglas anrichten.
+
+<Ingredients yields="6 Personen als Jause">
+
+- 200 g Hirse
+- '500 ml Fruchtsaft, z.B. Orange'
+- 1 Pkg Vanillezucker
+- 250 ml (Soja)joghurt
+- 200 ml Beerensauce zum Servieren
+
+</Ingredients>
+<Preparation>
+
 1. Hirse in Fruchtsaft weichkochen und auskühlen lassen
 2. Vanillezucker und Joghurt einrühren
 3. nach Geschmack süßen
 4. für die Beerensauce 250 g Beeren (frisch oder tiefgekühlt) + 2 EL braunen Zucker kurz aufkochen und dann pürieren
 5. Süße Hirse in Schüsseln verteilen und mit Beerenmus-Topping servieren
 
->Ich koche Beerensauce & Hirse immer schon am Vorabend, sodass ich in der Früh alles nur noch aufwärmen brauche. Zum Mitnehmen für unterwegs kannst Du die Hirse & Beerensauce perfekt in einem Schraubglas anrichten
+</Preparation>
