@@ -89,6 +89,7 @@ exports.createResolvers = ({ createResolvers, schema }) => {
       ingredients: {
         type: "[String]",
         async resolve(source, args, context, info) {
+          // We use `ingredients` for the search functionality so ingredients need to be extracted as strings
           const ast = await mdxResolverPassthrough("mdxAST")(
             source,
             args,
