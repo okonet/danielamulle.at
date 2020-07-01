@@ -38,13 +38,33 @@ ingredients:
   - 'etwas Rapsöl oder Margarine zum Befetten der Form  '
   - '(Soja)joghurt, Sauerrahm oder Skyr zum Servieren (optional)'
 ---
-1. Auflaufform ausfetten  
-2. Pflanzendrink mit Ei, Salz, Zucker und Zimt in einer Rührschüssel mixen  
-3. Haferflocken und Beeren unterrühren  
-4. Mischung in eine befettete Auflaufform füllen  
-5. bei 170 Grad Heißluft ins Backrohr geben
-6. ca. 20 Minuten backen, bis die Flüssigkeit verschwunden ist  
-7. etwas ausgekühlt in Stücke schneiden  
-8. warm oder kalt genießen
+Die Gebackenen Haferflocken sind eine Frühstücks- oder Snackidee, die super schmeckt und im Handumdrehn im Ofen ist. 
 
->Die Gebackenen Haferflocken sind eine Frühstücksidee, die super schmeckt und im Handumdrehn im Ofen ist. Ich backe sie immer schon am Vortag, und wärme sie dann in der Früh nur noch auf. Die Gebackenen Haferflocken schmecken köstlich mit Sauerrahm, Naturjoghurt oder Skyr, eventuell mit etwas Zucker oder Honig vermischt. Als Geschmacksvariation kannst du die Flocken vor dem Backen mit Kokosraspeln, Sonnenblumenkernen, Sesam, Mandelhobel oder geriebener Schokolade bestreuen, und auch Trockenfrüchte oder anderes frisches Obst statt den Beeren verwenden.
+<Ingredients yields="6 Personen als Snack">
+
+- 2 Tassen feinblättrige Haferflocken (bei Bedarf glutenfrei)  
+- 2 Tassen Pflanzendrink (oder Kuhmilch)  
+- 1 Ei (optional)
+- ¼ TL Salz  
+- ½ Pkg Vanillezucker  
+- 2 EL brauner Zucker (bei Bedarf Reissirup) 
+- 1 TL Zimt  
+- 1,5 Tassen frische oder tiefgekühlte Beeren
+- etwas Rapsöl oder Margarine zum Befetten der Form  
+- (Soja)joghurt, Sauerrahm oder Skyr zum Servieren (optional)
+
+</Ingredients>
+<Preparation>
+
+1. Auflaufform ausfetten. 
+2. Pflanzendrink mit Ei, Salz, Zucker und Zimt in einer Rührschüssel mixen.
+3. Haferflocken und Beeren unterrühren.
+4. Mischung in eine befettete Auflaufform füllen.  
+5. bei 170 Grad Heißluft ins Backrohr geben.
+6. ca. 20 Minuten backen, bis die gesamte Flüssigkeit verschwunden ist.  
+7. etwas ausgekühlt in Stücke schneiden.
+8. warm oder kalt genießen.
+
+</Preparation>
+
+Ich backe die Haferflocken immer schon am Vortag, und wärme sie dann in der Früh nur noch auf. Die Gebackenen Haferflocken schmecken köstlich mit Sauerrahm, Naturjoghurt oder Skyr, eventuell mit etwas Zucker oder Honig vermischt. Als Geschmacksvariation kannst du die Flocken vor dem Backen mit Kokosraspeln, Sonnenblumenkernen, Sesam, Mandelhobel oder geriebener Schokolade bestreuen, und auch Trockenfrüchte oder anderes frisches Obst statt den Beeren verwenden.
