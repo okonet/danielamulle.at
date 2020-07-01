@@ -25,8 +25,6 @@ timeToCook: 20 Minuten
 
 Diese köstliche kalte Kräutersauce ist nicht nur schnell gemacht. Sie schmeckt auch hervorragend und ist aufgrund der vielen Kräuter auch vollgepackt mit Spurenelementen, Mineralstoffen und Vitaminen.
 
-Das Rezept ist angelehnt an "Frankfurter Grie Soß", eine hessische Spezialität, die ich 2018 in Wiesbaden kennengelernt habe. Sie passt nicht nur perfekt zu Gemüse wie z.B. Spargel, sondern ist auch herrlich zu Gegrilltem oder als Dip beim nächsten Picknick.
-
 <Ingredients yields="6 Personen">
 
 - 1 großer Bund gemischte Kräuter, insgesamt je 25 g Schnittlauch, Petersilie, Kerbel, Dille, Kresse und Zitronenmelisse
@@ -41,11 +39,13 @@ Das Rezept ist angelehnt an "Frankfurter Grie Soß", eine hessische Spezialität
 </Ingredients>
 <Preparation>
 
-1. Eier schälen und würfelig schneiden
-2. Kräuter hacken
-3. Topfen, Sauerrahm, Joghurt und Zitronensaft glattrühren
-4. Kräuter und Eier untermischen
-5. mit Essig, Salz und Pfeffer abschmecken
-6. vor dem Servieren einige Stunden im Kühlschrank durchziehen lassen
+1. Eier schälen und würfelig schneiden.
+2. Kräuter fein hacken.
+3. Topfen, Sauerrahm, Joghurt und Zitronensaft glattrühren.
+4. Kräuter und Eier untermischen.
+5. mit Essig, Salz und Pfeffer abschmecken.
+6. vor dem Servieren einige Stunden im Kühlschrank durchziehen lassen.
 
 </Preparation>
+
+Das Rezept ist angelehnt an "Frankfurter Grie Soß", eine hessische Spezialität, die ich 2018 in Wiesbaden kennengelernt habe. Sie passt nicht nur perfekt zu Gemüse wie z.B. Spargel, sondern ist auch herrlich zu Gegrilltem oder als Dip beim nächsten Picknick.
