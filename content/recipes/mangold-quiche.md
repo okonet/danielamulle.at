@@ -22,15 +22,12 @@ Dieses Rezept kannst du nach Lust und Laune abwandeln. Probier's aus und backe e
 
 <Ingredients yields="1 Quiche mit 25 cm Durchmesser">
 
-#Teig:
 - 150 g Vollkornmehl (Dinkel, Weizen)
 - 60 g Margarine
 - 1/2 Teelöffel Salz, etwas kaltes Wasser
-#Überguss:
 - 250 ml Sauerrahm
 - 2 Eier
 - ca. 1/8 l Wasser
-#Belag:
 - 200 g Fetakäse
 - 1 große rote Zwiebel
 - 1 kleiner Mangold (400 g)
@@ -60,8 +57,8 @@ Dieses Rezept kannst du nach Lust und Laune abwandeln. Probier's aus und backe e
 
 </Preparation>
 
-Der Teig lässt sich übrigens super schon am Vortag vorbereiten und im Kühlschrank lagern. Den Belag kannst du natürlich variieren, je nachdem, worauf du Lust bzw. was du gerade zuhause hast, z.B.:
+>Der Teig lässt sich übrigens super schon am Vortag vorbereiten und im Kühlschrank lagern. Den Belag kannst du natürlich variieren, je nachdem, worauf du Lust bzw. was du gerade zuhause hast, z.B.:
 - 1 Stange Lauch oder 1 große Zwiebel oder 1 Bund Frühlingszwiebel
 - 125 g Speck- oder Schinkenwürfel oder 
-- Gemüse, z.B.: Brokkoli, Kürbis, Kohl, Kraut, Blattspinat, Rucola oder Bärlauch,...+ 150 g Fetakäse- oder 150 g Tofu-Würfel 
+- diverses Gemüse wie Brokkoli, Kürbis, Kohl, Kraut, Blattspinat, Rucola oder Bärlauch, etc. + 150 g Fetakäse- oder 150 g Tofu-Würfel 
 - Sesam, Sonnen- oder Kürbiskerne, Mandelhobel zum Bestreuen
