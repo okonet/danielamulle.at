@@ -31,8 +31,25 @@ ingredients:
   - 1 TL gemahlener Kümmel
   - je 1/2 TL Salz und Pfeffer
 ---
-1. Bohnen gut mit Wasser abspülen, das reduziert blähende Stoffe
-2. alle Zutaten in einem Blender oder mit dem Pürierstab zu einer cremigen Masse mixen
-3. nochmals abschmecken und zumindest 1 Stunde im Kühlschrank durchziehen lassen
+Der Alpenhumus ist ein flott gemixter, eiweißreicher Aufstrich, der dich gerne auf die nächste Party, zum Picknick oder Badeausflug oder auch ins Büro begleitet.
 
->Der Alpenhumus ist ein flott gemixter, eiweißreicher Aufstrich, der dich gerne auf die nächste Party, zum Picknick oder Badeausflug oder auch ins Büro begleitet. Falls dich Bohnen leicht blähen, kannst du die Hälfte der Menge (200 g) durch gekochte Kartoffeln ersetzen. Je 200 g Kichererbsen & weiße Bohnen sind auch eine gute Alternative, da Kichererbsen deutlich weniger blähende Ballaststoffe enthalten.
+<Ingredients yields="6 Personen als Snack">
+
+- 400 g weiße Bohnen (Dose)
+- 2 EL Zitronensaft
+- 3 EL Kürbiskernöl
+- 3 EL Kürbiskerne
+- 1 Knoblauchzehe
+- 1 TL gemahlener Kümmel
+- je 1/2 TL Salz und Pfeffer
+
+</Ingredients>
+<Preparation>
+
+1. Bohnen gut mit Wasser abspülen, das reduziert blähende Stoffe.
+2. alle Zutaten in einem Blender oder mit dem Pürierstab zu einer cremigen Masse mixen.
+3. nochmals abschmecken und zumindest 1 Stunde im Kühlschrank durchziehen lassen.
+
+</Preparation>
+
+Falls dich Bohnen leicht blähen, kannst du die Hälfte der Menge (200 g) durch gekochte Kartoffeln ersetzen. Je 200 g Kichererbsen & weiße Bohnen sind auch eine gute Alternative, da Kichererbsen deutlich weniger blähende Ballaststoffe enthalten.
