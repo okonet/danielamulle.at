@@ -36,9 +36,9 @@ timeToCook: 15 Minuten
 </Ingredients>
 <Preparation>
 
-1. Basilikum kleinschneiden
-2. mit Joghurt und Zitronenschale vermischen
-3. mit Zitronensaft und Pfeffer abschmecken
+1. Basilikum kleinschneiden.
+2. Mit Joghurt und Zitronenschale vermischen.
+3. Mit Zitronensaft und Pfeffer abschmecken.
 
 </Preparation>
 
