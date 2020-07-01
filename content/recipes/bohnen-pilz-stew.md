@@ -20,8 +20,7 @@ tags:
     label: glutenfrei
 timeToCook: 20 Minuten vorbereiten + ca. 45 Minuten kochen
 ---
-
-Dieses Gericht beweist, dass Eintöpfe kein Fleisch brauchen, um so richtig herzhaft-vollmundig zu schmecken -- probier's aus, du wirst begeistert sein! Mein Lieblingsbegleiter dieses Stews ist gekochte Polenta, aber er schmeckt auch einfach nur mit frischem Vollkornbrot herrlich.
+Dieses Gericht beweist, dass Eintöpfe kein Fleisch brauchen, um so richtig herzhaft-vollmundig zu schmecken -- probier's aus, du wirst begeistert sein!
 
 <Ingredients yields="4 Personen">
 
@@ -55,3 +54,5 @@ Dieses Gericht beweist, dass Eintöpfe kein Fleisch brauchen, um so richtig herz
 10. Thymianstängel & Lorbeerblatt entfernen und Petersilie einrühren, mit Salz und Pfeffer abschmecken
 
 </Preparation>
+
+Mein Lieblingsbegleiter dieses Stews ist gekochte Polenta, aber er schmeckt auch einfach nur mit frischem Vollkornbrot herrlich.
