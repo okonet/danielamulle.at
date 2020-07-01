@@ -3,8 +3,8 @@ title: Holler-Pancakes
 date: 2020-06-25T19:07:48.288Z
 coverImage: ../assets/20200603-dsc02920.jpg
 category:
-  - value: "Kuchen, Kekserl & Co"
-    label: "Kuchen, Kekserl & Co"
+  - value: 'Kuchen, Kekserl & Co'
+    label: 'Kuchen, Kekserl & Co'
 tags:
   - value: vegan
     label: vegan
@@ -23,7 +23,7 @@ tags:
 timeToCook: 20 Minuten vorbereiten + 15 Minuten braten
 ---
 
-Die Pancakes kannst du dir zu Frühstück, Jause aber auch zum Nachmittagskaffee schmecken lassen.
+Diese Pancakes kannst du dir zu Frühstück, Jause aber auch zum Nachmittagskaffee schmecken lassen.
 
 <Ingredients yields="ca. 15 Stück, je nach Größe">
 
@@ -39,14 +39,14 @@ Die Pancakes kannst du dir zu Frühstück, Jause aber auch zum Nachmittagskaffee
 </Ingredients>
 <Preparation>
 
-1. Vollkornmehl, Zucker, Backpulver, Salz und Hollerblüten in einer Rührschüssel gut vermischen
-2. Pflanzendrink oder Milch zugeben und mit dem Schneebesen gut verrühren, bis alle Klümpchen verschwunden sind
-3. fertigen Teig ca. 10 Minuten rasten lassen
-4. Palatschinkenpfanne erhitzen und falls sie nicht beschichtet ist 1-2 EL Rapsöl hineingeben
-5. Pancakes aus 2 EL Teig in die Pfanne geben und einige Minuten braten
-6. wenn sich auf der Oberfläche viele Bläschen gebilden haben kannst du deine Pancakes umdrehen
-7. auch die zweite Seite einige Minuten goldbraun fertigbacken
-8. Pancakes mit Staubzucker & frischem Obst genießen
+1. Vollkornmehl, Zucker, Backpulver, Salz und Hollerblüten in einer Rührschüssel gut vermischen.
+2. Pflanzendrink oder Milch zugeben und mit dem Schneebesen gut verrühren, bis alle Klümpchen verschwunden sind.
+3. fertigen Teig ca. 10 Minuten rasten lassen.
+4. Palatschinkenpfanne erhitzen und falls sie nicht beschichtet ist 1-2 EL Rapsöl hineingeben.
+5. Pancakes aus 2 EL Teig in die Pfanne geben und einige Minuten braten.
+6. wenn sich auf der Oberfläche viele Bläschen gebilden haben kannst du deine Pancakes umdrehen.
+7. auch die zweite Seite einige Minuten goldbraun fertigbacken.
+8. Pancakes mit Staubzucker & frischem Obst genießen.
 
 </Preparation>
 
