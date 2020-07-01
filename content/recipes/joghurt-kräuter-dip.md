@@ -32,12 +32,11 @@ timeToCook: 15 Minuten
 - Salz und Pfeffer
 
 </Ingredients>
-
 <Preparation>
 
-1. Kräuter fein hacken
-2. mit dem Joghurt vermengen
-3. mit Salz, Pfeffer und Zitronensaft abschmecken
+1. Kräuter fein hacken.
+2. mit dem Joghurt vermengen.
+3. mit Salz, Pfeffer und Zitronensaft abschmecken.
 
 </Preparation>
 
