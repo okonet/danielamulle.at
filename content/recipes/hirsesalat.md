@@ -35,16 +35,39 @@ ingredients:
   - Saft 1/2 Zitrone
   - Olivenöl
 ---
-1. Hirse in der doppelten Menge Wasser und 1 TL Salz aufkochen
-2. zurückschalten und 10-15 Minuten weichdünsten
-3. einstweilen Zwiebel schälen und hacken
-5. Karotte und Sellerie kleinschneiden
-6. Tomaten kurz abtropfen lassen, das Öl dabei gleich in der Salatschüssel auffangen
-7. Tomaten klein schneiden
-8. ausgekühlte Hirse mit allen Zutaten gut vermischen
-9. Knoblauch dazupressen, Paprikapulver und Kräuter unterrühren
-10. mit Olivenöl und Zitronensaft marinieren
-11. mit Salz und Pfeffer abschmecken
-12. idealerweise lässt du den Salat vor dem Servieren im Kühlschrank ein paar Stunden durchziehen 
+Dieser Salat eignet sich daher wunderbar zum Mitnehmen, sei es zum Mittagessen unterwegs, einem Picknick oder einer Grillerei. 
 
->Wie alle Getreidesalate schmeckt auch dieser am 2. Tag erst richtig gut. Er eignet sich daher wunderbar zum Mitnehmen, sei es zum Mittagessen unterwegs, einem Picknick oder einer Grillerei. Frischer Zitronensaft ersetzt hier bewusst den Essig: sein Vitamin C hilft deinem Körper, den sehr hohen Eisengehalt der Hirse optimal auszunutzen
+<Ingredients yields="4 Personen als Vorspeise">
+
+- 130 g Hirse
+- 1 kleine rote Zwiebel
+- 1 Stange Sellerie
+- 1 Karotte
+- 100 g getrocknete Tomaten in Öl
+- 1 EL Kapern
+- 200 g Fetakäse
+- Salz und Pfeffer
+- 1 kleine Knoblauchzehe
+- 1 TL Paprikapulver
+- 2 EL frischer Oregano oder Basilikum
+- Saft 1/2 Zitrone
+- Olivenöl
+
+</Ingredients>
+<Preparation>
+
+1. Hirse in der doppelten Menge Wasser und 1 TL Salz aufkochen.
+2. zurückschalten und ca. 15 Minuten weichdünsten.
+3. einstweilen Zwiebel schälen und hacken.
+4. Karotte und Sellerie kleinschneiden.
+5. Tomaten kurz abtropfen lassen, das Öl dabei gleich in der Salatschüssel auffangen.
+6. Tomaten klein schneiden.
+7. ausgekühlte Hirse mit allen Zutaten gut vermischen.
+8. Knoblauch dazupressen, Paprikapulver und Kräuter unterrühren.
+9. mit Olivenöl und Zitronensaft marinieren.
+10. mit Salz und Pfeffer abschmecken.
+11. idealerweise lässt du den Salat vor dem Servieren im Kühlschrank ein paar Stunden durchziehen.
+
+</Preparation>
+
+Wie alle Getreidesalate schmeckt auch dieser am 2. Tag erst so richtig gut. Frischer Zitronensaft ersetzt bewusst den Essig: sein Vitamin C hilft deinem Körper, den sehr hohen Eisengehalt der Hirse optimal auszunutzen.
