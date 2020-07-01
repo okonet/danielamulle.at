@@ -22,7 +22,6 @@ tags:
     label: glutenfrei
 timeToCook: 20 Min zubereiten + 60 Min kochen
 ---
-
 <Ingredients yields="6 Personen">
 
 - 2 mittelgroße Zwiebeln
@@ -46,21 +45,21 @@ timeToCook: 20 Min zubereiten + 60 Min kochen
 
 <Preparation>
 
-1. Sojagranulat in der doppelten Menge heißem Wasser einweichen
-2. Zwiebel, Karotten, Sellerie und Paprika kleinschneiden
-3. Kidneybohnen und Kichererbsen abseihen und gut abspülen
-4. 3 EL Pflanzenöl in einem großen Topf auf mittlerer Stufe erhitzen
-5. Zwiebel und gepressten Knoblauch mit 1 TL Salz darin anbraten
-6. Karotten, Sellerie, Paprika, Chilipulver, Kreukümmel und Zimt zugeben und gut durchrühren
-7. pfeffern und ca. 5 Minuten weiterrösten
-8. Sojagranulat zugeben und ein paar Minuten mitbraten
-9. Kidneybohne, Kichererbsen und Tomaten unterrühren
-10. Korianderstängel waschen, fein hacken und untermischen
-11. Balsamicoessig zugeben, salzen und pfeffern
-12. kurz aufkochen, dann auf kleine Stufe zurückdrehen
-13. ca. 1 Stunde köcheln lassen, dabei immer wieder mal umrühren
-14. nochmals abschmecken und mit Sauerrahm & frischen Korianderblättern garniert servieren
+1. Sojagranulat in der doppelten Menge heißem Wasser einweichen.
+2. Zwiebel, Karotten, Sellerie und Paprika kleinschneiden.
+3. Kidneybohnen und Kichererbsen abseihen und gut abspülen.
+4. 3 EL Pflanzenöl in einem großen Topf auf mittlerer Stufe erhitzen.
+5. Zwiebel und gepressten Knoblauch mit 1 TL Salz darin anbraten.
+6. Karotten, Sellerie, Paprika, Chilipulver, Kreukümmel und Zimt zugeben und gut durchrühren.
+7. pfeffern und ca. 5 Minuten weiterrösten.
+8. Sojagranulat zugeben und ein paar Minuten mitbraten.
+9. Kidneybohne, Kichererbsen und Tomaten unterrühren.
+10. Korianderstängel waschen, fein hacken und untermischen.
+11. Balsamicoessig zugeben, salzen und pfeffern.
+12. kurz aufkochen, dann auf kleine Stufe zurückdrehen.
+13. ca. 1 Stunde köcheln lassen, dabei immer wieder einmal umrühren.
+14. nochmals abschmecken und mit Sauerrahm & frischen Korianderblättern garniert servieren.
 
 </Preparation>
 
-> Ich esse dazu sehr gerne Naturreis, du kannst das Chili aber auch mit frischem Brot & Gebäck, gekochten Kartoffeln, Couscous oder Basmatireis servieren. Natürlich kannst du das Chili auch klassisch mit 500 g Bio-Faschiertem. Es schmeckt übrigens in jedem Fall am 2. Tag aufgewärmt noch aromatischer
+Ich esse dazu sehr gerne Naturreis, du kannst das Chili aber auch mit frischem Brot & Gebäck, gekochten Kartoffeln, Couscous oder Basmatireis servieren. Natürlich kannst du das Chili auch klassisch mit 500 g Bio-Faschiertem. Es schmeckt übrigens am 2. Tag aufgewärmt noch aromatischer. Eine Sache, die natürlich bei Histaminintoleranz leider nicht empfehlenswert ist.
