@@ -34,10 +34,9 @@ timeToCook: 15 Minuten
 - Salz und Pfeffer
 
 </Ingredients>
-
 <Preparation>
 
-1. zerbröselten Feta, Sauerrahm und Kräuter in einem kleinen Blender oder mit dem Pürierstab einige Minuten cremig mixen
-2. mit Salz & Pfeffer abschmecken
+1. zerbröselten Feta, Sauerrahm und Kräuter in einem kleinen Blender oder mit dem Pürierstab einige Minuten cremig mixen.
+2. mit Salz & Pfeffer abschmecken.
 
 </Preparation>
