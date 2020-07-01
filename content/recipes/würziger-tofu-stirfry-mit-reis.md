@@ -39,15 +39,15 @@ Der Tofu-Stirfry hält sich problemlos einige Tage im Kühlschrank, sodass du da
 </Ingredients>
 <Preparation>
 
-1. Zwiebel schälen und fein hacken, Knoblauch pressen
-2. Karotten längs vierteln und in dünne Stücke schneiden
-3. Zwiebel & Knoblauch im Wok oder einer großen Pfanne in Olivenöl bei mittlerer Hitze goldbraun braten
-4. Karotten zugeben, salzen und pfeffern und 5 Minuten weichkochen
-5. Tofu mit den Händen in die Pfanne bröseln
-6. ca. 20 Minuten bei mittlerer Hitze rösten, damit das Wasser verdampft und der Tofu Farbe bekommt, dabei immer wieder umrühren
-7. Chilipulver, Kreuzkümmel und Zimt unterrühren
-8. 5 Minuten weiterrösten, bis die Mischung duftet
-9. Essig unterrühren und mit Salz & Pfeffer abschmecken
-10. mit gehacktem Koriander und Frühlingszwiebeln bestreut auf Reis servieren
+1. Zwiebel schälen und fein hacken, Knoblauch pressen.
+2. Karotten längs vierteln und in dünne Stücke schneiden.
+3. Zwiebel & Knoblauch im Wok oder einer großen Pfanne in Olivenöl bei mittlerer Hitze goldbraun braten.
+4. Karotten zugeben, salzen und pfeffern und 5 Minuten weichkochen.
+5. Tofu mit den Händen in die Pfanne bröseln.
+6. Ca. 20 Minuten bei mittlerer Hitze rösten, damit das Wasser verdampft und der Tofu Farbe bekommt, dabei immer wieder umrühren.
+7. Chilipulver, Kreuzkümmel und Zimt unterrühren.
+8. 5 Minuten weiterrösten, bis die Mischung duftet.
+9. Essig unterrühren und mit Salz & Pfeffer abschmecken.
+10. Mit gehacktem Koriander und Frühlingszwiebeln bestreut auf Reis servieren.
 
 </Preparation>
