@@ -31,7 +31,7 @@ ingredients:
   - 1 TL gemahlener Kümmel
   - je 1/2 TL Salz und Pfeffer
 ---
-Der Alpenhumus ist ein flott gemixter, eiweißreicher Aufstrich, der dich gerne auf die nächste Party, zum Picknick oder Badeausflug oder auch ins Büro begleitet.
+Der Alpenhumus ist ein flott gemixter, eiweißreicher Aufstrich, der dich gerne auf die nächste Party, zum Picknick, Badeausflug oder auch ins Büro begleitet.
 
 <Ingredients yields="6 Personen als Snack">
 
@@ -51,5 +51,7 @@ Der Alpenhumus ist ein flott gemixter, eiweißreicher Aufstrich, der dich gerne 
 3. nochmals abschmecken und zumindest 1 Stunde im Kühlschrank durchziehen lassen.
 
 </Preparation>
+
+
 
 Falls dich Bohnen leicht blähen, kannst du die Hälfte der Menge (200 g) durch gekochte Kartoffeln ersetzen. Je 200 g Kichererbsen & weiße Bohnen sind auch eine gute Alternative, da Kichererbsen deutlich weniger blähende Ballaststoffe enthalten.
