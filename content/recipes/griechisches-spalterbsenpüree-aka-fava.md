@@ -23,7 +23,7 @@ tags:
 timeToCook: 15 Minuten zubereiten + ca. 60 Minuten Kochzeit
 ---
 
-Falls du eine Humus-Fan bist, dann probiere unbedingt diese Rezeptinspiration: Fava ist sozusagen das "griechische Humus", wobei hier nicht Kicher- sondern ursprünglich Platterbsen (_Lathyrus sativus_) die Basis bilden. Fava wird in Griechenland sehr gerne als Vorspeise gegessen. Es hält sich im Kühlschrank gut verschlossen ca. 3 Tage, und ist genauso wie Humus sehr eiweißreich. Fava schmeckt toll als Brotaufstrich oder Dip für Gemüse, ideal zum Mitnehmen für's nächste Picknick oder die Grillparty
+Falls du eine Humus-Fan bist, dann probiere unbedingt diese Rezeptinspiration!
 
 <Ingredients yields="4 Personen">
 
@@ -40,13 +40,15 @@ Falls du eine Humus-Fan bist, dann probiere unbedingt diese Rezeptinspiration: F
 </Ingredients>
 <Preparation>
 
-1. Zwiebel schälen, einen davon vierteln und mit den Spalterbsen, Lorbeerblättern und Kurkuma in einen großen Topf geben
-2. mit Wasser bedecken und aufkochen
-3. danach auf kleine Hitze zurückschalten und ca. 1 Stunden weichkochen, dabei eventuell noch Wasser nachfüllen
-4. währenddessen restliche Zwiebel fein hacken und in Olivenöl ca. 10--15 Minuten goldbraun braten
-5. du kannst die Spalterbsen abseihen sobald sie beginnen zerfallen, dabei ca. 1/2 Tasse Kochwasser aufheben
-6. Lorbeerblätter entfernen, die gekochte Zwiebel bei den Erbsen lassen
-7. die Spalterbsen mit der Hälfte der gebratenen Zwiebeln, Knoblauch, 2 EL Zitronensaft, je 3 EL Oliven- und Raps/Walnussöl, 4 EL Erbsenkochwasser, 1 TL Salz und 1/2 TL frisch gemahlenen Pfeffer in einem Blender oder mit dem Pürierstab glattmixen
-8. in eine Schüssel füllen und mit den restlichen Zwiebeln garnieren
+1. Zwiebel schälen, einen davon vierteln und mit den Spalterbsen, Lorbeerblättern und Kurkuma in einen großen Topf geben.
+2. mit Wasser bedecken und aufkochen.
+3. danach auf kleine Hitze zurückschalten und ca. 1 Stunden weichkochen, dabei eventuell noch Wasser nachfüllen.
+4. währenddessen restliche Zwiebel fein hacken und in Olivenöl ca. 10--15 Minuten goldbraun braten.
+5. du kannst die Spalterbsen abseihen sobald sie beginnen zerfallen, dabei ca. 1/2 Tasse Kochwasser aufheben.
+6. Lorbeerblätter entfernen, die gekochte Zwiebel bei den Erbsen lassen.
+7. die Spalterbsen mit der Hälfte der gebratenen Zwiebeln, Knoblauch, 2 EL Zitronensaft, je 3 EL Oliven- und Raps/Walnussöl, 4 EL Erbsenkochwasser, 1 TL Salz und 1/2 TL frisch gemahlenen Pfeffer in einem Blender oder mit dem Pürierstab glattmixen.
+8. in eine Schüssel füllen und mit den restlichen Zwiebeln garnieren.
 
 </Preparation>
+
+Fava ist sozusagen das "griechische Humus", wobei hier nicht Kicher- sondern ursprünglich Platterbsen (_Lathyrus sativus_) die Basis bilden. Fava wird in Griechenland sehr gerne als Vorspeise gegessen. Es hält sich im Kühlschrank gut verschlossen ca. 3 Tage, und ist genauso wie Humus sehr eiweißreich. Fava schmeckt toll als Brotaufstrich oder Dip für Gemüse, ideal zum Mitnehmen für's nächste Picknick oder die Grillparty
