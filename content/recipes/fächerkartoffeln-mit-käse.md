@@ -18,6 +18,7 @@ tags:
     label: histaminarm
 timeToCook: 15 Minuten vorbereiten + ca. 40 Minuten backen
 ---
+Hier steht wieder mal die Kartoffel im Rampenlicht, diesmal kommt sie aus dem Backofen -- in toller Begleitung.
 
 <Ingredients yields="4 Personen">
 
@@ -42,4 +43,4 @@ timeToCook: 15 Minuten vorbereiten + ca. 40 Minuten backen
 
 </Preparation>
 
-> Dazu passt ein großer gemischter Salat oder Ofengemüse dass du natürlich gleich am selben Blech zubereiten kannst.
+> Dazu passt ein großer gemischter Salat oder Ofengemüse, das du natürlich gleich am selben Backblech zubereiten kannst.
