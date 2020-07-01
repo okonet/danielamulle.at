@@ -20,6 +20,7 @@ tags:
     label: fruktosearm
 timeToCook: 30 Minuten vorbereiten + 45 Minuten backen
 ---
+Diese vegetarische Abwandlung eines mexikanischen Klassikers ist in unserer Familie ein all-time-Favorite!
 
 <Ingredients yields="4 Personen">
 
@@ -39,15 +40,15 @@ timeToCook: 30 Minuten vorbereiten + 45 Minuten backen
 
 <Preparation>
 
-1. Sojagranulat in 300 ml heißem Wasser einweichen
-2. Zwiebel fein hacken und mit dem Knoblauch in Pflanzenöl goldgelb anbraten
-3. eingeweichtes Sojagranulat beigeben und einige Minuten anbraten
-4. Tomaten und Mais zugeben, mit den Gewürzen abschmecken
+1. Sojagranulat in 300 ml heißem Wasser einweichen.
+2. Zwiebel fein hacken und mit dem Knoblauch in Pflanzenöl goldgelb anbraten.
+3. eingeweichtes Sojagranulat beigeben und einige Minuten anbraten.
+4. Tomaten und Mais zugeben, mit den Gewürzen abschmecken.
 5. ca. 15 Minuten köcheln lassen, einstweilen Überguss zubereiten:
-6. Eier & Pflanzendrink mit dem Schneebesen versprudeln, salzen, pfeffern und Polenta einrühren
-7. Sauce in eine tiefe Auflaufform einfüllen, Überguss darüber verteilen
-8. mit dem Käse bestreuen und ca. 45 Minuten bei 170 Grad Heißluft backen
+6. Eier & Pflanzendrink mit dem Schneebesen versprudeln, salzen, pfeffern und Polenta einrühren.
+7. Sauce in eine tiefe Auflaufform einfüllen, Überguss darüber verteilen.
+8. mit dem Käse bestreuen und ca. 45 Minuten bei 170 Grad Heißluft backen.
 
 </Preparation>
 
-> Perfekter Begleiter ist ein Gurken- oder Kohlrabisalat mit Rahmdressing.
+> Perfekter Begleiter ist ein Gurken- oder Kohlrabisalat mit Joghurt- oder Rahmdressing.
