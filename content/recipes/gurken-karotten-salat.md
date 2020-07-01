@@ -39,12 +39,12 @@ Ein Salat gehört für mich überall dazu, wo Obst oder Gemüse nicht ohnehin be
 </Ingredients>
 <Preparation>
 
-1. Gurke längs halbieren, vierteln und in dünne Stücke schneiden
-2. Zwiebel schälen, halbieren und in Ringe schneiden
-3. Karotten putzen und mit dem Gemüseschäler in Streifen schneiden
-4. Kräuter fein hacken
-5. Walnüsse in kleine Stücke brechen
-6. alle Zutaten in einer Salatschüssel vermischen
-7. mit Olivenöl, Balsamicoessig, Salz und frisch geriebenem Pfeffer marinieren und genießen
+1. Gurke längs halbieren, vierteln und in dünne Stücke schneiden.
+2. Zwiebel schälen, halbieren und in Ringe schneiden.
+3. Karotten putzen und mit dem Gemüseschäler in Streifen schneiden.
+4. Kräuter fein hacken.
+5. Walnüsse in kleine Stücke brechen.
+6. alle Zutaten in einer Salatschüssel vermischen.
+7. mit Olivenöl, Balsamicoessig, Salz und frisch geriebenem Pfeffer marinieren und genießen.
 
 </Preparation>
