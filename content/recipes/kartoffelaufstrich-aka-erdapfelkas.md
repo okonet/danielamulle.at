@@ -22,8 +22,7 @@ tags:
     label: glutenfrei
 timeToCook: 30 Minuten kochen + 20 Minuten zubereiten
 ---
-
-Perfekter Begleiter ist ein Stück Vollkornbrot. Erdapfelkas ist aber auch eine tolle Beilage zu gegrilltem oder gebratenem Fleisch, schmeckt zur Brettljause oder als Dip für verschiedenes Gemüse.
+Dieser Aufstrich ist in ÖÖ fast so bekannt, wie die Sachertorte in Wien. Die Zubereitung ist von meiner Mutter & Oma mündlich überliefert, mit meinen kleinen ernährungstechnischen Optimierungen.
 
 <Ingredients yields="4 Personen">
 
@@ -38,12 +37,14 @@ Perfekter Begleiter ist ein Stück Vollkornbrot. Erdapfelkas ist aber auch eine 
 </Ingredients>
 <Preparation>
 
-1. Kartoffeln weichkochen
-2. einstweilen Zwiebel schälen und sehr fein hacken
-3. Kartoffeln noch heiß schälen und vierteln
-4. in eine Schüssel geben und mit einer Gabel oder einem Kartoffelstampfer grob zerdrücken
-5. mit Zwiebel, Sauerrahm, Kümmel, 1 TL Salz und 1/2 TL frisch gemahlenen Pfeffer gut vermischen
-6. mindestens 3 Stunden im Kühlschrank durchziehen lassen
-7. mit Paprikapulver & Kräutern bestreut servieren
+1. Kartoffeln weichkochen.
+2. einstweilen Zwiebel schälen und sehr fein hacken.
+3. Kartoffeln noch heiß schälen.
+4. in eine Schüssel geben, und mit einer Gabel oder einem Kartoffelstampfer grob zerdrücken
+5. mit Zwiebel, Sauerrahm, Kümmel, 1 TL Salz und 1/2 TL frisch gemahlenen Pfeffer gut vermischen.
+6. mindestens 3 Stunden im Kühlschrank durchziehen lassen.
+7. mit Paprikapulver & Kräutern bestreut servieren.
 
 </Preparation>
+
+Perfekter Begleiter ist ein Stück Vollkornbrot. Erdapfelkas ist aber auch eine tolle Beilage zu gegrilltem oder gebratenem Fleisch, schmeckt zur Brettljause oder als Dip für verschiedenes Gemüse.
