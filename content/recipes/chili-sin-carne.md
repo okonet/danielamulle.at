@@ -51,15 +51,15 @@ timeToCook: 20 Min zubereiten + 60 Min kochen
 4. 3 EL Pflanzenöl in einem großen Topf auf mittlerer Stufe erhitzen.
 5. Zwiebel und gepressten Knoblauch mit 1 TL Salz darin anbraten.
 6. Karotten, Sellerie, Paprika, Chilipulver, Kreukümmel und Zimt zugeben und gut durchrühren.
-7. pfeffern und ca. 5 Minuten weiterrösten.
+7. Pfeffern und ca. 5 Minuten weiterrösten.
 8. Sojagranulat zugeben und ein paar Minuten mitbraten.
 9. Kidneybohne, Kichererbsen und Tomaten unterrühren.
 10. Korianderstängel waschen, fein hacken und untermischen.
 11. Balsamicoessig zugeben, salzen und pfeffern.
-12. kurz aufkochen, dann auf kleine Stufe zurückdrehen.
-13. ca. 1 Stunde köcheln lassen, dabei immer wieder einmal umrühren.
-14. nochmals abschmecken und mit Sauerrahm & frischen Korianderblättern garniert servieren.
+12. Kurz aufkochen, dann auf kleine Stufe zurückdrehen.
+13. Ca. 1 Stunde köcheln lassen, dabei immer wieder einmal umrühren.
+14. Nochmals abschmecken und mit Sauerrahm & frischen Korianderblättern garniert servieren.
 
 </Preparation>
 
-Ich esse dazu sehr gerne Naturreis, du kannst das Chili aber auch mit frischem Brot & Gebäck, gekochten Kartoffeln, Couscous oder Basmatireis servieren. Natürlich kannst du das Chili auch klassisch mit 500 g Bio-Faschiertem. Es schmeckt übrigens am 2. Tag aufgewärmt noch aromatischer. Eine Sache, die natürlich bei Histaminintoleranz leider nicht empfehlenswert ist.
+Ich esse dazu sehr gerne Naturreis, du kannst das Chili aber auch mit frischem Brot & Gebäck, gekochten Kartoffeln, Couscous oder (Vollkorn)reis servieren. Natürlich kannst du das Chili auch klassisch mit 500 g Bio-Faschiertem zubereiten. Es schmeckt übrigens am 2. Tag aufgewärmt noch aromatischer.
