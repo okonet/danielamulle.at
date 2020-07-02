@@ -47,11 +47,9 @@ Der Alpenhumus ist ein flott gemixter, eiweißreicher Aufstrich, der dich gerne 
 <Preparation>
 
 1. Bohnen gut mit Wasser abspülen, das reduziert blähende Stoffe.
-2. alle Zutaten in einem Blender oder mit dem Pürierstab zu einer cremigen Masse mixen.
-3. nochmals abschmecken und zumindest 1 Stunde im Kühlschrank durchziehen lassen.
+2. Alle Zutaten in einem Blender oder mit dem Pürierstab zu einer cremigen Masse mixen.
+3. Nochmals abschmecken und zumindest 1 Stunde im Kühlschrank durchziehen lassen.
 
 </Preparation>
-
-
 
 Falls dich Bohnen leicht blähen, kannst du die Hälfte der Menge (200 g) durch gekochte Kartoffeln ersetzen. Je 200 g Kichererbsen & weiße Bohnen sind auch eine gute Alternative, da Kichererbsen deutlich weniger blähende Ballaststoffe enthalten.
