@@ -23,7 +23,7 @@ tags:
 timeToCook: 15 Minuten zubereiten + ca. 30 Minuten Koch- und Backzeit
 ---
 
-"Jeden Böhnchen gibt ein Tönchen" spricht der Volksmund richtigerweise. Nicht aber die Sorte, die ich dir in dieser Rezeptinspiration serviere.
+"Jeden Böhnchen gibt ein Tönchen" spricht der Volksmund richtigerweise. Nicht aber die Sorte, die ich dir in dieser Rezeptinspiration serviere:
 
 <Ingredients yields="4 Personen als Vorspeise">
 
@@ -42,15 +42,15 @@ timeToCook: 15 Minuten zubereiten + ca. 30 Minuten Koch- und Backzeit
 <Preparation>
 
 1. Mungobohnen großzügig mit Wasser bedecken und ca. 25 Minuten weichkochen.
-2. in einem feinmaschigen Sieb abseihen, mit kaltem Wasser abspülen und in einen Salatschüssel füllen.
+2. In einem feinmaschigen Sieb abseihen, mit kaltem Wasser abspülen und in einen Salatschüssel füllen.
 3. Karotten in ca. 5 cm lange Stifte schneiden, in eine ofenfeste Form geben, mit Rapsöl beträufeln und bei 200 Grad ca. 15 Minuten im Ofen bräunen, dabei ab und zu wenden.
-4. währenddessen 4 EL Olivenöl in einem kleinen Topf auf mittlerer Stufe erhitzen.
+4. Währenddessen 4 EL Olivenöl in einem kleinen Topf auf mittlerer Stufe erhitzen.
 5. Gewürze zugeben und solange rösten, bis die Samen poppen.
-6. gepressten Knoblauch unterrühren, kurz bräunen und den Topf vom Herd nehmen.
+6. Gepressten Knoblauch unterrühren, kurz bräunen und den Topf vom Herd nehmen.
 7. Koriander fein hacken.
 8. Gewürz-Knoblauch-Mischung, Essig, Zitronenschale und Koriander unter die Mungobohnen rühren.
 9. Karotten aus dem Backofen nehmen und mit dem Fetakäse ebenfalls untermischen.
-10. anrichten und sofort servieren.
+10. Anrichten und sofort servieren.
 
 </Preparation>
 
