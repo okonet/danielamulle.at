@@ -60,4 +60,4 @@ Linsen fristen ja in der traditionell österreichischen Küche eher ein Schatten
 
 </Preparation>
 
-Die Rezeptidee stammt von Yotam Ottolenghi.
+Die Rezeptidee stammt von [Yotam Ottolenghi](https://ottolenghi.co.uk/)
