@@ -22,6 +22,7 @@ tags:
     label: vegan
 timeToCook: 15 Minuten
 ---
+Dieser Dip ist ein toller Begleiter von Aufläufen, Strudeln, gebratenem oder gegrilltem Fleisch, Fisch und Gemüse.
 
 <Ingredients>
 
@@ -35,9 +36,10 @@ timeToCook: 15 Minuten
 <Preparation>
 
 1. Kräuter fein hacken.
-2. mit dem Joghurt vermengen.
-3. mit Salz, Pfeffer und Zitronensaft abschmecken.
+2. Mit dem Joghurt vermengen.
+3. Mit Salz, Pfeffer und Zitronensaft abschmecken.
 
 </Preparation>
+
 
 Photo by <a href="https://unsplash.com/@richwilliamsmith?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Rich Smith</a> on <a href="/s/photos/herbs?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a>
