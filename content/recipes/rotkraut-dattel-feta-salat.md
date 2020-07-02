@@ -39,14 +39,14 @@ Ein phänomenaler Salat, den du unbedingt probieren solltest! Die Idee stammt vo
 <Preparation>
 
 1. Rotkraut reiben oder in feine Streifen schneiden.
-2. mit 1 TL Salz verkneten.
-3. mit Zitronensaft, Olivenöl und Pfeffer kräftig würzen.
+2. Mit 1 TL Salz verkneten.
+3. Mit Zitronensaft, Olivenöl und Pfeffer kräftig würzen.
 4. Datteln & Petersilie fein hacken.
 5. Feta zerbröseln.
 6. Sesam in einer Pfanne ohne Fett goldgelb rösten.
 7. Datteln und Feta unter das Rotkraut mischen.
-8. mit Petersilie, Sesam (und Chiliflocken) bestreut servieren.
+8. Mit Petersilie, Sesam (und Chiliflocken) bestreut servieren.
 
 </Preparation>
 
-Der Salat schmeckt übrigens am besten, wenn er einige Stunden oder sogar über Nacht im Kühlschrank durchziehen kann. Du kannst ihn auch problemlos einige Tage im Kühlschrank aufheben.
+Der Salat schmeckt am besten, wenn er einige Stunden oder sogar über Nacht im Kühlschrank durchziehen kann. Du kannst ihn auch problemlos einige Tage im Kühlschrank aufheben.
