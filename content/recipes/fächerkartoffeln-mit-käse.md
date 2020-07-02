@@ -18,7 +18,7 @@ tags:
     label: histaminarm
 timeToCook: 15 Minuten vorbereiten + ca. 40 Minuten backen
 ---
-Hier steht wieder mal die Kartoffel im Rampenlicht, diesmal kommt sie aus dem Backofen -- in toller Begleitung.
+Hier steht wieder mal die Kartoffel im Rampenlicht, diesmal kommt sie aus dem Backofen, in toller Begleitung.
 
 <Ingredients yields="4 Personen">
 
@@ -31,16 +31,16 @@ Hier steht wieder mal die Kartoffel im Rampenlicht, diesmal kommt sie aus dem Ba
 </Ingredients>
 <Preparation>
 
-1. Backofen auf 200 Grad vorheizen
-2. Kartoffeln heiß waschen
-3. in Fächer schneiden, dazu zwischen 2 Kochlöffelstiele legen, damit du die Kartoffeln nicht ganz durchschneidest
-4. auf ein mit Backpapier ausgelegtes Blech legen
-5. mit Olivenöl bestreichen, salzen und pfeffern
-6. bei 180 Grad ca. 40 Minuten backen
-7. einstweilen Tofu oder Käse in dünne Scheiben schneiden
-8. Kartoffeln aus dem Ofen nehmen und Tofu bzw. Käse in den Kartoffelfächer stecken
-9. mit Rosmarin bestreuen und noch ca. 10 Minuten im Backofen bräunen
+1. Backofen auf 200 Grad vorheizen.
+2. Kartoffeln heiß waschen.
+3. In Fächer schneiden, dazu zwischen 2 Kochlöffelstiele legen, damit du die Kartoffeln nicht ganz durchschneidest.
+4. Auf ein mit Backpapier ausgelegtes Blech legen.
+5. Mit Olivenöl bestreichen, salzen und pfeffern.
+6. Bei 180 Grad ca. 40 Minuten backen.
+7. Einstweilen Tofu oder Käse in dünne Scheiben schneiden.
+8. Kartoffeln aus dem Ofen nehmen und Tofu bzw. Käse in den Kartoffelfächer stecken.
+9. Mit Rosmarin bestreuen und noch ca. 10 Minuten im Backofen bräunen.
 
 </Preparation>
 
-> Dazu passt ein großer gemischter Salat oder Ofengemüse, das du natürlich gleich am selben Backblech zubereiten kannst.
+Dazu passt ein großer gemischter Salat oder Ofengemüse, das du natürlich gleich am selben Backblech zubereiten kannst.
