@@ -42,4 +42,4 @@ Dieser Dip ist ein toller Begleiter von Aufläufen, Strudeln, gebratenem oder ge
 </Preparation>
 
 
-Photo by <a href="https://unsplash.com/@richwilliamsmith?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Rich Smith</a> on <a href="/s/photos/herbs?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a>
+Photo von <a href="https://unsplash.com/@richwilliamsmith?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Rich Smith</a> auf <a href="/s/photos/herbs?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a>
