@@ -23,7 +23,7 @@ tags:
 timeToCook: 15 Minuten
 ---
 
-Ein Salat gehört für mich überall dazu, wo Obst oder Gemüse nicht ohnehin bereits die Hauptrolle spielt. Hier bekommt die Gurke mal ganz andere Salat-Partner, darunter einen recht farbenfrohen.
+Ein Salat gehört für mich überall dazu, wo Obst oder Gemüse nicht ohnehin bereits die Hauptrolle spielen. Hier bekommt die Salatgurke mal etwas andere Partner, darunter einen recht farbenfrohen.
 
 <Ingredients yields="4 Personen">
 
@@ -44,7 +44,7 @@ Ein Salat gehört für mich überall dazu, wo Obst oder Gemüse nicht ohnehin be
 3. Karotten putzen und mit dem Gemüseschäler in Streifen schneiden.
 4. Kräuter fein hacken.
 5. Walnüsse in kleine Stücke brechen.
-6. alle Zutaten in einer Salatschüssel vermischen.
-7. mit Olivenöl, Balsamicoessig, Salz und frisch geriebenem Pfeffer marinieren und genießen.
+6. Alle Zutaten in einer Salatschüssel vermischen.
+7. Mit Olivenöl, Balsamicoessig, Salz und frisch geriebenem Pfeffer marinieren und genießen.
 
 </Preparation>
