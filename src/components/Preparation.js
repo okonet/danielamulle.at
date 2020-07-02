@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { Styled } from "theme-ui"
+import { Box, Styled } from "theme-ui"
 
 function Preparation({ children }) {
   const [currentStep, setCurrentStep] = useState(-1)
@@ -11,7 +11,8 @@ function Preparation({ children }) {
           React.Children.map(child.props.children, (listItem, index) => {
             const isHighlighted = currentStep === index
             return (
-              <Styled.li
+              <Box
+                as="li"
                 onClick={() =>
                   isHighlighted ? setCurrentStep(-1) : setCurrentStep(index)
                 }
@@ -28,7 +29,7 @@ function Preparation({ children }) {
                 }}
               >
                 {listItem.props.children}
-              </Styled.li>
+              </Box>
             )
           })
         )}
