@@ -35,7 +35,7 @@ ingredients:
   - Saft 1/2 Zitrone
   - Olivenöl
 ---
-Dieser Salat eignet sich daher wunderbar zum Mitnehmen, sei es zum Mittagessen unterwegs, einem Picknick oder einer Grillerei. 
+Dieser Salat eignet sich wunderbar zum Mitnehmen. Er schmeckt toll zum Mittagessen unterwegs, und ist wahrscheinlich das Highlight deiner nächsten Picknicks oder Parties. 
 
 <Ingredients yields="4 Personen als Vorspeise">
 
@@ -57,17 +57,17 @@ Dieser Salat eignet sich daher wunderbar zum Mitnehmen, sei es zum Mittagessen u
 <Preparation>
 
 1. Hirse in der doppelten Menge Wasser und 1 TL Salz aufkochen.
-2. zurückschalten und ca. 15 Minuten weichdünsten.
-3. einstweilen Zwiebel schälen und hacken.
+2. Zurückschalten und ca. 15 Minuten weichdünsten.
+3. Einstweilen Zwiebel schälen und hacken.
 4. Karotte und Sellerie kleinschneiden.
 5. Tomaten kurz abtropfen lassen, das Öl dabei gleich in der Salatschüssel auffangen.
 6. Tomaten klein schneiden.
-7. ausgekühlte Hirse mit allen Zutaten gut vermischen.
+7. Ausgekühlte Hirse mit allen Zutaten gut vermischen.
 8. Knoblauch dazupressen, Paprikapulver und Kräuter unterrühren.
-9. mit Olivenöl und Zitronensaft marinieren.
-10. mit Salz und Pfeffer abschmecken.
-11. idealerweise lässt du den Salat vor dem Servieren im Kühlschrank ein paar Stunden durchziehen.
+9. Mit Olivenöl und Zitronensaft marinieren.
+10. Mit Salz und Pfeffer abschmecken.
+11. Idealerweise lässt du den Salat vor dem Servieren im Kühlschrank ein paar Stunden durchziehen.
 
 </Preparation>
 
-Wie alle Getreidesalate schmeckt auch dieser am 2. Tag erst so richtig gut. Frischer Zitronensaft ersetzt bewusst den Essig: sein Vitamin C hilft deinem Körper, den sehr hohen Eisengehalt der Hirse optimal auszunutzen.
+Wie alle Getreidesalate schmeckt auch dieser am 2. Tag noch aromatischer. Frischer Zitronensaft ersetzt bewusst den Essig: sein Vitamin C hilft deinem Körper, den sehr hohen Eisengehalt der Hirse optimal auszunutzen.
