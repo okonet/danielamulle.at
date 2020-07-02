@@ -46,12 +46,12 @@ Dakos ist ein Gericht aus Kreta: Tomaten, Kräutern & Feta werden dabei auf Paxi
 </Ingredients>
 <Preparation>
 
-1. Zwiebel schälen, halbieren und in dünne Streifen schneiden
-2. Salatgurke vierteln und in Stücke schneiden
-3. Tomaten vierteln
-4. alle Zutaten in einer Schüssel miteinander vermischen
-5. mit Öl & Essig marinieren, salzen & pfeffern
-6. erst ca. 15 Minuten vor dem Servieren das Schüttelbrot in kleinen Stücken untermischen, damit es nicht zu weich wird
+1. Zwiebel schälen, halbieren und in dünne Streifen schneiden.
+2. Salatgurke vierteln und in Stücke schneiden.
+3. Tomaten vierteln.
+4. Alle Zutaten in einer Schüssel miteinander vermischen.
+5. Mit Öl & Essig marinieren, salzen & pfeffern.
+6. Erst ca. 15 Minuten vor dem Servieren das Schüttelbrot in kleinen Stücken untermischen, damit es nicht zu weich wird.
 
 </Preparation>
 
