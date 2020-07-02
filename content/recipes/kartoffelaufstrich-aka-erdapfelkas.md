@@ -22,7 +22,7 @@ tags:
     label: glutenfrei
 timeToCook: 30 Minuten kochen + 20 Minuten zubereiten
 ---
-Dieser Aufstrich ist in ÖÖ fast so bekannt, wie die Sachertorte in Wien. Die Zubereitung ist von meiner Mutter & Oma mündlich überliefert, mit meinen kleinen ernährungstechnischen Optimierungen.
+Dieser Aufstrich ist in Oberösterreich so bekannt, wie die Sachertorte in Wien. Das Rezept ist von meiner Mutter mündlich überliefert, mit meinen kleinen ernährungstechnischen Optimierungen.
 
 <Ingredients yields="4 Personen">
 
@@ -40,10 +40,10 @@ Dieser Aufstrich ist in ÖÖ fast so bekannt, wie die Sachertorte in Wien. Die Z
 1. Kartoffeln weichkochen.
 2. einstweilen Zwiebel schälen und sehr fein hacken.
 3. Kartoffeln noch heiß schälen.
-4. in eine Schüssel geben, und mit einer Gabel oder einem Kartoffelstampfer grob zerdrücken
-5. mit Zwiebel, Sauerrahm, Kümmel, 1 TL Salz und 1/2 TL frisch gemahlenen Pfeffer gut vermischen.
-6. mindestens 3 Stunden im Kühlschrank durchziehen lassen.
-7. mit Paprikapulver & Kräutern bestreut servieren.
+4. In eine Schüssel geben, und mit einer Gabel oder einem Kartoffelstampfer grob zerdrücken
+5. Mit Zwiebel, Sauerrahm, Kümmel, 1 TL Salz und 1/2 TL frisch gemahlenen Pfeffer gut vermischen.
+6. Mindestens 3 Stunden im Kühlschrank durchziehen lassen.
+7. Mit Paprikapulver & Kräutern bestreut servieren.
 
 </Preparation>
 
