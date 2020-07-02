@@ -18,7 +18,7 @@ tags:
     label: histaminfrei
 timeToCook: 30 Minuten vorbereiten + ca. 40 Minuten backen
 ---
-Dieses Rezept kannst du nach Lust und Laune abwandeln. Probier's aus und backe einfach mal deine Lieblingsvariante!
+Dieses Rezept kannst du nach Lust und Laune abwandeln. Backe einfach deine Lieblingsvariante!
 
 <Ingredients yields="1 Quiche mit 25 cm Durchmesser">
 
@@ -65,7 +65,7 @@ Dieses Rezept kannst du nach Lust und Laune abwandeln. Probier's aus und backe e
 
 </Preparation>
 
-Der Teig lässt sich übrigens super schon am Vortag vorbereiten und im Kühlschrank lagern. Den Belag kannst du natürlich variieren, je nachdem, worauf du Lust bzw. was du gerade zuhause hast, z.B.:
+Der Teig lässt sich übrigens super am Vortag vorbereiten und im Kühlschrank lagern. Den Belag kannst du natürlich variieren, je nachdem, worauf du Lust bzw. was du gerade zuhause hast, z.B.:
 - 1 Stange Lauch oder 1 große Zwiebel oder 1 Bund Frühlingszwiebel
 - 125 g Speck- oder Schinkenwürfel
 - diverses Gemüse wie Brokkoli, Kürbis, Kohl, Kraut, Blattspinat, Rucola oder Bärlauch, etc., 150 g Fetakäse- oder 150 g Tofu-Würfel 
