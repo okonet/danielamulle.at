@@ -24,6 +24,7 @@ tags:
     label: glutenfrei
 timeToCook: 15 Minuten
 ---
+Diese erfrischende Sauce passt sehr gut zu Gemüse, Aufläufen, Strudeln, gebratenem oder gegrilltem Fleisch & Fisch. Sie ist auch ein tolles Salatdressing:
 
 <Ingredients>
 
