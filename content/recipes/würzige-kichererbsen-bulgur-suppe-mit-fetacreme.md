@@ -21,7 +21,7 @@ tags:
 timeToCook: 30 Minuten vorbereiten + 30 Minuten kochen
 ---
 
-Diese gehaltvolle Suppe kannst du durchaus auch als Hauptgericht genießen. Wenn du statt Bulgur Vollkorncouscous verwendest, wird die Getreideeinlage etwas feiner. Du kannst ihn direkt in die fertige Suppe geben, und sparst dir dadurch die extra Kochzeit (Punkt 10).
+Diese gehaltvolle Suppe kannst du auch als Hauptgericht genießen. Wenn du statt Bulgur Vollkorncouscous verwendest, wird die Getreideeinlage etwas feiner. Du kannst ihn direkt in die fertige Suppe geben, und sparst dir so die extra Kochzeit (Punkt 10).
 
 <Ingredients yields="4 Personen">
 
@@ -39,7 +39,7 @@ Diese gehaltvolle Suppe kannst du durchaus auch als Hauptgericht genießen. Wenn
 - Rapsöl
 - Salz und Pfeffer
 
-### für die Fetacreme (optional)
+### Fetacreme (optional)
 
 - 100 g Fetakäse
 - 60 g Sauerrahm
