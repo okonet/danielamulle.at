@@ -43,12 +43,12 @@ Achtung, dieses Rezept birgt Suchtgefahr! Diese Kekse sind superlecker, eiweißr
 
 1. Backofen auf 175 Grad vorheizen.
 2. Kichererbsen/Bohnen abseihen und gut mit Wasser abspülen.
-3. gemeinsam mit Nussmus, Haferflocken, Honig, Kakaopulver, Vanillezucker, Backpulver und Salz in einem Blender zu einem dicken Teig mixen.
-4. wenn der Teig zu fest ist, kannst du etwas Wasser dazugeben.
-5. je 2-3 EL des Teigs auf ein mit Backpapier ausgelegtes Backblech setzen.
-6. mit feuchten Händen oder einem Löffel flachdrücken.
+3. Gemeinsam mit Nussmus, Haferflocken, Honig, Kakaopulver, Vanillezucker, Backpulver und Salz in einem Blender zu einem dicken Teig mixen.
+4. Wenn der Teig zu fest ist, kannst du etwas Wasser dazugeben.
+5. Je 2-3 EL des Teigs auf ein mit Backpapier ausgelegtes Backblech setzen.
+6. Mit feuchten Händen oder einem Löffel flachdrücken.
 7. Schokostücke darauf verteilen.
-8. ca. 15 Minuten bei 175 Grad Heißluft backen.
-9. auf dem Blech ca. 5 Minuten auskühlen lassen, dann auf ein Kuchengitter transferieren und vollständig auskühlen lassen.
+8. Ca. 15 Minuten bei 175 Grad Heißluft backen.
+9. Auf dem Blech ca. 5 Minuten auskühlen lassen, dann auf ein Kuchengitter transferieren und vollständig auskühlen lassen.
 
 </Preparation>
