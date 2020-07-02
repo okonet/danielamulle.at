@@ -22,7 +22,7 @@ tags:
     label: glutenfrei
 timeToCook: 20 Minuten vorbereiten + ca. 35 Minuten backen
 ---
-Mealprep ist bei mir großgeschrieben: ich koche z.B. immer gleich die doppelte Menge Getreide, und spare mir die Zeit am nächsten Tag. Diesmal war noch Reis übrig, den ich in eine süße Köstlichkeit verwandelt habe.
+Mealprep ist bei mir großgeschrieben: Ich koche z.B. immer gleich die doppelte Menge Getreide, und spare mir die Zeit am nächsten Tag. Diesmal war noch Reis übrig, den ich in eine süße Köstlichkeit verwandelt habe.
 
 <Ingredients yields="4 Personen">
 
