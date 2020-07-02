@@ -35,7 +35,7 @@ ingredients:
   - 1 TL Zimt
   - eventuell 2 EL brauner Zucker (bei Bedarf Reissirup)
 ---
-Die Overnight Oats sind wirklich superschnell zubereitet. Sie eignen sich sehr gut für's Frühstückm und sind und auch ein toller Snack für unterwegs.
+Die Overnight Oats sind wirklich superschnell zubereitet. Sie eignen sich sehr gut für's Frühstück, und sind und auch ein toller Snack für unterwegs.
 
 <Ingredients yields="2 Personen als Snack">
 
@@ -50,9 +50,9 @@ Die Overnight Oats sind wirklich superschnell zubereitet. Sie eignen sich sehr g
 </Ingredients>
 <Preparation>
 
-1. alle Zutaten bis auf den Zucker in einem verschließbaren Gefäß gut miteinander verrühren.
-2. fest verschließen und über Nacht in den Kühlschrank stellen.
-3. in der Früh eventuell noch mit etwas Pflanzendrink mischen, mit Zucker abschmecken und genießen.
+1. Alle Zutaten bis auf den Zucker in einem verschließbaren Gefäß gut miteinander verrühren.
+2. Fest verschließen und über Nacht in den Kühlschrank stellen.
+3. In der Früh eventuell noch mit etwas Pflanzendrink mischen, mit Zucker abschmecken und genießen.
 
 </Preparation>
 
