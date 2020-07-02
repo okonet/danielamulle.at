@@ -23,7 +23,7 @@ tags:
 timeToCook: 15 Minuten vorbereiten + 15 Minuten braten oder backen
 ---
 
-Mir schmecken die Taler am besten mit einem großen bunten Salat. Joghurt-Kräuter-Dip, Fetacreme oder Zitronen-Basilikum-Joghurt sind ebenfalls perfekte Begleiter. 
+Mir schmecken die Taler am besten mit einem großen bunten Salat. Joghurt-Kräuter-Dip, Fetacreme oder Zitronen-Basilikum-Joghurt sind perfekte Begleiter. 
 
 <Ingredients yields="ca. 15 Stück, ja nach Größe">
 
@@ -41,12 +41,12 @@ Mir schmecken die Taler am besten mit einem großen bunten Salat. Joghurt-Kräut
 1. Karotte waschen und fein reiben.
 2. Pflanzendrink aufkochen.
 3. Polenta einrieseln lassen und unter ständigem Rühren dick einkochen
-4. vom Herd nehmen, salzen, pfeffern und mit Karotte, Kürbiskernen und Käse vermischen.
-5. etwas Rapsöl in einer Pfanne auf mittlerer Stufe erhitzen.
-6. je 4 Mal 1 EL der Masse hineingeben und flachstreichen.
-7. ca. 4 Minuten knusprig braten.
+4. Vom Herd nehmen, salzen, pfeffern und mit Karotte, Kürbiskernen und Käse vermischen.
+5. Etwas Rapsöl in einer Pfanne auf mittlerer Stufe erhitzen.
+6. Je 4 Mal 1 EL der Masse hineingeben und flachstreichen.
+7. Ca. 4 Minuten knusprig braten.
 8. Taler wenden und auch die andere Seite anbraten.
-9. warm oder kalt servieren.
+9. Warm oder kalt servieren.
 
 </Preparation>
 
