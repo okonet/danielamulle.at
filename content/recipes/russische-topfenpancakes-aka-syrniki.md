@@ -23,7 +23,7 @@ tags:
 timeToCook: 15 Minuten vorbereiten + 15 Minuten braten
 ---
 
-Diese einfache, leckere Eiweißbombe, die nicht nur bei Kindern äußerst gut ankommt, verdanke ich meiner Schwiegermutter. In Russland werden Syrniki mit Sauerrahm (сметана) & Marmelade (варенье) gegessen.
+Diese einfache, leckere Eiweißbombe, die nicht nur bei Kindern äußerst gut ankommt, verdanke ich meiner Schwiegermutter:
 
 <Ingredients yields="ca. 15 Stück">
 
@@ -42,11 +42,12 @@ Diese einfache, leckere Eiweißbombe, die nicht nur bei Kindern äußerst gut an
 2. Topfen, Vollkornmehl, Salz und Ei verrühren.
 3. Teig ca. 10 Minuten rasten lassen.
 4. Rosinen abgießen und untermischen.
-5. falls der Teig zu klebrig ist noch etwas Mehl unterrühren.
-6. aus je 1 EL der Masse mit nassen Händen kleine Kugeln formen.
+5. Falls der Teig zu klebrig ist noch etwas Mehl unterrühren.
+6. Aus je 1 EL der Masse mit nassen Händen kleine Kugeln formen.
 7. Teigkugeln flachdrücken und auf beiden Seiten einige Minuten in etwas Rapsöl goldbraun braten.
-8. heiß oder lauwarm genießen.
+8. Heiß oder lauwarm genießen.
 
 </Preparation>
 
-Damit die Teig-Konsistenz stimmt, ist es entscheidend, dass du Bröseltopfen verwendest. Er kommt nämlich dem trockenen russischen Topfen (творог) am nächsten. Wenn du die Rosinen durch (Heidel)beeren ersetzt, hast du eine fruktosearme Variante.
+In Russland werden Syrniki mit Sauerrahm (сметана) & Marmelade (варенье) gegessen.
+Damit die Teig-Konsistenz stimmt, ist es entscheidend, dass du Bröseltopfen verwendest. Er kommt nämlich dem trockenen russischen Topfen (творог) am nächsten. Wenn du die Rosinen durch (Heidel)beeren ersetzt, hast du eine fruktosearme Variante. 
