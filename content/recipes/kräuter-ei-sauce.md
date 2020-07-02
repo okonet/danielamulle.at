@@ -23,7 +23,7 @@ tags:
 timeToCook: 20 Minuten
 ---
 
-Diese köstliche kalte Kräutersauce ist nicht nur schnell gemacht. Sie schmeckt auch hervorragend und ist aufgrund der vielen Kräuter auch vollgepackt mit Spurenelementen, Mineralstoffen und Vitaminen.
+Diese köstliche kalte Kräutersauce ist nicht nur schnell gemacht, sie schmeckt auch hervorragend! Aufgrund der vielen Kräuter ist sie auch vollgepackt mit Spurenelementen, Mineralstoffen und Vitaminen.
 
 <Ingredients yields="6 Personen">
 
@@ -43,9 +43,9 @@ Diese köstliche kalte Kräutersauce ist nicht nur schnell gemacht. Sie schmeckt
 2. Kräuter fein hacken.
 3. Topfen, Sauerrahm, Joghurt und Zitronensaft glattrühren.
 4. Kräuter und Eier untermischen.
-5. mit Essig, Salz und Pfeffer abschmecken.
-6. vor dem Servieren einige Stunden im Kühlschrank durchziehen lassen.
+5. Mit Essig, Salz und Pfeffer abschmecken.
+6. Vor dem Servieren einige Stunden im Kühlschrank durchziehen lassen.
 
 </Preparation>
 
-Das Rezept ist angelehnt an "Frankfurter Grie Soß", eine hessische Spezialität, die ich 2018 in Wiesbaden kennengelernt habe. Sie passt nicht nur perfekt zu Gemüse wie z.B. Spargel, sondern ist auch herrlich zu Gegrilltem oder als Dip beim nächsten Picknick.
+Das Rezept ist angelehnt an "Frankfurter Grie Soß", eine hessische Spezialität, die ich vor einigen Jahren in Wiesbaden kennengelernt habe. Sie passt nicht nur perfekt zu Gemüse wie z.B. Spargel, sondern ist auch herrlich zu Gegrilltem oder als Dip beim nächsten Picknick.
