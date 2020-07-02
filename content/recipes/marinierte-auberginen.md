@@ -19,7 +19,7 @@ tags:
 timeToCook: '15 Minuten vorbereiten, ca. 12 Stunden marinieren + ca. 30 Minuten backen'
 ---
 
-Ich habe dieses einfach-leckere Rezept bei meiner Tante als "Eingelege Schweinsmedaillons" kennengelernt. Es ist im Nu vorbereiten, kocht sich quasi von alleine, und schmeckt absolut köstlich. Und meine vegetarische Variante schmeckt mir tatsächlich noch besser als das Original. Den Vollkornreis habe ich diesmal mit 1 TL Kurkuma (Gelbwurz) farblich etwas aufgepeppt.
+Ich habe dieses einfach, leckere Rezept bei meiner Tante als "Eingelege Schweinsmedaillons" kennengelernt. Es ist im Nu vorbereiten, kocht sich quasi von alleine, und schmeckt absolut köstlich. Und meine vegetarische Variante schmeckt mir tatsächlich noch besser als das Original. Den Vollkornreis habe ich diesmal mit 1 TL Kurkuma (Gelbwurz) farblich etwas aufgepeppt.
 
 <Ingredients yields="4 Personen">
 
@@ -40,7 +40,7 @@ Ich habe dieses einfach-leckere Rezept bei meiner Tante als "Eingelege Schweinsm
 1. Auberginen in 1 cm dicke Scheiben schneiden und nebeneinander in eine große ofenfeste Form legen.
 2. Schlagobers, Soja creme cuisine, Knoblauch, Paprikapulver, Kräuter, 1 TL Salz und 1/2 TL Pfeffer gut verrühren.
 3. Auberginen damit bedecken und ca. 12 Stunden (am besten über Nacht) durchziehen lassen.
-4. mit Käse & Sesam bestreuen und bei 200 Grad ca. 30 Minuten backen.
-5. mit gekochtem Getreide deiner Wahl servieren.
+4. Mit Käse & Sesam bestreuen und bei 200 Grad ca. 30 Minuten backen.
+5. Mit gekochtem Getreide deiner Wahl servieren.
 
 </Preparation>
