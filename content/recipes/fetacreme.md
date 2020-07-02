@@ -24,6 +24,7 @@ tags:
     label: glutenfrei
 timeToCook: 15 Minuten
 ---
+Ob als Sauce zu Gegrilltem, als Dip, Aufstrich oder zum Aufpeppen von Suppen oder Salaten: Eine sehr feine Rezept-Idee von [Yotam Ottolenghi](https://ottolenghi.co.uk/). 
 
 <Ingredients>
 
@@ -36,7 +37,7 @@ timeToCook: 15 Minuten
 </Ingredients>
 <Preparation>
 
-1. zerbröselten Feta, Sauerrahm und Kräuter in einem kleinen Blender oder mit dem Pürierstab einige Minuten cremig mixen.
-2. mit Salz & Pfeffer abschmecken.
+1. Zerbröselten Feta, Sauerrahm und Kräuter in einem kleinen Blender oder mit dem Pürierstab einige Minuten cremig mixen.
+2. Mit Salz und Pfeffer abschmecken.
 
 </Preparation>
