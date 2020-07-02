@@ -23,7 +23,7 @@ tags:
 timeToCook: 15 Minuten einweichen + 10 Minuten zubereiten
 ---
 
-Diese Nascherei ist im handumdrehen fertig, echt lecker & noch dazu gesund. Natürlich kannst du die Süsse nach deinem Geschmack anpassen. Für eine fruktosefreie Variante lass' die Trockenfrüchte weg und süsse mit Reissirup.
+Diese Nascherei ist im handumdrehen fertig, echt lecker und noch dazu gesund. Natürlich kannst du die Süsse nach deinem Geschmack anpassen. Für eine fruktosefreie Variante lass' die Trockenfrüchte weg, und süsse mit Reissirup.
 
 <Ingredients yields="4 Naschkatzen">
 
