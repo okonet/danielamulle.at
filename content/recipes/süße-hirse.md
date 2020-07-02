@@ -23,7 +23,7 @@ tags:
 timeToCook: 10 Minuten vorbereiten + ca. 30 Minuten kochen
 ---
 
-Ich koche die Beerensauce & Hirse immer schon am Vorabend, sodass ich in der Früh alles nur noch aufwärmen brauche. Zum Mitnehmen für unterwegs kannst Du die Hirse & Beerensauce perfekt in einem Schraubglas anrichten.
+Meine Familie isst Süße Hirse sehr gerne zum Frühstück. Dazu koche ich alles immer schon am Vorabend, sodass in der Früh alles bereits fertig ist. Zum Mitnehmen für unterwegs kannst Du die Hirse & Beerensauce perfekt in einem Schraubglas anrichten.
 
 <Ingredients yields="6 Personen als Jause">
 
