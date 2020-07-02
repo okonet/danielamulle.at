@@ -20,7 +20,7 @@ tags:
     label: glutenfrei
 timeToCook: 40 Minuten Grillzeit + 30 Minuten vor/zubereiten
 ---
-Eine Idee für ein flottes Essen, das sich fast alleine kocht, und auch wunderbar für die Grillsaison passt:
+Eine Idee für ein flottes Essen, das sich fast alleine kocht, und auch wunderbar für die Grillsaison passt.
 
 <Ingredients yields="4 Personen">
 
@@ -44,16 +44,16 @@ Eine Idee für ein flottes Essen, das sich fast alleine kocht, und auch wunderba
 
 1. Backofen auf 200 Grad einschalten.
 2. Auberginen/Zucchini waschen und in größere Würfel schneiden.
-3. in einer Schüssel mit Salz, Pfeffer und ca 3 EL Olivenöl vermischen.
-4. auf einem mit Backpapier ausgelegtem Blech oder einer Grilltasse verteilen.
-5. ca. 30 - 40 Minuten im Ofen oder am Griller rösten, dabei das Blech immer wieder mal schütteln bzw. das Gemüse wenden.
-6. einstweilen Zwiebel schälen und fein hacken.
+3. In einer Schüssel mit Salz, Pfeffer und ca 3 EL Olivenöl vermischen.
+4. Auf einem mit Backpapier ausgelegtem Blech oder einer Grilltasse verteilen.
+5. Ca. 30 - 40 Minuten im Ofen oder am Griller rösten, dabei das Blech immer wieder mal schütteln bzw. das Gemüse wenden.
+6. Einstweilen Zwiebel schälen und fein hacken.
 7. Cocktailtomaten waschen und halbieren.
 8. 3 EL Rapsöl in einem mittelgroßen Topf erhitzen und die Zwiebel darin ca 5 Minuten goldbraun braten.
 9. Tomatenpaste, gemörserten Kreuzkümmel und gepressten Knoblauch dazugeben und ein paar Minuten braten, bis es duftet.
 10. Cocktailtomaten und 1 TL Salz unterrühren, mit Wasser aufgießen und aufkochen.
 11. Hirse einrieseln lassen, auf geringe Hitze zurückschalten und weich dünsten -- das dauert ca. 20 Minuten.
-12. währenddessen Basilikum kleinschneiden, mit Joghurt und Zitronenschale vermischen und mit Zitronensaft und Pfeffer abschmecken.
+12. Währenddessen Basilikum kleinschneiden, mit Joghurt und Zitronenschale vermischen und mit Zitronensaft und Pfeffer abschmecken.
 13. Hirse auf 4 Teller verteilen und mit einem Topping aus Gemüse & Joghurt servieren.
 
 </Preparation>
