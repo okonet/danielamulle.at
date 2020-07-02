@@ -52,17 +52,17 @@ Tabouleh wird im Libanon und Syrien gerne als Beilage zu Fisch- oder Fleischgeri
 </Ingredients>
 <Preparation>
 
-1. Buchweizen in 260 ml Wasser + 1/2 TL Salz weichkochen
-2. währenddessen Petersilie, Tomaten und Minze sauber waschen
-3. Zwiebel schälen und fein hacken
-4. Tomaten mit einem Wellenschliffmesser in sehr kleine Würfel schneiden
-5. Petersilienstängel und -blätter sehr fein hacken, ebenso die Minzblätter
-6. gekochten Buchweizen in einem feinen Sieb mit kalten Wasser abspülen und in eine Salatschüssel füllen
-8. mit Petersilie, Tomatenwürfeln, Zwiebel, zerbröseltem Feta, Zitronensaft, Minze und den Pflanzenölen gut vermischen
-9. eventuell noch die getrocknet gemörserten Gewürze zugeben
-10. mit Salz und Pfeffer abschmecken
-11. idealerweise ein paar Stunden im Kühlschrank durchziehen lassen, dann ist der Salat so richtig aromatisch - also eventuell am Vorabend zubereiten
+1. Buchweizen in 260 ml Wasser + 1/2 TL Salz weichkochen.
+2. Währenddessen Petersilie, Tomaten und Minze sauber waschen.
+3. Zwiebel schälen und fein hacken.
+4. Tomaten mit einem Wellenschliffmesser in sehr kleine Würfel schneiden.
+5. Petersilienstängel und -blätter sehr fein hacken, ebenso die Minzblätter.
+6. Gekochten Buchweizen in einem feinen Sieb mit kalten Wasser abspülen und in eine Salatschüssel füllen.
+8. Mit Petersilie, Tomatenwürfeln, Zwiebel, zerbröseltem Feta, Zitronensaft, Minze und den Pflanzenölen gut vermischen.
+9. Eventuell noch die getrocknet gemörserten Gewürze zugeben.
+10. Mit Salz und Pfeffer abschmecken.
+11. Wenn du den Salat ein paar Stunden im Kühlschrank durchziehen lässt, dann ist er so richtig aromatisch.
 
 </Preparation>
 
- Tabouleh ist ursprünglich ein Petersilien-Bulgur-Salat. Auf 1 Teil Bulgur kommen dabei bis zu 5 (!) Teile Petersilie, was den einzigartigen Geschmack ausmacht. Selbstverständlich kannst du statt Buchweizen oder Bulgur dein Lieblingsgetreide verarbeiten: auch Hirse, Couscous oder Grünkern machen sich super im Tabouleh.
+ Tabouleh ist ursprünglich ein Petersilien-Bulgur-Salat. Auf 1 Teil Bulgur kommen dabei bis zu 5 (!) Teile Petersilie, was den einzigartigen Geschmack ausmacht. Selbstverständlich kannst du statt Buchweizen oder Bulgur dein Lieblingsgetreide verarbeite, denn auch Hirse, Couscous oder Grünkern machen sich super im Tabouleh.
