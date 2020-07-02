@@ -29,7 +29,7 @@ Diese Torte schmeckt supersaftig-schokoladig, und ist noch dazu vollgepackt mit 
 - 100 g Kokosraspeln
 - 100 g Honig
 - 150 g Margarine
-- 3 Bananen
+- 3 reife Bananen
 - 2 Eier
 - 1 großer Apfel
 - 1/2 TL Zimt
@@ -44,11 +44,11 @@ Diese Torte schmeckt supersaftig-schokoladig, und ist noch dazu vollgepackt mit 
 <Preparation>
 
 1. Apfel schälen und fein reiben, Bananen zerdrücken.
-2. alle Zutaten gut miteinander vermixen.
+2. Alle Zutaten gut miteinander vermixen.
 3. Springform befetten und mit Haferflocken ausstreuen.
-4. mit grob gehackten Nüssen bestreuen.
-5. bei 170 Grad ca. 50 Minuten backen.
-6. die Torte nicht stürzen, sondern nur den Rand der Form entfernen.
+4. Mit grob gehackten Nüssen bestreuen.
+5. Bei 170 Grad ca. 50 Minuten backen.
+6. Die Torte nicht stürzen, sondern nur den Rand der Form entfernen.
 
 </Preparation>
 
