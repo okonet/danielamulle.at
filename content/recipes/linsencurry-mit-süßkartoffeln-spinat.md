@@ -45,16 +45,16 @@ In diesem eiweißreichen Curry kommt "ausnahmsweise" Instant-Currypaste vor, abe
 1. Süßkartoffel schälen und in 2 cm große Würfel schneiden.
 2. Zwiebel und Knoblauch schälen, Zwiebel fein hacken.
 3. 2 EL Rapsöl in einer großen Pfanne / Wok erhitzen, die Süßkartoffelwürfel darin rundherum braun anbraten.
-4. herausgeben und beiseitestellen.
-5. noch 1 EL Rapsöl in die Pfanne geben und den gehackten Zwiebel bei mittlerer Hitze ca. 5 Minuten glasig dünsten.
+4. Herausnehmen und beiseitestellen.
+5. Noch 1 EL Rapsöl in die Pfanne geben und den gehackten Zwiebel bei mittlerer Hitze ca. 5 Minuten glasig dünsten.
 6. Currypaste, Kurkumapulver, Knoblauch, Ingwer und Chili dazugeben und ca. 1 Minute rösten, bis die Mischung duftet.
 7. Linsen, Gemüsesuppe und Wasser unterrühren und ca. 20 Minuten bei geringer Hitze köcheln lassen, bis die Linsen weich sind.
 8. Kokosmilch und die Süßkartoffelwürfel einrühren.
-9. noch ca. 15 Minuten weiter köcheln, bis die Linsen cremig zerfallen.
+9. Noch ca. 15 Minuten weiter köcheln, bis die Linsen cremig zerfallen.
 10. Spinat zugeben und ca. 3 Minuten im Curry zusammenfallen lassen.
-11. mit Limettensaft abschmecken.
-12. mit frischen Korianderblättern und Kokosraspeln garnieren und mit (Vollkorn)reis servieren.
+11. Mit Limettensaft abschmecken.
+12. Mit frischen Korianderblättern und Kokosraspeln garnieren und mit (Vollkorn)reis servieren.
 
 </Preparation>
 
-> Selbstverständlich kannst du das Gemüse nach Lust, Laune & Saison variieren. Falls du Kalorien einsparen möchtest verwendet fettreduzierte Kokosmilch: ich verspreche dir, es schmeckt trotzdem herrlich!
+Selbstverständlich kannst du das Gemüse nach Lust, Laune & Saison variieren. Falls du Kalorien einsparen möchtest verwendet fettreduzierte Kokosmilch: ich verspreche dir, es schmeckt trotzdem herrlich!
