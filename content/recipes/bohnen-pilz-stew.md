@@ -20,7 +20,7 @@ tags:
     label: glutenfrei
 timeToCook: 20 Minuten vorbereiten + ca. 45 Minuten kochen
 ---
-Dieses Gericht beweist, dass Eintöpfe kein Fleisch brauchen, um so richtig herzhaft-vollmundig zu schmecken -- probier's aus, du wirst begeistert sein!
+Dieses Gericht beweist, dass Eintöpfe kein Fleisch brauchen, um so richtig herzhaft-vollmundig zu schmecken. Probier's aus, du wirst begeistert sein!
 
 <Ingredients yields="4 Personen">
 
@@ -42,16 +42,16 @@ Dieses Gericht beweist, dass Eintöpfe kein Fleisch brauchen, um so richtig herz
 </Ingredients>
 <Preparation>
 
-1. Zwiebel schälen, Karotten waschen und beides kleinschneiden
-2. Champignons putzen und vierteln
-3. Bohnen abseihen und gut abschwemmen
-4. etwas Olivenöl in einem großen Topf auf mittlerer Stufe erhitzen
-5. Zwiebel und Knoblauch darin einige Minuten bräunen
-6. zuerst die Karotten, dann die Champignons dazugeben, salzen und pfeffern und ca. 5 Minuten anbraten
-7. Thmianstängel, Tomatenmark & Wein dazugeben, und kurz köcheln, bis der Wein völlig verdampft ist
-8. Bohnen, Gemüsesuppe, 1 TL Salz und 1/2 TL Pfeffer untermischen und aufkochen
-9. auf kleine Stufe zurückschalten und halb zugedeckt ca. 30 Minuten köcheln, bis die Sauce eingedickt ist
-10. Thymianstängel & Lorbeerblatt entfernen und Petersilie einrühren, mit Salz und Pfeffer abschmecken
+1. Zwiebel schälen, Karotten waschen und beides kleinschneiden.
+2. Champignons putzen und vierteln.
+3. Bohnen abseihen und gut abschwemmen.
+4. Etwas Olivenöl in einem großen Topf auf mittlerer Stufe erhitzen.
+5. Zwiebel und Knoblauch darin einige Minuten bräunen.
+6. Zuerst die Karotten, dann die Champignons dazugeben, salzen und pfeffern und ca. 5 Minuten anbraten.
+7. Thmianstängel, Tomatenmark & Wein dazugeben, und kurz köcheln, bis der Wein völlig verdampft ist.
+8. Bohnen, Gemüsesuppe, 1 TL Salz und 1/2 TL Pfeffer untermischen und aufkochen.
+9. Auf kleine Stufe zurückschalten und halb zugedeckt ca. 30 Minuten köcheln, bis die Sauce eingedickt ist.
+10. Thymianstängel & Lorbeerblatt entfernen und Petersilie einrühren, mit Salz und Pfeffer abschmecken.
 
 </Preparation>
 
