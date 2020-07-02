@@ -43,4 +43,4 @@ Diese erfrischende Sauce passt sehr gut zu Gemüse, Aufläufen, Strudeln, gebrat
 
 </Preparation>
 
-Photo by <a href="https://unsplash.com/@courtneymcook?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Courtney Cook</a> on <a href="/s/photos/lemon-basil?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a>
+Photo von <a href="https://unsplash.com/@courtneymcook?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Courtney Cook</a> auf <a href="/s/photos/lemon-basil?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a>
