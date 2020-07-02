@@ -20,7 +20,7 @@ tags:
     label: laktosefrei
   - value: histaminfrei
     label: histaminfrei
-timeToCook: 20 Minuten vorbereiten + 15 Minuten braten
+timeToCook: 15 Minuten vorbereiten + 15 Minuten braten
 ---
 
 Diese Pancakes kannst du dir zu Frühstück, Jause aber auch zum Nachmittagskaffee schmecken lassen.
@@ -29,7 +29,7 @@ Diese Pancakes kannst du dir zu Frühstück, Jause aber auch zum Nachmittagskaff
 
 - 250 g Vollkornmehl (Dinkel oder Weizen)
 - 310 ml Pflanzendrink (oder Kuhmilch)
-- "1,5 EL brauner Zucker"
+- 1,5 EL brauner Zucker
 - 1 gehäufter TL Backpulver
 - 1 Prise Salz
 - 1 Schuß Mineralwasser
@@ -41,11 +41,11 @@ Diese Pancakes kannst du dir zu Frühstück, Jause aber auch zum Nachmittagskaff
 
 1. Vollkornmehl, Zucker, Backpulver, Salz und Hollerblüten in einer Rührschüssel gut vermischen.
 2. Pflanzendrink oder Milch zugeben und mit dem Schneebesen gut verrühren, bis alle Klümpchen verschwunden sind.
-3. fertigen Teig ca. 10 Minuten rasten lassen.
+3. Fertigen Teig ca. 10 Minuten rasten lassen.
 4. Palatschinkenpfanne erhitzen und falls sie nicht beschichtet ist 1-2 EL Rapsöl hineingeben.
 5. Pancakes aus 2 EL Teig in die Pfanne geben und einige Minuten braten.
-6. wenn sich auf der Oberfläche viele Bläschen gebilden haben kannst du deine Pancakes umdrehen.
-7. auch die zweite Seite einige Minuten goldbraun fertigbacken.
+6. Wenn sich auf der Oberfläche viele Bläschen gebilden haben kannst du deine Pancakes umdrehen.
+7. Auch die zweite Seite einige Minuten goldbraun fertigbacken.
 8. Pancakes mit Staubzucker & frischem Obst genießen.
 
 </Preparation>
