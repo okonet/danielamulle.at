@@ -60,11 +60,11 @@ Die Gebackenen Haferflocken sind eine Frühstücks- oder Snackidee, die super sc
 2. Pflanzendrink mit Ei, Salz, Zucker und Zimt in einer Rührschüssel mixen.
 3. Haferflocken und Beeren unterrühren.
 4. Mischung in eine befettete Auflaufform füllen.  
-5. bei 170 Grad Heißluft ins Backrohr geben.
-6. ca. 20 Minuten backen, bis die gesamte Flüssigkeit verschwunden ist.  
-7. etwas ausgekühlt in Stücke schneiden.
-8. warm oder kalt genießen.
+5. Bei 170 Grad Heißluft ins Backrohr geben.
+6. Ca. 20 Minuten backen, bis die gesamte Flüssigkeit verschwunden ist.  
+7. Etwas ausgekühlt in Stücke schneiden.
+8. Warm oder kalt genießen.
 
 </Preparation>
 
-Ich backe die Haferflocken immer schon am Vortag, und wärme sie dann in der Früh nur noch auf. Die Gebackenen Haferflocken schmecken köstlich mit Sauerrahm, Naturjoghurt oder Skyr, eventuell mit etwas Zucker oder Honig vermischt. Als Geschmacksvariation kannst du die Flocken vor dem Backen mit Kokosraspeln, Sonnenblumenkernen, Sesam, Mandelhobel oder geriebener Schokolade bestreuen, und auch Trockenfrüchte oder anderes frisches Obst statt den Beeren verwenden.
+Ich backe die Haferflocken immer schon am Vortag, und wärme sie zum Frühstück nur noch auf. Die Gebackenen Haferflocken schmecken köstlich mit Sauerrahm, Naturjoghurt oder Skyr, eventuell mit etwas Zucker oder Honig vermischt. Als Geschmacksvariation kannst du die Flocken vor dem Backen mit Kokosraspeln, Sonnenblumenkernen, Sesam, Mandelhobel oder geriebener Schokolade bestreuen, und auch Trockenfrüchte oder anderes frisches Obst statt den Beeren verwenden.
