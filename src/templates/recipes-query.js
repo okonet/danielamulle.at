@@ -1,13 +1,11 @@
 import { graphql } from "gatsby"
-import Posts from "../components/RecipesPage"
+import RecipesPage from "../components/RecipesPage"
 
-export default Posts
+export default RecipesPage
 
 export const query = graphql`
   fragment RecipeMeta on Recipe {
-    id
     slug
-    date(locale: "de", formatString: "DD MMMM YYYY")
     title
     coverImage {
       childImageSharp {
@@ -25,7 +23,7 @@ export const query = graphql`
       slug
     }
   }
-  query PostsQuery {
+  query RecipesQuery {
     allCategory(filter: { isTag: { eq: true } }) {
       nodes {
         id

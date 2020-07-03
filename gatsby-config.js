@@ -58,6 +58,13 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
+        path: `${basePath}/${blogPath}`,
+        name: blogPath,
+      },
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
         path: `${basePath}`,
         name: basePath,
       },

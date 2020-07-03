@@ -3,7 +3,7 @@ import React from "react"
 import { Flex, jsx, ThemeProvider } from "theme-ui"
 import Link from "../components/Link"
 import theme, { aboutTheme, howTheme, recipesTheme, whatTheme } from "../theme"
-import { recipesPath } from "../../paths"
+import { blogPath, recipesPath } from "../../paths"
 
 const NavLink = React.forwardRef((props, ref) => {
   const { sx, to, ...rest } = props
@@ -35,7 +35,7 @@ const NavLink = React.forwardRef((props, ref) => {
   )
 })
 
-const screens = [
+const pages = [
   {
     title: "Home",
     to: "/",
@@ -61,6 +61,11 @@ const screens = [
     to: `/${recipesPath}`,
     theme: recipesTheme,
   },
+  {
+    title: "Blog",
+    to: `/${blogPath}`,
+    theme: recipesTheme,
+  },
 ]
 
 const Navigation = (props) => {
@@ -77,7 +82,7 @@ const Navigation = (props) => {
         ...props.sx,
       }}
     >
-      {screens.map(({ title, theme, to }) => {
+      {pages.map(({ title, theme, to }) => {
         return (
           <ThemeProvider theme={theme} key={to}>
             <NavLink key={to} to={to}>

@@ -1,14 +1,13 @@
 import { graphql } from "gatsby"
-import PostPage from "../components/RecipePage"
+import RecipePage from "../components/RecipePage"
 
-export default PostPage
+export default RecipePage
 
 export const query = graphql`
-  query PostPageQuery($id: String!, $previousId: String, $nextId: String) {
+  query RecipeQuery($id: String!) {
     recipe(id: { eq: $id }) {
-      id
       title
-      date(locale: "de", formatString: "DD MMMM YYYY")
+      body
       timeToCook
       coverImage {
         childImageSharp {
@@ -25,17 +24,6 @@ export const query = graphql`
         id
         slug
       }
-      body
-    }
-    previous: recipe(id: { eq: $previousId }) {
-      id
-      title
-      date(locale: "de", formatString: "DD MMMM YYYY")
-    }
-    next: recipe(id: { eq: $nextId }) {
-      id
-      title
-      date(locale: "de", formatString: "DD MMMM YYYY")
     }
   }
 `
