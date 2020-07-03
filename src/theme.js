@@ -2,7 +2,7 @@ import { shade, tint, modularScale } from "polished"
 import { transparentize } from "@theme-ui/color"
 
 // Creates each four darker and lighter accents from passed hex color
-const createAccents = (color, length = 4, steps = 0.32) => {
+const createAccents = (color, length = 4, steps = 0.31) => {
   const darkAccents = Array.from({ length: length - 1 }, (_, index) =>
     shade(Math.min(steps * (index + 1), 1), color)
   )
