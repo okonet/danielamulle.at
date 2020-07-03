@@ -33,7 +33,7 @@ export default ({ data }) => {
         variant="full"
         sx={{
           px: 4,
-          pl: [4, 5],
+          pl: 88,
           py: 4,
           mt: -5,
           bg: "white",
