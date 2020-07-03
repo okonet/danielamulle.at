@@ -3,7 +3,7 @@ const {
   assetPath,
   recipesPath,
   categoriesPath,
-  contentPath,
+  blogPath,
 } = require("./paths")
 
 module.exports = {

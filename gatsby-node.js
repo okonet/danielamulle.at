@@ -10,7 +10,7 @@ const pkg = require("./package.json")
 const { createFilePath } = require("gatsby-source-filesystem")
 const {
   basePath,
-  contentPath,
+  blogPath,
   recipesPath,
   categoriesPath,
   assetPath,
@@ -23,7 +23,7 @@ exports.onPreBootstrap = ({ store }) => {
   const { program } = store.getState()
   const dirs = [
     path.join(program.directory, basePath, recipesPath),
-    path.join(program.directory, basePath, contentPath),
+    path.join(program.directory, basePath, blogPath),
     path.join(program.directory, basePath, assetPath),
   ]
 
