@@ -34,10 +34,11 @@ const Layout = ({ theme = defaultTheme, children }) => {
         as={"header"}
         sx={{
           py: 3,
-          position: "sticky",
+          position: "fixed",
           top: 0,
-          bg: transparentize("background", 0.75),
-          backdropFilter: "blur(16px)",
+          width: "100%",
+          // bg: transparentize("background", 0.75),
+          // backdropFilter: "blur(32px)",
           zIndex: 10,
         }}
       >
@@ -64,7 +65,7 @@ const Layout = ({ theme = defaultTheme, children }) => {
       </ThemeProvider>
 
       <Box as="footer" sx={{ py: 4, flexShrink: 1 }}>
-        <Container sx={{ color: "muted", fontSize: 0 }}>
+        <Container sx={{ color: "secondary", fontSize: 0 }}>
           <Group as="nav" separator=" • ">
             <Link to="/impressum">Impressum</Link>
             <Link to="/datenschutz">Datenschutz</Link>

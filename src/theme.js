@@ -31,12 +31,12 @@ export const palette = {
 const theme = {
   space: [0, 4, 8, 16, 32, 64, 128],
   colors: {
-    ...palette,
     text: palette.gray[1],
     background: palette.white,
-    muted: palette.gray[3],
-    accent: palette.green[3],
-    link: palette.teal[3],
+    primary: palette.cyan[3],
+    secondary: palette.gray[3],
+    accent: palette.cyan[2],
+    muted: palette.gray[5],
   },
   fonts: {
     body: '"IBM Plex Sans", Georgia, serif',
@@ -75,7 +75,7 @@ const theme = {
   textStyles: {
     title: {
       m: 0,
-      color: "accent",
+      color: "primary",
       fontSize: [2, 3],
       fontWeight: "normal",
       fontFamily: "heading",
@@ -83,7 +83,7 @@ const theme = {
     },
     subTitle: {
       m: 0,
-      color: "accent",
+      color: "primary",
       fontSize: 2,
       fontWeight: "normal",
       fontFamily: "heading",
@@ -91,7 +91,7 @@ const theme = {
     },
     sectionTitle: {
       m: 0,
-      color: "text",
+      color: "secondary",
       fontSize: 0,
       fontWeight: "bold",
       fontFamily: "heading",
@@ -127,7 +127,14 @@ const theme = {
       fontFamily: "body",
     },
     a: {
-      color: "accent",
+      color: "primary",
+      textDecoration: "none",
+      ":hover": {
+        textDecoration: "underline",
+      },
+      ".active": {
+        color: "accent",
+      },
     },
     h1: {
       variant: "textStyles.title",
@@ -161,7 +168,7 @@ const theme = {
       counterReset: "steps",
       "li::before": {
         variant: "textStyles.sectionTitle",
-        color: "teal.5",
+        color: "muted",
         counterIncrement: "steps",
         content: 'counters(steps, ".") ". "',
       },
@@ -179,8 +186,10 @@ export const aboutTheme = {
     ...theme.colors,
     text: palette.pink[1],
     background: palette.pink[6],
-    muted: palette.pink[4],
-    accent: palette.pink[3],
+    accent: palette.pink[2],
+    primary: palette.pink[3],
+    secondary: palette.pink[4],
+    muted: palette.pink[5],
   },
   coverSrc: unsplashURL("9aOswReDKPo"),
 }
@@ -191,8 +200,10 @@ export const whatTheme = {
     ...theme.colors,
     text: palette.cyan[1],
     background: palette.cyan[6],
-    muted: palette.cyan[4],
-    accent: palette.cyan[3],
+    accent: palette.cyan[2],
+    primary: palette.cyan[3],
+    secondary: palette.cyan[4],
+    muted: palette.cyan[5],
   },
   coverSrc: unsplashURL("08bOYnH_r_E"),
 }
@@ -203,8 +214,10 @@ export const howTheme = {
     ...theme.colors,
     text: palette.green[1],
     background: palette.green[6],
-    muted: palette.green[4],
-    accent: palette.green[3],
+    accent: palette.green[2],
+    primary: palette.green[3],
+    secondary: palette.green[4],
+    muted: palette.green[5],
   },
   coverSrc: unsplashURL("sTPy-oeA3h0"),
 }
@@ -215,8 +228,10 @@ export const recipesTheme = {
     ...theme.colors,
     text: palette.teal[1],
     background: palette.teal[6],
-    // muted: palette.teal[4],
-    accent: palette.orange[3],
+    primary: palette.orange[3],
+    secondary: palette.teal[3],
+    accent: palette.orange[2],
+    muted: palette.teal[5],
   },
 }
 

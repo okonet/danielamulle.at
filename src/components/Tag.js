@@ -11,13 +11,10 @@ export default function(props) {
         fontSize: 0,
         fontFamily: "monospace",
         lineHeight: 1.75,
-        color: "muted",
+        color: "secondary",
         borderRadius: "round",
         border: "thin",
-        borderColor: "gray.5",
-        "> a": {
-          textDecoration: "none",
-        },
+        borderColor: "muted",
       }}
       {...props}
     />

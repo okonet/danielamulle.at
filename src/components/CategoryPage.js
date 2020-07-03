@@ -41,7 +41,7 @@ export default ({ data }) => {
         <RecipesList recipes={groupedRecipes} />
       ) : (
         <Container>
-          <Text as="p" sx={{ color: "muted" }}>
+          <Text as="p" sx={{ variant: "textStyles.lead", color: "secondary" }}>
             Keine Rezepte für diese Kategorie gefunden.{" "}
             <Link to={recipesPath}>Alle Rezepte</Link> anschauen?
           </Text>

@@ -1,7 +1,7 @@
 /* @jsx jsx */
 import React from "react"
 import { Flex, jsx, ThemeProvider } from "theme-ui"
-import { Link } from "gatsby"
+import Link from "../components/Link"
 import theme, { aboutTheme, recipesTheme, whatTheme } from "../theme"
 import { recipesPath } from "../../paths"
 
@@ -10,22 +10,23 @@ const NavLink = React.forwardRef((props, ref) => {
   return (
     <Link
       ref={ref}
-      activeClassName="active"
       to={to}
       {...rest}
       sx={{
         position: "relative",
-        color: "accent",
-        textDecoration: "none",
-        fontFamily: "monospace",
-        letterSpacing: ["body", "condensed"],
-        fontSize: [1, 2],
+        py: 1,
+        px: 3,
+        borderRadius: "round",
+        bg: "background",
         whiteSpace: "nowrap",
-        "&:hover": {
-          color: "accent",
+        ":hover": {
+          bg: "primary",
+          color: "background",
+          textDecoration: "none",
         },
         "&.active": {
-          color: "accent",
+          bg: "primary",
+          color: "background",
         },
         ...sx,
       }}
@@ -65,7 +66,7 @@ const Navigation = (props) => {
         transform: "translateZ(0)",
         alignItems: "center",
         "* + *": {
-          ml: 3,
+          ml: 2,
         },
         ...props.sx,
       }}
