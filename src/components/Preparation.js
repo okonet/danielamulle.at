@@ -1,21 +1,16 @@
-import React, { useState } from "react"
-import { Box, Styled } from "theme-ui"
+/* @jsx jsx */
+import React from "react"
+import { jsx, Styled } from "theme-ui"
 
 function Preparation({ children }) {
-  const [currentStep, setCurrentStep] = useState(-1)
   return (
     <>
       <Styled.h2>Zubereitung</Styled.h2>
       <Styled.ol>
         {React.Children.map(children, (child) =>
-          React.Children.map(child.props.children, (listItem, index) => {
-            const isHighlighted = currentStep === index
+          React.Children.map(child.props.children, (listItem) => {
             return (
-              <Box
-                as="li"
-                onClick={() =>
-                  isHighlighted ? setCurrentStep(-1) : setCurrentStep(index)
-                }
+              <Styled.li
                 sx={{
                   px: 3,
                   mx: -3,
@@ -23,13 +18,17 @@ function Preparation({ children }) {
                   my: 0,
                   cursor: "pointer",
                   borderRadius: "medium",
-                  boxShadow: isHighlighted ? "float" : "none",
-                  transform: isHighlighted ? "scale(1.1)" : "scale(1)",
+                  boxShadow: "none",
+                  transform: "scale(1)",
                   transition: "all .25s",
+                  ":hover": {
+                    boxShadow: "float",
+                    transform: "scale(1.1)",
+                  },
                 }}
               >
                 {listItem.props.children}
-              </Box>
+              </Styled.li>
             )
           })
         )}
