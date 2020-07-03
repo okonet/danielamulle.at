@@ -32,8 +32,8 @@ export default ({ data }) => {
       <Container
         variant="full"
         sx={{
-          // px: 4,
-          // pl: [4, 5],
+          px: 4,
+          pl: [4, 5],
           py: 4,
           mt: -5,
           bg: "white",
