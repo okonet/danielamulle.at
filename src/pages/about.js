@@ -7,22 +7,23 @@ import Section from "../components/Section"
 import { aboutTheme } from "../theme"
 import { Container, jsx, Styled } from "theme-ui"
 
-console.log(content)
-
 export default () => {
   return (
     <Layout theme={aboutTheme}>
       <SEO title={content._frontmatter.title} />
-      <Section theme={aboutTheme}>
+      <Section
+        theme={aboutTheme}
+        blendMode="color-burn"
+        sx={{ minHeight: 320, display: "flex", alignItems: "center" }}
+      >
         <Styled.h1>{content._frontmatter.title}</Styled.h1>
       </Section>
       <Container
         variant="full"
         sx={{
-          px: 4,
-          pl: [4, 5],
           py: 4,
-          mt: -5,
+          px: 88,
+          mt: -4,
           bg: "white",
           borderRadius: ["none", "none", "medium"],
           zIndex: 1,

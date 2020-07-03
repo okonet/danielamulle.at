@@ -6,6 +6,7 @@ import groupBy from "lodash.groupby"
 import SEO from "../components/seo"
 import Group from "react-group"
 import Layout from "../components/layout"
+import Section from "../components/Section"
 import { recipesTheme } from "../theme"
 import Link from "./Link"
 import Tag from "./Tag"
@@ -41,14 +42,19 @@ export default ({ data, location, navigate }) => {
     <Layout theme={recipesTheme}>
       <SEO title="Rezepte" />
 
-      <Container>
-        <Text sx={{ variant: "textStyles.lead" }}>
-          <Content />
-        </Text>
+      <Section
+        theme={recipesTheme}
+        blendMode="color-burn"
+        sx={{ minHeight: 320, display: "flex", alignItems: "flex-end" }}
+      >
+        <Content />
+      </Section>
 
+      <Container>
         <Flex
           as="aside"
           sx={{
+            my: 4,
             flexWrap: "wrap",
             alignItems: "baseline",
           }}

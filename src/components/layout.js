@@ -37,7 +37,7 @@ const Layout = ({ theme = defaultTheme, children }) => {
           position: "fixed",
           top: 0,
           width: "100%",
-          // bg: transparentize("background", 0.75),
+          // bg: transparentize("text", 0.75),
           // backdropFilter: "blur(32px)",
           zIndex: 10,
         }}
@@ -45,7 +45,6 @@ const Layout = ({ theme = defaultTheme, children }) => {
         <Container variant="full">
           <Box
             sx={{
-              px: [0, 0, 3],
               display: ["block", "block", "flex"],
             }}
           >

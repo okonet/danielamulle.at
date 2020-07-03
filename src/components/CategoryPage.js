@@ -9,6 +9,7 @@ import { recipesPath } from "../../paths"
 import groupBy from "lodash.groupby"
 import RecipesList from "./RecipesList"
 import Group from "react-group"
+import Section from "./Section"
 
 export default ({ data }) => {
   const { category } = data
@@ -20,8 +21,8 @@ export default ({ data }) => {
     <Layout theme={recipesTheme}>
       <SEO title={`Rezepte: ${category.id}`} />
 
-      <Container sx={{ mt: 4, color: "muted" }}>
-        <Box as="nav">
+      <Section theme={recipesTheme} blendMode="color-burn">
+        <Box as="nav" sx={{ mt: 5 }}>
           <Group separator=" / ">
             <Link to={recipesPath}>Rezepte</Link>
           </Group>
@@ -35,7 +36,7 @@ export default ({ data }) => {
         >
           {category.id}
         </Styled.h1>
-      </Container>
+      </Section>
 
       {category.recipes ? (
         <RecipesList recipes={groupedRecipes} />

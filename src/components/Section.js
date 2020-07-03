@@ -38,8 +38,6 @@ function Section({
         as="section"
         sx={{
           position: "relative",
-          p: 4,
-          py: 5,
           bg: "background",
           color: "text",
           ...sx,

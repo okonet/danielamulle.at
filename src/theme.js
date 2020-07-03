@@ -204,7 +204,8 @@ export const whatTheme = {
     secondary: palette.cyan[4],
     muted: palette.cyan[5],
   },
-  coverSrc: unsplashURL("08bOYnH_r_E"),
+  // coverSrc: unsplashURL("08bOYnH_r_E"),
+  coverSrc: unsplashURL("QSHF4Q1S0JU"),
 }
 
 export const howTheme = {
@@ -232,6 +233,7 @@ export const recipesTheme = {
     accent: palette.orange[2],
     muted: palette.teal[5],
   },
+  coverSrc: unsplashURL("yWG-ndhxvqY"),
 }
 
 export default theme

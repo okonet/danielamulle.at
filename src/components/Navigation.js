@@ -11,6 +11,7 @@ const NavLink = React.forwardRef((props, ref) => {
     <Link
       ref={ref}
       to={to}
+      partiallyActive
       {...rest}
       sx={{
         position: "relative",
@@ -36,11 +37,6 @@ const NavLink = React.forwardRef((props, ref) => {
 })
 
 const pages = [
-  {
-    title: "Home",
-    to: "/",
-    theme,
-  },
   {
     title: "Angebot",
     to: "/offers",

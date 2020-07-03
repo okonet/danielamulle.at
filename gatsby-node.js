@@ -197,7 +197,7 @@ exports.onCreateNode = ({
       node[key].forEach((obj) => {
         const jsonNode = {
           ...obj,
-          slug: `/${categoriesPath}/${slug(obj.id)}`,
+          slug: `/${recipesPath}/${slug(obj.id)}`,
           isTag: key === "tags",
           children: [],
           parent: node.id,
