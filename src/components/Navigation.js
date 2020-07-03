@@ -2,7 +2,7 @@
 import React from "react"
 import { Flex, jsx, ThemeProvider } from "theme-ui"
 import Link from "../components/Link"
-import theme, { aboutTheme, recipesTheme, whatTheme } from "../theme"
+import theme, { aboutTheme, howTheme, recipesTheme, whatTheme } from "../theme"
 import { recipesPath } from "../../paths"
 
 const NavLink = React.forwardRef((props, ref) => {
@@ -42,13 +42,18 @@ const screens = [
     theme,
   },
   {
-    title: "Was & Wie",
-    to: "/#offers",
+    title: "Angebot",
+    to: "/offers",
     theme: whatTheme,
   },
   {
+    title: "Wie?",
+    to: "/how",
+    theme: howTheme,
+  },
+  {
     title: "Über mich",
-    to: "/#about",
+    to: "/about",
     theme: aboutTheme,
   },
   {

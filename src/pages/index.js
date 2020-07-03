@@ -54,16 +54,6 @@ const IndexPage = () => {
           </Flex>
         </Container>
       </Flex>
-
-      <Section theme={howTheme} blendMode="overlay">
-        <Focus />
-      </Section>
-      <Section theme={whatTheme} blendMode="overlay" id="offers">
-        <How />
-      </Section>
-      <Section theme={aboutTheme} blendMode="overlay" id="about">
-        <About />
-      </Section>
     </Layout>
   )
 }

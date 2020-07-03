@@ -39,7 +39,7 @@ function Logo(props) {
           as="p"
           sx={{
             m: 0,
-            color: "secondary",
+            color: "background",
             fontFamily: "monospace",
             fontSize: 0,
             letterSpacing: "condensed",
