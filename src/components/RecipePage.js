@@ -19,8 +19,6 @@ export default ({ data }) => {
     categories,
     timeToCook,
   } = data.recipe
-  const description =
-    "Dieses Gericht beweist, dass Eintöpfe kein Fleisch brauchen, um so richtig herzhaft-vollmundig zu schmecken - probier’s aus, du wirst begeistert sein!"
   const mainCategory = category[0]
   return (
     <Layout theme={recipesTheme}>
@@ -40,7 +38,6 @@ export default ({ data }) => {
           mt: -5,
           bg: "white",
           borderRadius: ["none", "none", "medium"],
-          // boxShadow: ["none", "float"],
           zIndex: 1,
         }}
       >
