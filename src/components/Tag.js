@@ -15,6 +15,9 @@ export default function(props) {
         borderRadius: "round",
         border: "thin",
         borderColor: "muted",
+        "> a": {
+          textDecoration: "none",
+        },
       }}
       {...props}
     />

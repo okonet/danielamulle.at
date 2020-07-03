@@ -127,8 +127,8 @@ const theme = {
       fontFamily: "body",
     },
     a: {
-      color: "primary",
-      textDecoration: "none",
+      color: "secondary",
+      // textDecoration: "none",
       ":hover": {
         textDecoration: "underline",
       },

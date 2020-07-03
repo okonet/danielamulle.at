@@ -16,6 +16,7 @@ const NavLink = React.forwardRef((props, ref) => {
         position: "relative",
         py: 1,
         px: 3,
+        textDecoration: "none",
         borderRadius: "round",
         bg: "background",
         whiteSpace: "nowrap",
