@@ -57,7 +57,9 @@ function Ingredients({ yields, children }) {
               child &&
               child.props &&
               React.Children.map(child.props.children, (listItem, index) => (
-                <IngredientItem>{listItem.props.children}</IngredientItem>
+                <IngredientItem key={index}>
+                  {listItem.props.children}
+                </IngredientItem>
               ))
           )}
         </Box>
