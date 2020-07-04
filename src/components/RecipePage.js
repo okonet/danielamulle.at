@@ -32,9 +32,8 @@ export default ({ data }) => {
       <Container
         variant="full"
         sx={{
-          px: 4,
-          pl: 88,
-          py: 4,
+          py: [3, 4],
+          px: [3, 3, 88],
           mt: -5,
           bg: "white",
           borderRadius: ["none", "none", "medium"],

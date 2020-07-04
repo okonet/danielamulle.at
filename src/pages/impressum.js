@@ -1,17 +1,12 @@
 import React from "react"
-import { Container } from "theme-ui"
 import * as Content from "../../content/sections/impressum.mdx"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import PageLayout from "../components/PageLayout"
 
 function Impressum() {
   return (
-    <Layout>
-      <SEO title={Content._frontmatter.title} />
-      <Container>
-        <Content.default />
-      </Container>
-    </Layout>
+    <PageLayout title={Content._frontmatter.title}>
+      <Content.default />
+    </PageLayout>
   )
 }
 
