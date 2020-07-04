@@ -3,6 +3,7 @@ import React from "react"
 import { Box, jsx, Text } from "theme-ui"
 import { graphql, Link, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
+import { textOutline } from "../mixins"
 
 function Logo(props) {
   const data = useStaticQuery(graphql`
@@ -39,9 +40,10 @@ function Logo(props) {
           as="p"
           sx={{
             m: 0,
-            color: "background",
+            color: "secondary",
             fontFamily: "monospace",
             fontSize: 0,
+            lineHeight: 1,
             letterSpacing: "condensed",
           }}
         >
@@ -55,6 +57,7 @@ function Logo(props) {
             color: "text",
             fontFamily: "body",
             fontWeight: "heading",
+            lineHeight: 1,
             fontSize: [1, 2],
           }}
         >
