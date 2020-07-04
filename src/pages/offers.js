@@ -14,11 +14,7 @@ export default () => {
       <Section
         theme={whatTheme}
         blendMode="color-burn"
-        sx={{
-          minHeight: 320,
-          display: "flex",
-          alignItems: "center",
-        }}
+        sx={{ minHeight: 320, pt: 6 }}
       >
         <Styled.h1>{content._frontmatter.title}</Styled.h1>
       </Section>

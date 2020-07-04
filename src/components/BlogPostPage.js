@@ -4,8 +4,8 @@ import { MDXRenderer } from "gatsby-plugin-mdx"
 import { Box, Container, Grid, jsx, Styled } from "theme-ui"
 import Layout from "./layout"
 import Link from "./Link"
-import { recipesTheme } from "../theme"
-import { blogPath, recipesPath } from "../../paths"
+import { blogTheme } from "../theme"
+import { blogPath } from "../../paths"
 import Tag from "./Tag"
 import Group from "react-group"
 import Img from "gatsby-image"
@@ -13,7 +13,7 @@ import Img from "gatsby-image"
 export default ({ data }) => {
   const { body, coverImage, title, categories } = data.blogPost
   return (
-    <Layout theme={recipesTheme}>
+    <Layout theme={blogTheme}>
       <Img
         fluid={coverImage.childImageSharp.fluid}
         style={{

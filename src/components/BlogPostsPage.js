@@ -1,24 +1,23 @@
 /* @jsx jsx */
 import React from "react"
-import { Container, Grid, Styled, jsx } from "theme-ui"
+import { Container, Grid, jsx } from "theme-ui"
 import SEO from "../components/seo"
 import Layout from "../components/layout"
-import { recipesTheme, whatTheme } from "../theme"
+import { blogTheme } from "../theme"
 import RecipeCard from "./RecipeCard"
 import Content, * as meta from "../../content/sections/blog.mdx"
 import Section from "./Section"
-import * as content from "../../content/sections/focus.mdx"
 
 export default ({ data }) => {
   const { allBlogPost } = data
 
   return (
-    <Layout theme={recipesTheme}>
+    <Layout theme={blogTheme}>
       <SEO title={meta._frontmatter.title} />
       <Section
-        theme={recipesTheme}
-        blendMode="color-burn"
-        sx={{ minHeight: 320, display: "flex", alignItems: "flex-end" }}
+        theme={blogTheme}
+        blendMode="soft-light"
+        sx={{ minHeight: 320, pt: 6 }}
       >
         <Content />
       </Section>

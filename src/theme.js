@@ -80,6 +80,11 @@ const theme = {
       fontWeight: "normal",
       fontFamily: "heading",
       lineHeight: "heading",
+      textShadow: `0 1px 0 #fff,
+      0 -1px 0 #fff,
+      1px 0 0 #fff,
+      -1px 0 0 #fff
+      `,
     },
     subTitle: {
       m: 0,
@@ -233,7 +238,21 @@ export const recipesTheme = {
     accent: palette.orange[2],
     muted: palette.teal[5],
   },
-  coverSrc: unsplashURL("yWG-ndhxvqY"),
+  coverSrc: unsplashURL("0JFveX0c778"),
+}
+
+export const blogTheme = {
+  ...theme,
+  colors: {
+    ...theme.colors,
+    text: palette.teal[1],
+    background: palette.orange[6],
+    primary: palette.teal[3],
+    secondary: palette.teal[3],
+    accent: palette.teal[2],
+    muted: palette.teal[5],
+  },
+  coverSrc: unsplashURL("xG8IQMqMITM"),
 }
 
 export default theme

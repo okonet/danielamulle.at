@@ -2,7 +2,13 @@
 import React from "react"
 import { Flex, jsx, ThemeProvider } from "theme-ui"
 import Link from "../components/Link"
-import theme, { aboutTheme, howTheme, recipesTheme, whatTheme } from "../theme"
+import theme, {
+  aboutTheme,
+  blogTheme,
+  howTheme,
+  recipesTheme,
+  whatTheme,
+} from "../theme"
 import { blogPath, recipesPath } from "../../paths"
 
 const NavLink = React.forwardRef((props, ref) => {
@@ -60,7 +66,7 @@ const pages = [
   {
     title: "Blog",
     to: `/${blogPath}`,
-    theme: recipesTheme,
+    theme: blogTheme,
   },
 ]
 

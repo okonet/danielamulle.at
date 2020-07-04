@@ -44,8 +44,8 @@ export default ({ data, location, navigate }) => {
 
       <Section
         theme={recipesTheme}
-        blendMode="color-burn"
-        sx={{ minHeight: 320, display: "flex", alignItems: "flex-end" }}
+        blendMode="soft-light"
+        sx={{ minHeight: 320, pt: 6 }}
       >
         <Content />
       </Section>
