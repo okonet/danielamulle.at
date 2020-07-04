@@ -51,10 +51,14 @@ function Ingredients({ yields, children }) {
             listStyle: "none",
           }}
         >
-          {React.Children.map(children, (child) =>
-            React.Children.map(child.props.children, (listItem, index) => (
-              <IngredientItem>{listItem.props.children}</IngredientItem>
-            ))
+          {React.Children.map(
+            children,
+            (child) =>
+              child &&
+              child.props &&
+              React.Children.map(child.props.children, (listItem, index) => (
+                <IngredientItem>{listItem.props.children}</IngredientItem>
+              ))
           )}
         </Box>
       </Box>
