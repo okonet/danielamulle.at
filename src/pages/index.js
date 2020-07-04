@@ -1,60 +1,73 @@
+/* @jsx jsx */
 import React from "react"
-import { Box, Container, Flex } from "theme-ui"
+import { jsx, Box, Container, Flex } from "theme-ui"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import Home from "../../content/sections/home.mdx"
-import How from "../../content/sections/how.mdx"
-import Focus from "../../content/sections/focus.mdx"
-import About from "../../content/sections/about.mdx"
-import Section from "../components/Section"
-import { aboutTheme, howTheme, whatTheme } from "../theme"
+import Home, * as content from "../../content/sections/home.mdx"
+import { homeTheme } from "../theme"
+import PageLayout from "../components/PageLayout"
 
 const IndexPage = () => {
   const portrait = useStaticQuery(graphql`
     query {
       placeholderImage: file(relativePath: { eq: "portrait.png" }) {
         childImageSharp {
-          fluid(maxWidth: 300) {
-            ...GatsbyImageSharpFluid
+          resize(width: 400, quality: 100) {
+            src
           }
         }
       }
     }
   `)
-  const imgData = portrait.placeholderImage.childImageSharp.fluid
+  const imgData2 = portrait.placeholderImage.childImageSharp.resize
   return (
-    <Layout>
-      <SEO title="Willkommen" />
-
-      <Flex sx={{ px: 4, flexGrow: 1 }}>
-        <Container
+    <PageLayout theme={homeTheme}>
+      <Flex
+        sx={{
+          flexDirection: ["column", "row"],
+          alignItems: "center",
+          "& h1": {
+            textAlign: ["center", "left"],
+          },
+        }}
+      >
+        <Flex
           sx={{
-            display: ["block", "flex"],
-            flexGrow: 1,
+            order: [0, 1],
+            flex: "0 1 auto",
+            alignItems: "flex-start",
+            mr: [0, 4],
           }}
         >
           <Box
             sx={{
-              flex: 1,
+              width: [150, 200],
+              height: [150, "auto"],
+              borderRadius: ["round", "none"],
+              overflow: "hidden",
+              objectFit: "cover",
             }}
           >
-            <Home />
+            <img
+              src={imgData2.src}
+              alt="Portrait von Daniela Mulle"
+              sx={{ width: "100%" }}
+            />
           </Box>
-          <Flex
-            sx={{
-              flex: 1,
-              alignItems: "flex-end",
-            }}
-          >
-            <Box sx={{ display: ["none", "block"], width: "100%" }}>
-              <Img fluid={imgData} />
-            </Box>
-          </Flex>
-        </Container>
+        </Flex>
+        <Box
+          sx={{
+            display: "block",
+            flex: 1,
+            "& > p:first-of-type": {
+              variant: "textStyles.lead",
+            },
+          }}
+        >
+          <Home />
+        </Box>
       </Flex>
-    </Layout>
+    </PageLayout>
   )
 }
 

@@ -1,5 +1,6 @@
 import { shade, tint, modularScale } from "polished"
 import { transparentize } from "@theme-ui/color"
+import { textOutline } from "./mixins"
 
 // Creates each four darker and lighter accents from passed hex color
 const createAccents = (color, length = 4, steps = 0.31) => {
@@ -39,11 +40,11 @@ const theme = {
     muted: palette.gray[5],
   },
   fonts: {
-    body: '"IBM Plex Sans", Georgia, serif',
-    heading: '"IBM Plex Sans", MonoLisa, Menlo, monospace',
-    monospace: '"IBM Plex Mono", MonoLisa, Menlo, monospace',
+    body: '"IBM Plex Sans", Helvetica, Arial, sans-serif',
+    heading: '"IBM Plex Sans", Helvetica, Arial, sans-serif',
+    monospace: '"IBM Plex Mono", monospace',
   },
-  fontSizes: ["0.85rem", "1rem", "1.5rem", "4rem"],
+  fontSizes: ["0.85rem", "1rem", "1.25rem", "3rem"],
   fontWeights: {
     body: 400,
     heading: 700,
@@ -76,15 +77,10 @@ const theme = {
     title: {
       m: 0,
       color: "primary",
-      fontSize: [2, 3],
-      fontWeight: "normal",
+      fontSize: 3,
+      fontWeight: "bold",
       fontFamily: "heading",
       lineHeight: "heading",
-      textShadow: `0 1px 0 #fff,
-      0 -1px 0 #fff,
-      1px 0 0 #fff,
-      -1px 0 0 #fff
-      `,
     },
     subTitle: {
       m: 0,
@@ -154,6 +150,7 @@ const theme = {
     },
     p: {
       my: 3,
+      color: "text",
     },
     ul: {
       my: 2,
@@ -182,6 +179,17 @@ const theme = {
       variant: "textStyles.body",
     },
   },
+}
+
+export const homeTheme = {
+  ...theme,
+  colors: {
+    ...theme.colors,
+    text: palette.gray[1],
+    background: palette.gray[6],
+    primary: palette.cyan[3],
+  },
+  coverSrc: unsplashURL("HlNcigvUi4Q"),
 }
 
 export const aboutTheme = {
@@ -245,12 +253,12 @@ export const blogTheme = {
   ...theme,
   colors: {
     ...theme.colors,
-    text: palette.teal[1],
-    background: palette.orange[6],
-    primary: palette.teal[3],
-    secondary: palette.teal[3],
-    accent: palette.teal[2],
-    muted: palette.teal[5],
+    text: palette.black,
+    background: palette.gray[6],
+    primary: palette.gray[1],
+    secondary: palette.gray[3],
+    accent: palette.gray[2],
+    muted: palette.gray[5],
   },
   coverSrc: unsplashURL("xG8IQMqMITM"),
 }

@@ -4,6 +4,7 @@ import { Box, jsx, Text } from "theme-ui"
 import { graphql, Link, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 import { textOutline } from "../mixins"
+import { transparentize } from "@theme-ui/color"
 
 function Logo(props) {
   const data = useStaticQuery(graphql`
@@ -58,7 +59,7 @@ function Logo(props) {
             fontFamily: "body",
             fontWeight: "heading",
             lineHeight: 1,
-            fontSize: [1, 2],
+            fontSize: 2,
           }}
         >
           Daniela Mulle

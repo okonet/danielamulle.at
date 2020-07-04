@@ -14,13 +14,9 @@ export default ({ data }) => {
   return (
     <Layout theme={blogTheme}>
       <SEO title={meta._frontmatter.title} />
-      <Section
-        theme={blogTheme}
-        blendMode="soft-light"
-        sx={{ minHeight: 320, pt: 6 }}
-      >
+      <Container>
         <Content />
-      </Section>
+      </Container>
       <Container variant={"full"}>
         <Grid gap={3} columns={[1, 2, 3]} sx={{ my: 4 }}>
           {allBlogPost.nodes.map((post) => (

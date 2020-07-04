@@ -42,15 +42,8 @@ export default ({ data, location, navigate }) => {
     <Layout theme={recipesTheme}>
       <SEO title="Rezepte" />
 
-      <Section
-        theme={recipesTheme}
-        blendMode="soft-light"
-        sx={{ minHeight: 320, pt: 6 }}
-      >
-        <Content />
-      </Section>
-
       <Container>
+        <Content />
         <Flex
           as="aside"
           sx={{

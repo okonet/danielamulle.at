@@ -10,6 +10,7 @@ import theme, {
   whatTheme,
 } from "../theme"
 import { blogPath, recipesPath } from "../../paths"
+import { transparentize } from "@theme-ui/color"
 
 const NavLink = React.forwardRef((props, ref) => {
   const { sx, to, ...rest } = props
@@ -24,8 +25,10 @@ const NavLink = React.forwardRef((props, ref) => {
         py: 1,
         px: 3,
         textDecoration: "none",
+        fontWeight: "bold",
         borderRadius: "round",
-        bg: "background",
+        bg: transparentize("white", 0.25),
+        backdropFilter: "blur(16px)",
         whiteSpace: "nowrap",
         ":hover": {
           bg: "primary",
