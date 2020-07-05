@@ -78,7 +78,7 @@ const theme = {
       m: 0,
       color: "primary",
       fontSize: 3,
-      fontWeight: "bold",
+      fontWeight: "body",
       fontFamily: "heading",
       lineHeight: "heading",
     },

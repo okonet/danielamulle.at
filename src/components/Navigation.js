@@ -25,10 +25,9 @@ const NavLink = React.forwardRef((props, ref) => {
         py: 1,
         px: 3,
         textDecoration: "none",
-        fontWeight: "bold",
+        fontWeight: "normal",
         borderRadius: "round",
-        bg: transparentize("white", 0.25),
-        backdropFilter: "blur(16px)",
+        bg: "white",
         whiteSpace: "nowrap",
         ":hover": {
           bg: "primary",
@@ -81,8 +80,13 @@ const Navigation = (props) => {
       sx={{
         transform: "translateZ(0)",
         alignItems: "center",
+        overflow: "auto",
+        "::-webkit-scrollbar": {
+          width: 0,
+          background: "transparent",
+        },
         "* + *": {
-          ml: 2,
+          ml: 1,
         },
         ...props.sx,
       }}
