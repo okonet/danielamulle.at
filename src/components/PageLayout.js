@@ -16,14 +16,16 @@ export default ({
   return (
     <Layout theme={theme}>
       <SEO title={title} />
-      <Section
-        theme={theme}
-        blendMode={blendMode}
-        sx={{ pt: 6, pb: [3, 5], ...sx }}
-        {...props}
-      >
-        <Styled.h1 sx={{ color: "background" }}>{title}</Styled.h1>
-      </Section>
+      {title && (
+        <Section
+          theme={theme}
+          blendMode={blendMode}
+          sx={{ pt: 6, pb: [3, 5], ...sx }}
+          {...props}
+        >
+          <Styled.h1 sx={{ color: "background" }}>{title}</Styled.h1>
+        </Section>
+      )}
       <Container
         variant="full"
         sx={{
