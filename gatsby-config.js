@@ -3,7 +3,7 @@ const {
   assetPath,
   recipesPath,
   categoriesPath,
-  contentPath,
+  blogPath,
 } = require("./paths")
 
 module.exports = {
@@ -11,6 +11,7 @@ module.exports = {
     title: "Daniela Mulle — Diätologin & Ernährungswissenschafterin",
     author: "Daniela Mulle",
     description: "Diätologin & Ernährungswissenschafterin",
+    url: "https://danielamulle.at",
     social: [
       {
         name: "Facebook",
@@ -36,6 +37,7 @@ module.exports = {
         ],
       },
     },
+    "gatsby-plugin-open-graph-images",
     "gatsby-plugin-react-helmet",
     {
       resolve: "gatsby-plugin-netlify-cms",
@@ -53,6 +55,13 @@ module.exports = {
       options: {
         path: `${basePath}/${recipesPath}`,
         name: recipesPath,
+      },
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        path: `${basePath}/${blogPath}`,
+        name: blogPath,
       },
     },
     {
@@ -89,33 +98,19 @@ module.exports = {
                 id
                 title
                 ingredients
-                category {
-                  id
-                }
-                categories {
-                  id
-                }
               }
             }
           }
         `,
-
         ref: "id",
-
-        index: ["title", "ingredients", "category", "categories"],
-
+        index: ["title", "ingredients"],
         store: ["id"],
-
         normalizer: ({ data }) =>
-          data.allRecipe.nodes.map(
-            ({ id, title, ingredients, category, categories }) => ({
-              id,
-              title,
-              ingredients,
-              category: category.id,
-              categories: categories.map((cat) => cat.id),
-            })
-          ),
+          data.allRecipe.nodes.map(({ id, title, ingredients }) => ({
+            id,
+            title,
+            ingredients,
+          })),
       },
     },
     "gatsby-transformer-sharp",
@@ -140,15 +135,19 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-plugin-manifest",
+      resolve: `gatsby-plugin-favicon`,
       options: {
-        name: "gatsby-starter-default",
-        short_name: "starter",
-        start_url: "/",
-        background_color: "#663399",
-        theme_color: "#663399",
-        display: "minimal-ui",
-        icon: "src/images/gatsby-icon.png", // This path is relative to the root of the site.
+        logo: "./src/images/logo@2x.png",
+        icons: {
+          android: true,
+          appleIcon: true,
+          appleStartup: false,
+          coast: false,
+          favicons: true,
+          firefox: true,
+          yandex: false,
+          windows: false,
+        },
       },
     },
     // "gatsby-plugin-no-javascript",

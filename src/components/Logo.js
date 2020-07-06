@@ -7,6 +7,12 @@ import Img from "gatsby-image"
 function Logo(props) {
   const data = useStaticQuery(graphql`
     query {
+      site {
+        siteMetadata {
+          author
+          description
+        }
+      }
       image: file(relativePath: { eq: "logo@2x.png" }) {
         childImageSharp {
           fixed(width: 64) {
@@ -39,14 +45,14 @@ function Logo(props) {
           as="p"
           sx={{
             m: 0,
-            color: "muted",
+            color: "secondary",
             fontFamily: "monospace",
             fontSize: 0,
             letterSpacing: "condensed",
+            maxWidth: "20ch",
           }}
         >
-          Diätologin & <br />
-          Ernährungswissenschafterin
+          {data.site.siteMetadata.description}
         </Text>
         <Text
           as="h1"
@@ -55,10 +61,10 @@ function Logo(props) {
             color: "text",
             fontFamily: "body",
             fontWeight: "heading",
-            fontSize: [1, 2],
+            fontSize: 2,
           }}
         >
-          Daniela Mulle
+          {data.site.siteMetadata.author}
         </Text>
       </Box>
     </Link>

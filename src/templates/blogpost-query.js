@@ -1,24 +1,20 @@
 import { graphql } from "gatsby"
-import RecipePage from "../components/RecipePage"
+import BlogPostPage from "../components/BlogPostPage"
 
-export default RecipePage
+export default BlogPostPage
 
 export const query = graphql`
-  query RecipeQuery($id: String!) {
-    recipe(id: { eq: $id }) {
+  query BlogPostQuery($id: String!) {
+    blogPost(id: { eq: $id }) {
+      date(locale: "de", formatString: "DD MMMM YYYY")
       title
       body
-      timeToCook
       coverImage {
         childImageSharp {
           fluid(maxWidth: 1024) {
             ...GatsbyImageSharpFluid
           }
         }
-      }
-      category {
-        id
-        slug
       }
       categories {
         id

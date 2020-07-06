@@ -1,52 +1,30 @@
 /* @jsx jsx */
 import React from "react"
 import { Flex, jsx, ThemeProvider } from "theme-ui"
-import { Link } from "gatsby"
-import theme, { aboutTheme, recipesTheme, whatTheme } from "../theme"
-import { recipesPath } from "../../paths"
+import Link from "../components/Link"
+import {
+  aboutTheme,
+  blogTheme,
+  howTheme,
+  recipesTheme,
+  whatTheme,
+} from "../theme"
+import { blogPath, recipesPath } from "../../paths"
 
-const NavLink = React.forwardRef((props, ref) => {
-  const { sx, to, ...rest } = props
-  return (
-    <Link
-      ref={ref}
-      activeClassName="active"
-      to={to}
-      {...rest}
-      sx={{
-        position: "relative",
-        color: "accent",
-        textDecoration: "none",
-        fontFamily: "monospace",
-        letterSpacing: ["body", "condensed"],
-        fontSize: [1, 2],
-        whiteSpace: "nowrap",
-        "&:hover": {
-          color: "accent",
-        },
-        "&.active": {
-          color: "accent",
-        },
-        ...sx,
-      }}
-    />
-  )
-})
-
-const screens = [
+const pages = [
   {
-    title: "Home",
-    to: "/",
-    theme,
-  },
-  {
-    title: "Was & Wie",
-    to: "/#offers",
+    title: "Angebot",
+    to: "/offers",
     theme: whatTheme,
   },
   {
+    title: "Wie?",
+    to: "/how",
+    theme: howTheme,
+  },
+  {
     title: "Über mich",
-    to: "/#about",
+    to: "/about",
     theme: aboutTheme,
   },
   {
@@ -54,7 +32,44 @@ const screens = [
     to: `/${recipesPath}`,
     theme: recipesTheme,
   },
+  {
+    title: "Blog",
+    to: `/${blogPath}`,
+    theme: blogTheme,
+  },
 ]
+
+const NavLink = React.forwardRef((props, ref) => {
+  const { sx, to, ...rest } = props
+  return (
+    <Link
+      ref={ref}
+      to={to}
+      partiallyActive
+      {...rest}
+      sx={{
+        position: "relative",
+        py: 1,
+        px: 3,
+        textDecoration: "none",
+        fontWeight: "normal",
+        borderRadius: "round",
+        bg: "white",
+        whiteSpace: "nowrap",
+        ":hover": {
+          bg: "primary",
+          color: "background",
+          textDecoration: "none",
+        },
+        "&.active": {
+          bg: "primary",
+          color: "background",
+        },
+        ...sx,
+      }}
+    />
+  )
+})
 
 const Navigation = (props) => {
   return (
@@ -62,15 +77,19 @@ const Navigation = (props) => {
       as="nav"
       {...props}
       sx={{
-        transform: "translateZ(0)",
         alignItems: "center",
+        overflow: "auto",
+        "::-webkit-scrollbar": {
+          width: 0,
+          background: "transparent",
+        },
         "* + *": {
-          ml: 3,
+          ml: 1,
         },
         ...props.sx,
       }}
     >
-      {screens.map(({ title, theme, to }) => {
+      {pages.map(({ title, theme, to }) => {
         return (
           <ThemeProvider theme={theme} key={to}>
             <NavLink key={to} to={to}>

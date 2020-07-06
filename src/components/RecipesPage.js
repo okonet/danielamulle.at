@@ -35,20 +35,18 @@ export default ({ data, location, navigate }) => {
     navigate(nextUrl, {
       replace: true,
     })
-  }, [])
+  })
 
   return (
     <Layout theme={recipesTheme}>
       <SEO title="Rezepte" />
 
       <Container>
-        <Text sx={{ variant: "textStyles.lead" }}>
-          <Content />
-        </Text>
-
+        <Content />
         <Flex
           as="aside"
           sx={{
+            my: 4,
             flexWrap: "wrap",
             alignItems: "baseline",
           }}
@@ -70,7 +68,7 @@ export default ({ data, location, navigate }) => {
               minWidth: 225,
             }}
           />
-          <Text sx={{ mx: 2, fontSize: 0, color: "muted" }}>
+          <Text sx={{ mx: 2, fontSize: 0, color: "secondary" }}>
             {" oder wähle eine Kategorie: "}
           </Text>
           {tags && (
@@ -83,7 +81,10 @@ export default ({ data, location, navigate }) => {
                   <Text as="span" sx={{ pl: 1, fontSize: 0, color: "muted" }}>
                     ×
                   </Text>
-                  <Text as="span" sx={{ pl: 1, fontSize: 0, color: "muted" }}>
+                  <Text
+                    as="span"
+                    sx={{ pl: 1, fontSize: 0, color: "secondary" }}
+                  >
                     {tag.recipeCount}
                   </Text>
                 </Tag>

@@ -16,7 +16,7 @@ import { transparentize } from "@theme-ui/color"
 import Link from "./Link"
 import Group from "react-group"
 
-const Layout = ({ theme = defaultTheme, children }) => {
+const Layout = ({ theme = defaultTheme, children, mainStyles }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -29,52 +29,58 @@ const Layout = ({ theme = defaultTheme, children }) => {
   `)
 
   return (
-    <Flex sx={{ flexDirection: "column", minHeight: "100vh" }}>
-      <Box
-        as={"header"}
-        sx={{
-          py: 3,
-          position: "sticky",
-          top: 0,
-          bg: transparentize("background", 0.75),
-          backdropFilter: "blur(16px)",
-          zIndex: 10,
-        }}
-      >
-        <Container variant="full">
-          <Box
-            sx={{
-              px: [0, 0, 3],
-              display: ["block", "block", "flex"],
-            }}
-          >
-            <Logo />
-            <Navigation sx={{ ml: "auto", mt: 3 }} />
-          </Box>
-        </Container>
-      </Box>
+    <ThemeProvider theme={theme}>
+      <Flex sx={{ flexDirection: "column", minHeight: "100vh" }}>
+        <Box
+          as={"header"}
+          sx={{
+            py: 3,
+            position: "relative",
+            top: 0,
+            width: "100%",
+            bg: transparentize("background", 0),
+            // backgroundImage: `linear-gradient(rgba(255,255,255,1), rgba(255,255,255,0))`,
+            backdropFilter: "blur(32px)",
+            zIndex: 10,
+          }}
+        >
+          <Container variant="full">
+            <Box
+              sx={{
+                display: ["block", "flex", "flex"],
+              }}
+            >
+              <Logo />
+              <Navigation sx={{ ml: "auto", mt: 3 }} />
+            </Box>
+          </Container>
+        </Box>
 
-      <ThemeProvider theme={theme}>
         <Flex
           as="main"
-          sx={{ flexDirection: "column", flexGrow: 1, bg: "background" }}
+          sx={{
+            flexDirection: "column",
+            flexGrow: 1,
+            bg: "background",
+            ...mainStyles,
+          }}
         >
           {children}
         </Flex>
-      </ThemeProvider>
 
-      <Box as="footer" sx={{ py: 4, flexShrink: 1 }}>
-        <Container sx={{ color: "muted", fontSize: 0 }}>
-          <Group as="nav" separator=" • ">
-            <Link to="/impressum">Impressum</Link>
-            <Link to="/datenschutz">Datenschutz</Link>
-          </Group>
-          <Styled.p>
-            © {data.site.siteMetadata.author}, {new Date().getFullYear()}
-          </Styled.p>
-        </Container>
-      </Box>
-    </Flex>
+        <Box as="footer" sx={{ py: 4, flexShrink: 1, bg: "background" }}>
+          <Container sx={{ color: "secondary", fontSize: 0 }}>
+            <Group as="nav" separator=" • ">
+              <Link to="/impressum">Impressum</Link>
+              <Link to="/datenschutz">Datenschutz</Link>
+            </Group>
+            <Styled.p>
+              © {data.site.siteMetadata.author}, {new Date().getFullYear()}
+            </Styled.p>
+          </Container>
+        </Box>
+      </Flex>
+    </ThemeProvider>
   )
 }
 

@@ -7,14 +7,7 @@ export default ({ sx, ...props }) => (
   <Link
     activeClassName="active"
     sx={{
-      color: "link",
-      textDecoration: "none",
-      "&:hover": {
-        textDecoration: "underline",
-      },
-      "&.active": {
-        color: "accent",
-      },
+      variant: "styles.a",
       ...sx,
     }}
     {...props}

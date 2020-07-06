@@ -1,69 +1,153 @@
+/* @jsx jsx */
 import React from "react"
-import { Box, Container, Flex } from "theme-ui"
+import {
+  Box,
+  Container,
+  Flex,
+  Grid,
+  jsx,
+  Styled,
+  ThemeProvider,
+} from "theme-ui"
 import { graphql, useStaticQuery } from "gatsby"
-import Img from "gatsby-image"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
 import Home from "../../content/sections/home.mdx"
-import How from "../../content/sections/how.mdx"
-import Focus from "../../content/sections/focus.mdx"
-import About from "../../content/sections/about.mdx"
-import Section from "../components/Section"
-import { aboutTheme, howTheme, whatTheme } from "../theme"
+import { blogTheme, homeTheme, recipesTheme } from "../theme"
+import SEO from "../components/seo"
+import Layout from "../components/layout"
+import RecipeCard from "../components/RecipeCard"
+import Link from "../components/Link"
+import { blogPath, recipesPath } from "../../paths"
 
 const IndexPage = () => {
-  const portrait = useStaticQuery(graphql`
+  const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "portrait.png" }) {
+      latestRecipes: allRecipe(
+        limit: 3
+        sort: { fields: [date], order: [DESC] }
+      ) {
+        nodes {
+          ...RecipeMeta
+        }
+      }
+      latestBlogPosts: allBlogPost(
+        limit: 3
+        sort: { fields: [date], order: [DESC] }
+      ) {
+        nodes {
+          ...BlogPostMeta
+        }
+      }
+      portraitImage: file(relativePath: { eq: "portrait.png" }) {
         childImageSharp {
-          fluid(maxWidth: 300) {
-            ...GatsbyImageSharpFluid
+          resize(width: 400, quality: 100) {
+            src
           }
         }
       }
     }
   `)
-  const imgData = portrait.placeholderImage.childImageSharp.fluid
   return (
-    <Layout>
-      <SEO title="Willkommen" />
-
-      <Flex sx={{ px: 4, flexGrow: 1 }}>
-        <Container
+    <Layout theme={homeTheme}>
+      <SEO title={"Wilkommen"} />
+      <Container
+        variant="section"
+        sx={{
+          mt: [0, 3],
+          py: [0, 0],
+        }}
+      >
+        <Flex
           sx={{
-            display: ["block", "flex"],
-            flexGrow: 1,
+            flexDirection: ["column", "row"],
+            alignItems: ["center", "flex-end"],
+            h1: {
+              textAlign: ["center", "left"],
+            },
           }}
         >
+          <Flex
+            sx={{
+              order: [0, 1],
+              flex: "0 1 auto",
+              mr: [0, 4],
+            }}
+          >
+            <Box
+              sx={{
+                width: [150, 300],
+                height: [150, "auto"],
+                borderRadius: ["round", "none"],
+                overflow: "hidden",
+                objectFit: "cover",
+              }}
+            >
+              <img
+                src={data.portraitImage.childImageSharp.resize.src}
+                alt="Portrait von Daniela Mulle"
+                sx={{ width: "100%", verticalAlign: "top" }}
+              />
+            </Box>
+          </Flex>
           <Box
             sx={{
+              display: "block",
+              pb: 4,
               flex: 1,
+              "& > p:first-of-type": {
+                variant: "textStyles.lead",
+              },
             }}
           >
             <Home />
           </Box>
-          <Flex
-            sx={{
-              flex: 1,
-              alignItems: "flex-end",
-            }}
-          >
-            <Box sx={{ display: ["none", "block"], width: "100%" }}>
-              <Img fluid={imgData} />
-            </Box>
-          </Flex>
-        </Container>
-      </Flex>
+        </Flex>
+      </Container>
 
-      <Section theme={howTheme} blendMode="overlay">
-        <Focus />
-      </Section>
-      <Section theme={whatTheme} blendMode="overlay" id="offers">
-        <How />
-      </Section>
-      <Section theme={aboutTheme} blendMode="overlay" id="about">
-        <About />
-      </Section>
+      <ThemeProvider theme={recipesTheme}>
+        <Container>
+          <Styled.h2>
+            Letzte{" "}
+            <Link to={`/${recipesPath}`} sx={{ color: "inherit" }}>
+              Rezepte
+            </Link>
+          </Styled.h2>
+        </Container>
+        <Container variant="full">
+          <Grid gap={3} columns={[1, 3]} sx={{ my: 3 }}>
+            {data.latestRecipes.nodes.map(({ slug, coverImage, title }) => (
+              <RecipeCard
+                key={slug}
+                slug={slug}
+                coverImage={coverImage}
+                title={title}
+              />
+            ))}
+          </Grid>
+        </Container>
+      </ThemeProvider>
+
+      <ThemeProvider theme={blogTheme}>
+        <Container>
+          <Styled.h2>
+            Aktuell im{" "}
+            <Link to={`/${blogPath}`} sx={{ color: "inherit" }}>
+              Blog
+            </Link>
+          </Styled.h2>
+        </Container>
+        <Container variant="full">
+          <Grid gap={3} columns={[1, 3]} sx={{ my: 3 }}>
+            {data.latestBlogPosts.nodes.map(({ slug, coverImage, title }) => (
+              <RecipeCard
+                key={slug}
+                slug={slug}
+                coverImage={coverImage}
+                title={title}
+              />
+            ))}
+          </Grid>
+        </Container>
+      </ThemeProvider>
     </Layout>
   )
 }

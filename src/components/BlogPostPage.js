@@ -4,25 +4,17 @@ import { MDXRenderer } from "gatsby-plugin-mdx"
 import { Box, Container, Grid, jsx, Styled } from "theme-ui"
 import Layout from "./layout"
 import Link from "./Link"
-import { recipesTheme } from "../theme"
-import { recipesPath } from "../../paths"
+import { blogTheme } from "../theme"
+import { blogPath } from "../../paths"
 import Tag from "./Tag"
 import Group from "react-group"
 import Img from "gatsby-image"
 import SEO from "./seo"
 
 export default ({ data, pageContext }) => {
-  const {
-    body,
-    coverImage,
-    title,
-    category,
-    categories,
-    timeToCook,
-  } = data.recipe
-  const mainCategory = category[0]
+  const { body, coverImage, title, categories } = data.blogPost
   return (
-    <Layout theme={recipesTheme}>
+    <Layout theme={blogTheme}>
       <SEO title={title} ogImage={pageContext.ogImage} />
       <Img
         fluid={coverImage.childImageSharp.fluid}
@@ -38,8 +30,7 @@ export default ({ data, pageContext }) => {
             sx={{ color: "muted", fontSize: 0, gridColumn: [1, "1 / span 8"] }}
           >
             <Group separator=" → ">
-              <Link to={recipesPath}>Alle Rezepte</Link>
-              <Link to={mainCategory.slug}>{mainCategory.id}</Link>
+              <Link to={blogPath}>← Alle Blog Einträge</Link>
             </Group>
           </Box>
           <Styled.h1
@@ -58,8 +49,6 @@ export default ({ data, pageContext }) => {
               gridRow: "3 / span 2",
             }}
           >
-            <Styled.h3>Zubereitungszeit</Styled.h3>
-            <Styled.p>{timeToCook}</Styled.p>
             {categories && (
               <>
                 <Styled.h3>Kategorien</Styled.h3>
