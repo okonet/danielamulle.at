@@ -53,14 +53,15 @@ const IndexPage = () => {
       <Container
         variant="section"
         sx={{
-          mt: [0, 0, 0],
+          mt: [0, 3],
+          py: [0, 0],
         }}
       >
         <Flex
           sx={{
             flexDirection: ["column", "row"],
-            alignItems: "center",
-            "& h1": {
+            alignItems: ["center", "flex-end"],
+            h1: {
               textAlign: ["center", "left"],
             },
           }}
@@ -69,7 +70,6 @@ const IndexPage = () => {
             sx={{
               order: [0, 1],
               flex: "0 1 auto",
-              alignItems: "flex-start",
               mr: [0, 4],
             }}
           >
@@ -85,13 +85,14 @@ const IndexPage = () => {
               <img
                 src={data.portraitImage.childImageSharp.resize.src}
                 alt="Portrait von Daniela Mulle"
-                sx={{ width: "100%" }}
+                sx={{ width: "100%", verticalAlign: "top" }}
               />
             </Box>
           </Flex>
           <Box
             sx={{
               display: "block",
+              pb: 4,
               flex: 1,
               "& > p:first-of-type": {
                 variant: "textStyles.lead",
@@ -104,7 +105,7 @@ const IndexPage = () => {
       </Container>
 
       <ThemeProvider theme={recipesTheme}>
-        <Container sx={{ mt: 4 }}>
+        <Container>
           <Styled.h2>
             Letzte{" "}
             <Link to={recipesPath} sx={{ color: "inherit" }}>
@@ -122,7 +123,7 @@ const IndexPage = () => {
       </ThemeProvider>
 
       <ThemeProvider theme={blogTheme}>
-        <Container sx={{ mt: 4 }}>
+        <Container>
           <Styled.h2>
             Aktuell im{" "}
             <Link to={blogPath} sx={{ color: "inherit" }}>
