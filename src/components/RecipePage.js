@@ -9,8 +9,9 @@ import { recipesPath } from "../../paths"
 import Tag from "./Tag"
 import Group from "react-group"
 import Img from "gatsby-image"
+import SEO from "./seo"
 
-export default ({ data }) => {
+export default ({ data, pageContext }) => {
   const {
     body,
     coverImage,
@@ -22,6 +23,7 @@ export default ({ data }) => {
   const mainCategory = category[0]
   return (
     <Layout theme={recipesTheme}>
+      <SEO title={title} ogImage={pageContext.ogImage} />
       <Img
         fluid={coverImage.childImageSharp.fluid}
         style={{

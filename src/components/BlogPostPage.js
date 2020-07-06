@@ -9,11 +9,13 @@ import { blogPath } from "../../paths"
 import Tag from "./Tag"
 import Group from "react-group"
 import Img from "gatsby-image"
+import SEO from "./seo"
 
-export default ({ data }) => {
+export default ({ data, pageContext }) => {
   const { body, coverImage, title, categories } = data.blogPost
   return (
     <Layout theme={blogTheme}>
+      <SEO title={title} ogImage={pageContext.ogImage} />
       <Img
         fluid={coverImage.childImageSharp.fluid}
         style={{

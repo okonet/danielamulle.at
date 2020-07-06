@@ -11,6 +11,7 @@ module.exports = {
     title: "Daniela Mulle — Diätologin & Ernährungswissenschafterin",
     author: "Daniela Mulle",
     description: "Diätologin & Ernährungswissenschafterin",
+    url: "https://danielamulle.at",
     social: [
       {
         name: "Facebook",
@@ -36,6 +37,7 @@ module.exports = {
         ],
       },
     },
+    "gatsby-plugin-open-graph-images",
     "gatsby-plugin-react-helmet",
     {
       resolve: "gatsby-plugin-netlify-cms",

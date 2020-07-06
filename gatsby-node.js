@@ -7,6 +7,7 @@ const slug = require("slug")
 const visit = require("unist-util-visit")
 const toString = require("mdast-util-to-string")
 const pkg = require("./package.json")
+const { createOpenGraphImage } = require("gatsby-plugin-open-graph-images")
 const { createFilePath } = require("gatsby-source-filesystem")
 const {
   basePath,
@@ -314,6 +315,17 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         id: post.id,
         previousId: previous ? previous.node.id : undefined,
         nextId: next ? next.node.id : undefined,
+        ogImage: createOpenGraphImage(createPage, {
+          path: `/og-images/${post.id}.png`,
+          component: path.resolve(`src/templates/post-og-image.js`),
+          size: {
+            width: 1200,
+            height: 630,
+          },
+          context: {
+            ...post,
+          },
+        }),
       },
     })
   })
@@ -325,6 +337,17 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       component: RecipeTemplate,
       context: {
         id: post.id,
+        ogImage: createOpenGraphImage(createPage, {
+          path: `/og-images/${post.id}.png`,
+          component: path.resolve(`src/templates/post-og-image.js`),
+          size: {
+            width: 1200,
+            height: 630,
+          },
+          context: {
+            ...post,
+          },
+        }),
       },
     })
   })
