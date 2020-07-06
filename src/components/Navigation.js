@@ -2,7 +2,7 @@
 import React from "react"
 import { Flex, jsx, ThemeProvider } from "theme-ui"
 import Link from "../components/Link"
-import theme, {
+import {
   aboutTheme,
   blogTheme,
   howTheme,
@@ -10,7 +10,34 @@ import theme, {
   whatTheme,
 } from "../theme"
 import { blogPath, recipesPath } from "../../paths"
-import { transparentize } from "@theme-ui/color"
+
+const pages = [
+  {
+    title: "Angebot",
+    to: "/offers",
+    theme: whatTheme,
+  },
+  {
+    title: "Wie?",
+    to: "/how",
+    theme: howTheme,
+  },
+  {
+    title: "Über mich",
+    to: "/about",
+    theme: aboutTheme,
+  },
+  {
+    title: "Rezepte",
+    to: `/${recipesPath}`,
+    theme: recipesTheme,
+  },
+  {
+    title: "Blog",
+    to: `/${blogPath}`,
+    theme: blogTheme,
+  },
+]
 
 const NavLink = React.forwardRef((props, ref) => {
   const { sx, to, ...rest } = props
@@ -44,41 +71,12 @@ const NavLink = React.forwardRef((props, ref) => {
   )
 })
 
-const pages = [
-  {
-    title: "Angebot",
-    to: "/offers",
-    theme: whatTheme,
-  },
-  {
-    title: "Wie?",
-    to: "/how",
-    theme: howTheme,
-  },
-  {
-    title: "Über mich",
-    to: "/about",
-    theme: aboutTheme,
-  },
-  {
-    title: "Rezepte",
-    to: `/${recipesPath}`,
-    theme: recipesTheme,
-  },
-  {
-    title: "Blog",
-    to: `/${blogPath}`,
-    theme: blogTheme,
-  },
-]
-
 const Navigation = (props) => {
   return (
     <Flex
       as="nav"
       {...props}
       sx={{
-        transform: "translateZ(0)",
         alignItems: "center",
         overflow: "auto",
         "::-webkit-scrollbar": {
