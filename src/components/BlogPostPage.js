@@ -23,17 +23,7 @@ export default ({ data, pageContext }) => {
           maxHeight: 500,
         }}
       />
-      <Container
-        variant="full"
-        sx={{
-          py: [3, 4],
-          px: [3, 3, 88],
-          mt: -5,
-          bg: "white",
-          borderRadius: ["none", "none", "medium"],
-          zIndex: 1,
-        }}
-      >
+      <Container variant="section">
         <Grid gap={0} columns={[1, 12]}>
           <Box
             as="nav"

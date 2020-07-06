@@ -269,19 +269,39 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions
   const result = await graphql(`
     {
-      allBlogPost(sort: { fields: [date, title], order: DESC }, limit: 1000) {
-        edges {
-          node {
-            id
-            slug
+      allBlogPost(sort: { fields: [date, title], order: DESC }) {
+        nodes {
+          __typename
+          id
+          slug
+          title
+          coverImage {
+            childImageSharp {
+              fluid(maxWidth: 300) {
+                tracedSVG
+                src
+                srcSet
+                aspectRatio
+              }
+            }
           }
         }
       }
-      allRecipe(sort: { fields: [date, title], order: DESC }, limit: 1000) {
-        edges {
-          node {
-            id
-            slug
+      allRecipe(sort: { fields: [date, title], order: DESC }) {
+        nodes {
+          __typename
+          id
+          slug
+          title
+          coverImage {
+            childImageSharp {
+              fluid(maxWidth: 300) {
+                tracedSVG
+                src
+                srcSet
+                aspectRatio
+              }
+            }
           }
         }
       }
@@ -301,53 +321,26 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   // Create Posts and Post pages.
   const { allBlogPost, allRecipe, allCategory } = result.data
   const categories = allCategory.nodes
-  const blogPosts = allBlogPost.edges
-  const recipes = allRecipe.edges
+  const blogPosts = allBlogPost.nodes
+  const recipes = allRecipe.nodes
 
-  // Create a page for each BlogPost
-  blogPosts.forEach(({ node: post }, index) => {
-    const previous = index === recipes.length - 1 ? null : recipes[index + 1]
-    const next = index === 0 ? null : recipes[index - 1]
-    createPage({
-      path: post.slug,
-      component: BlogPostTemplate,
+  // Create a page for each BlogPost and Recipe
+  blogPosts.concat(recipes).forEach((post, index) => {
+    const ogImage = createOpenGraphImage(createPage, {
+      path: `/og-images/${post.id}.png`,
+      component: path.resolve(`src/templates/post-og-image.js`),
       context: {
-        id: post.id,
-        previousId: previous ? previous.node.id : undefined,
-        nextId: next ? next.node.id : undefined,
-        ogImage: createOpenGraphImage(createPage, {
-          path: `/og-images/${post.id}.png`,
-          component: path.resolve(`src/templates/post-og-image.js`),
-          size: {
-            width: 1200,
-            height: 630,
-          },
-          context: {
-            ...post,
-          },
-        }),
+        ...post,
       },
     })
-  })
 
-  // Create a page for each Recipe
-  recipes.forEach(({ node: post }, index) => {
     createPage({
       path: post.slug,
-      component: RecipeTemplate,
+      component:
+        post.__typename === "Recipe" ? RecipeTemplate : BlogPostTemplate,
       context: {
         id: post.id,
-        ogImage: createOpenGraphImage(createPage, {
-          path: `/og-images/${post.id}.png`,
-          component: path.resolve(`src/templates/post-og-image.js`),
-          size: {
-            width: 1200,
-            height: 630,
-          },
-          context: {
-            ...post,
-          },
-        }),
+        ogImage,
       },
     })
   })

@@ -4,7 +4,7 @@ import BlogPostPage from "../components/BlogPostPage"
 export default BlogPostPage
 
 export const query = graphql`
-  query BlogPostQuery($id: String!, $previousId: String, $nextId: String) {
+  query BlogPostQuery($id: String!) {
     blogPost(id: { eq: $id }) {
       date(locale: "de", formatString: "DD MMMM YYYY")
       title
@@ -20,16 +20,6 @@ export const query = graphql`
         id
         slug
       }
-    }
-    previous: blogPost(id: { eq: $previousId }) {
-      id
-      title
-      date(locale: "de", formatString: "DD MMMM YYYY")
-    }
-    next: blogPost(id: { eq: $nextId }) {
-      id
-      title
-      date(locale: "de", formatString: "DD MMMM YYYY")
     }
   }
 `

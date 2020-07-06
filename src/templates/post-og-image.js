@@ -1,6 +1,6 @@
 import React from "react"
-import RecipeCard from "../components/RecipeCard"
+import OgImage from "../components/OgImage"
 
-export default ({ slug, coverImage, title }) => {
-  return <RecipeCard slug={slug} coverImage={coverImage} title={title} />
+export default ({ pageContext }) => {
+  return <OgImage {...pageContext} />
 }
