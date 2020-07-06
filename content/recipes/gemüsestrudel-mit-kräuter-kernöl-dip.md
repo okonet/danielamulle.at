@@ -58,3 +58,5 @@ Dieses Gericht ist wirklich im Nu fertig, vor allem, wenn du fertigen Blätterte
 10. Mit Käse und Sonnenblumenkernen bestreuen.
 11. Bei 180 Grad ca. 30 Minuten backen, bis der Strudel schön braun geworden ist.
 12. Währenddessen alle Dipzutaten miteinander verrühren und mit Salz und Pfeffer abschmecken.
+
+</Preparation>
