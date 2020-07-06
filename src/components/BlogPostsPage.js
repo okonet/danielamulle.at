@@ -6,7 +6,6 @@ import Layout from "../components/layout"
 import { blogTheme } from "../theme"
 import RecipeCard from "./RecipeCard"
 import Content, * as meta from "../../content/sections/blog.mdx"
-import Section from "./Section"
 
 export default ({ data }) => {
   const { allBlogPost } = data

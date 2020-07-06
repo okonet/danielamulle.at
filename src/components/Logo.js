@@ -3,8 +3,6 @@ import React from "react"
 import { Box, jsx, Text } from "theme-ui"
 import { graphql, Link, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
-import { textOutline } from "../mixins"
-import { transparentize } from "@theme-ui/color"
 
 function Logo(props) {
   const data = useStaticQuery(graphql`

@@ -35,7 +35,7 @@ export default ({ data, location, navigate }) => {
     navigate(nextUrl, {
       replace: true,
     })
-  }, [])
+  })
 
   return (
     <Layout theme={recipesTheme}>
