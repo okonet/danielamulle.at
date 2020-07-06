@@ -122,6 +122,15 @@ const theme = {
       px: [3, 3, 0],
       maxWidth: 844, // 10 x (70px + 16px gap)
     },
+    section: {
+      maxWidth: 1016, // 12 x (70px + 16px gap)
+      py: [3, 4],
+      px: [3, 3, 88],
+      mt: [0, -4],
+      bg: "white",
+      borderRadius: ["none", "none", "medium"],
+      zIndex: 1,
+    },
   },
   styles: {
     root: {

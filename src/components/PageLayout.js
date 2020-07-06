@@ -26,19 +26,7 @@ export default ({
           <Styled.h1 sx={{ color: "background" }}>{title}</Styled.h1>
         </Section>
       )}
-      <Container
-        variant="full"
-        sx={{
-          py: [3, 4],
-          px: [3, 3, 88],
-          mt: [0, -4],
-          bg: "white",
-          borderRadius: ["none", "none", "medium"],
-          zIndex: 1,
-        }}
-      >
-        {children}
-      </Container>
+      <Container variant="section">{children}</Container>
     </Layout>
   )
 }
