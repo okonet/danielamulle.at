@@ -47,7 +47,7 @@ const Layout = ({ theme = defaultTheme, children, mainStyles }) => {
           <Container variant="full">
             <Box
               sx={{
-                display: ["block", "block", "flex"],
+                display: ["block", "flex", "flex"],
               }}
             >
               <Logo />
