@@ -96,33 +96,19 @@ module.exports = {
                 id
                 title
                 ingredients
-                category {
-                  id
-                }
-                categories {
-                  id
-                }
               }
             }
           }
         `,
-
         ref: "id",
-
-        index: ["title", "ingredients", "category", "categories"],
-
+        index: ["title", "ingredients"],
         store: ["id"],
-
         normalizer: ({ data }) =>
-          data.allRecipe.nodes.map(
-            ({ id, title, ingredients, category, categories }) => ({
-              id,
-              title,
-              ingredients,
-              category: category.id,
-              categories: categories.map((cat) => cat.id),
-            })
-          ),
+          data.allRecipe.nodes.map(({ id, title, ingredients }) => ({
+            id,
+            title,
+            ingredients,
+          })),
       },
     },
     "gatsby-transformer-sharp",

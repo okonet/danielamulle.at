@@ -5,6 +5,7 @@ export default RecipesPage
 
 export const query = graphql`
   fragment RecipeMeta on Recipe {
+    id ## Required for search to work
     slug
     title
     coverImage {
