@@ -46,7 +46,6 @@ const IndexPage = () => {
       }
     }
   `)
-  console.log(data)
   return (
     <Layout theme={homeTheme}>
       <SEO title={"Wilkommen"} />
@@ -108,7 +107,7 @@ const IndexPage = () => {
         <Container>
           <Styled.h2>
             Letzte{" "}
-            <Link to={recipesPath} sx={{ color: "inherit" }}>
+            <Link to={`/${recipesPath}`} sx={{ color: "inherit" }}>
               Rezepte
             </Link>
           </Styled.h2>
@@ -116,7 +115,12 @@ const IndexPage = () => {
         <Container variant="full">
           <Grid gap={3} columns={[1, 3]} sx={{ my: 3 }}>
             {data.latestRecipes.nodes.map(({ slug, coverImage, title }) => (
-              <RecipeCard slug={slug} coverImage={coverImage} title={title} />
+              <RecipeCard
+                key={slug}
+                slug={slug}
+                coverImage={coverImage}
+                title={title}
+              />
             ))}
           </Grid>
         </Container>
@@ -126,7 +130,7 @@ const IndexPage = () => {
         <Container>
           <Styled.h2>
             Aktuell im{" "}
-            <Link to={blogPath} sx={{ color: "inherit" }}>
+            <Link to={`/${blogPath}`} sx={{ color: "inherit" }}>
               Blog
             </Link>
           </Styled.h2>
@@ -134,7 +138,12 @@ const IndexPage = () => {
         <Container variant="full">
           <Grid gap={3} columns={[1, 3]} sx={{ my: 3 }}>
             {data.latestBlogPosts.nodes.map(({ slug, coverImage, title }) => (
-              <RecipeCard slug={slug} coverImage={coverImage} title={title} />
+              <RecipeCard
+                key={slug}
+                slug={slug}
+                coverImage={coverImage}
+                title={title}
+              />
             ))}
           </Grid>
         </Container>
