@@ -75,7 +75,7 @@ const IndexPage = () => {
           >
             <Box
               sx={{
-                width: [150, 200],
+                width: [150, 300],
                 height: [150, "auto"],
                 borderRadius: ["round", "none"],
                 overflow: "hidden",
