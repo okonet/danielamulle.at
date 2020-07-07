@@ -48,51 +48,53 @@ function SEO({ description, lang, meta, title, ogImage }) {
       titleTemplate={title ? `%s | ${site.siteMetadata.title}` : undefined}
       meta={[
         {
-          name: `description`,
-          content: metaDescription,
-        },
-        {
-          property: `og:title`,
+          name: "title",
+          property: "og:title",
           content: site.siteMetadata.title,
         },
         {
-          property: `og:description`,
+          name: "description",
           content: metaDescription,
         },
         {
-          property: `og:type`,
-          content: `website`,
-        },
-        {
-          property: `og:locale`,
-          content: site.siteMetadata.locale,
-        },
-        {
-          name: `og:image`,
-          content: ogImagePath,
-        },
-        {
-          name: `og:image:type`,
-          content: "image/png",
-        },
-        {
-          name: `twitter:card`,
-          content: `summary_large_image`,
-        },
-        {
-          name: `twitter:creator`,
+          name: "author",
           content: site.siteMetadata.author,
         },
         {
-          name: `twitter:title`,
+          property: "og:description",
+          content: metaDescription,
+        },
+        {
+          property: "og:type",
+          content: "website",
+        },
+        {
+          property: "og:locale",
+          content: site.siteMetadata.locale,
+        },
+        {
+          name: "image",
+          property: "og:image",
+          content: ogImagePath,
+        },
+        {
+          name: "twitter:card",
+          content: "summary_large_image",
+        },
+        {
+          name: "twitter:creator",
+          content: site.siteMetadata.author,
+        },
+        {
+          name: "twitter:title",
           content: title,
         },
         {
-          name: `twitter:description`,
+          name: "twitter:description",
           content: site.siteMetadata.title,
         },
         {
-          name: `twitter:image`,
+          name: "twitter:image",
           content: ogImagePath,
         },
       ].concat(meta)}
