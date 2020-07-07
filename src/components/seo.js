@@ -72,6 +72,10 @@ function SEO({ description, lang, meta, title, ogImage }) {
       ].concat(meta)}
     >
       <meta
+        property="twitter:image"
+        content={site.siteMetadata.url + ogImage.path}
+      />
+      <meta
         property="og:image"
         content={site.siteMetadata.url + ogImage.path}
       />
