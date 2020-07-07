@@ -14,4 +14,4 @@ Versuche diese 5 Punkte in deinen Essalltag einzubauen:
 4. Nicht täglich Fleisch, Wurst & Co.: nur an 3 Tagen pro Woche ist für deinen Körper absolut ausreichend 
 5. Pflanzenfette statt Butter & Co.: damit versorgst du dich mit ganz besonderen Fetten: omega 9, z.B. Olive, omega 3, z.B. Walnuss oder Raps und omega 6, z.B. Sonnenblume. Sie sind für deinen Körper super spannend, denn im Gegensatz zu Butter, Schmalz, Obers, oder Kokosfett kann der Körper die omega-Fette nicht selber bauen.
 
-Beherzigst du diese 5 Punkte bleibt für Süßes, Fettes, Weißmehlprodukte und Alkohol automatisch nur noch wenig Platz am Teller bzw. im Glas übrig.
+Beherzigst du diese 5 Punkte, bleibt für Süßes, Fettes, Weißmehlprodukte und Alkohol automatisch nur noch wenig Platz am Teller bzw. im Glas übrig.
