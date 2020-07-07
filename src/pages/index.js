@@ -48,7 +48,7 @@ const IndexPage = () => {
   `)
   return (
     <Layout theme={homeTheme}>
-      <SEO title={"Wilkommen"} />
+      <SEO />
       <Container
         variant="section"
         sx={{

@@ -12,6 +12,8 @@ module.exports = {
     author: "Daniela Mulle",
     description: "Diätologin & Ernährungswissenschafterin",
     url: "https://danielamulle.at",
+    lang: "de",
+    locale: "de_AT",
     social: [
       {
         name: "Facebook",

@@ -15,9 +15,10 @@ import { default as defaultTheme } from "../theme"
 import { transparentize } from "@theme-ui/color"
 import Link from "./Link"
 import Group from "react-group"
+import SEO from "./seo"
 
 const Layout = ({ theme = defaultTheme, children, mainStyles }) => {
-  const data = useStaticQuery(graphql`
+  const { site } = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
         siteMetadata {
@@ -75,7 +76,7 @@ const Layout = ({ theme = defaultTheme, children, mainStyles }) => {
               <Link to="/datenschutz">Datenschutz</Link>
             </Group>
             <Styled.p>
-              © {data.site.siteMetadata.author}, {new Date().getFullYear()}
+              © {site.siteMetadata.author}, {new Date().getFullYear()}
             </Styled.p>
           </Container>
         </Box>

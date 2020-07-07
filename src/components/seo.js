@@ -21,6 +21,8 @@ function SEO({ description, lang, meta, title, ogImage }) {
             description
             author
             url
+            lang
+            locale
           }
         }
         defaultImage: file(relativePath: { eq: "og-image.png" }) {
@@ -40,10 +42,10 @@ function SEO({ description, lang, meta, title, ogImage }) {
   return (
     <Helmet
       htmlAttributes={{
-        lang,
+        lang: lang || site.siteMetadata.lang,
       }}
-      title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
+      title={title || site.siteMetadata.title}
+      titleTemplate={title ? `%s | ${site.siteMetadata.title}` : undefined}
       meta={[
         {
           name: `description`,
@@ -62,12 +64,16 @@ function SEO({ description, lang, meta, title, ogImage }) {
           content: `website`,
         },
         {
+          property: `og:locale`,
+          content: site.siteMetadata.locale,
+        },
+        {
           name: `og:image`,
           content: ogImagePath,
         },
         {
-          name: `og:image:alt`,
-          content: site.siteMetadata.title,
+          name: `og:image:type`,
+          content: "image/png",
         },
         {
           name: `twitter:card`,
@@ -95,7 +101,6 @@ function SEO({ description, lang, meta, title, ogImage }) {
 }
 
 SEO.defaultProps = {
-  lang: "de",
   meta: [],
   description: "",
 }
@@ -104,7 +109,7 @@ SEO.propTypes = {
   description: PropTypes.string,
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
 }
 
 export default SEO
