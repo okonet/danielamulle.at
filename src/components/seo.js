@@ -12,7 +12,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import { jsx } from "theme-ui"
 
 function SEO({ description, lang, meta, title, ogImage }) {
-  const { site } = useStaticQuery(
+  const { site, defaultImage } = useStaticQuery(
     graphql`
       query {
         site {
@@ -23,12 +23,20 @@ function SEO({ description, lang, meta, title, ogImage }) {
             url
           }
         }
+        defaultImage: file(relativePath: { eq: "og-image.png" }) {
+          childImageSharp {
+            original {
+              src
+            }
+          }
+        }
       }
     `
   )
 
   const metaDescription = description || site.siteMetadata.description
-  const ogImagePath = site.siteMetadata.url + ogImage.path
+  const { src } = defaultImage.childImageSharp.original
+  const ogImagePath = site.siteMetadata.url + (ogImage ? ogImage.path : src)
   return (
     <Helmet
       htmlAttributes={{
@@ -43,7 +51,7 @@ function SEO({ description, lang, meta, title, ogImage }) {
         },
         {
           property: `og:title`,
-          content: title,
+          content: site.siteMetadata.title,
         },
         {
           property: `og:description`,
@@ -52,6 +60,14 @@ function SEO({ description, lang, meta, title, ogImage }) {
         {
           property: `og:type`,
           content: `website`,
+        },
+        {
+          name: `og:image`,
+          content: ogImagePath,
+        },
+        {
+          name: `og:image:alt`,
+          content: site.siteMetadata.title,
         },
         {
           name: `twitter:card`,
@@ -67,27 +83,11 @@ function SEO({ description, lang, meta, title, ogImage }) {
         },
         {
           name: `twitter:description`,
-          content: metaDescription,
+          content: site.siteMetadata.title,
         },
         {
           name: `twitter:image`,
           content: ogImagePath,
-        },
-        {
-          name: `og:image`,
-          content: ogImagePath,
-        },
-        {
-          name: `og:image:alt`,
-          content: title,
-        },
-        {
-          name: `og:image:width`,
-          content: ogImage.size.width,
-        },
-        {
-          name: `og:image:height`,
-          content: ogImage.size.height,
         },
       ].concat(meta)}
     />
@@ -95,16 +95,9 @@ function SEO({ description, lang, meta, title, ogImage }) {
 }
 
 SEO.defaultProps = {
-  lang: `de`,
+  lang: "de",
   meta: [],
-  description: ``,
-  ogImage: {
-    path: "../src/images/og-image.png",
-    size: {
-      width: 1200,
-      height: 630,
-    },
-  },
+  description: "",
 }
 
 SEO.propTypes = {

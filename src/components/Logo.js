@@ -5,7 +5,7 @@ import { graphql, Link, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 
 function Logo(props) {
-  const data = useStaticQuery(graphql`
+  const { site, image } = useStaticQuery(graphql`
     query {
       site {
         siteMetadata {
@@ -39,7 +39,7 @@ function Logo(props) {
         },
       }}
     >
-      <Img fixed={data.image.childImageSharp.fixed} alt="Logo" />
+      <Img fixed={image.childImageSharp.fixed} alt="Logo" />
       <Box sx={{ ml: 1 }}>
         <Text
           as="p"
@@ -52,7 +52,7 @@ function Logo(props) {
             maxWidth: "20ch",
           }}
         >
-          {data.site.siteMetadata.description}
+          {site.siteMetadata.description}
         </Text>
         <Text
           as="h1"
@@ -64,7 +64,7 @@ function Logo(props) {
             fontSize: 2,
           }}
         >
-          {data.site.siteMetadata.author}
+          {site.siteMetadata.author}
         </Text>
       </Box>
     </Link>
