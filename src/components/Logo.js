@@ -47,7 +47,7 @@ function Logo() {
             m: 0,
             color: "secondary",
             fontFamily: "monospace",
-            fontSize: 0,
+            fontSize: "11px",
             letterSpacing: "condensed",
             maxWidth: "20ch",
           }}

@@ -3,7 +3,7 @@ import Link from "./Link"
 import Img from "gatsby-image"
 import { Box, Flex, Text, ThemeProvider } from "theme-ui"
 import { transparentize } from "@theme-ui/color"
-import theme, { palette, recipesTheme } from "../theme"
+import theme, { palette } from "../theme"
 import { graphql, useStaticQuery } from "gatsby"
 
 function Logo() {
@@ -12,7 +12,7 @@ function Logo() {
       site {
         siteMetadata {
           author
-          description
+          role
         }
       }
       image: file(relativePath: { eq: "logo@2x.png" }) {
@@ -47,10 +47,9 @@ function Logo() {
             fontFamily: "monospace",
             fontSize: 0,
             lineHeight: 1,
-            letterSpacing: "condensed",
           }}
         >
-          {data.site.siteMetadata.description}
+          {data.site.siteMetadata.role}
         </Text>
         <Text
           as="h1"
