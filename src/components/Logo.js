@@ -4,13 +4,13 @@ import { Box, jsx, Text } from "theme-ui"
 import { graphql, Link, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 
-function Logo(props) {
+function Logo() {
   const { site, image } = useStaticQuery(graphql`
     query {
       site {
         siteMetadata {
           author
-          description
+          role
         }
       }
       image: file(relativePath: { eq: "logo@2x.png" }) {
@@ -52,7 +52,7 @@ function Logo(props) {
             maxWidth: "20ch",
           }}
         >
-          {site.siteMetadata.description}
+          {site.siteMetadata.role}
         </Text>
         <Text
           as="h1"

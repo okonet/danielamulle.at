@@ -39,12 +39,13 @@ function SEO({ description, lang, meta, title, ogImage }) {
   const metaDescription = description || site.siteMetadata.description
   const { src } = defaultImage.childImageSharp.original
   const ogImagePath = site.siteMetadata.url + (ogImage ? ogImage.path : src)
+  let siteTitle = title || site.siteMetadata.title
   return (
     <Helmet
       htmlAttributes={{
         lang: lang || site.siteMetadata.lang,
       }}
-      title={title || site.siteMetadata.title}
+      title={siteTitle}
       titleTemplate={title ? `%s | ${site.siteMetadata.title}` : undefined}
       meta={[
         {
@@ -87,11 +88,11 @@ function SEO({ description, lang, meta, title, ogImage }) {
         },
         {
           name: "twitter:title",
-          content: title,
+          content: siteTitle,
         },
         {
           name: "twitter:description",
-          content: site.siteMetadata.title,
+          content: site.siteMetadata.description,
         },
         {
           name: "twitter:image",

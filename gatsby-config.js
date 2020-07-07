@@ -10,7 +10,8 @@ module.exports = {
   siteMetadata: {
     title: "Daniela Mulle — Diätologin & Ernährungswissenschafterin",
     author: "Daniela Mulle",
-    description: "Diätologin & Ernährungswissenschafterin",
+    role: "Diätologin & Ernährungswissenschafterin",
+    description: "Ernährungswissenschafterin & Diätologin aus Leidenschaft",
     url: "https://danielamulle.at",
     lang: "de",
     locale: "de_AT",
