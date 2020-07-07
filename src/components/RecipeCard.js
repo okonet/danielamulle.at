@@ -41,6 +41,12 @@ function RecipeCard({ coverImage, categories, slug, title, ...props }) {
           display: "block",
           overflow: "hidden",
           bg: "teal.1",
+          ".image": {
+            transition: "transform 500ms ease-in-out",
+          },
+          ":hover .image": {
+            transform: "scale(1.125)",
+          },
         }}
       >
         <AspectRatio ratio={1.5}>
