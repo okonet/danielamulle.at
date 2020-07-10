@@ -3,8 +3,8 @@ title: Gebackene Apfelrollen
 date: 2020-07-10T12:01:12.643Z
 coverImage: ../assets/20200523-DSC02846.jpg
 category:
-  - value: Snacks
-    label: Snacks
+  - value: 'Kuchen, Kekserl & Co'
+    label: 'Kuchen, Kekserl & Co'
 tags:
   - value: vegetarisch
     label: vegetarisch
