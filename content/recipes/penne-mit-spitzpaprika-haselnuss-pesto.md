@@ -20,7 +20,7 @@ tags:
     label: glutenfrei
 timeToCook: 15 Minuten vorbereiten + ca. 20 Minuten rösten
 ---
-ieses Pesto schmeckt nicht nur zu Nudeln, sondern auch als Dip oder Brotaufstrich hervorragend. Gut verschlossen kannst du es ca. 5 Tage im Kühlschrank lagern. Die Mischung aus Haselnüssen, Oliven- und Rapsöl sorgt für einen leckeren & super wertvollen Mix aus omega-9 und omega-3-Fetten.
+Dieses Pesto schmeckt nicht nur zu Nudeln, sondern auch als Dip oder Brotaufstrich hervorragend. Gut verschlossen kannst du es ca. 5 Tage im Kühlschrank lagern. Die Mischung aus Haselnüssen, Oliven- und Rapsöl sorgt für einen leckeren & super wertvollen Mix aus omega-9 und omega-3-Fetten.
 
 <Ingredients yields="4 Personen">
 
