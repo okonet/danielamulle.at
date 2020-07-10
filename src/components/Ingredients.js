@@ -15,23 +15,25 @@ function IngredientItem({ children }) {
         color: completed ? "muted" : "text",
       }}
     >
-      <Label sx={{ display: "flex", alignItems: "center" }}>
-        <Checkbox
-          checked={completed}
-          sx={{
-            color: "muted",
-            width: "1rem",
-            height: "1rem",
-            "input:checked ~ &": {
+      <Label sx={{ cursor: "pointer" }}>
+        <Box sx={{ flexShrink: 0, mt: "0.3rem" }}>
+          <Checkbox
+            checked={completed}
+            sx={{
               color: "muted",
-            },
-            "input:focus ~ &": {
-              color: "secondary",
-              bg: "background",
-            },
-          }}
-          onChange={() => setCompleted(!completed)}
-        />
+              width: "1rem",
+              height: "1rem",
+              "input:checked ~ &": {
+                color: "muted",
+              },
+              "input:focus ~ &": {
+                color: "secondary",
+                bg: "background",
+              },
+            }}
+            onChange={() => setCompleted(!completed)}
+          />
+        </Box>
         {children}
       </Label>
     </Styled.li>

@@ -23,7 +23,13 @@ export default ({
           sx={{ pt: 6, pb: [3, 5], ...sx }}
           {...props}
         >
-          <Styled.h1 sx={{ color: "background" }}>{title}</Styled.h1>
+          <Styled.h1
+            sx={{
+              variant: "textStyles.pageTitle",
+            }}
+          >
+            {title}
+          </Styled.h1>
         </Section>
       )}
       <Container variant="section">{children}</Container>

@@ -6,7 +6,13 @@ function Preparation({ children }) {
   return (
     <>
       <Styled.h2>Zubereitung</Styled.h2>
-      <Styled.ol>
+      <Styled.ol
+        sx={{
+          pl: 0,
+          listStyle: "none",
+          counterReset: "steps",
+        }}
+      >
         {React.Children.map(children, (child) =>
           React.Children.map(child.props.children, (listItem) => {
             return (
@@ -23,7 +29,13 @@ function Preparation({ children }) {
                   transition: "all .25s",
                   ":hover": {
                     boxShadow: "float",
-                    transform: "scale(1.1)",
+                    transform: "scale(1.05)",
+                  },
+                  "&::before": {
+                    variant: "textStyles.sectionTitle",
+                    color: "muted",
+                    counterIncrement: "steps",
+                    content: 'counters(steps, ".") ". "',
                   },
                 }}
               >

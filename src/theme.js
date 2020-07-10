@@ -72,6 +72,9 @@ const theme = {
     float: "0px 4px 16px rgba(25, 25, 25, 0.075);",
   },
   textStyles: {
+    pageTitle: {
+      color: "primary",
+    },
     title: {
       m: 0,
       color: "primary",
@@ -160,26 +163,24 @@ const theme = {
       color: "text",
     },
     ul: {
+      position: "relative",
       my: 2,
-      pl: 0,
+      pl: 3,
       listStyle: "none",
       "li::before": {
-        variant: "textStyles.sectionTitle",
-        color: "teal.5",
-        content: '"— "',
+        position: "absolute",
+        left: 0,
+        fontSize: "11px",
+        lineHeight: 2.2,
+        // variant: "textStyles.sectionTitle",
+        color: "muted",
+        content: '" ✼ "',
       },
     },
     ol: {
       p: 0,
-      mt: 3,
-      listStyle: "none",
-      counterReset: "steps",
-      "li::before": {
-        variant: "textStyles.sectionTitle",
-        color: "muted",
-        counterIncrement: "steps",
-        content: 'counters(steps, ".") ". "',
-      },
+      pl: 3,
+      my: 2,
     },
     li: {
       mb: 3,
@@ -224,6 +225,12 @@ export const whatTheme = {
     secondary: palette.cyan[4],
     muted: palette.cyan[5],
   },
+  textStyles: {
+    ...theme.textStyles,
+    pageTitle: {
+      color: "background",
+    },
+  },
   // coverSrc: unsplashURL("08bOYnH_r_E"),
   coverSrc: unsplashURL("QSHF4Q1S0JU"),
 }
@@ -238,6 +245,12 @@ export const howTheme = {
     primary: palette.green[3],
     secondary: palette.green[4],
     muted: palette.green[5],
+  },
+  textStyles: {
+    ...theme.textStyles,
+    pageTitle: {
+      color: "background",
+    },
   },
   coverSrc: unsplashURL("sTPy-oeA3h0"),
 }
