@@ -82,6 +82,7 @@ const theme = {
       fontWeight: "body",
       fontFamily: "heading",
       lineHeight: "heading",
+      wordBreak: "break-word", // closes #43
     },
     subTitle: {
       m: 0,
