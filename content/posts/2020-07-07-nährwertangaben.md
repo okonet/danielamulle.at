@@ -1,5 +1,7 @@
 ---
-title: Nährwertangaben
+title: >-
+  Warum Kalorienzählen überflüssig ist, und ich bewusst auf Nährwertangaben
+  verzichte
 date: 2020-07-07T08:42:26.770Z
 coverImage: ../assets/20200523-DSC02838.jpg
 ---
