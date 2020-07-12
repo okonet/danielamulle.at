@@ -22,7 +22,7 @@ tags:
     label: glutenfrei
 timeToCook: 15 Minuten vorbereiten + ca. 30 Minuten backen
 ---
-Dieses Gericht ist wirklich im Nu fertig, vor allem, wenn du fertigen Blätterteil & Tiefkühlgemüse verwendest. Gemeinsam mit dem Dip und einem großen bunten Salat ein großartiges & gesundes (Abend)essen:
+Dieses Gericht ist wirklich im Nu fertig, vor allem, wenn du fertigen Blätterteig & Tiefkühlgemüse verwendest. Gemeinsam mit dem Dip und einem großen bunten Salat ein großartiges & gesundes (Abend)essen:
 
 <Ingredients yields="4 Personen">
 
