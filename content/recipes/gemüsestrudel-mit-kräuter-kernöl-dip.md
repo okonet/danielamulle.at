@@ -27,6 +27,7 @@ Dieses Gericht ist wirklich im Nu fertig, vor allem, wenn du fertigen Blätterte
 <Ingredients yields="4 Personen">
 
 ### Strudel
+
 - 1 Packung Blätterteig
 - 250 g (Tiefkühl)gemüse deiner Wahl
 - 130 g Fetakäse
@@ -37,6 +38,7 @@ Dieses Gericht ist wirklich im Nu fertig, vor allem, wenn du fertigen Blätterte
 - geriebener Käse und Sonnenblumenkerne zum Bestreuen
 
 ### Kräuter-Kernöl-Dip
+
 - 1/2 Becher (Soja)joghurt natur
 - 1/2 Becher Sauerrahm
 - 3 EL verschiedenen Kräuter
