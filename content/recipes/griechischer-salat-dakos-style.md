@@ -29,7 +29,7 @@ ingredients:
   - 'Salz, Pfeffer'
   - frisches Basilikum
 ---
-Dakos ist ein Gericht aus Kreta: Tomaten, Kräutern & Feta werden dabei auf Paximadi, ein zwiebackähnliches Gersternbrot, serviert.
+Dakos ist ein Gericht aus Kreta: Tomaten, Kräuter & Feta werden dabei auf Paximadi, ein zwiebackähnliches Gersternbrot, serviert.
 
 <Ingredients yields="4 Personen">
 
