@@ -66,3 +66,5 @@ Diesem super g'schmackige, eiweißreichen Eintopf  verleiht die Zitronen-Petersi
 16. Derweil Petersilieblätter in einer kleinen Schüssel mit der Zitronenschale mischen.
 17. Eintopf mit Salz und Pfeffer abschmecken.
 18. Anrichten und mit der Zitronen-Petersilien-Mischung bestreut servieren.
+
+</Preparation>
