@@ -6,8 +6,6 @@ category:
   - value: Hauptspeisen
     label: Hauptspeisen
 tags:
-  - value: vegan
-    label: vegan
   - value: vegetarisch
     label: vegetarisch
   - value: gut vorzubereiten
