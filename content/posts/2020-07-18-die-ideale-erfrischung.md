@@ -3,19 +3,19 @@ title: Die ideale Erfrischung
 date: 2020-07-18T05:56:24.617Z
 coverImage: ../assets/infused-water.jpg
 ---
-Dein Körper besteht zu > 50 % aus Wasser. Wasser spielt eine zentrale Rolle - als Transporter, Lösungsmittel aber auch zur Kühlung durch Schwitzen. 
+Dein Körper besteht zu > 50 % aus Wasser. Es spielt eine zentrale Rolle: als Transporter, Lösungsmittel aber auch zur Kühlung durch Schwitzen. 
 
 Trinkst du zu wenig, wird dein Blut dickflüssiger, Muskeln & Gehirn werden weniger gut mit Sauerstoff & Nährstoffen versorgt. Du wirst müde, unkonzentriert, und bringst bei deiner Arbeit, in Schule oder Uni und auch beim Sport nicht mehr deine gewohnte Leistung. Außerdem kann dein Körper Abbauprodukte über die Nieren nicht mehr vollständig loswerden. 
 
 ## Wieviel solltest du täglich trinken?
 
-Normalerweise erinnert dich dein Körper durch Durst ans Trinken. Beim konzentrierten Arbeiten oder im stressigen Alltag kann es leicht passieren, dass du dieses Signal überhörst. Auch Ältere Menschen verspüren oft nur selten Durst, obwohl gerade bei SeniorInnen ausreichend Flüssigkeit wichtig ist, um körperlich & geistig fit zu bleiben.
-Wenn du dein Körpergewicht mit 35 multipliziert, erfährst du die Menge in Milliliter, die du durch dein Essen & Trinken decken solltest. Wenn du viel schwitzt (Sport, Hitze, Fieber), brauchst du noch mehr. Angenommen, du hast 70 kg, dann liegt dein Gesamtbedarf bei 70 x 35 = 2.450 ml, d.h. mindestens 2 Liter Trinken, den Rest über Essen.
+Normalerweise erinnert dich dein Körper durch Durst ans Trinken. Beim konzentrierten Arbeiten oder im stressigen Alltag kann es leicht passieren, dass du dieses Signal überhörst. Auch ältere Menschen verspüren oft nur selten Durst, obwohl gerade bei SeniorInnen ausreichend Flüssigkeit wichtig ist, um körperlich & geistig fit zu bleiben.
+Wenn du dein Körpergewicht mit 35 multipliziert, erfährst du die Menge in Milliliter, die du durch dein Essen & Trinken decken solltest. Wenn du viel schwitzt, z.B. bei Sport, Hitze oder Fieber, brauchst du noch mehr. Angenommen, du hast 70 kg, dann liegt dein Gesamtbedarf bei 70 x 35 = 2.450 ml, d.h. mindestens 2 Liter trinken, den Rest über dein Essen zu dir.
 
 ## Was sollst du trinken?
 
-Limonaden, Wellnessgetränke, Energydrinks, Säfte und Sirupe enthalten leider sehr viel Zucker, und sollten daher nicht deine bevorzugten Durstlöscher sein, genauso wenig wie Milch oder Alkohol. Auch frische Fruchtsäfte nur ab und zu genießen, am besten immer verdünnt, im Verhältnis 1 : 3 (Fruchtsaft : Wasser).
-Ideal ist reines Wasser, egal, ob direkt aus der Leitung oder Flasche, oder ob mit bzw. ohne Kohlensäure. Falls dir das zu fad ist, sind ungezuckerte Kräuter- und Früchtetees eine gute Abwechslung, oder Infused Water: „Infused“ bedeutet „aufgegossen“: Dabei gibst du Obst, Gemüse und diverse Kräuter einfach in frisches Wasser. Diese Mischung lässt du eine Weile ziehen, damit die Aromen der Zutaten ins Wasser übergehen. Deiner Fantasie sind dabei keine Grenzen gesetzt. Wasche alles gründlich und verwende idealerweise Bio-Produkte. Das Ergebnis schmeckt jedenfalls köstlich, und ist auch optisch ein Genuss.
+Limonaden, Wellnessgetränke, Energydrinks, Säfte, Smoothies und Sirupe enthalten leider oft sehr viel Zucker, und sollten daher nicht deine bevorzugten Durstlöscher sein, genauso wenig wie Milch oder Alkohol. Auch frische Fruchtsäfte nur ab und zu genießen, am besten immer gut verdünnt, im Verhältnis 1 : 3 Fruchtsaft zu Wasser.
+Optimal ist reines Wasser, egal, ob direkt aus der Leitung oder Flasche, oder ob mit bzw. ohne Kohlensäure. Falls dir das zu fad ist, sind ungezuckerte Kräuter- und Früchtetees eine gute Abwechslung, oder Infused Water: „Infused“ bedeutet „aufgegossen“: Dabei gibst du Obst, Gemüse und diverse Kräuter einfach in frisches Wasser. Diese Mischung lässt du eine Weile ziehen, damit die Aromen der Zutaten ins Wasser übergehen. Deiner Fantasie sind dabei keine Grenzen gesetzt. Wasche alles gründlich und verwende idealerweise Bio-Produkte. Das Ergebnis schmeckt jedenfalls köstlich, und ist auch optisch ein Genuss.
 
 ## Hier hab ich vier Infused-Water-Ideen für dich: 
 
