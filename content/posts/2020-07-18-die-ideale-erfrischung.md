@@ -9,8 +9,8 @@ Trinkst du zu wenig, wird dein Blut dickflüssiger, Muskeln & Gehirn werden weni
 
 ## Wieviel solltest du täglich trinken?
 
-Normalerweise erinnert dich dein Körper durch Durst ans Trinken. Beim konzentrierten Arbeiten oder im stressigen Alltag kann es leicht passieren, dass du dieses Signal überhörst. Auch ältere Menschen verspüren oft nur selten Durst, obwohl gerade bei SeniorInnen ausreichend Flüssigkeit wichtig ist, um körperlich & geistig fit zu bleiben.
-Wenn du dein Körpergewicht mit 35 multipliziert, erfährst du die Menge in Milliliter, die du durch dein Essen & Trinken decken solltest. Wenn du viel schwitzt, z.B. bei Sport, Hitze oder Fieber, brauchst du noch mehr. Angenommen, du hast 70 kg, dann liegt dein Gesamtbedarf bei 70 x 35 = 2.450 ml, d.h. mindestens 2 Liter trinken, den Rest über dein Essen zu dir.
+Dein Körper erinnert dich durch Durst ans Trinken. Beim konzentrierten Arbeiten oder im stressigen Alltag kann es leicht passieren, dass du dieses Signal überhörst. Auch ältere Menschen verspüren oft nur selten Durst, obwohl gerade bei SeniorInnen ausreichend Flüssigkeit wichtig ist, um körperlich & geistig fit zu bleiben.
+Wenn du dein Körpergewicht mit 35 multipliziert, erfährst du die Menge in Milliliter, die du durch dein Essen & Trinken decken solltest. Angenommen, du hast 70 kg, dann liegt dein Gesamtbedarf bei 70 x 35 = 2.450 ml, d.h. mindestens 2 Liter über den Tag verteilt trinken, den Rest nimmst du über dein Essen auf. Wenn du viel schwitzt, z.B. Sport, Hitze oder Fieber, brauchst du aber noch etwas mehr.
 
 ## Was sollst du trinken?
 
