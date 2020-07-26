@@ -38,10 +38,9 @@ Du liebst Lasagne, aber das ist dir zum Selberkochen zu kompliziert? Dann sollte
 - Olivenöl
 
 </Ingredients>
-
 <Preparation>
 
-### Tomatensauce
+## Tomatensauce
 
 1. Zwiebel schälen und fein hacken, Knoblauch pressen.
 2. Etwas Olivenöl bei mittlerer Hitze erwärmen. 
@@ -50,12 +49,12 @@ Du liebst Lasagne, aber das ist dir zum Selberkochen zu kompliziert? Dann sollte
 5. Basilikum und Chiliflocken untermischen.
 6. Bei niedriger Hitze ca. 30 Minuten köcheln lassen.
 
-### Ricottacreme
+## Ricottacreme
 
 7. Einstweilen Ricotta, Soja creme cuisine und 2/3 Parmesan miteinander verrühren.
 8. Mit Salz, Pfeffer und etwas Muskatnuss würzen und beiseite stellen.
 
-### Finale
+## Finale
 
 9. Pasta 4 Minuten kürzer als auf der Packung angegeben kochen.
 10. Mozzarella in Stücke schneiden.
