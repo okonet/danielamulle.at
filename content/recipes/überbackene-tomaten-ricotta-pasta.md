@@ -71,6 +71,7 @@ Du liebst Lasagne, aber das ist dir zum Selberkochen zu kompliziert? Dann sollte
 24. Bei 200 Grad ca. 30 Minuten braun backen.
 25. Vor dem Servieren kurz überkühlen lassen.
 
+</Preparation>
+
 Ein großer grüner Salat ist ein perfekter Begleiter. Und falls du Kalorien sparen möchtest, verwende statt Ricotta Sauerrahm, Cottage Cheese oder Topfen mit 20 % F.i.T. verwenden.
 
-</Preparation>
