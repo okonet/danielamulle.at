@@ -20,7 +20,7 @@ timeToCook: 20 Minuten vorbereiten + je 30 Minuten köcheln & backen
 ---
 Du liebst Lasagne, aber das ist dir zum Selberkochen zu kompliziert? Dann solltest du dieses Rezept versuchen, denn es supereasy + schmeckt zum verwechselen ähnlich. Du musst nur darauf achten, die Pasta nicht al dente zu kochen, sonst wird sie im Ofen viel zu weich. 
 
-Ingredients yields="6 Personen">
+<Ingredients yields="6 Personen">
 
 - 1 große gelbe Zwiebel
 - 4 Knoblauchzehen
