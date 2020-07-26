@@ -57,20 +57,20 @@ Du liebst Lasagne, aber das ist dir zum Selberkochen zu kompliziert? Dann sollte
 
 ### Finale
 
-11. Pasta 4 Minuten kürzer als auf der Packung angegeben kochen.
-12. Mozzarella in Stücke schneiden.
-13. Pasta abseihen und dabei ca. 1/8 l Pastakochwasser aufheben.
-14. Pasta kalt abspülen und in eine große Schüssel geben.
-15. Pasta mit ca. 500 ml der Tomatensauce und dem Pastakochwasser gut vermischen.
-16. Boden einer Auflaufform mit etwas Tomatensauce bedecken.
-17. 1/3 der Pasta einfüllen.
-18. 1/3 der restlichen Tomatensauce darübergeben.
-19. Die Hälfte der Ricotta-Mischung in Klecksen darüberlöffeln und 1/3 der Mozzarellastücke darauf verteilen.
-20. Schritte 18 - 20 nochmals wiederholen.
-22. Mit Pasta & Tomatensauce abschließen.
-23. Mit den restlichen Mozzarellastücken & Parmesan belegen.
-24. Bei 200 Grad ca. 30 Minuten braun backen.
-25. Vor dem Servieren kurz überkühlen lassen.
+10. Pasta 4 Minuten kürzer als auf der Packung angegeben kochen.
+11. Mozzarella in Stücke schneiden.
+12. Pasta abseihen und dabei ca. 1/8 l Pastakochwasser aufheben.
+13. Pasta kalt abspülen und in eine große Schüssel geben.
+14. Pasta mit ca. 500 ml der Tomatensauce und dem Pastakochwasser gut vermischen.
+15. Boden einer Auflaufform mit etwas Tomatensauce bedecken.
+16. 1/3 der Pasta einfüllen.
+17. 1/3 der restlichen Tomatensauce darübergeben.
+18. Die Hälfte der Ricotta-Mischung in Klecksen darüberlöffeln und 1/3 der Mozzarellastücke darauf verteilen.
+19. Schritte 18 - 20 nochmals wiederholen.
+20. Mit Pasta & Tomatensauce abschließen.
+21. Mit den restlichen Mozzarellastücken & Parmesan belegen.
+22. Bei 200 Grad ca. 30 Minuten braun backen.
+23. Vor dem Servieren kurz überkühlen lassen.
 
 </Preparation>
 
