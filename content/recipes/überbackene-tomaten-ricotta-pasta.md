@@ -52,25 +52,25 @@ Du liebst Lasagne, aber das ist dir zum Selberkochen zu kompliziert? Dann sollte
 
 ### Ricottacreme
 
-8. Einstweilen Ricotta, Soja creme cuisine und 2/3 Parmesan miteinander verrühren.
-9. Mit Salz, Pfeffer und etwas Muskatnuss würzen und beiseite stellen.
+7. Einstweilen Ricotta, Soja creme cuisine und 2/3 Parmesan miteinander verrühren.
+8. Mit Salz, Pfeffer und etwas Muskatnuss würzen und beiseite stellen.
 
 ### Finale
 
-10. Pasta 4 Minuten kürzer als auf der Packung angegeben kochen.
-11. Mozzarella in Stücke schneiden.
-12. Pasta abseihen und dabei ca. 1/8 l Pastakochwasser aufheben.
-13. Pasta kalt abspülen und in eine große Schüssel geben.
-14. Pasta mit ca. 500 ml der Tomatensauce und dem Pastakochwasser gut vermischen.
-15. Boden einer Auflaufform mit etwas Tomatensauce bedecken.
-16. 1/3 der Pasta einfüllen.
-17. 1/3 der restlichen Tomatensauce darübergeben.
-18. Die Hälfte der Ricotta-Mischung in Klecksen darüberlöffeln und 1/3 der Mozzarellastücke darauf verteilen.
-19. Schritte 18 - 20 nochmals wiederholen.
-20. Mit Pasta & Tomatensauce abschließen.
-21. Mit den restlichen Mozzarellastücken & Parmesan belegen.
-22. Bei 200 Grad ca. 30 Minuten braun backen.
-23. Vor dem Servieren kurz überkühlen lassen.
+9. Pasta 4 Minuten kürzer als auf der Packung angegeben kochen.
+10. Mozzarella in Stücke schneiden.
+11. Pasta abseihen und dabei ca. 1/8 l Pastakochwasser aufheben.
+12. Pasta kalt abspülen und in eine große Schüssel geben.
+13. Pasta mit ca. 500 ml der Tomatensauce und dem Pastakochwasser gut vermischen.
+14. Boden einer Auflaufform mit etwas Tomatensauce bedecken.
+15. 1/3 der Pasta einfüllen.
+16. 1/3 der restlichen Tomatensauce darübergeben.
+17. Die Hälfte der Ricotta-Mischung in Klecksen darüberlöffeln und 1/3 der Mozzarellastücke darauf verteilen.
+18. Schritte 18 - 20 nochmals wiederholen.
+19. Mit Pasta & Tomatensauce abschließen.
+20. Mit den restlichen Mozzarellastücken & Parmesan belegen.
+21. Bei 200 Grad ca. 30 Minuten braun backen.
+22. Vor dem Servieren kurz überkühlen lassen.
 
 </Preparation>
 
