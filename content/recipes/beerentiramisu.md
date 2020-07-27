@@ -26,8 +26,8 @@ Eine frisch-fruchtige Nachspeise, angelehnt an einen italienischen Klassiker - d
 
 <Ingredients yields="6 Personen">
 
-- 250 g Mascarpone*
-- 250 g Magertopfen*
+- 250 g Mascarpone
+- 250 g Magertopfen
 - 50 g Rohzucker
 - 1 Pkg. Vanillezucker
 - 200 g Vollkornbutterkekse
@@ -52,4 +52,4 @@ Eine frisch-fruchtige Nachspeise, angelehnt an einen italienischen Klassiker - d
 
 </Preparation>
 
-Wenn Du Mascarpone durch Sauerrahm oder Joghurt ersetzt, geniesst du eine figurbewusste Variante. Das Tiramisu funktioniert auch mit pflanzlichen Joghurts + Seidentofu - vegan & *laktosefrei. Im Winter kannst du statt Vollkornbutterkeksen Mandelspekulatius oder Lebkuchen verwenden - eine phänomenale Kombination!
+Wenn Du Mascarpone durch Sauerrahm oder Joghurt ersetzt, geniesst du eine figurbewusste Variante. Das Tiramisu funktioniert auch mit pflanzlichen Joghurts + Seidentofu - vegan & laktosefrei. Im Winter kannst du statt Vollkornbutterkeksen Mandelspekulatius oder Lebkuchen verwenden - eine phänomenale Kombination!
