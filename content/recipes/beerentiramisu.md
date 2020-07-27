@@ -44,8 +44,7 @@ Eine frisch-fruchtige Nachspeise, angelehnt an einen italienischen Klassiker - d
 3. Boden einer rechteckigen Form dünn mit Beerenmasse ausstreichen.
 4. Mit Keksen belegen.
 5. Mit Beerenmasse bestreichen.
-6. So lange wiederholen, bis die Kekse aufgebraucht sind.
-7. Mit Beerenmasse abschließen.
+6. So lange wiederholen, bis die Kekse aufgebraucht sind, dabei mit Beerenmasse abschließen.
 8. Mit Kokosraspeln oder Kakao bestreuen.
 9. Mit Frischhaltefolie gut verschließen.
 10. Mindestens 5 Stunden im Kühlschrank durchziehen lassen.
