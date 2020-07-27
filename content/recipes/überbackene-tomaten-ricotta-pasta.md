@@ -18,7 +18,7 @@ tags:
     label: glutenfrei
 timeToCook: 20 Minuten vorbereiten + je 30 Minuten köcheln & backen
 ---
-Du liebst Lasagne, aber das ist dir zum Selberkochen zu kompliziert? Dann solltest du dieses Rezept versuchen, denn es supereasy + schmeckt zum verwechselen ähnlich. Du musst nur darauf achten, die Pasta nicht al dente zu kochen, sonst wird sie im Ofen viel zu weich. 
+Du liebst Lasagne, aber das ist dir zum Selberkochen zu kompliziert? Dann solltest du dieses Rezept versuchen, denn es ist supereasy + schmeckt zum Verwechseln ähnlich. Du musst nur darauf achten, die Pasta nicht al dente zu kochen, sonst wird sie im Ofen viel zu weich. 
 
 <Ingredients yields="6 Personen">
 
@@ -48,7 +48,7 @@ Du liebst Lasagne, aber das ist dir zum Selberkochen zu kompliziert? Dann sollte
 6. Bei niedriger Hitze ca. 30 Minuten köcheln lassen.
 7. Einstweilen Ricotta, Soja creme cuisine und 2/3 Parmesan miteinander verrühren.
 8. Mit Salz, Pfeffer und etwas Muskatnuss würzen und beiseite stellen.
-9. Pasta 4 Minuten kürzer als auf der Packung angegeben kochen.
+9. Pasta 4 Minuten kürzer als auf der Packung angegeben kochen.
 10. Mozzarella in Stücke schneiden.
 11. Pasta abseihen und dabei ca. 1/8 l Pastakochwasser aufheben.
 12. Pasta kalt abspülen und in eine große Schüssel geben.
@@ -57,13 +57,13 @@ Du liebst Lasagne, aber das ist dir zum Selberkochen zu kompliziert? Dann sollte
 15. 1/3 der Pasta einfüllen.
 16. 1/3 der restlichen Tomatensauce darübergeben.
 17. Die Hälfte der Ricotta-Mischung in Klecksen darüberlöffeln und 1/3 der Mozzarellastücke darauf verteilen.
-18. Schritte 18 - 20 nochmals wiederholen.
+18. Schritte 18 20 nochmals wiederholen.
 19. Mit Pasta & Tomatensauce abschließen.
 20. Mit den restlichen Mozzarellastücken & Parmesan belegen.
 21. Bei 200 Grad ca. 30 Minuten braun backen.
 22. Vor dem Servieren kurz überkühlen lassen.
 
-</Preparation>
+</Preparation>
 
 Ein großer grüner Salat ist ein perfekter Begleiter. Und falls du Kalorien sparen möchtest, verwende statt Ricotta Sauerrahm, Cottage Cheese oder Topfen mit 20 % F.i.T. verwenden.
 
