@@ -24,7 +24,7 @@ tags:
     label: glutenfrei
 timeToCook: 15 Minuten
 ---
-Ein Rezept für das bekannte orientalische Kichererbsenpüree darf in meiner Sammlung natürlich nicht fehlen. Es schmeckt hervorragend und ist in Nullkommanix zubereitet:
+Ein Rezept für das bekannte orientalische Kichererbsenpüree darf in meiner Sammlung natürlich nicht fehlen. Es schmeckt hervorragend, ist eiweißreich und in Nullkommanix zubereitet:
 
 <Ingredients yields="6 Personen als Vorspeise">
 
@@ -38,12 +38,12 @@ Ein Rezept für das bekannte orientalische Kichererbsenpüree darf in meiner Sam
 </Ingredients>
 <Preparation>
 
-1. Kichererbsen gut unter fließendem Wasser abschwemmen.
+1. Kichererbsen unter fließendem Wasser gut abschwemmen.
 2. Alle Zutaten in einer Küchenmaschine oder einem Blender pürieren.
-3. Abschmecken und eventuell noch etwas Wasser hinzufügen, falls du eine weichere Konsistenz bevorzugt
+3. Abschmecken und eventuell noch etwas Wasser hinzufügen, falls du eine weichere Konsistenz bevorzugst.
 4. Vor dem Servieren mindestens 30 Minuten durchziehen lassen.
 5. Es hält sich im Kühlschrank mindestens 3 Tage. 
 
 </Preparation>
 
-Dieses Basisrezept kannst du super nach Lust & Laune abwandeln, z.B. mit Gewürzen wie Kreuzkümmel, Chili oder Paprikapulver, Kräutern wie Petersilie, Koriander oder Gemüse wie gekochte rote Rüben, gekochter Kürbis, geröstete Paprikaschoten oder sogar Kürbiskernen - deiner Phantasie sind keine Grenzen gesetzt.
+Dieses Basisrezept kannst du super nach Lust & Laune abwandeln, z.B. mit Gewürzen wie Kreuzkümmel, Chili oder Paprikapulver, Kräutern wie Petersilie, Basilikum, Koriander oder Gemüse wie gekochte rote Rüben, gekochter Kürbis, geröstete Paprikaschoten oder sogar Kürbiskernen - deiner Phantasie sind wirklich keine Grenzen gesetzt.
