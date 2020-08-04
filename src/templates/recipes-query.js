@@ -29,7 +29,7 @@ export const query = graphql`
       nodes {
         id
         slug
-        recipeCount
+        postCount
       }
     }
     allRecipe {

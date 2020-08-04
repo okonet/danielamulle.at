@@ -59,8 +59,8 @@ exports.sourceNodes = ({ actions, schema }) => {
     type Category implements Node {
       id: ID!
       slug: String!
-      recipes: [Recipe]!
-      recipeCount: Int!,
+      posts: [Post]!
+      postCount: Int!,
       isTag: Boolean
     }
     
@@ -137,8 +137,8 @@ exports.createResolvers = ({ createResolvers, schema }) => {
       },
     },
     Category: {
-      recipes: {
-        type: "[Recipe]",
+      posts: {
+        type: "[Post]",
         async resolve(source, args, context, info) {
           const res = await context.nodeModel.runQuery({
             query: {
@@ -149,7 +149,7 @@ exports.createResolvers = ({ createResolvers, schema }) => {
               },
               sort: { fields: ["title"], order: ["ASC"] },
             },
-            type: "Recipe",
+            type: "Post",
             firstOnly: false,
           })
           if (res === null) {
@@ -158,7 +158,7 @@ exports.createResolvers = ({ createResolvers, schema }) => {
           return res
         },
       },
-      recipeCount: {
+      postCount: {
         type: "Int!",
         async resolve(source, args, context, info) {
           const res = await context.nodeModel.runQuery({
@@ -169,7 +169,7 @@ exports.createResolvers = ({ createResolvers, schema }) => {
                 },
               },
             },
-            type: "Recipe",
+            type: "Post",
             firstOnly: false,
           })
           if (res === null) {

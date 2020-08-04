@@ -85,7 +85,7 @@ export default ({ data, location, navigate }) => {
                     as="span"
                     sx={{ pl: 1, fontSize: 0, color: "secondary" }}
                   >
-                    {tag.recipeCount}
+                    {tag.postCount}
                   </Text>
                 </Tag>
               ))}

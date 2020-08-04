@@ -7,7 +7,7 @@ export const query = graphql`
   query CategoryQuery($id: String!) {
     category(id: { eq: $id }) {
       id
-      recipes {
+      posts {
         ...RecipeMeta
       }
     }
