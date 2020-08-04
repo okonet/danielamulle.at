@@ -1,0 +1,12 @@
+{
+  "categories": [
+    {
+      "isTag": true,
+      "id": "Test"
+    },
+    {
+      "isTag": true,
+      "id": "Test2"
+    }
+  ]
+}

@@ -26,7 +26,7 @@ const IndexPage = () => {
         sort: { fields: [date], order: [DESC] }
       ) {
         nodes {
-          ...RecipeMeta
+          ...PostMeta
         }
       }
       latestBlogPosts: allBlogPost(

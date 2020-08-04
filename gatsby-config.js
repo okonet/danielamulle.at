@@ -1,10 +1,4 @@
-const {
-  basePath,
-  assetPath,
-  recipesPath,
-  categoriesPath,
-  blogPath,
-} = require("./paths")
+const { basePath, assetPath, recipesPath, blogPath } = require("./paths")
 
 module.exports = {
   siteMetadata: {
@@ -49,9 +43,10 @@ module.exports = {
     "gatsby-plugin-theme-ui",
     {
       resolve: `gatsby-transformer-json`,
-      // options: {
-      //   typeName: ({ node, object, isArray }) => object.id,
-      // },
+      options: {
+        typeName: ({ node, object, isArray }) =>
+          `${node.sourceInstanceName}CategoriesJson`,
+      },
     },
     {
       resolve: "gatsby-source-filesystem",
@@ -65,13 +60,6 @@ module.exports = {
       options: {
         path: `${basePath}/${blogPath}`,
         name: blogPath,
-      },
-    },
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        path: `${basePath}`,
-        name: basePath,
       },
     },
     {

@@ -16,10 +16,6 @@ export const query = graphql`
           }
         }
       }
-      category {
-        id
-        slug
-      }
       categories {
         id
         slug

@@ -23,7 +23,10 @@ export default ({ data, location, navigate }) => {
   const filteredRecipes = query
     ? allRecipe.nodes.filter((recipe) => resIds.includes(recipe.id))
     : allRecipe.nodes
-  const groupedRecipes = groupBy(filteredRecipes, (node) => node.category[0].id)
+  const groupedRecipes = groupBy(
+    filteredRecipes,
+    (node) => node.categories[0].id
+  )
 
   const handleChange = useCallback((event) => {
     const searchQuery = event.target.value

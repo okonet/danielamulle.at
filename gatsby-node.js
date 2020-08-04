@@ -9,13 +9,7 @@ const toString = require("mdast-util-to-string")
 const pkg = require("./package.json")
 const { createOpenGraphImage } = require("gatsby-plugin-open-graph-images")
 const { createFilePath } = require("gatsby-source-filesystem")
-const {
-  basePath,
-  blogPath,
-  recipesPath,
-  categoriesPath,
-  assetPath,
-} = require("./paths")
+const { basePath, blogPath, recipesPath, assetPath } = require("./paths")
 
 const debug = Debug(pkg.name)
 
@@ -58,6 +52,7 @@ exports.sourceNodes = ({ actions, schema }) => {
   const typeDefs = `
     type Category implements Node {
       id: ID!
+      collection: String,
       slug: String!
       posts: [Post]!
       postCount: Int!,
@@ -189,26 +184,26 @@ exports.onCreateNode = ({
   createContentDigest,
 }) => {
   const { createNode, createParentChildLink } = actions
-  if (node.internal.type === `ContentJson`) {
-    ;["categories", "tags"].forEach((key) => {
-      if (node[key] == null) {
-        return
+  if (node.internal.type.includes(`CategoriesJson`)) {
+    const parent = getNode(node.parent)
+    const categoriesNode = node.categories
+    if (categoriesNode == null) {
+      return
+    }
+    categoriesNode.forEach((obj) => {
+      const jsonNode = {
+        ...obj,
+        collection: parent.sourceInstanceName,
+        slug: `/${parent.sourceInstanceName}/${slug(obj.id)}`,
+        children: [],
+        parent: node.id,
+        internal: {
+          contentDigest: createContentDigest(obj),
+          type: "Category",
+        },
       }
-      node[key].forEach((obj) => {
-        const jsonNode = {
-          ...obj,
-          slug: `/${recipesPath}/${slug(obj.id)}`,
-          isTag: key === "tags",
-          children: [],
-          parent: node.id,
-          internal: {
-            contentDigest: createContentDigest(obj),
-            type: "Category",
-          },
-        }
-        createNode(jsonNode)
-        createParentChildLink({ parent: node, child: jsonNode })
-      })
+      createNode(jsonNode)
+      createParentChildLink({ parent: node, child: jsonNode })
     })
   }
   if (node.internal.type === "Mdx") {
@@ -262,7 +257,9 @@ const BlogPostTemplate = require.resolve("./src/templates/blogpost-query")
 const BlogPostsTemplate = require.resolve("./src/templates/blogposts-query")
 const RecipeTemplate = require.resolve("./src/templates/recipe-query")
 const RecipesTemplate = require.resolve("./src/templates/recipes-query")
-const CategoryTemplate = require.resolve("./src/templates/category-query")
+const RecipeCategoryTemplate = require.resolve(
+  "./src/templates/recipe-category-query"
+)
 
 exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions
@@ -308,6 +305,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         nodes {
           id
           slug
+          collection
         }
       }
     }
@@ -319,7 +317,6 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
   // Create Posts and Post pages.
   const { allBlogPost, allRecipe, allCategory } = result.data
-  const categories = allCategory.nodes
   const blogPosts = allBlogPost.nodes
   const recipes = allRecipe.nodes
 
@@ -344,12 +341,13 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     })
   })
 
-  categories.forEach(({ id, slug }) => {
+  allCategory.nodes.forEach(({ id, slug, collection }) => {
     createPage({
       path: slug,
-      component: CategoryTemplate,
+      component: RecipeCategoryTemplate,
       context: {
         id,
+        collection,
       },
     })
   })
