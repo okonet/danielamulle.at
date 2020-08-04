@@ -77,7 +77,7 @@ exports.sourceNodes = ({ actions, schema }) => {
     type BlogPost implements Node & Post {
       id: ID!
       body: String
-      categories: [Category] @link(from: "tags.value")
+      categories: [Category] @link(from: "categories.value")
       coverImage: File
       date: Date @dateformat
       slug: String
@@ -87,8 +87,7 @@ exports.sourceNodes = ({ actions, schema }) => {
     type Recipe implements Node & Post {
       id: ID!
       body: String
-      categories: [Category] @link(from: "tags.value")
-      category: [Category] @link(from: "category.value")
+      categories: [Category] @link(from: "categories.value")
       coverImage: File
       date: Date @dateformat
       ingredients: [String]
@@ -143,7 +142,7 @@ exports.createResolvers = ({ createResolvers, schema }) => {
           const res = await context.nodeModel.runQuery({
             query: {
               filter: {
-                [source.isTag ? "categories" : "category"]: {
+                categories: {
                   elemMatch: { id: { eq: source.id } },
                 },
               },
@@ -164,7 +163,7 @@ exports.createResolvers = ({ createResolvers, schema }) => {
           const res = await context.nodeModel.runQuery({
             query: {
               filter: {
-                [source.isTag ? "categories" : "category"]: {
+                categories: {
                   elemMatch: { id: { eq: source.id } },
                 },
               },
