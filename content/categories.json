@@ -1,22 +1,80 @@
 {
   "categories": [
     {
-      "id": "Hauptspeisen"
+      "id": "Hauptspeisen",
+      "isTag": false
     },
     {
-      "id": "Suppen"
+      "id": "Suppen",
+      "isTag": false
     },
     {
-      "id": "Salate"
+      "id": "Salate",
+      "isTag": false
     },
     {
-      "id": "Aufstriche/Saucen/Dips"
+      "id": "Aufstriche/Saucen/Dips",
+      "isTag": false
     },
     {
-      "id": "Snacks"
+      "id": "Snacks",
+      "isTag": false
     },
     {
-      "id": "Kuchen, Kekserl & Co"
+      "id": "Kuchen, Kekserl & Co",
+      "isTag": false
+    },
+    {
+      "id": "vegetarisch",
+      "isTag": true
+    },
+    {
+      "id": "vegan",
+      "isTag": true
+    },
+    {
+      "id": "gut vorzubereiten",
+      "isTag": true
+    },
+    {
+      "id": "zum Mitnehmen",
+      "isTag": true
+    },
+    {
+      "id": "Süßes",
+      "isTag": true
+    },
+    {
+      "id": "eiweißreich",
+      "isTag": true
+    },
+    {
+      "id": "fruktosearm",
+      "isTag": true
+    },
+    {
+      "id": "fruktosefrei",
+      "isTag": true
+    },
+    {
+      "id": "laktosearm",
+      "isTag": true
+    },
+    {
+      "id": "laktosefrei",
+      "isTag": true
+    },
+    {
+      "id": "histaminarm",
+      "isTag": true
+    },
+    {
+      "id": "histaminfrei",
+      "isTag": true
+    },
+    {
+      "id": "glutenfrei",
+      "isTag": true
     }
   ]
 }
