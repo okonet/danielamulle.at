@@ -32,9 +32,9 @@ collections:
       - label: 'Tags'
         name: 'tags'
         widget: 'file-relation'
-        collection: recipe_config
+        collection: config
         file: tags
-        target_field: tags
+        target_field: categories
         id_field: id
         required: false
         multiple: true
@@ -50,33 +50,25 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Cover", name: "coverImage", widget: "image" }
-      - label: 'Category'
-        name: 'category'
+      - label: 'Categories'
+        name: 'categories'
         widget: 'file-relation'
-        collection: recipe_config
+        collection: config
         file: categories
         target_field: categories
         id_field: id
         required: true
-      - label: 'Tags'
-        name: 'tags'
-        widget: 'file-relation'
-        collection: recipe_config
-        file: tags
-        target_field: tags
-        id_field: id
-        required: false
         multiple: true
       - { label: "Time to prepare", name: "timeToCook", widget: "string", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
 
-  - name: recipe_config
-    label: Recipes Config
+  - name: config
+    label: Config
     format: json
     editor:
       preview: false
     files:
-      - label: "Categories"
+      - label: "Recipe Categories"
         name: "categories"
         file: "content/categories.json"
         fields:
@@ -84,12 +76,14 @@ collections:
             widget: "list"
             name: "categories"
             fields:
-              - {label: Name, name: id, widget: string}
-      - label: "Tags"
+              - {label: Name, name: id, widget: "string"}
+              - {label: Tag, name: isTag, widget: "boolean", default: true}
+
+      - label: "Blog Tags"
         name: "tags"
         file: "content/tags.json"
         fields:
-          - label: "Recipe Tag Items"
+          - label: "Blog Tag Items"
             widget: "list"
             name: "tags"
             fields:
