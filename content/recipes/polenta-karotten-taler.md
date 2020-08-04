@@ -2,10 +2,9 @@
 title: Polenta-Karotten-Taler
 date: 2020-06-23T12:42:31.030Z
 coverImage: ../assets/DSC02999.jpg
-category:
+categories:
   - value: Hauptspeisen
     label: Hauptspeisen
-tags:
   - value: vegetarisch
     label: vegetarisch
   - value: gut vorzubereiten
@@ -23,7 +22,7 @@ tags:
 timeToCook: 15 Minuten vorbereiten + 15 Minuten braten oder backen
 ---
 
-Mir schmecken die Taler am besten mit einem großen bunten Salat. Joghurt-Kräuter-Dip, Fetacreme oder Zitronen-Basilikum-Joghurt sind perfekte Begleiter. 
+Mir schmecken die Taler am besten mit einem großen bunten Salat. Joghurt-Kräuter-Dip, Fetacreme oder Zitronen-Basilikum-Joghurt sind perfekte Begleiter.
 
 <Ingredients yields="ca. 15 Stück, ja nach Größe">
 

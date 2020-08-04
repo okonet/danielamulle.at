@@ -2,10 +2,9 @@
 title: Mungobohnen mit Karotten
 date: 2020-06-25T19:00:26.816Z
 coverImage: ../assets/20200605-dsc02936.jpg
-category:
+categories:
   - value: Salate
     label: Salate
-tags:
   - value: vegan
     label: vegan
   - value: gut vorzubereiten

@@ -2,10 +2,9 @@
 title: Couscoustorte mit Tahini & Pinienkernen
 date: 2020-07-27T06:03:51.116Z
 coverImage: ../assets/couscoustorte.jpg
-category:
+categories:
   - value: Hauptspeisen
     label: Hauptspeisen
-tags:
   - value: vegan
     label: vegan
   - value: gut vorzubereiten
@@ -16,6 +15,7 @@ tags:
     label: laktosefrei
 timeToCook: 30 Minuten vorbereiten + ca. 30 Minuten backen
 ---
+
 Ursprünglich wird die Torte mit Faschiertem zubereitet, mit Sojagranulat ist sie aber viel saftiger.
 
 <Ingredients yields="5 Personen">
@@ -58,7 +58,7 @@ Ursprünglich wird die Torte mit Faschiertem zubereitet, mit Sojagranulat ist si
 16. Die Couscoustorte aus dem Ofen nehmen und die Tahinisauce darauf verteilen und mit den restlichen Pinienkernen bestreuen.
 17. Ca. 10 Minuten weiterbacken, bis Überguss & Pinienkerne Farbe bekommen.
 18. Aus dem Ofen nehmen und kurz überkühlen lassen.
-19. Rand der Tortenform herunternehmen, Backpapier  bis auf ein paar Zentimeter zurückschneiden.
+19. Rand der Tortenform herunternehmen, Backpapier bis auf ein paar Zentimeter zurückschneiden.
 20. Mit gehackter Petersilie bestreut und etwas Olivenöl beträufelt servieren.
 
 </Preparation>

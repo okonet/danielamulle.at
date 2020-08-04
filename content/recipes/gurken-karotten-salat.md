@@ -2,10 +2,9 @@
 title: Gurken-Karotten-Salat
 date: 2020-06-25T19:16:31.517Z
 coverImage: ../assets/20200522-dsc02822.jpg
-category:
+categories:
   - value: Salate
     label: Salate
-tags:
   - value: vegan
     label: vegan
   - value: gut vorzubereiten

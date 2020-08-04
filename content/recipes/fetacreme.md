@@ -2,10 +2,9 @@
 title: Fetacreme
 date: 2020-06-23T12:59:17.409Z
 coverImage: ../assets/20200515-dsc02768.jpg
-category:
+categories:
   - value: Aufstriche/Saucen/Dips
     label: Aufstriche/Saucen/Dips
-tags:
   - value: vegetarisch
     label: vegetarisch
   - value: gut vorzubereiten
@@ -24,7 +23,8 @@ tags:
     label: glutenfrei
 timeToCook: 15 Minuten
 ---
-Ob als Sauce zu Gegrilltem, als Dip, Aufstrich oder zum Aufpeppen von Suppen oder Salaten: Eine sehr feine Rezept-Idee von [Yotam Ottolenghi](https://ottolenghi.co.uk/). 
+
+Ob als Sauce zu Gegrilltem, als Dip, Aufstrich oder zum Aufpeppen von Suppen oder Salaten: Eine sehr feine Rezept-Idee von [Yotam Ottolenghi](https://ottolenghi.co.uk/).
 
 <Ingredients>
 

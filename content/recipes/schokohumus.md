@@ -2,10 +2,9 @@
 title: Schokohumus
 date: 2020-06-21T17:06:29.037Z
 coverImage: ../assets/schokohumus.jpg
-category:
+categories:
   - value: Snacks
     label: Snacks
-tags:
   - value: vegan
     label: vegan
   - value: gut vorzubereiten

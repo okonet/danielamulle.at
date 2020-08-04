@@ -2,10 +2,9 @@
 title: Brownie-Kugerl
 date: 2020-07-21T12:14:45.497Z
 coverImage: ../assets/img_2020.jpg
-category:
-  - value: 'Kuchen, Kekserl & Co'
-    label: 'Kuchen, Kekserl & Co'
-tags:
+categories:
+  - value: "Kuchen, Kekserl & Co"
+    label: "Kuchen, Kekserl & Co"
   - value: vegan
     label: vegan
   - value: gut vorzubereiten
@@ -22,6 +21,7 @@ tags:
     label: histaminarm
 timeToCook: 30 Minuten zubereiten + einige Stunden rasten lassen
 ---
+
 Diese schokoladigen Kugerl sind etwas zum Naschen & Snacken, ganz ohne schlechtes Gewissen. Du kannst die Zutaten natürlich nach Lust & Laune variieren, so bekommst du immer mal einen anderen Geschmack. Ich hab diesmal z.B. Datteln, Feigen, geriebene Haselnüsse und Sonnenblumenkerne verwendet.
 
 <Ingredients yields="ca. 60 Stück">
@@ -41,7 +41,7 @@ Diese schokoladigen Kugerl sind etwas zum Naschen & Snacken, ganz ohne schlechte
 4. Falls die Masse sehr fest ist etwas Einweichwasser zugeben.
 5. Nüsse und Kakao einarbeiten.
 6. Über Nacht oder zumindest einige Stunden kühl stellen.
-7. Aus der Masse mit nassen Händen kleine Kugerl formen. 
+7. Aus der Masse mit nassen Händen kleine Kugerl formen.
 8. In Kokosraspeln, Nüssen oder Sesam wälzen.
 
 </Preparation>

@@ -2,10 +2,9 @@
 title: Bohnen-Zucchini-Eintopf mit gerösteten Knoblauchtomaten
 date: 2020-07-13T14:23:04.588Z
 coverImage: ../assets/20200519-DSC02810.jpg
-category:
+categories:
   - value: Hauptspeisen
     label: Hauptspeisen
-tags:
   - value: vegan
     label: vegan
   - value: vegetarisch
@@ -24,7 +23,8 @@ tags:
     label: glutenfrei
 timeToCook: 15 Minuten vorbereiten + 45 Minuten köcheln
 ---
-Diesem super g'schmackige, eiweißreichen Eintopf  verleiht die Zitronen-Petersilie das gewissen Etwas. Und wie die meisten Eintöpfe schmeckt er aufgewärmt fast noch ein bisserl besser:
+
+Diesem super g'schmackige, eiweißreichen Eintopf verleiht die Zitronen-Petersilie das gewissen Etwas. Und wie die meisten Eintöpfe schmeckt er aufgewärmt fast noch ein bisserl besser:
 
 <Ingredients yields="4 Personen">
 
@@ -67,4 +67,4 @@ Diesem super g'schmackige, eiweißreichen Eintopf  verleiht die Zitronen-Petersi
 17. Eintopf mit Salz und Pfeffer abschmecken.
 18. Anrichten und mit der Zitronen-Petersilien-Mischung bestreut servieren.
 
-</Preparation>
+</Preparation>

@@ -2,10 +2,9 @@
 title: Russische Topfenpancakes aka Syrniki
 date: 2020-06-25T19:12:01.011Z
 coverImage: ../assets/20200606-dsc02978.jpg
-category:
-  - value: 'Kuchen, Kekserl & Co'
-    label: 'Kuchen, Kekserl & Co'
-tags:
+categories:
+  - value: "Kuchen, Kekserl & Co"
+    label: "Kuchen, Kekserl & Co"
   - value: vegetarisch
     label: vegetarisch
   - value: gut vorzubereiten
@@ -49,5 +48,4 @@ Diese einfache, leckere Eiweißbombe, die nicht nur bei Kindern äußerst gut an
 
 </Preparation>
 
-In Russland werden Syrniki mit Sauerrahm (сметана) & Marmelade (варенье) gegessen.
-Damit die Teig-Konsistenz stimmt, ist es entscheidend, dass du Bröseltopfen verwendest. Er kommt nämlich dem trockenen russischen Topfen (творог) am nächsten. Wenn du die Rosinen durch (Heidel)beeren ersetzt, hast du eine fruktosearme Variante. 
+In Russland werden Syrniki mit Sauerrahm (сметана) & Marmelade (варенье) gegessen. Damit die Teig-Konsistenz stimmt, ist es entscheidend, dass du Bröseltopfen verwendest. Er kommt nämlich dem trockenen russischen Topfen (творог) am nächsten. Wenn du die Rosinen durch (Heidel)beeren ersetzt, hast du eine fruktosearme Variante.

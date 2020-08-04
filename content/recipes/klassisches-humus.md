@@ -2,10 +2,9 @@
 title: Klassisches Humus
 date: 2020-07-31T13:59:42.818Z
 coverImage: ../assets/humus.jpg
-category:
+categories:
   - value: Aufstriche/Saucen/Dips
     label: Aufstriche/Saucen/Dips
-tags:
   - value: vegan
     label: vegan
   - value: gut vorzubereiten
@@ -24,6 +23,7 @@ tags:
     label: glutenfrei
 timeToCook: 15 Minuten
 ---
+
 Ein Rezept für das bekannte orientalische Kichererbsenpüree darf in meiner Sammlung natürlich nicht fehlen. Es schmeckt hervorragend, ist eiweißreich und in Nullkommanix zubereitet:
 
 <Ingredients yields="6 Personen als Vorspeise">
@@ -40,9 +40,9 @@ Ein Rezept für das bekannte orientalische Kichererbsenpüree darf in meiner Sam
 
 1. Kichererbsen unter fließendem Wasser gut abschwemmen.
 2. Alle Zutaten in einer Küchenmaschine oder einem Blender pürieren.
-3. Abschmecken und eventuell noch etwas Wasser hinzufügen, falls du eine weichere Konsistenz bevorzugst.
+3. Abschmecken und eventuell noch etwas Wasser hinzufügen, falls du eine weichere Konsistenz bevorzugst.
 4. Vor dem Servieren mindestens 30 Minuten durchziehen lassen.
-5. Es hält sich im Kühlschrank mindestens 3 Tage. 
+5. Es hält sich im Kühlschrank mindestens 3 Tage.
 
 </Preparation>
 

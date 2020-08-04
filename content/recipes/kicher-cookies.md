@@ -2,10 +2,9 @@
 title: Kicher-Cookies
 date: 2020-06-21T17:09:53.713Z
 coverImage: ../assets/DSC03072.jpg
-category:
-  - value: 'Kuchen, Kekserl & Co'
-    label: 'Kuchen, Kekserl & Co'
-tags:
+categories:
+  - value: "Kuchen, Kekserl & Co"
+    label: "Kuchen, Kekserl & Co"
   - value: vegan
     label: vegan
   - value: gut vorzubereiten
@@ -24,6 +23,7 @@ tags:
     label: glutenfrei
 timeToCook: 15 Minuten vorbereiten + 15 Minuten backen
 ---
+
 Achtung, dieses Rezept birgt Suchtgefahr! Diese Kekse sind superlecker, eiweißreich, und kommen dabei ganz ohne Eier, Butter & weißem Zucker aus.
 
 <Ingredients yields="ca. 17 Stück">

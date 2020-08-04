@@ -2,10 +2,9 @@
 title: Haferflocken-Walnuss-Torte
 date: 2020-06-21T14:52:49.096Z
 coverImage: ../assets/20200509-dsc02635.jpeg
-category:
-  - value: 'Kuchen, Kekserl & Co'
-    label: 'Kuchen, Kekserl & Co'
-tags:
+categories:
+  - value: "Kuchen, Kekserl & Co"
+    label: "Kuchen, Kekserl & Co"
   - value: vegetarisch
     label: vegetarisch
   - value: gut vorzubereiten
@@ -20,6 +19,7 @@ tags:
     label: glutenfrei
 timeToCook: 20 Minuten vorbereiten + ca. 50 Minuten backen
 ---
+
 Diese Torte schmeckt supersaftig-schokoladig, und ist noch dazu vollgepackt mit Mineral- und Ballaststoffen sowie gesunden Fetten.
 
 <Ingredients yields="1 Springform mit 24 cm Durchmesser">
@@ -52,4 +52,4 @@ Diese Torte schmeckt supersaftig-schokoladig, und ist noch dazu vollgepackt mit 
 
 </Preparation>
 
-Wenn du möchtest, kannst du die Torte noch mit Schokolade glasieren oder mit Staubzucker bestreuen. 
+Wenn du möchtest, kannst du die Torte noch mit Schokolade glasieren oder mit Staubzucker bestreuen.

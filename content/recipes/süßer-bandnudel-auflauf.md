@@ -2,10 +2,9 @@
 title: Süßer Bandnudel-Auflauf
 date: 2020-07-15T11:38:23.461Z
 coverImage: ../assets/DSC03105.jpg
-category:
+categories:
   - value: Hauptspeisen
     label: Hauptspeisen
-tags:
   - value: vegetarisch
     label: vegetarisch
   - value: gut vorzubereiten
@@ -22,6 +21,7 @@ tags:
     label: glutenfrei
 timeToCook: 15 Minuten vorbereiten + 30 Minuten backen
 ---
+
 Diesen Rezept ist superschnell gekocht, und zeigt, dass Nudeln auch süß ausgezeichnet schmecken. Übrigens schmeckt der Auflauf auch als süßes Frühstück - probier's mal aus!
 
 <Ingredients yields="4 Personen">
@@ -29,7 +29,7 @@ Diesen Rezept ist superschnell gekocht, und zeigt, dass Nudeln auch süß ausgez
 - 350 g Vollkorn-Bandnudeln (bei Bedarf glutenfrei)
 - 200 g Heidelbeeren (frisch oder tiefgekühlt)
 - 2 Eier
-- 250 g Magertopfen (bei Bedarf laktosefrei)
+- 250 g Magertopfen (bei Bedarf laktosefrei)
 - 50 g brauner Zucker (ca. 4 EL)
 - 1 Pkg Vanillezucker
 - Saft 1/2 Bio-Zitrone

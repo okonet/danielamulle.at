@@ -2,10 +2,9 @@
 title: Zucchini-Apfel-Cremesuppe
 date: 2020-07-10T11:54:22.915Z
 coverImage: ../assets/20200525-DSC02857.jpg
-category:
+categories:
   - value: Suppen
     label: Suppen
-tags:
   - value: vegan
     label: vegan
   - value: gut vorzubereiten
@@ -20,6 +19,7 @@ tags:
     label: glutenfrei
 timeToCook: 15 Minuten vorbereiten + ca. 15 Minuten köcheln
 ---
+
 Bei Suppen verwende ich statt der üblichen Kartoffel gerne Linsen für die Cremigkeit, denn sie liefern dir noch eine kleine Extraportion Eiweiß:
 
 <Ingredients yields="4 Personen">
@@ -39,9 +39,9 @@ Bei Suppen verwende ich statt der üblichen Kartoffel gerne Linsen für die Crem
 </Ingredients>
 <Preparation>
 
-1. Zwiebel und Knoblauch schälen und in Stücke schneiden.
-2. Sellerie und Zucchini waschen und grob würfeln.
-3. Apfel halbieren, Kerngehäuse entfernen und in Stücke schneiden.
+1. Zwiebel und Knoblauch schälen und in Stücke schneiden.
+2. Sellerie und Zucchini waschen und grob würfeln.
+3. Apfel halbieren, Kerngehäuse entfernen und in Stücke schneiden.
 4. 3 EL Olivenöl in einem großen Topf bei mittlerer Hitze erwärmen.
 5. Zwiebel und Knoblauch einige Minuten darin anbraten.
 6. Selleriesstücke zugeben und einige Minuten mitrösten.

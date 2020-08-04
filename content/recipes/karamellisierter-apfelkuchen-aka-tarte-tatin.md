@@ -2,10 +2,9 @@
 title: Karamellisierter Apfelkuchen aka Tarte Tatin
 date: 2020-06-25T18:46:29.969Z
 coverImage: ../assets/DSC03305.jpg
-category:
-  - value: 'Kuchen, Kekserl & Co'
-    label: 'Kuchen, Kekserl & Co'
-tags:
+categories:
+  - value: "Kuchen, Kekserl & Co"
+    label: "Kuchen, Kekserl & Co"
   - value: vegan
     label: vegan
   - value: gut vorzubereiten

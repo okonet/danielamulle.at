@@ -2,10 +2,9 @@
 title: Topfen-Reisauflauf
 date: 2020-06-24T05:29:47.089Z
 coverImage: ../assets/DSC03013.jpg
-category:
+categories:
   - value: Hauptspeisen
     label: Hauptspeisen
-tags:
   - value: vegetarisch
     label: vegetarisch
   - value: gut vorzubereiten
@@ -22,6 +21,7 @@ tags:
     label: glutenfrei
 timeToCook: 20 Minuten vorbereiten + ca. 35 Minuten backen
 ---
+
 Mealprep ist bei mir großgeschrieben: Ich koche z.B. immer gleich die doppelte Menge Getreide, und spare mir die Zeit am nächsten Tag. Diesmal war noch Reis übrig, den ich in eine süße Köstlichkeit verwandelt habe.
 
 <Ingredients yields="4 Personen">

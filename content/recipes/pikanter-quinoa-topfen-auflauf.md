@@ -2,10 +2,9 @@
 title: Pikanter Quinoa-Topfen-Auflauf
 date: 2020-06-23T13:16:13.431Z
 coverImage: ../assets/DSC03007.jpg
-category:
+categories:
   - value: Hauptspeisen
     label: Hauptspeisen
-tags:
   - value: vegetarisch
     label: vegetarisch
   - value: eiweißreich

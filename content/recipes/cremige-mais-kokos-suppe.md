@@ -2,10 +2,9 @@
 title: Cremige Mais-Kokos-Suppe
 date: 2020-07-26T05:06:34.205Z
 coverImage: ../assets/maiskokossuppe.jpg
-category:
+categories:
   - value: Suppen
     label: Suppen
-tags:
   - value: vegan
     label: vegan
   - value: gut vorzubereiten
@@ -22,6 +21,7 @@ tags:
     label: glutenfrei
 timeToCook: 15 Min vorbereiten + 20 Minuten köcheln
 ---
+
 Diese Suppe bringt durch Kokosmilch, Chili & Ingwer einen Hauch Exotik auf den Tisch, ist rasch gekocht & schmeckt hervorragend. Dosenmais brauchst du übrigens nur halb so lange kochen.
 
 <Ingredients yields="4 Personen">
@@ -45,7 +45,7 @@ Diese Suppe bringt durch Kokosmilch, Chili & Ingwer einen Hauch Exotik auf den T
 4. Mais zugeben, durchrühren und mit Suppe ablöschen.
 5. Auf kleiner Stufe 20 Minuten köcheln lassen.
 6. Mit dem Stabmixer oder im Blender fein pürieren.
-7. Kokosmilch zugeben. 
+7. Kokosmilch zugeben.
 8. Mit Salz und Pfeffer abschmecken.
 9. Mit getoasteten Brotscheiben genießen.
 

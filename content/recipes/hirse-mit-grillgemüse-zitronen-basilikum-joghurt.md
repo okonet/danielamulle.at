@@ -2,10 +2,9 @@
 title: Hirse mit Grillgemüse & Zitronen-Basilikum-Joghurt
 date: 2020-06-23T07:19:34.582Z
 coverImage: ../assets/20200516-dsc02805.jpg
-category:
+categories:
   - value: Hauptspeisen
     label: Hauptspeisen
-tags:
   - value: vegan
     label: vegan
   - value: vegetarisch
@@ -20,6 +19,7 @@ tags:
     label: glutenfrei
 timeToCook: 40 Minuten Grillzeit + 30 Minuten vor/zubereiten
 ---
+
 Eine Idee für ein flottes Essen, das sich fast alleine kocht, und auch wunderbar für die Grillsaison passt.
 
 <Ingredients yields="4 Personen">

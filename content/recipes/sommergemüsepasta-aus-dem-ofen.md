@@ -2,10 +2,9 @@
 title: Sommergemüsepasta aus dem Ofen
 date: 2020-06-29T10:09:36.298Z
 coverImage: ../assets/20200601-DSC02914.jpg
-category:
+categories:
   - value: Hauptspeisen
     label: Hauptspeisen
-tags:
   - value: vegetarisch
     label: vegetarisch
   - value: gut vorzubereiten
@@ -18,13 +17,13 @@ tags:
     label: glutenfrei
 timeToCook: 40 Minuten vorbereiten + 45 Minuten backen
 ingredients:
-  - 'für 4 Personen:'
+  - "für 4 Personen:"
   - 1 große Aubergine (ca. 300 g)
   - 4 mittelgroße Karotten (ca. 300 g)
   - 4 Selleriestangen (ca. 200 g)
   - 1 große Zwiebel (ca. 170 g)
   - 3 Knoblauchzehen
-  - '250 g kleine Pasta (Risoni, Fleckerl,..) bei Bedarf glutenfrei'
+  - "250 g kleine Pasta (Risoni, Fleckerl,..) bei Bedarf glutenfrei"
   - 1 TL Tomatenmark
   - 350 ml Gemüsesuppe
   - 3 EL frischen Oregano der Thymian
@@ -35,6 +34,7 @@ ingredients:
   - Olivenöl und Rapsöl
   - Salz und Pfeffer
 ---
+
 Bei diesem Rezept kochen die Nudeln im Backofen, in exzellenter Gesellschaft!
 
 <Ingredients yields="4 Personen">
@@ -44,7 +44,7 @@ Bei diesem Rezept kochen die Nudeln im Backofen, in exzellenter Gesellschaft!
 - 4 Selleriestangen (ca. 200 g)
 - 1 große Zwiebel (ca. 170 g)
 - 3 Knoblauchzehen
-- 250 g kleine Pasta wie Risoni oder Fleckerl (bei Bedarf glutenfrei)
+- 250 g kleine Pasta wie Risoni oder Fleckerl (bei Bedarf glutenfrei )
 - 1 TL Tomatenmark
 - 350 ml Gemüsesuppe
 - 3 EL frischen Oregano der Thymian
@@ -58,21 +58,21 @@ Bei diesem Rezept kochen die Nudeln im Backofen, in exzellenter Gesellschaft!
 </Ingredients>
 <Preparation>
 
-1. Backofen auf 200 Grad vorheizen.
+1. Backofen auf 200 Grad vorheizen.
 2. Aubergine, Karotten und Sellerie waschen, putzen und in 1,5 cm große Würfel schneiden.
-3. Auf einem mit Backpapier ausgelegtem Backblech verteilen.
-4. Mit Olivenöl beträufeln und 15 Minuten bräunen.
-3. Einstweilen Zwiebel und Knoblauch schälen.
-4. Zwiebel fein hacken, Knoblauch pressen.
-5. Tomaten in 1 cm dicke Scheiben schneiden.
-6. 2 EL Rapsöl in einem großen Topf erhitzen.
-7. Zwiebel und Knoblauch darin bei mittlerer Hitze ca. 5 Minuten anbraten.
-8. Pasta und Tomatenmark zugeben und einige Minuten weiterbraten.
-9. Herd abschalten und Gemüsesuppe, Oregano und Zitronenschale zugeben.
-10. Gemüse aus dem Ofen, Mozzarella, Parmesan, 1 TL Salz und 1/2 TL Pfeffer ebenfalls unterrühren.
-11. In eine Auflaufform füllen und mit den Tomatenscheiben belegen.
-12. Mit Oregano bestreuen und ein wenig salzen und pfeffern.
-13. Ca. 40 Minuten backen, bis die Flüssigkeit verschwunden und die Pasta durchgekocht ist.
-14. Vor dem Servieren zum Festwerden noch ca. 5 Minuten stehen lassen.
+3. Auf einem mit Backpapier ausgelegtem Backblech verteilen.
+4. Mit Olivenöl beträufeln und 15 Minuten bräunen.
+5. Einstweilen Zwiebel und Knoblauch schälen.
+6. Zwiebel fein hacken, Knoblauch pressen.
+7. Tomaten in 1 cm dicke Scheiben schneiden.
+8. 2 EL Rapsöl in einem großen Topf erhitzen.
+9. Zwiebel und Knoblauch darin bei mittlerer Hitze ca. 5 Minuten anbraten.
+10. Pasta und Tomatenmark zugeben und einige Minuten weiterbraten.
+11. Herd abschalten und Gemüsesuppe, Oregano und Zitronenschale zugeben.
+12. Gemüse aus dem Ofen, Mozzarella, Parmesan, 1 TL Salz und 1/2 TL Pfeffer ebenfalls unterrühren.
+13. In eine Auflaufform füllen und mit den Tomatenscheiben belegen.
+14. Mit Oregano bestreuen und ein wenig salzen und pfeffern.
+15. Ca. 40 Minuten backen, bis die Flüssigkeit verschwunden und die Pasta durchgekocht ist.
+16. Vor dem Servieren zum Festwerden noch ca. 5 Minuten stehen lassen.
 
 </Preparation>

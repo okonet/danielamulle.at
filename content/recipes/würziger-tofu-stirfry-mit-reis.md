@@ -2,10 +2,9 @@
 title: Würziger Tofu-Stirfry mit Reis
 date: 2020-06-21T14:32:10.571Z
 coverImage: ../assets/20200512-dsc02747.jpg
-category:
+categories:
   - value: Hauptspeisen
     label: Hauptspeisen
-tags:
   - value: vegan
     label: vegan
   - value: fruktosefrei

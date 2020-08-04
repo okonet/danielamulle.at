@@ -2,10 +2,9 @@
 title: Zitronen-Basilikum-Joghurt
 date: 2020-06-23T13:03:00.562Z
 coverImage: ../assets/zitrone.jpg
-category:
+categories:
   - value: Aufstriche/Saucen/Dips
     label: Aufstriche/Saucen/Dips
-tags:
   - value: vegetarisch
     label: vegetarisch
   - value: vegan
@@ -24,6 +23,7 @@ tags:
     label: glutenfrei
 timeToCook: 15 Minuten
 ---
+
 Diese erfrischende Sauce passt sehr gut zu Gemüse, Aufläufen, Strudeln, gebratenem oder gegrilltem Fleisch & Fisch. Sie ist auch ein tolles Salatdressing:
 
 <Ingredients>

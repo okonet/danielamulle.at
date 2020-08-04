@@ -2,10 +2,9 @@
 title: Zucchini-Basilikum-Pasta
 date: 2020-07-28T06:17:54.368Z
 coverImage: ../assets/zucchini-pasta.jpg
-category:
+categories:
   - value: Hauptspeisen
     label: Hauptspeisen
-tags:
   - value: vegetarisch
     label: vegetarisch
   - value: gut vorzubereiten
@@ -20,6 +19,7 @@ tags:
     label: glutenfrei
 timeToCook: 30 Minuten
 ---
+
 Ein raffiniertes, supereinfaches & absolut köstliches Pasta-Gericht, das du unbedingt probieren solltest:
 
 <Ingredients yields="4 Personen">
@@ -29,7 +29,7 @@ Ein raffiniertes, supereinfaches & absolut köstliches Pasta-Gericht, das du unb
 - 2 Knoblauchzehen
 - Olivenöl
 - ca. 30 g frisches Basilikum
-- 500 g Vollkornpasta (bei Bedarf glutenfrei)
+- 500 g Vollkornpasta (bei Bedarf glutenfrei)
 - 240 g Ricotta oder laktosefreien Sauerrahm
 - 60 g geriebenen Parmsan
 - abgeriebene Schale von 1 Bio-Zitrone
