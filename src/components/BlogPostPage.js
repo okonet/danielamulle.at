@@ -12,7 +12,7 @@ import Img from "gatsby-image"
 import SEO from "./seo"
 
 export default ({ data, pageContext }) => {
-  const { body, coverImage, title, categories } = data.blogPost
+  const { body, coverImage, title, categories } = data.post
   return (
     <Layout theme={blogTheme}>
       <SEO title={title} ogImage={pageContext.ogImage} />

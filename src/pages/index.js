@@ -21,7 +21,8 @@ import { blogPath, recipesPath } from "../../paths"
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
     query {
-      latestRecipes: allRecipe(
+      latestRecipes: allPost(
+        filter: { collection: { eq: "recipes" } }
         limit: 3
         sort: { fields: [date], order: [DESC] }
       ) {
@@ -29,12 +30,13 @@ const IndexPage = () => {
           ...PostMeta
         }
       }
-      latestBlogPosts: allBlogPost(
+      latestBlogPosts: allPost(
+        filter: { collection: { eq: "posts" } }
         limit: 3
         sort: { fields: [date], order: [DESC] }
       ) {
         nodes {
-          ...BlogPostMeta
+          ...PostMeta
         }
       }
       portraitImage: file(relativePath: { eq: "portrait.png" }) {

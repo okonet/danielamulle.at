@@ -84,7 +84,7 @@ module.exports = {
         // engineOptions: "match",
         query: `
           {
-            allRecipe {
+            allPost(filter: { collection: { eq: "recipes" } }) {
               nodes {
                 id
                 title
@@ -97,7 +97,7 @@ module.exports = {
         index: ["title", "ingredients"],
         store: ["id"],
         normalizer: ({ data }) =>
-          data.allRecipe.nodes.map(({ id, title, ingredients }) => ({
+          data.allPost.nodes.map(({ id, title, ingredients }) => ({
             id,
             title,
             ingredients,

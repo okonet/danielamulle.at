@@ -30,7 +30,7 @@ export const query = graphql`
         postCount
       }
     }
-    allRecipe {
+    allPost(filter: { collection: { eq: "recipes" } }) {
       nodes {
         ...PostMeta
       }

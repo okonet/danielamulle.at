@@ -12,7 +12,7 @@ import Img from "gatsby-image"
 import SEO from "./seo"
 
 export default ({ data, pageContext }) => {
-  const { body, coverImage, title, categories, timeToCook } = data.recipe
+  const { body, coverImage, title, categories, timeToCook } = data.post
   const mainCategory = categories[0] // TODO: Check `isTag === false` instead
   return (
     <Layout theme={recipesTheme}>
