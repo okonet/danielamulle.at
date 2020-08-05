@@ -34,7 +34,6 @@ Dakos ist ein Gericht aus Kreta: Tomaten, Kräuter & Feta werden dabei auf Paxim
 <Ingredients yields="4 Personen">
 
 - 1 Salatgurke
-
 - ca. 200 g Rispentomaten
 - 150 g Fetakäse
 - 1 kleine rote Zwiebel
