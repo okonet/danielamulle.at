@@ -4,6 +4,13 @@ import RecipesPage from "../components/RecipesPage"
 export default RecipesPage
 
 export const query = graphql`
+  fragment Categories on Post {
+    categories {
+      id
+      slug
+      isTag
+    }
+  }
   fragment PostMeta on Post {
     id ## Required for search to work
     slug
@@ -15,10 +22,7 @@ export const query = graphql`
         }
       }
     }
-    categories {
-      id
-      slug
-    }
+    ...Categories
   }
   query RecipesQuery {
     allCategory(
