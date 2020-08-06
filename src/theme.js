@@ -67,6 +67,7 @@ const theme = {
   },
   borders: {
     thin: "1px solid",
+    thick: "3px solid",
   },
   shadows: {
     none: "none",

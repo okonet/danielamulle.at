@@ -50,20 +50,19 @@ const NavLink = React.forwardRef((props, ref) => {
       sx={{
         position: "relative",
         py: 1,
-        px: 3,
+        px: 0,
         textDecoration: "none",
-        fontWeight: "normal",
-        borderRadius: "round",
-        bg: "white",
+        fontWeight: "bold",
+        borderRadius: "none",
+        borderBottom: "none",
+        bg: "transparent",
         whiteSpace: "nowrap",
         ":hover": {
-          bg: "primary",
-          color: "background",
           textDecoration: "none",
+          borderBottom: "thin",
         },
         "&.active": {
-          bg: "primary",
-          color: "background",
+          borderBottom: "thick",
         },
         ...sx,
       }}
@@ -84,7 +83,7 @@ const Navigation = (props) => {
           background: "transparent",
         },
         "* + *": {
-          ml: 1,
+          ml: 3,
         },
         "@media print": {
           display: "none",
