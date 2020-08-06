@@ -24,18 +24,6 @@ categories:
   - value: vegan
     label: vegan
 timeToCook: 10 Minuten vorbereiten + 20 Minuten backen
-ingredients:
-  - "für 6 Personen als Snack: "
-  - "2 Tassen feinblättrige Haferflocken (bei Bedarf glutenfrei)  "
-  - "2 Tassen Pflanzendrink (oder Kuhmilch)  "
-  - 1 Ei (optional)
-  - "¼ TL Salz  "
-  - "½ Pkg Vanillezucker  "
-  - "2 EL brauner Zucker (bei Bedarf Reissirup) "
-  - "1 TL Zimt  "
-  - "1,5 Tassen frische oder tiefgekühlte Beeren"
-  - "etwas Rapsöl oder Margarine zum Befetten der Form  "
-  - "(Soja)joghurt, Sauerrahm oder Skyr zum Servieren (optional)"
 ---
 
 Die Gebackenen Haferflocken sind eine Frühstücks- oder Snackidee, die super schmeckt und im Handumdrehn im Ofen ist.
