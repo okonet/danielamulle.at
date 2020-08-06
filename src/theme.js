@@ -72,6 +72,31 @@ const theme = {
     none: "none",
     float: "0px 4px 16px rgba(25, 25, 25, 0.075);",
   },
+  buttons: {
+    primary: {
+      bg: "secondary",
+    },
+    secondary: {
+      fontSize: 0,
+      color: "secondary",
+      bg: "transparent",
+      border: "thin",
+      borderColor: "muted",
+      borderRadius: "medium",
+      cursor: "pointer",
+      transition: "border-color .25s",
+      ":hover": {
+        color: "text",
+        borderColor: "secondary",
+      },
+    },
+    print: {
+      p: 1,
+      bg: "transparent",
+      borderRadius: "round",
+      cursor: "pointer",
+    },
+  },
   textStyles: {
     pageTitle: {
       color: "primary",

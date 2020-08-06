@@ -1,7 +1,19 @@
 /** @jsx jsx */
 import React from "react"
 import { MDXRenderer } from "gatsby-plugin-mdx"
-import { Box, Container, Grid, jsx, Styled } from "theme-ui"
+import { Box, Button, Container, Grid, jsx, Styled } from "theme-ui"
+import {
+  EmailShareButton,
+  EmailIcon,
+  FacebookShareButton,
+  FacebookIcon,
+  TwitterShareButton,
+  TwitterIcon,
+  PinterestShareButton,
+  PinterestIcon,
+  WhatsappShareButton,
+  WhatsappIcon,
+} from "react-share"
 import Layout from "./layout"
 import Link from "./Link"
 import { recipesTheme } from "../theme"
@@ -12,9 +24,12 @@ import Img from "gatsby-image"
 import SEO from "./seo"
 
 export default ({ data, pageContext }) => {
-  const { body, coverImage, title, categories, timeToCook } = data.post
+  const { post, site } = data
+  const { body, coverImage, title, categories, timeToCook } = post
+  const pageUrl = window.location.href
   const mainCategory = categories.find((cat) => !cat.isTag)
   const tags = categories.filter((cat) => cat.isTag)
+  const ogImagePath = site.siteMetadata.url + pageContext.ogImage.path
   return (
     <Layout theme={recipesTheme}>
       <SEO title={title} ogImage={pageContext.ogImage} />
@@ -33,6 +48,9 @@ export default ({ data, pageContext }) => {
               color: "muted",
               fontSize: 0,
               gridColumn: [1, "1 / span 8"],
+              "@media print": {
+                visibility: "hidden",
+              },
             }}
           >
             <Group separator=" → ">
@@ -52,8 +70,21 @@ export default ({ data, pageContext }) => {
 
           <Box
             sx={{
+              gridColumnStart: [1, 1],
+              gridColumnEnd: [1, 9],
+              "& > p:first-of-type": {
+                variant: "textStyles.lead",
+              },
+            }}
+          >
+            <MDXRenderer>{body}</MDXRenderer>
+          </Box>
+
+          <Box
+            as="aside"
+            sx={{
               gridColumn: [1, "10 / span 3"],
-              gridRow: "3 / span 2",
+              gridRow: [4, "3 / span 2"],
             }}
           >
             <Styled.h3>Zubereitungszeit</Styled.h3>
@@ -73,24 +104,70 @@ export default ({ data, pageContext }) => {
               </>
             )}
 
-            <Styled.h3>Nährwerte</Styled.h3>
-            <Styled.p>
-              Du suchst die Nährwertangaben? In{" "}
-              <Link to="/posts/2020-07-07-nährwertangaben">diesem Artikel</Link>{" "}
-              erklärte ich, warum du hier keine findest.
-            </Styled.p>
-          </Box>
+            <Box
+              sx={{
+                "@media print": {
+                  display: "none",
+                },
+              }}
+            >
+              <Styled.h3>Nährwerte</Styled.h3>
+              <Styled.p>
+                Du suchst die Nährwertangaben? In{" "}
+                <Link to="/posts/2020-07-07-nährwertangaben">
+                  diesem Artikel
+                </Link>{" "}
+                erklärte ich, warum du hier keine findest.
+              </Styled.p>
+            </Box>
 
-          <Box
-            sx={{
-              gridColumnStart: [1, 1],
-              gridColumnEnd: [1, 9],
-              "& > p:first-of-type": {
-                variant: "textStyles.lead",
-              },
-            }}
-          >
-            <MDXRenderer>{body}</MDXRenderer>
+            <Box
+              as="nav"
+              sx={{
+                my: 3,
+                "@media print": {
+                  display: "none",
+                },
+              }}
+            >
+              <Styled.h3 sx={{ mb: 2 }}>Teilen</Styled.h3>
+              <Grid
+                sx={{
+                  gridGap: 2,
+                  gridAutoFlow: "column",
+                }}
+              >
+                <EmailShareButton url={pageUrl} subject={title}>
+                  <EmailIcon round size={32} />
+                </EmailShareButton>
+                <FacebookShareButton url={pageUrl} quote={title}>
+                  <FacebookIcon round size={32} />
+                </FacebookShareButton>
+                <TwitterShareButton url={pageUrl} title={title}>
+                  <TwitterIcon round size={32} />
+                </TwitterShareButton>
+                <WhatsappShareButton url={pageUrl} title={title}>
+                  <WhatsappIcon round size={32} />
+                </WhatsappShareButton>
+                <PinterestShareButton url={pageUrl} media={ogImagePath}>
+                  <PinterestIcon round size={32} />
+                </PinterestShareButton>
+                <Button
+                  variant="print"
+                  sx={{
+                    my: 2,
+                  }}
+                  title="Seite drücken"
+                  onClick={() => {
+                    if (typeof window !== "undefined") {
+                      window.print()
+                    }
+                  }}
+                >
+                  🖨
+                </Button>
+              </Grid>
+            </Box>
           </Box>
         </Grid>
       </Container>
