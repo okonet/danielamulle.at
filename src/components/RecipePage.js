@@ -72,6 +72,13 @@ export default ({ data, pageContext }) => {
                 </Box>
               </>
             )}
+
+            <Styled.h3>Nährwerte</Styled.h3>
+            <Styled.p>
+              Du suchst die Nährwertangaben? In{" "}
+              <Link to="/posts/2020-07-07-nährwertangaben">diesem Artikel</Link>{" "}
+              erklärte ich, warum du hier keine findest.
+            </Styled.p>
           </Box>
 
           <Box
