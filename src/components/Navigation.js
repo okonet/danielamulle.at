@@ -7,7 +7,7 @@ import {
   blogTheme,
   howTheme,
   recipesTheme,
-  whatTheme,
+  offersTheme,
 } from "../theme"
 import { blogPath, recipesPath } from "../../paths"
 
@@ -15,12 +15,7 @@ const pages = [
   {
     title: "Angebot",
     to: "/offers",
-    theme: whatTheme,
-  },
-  {
-    title: "Wie?",
-    to: "/how",
-    theme: howTheme,
+    theme: offersTheme,
   },
   {
     title: "Über mich",

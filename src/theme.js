@@ -245,28 +245,7 @@ export const aboutTheme = {
   coverSrc: unsplashURL("9aOswReDKPo"),
 }
 
-export const whatTheme = {
-  ...theme,
-  colors: {
-    ...theme.colors,
-    text: palette.cyan[1],
-    background: palette.cyan[6],
-    accent: palette.cyan[2],
-    primary: palette.cyan[3],
-    secondary: palette.cyan[4],
-    muted: palette.cyan[5],
-  },
-  textStyles: {
-    ...theme.textStyles,
-    pageTitle: {
-      color: "background",
-    },
-  },
-  // coverSrc: unsplashURL("08bOYnH_r_E"),
-  coverSrc: unsplashURL("QSHF4Q1S0JU"),
-}
-
-export const howTheme = {
+export const offersTheme = {
   ...theme,
   colors: {
     ...theme.colors,
