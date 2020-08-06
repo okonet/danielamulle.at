@@ -7,7 +7,7 @@ import {
 import { Box, Container, Styled } from "theme-ui"
 import theme, * as themes from "../theme"
 
-const sections = ["about", "how", "what", "recipes"]
+const sections = ["about", "offers", "recipes", "blog"]
 
 export default () => {
   return (
@@ -31,10 +31,10 @@ export default () => {
         <Colors theme={theme} />
 
         {sections.map((sectionName) => (
-          <>
+          <React.Fragment key={sectionName}>
             <Styled.h1>Section "{sectionName}" theme</Styled.h1>
             <Colors theme={themes[`${sectionName}Theme`]} />
-          </>
+          </React.Fragment>
         ))}
       </Container>
     </Box>
