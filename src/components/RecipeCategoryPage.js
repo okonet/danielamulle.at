@@ -13,7 +13,6 @@ import Section from "./Section"
 
 export default ({ data }) => {
   const { category } = data
-  console.log(category)
   const groupedRecipes = groupBy(
     category.posts,
     (node) => node.categories[0].id
