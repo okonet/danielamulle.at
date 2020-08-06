@@ -23,10 +23,10 @@ import Group from "react-group"
 import Img from "gatsby-image"
 import SEO from "./seo"
 
-export default ({ data, pageContext }) => {
+export default ({ data, pageContext, location }) => {
   const { post, site } = data
   const { body, coverImage, title, categories, timeToCook } = post
-  const pageUrl = window.location.href
+  const pageUrl = location.href ? location.href : site.siteMetadata.url
   const mainCategory = categories.find((cat) => !cat.isTag)
   const tags = categories.filter((cat) => cat.isTag)
   const ogImagePath = site.siteMetadata.url + pageContext.ogImage.path
