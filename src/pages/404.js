@@ -1,14 +1,17 @@
 import React from "react"
-
+import { Box, Container, Flex, jsx, Styled, Text } from "theme-ui"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Link from "../components/Link"
+import { recipesPath } from "../../paths"
+import PageLayout from "../components/PageLayout"
 
 const NotFoundPage = () => (
-  <Layout>
-    <SEO title="404: Not found" />
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-  </Layout>
+  <PageLayout title="Seite nicht gefunden">
+    <Text as="p" sx={{ variant: "textStyles.lead", color: "secondary" }}>
+      😢 Die Seite existiert nicht. <Link to="/">Zur Startseite</Link>
+    </Text>
+  </PageLayout>
 )
 
 export default NotFoundPage
