@@ -86,6 +86,9 @@ const Navigation = (props) => {
         "* + *": {
           ml: 1,
         },
+        "@media print": {
+          display: "none",
+        },
         ...props.sx,
       }}
     >

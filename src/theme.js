@@ -28,6 +28,7 @@ export const palette = {
 }
 
 const theme = {
+  breakpoints: ["32em", "40em", "64em"],
   space: [0, 4, 8, 16, 32, 64, 128],
   colors: {
     text: palette.gray[1],
@@ -42,7 +43,7 @@ const theme = {
     heading: '"IBM Plex Sans", Helvetica, Arial, sans-serif',
     monospace: '"IBM Plex Mono", monospace',
   },
-  fontSizes: ["0.85rem", "1rem", "1.25rem", "3rem"],
+  fontSizes: ["0.85em", "1em", "1.25em", "3em"],
   fontWeights: {
     body: 400,
     heading: 700,
@@ -137,6 +138,9 @@ const theme = {
   styles: {
     root: {
       fontFamily: "body",
+      "@media print": {
+        fontSize: "10pt",
+      },
     },
     a: {
       color: "secondary",
@@ -161,7 +165,7 @@ const theme = {
     },
     p: {
       my: 3,
-      color: "text",
+      variant: "textStyles.body",
     },
     ul: {
       position: "relative",

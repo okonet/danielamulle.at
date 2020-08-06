@@ -44,7 +44,12 @@ function Ingredients({ yields, children }) {
   return (
     <>
       <Styled.h2>Zutaten {yields && `für ${yields}`}</Styled.h2>
-      <Box as="section">
+      <Box
+        as="section"
+        css={{
+          pageBreakInside: "avoid",
+        }}
+      >
         <Box
           as="ul"
           sx={{

@@ -71,10 +71,18 @@ const Layout = ({ theme = defaultTheme, children, mainStyles }) => {
 
         <Box as="footer" sx={{ py: 4, flexShrink: 1, bg: "background" }}>
           <Container sx={{ color: "secondary", fontSize: 0 }}>
-            <Group as="nav" separator=" • ">
-              <Link to="/impressum">Impressum</Link>
-              <Link to="/datenschutz">Datenschutz</Link>
-            </Group>
+            <Box
+              css={{
+                "@media print": {
+                  display: "none",
+                },
+              }}
+            >
+              <Group as="nav" separator=" • ">
+                <Link to="/impressum">Impressum</Link>
+                <Link to="/datenschutz">Datenschutz</Link>
+              </Group>
+            </Box>
             <Styled.p>
               © {site.siteMetadata.author}, {new Date().getFullYear()}
             </Styled.p>
