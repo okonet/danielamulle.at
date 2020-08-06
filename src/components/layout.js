@@ -24,6 +24,8 @@ const Layout = ({ theme = defaultTheme, children, mainStyles }) => {
         siteMetadata {
           title
           author
+          phone
+          email
         }
       }
     }
@@ -71,21 +73,42 @@ const Layout = ({ theme = defaultTheme, children, mainStyles }) => {
 
         <Box as="footer" sx={{ py: 4, flexShrink: 1, bg: "background" }}>
           <Container sx={{ color: "secondary", fontSize: 0 }}>
-            <Box
-              css={{
-                "@media print": {
-                  display: "none",
-                },
-              }}
-            >
-              <Group as="nav" separator=" • ">
-                <Link to="/impressum">Impressum</Link>
-                <Link to="/datenschutz">Datenschutz</Link>
-              </Group>
-            </Box>
-            <Styled.p>
-              © {site.siteMetadata.author}, {new Date().getFullYear()}
-            </Styled.p>
+            <Flex sx={{ alignItems: "flex-end" }}>
+              <Box sx={{ textAlign: "right", order: 2 }}>
+                <Box
+                  css={{
+                    "@media print": {
+                      display: "none",
+                    },
+                  }}
+                >
+                  <Group as="nav" separator=" • ">
+                    <Link to="/impressum">Impressum</Link>
+                    <Link to="/datenschutz">Datenschutz</Link>
+                  </Group>
+                </Box>
+                <Styled.p>
+                  Made with ♡ by{" "}
+                  <Styled.a href="https://component.driven.io">
+                    Component-Driven
+                  </Styled.a>
+                </Styled.p>
+              </Box>
+              <Box sx={{ flex: 1 }}>
+                <Styled.p>
+                  ☎{" "}
+                  <Styled.a href={`tel:${site.siteMetadata.phone}`}>
+                    {site.siteMetadata.phone}
+                  </Styled.a>
+                  <br />
+                  ✉️{" "}
+                  <Styled.a href={`mailto:${site.siteMetadata.email}`}>
+                    {site.siteMetadata.email}
+                  </Styled.a>
+                  <br />© {site.siteMetadata.author}, {new Date().getFullYear()}
+                </Styled.p>
+              </Box>
+            </Flex>
           </Container>
         </Box>
       </Flex>
