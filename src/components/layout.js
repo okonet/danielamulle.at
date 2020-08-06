@@ -71,10 +71,27 @@ const Layout = ({ theme = defaultTheme, children, mainStyles }) => {
           {children}
         </Flex>
 
-        <Box as="footer" sx={{ py: 4, flexShrink: 1, bg: "background" }}>
-          <Container sx={{ color: "secondary", fontSize: 0 }}>
-            <Flex sx={{ alignItems: "flex-end" }}>
-              <Box sx={{ textAlign: "right", order: 2 }}>
+        <Box as="footer" sx={{ flexShrink: 1, bg: "background" }}>
+          <Container
+            variant="section"
+            sx={{ bg: "transparent", color: "secondary", fontSize: 0 }}
+          >
+            <Box sx={{ display: ["block", "flex"], alignItems: "flex-end" }}>
+              <Box sx={{ flex: 1 }}>
+                <Styled.p>
+                  ☎{" "}
+                  <Styled.a href={`tel:${site.siteMetadata.phone}`}>
+                    {site.siteMetadata.phone}
+                  </Styled.a>
+                  <br />
+                  ✉️{" "}
+                  <Styled.a href={`mailto:${site.siteMetadata.email}`}>
+                    {site.siteMetadata.email}
+                  </Styled.a>
+                  <br />© {site.siteMetadata.author}, {new Date().getFullYear()}
+                </Styled.p>
+              </Box>
+              <Box sx={{ textAlign: ["left", "right"] }}>
                 <Box
                   css={{
                     "@media print": {
@@ -94,21 +111,7 @@ const Layout = ({ theme = defaultTheme, children, mainStyles }) => {
                   </Styled.a>
                 </Styled.p>
               </Box>
-              <Box sx={{ flex: 1 }}>
-                <Styled.p>
-                  ☎{" "}
-                  <Styled.a href={`tel:${site.siteMetadata.phone}`}>
-                    {site.siteMetadata.phone}
-                  </Styled.a>
-                  <br />
-                  ✉️{" "}
-                  <Styled.a href={`mailto:${site.siteMetadata.email}`}>
-                    {site.siteMetadata.email}
-                  </Styled.a>
-                  <br />© {site.siteMetadata.author}, {new Date().getFullYear()}
-                </Styled.p>
-              </Box>
-            </Flex>
+            </Box>
           </Container>
         </Box>
       </Flex>
