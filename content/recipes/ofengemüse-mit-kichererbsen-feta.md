@@ -2,10 +2,9 @@
 title: Ofengemüse mit Kichererbsen & Feta
 date: 2020-07-21T12:27:04.746Z
 coverImage: ../assets/DSC03494.jpg
-category:
+categories:
   - value: Hauptspeisen
     label: Hauptspeisen
-tags:
   - value: vegan
     label: vegan
   - value: vegetarisch
@@ -24,6 +23,7 @@ tags:
     label: glutenfrei
 timeToCook: 20 Minuten vorbereiten + ca. 35 Minuten backen
 ---
+
 Natürlich kannst du einfach dein Lieblingsgemüse verwenden, super eignen sich z.B. auch Kürbis, Süsskartoffeln, Zucchini, Auberginen, getrocknete Tomaten, Mais oder Oliven. Wenn du Oliven- und Rapsöl 50:50 verwendest, freut sich dein Körper über den tollen Fettmix aus omega-9 (Olive) und omega-3 (Raps).
 
 <Ingredients yields="4 Personen">
@@ -34,7 +34,7 @@ Natürlich kannst du einfach dein Lieblingsgemüse verwenden, super eignen sich 
 - 2 Pastinaken
 - 1 große rote Zwiebel oder ½ Bund Frühlingszwiebel
 - 5 Knoblauchzehen
-- 150 g Fetakäse (optional)
+- 150 g Fetakäse (optional)
 - 1 Dose gekochte Kichererbsen
 - Kräuter nach Lust & Laune, z.B. Rosmarin, Thymian, Oregano
 - Oliven- und Rapsöl
@@ -49,7 +49,7 @@ Natürlich kannst du einfach dein Lieblingsgemüse verwenden, super eignen sich 
 4. Zwiebel schälen und 1/8eln bzw. Frühlingszwiebel putzen und in ca. 3 cm lange Stücke schneiden.
 5. Knoblauch schälen und halbieren.
 6. Gemüse in eine große Auflaufform oder auf ein Backblech geben.
-7. Mit Oliven- und Rapsöl übergießen. 
+7. Mit Oliven- und Rapsöl übergießen.
 8. Mit Rosmarin bestreuen, salzen und pfeffern.
 9. Bei 180 Grad Heißluft ca. 35 Min backen.
 10. Währenddessen Fetakäse in Würfel schneiden und Kichererbsen gut abschwemmen.

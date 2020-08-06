@@ -2,10 +2,9 @@
 title: Würzige Kichererbsen-Bulgur-Suppe mit Fetacreme
 date: 2020-06-21T17:29:36.015Z
 coverImage: ../assets/20200515-dsc02766.jpg
-category:
+categories:
   - value: Suppen
     label: Suppen
-tags:
   - value: vegan
     label: vegan
   - value: vegetarisch
@@ -59,8 +58,7 @@ Diese gehaltvolle Suppe kannst du auch als Hauptgericht genießen. Wenn du statt
 8. Mit Suppe aufgießen und aufkochen.
 9. Auf niedrige Stufe zurückdrehen und 10 Minuten köcheln lassen.
 10. Währenddessen Bulgur in der doppelten Menge Wasser bissfest kochen und danach sofort abseihen und mit kaltem Wasser abschrecken.
-11. Für die Fetacreme zerbröselten Feta, Sauerrahm und Kräuter in einem kleinen Blender
-oder mit dem Pürierstab einige Minuten cremig mixen und mit Salz und Pfeffer abschmecken.
+11. Für die Fetacreme zerbröselten Feta, Sauerrahm und Kräuter in einem kleinen Blender oder mit dem Pürierstab einige Minuten cremig mixen und mit Salz und Pfeffer abschmecken.
 12. Bulgur einige Mintuen vor dem Servieren in die fertige Suppe geben und nochmals einige Minuten köcheln.
 13. Suppe in Schüsseln oder Tellern anrichten, mit einigen Löffeln Fetacreme verfeinern und sofort servieren.
 

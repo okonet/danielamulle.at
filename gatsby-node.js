@@ -9,13 +9,7 @@ const toString = require("mdast-util-to-string")
 const pkg = require("./package.json")
 const { createOpenGraphImage } = require("gatsby-plugin-open-graph-images")
 const { createFilePath } = require("gatsby-source-filesystem")
-const {
-  basePath,
-  blogPath,
-  recipesPath,
-  categoriesPath,
-  assetPath,
-} = require("./paths")
+const { basePath, blogPath, recipesPath, assetPath } = require("./paths")
 
 const debug = Debug(pkg.name)
 
@@ -58,42 +52,21 @@ exports.sourceNodes = ({ actions, schema }) => {
   const typeDefs = `
     type Category implements Node {
       id: ID!
+      collection: String
       slug: String!
-      recipes: [Recipe]!
-      recipeCount: Int!,
+      posts: [Post]!
+      postCount: Int!
       isTag: Boolean
     }
     
-    interface Post @nodeInterface {
+    type Post implements Node {
       id: ID!
       body: String
-      categories: [Category]
+      categories: [Category] @link(from: "categories.value")
       coverImage: File
-      date: Date
-      slug: String
-      title: String
-    }
-    
-    type BlogPost implements Node & Post {
-      id: ID!
-      body: String
-      categories: [Category] @link(from: "tags.value")
-      coverImage: File
+      collection: String
       date: Date @dateformat
       slug: String
-      title: String
-    }
-    
-    type Recipe implements Node & Post {
-      id: ID!
-      body: String
-      categories: [Category] @link(from: "tags.value")
-      category: [Category] @link(from: "category.value")
-      coverImage: File
-      date: Date @dateformat
-      ingredients: [String]
-      slug: String
-      timeToCook: String
       title: String
     }
   `
@@ -102,13 +75,7 @@ exports.sourceNodes = ({ actions, schema }) => {
 
 exports.createResolvers = ({ createResolvers, schema }) => {
   createResolvers({
-    BlogPost: {
-      body: {
-        type: "String",
-        resolve: mdxResolverPassthrough("body"),
-      },
-    },
-    Recipe: {
+    Post: {
       body: {
         type: "String",
         resolve: mdxResolverPassthrough("body"),
@@ -137,19 +104,19 @@ exports.createResolvers = ({ createResolvers, schema }) => {
       },
     },
     Category: {
-      recipes: {
-        type: "[Recipe]",
+      posts: {
+        type: "[Post]",
         async resolve(source, args, context, info) {
           const res = await context.nodeModel.runQuery({
             query: {
               filter: {
-                [source.isTag ? "categories" : "category"]: {
+                categories: {
                   elemMatch: { id: { eq: source.id } },
                 },
               },
               sort: { fields: ["title"], order: ["ASC"] },
             },
-            type: "Recipe",
+            type: "Post",
             firstOnly: false,
           })
           if (res === null) {
@@ -158,18 +125,18 @@ exports.createResolvers = ({ createResolvers, schema }) => {
           return res
         },
       },
-      recipeCount: {
+      postCount: {
         type: "Int!",
         async resolve(source, args, context, info) {
           const res = await context.nodeModel.runQuery({
             query: {
               filter: {
-                [source.isTag ? "categories" : "category"]: {
+                categories: {
                   elemMatch: { id: { eq: source.id } },
                 },
               },
             },
-            type: "Recipe",
+            type: "Post",
             firstOnly: false,
           })
           if (res === null) {
@@ -190,26 +157,26 @@ exports.onCreateNode = ({
   createContentDigest,
 }) => {
   const { createNode, createParentChildLink } = actions
-  if (node.internal.type === `ContentJson`) {
-    ;["categories", "tags"].forEach((key) => {
-      if (node[key] == null) {
-        return
+  if (node.internal.type.includes(`CategoriesJson`)) {
+    const parent = getNode(node.parent)
+    const categoriesNode = node.categories
+    if (categoriesNode == null) {
+      return
+    }
+    categoriesNode.forEach((obj) => {
+      const jsonNode = {
+        ...obj,
+        collection: parent.sourceInstanceName,
+        slug: `/${parent.sourceInstanceName}/${slug(obj.id)}`,
+        children: [],
+        parent: node.id,
+        internal: {
+          contentDigest: createContentDigest(obj),
+          type: "Category",
+        },
       }
-      node[key].forEach((obj) => {
-        const jsonNode = {
-          ...obj,
-          slug: `/${recipesPath}/${slug(obj.id)}`,
-          isTag: key === "tags",
-          children: [],
-          parent: node.id,
-          internal: {
-            contentDigest: createContentDigest(obj),
-            type: "Category",
-          },
-        }
-        createNode(jsonNode)
-        createParentChildLink({ parent: node, child: jsonNode })
-      })
+      createNode(jsonNode)
+      createParentChildLink({ parent: node, child: jsonNode })
     })
   }
   if (node.internal.type === "Mdx") {
@@ -217,11 +184,9 @@ exports.onCreateNode = ({
     const parent = getNode(node.parent)
     function getType(path) {
       switch (path) {
-        case blogPath: {
-          return "BlogPost"
-        }
+        case blogPath:
         case recipesPath: {
-          return "Recipe"
+          return "Post"
         }
         default: {
           return null
@@ -241,6 +206,7 @@ exports.onCreateNode = ({
 
     createNode({
       ...fieldData,
+      collection: path,
       // Required fields.
       id: createNodeId(`${node.id} >>> ${type}`),
       parent: node.id,
@@ -263,36 +229,20 @@ const BlogPostTemplate = require.resolve("./src/templates/blogpost-query")
 const BlogPostsTemplate = require.resolve("./src/templates/blogposts-query")
 const RecipeTemplate = require.resolve("./src/templates/recipe-query")
 const RecipesTemplate = require.resolve("./src/templates/recipes-query")
-const CategoryTemplate = require.resolve("./src/templates/category-query")
+const RecipeCategoryTemplate = require.resolve(
+  "./src/templates/recipe-category-query"
+)
 
 exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions
   const result = await graphql(`
     {
-      allBlogPost(sort: { fields: [date, title], order: DESC }) {
+      allPost(sort: { fields: [date, title], order: DESC }) {
         nodes {
-          __typename
           id
           slug
           title
-          coverImage {
-            childImageSharp {
-              fluid(maxWidth: 300) {
-                tracedSVG
-                src
-                srcSet
-                aspectRatio
-              }
-            }
-          }
-        }
-      }
-      allRecipe(sort: { fields: [date, title], order: DESC }) {
-        nodes {
-          __typename
-          id
-          slug
-          title
+          collection
           coverImage {
             childImageSharp {
               fluid(maxWidth: 300) {
@@ -309,6 +259,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         nodes {
           id
           slug
+          collection
         }
       }
     }
@@ -319,13 +270,10 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   }
 
   // Create Posts and Post pages.
-  const { allBlogPost, allRecipe, allCategory } = result.data
-  const categories = allCategory.nodes
-  const blogPosts = allBlogPost.nodes
-  const recipes = allRecipe.nodes
+  const { allPost, allCategory } = result.data
 
-  // Create a page for each BlogPost and Recipe
-  blogPosts.concat(recipes).forEach((post, index) => {
+  // Create a page for each Post
+  allPost.nodes.forEach((post, index) => {
     const ogImage = createOpenGraphImage(createPage, {
       path: `/og-images/${post.id}.png`,
       component: path.resolve(`src/templates/post-og-image.js`),
@@ -337,7 +285,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     createPage({
       path: post.slug,
       component:
-        post.__typename === "Recipe" ? RecipeTemplate : BlogPostTemplate,
+        post.collection === "recipes" ? RecipeTemplate : BlogPostTemplate,
       context: {
         id: post.id,
         ogImage,
@@ -345,12 +293,13 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     })
   })
 
-  categories.forEach(({ id, slug }) => {
+  allCategory.nodes.forEach(({ id, slug, collection }) => {
     createPage({
       path: slug,
-      component: CategoryTemplate,
+      component: RecipeCategoryTemplate,
       context: {
         id,
+        collection,
       },
     })
   })

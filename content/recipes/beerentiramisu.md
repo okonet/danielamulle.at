@@ -2,10 +2,9 @@
 title: Beerentiramisu
 date: 2020-07-27T05:52:52.401Z
 coverImage: ../assets/beerentiramisu.jpg
-category:
+categories:
   - value: Snacks
     label: Snacks
-tags:
   - value: vegetarisch
     label: vegetarisch
   - value: gut vorzubereiten
@@ -22,6 +21,7 @@ tags:
     label: laktosefrei
 timeToCook: 20 Minuten + mehrere Stunden kühlen
 ---
+
 Eine frisch-fruchtige Nachspeise, angelehnt an einen italienischen Klassiker - du wirst begeistert sein!
 
 <Ingredients yields="6 Personen">
@@ -40,11 +40,11 @@ Eine frisch-fruchtige Nachspeise, angelehnt an einen italienischen Klassiker - d
 
 1. Beeren waschen oder auftauen lassen.
 2. Mascarpone, Topfen, Rohrzucker und Vanillezucker mit dem Handmixer vermischen.
-2. Beeren unterrühren.
-3. Boden einer rechteckigen Form dünn mit Beerenmasse ausstreichen.
-4. Mit Keksen belegen.
-5. Mit Beerenmasse bestreichen.
-6. So lange wiederholen, bis die Kekse aufgebraucht sind, dabei mit Beerenmasse abschließen.
+3. Beeren unterrühren.
+4. Boden einer rechteckigen Form dünn mit Beerenmasse ausstreichen.
+5. Mit Keksen belegen.
+6. Mit Beerenmasse bestreichen.
+7. So lange wiederholen, bis die Kekse aufgebraucht sind, dabei mit Beerenmasse abschließen.
 8. Mit Kokosraspeln oder Kakao bestreuen.
 9. Mit Frischhaltefolie gut verschließen.
 10. Mindestens 5 Stunden im Kühlschrank durchziehen lassen.

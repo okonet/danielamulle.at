@@ -2,10 +2,9 @@
 title: Fiesta Tamale Pie
 date: 2020-06-16T15:19:11.375Z
 coverImage: ../assets/DSC03026.jpg
-category:
+categories:
   - value: Hauptspeisen
     label: Hauptspeisen
-tags:
   - value: vegetarisch
     label: vegetarisch
   - value: gut vorzubereiten
@@ -20,6 +19,7 @@ tags:
     label: fruktosearm
 timeToCook: 30 Minuten vorbereiten + 45 Minuten backen
 ---
+
 Diese vegetarische Abwandlung eines mexikanischen Klassikers ist in meiner Familie ein all-time-favorite!
 
 <Ingredients yields="4 Personen">

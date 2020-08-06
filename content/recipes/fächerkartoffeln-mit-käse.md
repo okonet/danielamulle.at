@@ -2,10 +2,9 @@
 title: Fächerkartoffeln mit Käse
 date: 2020-06-24T06:33:03.042Z
 coverImage: ../assets/DSC03063.jpg
-category:
+categories:
   - value: Hauptspeisen
     label: Hauptspeisen
-tags:
   - value: vegetarisch
     label: vegetarisch
   - value: vegan
@@ -18,6 +17,7 @@ tags:
     label: histaminarm
 timeToCook: 15 Minuten vorbereiten + ca. 40 Minuten backen
 ---
+
 Hier steht wieder mal die Kartoffel im Rampenlicht, diesmal kommt sie aus dem Backofen, in toller Begleitung.
 
 <Ingredients yields="4 Personen">

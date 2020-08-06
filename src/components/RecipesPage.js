@@ -13,7 +13,7 @@ import Content from "../../content/sections/recipes.mdx"
 import RecipesList from "./RecipesList"
 
 export default ({ data, location, navigate }) => {
-  const { allCategory, allRecipe } = data
+  const { allCategory, allPost } = data
   const searchParams = new URLSearchParams(location.search)
   const query = searchParams.get("q") || ""
   const { index, store } = data.localSearchRecipes
@@ -21,9 +21,12 @@ export default ({ data, location, navigate }) => {
   const resIds = results.map((res) => res.id)
   const tags = allCategory.nodes
   const filteredRecipes = query
-    ? allRecipe.nodes.filter((recipe) => resIds.includes(recipe.id))
-    : allRecipe.nodes
-  const groupedRecipes = groupBy(filteredRecipes, (node) => node.category[0].id)
+    ? allPost.nodes.filter((recipe) => resIds.includes(recipe.id))
+    : allPost.nodes
+  const groupedRecipes = groupBy(
+    filteredRecipes,
+    (node) => node.categories[0].id
+  )
 
   const handleChange = useCallback((event) => {
     const searchQuery = event.target.value
@@ -85,7 +88,7 @@ export default ({ data, location, navigate }) => {
                     as="span"
                     sx={{ pl: 1, fontSize: 0, color: "secondary" }}
                   >
-                    {tag.recipeCount}
+                    {tag.postCount}
                   </Text>
                 </Tag>
               ))}

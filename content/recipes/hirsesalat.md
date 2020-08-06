@@ -2,10 +2,9 @@
 title: Hirsesalat
 date: 2020-06-29T09:49:34.149Z
 coverImage: ../assets/img_2141.jpg
-category:
+categories:
   - value: Salate
     label: Salate
-tags:
   - value: vegetarisch
     label: vegetarisch
   - value: gut vorzubereiten
@@ -20,7 +19,7 @@ tags:
     label: glutenfrei
 timeToCook: 30 Minuten vorbereiten + ca. 1 Stunde durchziehen
 ingredients:
-  - 'für 4 Personen als Vorspeise:'
+  - "für 4 Personen als Vorspeise:"
   - 130 g Hirse
   - 1 kleine rote Zwiebel
   - 1 Stange Sellerie
@@ -35,7 +34,8 @@ ingredients:
   - Saft 1/2 Zitrone
   - Olivenöl
 ---
-Dieser Salat eignet sich wunderbar zum Mitnehmen. Er schmeckt toll zum Mittagessen unterwegs, und ist wahrscheinlich das Highlight deiner nächsten Picknicks oder Parties. 
+
+Dieser Salat eignet sich wunderbar zum Mitnehmen. Er schmeckt toll zum Mittagessen unterwegs, und ist wahrscheinlich das Highlight deiner nächsten Picknicks oder Parties.
 
 <Ingredients yields="4 Personen als Vorspeise">
 
@@ -56,16 +56,16 @@ Dieser Salat eignet sich wunderbar zum Mitnehmen. Er schmeckt toll zum Mittagess
 </Ingredients>
 <Preparation>
 
-1. Hirse in der doppelten Menge Wasser und 1 TL Salz aufkochen.
-2. Zurückschalten und ca. 15 Minuten weichdünsten.
-3. Einstweilen Zwiebel schälen und hacken.
-4. Karotte und Sellerie kleinschneiden.
-5. Tomaten kurz abtropfen lassen, das Öl dabei gleich in der Salatschüssel auffangen.
-6. Tomaten klein schneiden.
-7. Ausgekühlte Hirse mit allen Zutaten gut vermischen.
-8. Knoblauch dazupressen, Paprikapulver und Kräuter unterrühren.
-9. Mit Olivenöl und Zitronensaft marinieren.
-10. Mit Salz und Pfeffer abschmecken.
+1. Hirse in der doppelten Menge Wasser und 1 TL Salz aufkochen.
+2. Zurückschalten und ca. 15 Minuten weichdünsten.
+3. Einstweilen Zwiebel schälen und hacken.
+4. Karotte und Sellerie kleinschneiden.
+5. Tomaten kurz abtropfen lassen, das Öl dabei gleich in der Salatschüssel auffangen.
+6. Tomaten klein schneiden.
+7. Ausgekühlte Hirse mit allen Zutaten gut vermischen.
+8. Knoblauch dazupressen, Paprikapulver und Kräuter unterrühren.
+9. Mit Olivenöl und Zitronensaft marinieren.
+10. Mit Salz und Pfeffer abschmecken.
 11. Idealerweise lässt du den Salat vor dem Servieren im Kühlschrank ein paar Stunden durchziehen.
 
 </Preparation>

@@ -12,15 +12,9 @@ import Img from "gatsby-image"
 import SEO from "./seo"
 
 export default ({ data, pageContext }) => {
-  const {
-    body,
-    coverImage,
-    title,
-    category,
-    categories,
-    timeToCook,
-  } = data.recipe
-  const mainCategory = category[0]
+  const { body, coverImage, title, categories, timeToCook } = data.post
+  const mainCategory = categories.find((cat) => !cat.isTag)
+  const tags = categories.filter((cat) => cat.isTag)
   return (
     <Layout theme={recipesTheme}>
       <SEO title={title} ogImage={pageContext.ogImage} />
@@ -35,7 +29,11 @@ export default ({ data, pageContext }) => {
         <Grid gap={0} columns={[1, 12]}>
           <Box
             as="nav"
-            sx={{ color: "muted", fontSize: 0, gridColumn: [1, "1 / span 8"] }}
+            sx={{
+              color: "muted",
+              fontSize: 0,
+              gridColumn: [1, "1 / span 8"],
+            }}
           >
             <Group separator=" → ">
               <Link to={recipesPath}>Alle Rezepte</Link>
@@ -60,12 +58,12 @@ export default ({ data, pageContext }) => {
           >
             <Styled.h3>Zubereitungszeit</Styled.h3>
             <Styled.p>{timeToCook}</Styled.p>
-            {categories && (
+            {tags && (
               <>
                 <Styled.h3>Kategorien</Styled.h3>
                 <Box sx={{ my: 2, mx: -2 }}>
                   <Group as="p" separator=" ">
-                    {categories.map((category) => (
+                    {tags.map((category) => (
                       <Tag key={category.id} sx={{ my: 1 }}>
                         <Link to={category.slug}>{category.id}</Link>
                       </Tag>

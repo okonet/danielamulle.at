@@ -2,10 +2,9 @@
 title: Gebackene Apfelrollen
 date: 2020-07-10T12:01:12.643Z
 coverImage: ../assets/20200523-DSC02846.jpg
-category:
-  - value: 'Kuchen, Kekserl & Co'
-    label: 'Kuchen, Kekserl & Co'
-tags:
+categories:
+  - value: "Kuchen, Kekserl & Co"
+    label: "Kuchen, Kekserl & Co"
   - value: vegetarisch
     label: vegetarisch
   - value: zum Mitnehmen
@@ -18,17 +17,18 @@ tags:
     label: histaminfrei
 timeToCook: 30 Minuten vorbereiten + ca. 40 Minuten backen
 ---
+
 Ob mit Suppen- oder Salatvorspeise als Mittagessen, als Snack oder zum Nachmittagskaffee: Die Apfelrollen schmecken sowohl frisch aus dem Backofen als auch lauwarm oder kalt köstlich!
 
 <Ingredients yields="ca. 10 Stück">
 
 - 1 kg Kartoffeln
-- 30 g Margarine  
-- 300 g Vollkornmehl  
-- 1 Ei  
+- 30 g Margarine
+- 300 g Vollkornmehl
+- 1 Ei
 - Prise Muskatnuss
 - 3 mittelgroße Äpfel (ca. 400 g)
-- 2 EL brauner Zucker 
+- 2 EL brauner Zucker
 - 1,5 TL Zimt
 - Zitronensaft
 - 150 g Sauerrahm
@@ -37,7 +37,7 @@ Ob mit Suppen- oder Salatvorspeise als Mittagessen, als Snack oder zum Nachmitta
 </Ingredients>
 <Preparation>
 
-1. Kartoffeln weichkochen. 
+1. Kartoffeln weichkochen.
 2. Einstweilen Äpfel schälen, würfeln mit Zitronensaft, Zimt & Zucker verrühren und beiseitestellen.
 3. Kartoffeln noch heiß schälen und durch Kartoffelpresse drücken.
 4. 1 TL Salz und Muskat darüberstreuen, Margarine in Stückchen darauf verteilen.

@@ -2,10 +2,9 @@
 title: Blitzschnelles Mischgemüse-Pesto
 date: 2020-07-13T15:08:50.755Z
 coverImage: ../assets/20200524-DSC02853.jpg
-category:
+categories:
   - value: Hauptspeisen
     label: Hauptspeisen
-tags:
   - value: vegetarisch
     label: vegetarisch
   - value: gut vorzubereiten
@@ -20,6 +19,7 @@ tags:
     label: glutenfrei
 timeToCook: 15 Minuten
 ---
+
 Dieses Pesto ist eine Idee, wie du dir im Handumdrehen ein superschnelles & trotzdem gesundes Essen zauberst:
 
 <Ingredients yields="4 Personen">
@@ -34,8 +34,8 @@ Dieses Pesto ist eine Idee, wie du dir im Handumdrehen ein superschnelles & trot
 - 30 ml Raps- oder Walnussöl
 - 1 TL Salz
 - 1/2 TL frisch geriebener Pfeffer
-- 500 g Vollkorn-Pasta nach Wahl (bei Bedarf glutenfrei)
-- geriebener Parmesan oder Grana zum Servieren (optional)
+- 500 g Vollkorn-Pasta nach Wahl (bei Bedarf glutenfrei)
+- geriebener Parmesan oder Grana zum Servieren (optional)
 
 </Ingredients>
 <Preparation>

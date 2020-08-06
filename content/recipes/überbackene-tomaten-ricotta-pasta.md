@@ -2,10 +2,9 @@
 title: Überbackene Tomaten-Ricotta-Pasta
 date: 2020-07-26T05:14:12.515Z
 coverImage: ../assets/tomatenricottapasta.jpg
-category:
+categories:
   - value: Hauptspeisen
     label: Hauptspeisen
-tags:
   - value: vegetarisch
     label: vegetarisch
   - value: gut vorzubereiten
@@ -18,7 +17,8 @@ tags:
     label: glutenfrei
 timeToCook: 20 Minuten vorbereiten + je 30 Minuten köcheln & backen
 ---
-Du liebst Lasagne, aber das ist dir zum Selberkochen zu kompliziert? Dann solltest du dieses Rezept versuchen, denn es ist supereasy + schmeckt zum Verwechseln ähnlich. Du musst nur darauf achten, die Pasta nicht al dente zu kochen, sonst wird sie im Ofen viel zu weich. 
+
+Du liebst Lasagne, aber das ist dir zum Selberkochen zu kompliziert? Dann solltest du dieses Rezept versuchen, denn es ist supereasy + schmeckt zum Verwechseln ähnlich. Du musst nur darauf achten, die Pasta nicht al dente zu kochen, sonst wird sie im Ofen viel zu weich.
 
 <Ingredients yields="6 Personen">
 
@@ -41,7 +41,7 @@ Du liebst Lasagne, aber das ist dir zum Selberkochen zu kompliziert? Dann sollte
 <Preparation>
 
 1. Zwiebel schälen und fein hacken, Knoblauch pressen.
-2. Etwas Olivenöl bei mittlerer Hitze erwärmen. 
+2. Etwas Olivenöl bei mittlerer Hitze erwärmen.
 3. Zwiebel, Knoblauch, Salz und Pfeffer zugeben und goldbraun rösten.
 4. Gehackte und passierte Tomaten einrühren.
 5. Basilikum und Chiliflocken untermischen.
@@ -66,4 +66,3 @@ Du liebst Lasagne, aber das ist dir zum Selberkochen zu kompliziert? Dann sollte
 </Preparation>
 
 Ein großer grüner Salat ist ein perfekter Begleiter. Und falls du Kalorien sparen möchtest, verwende statt Ricotta Sauerrahm, Cottage Cheese oder Topfen mit 20 % FiT.
-

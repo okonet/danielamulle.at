@@ -2,10 +2,9 @@
 title: Dattel-Walnuss-Ecken
 date: 2020-07-06T12:56:16.991Z
 coverImage: ../assets/20200521-DSC02820.jpg
-category:
-  - value: 'Kuchen, Kekserl & Co'
-    label: 'Kuchen, Kekserl & Co'
-tags:
+categories:
+  - value: "Kuchen, Kekserl & Co"
+    label: "Kuchen, Kekserl & Co"
   - value: vegan
     label: vegan
   - value: gut vorzubereiten
@@ -20,6 +19,7 @@ tags:
     label: histaminfrei
 timeToCook: 30 Minuten vorbereiten + ca. 40 Minuten backen
 ---
+
 Eine tolles Rezept mit orientalischer Note für alle Naschkatzen und -kater:
 
 <Ingredients yields="ca. 30 Stück">

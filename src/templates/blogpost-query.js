@@ -5,7 +5,7 @@ export default BlogPostPage
 
 export const query = graphql`
   query BlogPostQuery($id: String!) {
-    blogPost(id: { eq: $id }) {
+    post(id: { eq: $id }) {
       date(locale: "de", formatString: "DD MMMM YYYY")
       title
       body
@@ -16,10 +16,7 @@ export const query = graphql`
           }
         }
       }
-      categories {
-        id
-        slug
-      }
+      ...Categories
     }
   }
 `

@@ -2,10 +2,9 @@
 title: Rote Linsensuppe
 date: 2020-07-15T11:50:48.570Z
 coverImage: ../assets/DSC03515.jpg
-category:
+categories:
   - value: Suppen
     label: Suppen
-tags:
   - value: vegan
     label: vegan
   - value: gut vorzubereiten
@@ -22,6 +21,7 @@ tags:
     label: glutenfrei
 timeToCook: 15 Minuten vorbereiten + 20 Minuten köcheln
 ---
+
 Ich liebe dieses türkische Rezept mit dem du dir im Nu eine superleckere Eiweißbombe zum Löffeln zaubern kannst. Kreuzkümmel, Pfefferminze & frischer Zitronensaft verleihen dabei der Suppe das "gewisse Etwas":
 
 <Ingredients yields="4 Personen">
@@ -35,7 +35,7 @@ Ich liebe dieses türkische Rezept mit dem du dir im Nu eine superleckere Eiwei�
 - ½ EL Tomatenmark
 - 1 TL gemahlener Kreuzkümmel
 - 1 Liter Gemüsesuppe oder kochendes Wasser + 1 TL Salz
-- wenn du's scharf magst: etwas Chiliflocken 
+- wenn du's scharf magst: etwas Chiliflocken
 - 2 EL getrocknete Minze (notfalls 2 Pfefferminzteebeutel)
 - etwas frisch gepressten Zitronensaft zum Servieren
 

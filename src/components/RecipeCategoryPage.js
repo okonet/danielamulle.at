@@ -13,9 +13,10 @@ import Section from "./Section"
 
 export default ({ data }) => {
   const { category } = data
+  console.log(category)
   const groupedRecipes = groupBy(
-    category.recipes,
-    (node) => node.category[0].id
+    category.posts,
+    (node) => node.categories[0].id
   )
   return (
     <Layout theme={recipesTheme}>
@@ -38,7 +39,7 @@ export default ({ data }) => {
         </Styled.h1>
       </Section>
 
-      {category.recipes ? (
+      {category.postCount > 0 ? (
         <RecipesList recipes={groupedRecipes} />
       ) : (
         <Container>

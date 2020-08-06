@@ -2,10 +2,9 @@
 title: Penne mit Spitzpaprika-Haselnuss-Pesto
 date: 2020-07-10T11:44:05.901Z
 coverImage: ../assets/20200513-DSC02756.jpg
-category:
+categories:
   - value: Hauptspeisen
     label: Hauptspeisen
-tags:
   - value: vegetarisch
     label: vegetarisch
   - value: gut vorzubereiten
@@ -20,6 +19,7 @@ tags:
     label: glutenfrei
 timeToCook: 15 Minuten vorbereiten + ca. 20 Minuten rösten
 ---
+
 Dieses Pesto schmeckt nicht nur zu Nudeln, sondern auch als Dip oder Brotaufstrich hervorragend. Gut verschlossen kannst du es ca. 5 Tage im Kühlschrank lagern. Die Mischung aus Haselnüssen, Oliven- und Rapsöl sorgt für einen leckeren & super wertvollen Mix aus omega-9 und omega-3-Fetten.
 
 <Ingredients yields="4 Personen">
@@ -33,7 +33,7 @@ Dieses Pesto schmeckt nicht nur zu Nudeln, sondern auch als Dip oder Brotaufstri
 - 1 TL Salz
 - 1/2 TL frisch geriebener Pfeffer
 - 500 g Vollkorn-Penne (bei Bedarf glutenfreie Pasta)
-- geriebener Parmesan oder Grana zum Servieren (optional)
+- geriebener Parmesan oder Grana zum Servieren (optional)
 
 </Ingredients>
 <Preparation>

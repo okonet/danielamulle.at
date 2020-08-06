@@ -2,10 +2,9 @@
 title: Vegetarische Lasagne
 date: 2020-08-03T15:53:39.609Z
 coverImage: ../assets/img_6225.jpeg
-category:
+categories:
   - value: Hauptspeisen
     label: Hauptspeisen
-tags:
   - value: vegetarisch
     label: vegetarisch
   - value: gut vorzubereiten
@@ -20,6 +19,7 @@ tags:
     label: laktosearm
 timeToCook: 40 Minuten vorbereiten + 40 Minuten backen
 ---
+
 Hier mein köstliches Rezept für die vegetarische Variante eines italienischen Klassikers, das du je nach Saison abwandeln kannst.
 
 <Ingredients yields="4 Personen">
@@ -32,7 +32,7 @@ Hier mein köstliches Rezept für die vegetarische Variante eines italienischen 
 - 680 ml passierte Tomaten
 - Oregano und/oder Basilikum (frisch oder getrocknet)
 - 1 TL Fenchelsamen + 1 TL Kreuzkümmel (zerstoßen)
-- wenn du's scharf magst: etwas frische oder getrocknete Chilischote 
+- wenn du's scharf magst: etwas frische oder getrocknete Chilischote
 - Salz, Pfeffer, Muskatnuss
 - Rapsöl
 - 250 g geriebener Käse

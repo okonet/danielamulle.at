@@ -2,10 +2,9 @@
 title: Holler-Pancakes
 date: 2020-06-25T19:07:48.288Z
 coverImage: ../assets/20200603-dsc02920.jpg
-category:
-  - value: 'Kuchen, Kekserl & Co'
-    label: 'Kuchen, Kekserl & Co'
-tags:
+categories:
+  - value: "Kuchen, Kekserl & Co"
+    label: "Kuchen, Kekserl & Co"
   - value: vegan
     label: vegan
   - value: gut vorzubereiten

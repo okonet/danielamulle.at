@@ -4,7 +4,14 @@ import RecipesPage from "../components/RecipesPage"
 export default RecipesPage
 
 export const query = graphql`
-  fragment RecipeMeta on Recipe {
+  fragment Categories on Post {
+    categories {
+      id
+      slug
+      isTag
+    }
+  }
+  fragment PostMeta on Post {
     id ## Required for search to work
     slug
     title
@@ -15,26 +22,21 @@ export const query = graphql`
         }
       }
     }
-    category {
-      id
-      slug
-    }
-    categories {
-      id
-      slug
-    }
+    ...Categories
   }
   query RecipesQuery {
-    allCategory(filter: { isTag: { eq: true } }) {
+    allCategory(
+      filter: { isTag: { eq: true }, collection: { eq: "recipes" } }
+    ) {
       nodes {
         id
         slug
-        recipeCount
+        postCount
       }
     }
-    allRecipe {
+    allPost(filter: { collection: { eq: "recipes" } }) {
       nodes {
-        ...RecipeMeta
+        ...PostMeta
       }
     }
     localSearchRecipes {

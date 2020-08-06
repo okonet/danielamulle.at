@@ -2,10 +2,9 @@
 title: Hirsepizza
 date: 2020-07-25T05:31:14.234Z
 coverImage: ../assets/hirsepizza.jpg
-category:
+categories:
   - value: Hauptspeisen
     label: Hauptspeisen
-tags:
   - value: vegetarisch
     label: vegetarisch
   - value: gut vorzubereiten
@@ -20,7 +19,8 @@ tags:
     label: glutenfrei
 timeToCook: 30 Minuten vorbereiten + 30 Minuten backen
 ---
-Lust auf Pizza "einmal anders"? Dann probier' unbedingt dieses Rezept! Du kannst es super vorbereiten, und die Pizza schmeckt auch ausgekühlt als Snack oder unterwegs lecker. Statt Hirse kannst du auch andere (Pseudo)getreide wie Quinoa, Polenta, Buchweizen oder Bulgur verwenden. 
+
+Lust auf Pizza "einmal anders"? Dann probier' unbedingt dieses Rezept! Du kannst es super vorbereiten, und die Pizza schmeckt auch ausgekühlt als Snack oder unterwegs lecker. Statt Hirse kannst du auch andere (Pseudo)getreide wie Quinoa, Polenta, Buchweizen oder Bulgur verwenden.
 
 <Ingredients yields="1 Blech">
 
@@ -39,20 +39,21 @@ Lust auf Pizza "einmal anders"? Dann probier' unbedingt dieses Rezept! Du kannst
 ### Belag
 
 nach Lust & Laune, z.B.: Thunfisch, Zwiebelringe (rot oder gelb), Frühlingszwiebel, Schinken, Mozzarella, Bergkäse, Tofu, Paprika, Mais, Oliven, Rucola, Kohl, etc.
-- Basilikum, Oregano 
+
+- Basilikum, Oregano
 - Olivenöl
 
 </Ingredients>
 <Preparation>
 
 1. Hirse in Pflanzendrink, Wasser + Suppenwürfel bzw. Salz kurz aufkochen.
-2. Bei niedriger Hitze ca. 20 Minuten ausdünsten.
-3. Margarine und Käse in die halbwarme Hirsemasse rühren, Eier und Kräuter untermischen.
+2. Bei niedriger Hitze ca. 20 Minuten ausdünsten.
+3. Margarine und Käse in die halbwarme Hirsemasse rühren, Eier und Kräuter untermischen.
 4. Masse mit nassen Händen fingerdick auf einem befetteten Backblech verteilen.
-5. Passierte Tomaten draufstreichen, Basilikum, Salz und Pfeffer darüberstreuen.
-6. Weiter wie eine Pizza belegen.
-7. Zum Abschluss mit Oregano bestreuen.
-8. Bei 180 Grad Heißluft ca. 30 Minuten backen, bis die Pizza schön braun geworden ist.
-9. Vor dem Servieren noch mit etwas Olivenöl beträufeln.
+5. Passierte Tomaten draufstreichen, Basilikum, Salz und Pfeffer darüberstreuen.
+6. Weiter wie eine Pizza belegen.
+7. Zum Abschluss mit Oregano bestreuen.
+8. Bei 180 Grad Heißluft ca. 30 Minuten backen, bis die Pizza schön braun geworden ist.
+9. Vor dem Servieren noch mit etwas Olivenöl beträufeln.
 
 </Preparation>

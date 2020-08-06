@@ -2,10 +2,9 @@
 title: Chili sin carne
 date: 2020-06-23T07:06:28.618Z
 coverImage: ../assets/img_6070.jpg
-category:
+categories:
   - value: Hauptspeisen
     label: Hauptspeisen
-tags:
   - value: vegetarisch
     label: vegetarisch
   - value: gut vorzubereiten
@@ -22,6 +21,7 @@ tags:
     label: glutenfrei
 timeToCook: 20 Min zubereiten + 60 Min kochen
 ---
+
 <Ingredients yields="6 Personen">
 
 - 2 mittelgroße Zwiebeln

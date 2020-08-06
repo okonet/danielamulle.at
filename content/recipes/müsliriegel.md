@@ -2,10 +2,9 @@
 title: Müsliriegel
 date: 2020-07-21T12:24:55.984Z
 coverImage: ../assets/img_1945.jpg
-category:
+categories:
   - value: Snacks
     label: Snacks
-tags:
   - value: vegan
     label: vegan
   - value: gut vorzubereiten
@@ -24,6 +23,7 @@ tags:
     label: glutenfrei
 timeToCook: 20 Minuten vorbereiten + 30 Minuten backen
 ---
+
 Für diese saftigen Müsliriegel kannst du natürlich die Trockenfrüchte, Kerne & Nüsse verwenden, die du grad zuhause hast. Wenn du Fruchtzucker & Sorbit nicht gut verträgst, dann ersetze den Apfel durch 1,5 Bananen und die Datteln & Feigen durch Samen und Nüsse plus 3 EL Reissirup statt 1 EL Honig.
 
 <Ingredients yields="ca. 20 Riegel">
@@ -52,8 +52,8 @@ Für diese saftigen Müsliriegel kannst du natürlich die Trockenfrüchte, Kerne
 6. Wasser, Rapsöl und Honig unterrühren.
 7. Alle Zutaten zu einem festen Teig verkneten.
 8. Ein Backblech befetten oder mit Backpapier belegen.
-6. Masse fingerdick auf das Backblech streichen.
-7. Bei 180 °C 30-40 Minuten backen.
-8. Noch warm in Riegel schneiden und am besten im Kühlschrank lagern.
+9. Masse fingerdick auf das Backblech streichen.
+10. Bei 180 °C 30-40 Minuten backen.
+11. Noch warm in Riegel schneiden und am besten im Kühlschrank lagern.
 
 </Preparation>

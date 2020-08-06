@@ -5,7 +5,7 @@ export default RecipePage
 
 export const query = graphql`
   query RecipeQuery($id: String!) {
-    recipe(id: { eq: $id }) {
+    post(id: { eq: $id }) {
       title
       body
       timeToCook
@@ -16,14 +16,7 @@ export const query = graphql`
           }
         }
       }
-      category {
-        id
-        slug
-      }
-      categories {
-        id
-        slug
-      }
+      ...Categories
     }
   }
 `

@@ -2,10 +2,9 @@
 title: Sommergemüse-Cheesecake
 date: 2020-07-13T14:39:17.332Z
 coverImage: ../assets/20200522-DSC02826.jpg
-category:
+categories:
   - value: Hauptspeisen
     label: Hauptspeisen
-tags:
   - value: vegetarisch
     label: vegetarisch
   - value: eiweißreich
@@ -18,6 +17,7 @@ tags:
     label: laktosearm
 timeToCook: 15 Minuten vorbereiten + 2 x 30 Minuten backen
 ---
+
 Cheescake schmeckt nicht nur süß! Daher hab ich hier für dich eine pikante Variante, die du natürlich nach Lust & Laune variieren kannst:
 
 <Ingredients yields="4 Personen">
@@ -38,7 +38,7 @@ Cheescake schmeckt nicht nur süß! Daher hab ich hier für dich eine pikante Va
 
 1. Backofen auf 200 Grad vorheizen.
 2. Gemüse waschen und in 2 cm dicke Scheiben schneiden.
-3. Auf ein mit Backpapier ausgelegtes Blech legen. 
+3. Auf ein mit Backpapier ausgelegtes Blech legen.
 4. Auberginen & Zucchini mit etwas der Ölmischung bestreichen.
 5. Salzen, pfeffern und ca. 30 Minuten backen, bis das Gemüse weich und gebräunt ist.
 6. Einstweilen Eier, Sauerrahm und Topfen mixen, zerbröselten Feta und eine gute Menge Pfeffer unterrühren.

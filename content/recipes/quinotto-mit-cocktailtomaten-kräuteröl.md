@@ -2,10 +2,9 @@
 title: Quinotto mit Cocktailtomaten & Kräuteröl
 date: 2020-07-06T12:28:25.327Z
 coverImage: ../assets/20200514-DSC02759.jpg
-category:
+categories:
   - value: Hauptspeisen
     label: Hauptspeisen
-tags:
   - value: vegetarisch
     label: vegetarisch
   - value: fruktosefrei
@@ -16,6 +15,7 @@ tags:
     label: glutenfrei
 timeToCook: 15 Minuten vorbereiten und ca. 30 Minuten köcheln
 ---
+
 Eine flotte Risotto-Variante, und zwar mit Quinoa, einem eiweißreichen Fuchsschwanzgewächs. Du kannst aber auch jedes andere Getreide dafür verwenden:
 
 <Ingredients yields="4 Personen">
@@ -40,18 +40,18 @@ Eine flotte Risotto-Variante, und zwar mit Quinoa, einem eiweißreichen Fuchssch
 <Preparation>
 
 1. Quinoa mit der Gemüsesuppe aufkochen.
-2. Herd auf geringe Hitze zurückschalten und ca. 25 Minuten köcheln lassen, dabei ab und zu umrühren und eventuell noch  etwas Wasser zugeben.
-4. Einstweilen für das Kräuteröl Chili, Petersilie, Minze und 1/2 TL Salz in einem Miniblender oder mit dem Pürierstab zu einer Sauce mixen.
-5. Cocktailtomaten waschen und abtrocknen, damit es in der Pfanne später nicht zu sehr spritzt.
-6. Knoblauch schälen und in dünne Scheiben schneiden.
-7. Petersilie hacken.
-8. Olivenöl in einer Pfanne erhitzen.
-9. Tomaten zugeben und 5 Minuten braten, dabei die Pfanne immer wieder schütteln, damit die Tomaten überall gut bräunen.
-11. Wenn der Quinoa weich ist, Raps- oder Walnussöl, Petersilie und zerbröselten Feta daruntermischen, pfeffern.
-12. Knoblauchscheiben zu den Tomaten geben und ebenfalls bräunen.
-13. Minzblätter hacken.
-14. Tomaten salzen, pfeffern und die Minzblätter unterheben.
-15. Quinotto in tiefe Teller geben, Knoblauch-Minz-Tomaten darauf verteilen und mit etwas Kräuteröl beträufeln.
-16. Sofort servieren, da die gehackte Minze leider rasch schwarz wird. 
+2. Herd auf geringe Hitze zurückschalten und ca. 25 Minuten köcheln lassen, dabei ab und zu umrühren und eventuell noch etwas Wasser zugeben.
+3. Einstweilen für das Kräuteröl Chili, Petersilie, Minze und 1/2 TL Salz in einem Miniblender oder mit dem Pürierstab zu einer Sauce mixen.
+4. Cocktailtomaten waschen und abtrocknen, damit es in der Pfanne später nicht zu sehr spritzt.
+5. Knoblauch schälen und in dünne Scheiben schneiden.
+6. Petersilie hacken.
+7. Olivenöl in einer Pfanne erhitzen.
+8. Tomaten zugeben und 5 Minuten braten, dabei die Pfanne immer wieder schütteln, damit die Tomaten überall gut bräunen.
+9. Wenn der Quinoa weich ist, Raps- oder Walnussöl, Petersilie und zerbröselten Feta daruntermischen, pfeffern.
+10. Knoblauchscheiben zu den Tomaten geben und ebenfalls bräunen.
+11. Minzblätter hacken.
+12. Tomaten salzen, pfeffern und die Minzblätter unterheben.
+13. Quinotto in tiefe Teller geben, Knoblauch-Minz-Tomaten darauf verteilen und mit etwas Kräuteröl beträufeln.
+14. Sofort servieren, da die gehackte Minze leider rasch schwarz wird.
 
 </Preparation>

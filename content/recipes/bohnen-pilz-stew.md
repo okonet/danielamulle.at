@@ -2,10 +2,9 @@
 title: Bohnen-Pilz-Stew
 date: 2020-06-24T06:40:21.885Z
 coverImage: ../assets/DSC03094.jpg
-category:
+categories:
   - value: Hauptspeisen
     label: Hauptspeisen
-tags:
   - value: vegan
     label: vegan
   - value: gut vorzubereiten
@@ -20,6 +19,7 @@ tags:
     label: glutenfrei
 timeToCook: 20 Minuten vorbereiten + ca. 45 Minuten kochen
 ---
+
 Dieses Gericht beweist, dass Eintöpfe kein Fleisch brauchen, um so richtig herzhaft-vollmundig zu schmecken. Probier's aus, du wirst begeistert sein!
 
 <Ingredients yields="4 Personen">

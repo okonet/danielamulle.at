@@ -2,10 +2,9 @@
 title: Gebackene Haferflocken
 date: 2020-06-29T09:29:31.053Z
 coverImage: ../assets/img_1906.jpg
-category:
-  - value: 'Kuchen, Kekserl & Co'
-    label: 'Kuchen, Kekserl & Co'
-tags:
+categories:
+  - value: "Kuchen, Kekserl & Co"
+    label: "Kuchen, Kekserl & Co"
   - value: vegetarisch
     label: vegetarisch
   - value: gut vorzubereiten
@@ -25,45 +24,34 @@ tags:
   - value: vegan
     label: vegan
 timeToCook: 10 Minuten vorbereiten + 20 Minuten backen
-ingredients:
-  - 'für 6 Personen als Snack: '
-  - '2 Tassen feinblättrige Haferflocken (bei Bedarf glutenfrei)  '
-  - '2 Tassen Pflanzendrink (oder Kuhmilch)  '
-  - 1 Ei (optional)
-  - '¼ TL Salz  '
-  - '½ Pkg Vanillezucker  '
-  - '2 EL brauner Zucker (bei Bedarf Reissirup) '
-  - '1 TL Zimt  '
-  - '1,5 Tassen frische oder tiefgekühlte Beeren'
-  - 'etwas Rapsöl oder Margarine zum Befetten der Form  '
-  - '(Soja)joghurt, Sauerrahm oder Skyr zum Servieren (optional)'
 ---
-Die Gebackenen Haferflocken sind eine Frühstücks- oder Snackidee, die super schmeckt und im Handumdrehn im Ofen ist. 
+
+Die Gebackenen Haferflocken sind eine Frühstücks- oder Snackidee, die super schmeckt und im Handumdrehn im Ofen ist.
 
 <Ingredients yields="6 Personen als Snack">
 
-- 2 Tassen feinblättrige Haferflocken (bei Bedarf glutenfrei)  
-- 2 Tassen Pflanzendrink (oder Kuhmilch)  
+- 2 Tassen feinblättrige Haferflocken (bei Bedarf glutenfrei)
+- 2 Tassen Pflanzendrink (oder Kuhmilch)
 - 1 Ei (optional)
-- ¼ TL Salz  
-- ½ Pkg Vanillezucker  
-- 2 EL brauner Zucker (bei Bedarf Reissirup) 
-- 1 TL Zimt  
+- ¼ TL Salz
+- ½ Pkg Vanillezucker
+- 2 EL brauner Zucker (bei Bedarf Reissirup)
+- 1 TL Zimt
 - 1,5 Tassen frische oder tiefgekühlte Beeren
-- etwas Rapsöl oder Margarine zum Befetten der Form  
+- etwas Rapsöl oder Margarine zum Befetten der Form
 - (Soja)joghurt, Sauerrahm oder Skyr zum Servieren (optional)
 
 </Ingredients>
 <Preparation>
 
-1. Auflaufform ausfetten. 
+1. Auflaufform ausfetten.
 2. Pflanzendrink mit Ei, Salz, Zucker und Zimt in einer Rührschüssel mixen.
 3. Haferflocken und Beeren unterrühren.
-4. Mischung in eine befettete Auflaufform füllen.  
-5. Bei 170 Grad Heißluft ins Backrohr geben.
-6. Ca. 20 Minuten backen, bis die gesamte Flüssigkeit verschwunden ist.  
+4. Mischung in eine befettete Auflaufform füllen.
+5. Bei 170 Grad Heißluft ins Backrohr geben.
+6. Ca. 20 Minuten backen, bis die gesamte Flüssigkeit verschwunden ist.
 7. Etwas ausgekühlt in Stücke schneiden.
-8. Warm oder kalt genießen.
+8. Warm oder kalt genießen.
 
 </Preparation>
 

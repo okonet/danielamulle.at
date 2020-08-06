@@ -2,10 +2,9 @@
 title: Arabische Linsen
 date: 2020-07-02T12:54:19.633Z
 coverImage: ../assets/20200523-DSC02836.jpg
-category:
+categories:
   - value: Hauptspeisen
     label: Hauptspeisen
-tags:
   - value: vegetarisch
     label: vegetarisch
   - value: vegan
@@ -24,6 +23,7 @@ tags:
     label: glutenfrei
 timeToCook: 20 Minuten vorbereiten + 50 Minuten köcheln
 ---
+
 Linsen fristen ja in der traditionell österreichischen Küche eher ein Schattendasein. Daher hole ich sie hier mal ins Rampenlicht:
 
 <Ingredients yields="4 Personen als Hauptspeise">
@@ -36,7 +36,7 @@ Linsen fristen ja in der traditionell österreichischen Küche eher ein Schatten
 - 50 g frischer Koriander
 - 120 g Tahini (Sesampaste)
 - 4 EL Zitronensaft
-- 4 hartgekochte Eier (optional)
+- 4 hartgekochte Eier (optional)
 - 1 kleine rote Zwiebel
 - Paprikapulver
 - Salz und Pfeffer
