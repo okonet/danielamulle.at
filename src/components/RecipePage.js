@@ -29,12 +29,13 @@ export default ({ data, pageContext, location }) => {
   const pageUrl = location.href ? location.href : site.siteMetadata.url
   const mainCategory = categories.find((cat) => !cat.isTag)
   const tags = categories.filter((cat) => cat.isTag)
-  const ogImagePath = site.siteMetadata.url + pageContext.ogImage.path
+  const coverImageFluid = coverImage.childImageSharp.fluid
+  const pinterestImagePath = site.siteMetadata.url + coverImageFluid.src
   return (
     <Layout theme={recipesTheme}>
       <SEO title={title} ogImage={pageContext.ogImage} />
       <Img
-        fluid={coverImage.childImageSharp.fluid}
+        fluid={coverImageFluid}
         style={{
           position: "relative",
           maxHeight: 500,
@@ -149,7 +150,7 @@ export default ({ data, pageContext, location }) => {
                 <WhatsappShareButton url={pageUrl} title={title}>
                   <WhatsappIcon round size={32} />
                 </WhatsappShareButton>
-                <PinterestShareButton url={pageUrl} media={ogImagePath}>
+                <PinterestShareButton url={pageUrl} media={pinterestImagePath}>
                   <PinterestIcon round size={32} />
                 </PinterestShareButton>
                 <Button
