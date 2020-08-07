@@ -2,6 +2,8 @@
 title: Die ideale Erfrischung
 date: 2020-07-18T05:56:24.617Z
 coverImage: ../assets/infused-water.jpg
+coverImageAuthor: Freddy G
+coverImageLink: https://unsplash.com/@freddygthatsme
 categories:
   - value: Test
     label: Test

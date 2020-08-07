@@ -2,6 +2,8 @@
 title: Joghurt-Kräuter-Dip
 date: 2020-06-23T12:48:12.958Z
 coverImage: ../assets/kräuter.jpg
+coverImageAuthor: Rich Smith
+coverImageLink: https://unsplash.com/@richwilliamsmith
 categories:
   - value: Aufstriche/Saucen/Dips
     label: Aufstriche/Saucen/Dips
@@ -40,5 +42,3 @@ Dieser Dip ist ein toller Begleiter von Aufläufen, Strudeln, gebratenem oder ge
 3. Mit Salz, Pfeffer und Zitronensaft abschmecken.
 
 </Preparation>
-
-Photo von <a href="https://unsplash.com/@richwilliamsmith?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Rich Smith</a> auf <a href="/s/photos/herbs?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a>
