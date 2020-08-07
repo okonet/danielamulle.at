@@ -7,7 +7,7 @@ import {
 import { Box, Container, Styled } from "theme-ui"
 import theme, * as themes from "../theme"
 
-const sections = ["about", "offers", "recipes", "blog"]
+const sections = ["about", "offers", "recipes", "blog", "newsletter", "footer"]
 
 export default () => {
   return (

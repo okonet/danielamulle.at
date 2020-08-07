@@ -2,13 +2,7 @@
 import React from "react"
 import { Flex, jsx, ThemeProvider } from "theme-ui"
 import Link from "../components/Link"
-import {
-  aboutTheme,
-  blogTheme,
-  howTheme,
-  recipesTheme,
-  offersTheme,
-} from "../theme"
+import { aboutTheme, blogTheme, recipesTheme, offersTheme } from "../theme"
 import { blogPath, recipesPath } from "../../paths"
 
 const pages = [
@@ -48,9 +42,9 @@ const NavLink = React.forwardRef((props, ref) => {
         px: 0,
         textDecoration: "none",
         fontWeight: "bold",
-        borderRadius: "none",
         borderBottom: "none",
         bg: "transparent",
+        color: "primary",
         whiteSpace: "nowrap",
         ":hover": {
           textDecoration: "none",

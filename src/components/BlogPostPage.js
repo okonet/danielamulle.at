@@ -36,7 +36,8 @@ export default ({ data, pageContext }) => {
           <Styled.h1
             sx={{
               mt: 1,
-              gridColumn: [1, "1 / span 12"],
+              gridColumnStart: [1, 1],
+              gridColumnEnd: [1, 12],
               ":first-letter": { textTransform: "uppercase" },
             }}
           >
@@ -45,14 +46,29 @@ export default ({ data, pageContext }) => {
 
           <Box
             sx={{
-              gridColumn: [1, "10 / span 3"],
-              gridRow: "3 / span 2",
+              gridColumnStart: [1, 1],
+              gridColumnEnd: [1, 12],
+              "& > p:first-of-type": {
+                variant: "textStyles.lead",
+              },
+            }}
+          >
+            <MDXRenderer>{body}</MDXRenderer>
+          </Box>
+
+          <Box
+            sx={{
+              mt: 4,
+              display: "flex",
+              alignItems: "baseline",
+              gridColumnStart: [1, 1],
+              gridColumnEnd: [1, 12],
             }}
           >
             {categories && (
               <>
-                <Styled.h3>Kategorien</Styled.h3>
-                <Box sx={{ my: 2, mx: -2 }}>
+                <Styled.h3 sx={{ m: 0, mr: 2 }}>Kategorien:</Styled.h3>
+                <Box sx={{ m: 0 }}>
                   <Group as="p" separator=" ">
                     {categories.map((category) => (
                       <Tag key={category.id} sx={{ my: 1 }}>
@@ -63,18 +79,6 @@ export default ({ data, pageContext }) => {
                 </Box>
               </>
             )}
-          </Box>
-
-          <Box
-            sx={{
-              gridColumnStart: [1, 1],
-              gridColumnEnd: [1, 9],
-              "& > p:first-of-type": {
-                variant: "textStyles.lead",
-              },
-            }}
-          >
-            <MDXRenderer>{body}</MDXRenderer>
           </Box>
         </Grid>
       </Container>
