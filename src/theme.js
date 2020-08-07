@@ -1,3 +1,4 @@
+import "focus-visible"
 import { shade, tint } from "polished"
 import { transparentize } from "@theme-ui/color"
 
@@ -77,7 +78,8 @@ const theme = {
   },
   buttons: {
     primary: {
-      bg: "secondary",
+      color: "background",
+      bg: "primary",
     },
     secondary: {
       fontSize: 0,
@@ -98,6 +100,16 @@ const theme = {
       bg: "transparent",
       borderRadius: "round",
       cursor: "pointer",
+    },
+  },
+  forms: {
+    input: {
+      fontFamily: "monospace",
+      borderRadius: "medium",
+      borderColor: "secondary",
+      "::placeholder": {
+        color: "muted",
+      },
     },
   },
   textStyles: {
@@ -165,6 +177,7 @@ const theme = {
   },
   styles: {
     root: {
+      bg: "background",
       fontFamily: "body",
       "@media print": {
         fontSize: "10pt",
@@ -294,25 +307,6 @@ export const blogTheme = {
     primary: palette.cyan[2],
   },
   coverSrc: unsplashURL("xG8IQMqMITM"),
-}
-
-export const newsletterTheme = {
-  ...theme,
-  colors: {
-    ...theme.colors,
-    text: palette.cyan[1],
-    background: palette.cyan[6],
-    accent: palette.cyan[2],
-    primary: palette.cyan[3],
-  },
-  textStyles: {
-    ...theme.textStyles,
-    pageTitle: {
-      color: "background",
-    },
-  },
-  // coverSrc: unsplashURL("08bOYnH_r_E"),
-  coverSrc: unsplashURL("QSHF4Q1S0JU"),
 }
 
 export const footerTheme = {
