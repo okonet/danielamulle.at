@@ -106,7 +106,7 @@ const Layout = ({ theme = defaultTheme, children, mainStyles }) => {
                 </Box>
                 <Styled.p>
                   Made with ♡ by{" "}
-                  <Styled.a href="https://component.driven.io">
+                  <Styled.a href="https://component-driven.io">
                     Component-Driven
                   </Styled.a>
                 </Styled.p>
