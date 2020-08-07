@@ -3,7 +3,8 @@ const { basePath, assetPath, recipesPath, blogPath } = require("./paths")
 module.exports = {
   siteMetadata: {
     title: "Daniela Mulle — Diätologin & Ernährungswissenschafterin",
-    author: "Mag. Daniela Mulle",
+    author: "Daniela Mulle",
+    authorDegree: "Mag.",
     email: "contact@danielamulle.at",
     phone: "+43 650 9700569",
     role: "Diätologin & Ernährungswissenschafterin",

@@ -24,6 +24,7 @@ const Layout = ({ theme = defaultTheme, children, mainStyles }) => {
         siteMetadata {
           title
           author
+          authorDegree
           phone
           email
         }
@@ -88,7 +89,8 @@ const Layout = ({ theme = defaultTheme, children, mainStyles }) => {
                   <Styled.a href={`mailto:${site.siteMetadata.email}`}>
                     {site.siteMetadata.email}
                   </Styled.a>
-                  <br />© {site.siteMetadata.author}, {new Date().getFullYear()}
+                  <br />© {site.siteMetadata.authorDegree}{" "}
+                  {site.siteMetadata.author}, {new Date().getFullYear()}
                 </Styled.p>
               </Box>
               <Box sx={{ textAlign: ["left", "right"] }}>

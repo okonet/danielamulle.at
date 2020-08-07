@@ -9,6 +9,7 @@ function Logo() {
     query {
       site {
         siteMetadata {
+          author
           role
         }
       }
@@ -63,7 +64,7 @@ function Logo() {
             fontSize: 2,
           }}
         >
-          Daniela Mulle
+          {site.siteMetadata.author}
         </Text>
       </Box>
     </Link>
