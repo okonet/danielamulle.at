@@ -96,9 +96,12 @@ const theme = {
     },
     print: {
       p: 1,
-      bg: "transparent",
+      bg: "muted",
+      color: "background",
       borderRadius: "round",
       cursor: "pointer",
+      width: 32,
+      height: 32,
     },
   },
   forms: {

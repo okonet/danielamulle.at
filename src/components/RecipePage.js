@@ -3,24 +3,25 @@ import React from "react"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import { Box, Button, Container, Grid, jsx, Styled } from "theme-ui"
 import {
-  EmailShareButton,
   EmailIcon,
-  FacebookShareButton,
+  EmailShareButton,
   FacebookIcon,
-  TwitterShareButton,
+  FacebookShareButton,
   TwitterIcon,
+  TwitterShareButton,
+  WhatsappIcon,
+  WhatsappShareButton,
   PinterestShareButton,
   PinterestIcon,
-  WhatsappShareButton,
-  WhatsappIcon,
 } from "react-share"
+import Group from "react-group"
+import Img from "gatsby-image"
 import Layout from "./layout"
 import Link from "./Link"
 import { recipesTheme } from "../theme"
 import { recipesPath } from "../../paths"
 import Tag from "./Tag"
-import Group from "react-group"
-import Img from "gatsby-image"
+import PrintIcon from "./PrintIcon"
 import SEO from "./seo"
 
 export default ({ data, pageContext, location }) => {
@@ -133,11 +134,22 @@ export default ({ data, pageContext, location }) => {
             >
               <Styled.h3 sx={{ mb: 2 }}>Teilen</Styled.h3>
               <Grid
+                gap={1}
                 sx={{
-                  gridGap: 2,
                   gridAutoFlow: "column",
                 }}
               >
+                <Button
+                  variant="print"
+                  title="Seite drücken"
+                  onClick={() => {
+                    if (typeof window !== "undefined") {
+                      window.print()
+                    }
+                  }}
+                >
+                  <PrintIcon />
+                </Button>
                 <EmailShareButton url={pageUrl} subject={title}>
                   <EmailIcon round size={32} />
                 </EmailShareButton>
@@ -153,20 +165,6 @@ export default ({ data, pageContext, location }) => {
                 <PinterestShareButton url={pageUrl} media={pinterestImagePath}>
                   <PinterestIcon round size={32} />
                 </PinterestShareButton>
-                <Button
-                  variant="print"
-                  sx={{
-                    my: 2,
-                  }}
-                  title="Seite drücken"
-                  onClick={() => {
-                    if (typeof window !== "undefined") {
-                      window.print()
-                    }
-                  }}
-                >
-                  🖨
-                </Button>
               </Grid>
             </Box>
           </Box>

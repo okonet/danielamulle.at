@@ -1,9 +1,12 @@
+/* @jsx jsx */
 import React from "react"
 import { footerTheme } from "../theme"
-import { Box, Container, Styled, ThemeProvider } from "theme-ui"
+import { jsx, Box, Container, Styled, ThemeProvider } from "theme-ui"
 import Group from "react-group"
 import Link from "./Link"
 import { graphql, useStaticQuery } from "gatsby"
+import MailIcon from "./MailIcon"
+import PhoneIcon from "./PhoneIcon"
 
 function Footer() {
   const { site } = useStaticQuery(graphql`
@@ -29,12 +32,12 @@ function Footer() {
           <Box sx={{ display: ["block", "flex"], alignItems: "flex-end" }}>
             <Box sx={{ flex: 1 }}>
               <Styled.p>
-                ☎{" "}
+                <PhoneIcon width={16} sx={{ mr: 1, mb: -1 }} />
                 <Styled.a href={`tel:${site.siteMetadata.phone}`}>
                   {site.siteMetadata.phone}
                 </Styled.a>
                 <br />
-                ✉️{" "}
+                <MailIcon width={16} sx={{ mr: 1, mb: -1 }} />
                 <Styled.a href={`mailto:${site.siteMetadata.email}`}>
                   {site.siteMetadata.email}
                 </Styled.a>
