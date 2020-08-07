@@ -1,4 +1,3 @@
-import "focus-visible"
 import { shade, tint } from "polished"
 import { transparentize } from "@theme-ui/color"
 
