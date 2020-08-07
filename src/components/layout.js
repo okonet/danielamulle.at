@@ -7,31 +7,15 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { graphql, useStaticQuery } from "gatsby"
-import { Box, Container, Flex, Styled, ThemeProvider } from "theme-ui"
+import { Box, Container, Flex, ThemeProvider } from "theme-ui"
+import { transparentize } from "@theme-ui/color"
 import Logo from "./Logo"
 import Navigation from "./Navigation"
-import { default as defaultTheme } from "../theme"
-import { transparentize } from "@theme-ui/color"
-import Link from "./Link"
-import Group from "react-group"
-import SEO from "./seo"
+import Footer from "./Footer"
+import { default as defaultTheme, footerTheme } from "../theme"
+import SubscribeForm from "./SubscribeForm"
 
 const Layout = ({ theme = defaultTheme, children, mainStyles }) => {
-  const { site } = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-          author
-          authorDegree
-          phone
-          email
-        }
-      }
-    }
-  `)
-
   return (
     <ThemeProvider theme={theme}>
       <Flex sx={{ flexDirection: "column", minHeight: "100vh" }}>
@@ -72,50 +56,9 @@ const Layout = ({ theme = defaultTheme, children, mainStyles }) => {
           {children}
         </Flex>
 
-        <Box as="footer" sx={{ flexShrink: 1, bg: "background" }}>
-          <Container
-            variant="section"
-            sx={{ bg: "transparent", color: "secondary", fontSize: 0 }}
-          >
-            <Box sx={{ display: ["block", "flex"], alignItems: "flex-end" }}>
-              <Box sx={{ flex: 1 }}>
-                <Styled.p>
-                  ☎{" "}
-                  <Styled.a href={`tel:${site.siteMetadata.phone}`}>
-                    {site.siteMetadata.phone}
-                  </Styled.a>
-                  <br />
-                  ✉️{" "}
-                  <Styled.a href={`mailto:${site.siteMetadata.email}`}>
-                    {site.siteMetadata.email}
-                  </Styled.a>
-                  <br />© {site.siteMetadata.authorDegree}{" "}
-                  {site.siteMetadata.author}, {new Date().getFullYear()}
-                </Styled.p>
-              </Box>
-              <Box sx={{ textAlign: ["left", "right"] }}>
-                <Box
-                  css={{
-                    "@media print": {
-                      display: "none",
-                    },
-                  }}
-                >
-                  <Group as="nav" separator=" • ">
-                    <Link to="/impressum">Impressum</Link>
-                    <Link to="/datenschutz">Datenschutz</Link>
-                  </Group>
-                </Box>
-                <Styled.p>
-                  Made with ♡ by{" "}
-                  <Styled.a href="https://component-driven.io">
-                    Component-Driven
-                  </Styled.a>
-                </Styled.p>
-              </Box>
-            </Box>
-          </Container>
-        </Box>
+        <SubscribeForm />
+
+        <Footer />
       </Flex>
     </ThemeProvider>
   )

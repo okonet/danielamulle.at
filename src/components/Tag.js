@@ -16,7 +16,12 @@ export default function(props) {
         border: "thin",
         borderColor: "muted",
         "> a": {
+          color: "secondary",
           textDecoration: "none",
+          borderBottom: "none",
+          ":hover": {
+            color: "primary",
+          },
         },
       }}
       {...props}

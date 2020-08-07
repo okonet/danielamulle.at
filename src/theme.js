@@ -1,4 +1,5 @@
 import { shade, tint } from "polished"
+import { transparentize } from "@theme-ui/color"
 
 // Creates each four darker and lighter accents from passed hex color
 const createAccents = (color, length = 4, steps = 0.31) => {
@@ -19,10 +20,11 @@ function unsplashURL(imageId) {
 export const palette = {
   white: "#fff",
   black: "#000",
-  gray: createAccents("#92969b"),
+  gray: createAccents("#7c8591"),
   pink: createAccents("#e23871"),
   cyan: createAccents("#05a8cd"),
   orange: createAccents("#ff8400"),
+  beige: createAccents("#ac7b2e"),
   green: createAccents("#74a308"),
   teal: createAccents("#1e5f92"),
 }
@@ -34,8 +36,8 @@ const theme = {
     text: palette.gray[1],
     background: palette.white,
     primary: palette.cyan[3],
-    secondary: palette.gray[3],
     accent: palette.cyan[2],
+    secondary: palette.gray[3],
     muted: palette.gray[5],
   },
   fonts: {
@@ -75,7 +77,8 @@ const theme = {
   },
   buttons: {
     primary: {
-      bg: "secondary",
+      color: "background",
+      bg: "primary",
     },
     secondary: {
       fontSize: 0,
@@ -93,9 +96,22 @@ const theme = {
     },
     print: {
       p: 1,
-      bg: "transparent",
+      bg: "muted",
+      color: "background",
       borderRadius: "round",
       cursor: "pointer",
+      width: 32,
+      height: 32,
+    },
+  },
+  forms: {
+    input: {
+      fontFamily: "monospace",
+      borderRadius: "medium",
+      borderColor: "secondary",
+      "::placeholder": {
+        color: "muted",
+      },
     },
   },
   textStyles: {
@@ -163,15 +179,19 @@ const theme = {
   },
   styles: {
     root: {
+      bg: "background",
       fontFamily: "body",
       "@media print": {
         fontSize: "10pt",
       },
     },
     a: {
-      color: "secondary",
+      color: "primary",
+      textDecoration: "none",
+      borderBottom: "thin",
+      borderBottomColor: transparentize("primary", 0.75),
       ":hover": {
-        textDecoration: "underline",
+        borderBottomColor: transparentize("primary", 0.25),
       },
       ".active": {
         color: "accent",
@@ -270,10 +290,10 @@ export const recipesTheme = {
   colors: {
     ...theme.colors,
     text: palette.teal[1],
-    background: palette.teal[6],
+    background: palette.beige[6],
     primary: palette.orange[3],
+    accent: palette.teal[2],
     secondary: palette.teal[3],
-    accent: palette.orange[2],
     muted: palette.teal[5],
   },
   coverSrc: unsplashURL("0JFveX0c778"),
@@ -284,13 +304,22 @@ export const blogTheme = {
   colors: {
     ...theme.colors,
     text: palette.black,
-    background: palette.gray[6],
-    primary: palette.gray[1],
-    secondary: palette.gray[3],
-    accent: palette.gray[2],
-    muted: palette.gray[5],
+    background: palette.teal[6],
+    accent: palette.cyan[2],
+    primary: palette.cyan[2],
   },
   coverSrc: unsplashURL("xG8IQMqMITM"),
+}
+
+export const footerTheme = {
+  ...theme,
+  colors: {
+    text: palette.gray[3],
+    primary: palette.gray[3],
+    accent: palette.gray[1],
+    secondary: palette.gray[3],
+    muted: palette.gray[5],
+  },
 }
 
 export default theme

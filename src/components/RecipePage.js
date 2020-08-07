@@ -3,25 +3,29 @@ import React from "react"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import { Box, Button, Container, Grid, jsx, Styled } from "theme-ui"
 import {
-  EmailShareButton,
   EmailIcon,
-  FacebookShareButton,
+  EmailShareButton,
   FacebookIcon,
-  TwitterShareButton,
+  FacebookShareButton,
   TwitterIcon,
+  TwitterShareButton,
+  WhatsappIcon,
+  WhatsappShareButton,
   PinterestShareButton,
   PinterestIcon,
-  WhatsappShareButton,
-  WhatsappIcon,
 } from "react-share"
+import Group from "react-group"
+import Img from "gatsby-image"
 import Layout from "./layout"
 import Link from "./Link"
 import { recipesTheme } from "../theme"
 import { recipesPath } from "../../paths"
 import Tag from "./Tag"
-import Group from "react-group"
-import Img from "gatsby-image"
+import PrintIcon from "./PrintIcon"
 import SEO from "./seo"
+import InfoIcon from "./InfoIcon"
+import TagIcon from "./TagIcon"
+import ClockIcon from "./ClockIcon"
 
 export default ({ data, pageContext, location }) => {
   const { post, site } = data
@@ -88,11 +92,17 @@ export default ({ data, pageContext, location }) => {
               gridRow: [4, "3 / span 2"],
             }}
           >
-            <Styled.h3>Zubereitungszeit</Styled.h3>
+            <Styled.h3>
+              <ClockIcon width={17} sx={{ mr: 1, mb: -1 }} />
+              Zubereitungszeit
+            </Styled.h3>
             <Styled.p>{timeToCook}</Styled.p>
             {tags && (
               <>
-                <Styled.h3>Kategorien</Styled.h3>
+                <Styled.h3>
+                  <TagIcon width={17} sx={{ mr: 1, mb: -1 }} />
+                  Kategorien
+                </Styled.h3>
                 <Box sx={{ my: 2, mx: -2 }}>
                   <Group as="p" separator=" ">
                     {tags.map((category) => (
@@ -112,7 +122,10 @@ export default ({ data, pageContext, location }) => {
                 },
               }}
             >
-              <Styled.h3>Nährwerte</Styled.h3>
+              <Styled.h3>
+                <InfoIcon width={17} sx={{ mr: 1, mb: -1 }} />
+                Nährwerte
+              </Styled.h3>
               <Styled.p>
                 Du suchst die Nährwertangaben? In{" "}
                 <Link to="/posts/2020-07-07-nährwertangaben">
@@ -133,11 +146,22 @@ export default ({ data, pageContext, location }) => {
             >
               <Styled.h3 sx={{ mb: 2 }}>Teilen</Styled.h3>
               <Grid
+                gap={1}
                 sx={{
-                  gridGap: 2,
                   gridAutoFlow: "column",
                 }}
               >
+                <Button
+                  variant="print"
+                  title="Seite drücken"
+                  onClick={() => {
+                    if (typeof window !== "undefined") {
+                      window.print()
+                    }
+                  }}
+                >
+                  <PrintIcon />
+                </Button>
                 <EmailShareButton url={pageUrl} subject={title}>
                   <EmailIcon round size={32} />
                 </EmailShareButton>
@@ -153,20 +177,6 @@ export default ({ data, pageContext, location }) => {
                 <PinterestShareButton url={pageUrl} media={pinterestImagePath}>
                   <PinterestIcon round size={32} />
                 </PinterestShareButton>
-                <Button
-                  variant="print"
-                  sx={{
-                    my: 2,
-                  }}
-                  title="Seite drücken"
-                  onClick={() => {
-                    if (typeof window !== "undefined") {
-                      window.print()
-                    }
-                  }}
-                >
-                  🖨
-                </Button>
               </Grid>
             </Box>
           </Box>

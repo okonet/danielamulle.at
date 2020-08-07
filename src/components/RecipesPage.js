@@ -1,6 +1,6 @@
 /* @jsx jsx */
 import React, { useCallback } from "react"
-import { Container, Flex, jsx, Text } from "theme-ui"
+import { Container, Flex, jsx, Text, Input } from "theme-ui"
 import { useFlexSearch } from "react-use-flexsearch"
 import groupBy from "lodash.groupby"
 import SEO from "../components/seo"
@@ -54,21 +54,15 @@ export default ({ data, location, navigate }) => {
             alignItems: "baseline",
           }}
         >
-          <input
+          <Input
             type="search"
             value={query}
             onChange={handleChange}
             placeholder="Filter nach Zutaten..."
             sx={{
               p: 1,
-              px: 2,
-              mb: 1,
               fontSize: 0,
-              fontFamily: "monospace",
-              border: "thin",
-              borderColor: "gray.5",
-              borderRadius: "medium",
-              minWidth: 225,
+              width: 225,
             }}
           />
           <Text sx={{ mx: 2, fontSize: 0, color: "secondary" }}>
