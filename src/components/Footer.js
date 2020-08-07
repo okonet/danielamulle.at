@@ -1,12 +1,11 @@
 /* @jsx jsx */
 import React from "react"
 import { footerTheme } from "../theme"
-import { jsx, Box, Container, Styled, ThemeProvider } from "theme-ui"
+import { Box, Container, jsx, Styled, ThemeProvider } from "theme-ui"
 import Group from "react-group"
 import Link from "./Link"
 import { graphql, useStaticQuery } from "gatsby"
-import MailIcon from "./MailIcon"
-import PhoneIcon from "./PhoneIcon"
+import ContactInfo from "./ContactInfo"
 
 function Footer() {
   const { site } = useStaticQuery(graphql`
@@ -16,8 +15,6 @@ function Footer() {
           title
           author
           authorDegree
-          phone
-          email
         }
       }
     }
@@ -32,15 +29,9 @@ function Footer() {
           <Box sx={{ display: ["block", "flex"], alignItems: "flex-end" }}>
             <Box sx={{ flex: 1 }}>
               <Styled.p>
-                <PhoneIcon width={16} sx={{ mr: 1, mb: -1 }} />
-                <Styled.a href={`tel:${site.siteMetadata.phone}`}>
-                  {site.siteMetadata.phone}
-                </Styled.a>
+                <ContactInfo type="phone" />
                 <br />
-                <MailIcon width={16} sx={{ mr: 1, mb: -1 }} />
-                <Styled.a href={`mailto:${site.siteMetadata.email}`}>
-                  {site.siteMetadata.email}
-                </Styled.a>
+                <ContactInfo type="email" />
                 <br />© {site.siteMetadata.authorDegree}{" "}
                 {site.siteMetadata.author}, {new Date().getFullYear()}
               </Styled.p>
