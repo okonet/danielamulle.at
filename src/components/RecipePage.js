@@ -15,7 +15,6 @@ import {
   PinterestIcon,
 } from "react-share"
 import Group from "react-group"
-import Img from "gatsby-image"
 import Layout from "./layout"
 import Link from "./Link"
 import { recipesTheme } from "../theme"
@@ -26,10 +25,19 @@ import SEO from "./seo"
 import InfoIcon from "./InfoIcon"
 import TagIcon from "./TagIcon"
 import ClockIcon from "./ClockIcon"
+import CoverImage from "./CoverImage"
 
 export default ({ data, pageContext, location }) => {
   const { post, site } = data
-  const { body, coverImage, title, categories, timeToCook } = post
+  const {
+    body,
+    coverImage,
+    coverImageAuthor,
+    coverImageLink,
+    title,
+    categories,
+    timeToCook,
+  } = post
   const pageUrl = location.href ? location.href : site.siteMetadata.url
   const mainCategory = categories.find((cat) => !cat.isTag)
   const tags = categories.filter((cat) => cat.isTag)
@@ -38,12 +46,10 @@ export default ({ data, pageContext, location }) => {
   return (
     <Layout theme={recipesTheme}>
       <SEO title={title} ogImage={pageContext.ogImage} />
-      <Img
+      <CoverImage
         fluid={coverImageFluid}
-        style={{
-          position: "relative",
-          maxHeight: 500,
-        }}
+        author={coverImageAuthor || "Andrey Okonetchnikov"}
+        url={coverImageLink || "https://okonet.ru"}
       />
       <Container variant="section">
         <Grid gap={0} columns={[1, 12]}>

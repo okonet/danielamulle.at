@@ -10,18 +10,24 @@ import Tag from "./Tag"
 import Group from "react-group"
 import Img from "gatsby-image"
 import SEO from "./seo"
+import CoverImage from "./CoverImage"
 
 export default ({ data, pageContext }) => {
-  const { body, coverImage, title, categories } = data.post
+  const {
+    body,
+    coverImage,
+    coverImageAuthor,
+    coverImageLink,
+    title,
+    categories,
+  } = data.post
   return (
     <Layout theme={blogTheme}>
       <SEO title={title} ogImage={pageContext.ogImage} />
-      <Img
+      <CoverImage
         fluid={coverImage.childImageSharp.fluid}
-        style={{
-          position: "relative",
-          maxHeight: 500,
-        }}
+        author={coverImageAuthor || "Andrey Okonetchnikov"}
+        url={coverImageLink || "https://okonet.ru"}
       />
       <Container variant="section">
         <Grid gap={0} columns={[1, 12]}>

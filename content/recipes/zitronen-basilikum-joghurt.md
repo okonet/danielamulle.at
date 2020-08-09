@@ -2,6 +2,8 @@
 title: Zitronen-Basilikum-Joghurt
 date: 2020-06-23T13:03:00.562Z
 coverImage: ../assets/zitrone.jpg
+coverImageAuthor: Courtney Cook
+coverImageLink: https://unsplash.com/@courtneymcook
 categories:
   - value: Aufstriche/Saucen/Dips
     label: Aufstriche/Saucen/Dips
@@ -42,5 +44,3 @@ Diese erfrischende Sauce passt sehr gut zu Gemüse, Aufläufen, Strudeln, gebrat
 3. Mit Zitronensaft und Pfeffer abschmecken.
 
 </Preparation>
-
-Photo von <a href="https://unsplash.com/@courtneymcook?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Courtney Cook</a> auf <a href="/s/photos/lemon-basil?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a>

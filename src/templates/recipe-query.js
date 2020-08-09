@@ -11,16 +11,8 @@ export const query = graphql`
       }
     }
     post(id: { eq: $id }) {
-      title
-      body
       timeToCook
-      coverImage {
-        childImageSharp {
-          fluid(maxWidth: 1024) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
+      ...PostContent
       ...Categories
     }
   }
