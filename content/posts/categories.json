@@ -2,11 +2,23 @@
   "categories": [
     {
       "isTag": true,
-      "id": "Test"
+      "id": "Abnehmen"
     },
     {
       "isTag": true,
-      "id": "Test2"
+      "id": "Trinken"
+    },
+    {
+      "isTag": true,
+      "id": "Unverträglichkeiten"
+    },
+    {
+      "isTag": true,
+      "id": "Gewicht"
+    },
+    {
+      "isTag": true,
+      "id": "Reizdarm"
     }
   ]
 }
