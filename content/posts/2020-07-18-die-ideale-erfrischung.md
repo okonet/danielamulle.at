@@ -3,10 +3,10 @@ title: Die ideale Erfrischung
 date: 2020-07-18T05:56:24.617Z
 coverImage: ../assets/infused-water.jpg
 coverImageAuthor: Freddy G
-coverImageLink: https://unsplash.com/@freddygthatsme
+coverImageLink: 'https://unsplash.com/@freddygthatsme'
 categories:
-  - value: Test
-    label: Test
+  - value: Trinken
+    label: Trinken
 ---
 
 Dein Körper besteht zu > 50 % aus Wasser. Es spielt eine zentrale Rolle: als Transporter, Lösungsmittel aber auch zur Kühlung durch Schwitzen.
@@ -33,5 +33,3 @@ Etwa 1 Liter Mineral- oder Leitungswasser plus
 Falls du deinen Trinkalltag gerne mit konkreten Tipps & Tricks verbessern, oder deinen Flüssigkeitshaushalt überprüfen möchtest, dann bist du [bei mir](https://mednanny.doctena.at/servlet/customer.DocAppointmentHP?p_id=58889&res_id=2339&dedicated_htx=doc58889/DocAppointmentHP_58889de.htx) in bestend Händen.
 
 Ich freue mich auf dich!
-
-<span>Photo: <a href="https://unsplash.com/@freddygthatsme?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Freddy G</a> auf <a href="https://unsplash.com/s/photos/water-drink?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
