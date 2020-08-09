@@ -4,6 +4,13 @@ title: >-
   verzichte
 date: 2020-07-07T08:42:26.770Z
 coverImage: ../assets/20200523-DSC02838.jpg
+coverImageAuthor: Andrey Okonechnikov
+coverImageLink: 'https://okonet.ru/'
+categories:
+  - value: Gewicht
+    label: Gewicht
+  - value: Abnehmen
+    label: Abnehmen
 ---
 
 Leider erlebe ich in meinem Beruf immer wieder, wie sehr der Fokus auf dem Zählen von Kalorien, Eiweiß o.ä. liegt. Mit Apps und Tabellen wird peinlichst genau alles getrackt und ausgerechnet, wieviel noch fehlt, und was man sich an Essen & Trinken heute noch "leisten" kann. Und das obwohl in manchen Apps weder der eigene Bedarf, noch die Nährwerte der Speisen & Getränke realistisch sind.
