@@ -77,6 +77,9 @@ const theme = {
   },
   buttons: {
     primary: {
+      fontFamily: "monospace",
+      fontSize: 1,
+      border: "thin",
       color: "background",
       bg: "primary",
     },
@@ -106,6 +109,7 @@ const theme = {
   },
   forms: {
     input: {
+      fontSize: 1,
       fontFamily: "monospace",
       borderRadius: "medium",
       borderColor: "secondary",
