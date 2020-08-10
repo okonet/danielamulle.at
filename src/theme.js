@@ -286,7 +286,8 @@ export const offersTheme = {
       color: "background",
     },
   },
-  coverSrc: unsplashURL("sTPy-oeA3h0"),
+  // coverSrc: unsplashURL("sTPy-oeA3h0"),
+  coverSrc: unsplashURL("kcRFW-Hje8Y"),
 }
 
 export const recipesTheme = {
@@ -300,7 +301,6 @@ export const recipesTheme = {
     secondary: palette.teal[3],
     muted: palette.teal[5],
   },
-  coverSrc: unsplashURL("0JFveX0c778"),
 }
 
 export const blogTheme = {
