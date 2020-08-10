@@ -6,9 +6,9 @@ import { Box, jsx, Text } from "theme-ui"
 function CoverImage({ fluid, author, url }) {
   return (
     <Box
+      as="figure"
       sx={{
         position: "relative",
-        backgroundBlendMode: "difference",
       }}
     >
       <Img
@@ -19,21 +19,22 @@ function CoverImage({ fluid, author, url }) {
       />
       {author && (
         <Text
+          as="figcaption"
           sx={{
             position: "absolute",
             p: 1,
-            mr: 0,
-            mb: 0,
             right: 0,
-            bottom: 0,
-            fontSize: 0,
-            color: "background",
-            opacity: 0.75,
-            writingMode: "vertical-rl",
-            textOrientation: "sideways",
-            bg: "rgba(0,0,0,0.25)",
+            bottom: [-22],
+            fontFamily: "monospace",
+            fontStyle: "italic",
+            fontSize: "10px",
+            color: "muted",
+            opacity: 0.5,
+            transform: "rotate(90deg)",
+            transformOrigin: "right top",
+            mixBlendMode: "exclusion",
             a: {
-              color: "background",
+              color: "muted",
             },
           }}
         >
