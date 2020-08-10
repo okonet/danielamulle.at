@@ -159,7 +159,7 @@ export default ({ data, pageContext, location }) => {
               >
                 <Button
                   variant="print"
-                  title="Seite drücken"
+                  title="Seite drucken"
                   onClick={() => {
                     if (typeof window !== "undefined") {
                       window.print()
