@@ -266,7 +266,7 @@ export const aboutTheme = {
     secondary: palette.pink[4],
     muted: palette.pink[5],
   },
-  coverSrc: unsplashURL("9aOswReDKPo"),
+  coverSrc: unsplashURL("pAnjPqQP0UQ"),
 }
 
 export const offersTheme = {
@@ -287,7 +287,8 @@ export const offersTheme = {
     },
   },
   // coverSrc: unsplashURL("sTPy-oeA3h0"),
-  coverSrc: unsplashURL("kcRFW-Hje8Y"),
+  // coverSrc: unsplashURL("kcRFW-Hje8Y"),
+  coverSrc: unsplashURL("AWMWcR3hQUg"),
 }
 
 export const recipesTheme = {
@@ -312,7 +313,7 @@ export const blogTheme = {
     accent: palette.cyan[2],
     primary: palette.cyan[2],
   },
-  coverSrc: unsplashURL("xG8IQMqMITM"),
+  coverSrc: unsplashURL("j_YWoV_uzRw"),
 }
 
 export const footerTheme = {
