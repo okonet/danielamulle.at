@@ -299,7 +299,9 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     createPage({
       path: collection,
       component: path.resolve(`src/templates/${collection}-posts-query.js`),
-      context: {},
+      context: {
+        collection,
+      },
     })
   )
 }

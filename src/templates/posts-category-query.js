@@ -1,6 +1,6 @@
 import { graphql } from "gatsby"
-export { default } from "../components/BlogCategoryPage"
-
+import BlogCategoryPage from "../components/BlogCategoryPage"
+export default BlogCategoryPage
 export const query = graphql`
   query PostsCategoryQuery($id: String!) {
     category(id: { eq: $id }) {

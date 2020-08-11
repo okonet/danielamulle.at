@@ -1,6 +1,6 @@
 import { graphql } from "gatsby"
-export { default } from "../components/RecipesPage"
-
+import RecipesPage from "../components/RecipesPage"
+export default RecipesPage
 export const query = graphql`
   query RecipesQuery {
     allCategory(
