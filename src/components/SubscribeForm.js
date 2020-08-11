@@ -1,6 +1,7 @@
 /* @jsx jsx */
 import React from "react"
 import {
+  Alert,
   Box,
   Button,
   Container,
@@ -9,9 +10,34 @@ import {
   jsx,
   Label,
   Styled,
+  Spinner,
 } from "theme-ui"
 
+const states = {
+  IDLE: "idle",
+  SUBMITTING: "submitting",
+  OK: "ok",
+  ERROR: "error",
+}
+
 function SubscribeForm() {
+  const [state, setState] = React.useState(states.IDLE)
+  const handleSubmit = async (event) => {
+    event.preventDefault()
+    const data = new FormData(event.target)
+    setState(states.SUBMITTING)
+    try {
+      await fetch("https://danielamulle.activehosted.com/proc.php", {
+        method: "POST",
+        body: data,
+        mode: "no-cors",
+      })
+      setState(states.OK)
+    } catch (error) {
+      setState(states.ERROR)
+      console.error("Request failed", error)
+    }
+  }
   return (
     <Box as="section" sx={{ bg: "background" }}>
       <Container
@@ -26,36 +52,65 @@ function SubscribeForm() {
           Verpasse keine meiner tollen Tipps & Tricks, interessanten Infos &
           köstlichen Rezepte.
         </Styled.p>
+        {state === states.ERROR && (
+          <Alert variant="error" mb={2}>
+            Es ist ein Fehler aufgetreten. Probiere noch ein Mal.
+          </Alert>
+        )}
+        {state === states.OK && (
+          <Alert variant="success" mb={2}>
+            Danke! Checke Dein Email...
+          </Alert>
+        )}
         <Grid
           as="form"
-          action="https://danielamulle.us17.list-manage.com/subscribe/post?u=7d58dda41d060572975e93fbb&amp;id=61190d8c33"
           method="post"
-          name="mc-embedded-subscribe-form"
-          target="_blank"
+          onSubmit={handleSubmit}
           sx={{
             alignItems: "flex-end",
             gridTemplateColumns: ["auto", "1fr 1fr auto"],
           }}
         >
+          <input type="hidden" name="u" value="1" />
+          <input type="hidden" name="f" value="1" />
+          <input type="hidden" name="s" />
+          <input type="hidden" name="c" value="0" />
+          <input type="hidden" name="m" value="0" />
+          <input type="hidden" name="act" value="sub" />
+          <input type="hidden" name="v" value="2" />
           <Box>
             <Label htmlFor="email" sx={{ mb: 1 }}>
               Deine Email-Adresse
             </Label>
             <Input
-              type="email"
               id="email"
-              name="EMAIL"
-              required
+              type="email"
+              name="email"
               placeholder="max@mustermann.at"
+              required
+              disabled={state === states.SUBMITTING}
             />
           </Box>
           <Box>
-            <Label htmlFor="fname" sx={{ mb: 1 }}>
+            <Label htmlFor="firstname" sx={{ mb: 1 }}>
               Dein Name
             </Label>
-            <Input type="text" id="fname" name="FNAME" required />
+            <Input
+              type="text"
+              id="firstname"
+              name="firstname"
+              required
+              disabled={state === states.SUBMITTING}
+            />
           </Box>
-          <Button type="submit">Abonnieren</Button>
+          <Button type="submit" disabled={state === states.SUBMITTING}>
+            {state === states.SUBMITTING && (
+              <Spinner
+                sx={{ color: "white", width: 18, height: 18, mb: "-3px" }}
+              />
+            )}{" "}
+            Abonnieren
+          </Button>
         </Grid>
       </Container>
     </Box>

@@ -75,6 +75,14 @@ const theme = {
     none: "none",
     float: "0px 4px 16px rgba(25, 25, 25, 0.075);",
   },
+  alerts: {
+    error: {
+      bg: palette.pink[3],
+    },
+    success: {
+      bg: palette.green[3],
+    },
+  },
   buttons: {
     primary: {
       fontFamily: "monospace",
@@ -82,6 +90,9 @@ const theme = {
       border: "thin",
       color: "background",
       bg: "primary",
+      ":disabled": {
+        opacity: 0.5,
+      },
     },
     secondary: {
       fontSize: 0,
@@ -115,6 +126,9 @@ const theme = {
       borderColor: "secondary",
       "::placeholder": {
         color: "muted",
+      },
+      ":disabled": {
+        opacity: 0.5,
       },
     },
   },
