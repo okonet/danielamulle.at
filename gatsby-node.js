@@ -224,15 +224,6 @@ exports.onCreateNode = ({
   }
 }
 
-// These templates are simply data-fetching wrappers that import components
-const BlogPostTemplate = require.resolve("./src/templates/blogpost-query")
-const BlogPostsTemplate = require.resolve("./src/templates/blogposts-query")
-const RecipeTemplate = require.resolve("./src/templates/recipe-query")
-const RecipesTemplate = require.resolve("./src/templates/recipes-query")
-const RecipeCategoryTemplate = require.resolve(
-  "./src/templates/recipe-category-query"
-)
-
 exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions
   const result = await graphql(`
@@ -284,8 +275,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
     createPage({
       path: post.slug,
-      component:
-        post.collection === "recipes" ? RecipeTemplate : BlogPostTemplate,
+      component: path.resolve(`src/templates/${post.collection}-post-query.js`),
       context: {
         id: post.id,
         ogImage,
@@ -296,7 +286,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   allCategory.nodes.forEach(({ id, slug, collection }) => {
     createPage({
       path: slug,
-      component: RecipeCategoryTemplate,
+      component: path.resolve(`src/templates/${collection}-category-query.js`),
       context: {
         id,
         collection,
@@ -304,17 +294,12 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     })
   })
 
-  // Create the BlogPosts page
-  createPage({
-    path: blogPath,
-    component: BlogPostsTemplate,
-    context: {},
-  })
-
-  // Create the Recipes page
-  createPage({
-    path: recipesPath,
-    component: RecipesTemplate,
-    context: {},
-  })
+  // Create the index page for each collection
+  ;["posts", "recipes"].forEach((collection) =>
+    createPage({
+      path: collection,
+      component: path.resolve(`src/templates/${collection}-posts-query.js`),
+      context: {},
+    })
+  )
 }

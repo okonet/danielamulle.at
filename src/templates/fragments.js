@@ -1,9 +1,26 @@
 import { graphql } from "gatsby"
-import BlogPostPage from "../components/BlogPostPage"
-
-export default BlogPostPage
 
 export const query = graphql`
+  fragment Categories on Post {
+    categories {
+      id
+      slug
+      isTag
+    }
+  }
+  fragment PostMeta on Post {
+    id ## Required for search to work
+    slug
+    title
+    coverImage {
+      childImageSharp {
+        fluid(maxWidth: 300) {
+          ...GatsbyImageSharpFluid_tracedSVG
+        }
+      }
+    }
+    ...Categories
+  }
   fragment PostContent on Post {
     date(locale: "de", formatString: "DD MMMM YYYY")
     title
@@ -17,11 +34,5 @@ export const query = graphql`
     }
     coverImageAuthor
     coverImageLink
-  }
-  query BlogPostQuery($id: String!) {
-    post(id: { eq: $id }) {
-      ...PostContent
-      ...Categories
-    }
   }
 `
