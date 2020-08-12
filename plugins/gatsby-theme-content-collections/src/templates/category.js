@@ -1,8 +1,8 @@
 import { graphql } from "gatsby"
-import BlogCategoryPage from "../components/BlogCategoryPage"
-export default BlogCategoryPage
+import CategoryPage from "../components/CategoryPage"
+export default CategoryPage
 export const query = graphql`
-  query PostsCategoryQuery($id: String!) {
+  query CategoryQuery($id: String!) {
     category(id: { eq: $id }) {
       id
       postCount

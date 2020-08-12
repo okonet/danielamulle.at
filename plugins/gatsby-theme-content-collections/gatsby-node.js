@@ -260,15 +260,15 @@ exports.createPages = async ({ graphql, actions, reporter }, pluginOptions) => {
 
   // Create a page for each Post
   allPost.nodes.forEach((post, index) => {
-    console.log(post.collection)
-    // let path1 = `/og-images/${post.id}.png`
+    // TODO
     // const ogImage = createOpenGraphImage(createPage, {
-    //   path: path1,
-    //   component: path.resolve(`src/templates/post-og-image.js`),
+    //   path: `/og-images/${post.id}.png`,
+    //   component: path.resolve(`${__dirname}/src/templates/post-og-image.js`),
     //   context: {
     //     ...post,
     //   },
     // })
+    // console.log(ogImage)
     createPage({
       path: post.slug,
       component: path.resolve(`${__dirname}/src/templates/post.js`),
@@ -280,25 +280,25 @@ exports.createPages = async ({ graphql, actions, reporter }, pluginOptions) => {
     })
   })
 
-  // allCategory.nodes.forEach(({ id, slug, collection }) => {
-  //   createPage({
-  //     path: slug,
-  //     component: path.resolve(`src/templates/${collection}-category-query.js`),
-  //     context: {
-  //       id,
-  //       collection,
-  //     },
-  //   })
-  // })
-  //
-  // // Create the index page for each collection
-  // collections.forEach((collection) =>
-  //   createPage({
-  //     path: collection,
-  //     component: path.resolve(`src/templates/${collection}-posts-query.js`),
-  //     context: {
-  //       collection,
-  //     },
-  //   })
-  // )
+  allCategory.nodes.forEach(({ id, slug, collection }) => {
+    createPage({
+      path: slug,
+      component: path.resolve(`${__dirname}/src/templates/category.js`),
+      context: {
+        id,
+        collection,
+      },
+    })
+  })
+
+  // Create the index page for each collection
+  collections.forEach((collection) =>
+    createPage({
+      path: collection,
+      component: path.resolve(`${__dirname}/src/templates/posts.js`),
+      context: {
+        collection,
+      },
+    })
+  )
 }

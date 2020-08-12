@@ -8,7 +8,7 @@ import RecipeCard from "./RecipeCard"
 import Content, * as meta from "../../content/sections/blog.mdx"
 
 export default ({ data }) => {
-  const { allPost } = data
+  const { posts } = data
 
   return (
     <Layout theme={blogTheme}>
@@ -18,7 +18,7 @@ export default ({ data }) => {
       </Container>
       <Container variant={"full"}>
         <Grid gap={3} columns={[1, 2, 3]} sx={{ my: 4 }}>
-          {allPost.nodes.map((post) => (
+          {posts.nodes.map((post) => (
             <RecipeCard {...post} key={post.id} />
           ))}
         </Grid>
