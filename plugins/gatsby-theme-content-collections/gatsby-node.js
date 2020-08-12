@@ -3,8 +3,6 @@ const path = require("path")
 const mkdirp = require("mkdirp")
 const Debug = require("debug")
 const slug = require("slug")
-const visit = require("unist-util-visit")
-const toString = require("mdast-util-to-string")
 const pkg = require("./package.json")
 const { createOpenGraphImage } = require("gatsby-plugin-open-graph-images")
 const { createFilePath } = require("gatsby-source-filesystem")
@@ -78,28 +76,6 @@ exports.createResolvers = ({ createResolvers, schema }) => {
       body: {
         type: "String",
         resolve: mdxResolverPassthrough("body"),
-      },
-      ingredients: {
-        type: "[String]",
-        async resolve(source, args, context, info) {
-          // We use `ingredients` for the search functionality so ingredients need to be extracted as strings
-          const ast = await mdxResolverPassthrough("mdxAST")(
-            source,
-            args,
-            context,
-            info
-          )
-          let res = []
-          visit(ast, "jsx", (node, index, parent) => {
-            if (node.value.startsWith("<Ingredients")) {
-              const nextSibling = parent.children[index + 1]
-              visit(nextSibling, "listItem", (li) => {
-                res.push(toString(li))
-              })
-            }
-          })
-          return res
-        },
       },
     },
     Category: {
