@@ -260,22 +260,20 @@ exports.createPages = async ({ graphql, actions, reporter }, pluginOptions) => {
 
   // Create a page for each Post
   allPost.nodes.forEach((post, index) => {
-    // TODO
-    // const ogImage = createOpenGraphImage(createPage, {
-    //   path: `/og-images/${post.id}.png`,
-    //   component: path.resolve(`${__dirname}/src/templates/post-og-image.js`),
-    //   context: {
-    //     ...post,
-    //   },
-    // })
-    // console.log(ogImage)
+    const ogImage = createOpenGraphImage(createPage, {
+      path: `/og-images/${post.id}.png`,
+      component: path.resolve(`${__dirname}/src/templates/post-og-image.js`),
+      context: {
+        ...post,
+      },
+    })
     createPage({
       path: post.slug,
       component: path.resolve(`${__dirname}/src/templates/post.js`),
       context: {
         id: post.id,
         collection: post.collection,
-        ogImage: {},
+        ogImage,
       },
     })
   })

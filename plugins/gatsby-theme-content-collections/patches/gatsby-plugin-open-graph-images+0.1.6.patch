@@ -1,3 +1,15 @@
+diff --git a/node_modules/gatsby-plugin-open-graph-images/index.js b/node_modules/gatsby-plugin-open-graph-images/index.js
+index e9647d5..e7a4664 100644
+--- a/node_modules/gatsby-plugin-open-graph-images/index.js
++++ b/node_modules/gatsby-plugin-open-graph-images/index.js
+@@ -2,6 +2,7 @@ const { join } = require("path");
+ const { config } = require("./src/config");
+ 
+ exports.createOpenGraphImage = (createPage, options) => {
++  config.init(options)
+   const { defaultSize, componentGenerationDir } = config.getConfig();
+   const { path, component, context } = options;
+ 
 diff --git a/node_modules/gatsby-plugin-open-graph-images/src/generator.js b/node_modules/gatsby-plugin-open-graph-images/src/generator.js
 index 1ffd5ca..7895d6c 100644
 --- a/node_modules/gatsby-plugin-open-graph-images/src/generator.js
