@@ -21,6 +21,14 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: `gatsby-theme-content-collections`,
+      options: {
+        basePath: "content",
+        assetPath: "assets",
+        collections: ["posts", "recipes"],
+      },
+    },
+    {
       resolve: `gatsby-plugin-prefetch-google-fonts`,
       options: {
         fonts: [
@@ -37,41 +45,7 @@ module.exports = {
         ],
       },
     },
-    "gatsby-plugin-open-graph-images",
-    "gatsby-plugin-react-helmet",
-    {
-      resolve: "gatsby-plugin-netlify-cms",
-      options: { modulePath: `${__dirname}/src/cms/cms.js` },
-    },
     "gatsby-plugin-theme-ui",
-    {
-      resolve: `gatsby-transformer-json`,
-      options: {
-        typeName: ({ node, object, isArray }) =>
-          `${node.sourceInstanceName}CategoriesJson`,
-      },
-    },
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        path: `${basePath}/${recipesPath}`,
-        name: recipesPath,
-      },
-    },
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        path: `${basePath}/${blogPath}`,
-        name: blogPath,
-      },
-    },
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        path: `${basePath}/${assetPath}`,
-        name: assetPath,
-      },
-    },
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -107,43 +81,5 @@ module.exports = {
           })),
       },
     },
-    "gatsby-transformer-sharp",
-    "gatsby-plugin-sharp",
-    {
-      resolve: "gatsby-plugin-mdx",
-      options: {
-        extensions: [".mdx", ".md"],
-        gatsbyRemarkPlugins: [
-          {
-            resolve: "gatsby-remark-images",
-            options: {
-              // should this be configurable by the end-user?
-              maxWidth: 1380,
-              linkImagesToOriginal: false,
-            },
-          },
-          { resolve: "gatsby-remark-copy-linked-files" },
-          { resolve: "gatsby-remark-smartypants" },
-        ],
-        remarkPlugins: [require("remark-slug")],
-      },
-    },
-    {
-      resolve: `gatsby-plugin-favicon`,
-      options: {
-        logo: "./src/images/logo@2x.png",
-        icons: {
-          android: true,
-          appleIcon: true,
-          appleStartup: false,
-          coast: false,
-          favicons: true,
-          firefox: true,
-          yandex: false,
-          windows: false,
-        },
-      },
-    },
-    // "gatsby-plugin-no-javascript",
   ],
 }

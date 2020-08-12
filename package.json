@@ -12,7 +12,6 @@
     "gatsby": "^2.19.45",
     "gatsby-image": "^2.2.44",
     "gatsby-plugin-netlify-cms": "^4.2.1",
-    "gatsby-plugin-no-javascript": "^2.0.5",
     "gatsby-plugin-prefetch-google-fonts": "^1.4.3",
     "gatsby-plugin-react-helmet": "^3.1.24",
     "gatsby-plugin-theme-ui": "^0.3.0",
@@ -52,8 +51,6 @@
     "npm-run-all": "^4.1.5",
     "patch-package": "^6.2.2",
     "prettier": "^1.19.1",
-    "remark-slug": "^6.0.0",
-    "slug": "^3.3.0",
     "unist-util-visit": "^2.0.2"
   },
   "scripts": {
@@ -74,6 +71,6 @@
     }
   },
   "lint-staged": {
-    "*.{js,jsx,json,md}": "prettier --write"
+    "*.{js,jsx,json,md,mdx}": "prettier --write"
   }
 }
