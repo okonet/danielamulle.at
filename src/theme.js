@@ -175,6 +175,11 @@ const theme = {
       fontWeight: "normal",
       lineHeight: "body",
     },
+    disclaimer: {
+      color: "secondary",
+      fontSize: 0,
+      fontFamily: "body",
+    },
   },
   layout: {
     full: {

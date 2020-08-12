@@ -12,6 +12,7 @@ import {
   Styled,
   Spinner,
 } from "theme-ui"
+import Link from "./Link"
 
 const states = {
   IDLE: "idle",
@@ -111,6 +112,17 @@ function SubscribeForm() {
             )}{" "}
             Abonnieren
           </Button>
+          <Styled.p
+            sx={{
+              m: 0,
+              variant: "textStyles.disclaimer",
+              gridColumnStart: 1,
+              gridColumnEnd: [1, 4],
+            }}
+          >
+            Mit Deiner Anmeldung stimmst Du meiner{" "}
+            <Link to="/datenschutz">Datenschutzerklärung</Link> zu.
+          </Styled.p>
         </Grid>
       </Container>
     </Box>
