@@ -52,6 +52,7 @@
     "patch-package": "^6.2.2",
     "prettier": "^1.19.1",
     "remark-slug": "^6.0.0",
+    "slug": "^3.3.0",
     "unist-util-visit": "^2.0.2"
   },
   "scripts": {
