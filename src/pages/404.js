@@ -1,9 +1,6 @@
 import React from "react"
-import { Box, Container, Flex, jsx, Styled, Text } from "theme-ui"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import { Text } from "theme-ui"
 import Link from "../components/Link"
-import { recipesPath } from "../../paths"
 import PageLayout from "../components/PageLayout"
 
 const NotFoundPage = () => (

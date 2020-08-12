@@ -8,7 +8,6 @@ import { blogTheme } from "../theme"
 import { blogPath } from "../../paths"
 import Tag from "./Tag"
 import Group from "react-group"
-import Img from "gatsby-image"
 import SEO from "./seo"
 import CoverImage from "./CoverImage"
 

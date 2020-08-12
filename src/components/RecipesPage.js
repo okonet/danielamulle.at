@@ -13,16 +13,16 @@ import Content from "../../content/sections/recipes.mdx"
 import RecipesList from "./RecipesList"
 
 export default ({ data, location, navigate }) => {
-  const { allCategory, allPost } = data
+  const { allCategory, recipes, localSearchRecipes } = data
   const searchParams = new URLSearchParams(location.search)
   const query = searchParams.get("q") || ""
-  const { index, store } = data.localSearchRecipes
+  const { index, store } = localSearchRecipes
   const results = useFlexSearch(query, index, JSON.parse(store))
   const resIds = results.map((res) => res.id)
   const tags = allCategory.nodes
   const filteredRecipes = query
-    ? allPost.nodes.filter((recipe) => resIds.includes(recipe.id))
-    : allPost.nodes
+    ? recipes.nodes.filter((recipe) => resIds.includes(recipe.id))
+    : recipes.nodes
   const groupedRecipes = groupBy(
     filteredRecipes,
     (node) => node.categories[0].id

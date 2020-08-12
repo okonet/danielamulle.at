@@ -1,8 +1,8 @@
 import { graphql } from "gatsby"
-import RecipePage from "../components/RecipePage"
-export default RecipePage
+import PostPage from "../components/PostPage"
+export default PostPage
 export const query = graphql`
-  query RecipeQuery($id: String!) {
+  query MyPostQuery($id: String!) {
     site {
       siteMetadata {
         url
