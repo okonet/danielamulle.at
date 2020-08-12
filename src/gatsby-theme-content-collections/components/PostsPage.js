@@ -1,11 +1,7 @@
 import React from "react"
-import BlogPostPage from "../../components/BlogPostPage"
-import RecipePage from "../../components/RecipePage"
-import BlogCategoryPage from "../../components/BlogCategoryPage"
-import RecipeCategoryPage from "../../components/RecipeCategoryPage"
 import BlogPostsPage from "../../components/BlogPostsPage"
-import RecipesList from "../../components/RecipesList"
-import RecipesPage from "../../components/RecipesPage"
+import RecipesPage from "../../components/RecipesPosts"
+import TestimonialsPosts from "../../components/TestimonialsPosts"
 
 function PostPage(props) {
   switch (props.pageContext.collection) {
@@ -14,6 +10,9 @@ function PostPage(props) {
     }
     case "recipes": {
       return <RecipesPage {...props} />
+    }
+    case "testimonials": {
+      return <TestimonialsPosts {...props} />
     }
     default:
       return <h1>No page for this collection is defined</h1>

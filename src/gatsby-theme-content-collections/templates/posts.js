@@ -16,6 +16,11 @@ export const query = graphql`
         ...PostMeta
       }
     }
+    testimonials: allPost(filter: { collection: { eq: "testimonials" } }) {
+      nodes {
+        ...PostMeta
+      }
+    }
     allCategory(
       filter: { isTag: { eq: true }, collection: { eq: "recipes" } }
     ) {

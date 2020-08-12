@@ -12,7 +12,7 @@ import Tag from "./Tag"
 import Content from "../../content/sections/recipes.mdx"
 import RecipesList from "./RecipesList"
 
-export default ({ data, location, navigate }) => {
+const RecipesPosts = ({ data, location, navigate }) => {
   const { allCategory, recipes, localSearchRecipes } = data
   const searchParams = new URLSearchParams(location.search)
   const query = searchParams.get("q") || ""
@@ -95,3 +95,5 @@ export default ({ data, location, navigate }) => {
     </Layout>
   )
 }
+
+export default RecipesPosts

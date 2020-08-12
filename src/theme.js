@@ -310,6 +310,20 @@ export const offersTheme = {
   coverSrc: unsplashURL("AWMWcR3hQUg"),
 }
 
+export const testimonialsTheme = {
+  ...theme,
+  colors: {
+    ...theme.colors,
+    text: palette.beige[1],
+    background: palette.beige[6],
+    accent: palette.teal[2],
+    primary: palette.teal[3],
+    secondary: palette.teal[4],
+    muted: palette.teal[5],
+  },
+  coverSrc: unsplashURL("j_YWoV_uzRw"),
+}
+
 export const recipesTheme = {
   ...theme,
   colors: {
