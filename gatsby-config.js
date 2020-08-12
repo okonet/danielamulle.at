@@ -1,5 +1,3 @@
-const { basePath, assetPath, recipesPath, blogPath } = require("./paths")
-
 module.exports = {
   siteMetadata: {
     title: "Daniela Mulle — Diätologin & Ernährungswissenschafterin",
@@ -23,8 +21,8 @@ module.exports = {
     {
       resolve: `gatsby-theme-content-collections`,
       options: {
-        basePath: "content",
-        assetPath: "assets",
+        basePath: "content", // This is where the content is stored
+        assetPath: "assets", // Path to assets referenced in the content relative to basePath
         collections: ["posts", "recipes"],
       },
     },

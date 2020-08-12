@@ -13,10 +13,8 @@ const debug = Debug(pkg.name)
 exports.onPreBootstrap = ({ store }, pluginOptions) => {
   const { basePath, assetPath, collections } = pluginOptions
   const { program } = store.getState()
-  const dirs = [path.join(program.directory, basePath, assetPath)].concat(
-    collections.map((collection) =>
-      path.join(program.directory, basePath, collection)
-    )
+  const dirs = [...collections, assetPath].map((collection) =>
+    path.join(program.directory, basePath, collection)
   )
 
   dirs.forEach((dir) => {

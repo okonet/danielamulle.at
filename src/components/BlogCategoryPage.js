@@ -4,8 +4,8 @@ import { Box, Container, jsx, Styled, Text } from "theme-ui"
 import SEO from "../components/seo"
 import Layout from "../components/layout"
 import Link from "../components/Link"
-import { blogTheme, recipesTheme } from "../theme"
-import { blogPath, recipesPath } from "../../paths"
+import { blogTheme } from "../theme"
+import { blogPath } from "../../paths"
 import groupBy from "lodash.groupby"
 import RecipesList from "./RecipesList"
 import Group from "react-group"
@@ -44,7 +44,7 @@ export default ({ data }) => {
         <Container>
           <Text as="p" sx={{ variant: "textStyles.lead", color: "secondary" }}>
             Keine Rezepte für diese Kategorie gefunden.{" "}
-            <Link to={recipesPath}>Alle Rezepte</Link> anschauen?
+            <Link to={blogPath}>Alle Einträge</Link>.
           </Text>
         </Container>
       )}

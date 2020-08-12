@@ -109,7 +109,7 @@ const IndexPage = () => {
         <Container>
           <Styled.h2>
             Letzte{" "}
-            <Link to={`/${recipesPath}`} sx={{ color: "inherit" }}>
+            <Link to={recipesPath} sx={{ color: "inherit" }}>
               Rezepte
             </Link>
           </Styled.h2>
@@ -132,7 +132,7 @@ const IndexPage = () => {
         <Container>
           <Styled.h2>
             Aktuell im{" "}
-            <Link to={`/${blogPath}`} sx={{ color: "inherit" }}>
+            <Link to={blogPath} sx={{ color: "inherit" }}>
               Blog
             </Link>
           </Styled.h2>
