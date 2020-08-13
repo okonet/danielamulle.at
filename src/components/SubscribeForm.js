@@ -107,7 +107,7 @@ function SubscribeForm() {
           </Box>
           <Box>
             <Label htmlFor="firstname" sx={{ mb: 1 }}>
-              Dein Name
+              Dein Vorname
             </Label>
             <Input
               type="text"
