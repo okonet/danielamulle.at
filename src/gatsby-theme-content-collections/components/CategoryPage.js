@@ -1,6 +1,4 @@
 import React from "react"
-import BlogPostPage from "../../components/BlogPostPage"
-import RecipePage from "../../components/RecipePage"
 import BlogCategoryPage from "../../components/BlogCategoryPage"
 import RecipeCategoryPage from "../../components/RecipeCategoryPage"
 
