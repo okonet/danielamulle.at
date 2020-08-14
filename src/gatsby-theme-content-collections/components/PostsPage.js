@@ -1,10 +1,5 @@
 import React from "react"
-import BlogPostPage from "../../components/BlogPostPage"
-import RecipePage from "../../components/RecipePage"
-import BlogCategoryPage from "../../components/BlogCategoryPage"
-import RecipeCategoryPage from "../../components/RecipeCategoryPage"
 import BlogPostsPage from "../../components/BlogPostsPage"
-import RecipesList from "../../components/RecipesList"
 import RecipesPage from "../../components/RecipesPage"
 
 function PostPage(props) {
