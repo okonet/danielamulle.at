@@ -24,7 +24,7 @@ export default ({ data }) => {
       <Section theme={recipesTheme} blendMode="color-burn">
         <Box as="nav" sx={{ mt: 5 }}>
           <Group separator=" / ">
-            <Link to={recipesPath}>Rezepte</Link>
+            <Link to={`/${recipesPath}`}>Rezepte</Link>
           </Group>
         </Box>
         <Styled.h1
@@ -44,7 +44,7 @@ export default ({ data }) => {
         <Container>
           <Text as="p" sx={{ variant: "textStyles.lead", color: "secondary" }}>
             Keine Rezepte für diese Kategorie gefunden.{" "}
-            <Link to={recipesPath}>Alle Rezepte</Link>.
+            <Link to={`/${recipesPath}`}>Alle Rezepte</Link>.
           </Text>
         </Container>
       )}

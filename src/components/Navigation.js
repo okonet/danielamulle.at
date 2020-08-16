@@ -8,22 +8,22 @@ import { blogPath, recipesPath } from "../../paths"
 const pages = [
   {
     title: "Angebot",
-    to: "offers",
+    to: "/offers",
     theme: offersTheme,
   },
   {
     title: "Über mich",
-    to: "about",
+    to: "/about",
     theme: aboutTheme,
   },
   {
     title: "Rezepte",
-    to: recipesPath,
+    to: `/${recipesPath}`,
     theme: recipesTheme,
   },
   {
     title: "Blog",
-    to: blogPath,
+    to: `/${blogPath}`,
     theme: blogTheme,
   },
 ]
