@@ -1,6 +1,6 @@
 /* @jsx jsx */
-import React, { useCallback } from "react"
-import { Container, Flex, jsx, Text, Input } from "theme-ui"
+import React, { useCallback, useState } from "react"
+import { Container, Flex, Input, jsx, Text } from "theme-ui"
 import { useFlexSearch } from "react-use-flexsearch"
 import groupBy from "lodash.groupby"
 import SEO from "../components/seo"
@@ -12,10 +12,11 @@ import Tag from "./Tag"
 import Content from "../../content/sections/recipes.mdx"
 import RecipesList from "./RecipesList"
 
-export default ({ data, location, navigate }) => {
+export default ({ data, location }) => {
   const { allCategory, recipes, localSearchRecipes } = data
   const searchParams = new URLSearchParams(location.search)
-  const query = searchParams.get("q") || ""
+  const initialQuery = searchParams.get("q") || ""
+  const [query, setQuery] = useState(initialQuery)
   const { index, store } = localSearchRecipes
   const results = useFlexSearch(query, index, JSON.parse(store))
   const resIds = results.map((res) => res.id)
@@ -31,13 +32,10 @@ export default ({ data, location, navigate }) => {
   const handleChange = useCallback((event) => {
     const searchQuery = event.target.value
     searchParams.set("q", searchQuery)
-    const nextUrl =
-      searchQuery !== ""
-        ? `${location.pathname}?${searchParams.toString()}`
-        : location.pathname
-    navigate(nextUrl, {
-      replace: true,
-    })
+    setQuery(searchQuery)
+    if (typeof window !== "undefined") {
+      window.history.pushState({}, null, `?${searchParams.toString()}`)
+    }
   })
 
   return (
