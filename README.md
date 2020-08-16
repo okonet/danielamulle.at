@@ -1,1 +1,2 @@
+- Styleguide and logo: https://danielamulle.at/styleguide
 - Icons: https://reactsvgicons.com/heroicons-ui
