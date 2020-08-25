@@ -15,9 +15,9 @@ categories:
     label: laktosefrei
   - value: glutenfrei
     label: glutenfrei
-timeToCook: 30 Minuten
+timeToCook: 35 Minuten
 ---
-Ein Basisrezept für das derzeit äußerst hippe, ursprünglich traditionell nordafrikanisches Gericht darf auch auf meiner Seite nicht fehlen:
+Ein Basisrezept für das derzeit äußerst hippe, ursprünglich traditionell nordafrikanische Gericht darf auch auf meiner Seite natürlich nicht fehlen:
 
 <Ingredients yields="4-6 Personen">
 
@@ -56,4 +56,4 @@ Ein Basisrezept für das derzeit äußerst hippe, ursprünglich traditionell nor
 
 </Preparation>
 
-Traditionell wird Shakshuka meist nur mit Fladenbrot serviert, aber auch Quinoa, Reis oder Couscous passen ausgezeichnet zur würzigen Tomatensauce. Shakshuka kannst du in unzähligen köstlichen Varianten zubereiten: mit Feta, Spinat, Auberginen, Zucchini, Kartoffeln, gelben oder roten Linsen, Schinken, Speck, Faschiertes,... deiner Phantasie sind keine Grenzen gesetzt.
+Traditionell wird Shakshuka meist mit Fladenbrot serviert, aber auch Quinoa, Reis oder Couscous passen ausgezeichnet zur würzigen Tomatensauce. Shakshuka kannst du in unzähligen köstlichen Varianten zubereiten: mit Feta, Spinat, Auberginen, Zucchini, Kartoffeln, gelben oder roten Linsen, Schinken, Speck, Faschiertem,... deiner Phantasie sind keine Grenzen gesetzt.
