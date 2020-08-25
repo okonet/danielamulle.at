@@ -15,6 +15,8 @@ categories:
     label: laktosefrei
   - value: glutenfrei
     label: glutenfrei
+  - value: gut vorzubereiten
+    label: gut vorzubereiten
 timeToCook: 35 Minuten
 ---
 Ein Basisrezept für das derzeit äußerst hippe, ursprünglich traditionell nordafrikanische Gericht darf auch auf meiner Seite natürlich nicht fehlen:
