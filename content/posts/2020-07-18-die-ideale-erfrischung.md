@@ -3,7 +3,7 @@ title: Die ideale Erfrischung
 date: 2020-07-18T05:56:24.617Z
 coverImage: ../assets/infused-water.jpg
 coverImageAuthor: Freddy G
-coverImageLink: 'https://unsplash.com/@freddygthatsme'
+coverImageLink: https://unsplash.com/@freddygthatsme
 categories:
   - value: Trinken
     label: Trinken
@@ -15,7 +15,7 @@ Trinkst du zu wenig, wird dein Blut dickflüssiger, Muskeln & Gehirn werden weni
 
 ## Wieviel solltest du täglich trinken?
 
-Dein Körper erinnert dich durch Durst ans Trinken. Beim konzentrierten Arbeiten oder im stressigen Alltag kann es leicht passieren, dass du dieses Signal überhörst. Auch ältere Menschen verspüren oft nur selten Durst, obwohl gerade bei SeniorInnen ausreichend Flüssigkeit wichtig ist, um körperlich & geistig fit zu bleiben. Wenn du dein Körpergewicht mit 35 multipliziert, erfährst du die Menge in Milliliter, die du durch dein Essen & Trinken decken solltest. Angenommen, du hast 70 kg, dann liegt dein Gesamtbedarf bei 70 x 35 = 2.450 ml, d.h. mindestens 2 Liter über den Tag verteilt trinken, den Rest nimmst du über dein Essen auf. Wenn du viel schwitzt, z.B. Sport, Hitze oder Fieber, brauchst du aber noch etwas mehr.
+Dein Körper erinnert dich durch Durst ans Trinken. Beim konzentrierten Arbeiten oder im stressigen Alltag kann es leicht passieren, dass du dieses Signal überhörst. Manchmal kann es auch sein, dass du glaubst hungrig zu sein, obwohl dein Körper eigentlich Flüssigkeit möchte. Auch ältere Menschen verspüren oft nur selten Durst, obwohl gerade bei SeniorInnen ausreichend Flüssigkeit wichtig ist, um körperlich & geistig fit zu bleiben. Wenn du dein Körpergewicht mit 35 multipliziert, erfährst du die Menge in Milliliter, die du durch dein Essen & Trinken decken solltest. Angenommen, du hast 70 kg, dann liegt dein Gesamtbedarf bei 70 x 35 = 2.450 ml, d.h. mindestens 2 Liter gut über den Tag verteilt trinken, den Rest nimmst du über dein Essen auf. Wenn du viel schwitzt, z.B. Sport, Hitze oder Fieber, brauchst du natürlich noch mehr. Gewöhne dir unbedungt an, deine Trinkmenge wirklich gut zu verteilen, z.B. ein Glas gleich nach dem Aufstehen, je eines vor und nach jedem Essen, eines zum Kaffee, eines zwischendurch, usw. Für deinen Körper zählt nicht nur die Menge, sondern besonders auch die Regelmäßigkeit.
 
 ## Was sollst du trinken?
 
