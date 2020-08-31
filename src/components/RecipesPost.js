@@ -65,7 +65,7 @@ export default ({ data, pageContext, location }) => {
             }}
           >
             <Group separator=" → ">
-              <Link to={recipesPath}>Alle Rezepte</Link>
+              <Link to={`/${recipesPath}`}>Alle Rezepte</Link>
               <Link to={mainCategory.slug}>{mainCategory.id}</Link>
             </Group>
           </Box>

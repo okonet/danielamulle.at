@@ -35,7 +35,7 @@ export default ({ data, pageContext }) => {
             sx={{ color: "muted", fontSize: 0, gridColumn: [1, "1 / span 8"] }}
           >
             <Group separator=" → ">
-              <Link to={blogPath}>← Alle Blog Einträge</Link>
+              <Link to={`/${blogPath}`}>← Alle Blog Einträge</Link>
             </Group>
           </Box>
           <Styled.h1

@@ -49,6 +49,10 @@ function SEO({ description, lang, meta, title, ogImage }) {
       titleTemplate={title ? `%s | ${site.siteMetadata.title}` : undefined}
       meta={[
         {
+          name: "viewport",
+          content: "width=device-width, initial-scale=1.0, user-scalable=0",
+        },
+        {
           name: "title",
           property: "og:title",
           content: site.siteMetadata.title,

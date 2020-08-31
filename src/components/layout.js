@@ -39,7 +39,7 @@ const Layout = ({ theme = defaultTheme, children, mainStyles }) => {
               }}
             >
               <Logo />
-              <Navigation sx={{ ml: "auto", mt: 3 }} />
+              <Navigation sx={{ ml: "auto" }} />
             </Box>
           </Container>
         </Box>

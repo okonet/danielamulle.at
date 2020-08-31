@@ -14,7 +14,7 @@ import { blogPath, recipesPath } from "../../paths"
 const pages = [
   {
     title: "Angebot",
-    to: "offers",
+    to: "/offers",
     theme: offersTheme,
   },
   {
@@ -24,17 +24,17 @@ const pages = [
   },
   {
     title: "Über mich",
-    to: "about",
+    to: "/about",
     theme: aboutTheme,
   },
   {
     title: "Rezepte",
-    to: recipesPath,
+    to: `/${recipesPath}`,
     theme: recipesTheme,
   },
   {
     title: "Blog",
-    to: blogPath,
+    to: `/${blogPath}`,
     theme: blogTheme,
   },
 ]
@@ -51,6 +51,7 @@ const NavLink = React.forwardRef((props, ref) => {
         position: "relative",
         py: 1,
         px: 0,
+        mb: "3px",
         textDecoration: "none",
         fontWeight: "bold",
         borderBottom: "none",
@@ -58,10 +59,12 @@ const NavLink = React.forwardRef((props, ref) => {
         color: "primary",
         whiteSpace: "nowrap",
         ":hover": {
+          mb: "2px",
           textDecoration: "none",
           borderBottom: "thin",
         },
         "&.active": {
+          mb: 0,
           borderBottom: "thick",
         },
         ...sx,
@@ -76,7 +79,7 @@ const Navigation = (props) => {
       as="nav"
       {...props}
       sx={{
-        alignItems: "center",
+        alignItems: "flex-end",
         overflow: "auto",
         "::-webkit-scrollbar": {
           width: 0,

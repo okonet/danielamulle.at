@@ -1,15 +1,15 @@
 import React from "react"
-import BlogPostsPage from "../../components/BlogPostsPage"
-import RecipesPage from "../../components/RecipesPosts"
+import BlogPosts from "../../components/BlogPosts"
+import RecipesPosts from "../../components/RecipesPosts"
 import TestimonialsPosts from "../../components/TestimonialsPosts"
 
-function PostPage(props) {
+function PostsPage(props) {
   switch (props.pageContext.collection) {
     case "posts": {
-      return <BlogPostsPage {...props} />
+      return <BlogPosts {...props} />
     }
     case "recipes": {
-      return <RecipesPage {...props} />
+      return <RecipesPosts {...props} />
     }
     case "testimonials": {
       return <TestimonialsPosts {...props} />
@@ -19,4 +19,4 @@ function PostPage(props) {
   }
 }
 
-export default PostPage
+export default PostsPage
