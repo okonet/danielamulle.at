@@ -44,21 +44,8 @@ function SubscribeForm() {
       <Container
         variant="section"
         sx={{
-          position: "relative",
-          my: [3, 3],
-          bg: "white",
-          "::after": {
-            position: "absolute",
-            left: 0,
-            top: 0,
-            borderTopLeftRadius: "medium",
-            borderTopRightRadius: "medium",
-            width: "100%",
-            height: 4,
-            content: "''",
-            backgroundImage:
-              "repeating-linear-gradient(135deg, #ff5a54, #ff5a54 20px, transparent 20px, transparent 40px, #3fa9f5 40px, #3fa9f5 60px,transparent 60px,transparent 80px)",
-          },
+          mt: [4, 4],
+          bg: "transparent",
         }}
       >
         <Styled.h2 sx={{ mt: 0, mb: 3 }}>Newsletter</Styled.h2>
