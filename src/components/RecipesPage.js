@@ -1,6 +1,6 @@
 /* @jsx jsx */
 import React, { useCallback } from "react"
-import { Container, Flex, jsx, Text, Input } from "theme-ui"
+import { Box, Container, Flex, jsx, Text, Input } from "theme-ui"
 import { useFlexSearch } from "react-use-flexsearch"
 import groupBy from "lodash.groupby"
 import SEO from "../components/seo"
@@ -45,11 +45,13 @@ export default ({ data, location, navigate }) => {
       <SEO title="Rezepte" />
 
       <Container>
-        <Content />
+        <Box sx={{ display: ["none", "block"] }}>
+          <Content />
+        </Box>
         <Flex
           as="aside"
           sx={{
-            my: 4,
+            my: 3,
             flexWrap: "wrap",
             alignItems: "baseline",
           }}
@@ -62,10 +64,17 @@ export default ({ data, location, navigate }) => {
             sx={{
               p: 1,
               fontSize: 0,
-              width: 225,
+              width: ["100%", 225],
             }}
           />
-          <Text sx={{ mx: 2, fontSize: 0, color: "secondary" }}>
+          <Text
+            sx={{
+              display: ["none", "block"],
+              mx: 2,
+              fontSize: 0,
+              color: "secondary",
+            }}
+          >
             {" oder wähle eine Kategorie: "}
           </Text>
           {tags && (

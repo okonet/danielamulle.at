@@ -15,7 +15,7 @@ function RecipesList({ recipes }) {
       )}
       <Container variant={"full"} sx={{ mt: 3 }}>
         {recipe.length > 0 && (
-          <Grid gap={3} columns={[1, 2, 3]} sx={{ mb: 4 }}>
+          <Grid gap={3} columns={[2, 3]} sx={{ mb: 4 }}>
             {recipe.map((recipe) => (
               <RecipeCard {...recipe} key={recipe.slug} />
             ))}
