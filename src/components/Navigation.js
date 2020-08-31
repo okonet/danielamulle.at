@@ -40,6 +40,7 @@ const NavLink = React.forwardRef((props, ref) => {
         position: "relative",
         py: 1,
         px: 0,
+        mb: "3px",
         textDecoration: "none",
         fontWeight: "bold",
         borderBottom: "none",
@@ -47,10 +48,12 @@ const NavLink = React.forwardRef((props, ref) => {
         color: "primary",
         whiteSpace: "nowrap",
         ":hover": {
+          mb: "2px",
           textDecoration: "none",
           borderBottom: "thin",
         },
         "&.active": {
+          mb: 0,
           borderBottom: "thick",
         },
         ...sx,
@@ -65,7 +68,7 @@ const Navigation = (props) => {
       as="nav"
       {...props}
       sx={{
-        alignItems: "center",
+        alignItems: "flex-end",
         overflow: "auto",
         "::-webkit-scrollbar": {
           width: 0,
