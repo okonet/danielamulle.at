@@ -2,7 +2,13 @@
 import React from "react"
 import { Flex, jsx, ThemeProvider } from "theme-ui"
 import Link from "../components/Link"
-import { aboutTheme, blogTheme, recipesTheme, offersTheme } from "../theme"
+import {
+  aboutTheme,
+  blogTheme,
+  recipesTheme,
+  offersTheme,
+  testimonialsTheme,
+} from "../theme"
 import { blogPath, recipesPath } from "../../paths"
 
 const pages = [
@@ -11,6 +17,11 @@ const pages = [
     to: "/offers",
     theme: offersTheme,
   },
+  // {
+  //   title: "Referenzen",
+  //   to: "testimonials",
+  //   theme: testimonialsTheme,
+  // },
   {
     title: "Über mich",
     to: "/about",

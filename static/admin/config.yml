@@ -66,6 +66,18 @@ collections:
       - { label: "Time to prepare", name: "timeToCook", widget: "string", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
 
+  - name: "testimonials"
+    label: "Testimonials"
+    folder: "content/testimonials"
+    create: true
+    slug: "{{slug}}"
+    editor:
+      preview: false
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
   - name: config
     label: Config
     format: json

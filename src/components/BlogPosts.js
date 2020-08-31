@@ -7,7 +7,7 @@ import { blogTheme } from "../theme"
 import RecipeCard from "./RecipeCard"
 import Content, * as meta from "../../content/sections/blog.mdx"
 
-export default ({ data }) => {
+const BlogPosts = ({ data }) => {
   const { posts } = data
 
   return (
@@ -26,3 +26,5 @@ export default ({ data }) => {
     </Layout>
   )
 }
+
+export default BlogPosts

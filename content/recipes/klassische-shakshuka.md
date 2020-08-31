@@ -19,6 +19,7 @@ categories:
     label: gut vorzubereiten
 timeToCook: 35 Minuten
 ---
+
 Ein Basisrezept für das derzeit äußerst hippe, ursprünglich traditionell nordafrikanische Gericht darf auch auf meiner Seite natürlich nicht fehlen:
 
 <Ingredients yields="4-6 Personen">

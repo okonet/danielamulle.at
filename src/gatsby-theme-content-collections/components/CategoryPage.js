@@ -1,6 +1,6 @@
 import React from "react"
 import BlogCategoryPage from "../../components/BlogCategoryPage"
-import RecipeCategoryPage from "../../components/RecipeCategoryPage"
+import RecipeCategoryPage from "../../components/RecipesCategory"
 
 function PostPage(props) {
   switch (props.pageContext.collection) {
