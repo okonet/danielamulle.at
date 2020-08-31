@@ -17,11 +17,11 @@ const pages = [
     to: "/offers",
     theme: offersTheme,
   },
-  {
-    title: "Referenzen",
-    to: "testimonials",
-    theme: testimonialsTheme,
-  },
+  // {
+  //   title: "Referenzen",
+  //   to: "testimonials",
+  //   theme: testimonialsTheme,
+  // },
   {
     title: "Über mich",
     to: "/about",
