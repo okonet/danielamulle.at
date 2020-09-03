@@ -2,11 +2,16 @@
 title: Testimonial test
 date: 2020-08-12T19:51:59.937Z
 ---
+Hier habe ich einige (Kunden)stimmen für Dich gesammelt:
 
-Dein Körper besteht zu > 50 % aus Wasser. Es spielt eine zentrale Rolle: als Transporter, Lösungsmittel aber auch zur Kühlung durch Schwitzen.
+> "Liebe Daniela, ich bin eine pensionierte Kollegin, und möchte dir meine große Bewunderung für die Rezepte übermitteln. Sie lassen auf eine sehr kompetente Wissenschafterin schließen, und sind auch in der Praxis gut umzusetzen. 
+Mit lieben Grüßen, 
+Eva Bechter"
 
-Trinkst du zu wenig, wird dein Blut dickflüssiger, Muskeln & Gehirn werden weniger gut mit Sauerstoff & Nährstoffen versorgt. Du wirst müde, unkonzentriert, und bringst bei deiner Arbeit, in Schule oder Uni und auch beim Sport nicht mehr deine gewohnte Leistung. Außerdem kann dein Körper Abbauprodukte über die Nieren nicht mehr vollständig loswerden.
 
-## Wieviel solltest du täglich trinken?
+> "Frau Mag. Mulle ist eine fantastische Ernährungsberaterin, die es bewirkt hat, dass ich nie mehr Hunger habe (hab ganz vergessen, was das ist), und auch keinen Heißhunger auf irgend etwas, nicht zunehme, und keine Bauchprobleme mehr habe." 
+Mariana K.
 
-Dein Körper erinnert dich durch Durst ans Trinken. Beim konzentrierten Arbeiten oder im stressigen Alltag kann es leicht passieren, dass du dieses Signal überhörst. Auch ältere Menschen verspüren oft nur selten Durst, obwohl gerade bei SeniorInnen ausreichend Flüssigkeit wichtig ist, um körperlich & geistig fit zu bleiben. Wenn du dein Körpergewicht mit 35 multipliziert, erfährst du die Menge in Milliliter, die du durch dein Essen & Trinken decken solltest. Angenommen, du hast 70 kg, dann liegt dein Gesamtbedarf bei 70 x 35 = 2.450 ml, d.h. mindestens 2 Liter über den Tag verteilt trinken, den Rest nimmst du über dein Essen auf. Wenn du viel schwitzt, z.B. Sport, Hitze oder Fieber, brauchst du aber noch etwas mehr.
+
+
+
