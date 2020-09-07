@@ -1,7 +1,7 @@
 ---
 title: Erbsenaufstrich
 date: 2020-09-07T13:01:21.981Z
-coverImage: ../assets/DSC03522.jpg
+coverImage: ../assets/DSC03524.jpg
 coverImageAuthor: Andrey Okonetchnikov
 coverImageLink: https://okonet.ru
 categories:
