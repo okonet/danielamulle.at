@@ -1,10 +1,12 @@
 ---
 title: Gebackene Haferflocken
 date: 2020-06-29T09:29:31.053Z
-coverImage: ../assets/img_1906.jpg
+coverImage: ../assets/DSC03566.jpg
+coverImageAuthor: Andrey Okonechnikov
+coverImageLink: https://okonet.ru/
 categories:
-  - value: "Kuchen, Kekserl & Co"
-    label: "Kuchen, Kekserl & Co"
+  - value: Kuchen, Kekserl & Co
+    label: Kuchen, Kekserl & Co
   - value: vegetarisch
     label: vegetarisch
   - value: gut vorzubereiten
