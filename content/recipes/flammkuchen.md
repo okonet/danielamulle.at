@@ -50,7 +50,7 @@ Dieses leckere Gericht hast du im Nu fertig. Je nach Lust & Saison kannst du unz
 </Ingredients>
 <Preparation>
 
-1. Für den Boden alle Vollkornmehl, Wasser, Olivenöl und 1/2 TL Salz in einer Rührschüssel auf kleiner Stufe mixen.
+1. Für den Boden Vollkornmehl, Wasser, Olivenöl und 1/2 TL Salz in einer Rührschüssel auf kleiner Stufe mixen.
 2. Teig zu einer Kugel formen, in den Kühlschrank geben und kurz rasten lassen.
 3. Einstweilen den Belag vorbereiten:
 4. Sauerrahm mit Salz, frisch gemahlenem Pfeffer und Knoblauchpulver verrühren.
