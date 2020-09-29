@@ -1,11 +1,10 @@
 ---
-title: >-
-  Warum Kalorienzählen überflüssig ist, und ich bewusst auf Nährwertangaben
+title: Warum Kalorienzählen überflüssig ist, und ich bewusst auf Nährwertangaben
   verzichte
 date: 2020-07-07T08:42:26.770Z
-coverImage: ../assets/20200523-DSC02838.jpg
+coverImage: ../assets/DSC03567.jpg
 coverImageAuthor: Andrey Okonechnikov
-coverImageLink: 'https://okonet.ru/'
+coverImageLink: https://okonet.ru/
 categories:
   - value: Gewicht
     label: Gewicht
