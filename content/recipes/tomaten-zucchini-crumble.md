@@ -1,7 +1,7 @@
 ---
 title: Tomaten-Zucchini-Crumble
 date: 2020-09-29T11:09:39.108Z
-coverImage: ../assets/20200523-DSC02838.jpg
+coverImage: ../assets/20200929-DSC04102.jpg
 coverImageAuthor: Andrey Okonetchnikov
 coverImageLink: https://okonet.ru
 categories:
