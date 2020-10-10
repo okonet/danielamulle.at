@@ -40,7 +40,7 @@ Hier serviere ich dir meine persönliche Variante des traditionell chinesichen R
 </Ingredients>
 <Preparation>
 
-1. Pflanzendrink aufkochen.
+1. Pflanzendrink aufkochen - ich verwende immer Sojamilch, damit ich auch Eiweiß im Congee habe.
 2. Reis hinzufügen und auf kleinste Flamme zurückschalten. 
 3. Trockenfrüchte im Ganzen einstreuen.
 4. Mind. 2 Stunden köcheln, bis das Congee schön cremig ist, dabei immer wieder mal umrühren.
