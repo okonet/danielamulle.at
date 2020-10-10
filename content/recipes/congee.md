@@ -45,7 +45,8 @@ Hier serviere ich dir meine persönliche Variante des traditionell chinesichen R
 3. Trockenfrüchte im Ganzen einstreuen.
 4. Mind. 2 Stunden köcheln, bis das Congee schön cremig ist, dabei immer wieder mal umrühren.
 5. Vor dem Servieren Obst oder Beeren unterrühren, mit Mandel-, Erdnuss-, oder Kokosmus verfeinern, mit gehackten Nüssen, Sonnenblumenkernen, Kokosraspeln, Sesam, etc. bestreuen oder einfach nur mit Ahornsirup, Honig oder Zimt & Zucker genießen.
+6. Falls du Fruchtzucker schlecht verträgst, nimm' Reissirup, Nussmus, Samen, Nüsse, Kerne, Kokosraspeln und eventuell ein paar Beeren zum Verfeinern.
 
-Die Kochzeit variiert oft ein wenig je nach Herd. Falls du einen guten Reiskocher zuhause hast, sparst Du Dir das Umrühren. Ich kann [meinen Reiskocher](https://www.reishunger.com/at/produkt/1376/digitaler-reiskocher)  sogar voreinstellen, sodass in der Früh schon das fertige, warme Congee auf mich wartet. Du kannst Congee gut verschlossen im Kühlschrank bis zu 3 Tage aufheben, und hast so immer eine tolle Mahlzeit oder Snack bereit.
+Die Kochzeit variiert oft ein wenig je nach Herd. Falls du einen guten Reiskocher zuhause hast, sparst Du Dir das Umrühren. Ich kann [meinen Reiskocher](https://www.reishunger.com/at/produkt/1376/digitaler-reiskocher) voreinstellen, sodass in der Früh schon das fertige, warme Congee auf mich wartet. Du kannst Congee gut verschlossen im Kühlschrank bis zu 3 Tage aufheben, und hast so immer eine tolle Mahlzeit oder Snack bereit.
 
 </Preparation>
