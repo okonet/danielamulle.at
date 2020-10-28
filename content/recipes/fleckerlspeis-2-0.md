@@ -25,7 +25,7 @@ timeToCook: 20 Minuten
 ---
 Diese flott zubereitete vegane Variante eines österreichischen Hausmannskost-Klassikers wird dich geschmacklich verblüffen. Vor allem mit etwas Kürbiskernöl verfeinert. Und dein Körper ist überglücklich wegen dem tollen pflanzliches Eiweiß (Bohnen) und den gesunden Fetten: omega 3 (Walnüsse), omega 6 (Kernöl) und omega 9 (Olivenöl).
 
-<Ingredients yields="6 Personen">
+<Ingredients yields="5 Personen">
 
 - 2 große Karotten
 - 1 Frühlingszwiebel oder 1 kleine rote Zwiebel
