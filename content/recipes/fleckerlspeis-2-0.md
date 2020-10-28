@@ -23,14 +23,14 @@ categories:
     label: glutenfrei
 timeToCook: 20 Minuten
 ---
-Diese flott zubereitete vegane Variante eines österreichischen Hausmannskost-Klassikers wird dich geschmacklich verblüffen. Vor allem mit etwas Kürbiskernöl verfeinert. Und dein Körper ist glücklich wegen tollem pflanzliches Eiweiß (Bohnen) und gesunden Fetten: omega 3 (Walnüsse), omega 6 (Kernöl) und omega 9 (Olivenöl).
+Diese flott zubereitete vegane Variante eines österreichischen Hausmannskost-Klassikers wird dich geschmacklich verblüffen. Vor allem mit etwas Kürbiskernöl verfeinert. Und dein Körper ist überglücklich wegen dem tollen pflanzliches Eiweiß (Bohnen) und den gesunden Fetten: omega 3 (Walnüsse), omega 6 (Kernöl) und omega 9 (Olivenöl).
 
-<Ingredients yields="4 Personen">
+<Ingredients yields="6 Personen">
 
 - 2 große Karotten
 - 1 Frühlingszwiebel oder 1 kleine rote Zwiebel
 - 300 g Vollkornfleckerl (bei Bedarf glutenfrei)
-- 1 Dose weiße Bohnen (ca.  g)
+- 1 große Dose weiße Bohnen (abgetropft ca. 500 g)
 - 300 g getrocknete Tomaten ohne Öl
 - 4 EL gehackte Walnüsse (ca. 40 g)
 - 2 EL Basilikum
