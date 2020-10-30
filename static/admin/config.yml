@@ -78,6 +78,30 @@ collections:
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Body", name: "body", widget: "markdown" }
 
+  - name: "projects"
+    label: "Project Posts"
+    folder: "content/projects"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    editor:
+      preview: false
+    fields:
+      - label: 'Project'
+        name: 'categories'
+        widget: 'file-relation'
+        collection: 'config'
+        file: 'projects'
+        target_field: 'categories'
+        id_field: id
+        required: true
+        multiple: false
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Cover", name: "coverImage", widget: "image" }
+      - { label: "Cover author", name: "coverImageAuthor", widget: "string" }
+      - { label: "Cover link", name: "coverImageLink", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
   - name: config
     label: Config
     format: json
@@ -105,3 +129,14 @@ collections:
             fields:
               - {label: Name, name: id, widget: string}
               - {label: Tag, name: isTag, widget: "hidden", default: true}
+
+      - label: "Projects"
+        name: "projects"
+        file: "content/projects/categories.json"
+        fields:
+          - label: "Project Items"
+            widget: "list"
+            name: "categories"
+            fields:
+              - { label: Name, name: id, widget: string }
+              - { label: Tag, name: isTag, widget: "hidden", default: false }
