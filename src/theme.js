@@ -260,6 +260,27 @@ const theme = {
       mb: 3,
       variant: "textStyles.body",
     },
+    table: {
+      borderCollapse: "collapse",
+      width: "100%",
+    },
+    th: {
+      p: 2,
+      textAlign: "center",
+    },
+    tr: {
+      "& + &": {
+        borderTop: "thin",
+        borderColor: "muted",
+      },
+    },
+    td: {
+      px: 2,
+      py: 1,
+      ":not(:first-of-type)": {
+        textAlign: "center",
+      },
+    },
   },
 }
 
