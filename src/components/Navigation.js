@@ -8,8 +8,9 @@ import {
   recipesTheme,
   offersTheme,
   testimonialsTheme,
+  projectsTheme,
 } from "../theme"
-import { blogPath, recipesPath } from "../../paths"
+import { blogPath, projectsPath, recipesPath } from "../../paths"
 
 const pages = [
   {
@@ -31,6 +32,11 @@ const pages = [
     title: "Rezepte",
     to: `/${recipesPath}`,
     theme: recipesTheme,
+  },
+  {
+    title: "Projekte",
+    to: `/${projectsPath}`,
+    theme: projectsTheme,
   },
   {
     title: "Blog",

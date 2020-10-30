@@ -355,6 +355,20 @@ export const testimonialsTheme = {
   coverSrc: unsplashURL("j_YWoV_uzRw"),
 }
 
+export const projectsTheme = {
+  ...theme,
+  colors: {
+    ...theme.colors,
+    text: palette.purple[1],
+    background: palette.purple[6],
+    accent: palette.purple[2],
+    primary: palette.purple[3],
+    secondary: palette.purple[4],
+    muted: palette.purple[5],
+  },
+  coverSrc: unsplashURL("3EiLQLsMH9U"),
+}
+
 export const recipesTheme = {
   ...theme,
   colors: {
