@@ -27,6 +27,7 @@ export const palette = {
   beige: createAccents("#ac7b2e"),
   green: createAccents("#74a308"),
   teal: createAccents("#1e5f92"),
+  purple: createAccents("#634b99"),
 }
 
 const theme = {
@@ -35,6 +36,7 @@ const theme = {
   colors: {
     text: palette.gray[1],
     background: palette.white,
+    sectionBg: palette.white,
     primary: palette.cyan[3],
     accent: palette.cyan[2],
     secondary: palette.gray[3],
@@ -191,11 +193,12 @@ const theme = {
       maxWidth: 844, // 10 x (70px + 16px gap)
     },
     section: {
+      flexGrow: 1,
       maxWidth: 984, // 12 x (70px + 16px gap)
       py: [3, 4],
-      px: [3, 3, 72],
+      px: [3, 4, 5],
       mt: [0, -4],
-      bg: "white",
+      bg: "sectionBg",
       borderRadius: ["none", "none", "medium"],
       zIndex: 1,
     },
