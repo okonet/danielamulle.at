@@ -19,7 +19,7 @@ export default ({ data }) => {
   )
   return (
     <Layout theme={blogTheme}>
-      <SEO title={`Rezepte: ${category.id}`} />
+      <SEO title={`Blog: ${category.id}`} />
 
       <Section theme={blogTheme} blendMode="color-burn">
         <Box as="nav" sx={{ mt: 5 }}>
