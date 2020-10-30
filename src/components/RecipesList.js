@@ -1,6 +1,6 @@
 import React from "react"
 import { Container, Grid, Text } from "theme-ui"
-import RecipeCard from "./RecipeCard"
+import PostCard from "./PostCard"
 
 function RecipesList({ recipes }) {
   const categories = Object.keys(recipes)
@@ -17,7 +17,7 @@ function RecipesList({ recipes }) {
         {recipe.length > 0 && (
           <Grid gap={3} columns={[2, 3]} sx={{ mb: 4 }}>
             {recipe.map((recipe) => (
-              <RecipeCard {...recipe} key={recipe.slug} />
+              <PostCard {...recipe} key={recipe.slug} />
             ))}
           </Grid>
         )}

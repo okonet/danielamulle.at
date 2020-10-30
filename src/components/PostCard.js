@@ -5,7 +5,7 @@ import Img from "gatsby-image"
 import { AspectRatio, Box, Flex, Text } from "theme-ui"
 import { transparentize } from "@theme-ui/color"
 
-RecipeCard.propTypes = {
+PostCard.propTypes = {
   categories: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string,
@@ -20,7 +20,7 @@ RecipeCard.propTypes = {
   title: PropTypes.string.isRequired,
 }
 
-function RecipeCard({ coverImage, categories, slug, title, ...props }) {
+function PostCard({ coverImage, categories, slug, title, ...props }) {
   const gradient = () => (theme) => {
     return `linear-gradient(
             ${transparentize("text", 1)(theme)}, 
@@ -85,4 +85,4 @@ function RecipeCard({ coverImage, categories, slug, title, ...props }) {
   )
 }
 
-export default RecipeCard
+export default PostCard

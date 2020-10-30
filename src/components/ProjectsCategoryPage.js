@@ -11,7 +11,7 @@ import RecipesList from "./RecipesList"
 import Group from "react-group"
 import Section from "./Section"
 import PageLayout from "./PageLayout"
-import RecipeCard from "./RecipeCard"
+import PostCard from "./PostCard"
 
 const ProjectsCategoryPage = ({ data }) => {
   const { category } = data
@@ -24,7 +24,7 @@ const ProjectsCategoryPage = ({ data }) => {
       {category.postCount > 0 ? (
         <Grid gap={3} columns={[1, 2, 3]} sx={{ my: 2, mx: [2, 0, -4] }}>
           {category.posts.map((post) => (
-            <RecipeCard {...post} key={post.id} />
+            <PostCard {...post} key={post.id} />
           ))}
         </Grid>
       ) : (

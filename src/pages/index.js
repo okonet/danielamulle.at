@@ -14,7 +14,7 @@ import Home from "../../content/sections/home.mdx"
 import { blogTheme, homeTheme, recipesTheme } from "../theme"
 import SEO from "../components/seo"
 import Layout from "../components/layout"
-import RecipeCard from "../components/RecipeCard"
+import PostCard from "../components/PostCard"
 import Link from "../components/Link"
 import { blogPath, recipesPath } from "../../paths"
 
@@ -117,7 +117,7 @@ const IndexPage = () => {
         <Container variant="full">
           <Grid gap={3} columns={[1, 3]} sx={{ my: 3 }}>
             {data.latestRecipes.nodes.map(({ slug, coverImage, title }) => (
-              <RecipeCard
+              <PostCard
                 key={slug}
                 slug={slug}
                 coverImage={coverImage}
@@ -140,7 +140,7 @@ const IndexPage = () => {
         <Container variant="full">
           <Grid gap={3} columns={[1, 3]} sx={{ my: 3 }}>
             {data.latestBlogPosts.nodes.map(({ slug, coverImage, title }) => (
-              <RecipeCard
+              <PostCard
                 key={slug}
                 slug={slug}
                 coverImage={coverImage}

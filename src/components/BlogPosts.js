@@ -4,7 +4,7 @@ import { Container, Grid, jsx } from "theme-ui"
 import SEO from "../components/seo"
 import Layout from "../components/layout"
 import { blogTheme } from "../theme"
-import RecipeCard from "./RecipeCard"
+import PostCard from "./PostCard"
 import Content, * as meta from "../../content/sections/blog.mdx"
 
 const BlogPosts = ({ data }) => {
@@ -19,7 +19,7 @@ const BlogPosts = ({ data }) => {
       <Container variant={"full"}>
         <Grid gap={3} columns={[1, 2, 3]} sx={{ my: 4 }}>
           {posts.nodes.map((post) => (
-            <RecipeCard {...post} key={post.id} />
+            <PostCard {...post} key={post.id} />
           ))}
         </Grid>
       </Container>
