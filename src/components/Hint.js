@@ -6,16 +6,10 @@ function Hint(props) {
   return (
     <Box
       sx={{
-        p: 3,
-        py: 1,
-        mx: -3,
+        p: 0,
         my: 4,
-        bg: "white",
-        color: "muted",
-        borderLeft: "4px solid",
-        borderLeftColor: "muted",
-        borderRadius: "medium",
         fontStyle: "italic",
+        fontSize: 2,
         "> *": {
           m: 0,
         },
