@@ -13,13 +13,13 @@ import Content from "../../content/sections/recipes.mdx"
 import RecipesList from "./RecipesList"
 
 const RecipesPosts = ({ data, location, navigate }) => {
-  const { allCategory, recipes, localSearchRecipes } = data
+  const { recipesCategories, recipes, localSearchRecipes } = data
   const searchParams = new URLSearchParams(location.search)
   const query = searchParams.get("q") || ""
   const { index, store } = localSearchRecipes
   const results = useFlexSearch(query, index, JSON.parse(store))
   const resIds = results.map((res) => res.id)
-  const tags = allCategory.nodes
+  const tags = recipesCategories.nodes
   const filteredRecipes = query
     ? recipes.nodes.filter((recipe) => resIds.includes(recipe.id))
     : recipes.nodes

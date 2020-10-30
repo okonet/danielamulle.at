@@ -6,20 +6,24 @@ import Layout from "./layout"
 import Link from "./Link"
 import { blogTheme } from "../theme"
 import { blogPath } from "../../paths"
-import Tag from "./Tag"
 import Group from "react-group"
 import SEO from "./seo"
 import CoverImage from "./CoverImage"
+import ShareButtons from "./ShareButtons"
+import TagList from "./TagList"
 
-export default ({ data, pageContext }) => {
+export default ({ data, pageContext, location }) => {
+  const { post, site } = data
   const {
     body,
+    date,
     coverImage,
     coverImageAuthor,
     coverImageLink,
     title,
     categories,
-  } = data.post
+  } = post
+  const pageUrl = location.href ? location.href : site.siteMetadata.url
   return (
     <Layout theme={blogTheme}>
       <SEO title={title} ogImage={pageContext.ogImage} />
@@ -29,30 +33,39 @@ export default ({ data, pageContext }) => {
         url={coverImageLink || "https://okonet.ru"}
       />
       <Container variant="section">
-        <Grid gap={0} columns={[1, 12]}>
-          <Box
-            as="nav"
-            sx={{ color: "muted", fontSize: 0, gridColumn: [1, "1 / span 8"] }}
-          >
-            <Group separator=" → ">
-              <Link to={`/${blogPath}`}>← Alle Blog Einträge</Link>
-            </Group>
-          </Box>
-          <Styled.h1
+        <Grid gap={4} columns={[1, 12]}>
+          <Grid
+            gap={2}
             sx={{
-              mt: 1,
               gridColumnStart: [1, 1],
               gridColumnEnd: [1, 12],
-              ":first-letter": { textTransform: "uppercase" },
             }}
           >
-            {title}
-          </Styled.h1>
+            <Box
+              as="nav"
+              sx={{
+                color: "muted",
+                fontSize: 0,
+              }}
+            >
+              <Group separator=" → ">
+                <Link to={`/${blogPath}`}>← Alle Blog Einträge</Link>
+              </Group>
+            </Box>
+            <Styled.h1
+              sx={{
+                mt: 1,
+                ":first-letter": { textTransform: "uppercase" },
+              }}
+            >
+              {title}
+            </Styled.h1>
+          </Grid>
 
           <Box
             sx={{
               gridColumnStart: [1, 1],
-              gridColumnEnd: [1, 12],
+              gridColumnEnd: [1, 10],
               "& > p:first-of-type": {
                 variant: "textStyles.lead",
               },
@@ -62,28 +75,18 @@ export default ({ data, pageContext }) => {
           </Box>
 
           <Box
+            as="aside"
             sx={{
-              mt: 4,
-              display: "flex",
-              alignItems: "baseline",
-              gridColumnStart: [1, 1],
-              gridColumnEnd: [1, 12],
+              my: 3,
+              gridColumn: [1, "10 / span 3"],
+              gridRow: [3, 2],
             }}
           >
-            {categories && (
-              <>
-                <Styled.h3 sx={{ m: 0, mr: 2 }}>Kategorien:</Styled.h3>
-                <Box sx={{ m: 0 }}>
-                  <Group as="p" separator=" ">
-                    {categories.map((category) => (
-                      <Tag key={category.id} sx={{ my: 1 }}>
-                        <Link to={category.slug}>{category.id}</Link>
-                      </Tag>
-                    ))}
-                  </Group>
-                </Box>
-              </>
-            )}
+            <Styled.h3 sx={{ m: 0, mr: 2 }}>Veröffentlicht am</Styled.h3>
+            <Styled.p>{date}</Styled.p>
+
+            <TagList tags={categories} />
+            <ShareButtons pageUrl={pageUrl} title={title} />
           </Box>
         </Grid>
       </Container>
