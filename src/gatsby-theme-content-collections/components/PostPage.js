@@ -2,11 +2,15 @@ import React from "react"
 import BlogPostPage from "../../components/BlogPostPage"
 import RecipePage from "../../components/RecipesPost"
 import TestimonialsPost from "../../components/TestimonialsPost"
+import ProjectsPostPage from "../../components/ProjectsPostPage"
 
 function PostPage(props) {
   switch (props.pageContext.collection) {
     case "posts": {
       return <BlogPostPage {...props} />
+    }
+    case "projects": {
+      return <ProjectsPostPage {...props} />
     }
     case "recipes": {
       return <RecipePage {...props} />

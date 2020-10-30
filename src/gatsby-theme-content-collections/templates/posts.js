@@ -16,12 +16,27 @@ export const query = graphql`
         ...PostMeta
       }
     }
+    projects: allCategory(filter: { collection: { eq: "projects" } }) {
+      nodes {
+        id
+        slug
+        postCount
+      }
+    }
+    projectsPosts: allPost(
+      filter: { collection: { eq: "projects" } }
+      sort: { fields: [date, title], order: [DESC, ASC] }
+    ) {
+      nodes {
+        ...PostMeta
+      }
+    }
     testimonials: allPost(filter: { collection: { eq: "testimonials" } }) {
       nodes {
         ...PostMeta
       }
     }
-    allCategory(
+    recipesCategories: allCategory(
       filter: { isTag: { eq: true }, collection: { eq: "recipes" } }
     ) {
       nodes {
