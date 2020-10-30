@@ -22,7 +22,7 @@ const ProjectsCategoryPage = ({ data }) => {
       blendMode="overlay"
     >
       {category.postCount > 0 ? (
-        <Grid gap={3} columns={[1, 2, 3]} sx={{ my: 2, mx: [2, 0, -4] }}>
+        <Grid gap={3} columns={[1, 2, 3]} sx={{ my: 2, mx: [2, 0, 0] }}>
           {category.posts.map((post) => (
             <PostCard {...post} key={post.id} />
           ))}

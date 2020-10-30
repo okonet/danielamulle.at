@@ -5,24 +5,28 @@ import SEO from "../components/seo"
 import Layout from "../components/layout"
 import { projectsTheme } from "../theme"
 import Content, * as meta from "../../content/sections/projects.mdx"
-import Link from "./Link"
+import { Grid } from "@theme-ui/components"
+import PostCard from "./PostCard"
 
 const ProjectsPosts = ({ data }) => {
   const { projects } = data
-  console.log(projects)
 
   return (
     <Layout theme={projectsTheme}>
       <SEO title={meta._frontmatter.title} />
       <Container>
         <Content />
-        <ul>
+        <Grid as="ul" columns={[1, 2]} sx={{ p: 0 }}>
           {projects.nodes.map((project) => (
-            <li>
-              <Link to={project.slug}>{project.id}</Link>
-            </li>
+            <PostCard
+              as="li"
+              coverImage={project.coverImage}
+              slug={project.slug}
+              title={project.id}
+              key={project.id}
+            />
           ))}
-        </ul>
+        </Grid>
       </Container>
     </Layout>
   )

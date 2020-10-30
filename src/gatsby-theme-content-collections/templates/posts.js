@@ -21,6 +21,13 @@ export const query = graphql`
         id
         slug
         postCount
+        coverImage {
+          childImageSharp {
+            fluid(maxWidth: 300) {
+              ...GatsbyImageSharpFluid_tracedSVG
+            }
+          }
+        }
       }
     }
     projectsPosts: allPost(

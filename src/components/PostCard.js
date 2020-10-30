@@ -6,21 +6,13 @@ import { AspectRatio, Box, Flex, Text } from "theme-ui"
 import { transparentize } from "@theme-ui/color"
 
 PostCard.propTypes = {
-  categories: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.string,
-      fields: PropTypes.shape({
-        slug: PropTypes.string,
-      }),
-    })
-  ),
   coverImage: PropTypes.object.isRequired,
   date: PropTypes.string,
   slug: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
 }
 
-function PostCard({ coverImage, categories, slug, title, ...props }) {
+function PostCard({ coverImage, slug, title, ...props }) {
   const gradient = () => (theme) => {
     return `linear-gradient(
             ${transparentize("text", 1)(theme)}, 
@@ -34,6 +26,7 @@ function PostCard({ coverImage, categories, slug, title, ...props }) {
         overflow: "hidden",
         boxShadow: "float",
       }}
+      {...props}
     >
       <Link
         to={slug}
