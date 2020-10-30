@@ -281,6 +281,16 @@ const theme = {
         textAlign: "center",
       },
     },
+    blockquote: {
+      p: 0,
+      ml: 4,
+      my: 4,
+      fontStyle: "italic",
+      fontSize: 2,
+      "> p": {
+        m: 0,
+      },
+    },
   },
 }
 
