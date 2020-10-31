@@ -14,30 +14,29 @@ import PageLayout from "./PageLayout"
 import PostCard from "./PostCard"
 
 const ProjectsCategoryPage = ({ data }) => {
-  const { category } = data
+  const { category, projectPosts } = data
   return (
-    <PageLayout
-      theme={projectsTheme}
-      title={`${category.id}`}
-      blendMode="overlay"
-    >
+    <PageLayout theme={projectsTheme} title={`${category.id}`}>
       {category.postCount > 0 ? (
-        <Grid gap={3} columns={[1, 2, 3]} sx={{ my: 2, mx: [2, 0, 0] }}>
-          {category.posts.map((post) => (
-            <PostCard {...post} key={post.id} />
+        <Grid
+          as="ol"
+          gap={3}
+          columns={[1, 2, 3]}
+          sx={{ my: 2, mx: [2, 0, 0], p: 0 }}
+        >
+          {projectPosts.nodes.map((post) => (
+            <PostCard as="li" {...post} key={post.id} />
           ))}
         </Grid>
       ) : (
-        <Container>
-          <Text
-            as="p"
-            my={5}
-            sx={{ variant: "textStyles.lead", color: "secondary" }}
-          >
-            Keine Einträge in diesem Projekt gefunden.{" "}
-            <Link to={`/${projectsPath}`}>Alle Projekte</Link>.
-          </Text>
-        </Container>
+        <Text
+          as="p"
+          my={5}
+          sx={{ variant: "textStyles.lead", color: "secondary" }}
+        >
+          Keine Einträge in diesem Projekt gefunden.{" "}
+          <Link to={`/${projectsPath}`}>Alle Projekte</Link>.
+        </Text>
       )}
     </PageLayout>
   )

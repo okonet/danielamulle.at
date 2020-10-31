@@ -1,34 +1,29 @@
 /* @jsx jsx */
 import React from "react"
-import { Container, jsx } from "theme-ui"
-import SEO from "../components/seo"
-import Layout from "../components/layout"
+import { Container, Grid, jsx } from "theme-ui"
 import { projectsTheme } from "../theme"
 import Content, * as meta from "../../content/sections/projects.mdx"
-import { Grid } from "@theme-ui/components"
+import PageLayout from "./PageLayout"
 import PostCard from "./PostCard"
 
 const ProjectsPosts = ({ data }) => {
   const { projects } = data
 
   return (
-    <Layout theme={projectsTheme}>
-      <SEO title={meta._frontmatter.title} />
-      <Container>
-        <Content />
-        <Grid as="ul" columns={[1, 2]} sx={{ p: 0 }}>
-          {projects.nodes.map((project) => (
-            <PostCard
-              as="li"
-              coverImage={project.coverImage}
-              slug={project.slug}
-              title={project.id}
-              key={project.id}
-            />
-          ))}
-        </Grid>
-      </Container>
-    </Layout>
+    <PageLayout theme={projectsTheme} title={meta._frontmatter.title}>
+      <Content />
+      <Grid as="ul" columns={[1, 2]} sx={{ p: 0 }}>
+        {projects.nodes.map((project) => (
+          <PostCard
+            as="li"
+            coverImage={project.coverImage}
+            slug={project.slug}
+            title={project.id}
+            key={project.id}
+          />
+        ))}
+      </Grid>
+    </PageLayout>
   )
 }
 
