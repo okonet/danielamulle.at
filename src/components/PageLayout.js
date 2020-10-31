@@ -46,7 +46,8 @@ export default ({
         blendMode={blendMode}
         sx={{
           display: "flex",
-          py: [3, 5],
+          pt: [6, 5],
+          pb: [3, 5],
           backgroundColor: "headerBg",
           minHeight: [200, 280],
           alignItems: "flex-end",
