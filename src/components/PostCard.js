@@ -4,15 +4,24 @@ import Link from "./Link"
 import Img from "gatsby-image"
 import { AspectRatio, Box, Flex, Text } from "theme-ui"
 import { transparentize } from "@theme-ui/color"
+import { Grid } from "@theme-ui/components"
 
 PostCard.propTypes = {
+  author: PropTypes.string,
   coverImage: PropTypes.object.isRequired,
   date: PropTypes.string,
   slug: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
 }
 
-function PostCard({ coverImage, slug, title, ...props }) {
+function PostCard({
+  coverImage,
+  coverImageAuthor: author,
+  date,
+  slug,
+  title,
+  ...props
+}) {
   const gradient = () => (theme) => {
     return `linear-gradient(
             ${transparentize("text", 1)(theme)}, 
@@ -60,17 +69,40 @@ function PostCard({ coverImage, slug, title, ...props }) {
               width: "100%",
             }}
           >
-            <Text
+            <Grid
+              gap={2}
               sx={{
-                variant: "textStyles.sectionTitle",
-                fontSize: 1,
-                my: 0,
                 p: 3,
                 backgroundImage: gradient,
               }}
             >
-              <Text sx={{ color: "background" }}>{title}</Text>
-            </Text>
+              <Text
+                as="h3"
+                sx={{
+                  variant: "textStyles.cardTitle",
+                }}
+              >
+                {title}
+              </Text>
+              {author && (
+                <Text
+                  sx={{
+                    variant: "textStyles.cardMeta",
+                  }}
+                >
+                  bei {author}
+                </Text>
+              )}
+              {date && (
+                <Text
+                  sx={{
+                    variant: "textStyles.cardMeta",
+                  }}
+                >
+                  {date}
+                </Text>
+              )}
+            </Grid>
           </Flex>
         </AspectRatio>
       </Link>

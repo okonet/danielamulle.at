@@ -22,13 +22,13 @@ const Layout = ({ theme = defaultTheme, children, mainStyles }) => {
         <Box
           as={"header"}
           sx={{
-            py: 3,
-            position: "relative",
+            position: "absolute",
             top: 0,
+            py: 3,
             width: "100%",
-            bg: transparentize("background", 0),
-            // backgroundImage: `linear-gradient(rgba(255,255,255,1), rgba(255,255,255,0))`,
-            backdropFilter: "blur(32px)",
+            // bg: transparentize("background", 0.5),
+            // backgroundImage: `linear-gradient(rgba(255,255,255,0.75), rgba(255,255,255,0.25) 75%, rgba(255,255,255,0))`,
+            // backdropFilter: "blur(16px)",
             zIndex: 10,
           }}
         >

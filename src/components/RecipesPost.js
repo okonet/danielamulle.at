@@ -13,6 +13,7 @@ import ClockIcon from "./ClockIcon"
 import CoverImage from "./CoverImage"
 import ShareButtons from "./ShareButtons"
 import TagList from "./TagList"
+import PageLayout from "./PageLayout"
 
 export default ({ data, pageContext, location }) => {
   const { post, site } = data
@@ -30,15 +31,18 @@ export default ({ data, pageContext, location }) => {
   const tags = categories.filter((cat) => cat.isTag)
   const coverImageFluid = coverImage.childImageSharp.fluid
   return (
-    <Layout theme={recipesTheme}>
-      <SEO title={title} ogImage={pageContext.ogImage} />
-      <CoverImage
-        fluid={coverImageFluid}
-        author={coverImageAuthor || "Andrey Okonetchnikov"}
-        url={coverImageLink || "https://okonet.ru"}
-      />
-      <Container variant="section">
-        <Grid gap={4} columns={[1, 12]}>
+    <PageLayout
+      theme={recipesTheme}
+      title={title}
+      coverImage={
+        <CoverImage
+          fluid={coverImageFluid}
+          author={coverImageAuthor || "Andrey Okonetchnikov"}
+          url={coverImageLink || "https://okonet.ru"}
+        />
+      }
+      heading={
+        <>
           <Box
             as="nav"
             sx={{
@@ -64,58 +68,59 @@ export default ({ data, pageContext, location }) => {
           >
             {title}
           </Styled.h1>
+        </>
+      }
+    >
+      <SEO ogImage={pageContext.ogImage} />
+
+      <Grid gap={4} columns={[1, 12]}>
+        <Box
+          sx={{
+            gridColumnStart: [1, 1],
+            gridColumnEnd: [1, 10],
+            "& > p:first-of-type": {
+              variant: "textStyles.lead",
+            },
+          }}
+        >
+          <MDXRenderer>{body}</MDXRenderer>
+        </Box>
+
+        <Box
+          as="aside"
+          sx={{
+            gridColumn: [1, "10 / span 3"],
+          }}
+        >
+          <Styled.h3>
+            <ClockIcon width={17} sx={{ mr: 1, mb: -1 }} />
+            Zubereitungszeit
+          </Styled.h3>
+          <Styled.p>{timeToCook}</Styled.p>
+
+          <TagList tags={tags} />
 
           <Box
             sx={{
-              gridColumnStart: [1, 1],
-              gridColumnEnd: [1, 10],
-              "& > p:first-of-type": {
-                variant: "textStyles.lead",
+              "@media print": {
+                display: "none",
               },
             }}
           >
-            <MDXRenderer>{body}</MDXRenderer>
-          </Box>
-
-          <Box
-            as="aside"
-            sx={{
-              gridColumn: [1, "10 / span 3"],
-              gridRow: [4, "3 / span 2"],
-            }}
-          >
             <Styled.h3>
-              <ClockIcon width={17} sx={{ mr: 1, mb: -1 }} />
-              Zubereitungszeit
+              <InfoIcon width={17} sx={{ mr: 1, mb: -1 }} />
+              Nährwerte
             </Styled.h3>
-            <Styled.p>{timeToCook}</Styled.p>
-
-            <TagList tags={tags} />
-
-            <Box
-              sx={{
-                "@media print": {
-                  display: "none",
-                },
-              }}
-            >
-              <Styled.h3>
-                <InfoIcon width={17} sx={{ mr: 1, mb: -1 }} />
-                Nährwerte
-              </Styled.h3>
-              <Styled.p>
-                Du suchst die Nährwertangaben? In{" "}
-                <Link to="/posts/2020-07-07-nährwertangaben">
-                  diesem Artikel
-                </Link>{" "}
-                erklärte ich, warum du hier keine findest.
-              </Styled.p>
-            </Box>
-
-            <ShareButtons pageUrl={pageUrl} title={title} />
+            <Styled.p>
+              Du suchst die Nährwertangaben? In{" "}
+              <Link to="/posts/2020-07-07-nährwertangaben">diesem Artikel</Link>{" "}
+              erklärte ich, warum du hier keine findest.
+            </Styled.p>
           </Box>
-        </Grid>
-      </Container>
-    </Layout>
+
+          <ShareButtons pageUrl={pageUrl} title={title} />
+        </Box>
+      </Grid>
+    </PageLayout>
   )
 }

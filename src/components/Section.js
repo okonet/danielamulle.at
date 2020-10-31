@@ -38,8 +38,6 @@ function Section({
         as="section"
         sx={{
           position: "relative",
-          bg: "background",
-          color: "text",
           ...sx,
         }}
         {...props}
@@ -53,7 +51,7 @@ function Section({
               width: "100%",
               height: "100%",
               zIndex: 0,
-              backgroundColor: "background",
+              backgroundColor: "headerBg",
               ...imageStyles,
             }}
           />
@@ -71,7 +69,10 @@ function Section({
             }}
           />
         )}
-        <Container sx={{ position: "relative", zIndex: 1 }}>
+        <Container
+          variant="containerWide"
+          sx={{ position: "relative", zIndex: 1 }}
+        >
           {children}
         </Container>
       </Box>

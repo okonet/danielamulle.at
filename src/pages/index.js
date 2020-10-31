@@ -17,6 +17,7 @@ import Layout from "../components/layout"
 import PostCard from "../components/PostCard"
 import Link from "../components/Link"
 import { blogPath, recipesPath } from "../../paths"
+import PageLayout from "../components/PageLayout"
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
@@ -49,61 +50,52 @@ const IndexPage = () => {
     }
   `)
   return (
-    <Layout theme={homeTheme}>
-      <SEO />
-      <Container
-        variant="section"
+    <PageLayout theme={homeTheme}>
+      <Flex
         sx={{
-          mt: [0, 3],
-          py: [0, 0],
+          flexDirection: ["column", "row"],
+          alignItems: ["center", "flex-end"],
+          h1: {
+            textAlign: ["center", "left"],
+          },
         }}
       >
         <Flex
           sx={{
-            flexDirection: ["column", "row"],
-            alignItems: ["center", "flex-end"],
-            h1: {
-              textAlign: ["center", "left"],
+            order: [0, 1],
+            flex: "0 1 auto",
+            mr: [0, 4],
+          }}
+        >
+          <Box
+            sx={{
+              width: [150, 300],
+              height: [150, "auto"],
+              borderRadius: ["round", "none"],
+              overflow: "hidden",
+              objectFit: "cover",
+            }}
+          >
+            <img
+              src={data.portraitImage.childImageSharp.resize.src}
+              alt="Portrait von Daniela Mulle"
+              sx={{ width: "100%", verticalAlign: "top" }}
+            />
+          </Box>
+        </Flex>
+        <Box
+          sx={{
+            display: "block",
+            pb: 4,
+            flex: 1,
+            "& > p:first-of-type": {
+              variant: "textStyles.lead",
             },
           }}
         >
-          <Flex
-            sx={{
-              order: [0, 1],
-              flex: "0 1 auto",
-              mr: [0, 4],
-            }}
-          >
-            <Box
-              sx={{
-                width: [150, 300],
-                height: [150, "auto"],
-                borderRadius: ["round", "none"],
-                overflow: "hidden",
-                objectFit: "cover",
-              }}
-            >
-              <img
-                src={data.portraitImage.childImageSharp.resize.src}
-                alt="Portrait von Daniela Mulle"
-                sx={{ width: "100%", verticalAlign: "top" }}
-              />
-            </Box>
-          </Flex>
-          <Box
-            sx={{
-              display: "block",
-              pb: 4,
-              flex: 1,
-              "& > p:first-of-type": {
-                variant: "textStyles.lead",
-              },
-            }}
-          >
-            <Home />
-          </Box>
-        </Flex>
-      </Container>
+          <Home />
+        </Box>
+      </Flex>
 
       <ThemeProvider theme={recipesTheme}>
         <Container>
@@ -113,8 +105,6 @@ const IndexPage = () => {
               Rezepte
             </Link>
           </Styled.h2>
-        </Container>
-        <Container variant="full">
           <Grid gap={3} columns={[1, 3]} sx={{ my: 3 }}>
             {data.latestRecipes.nodes.map(({ slug, coverImage, title }) => (
               <PostCard
@@ -136,8 +126,6 @@ const IndexPage = () => {
               Blog
             </Link>
           </Styled.h2>
-        </Container>
-        <Container variant="full">
           <Grid gap={3} columns={[1, 3]} sx={{ my: 3 }}>
             {data.latestBlogPosts.nodes.map(({ slug, coverImage, title }) => (
               <PostCard
@@ -150,7 +138,7 @@ const IndexPage = () => {
           </Grid>
         </Container>
       </ThemeProvider>
-    </Layout>
+    </PageLayout>
   )
 }
 

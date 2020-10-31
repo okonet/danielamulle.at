@@ -13,11 +13,11 @@ function RecipesList({ recipes }) {
           </Text>
         </Container>
       )}
-      <Container variant={"full"} sx={{ mt: 3 }}>
+      <Container sx={{ mt: 3 }}>
         {recipe.length > 0 && (
-          <Grid gap={3} columns={[2, 3]} sx={{ mb: 4 }}>
+          <Grid as="ol" gap={3} columns={[2, 3]} sx={{ mb: 4, p: 0 }}>
             {recipe.map((recipe) => (
-              <PostCard {...recipe} key={recipe.slug} />
+              <PostCard as="li" {...recipe} key={recipe.slug} />
             ))}
           </Grid>
         )}
