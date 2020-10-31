@@ -3,7 +3,7 @@ categories:
   - value: Diätologische Jahresstart
     label: Diätologische Jahresstart
 title: Third Post
-date: 2021-01-03T12:57:29.061Z
+date: 2021-01-31T12:57:29.061Z
 coverImage: ../assets/20200516-DSC02777.jpg
 coverImageAuthor: Max Mustermann
 coverImageLink: max.com

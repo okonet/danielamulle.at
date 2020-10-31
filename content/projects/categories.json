@@ -4,7 +4,16 @@
       "id": "Diätologische Jahresstart",
       "coverImage": "../assets/20200901-DSC03710.jpg",
       "coverImageAuthor": "Andrey Okonetchnikov",
-      "coverImageLink": "https://okonet.ru"
+      "coverImageLink": "https://okonet.ru",
+      "startDate": "2021-01-01T20:45:33.845Z",
+      "description": "<ul>\n<li>Test</li>\n<li>Test</li>\n<li>Test</li>\n</ul>"
+    },
+    {
+      "isTag": false,
+      "id": "Superfood",
+      "coverImage": "../assets/20200603-DSC02921.jpg",
+      "startDate": "2020-10-01T19:45:33.861Z",
+      "description": "In meinem Blog serviere ich dir virtuelle Gabelbissen zum Thema Darmgesundheit, Gewichtsmanagment & anderen Ernährungsfragen. Guten Appetit beim Stöbern & Schmökern!\n\n- kjdfhgkhdf\n- sjdkfksjdhf"
     }
   ]
 }

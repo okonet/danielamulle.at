@@ -18,6 +18,8 @@ export const query = graphql`
       }
       coverImageAuthor
       coverImageLink
+      startDate
+      description
     }
     projectPosts: allPost(
       filter: {
@@ -28,7 +30,7 @@ export const query = graphql`
     ) {
       nodes {
         ...PostMeta
-        date(locale: "de", formatString: "DD MMMM YYYY")
+        date
         coverImageAuthor
       }
     }

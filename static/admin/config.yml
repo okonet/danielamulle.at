@@ -142,4 +142,6 @@ collections:
             fields:
               - { label: Name, name: id, widget: string }
               - { label: Cover, name: coverImage, widget: "image" }
+              - { label: Start Date, name: startDate, widget: "datetime" }
+              - { label: Body, name: description, widget: "markdown" }
               - { label: Tag, name: isTag, widget: "hidden", default: false }

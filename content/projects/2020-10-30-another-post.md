@@ -3,7 +3,7 @@ categories:
   - value: Diätologische Jahresstart
     label: Diätologische Jahresstart
 title: Another Post
-date: 2021-01-02T22:15:49.146Z
+date: 2021-01-01T19:56:46.101Z
 coverImage: ../assets/20200509-DSC02635.jpg
 coverImageAuthor: Daniela Mulle
 coverImageLink: https://danielamulle.at

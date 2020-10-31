@@ -1,9 +1,8 @@
 /** @jsx jsx */
 import React from "react"
 import { MDXRenderer } from "gatsby-plugin-mdx"
-import { Box, Container, Grid, jsx, Styled } from "theme-ui"
+import { Box, Grid, jsx, Styled } from "theme-ui"
 import Group from "react-group"
-import Layout from "./layout"
 import Link from "./Link"
 import { recipesTheme } from "../theme"
 import { recipesPath } from "../../paths"

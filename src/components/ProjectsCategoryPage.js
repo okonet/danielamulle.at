@@ -1,22 +1,86 @@
 /* @jsx jsx */
 import React from "react"
-import { Box, Container, Grid, jsx, Styled, Text } from "theme-ui"
-import SEO from "../components/seo"
-import Layout from "../components/layout"
-import Link from "../components/Link"
-import { blogTheme, projectsTheme } from "../theme"
-import { blogPath, projectsPath } from "../../paths"
-import groupBy from "lodash.groupby"
-import RecipesList from "./RecipesList"
-import Group from "react-group"
-import Section from "./Section"
+import { Grid, jsx } from "theme-ui"
+import {
+  addDays,
+  eachDayOfInterval,
+  endOfWeek,
+  format,
+  getDate,
+  getDayOfYear,
+  getMonth,
+  getYear,
+  isSameDay,
+  isSameMonth,
+  isWeekend,
+  startOfWeek,
+} from "date-fns"
+import { projectsTheme } from "../theme"
 import PageLayout from "./PageLayout"
-import PostCard from "./PostCard"
 import CoverImage from "./CoverImage"
+import CalendarCard from "./CalendarCard"
+
+const defaultOptions = {
+  numOfWeeks: 6,
+  numOfDays: 7,
+  locale: undefined,
+  events: [],
+}
+
+function transformDate(startDate, date, locale) {
+  return {
+    date,
+    dayOfWeek: format(date, "EEEE", { locale }),
+    dayOfYear: getDayOfYear(date),
+    dayOfMonth: getDate(date),
+    isToday: isSameDay(new Date(), date),
+    isSameMonth: isSameMonth(date, startDate),
+    isWeekend: isWeekend(date),
+  }
+}
+
+function getDays(date, options = defaultOptions) {
+  let currentDate = startOfWeek(new Date(getYear(date), getMonth(date)))
+  const { events } = options
+  const weeks = Array.from({ length: options.numOfWeeks }).map(
+    (_, weekIndex) => {
+      return Array.from({ length: options.numOfDays }).map((_, dayIndex) => {
+        const day = transformDate(date, currentDate, options.locale)
+        const dayEvents = events.filter((event) =>
+          isSameDay(new Date(event.date), currentDate)
+        )
+        currentDate = addDays(currentDate, 1)
+        return { dayIndex, weekIndex, dayEvents, ...day }
+      })
+    }
+  )
+  const days = eachDayOfInterval({
+    start: startOfWeek(currentDate),
+    end: endOfWeek(currentDate),
+  }).map((day) => format(day, "EEE", { locale: options.locale }))
+
+  return {
+    startDate: date,
+    month: format(date, "LLLL"),
+    year: getYear(date),
+    weeks,
+    days,
+  }
+}
 
 const ProjectsCategoryPage = ({ data }) => {
   const { category, projectPosts } = data
-  const { coverImage, coverImageAuthor, coverImageLink } = category
+  const {
+    coverImage,
+    coverImageAuthor,
+    coverImageLink,
+    startDate,
+    description,
+  } = category
+  const state = getDays(new Date(startDate), {
+    ...defaultOptions,
+    events: projectPosts.nodes,
+  })
   return (
     <PageLayout
       theme={projectsTheme}
@@ -29,27 +93,15 @@ const ProjectsCategoryPage = ({ data }) => {
         />
       }
     >
-      {category.postCount > 0 ? (
-        <Grid
-          as="ol"
-          gap={3}
-          columns={[1, 2, 3]}
-          sx={{ my: 2, mx: [2, 0, 0], p: 0 }}
-        >
-          {projectPosts.nodes.map((post) => (
-            <PostCard as="li" {...post} key={post.id} />
-          ))}
-        </Grid>
-      ) : (
-        <Text
-          as="p"
-          my={5}
-          sx={{ variant: "textStyles.lead", color: "secondary" }}
-        >
-          Keine Einträge in diesem Projekt gefunden.{" "}
-          <Link to={`/${projectsPath}`}>Alle Projekte</Link>.
-        </Text>
-      )}
+      <section dangerouslySetInnerHTML={{ __html: description }} />
+      <Grid gap={2} columns={[2, 3, 4]} sx={{ my: 4, mx: [2, 0, -4], p: 0 }}>
+        {state.weeks.map((week) =>
+          week.map(
+            (day) =>
+              day.isSameMonth && <CalendarCard day={day} key={day.dayOfMonth} />
+          )
+        )}
+      </Grid>
     </PageLayout>
   )
 }
