@@ -9,6 +9,15 @@ export const query = graphql`
       posts {
         ...PostMeta
       }
+      coverImage {
+        childImageSharp {
+          fluid(maxWidth: 1024) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      coverImageAuthor
+      coverImageLink
     }
     projectPosts: allPost(
       filter: {

@@ -12,11 +12,23 @@ import Group from "react-group"
 import Section from "./Section"
 import PageLayout from "./PageLayout"
 import PostCard from "./PostCard"
+import CoverImage from "./CoverImage"
 
 const ProjectsCategoryPage = ({ data }) => {
   const { category, projectPosts } = data
+  const { coverImage, coverImageAuthor, coverImageLink } = category
   return (
-    <PageLayout theme={projectsTheme} title={`${category.id}`}>
+    <PageLayout
+      theme={projectsTheme}
+      title={`${category.id}`}
+      coverImage={
+        <CoverImage
+          fluid={coverImage.childImageSharp.fluid}
+          author={coverImageAuthor}
+          url={coverImageLink}
+        />
+      }
+    >
       {category.postCount > 0 ? (
         <Grid
           as="ol"
