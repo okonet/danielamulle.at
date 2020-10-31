@@ -9,6 +9,7 @@ export const query = graphql`
     ) {
       nodes {
         ...PostMeta
+        date(locale: "de", formatString: "DD MMMM YYYY")
       }
     }
     recipes: allPost(filter: { collection: { eq: "recipes" } }) {
@@ -28,14 +29,6 @@ export const query = graphql`
             }
           }
         }
-      }
-    }
-    projectsPosts: allPost(
-      filter: { collection: { eq: "projects" } }
-      sort: { fields: [date, title], order: [DESC, ASC] }
-    ) {
-      nodes {
-        ...PostMeta
       }
     }
     testimonials: allPost(filter: { collection: { eq: "testimonials" } }) {
