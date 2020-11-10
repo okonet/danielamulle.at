@@ -17,8 +17,6 @@ const ShareButtons = ({ pageUrl, title }) => {
     <Box
       as="nav"
       sx={{
-        position: "sticky",
-        top: 20,
         my: 3,
         "@media print": {
           display: "none",
@@ -30,6 +28,7 @@ const ShareButtons = ({ pageUrl, title }) => {
         gap={1}
         sx={{
           gridAutoFlow: "column",
+          alignItems: "center",
         }}
       >
         <Button
