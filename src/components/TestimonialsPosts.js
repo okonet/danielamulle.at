@@ -10,17 +10,15 @@ const TestimonialsPosts = ({ data }) => {
   const { testimonials } = data
 
   return (
-    <PageLayout title={meta._frontmatter.title} theme={testimonialsTheme}>
-      <Container variant={"full"}>
-        <Content />
-        <Styled.ol>
-          {testimonials.nodes.map((post) => (
-            <Styled.li key={post.id}>
-              <Link to={post.slug}>{post.title}</Link>
-            </Styled.li>
-          ))}
-        </Styled.ol>
-      </Container>
+    <PageLayout theme={testimonialsTheme} title={meta._frontmatter.title}>
+      <Content />
+      <Styled.ol>
+        {testimonials.nodes.map((post) => (
+          <Styled.li key={post.id}>
+            <Link to={post.slug}>{post.title}</Link>
+          </Styled.li>
+        ))}
+      </Styled.ol>
     </PageLayout>
   )
 }

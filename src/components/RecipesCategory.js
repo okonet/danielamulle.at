@@ -10,6 +10,7 @@ import groupBy from "lodash.groupby"
 import RecipesList from "./RecipesList"
 import Group from "react-group"
 import Section from "./Section"
+import PageLayout from "./PageLayout"
 
 export default ({ data }) => {
   const { category } = data
@@ -18,26 +19,26 @@ export default ({ data }) => {
     (node) => node.categories[0].id
   )
   return (
-    <Layout theme={recipesTheme}>
-      <SEO title={`Rezepte: ${category.id}`} />
-
-      <Section theme={recipesTheme} blendMode="color-burn">
-        <Box as="nav" sx={{ mt: 5 }}>
-          <Group separator=" / ">
-            <Link to={`/${recipesPath}`}>Rezepte</Link>
-          </Group>
-        </Box>
-        <Styled.h1
-          sx={{
-            mt: 0,
-            mb: 3,
-            ":first-letter": { textTransform: "uppercase" },
-          }}
-        >
-          {category.id}
-        </Styled.h1>
-      </Section>
-
+    <PageLayout
+      theme={recipesTheme}
+      title={`Rezepte: ${category.id}`}
+      heading={
+        <>
+          <Box as="nav">
+            <Group separator=" / ">
+              <Link to={`/${recipesPath}`}>Alle Rezepte</Link>
+            </Group>
+          </Box>
+          <Styled.h1
+            sx={{
+              variant: "textStyles.pageTitle",
+            }}
+          >
+            {category.id}
+          </Styled.h1>
+        </>
+      }
+    >
       {category.postCount > 0 ? (
         <RecipesList recipes={groupedRecipes} />
       ) : (
@@ -48,6 +49,6 @@ export default ({ data }) => {
           </Text>
         </Container>
       )}
-    </Layout>
+    </PageLayout>
   )
 }

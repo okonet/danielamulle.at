@@ -6,33 +6,44 @@ import Layout from "./layout"
 import Link from "./Link"
 import { blogTheme } from "../theme"
 import { blogPath } from "../../paths"
-import Tag from "./Tag"
 import Group from "react-group"
 import SEO from "./seo"
 import CoverImage from "./CoverImage"
+import ShareButtons from "./ShareButtons"
+import TagList from "./TagList"
+import PageLayout from "./PageLayout"
 
-export default ({ data, pageContext }) => {
+export default ({ data, pageContext, location }) => {
+  const { post, site } = data
   const {
     body,
+    date,
     coverImage,
     coverImageAuthor,
     coverImageLink,
     title,
     categories,
-  } = data.post
+  } = post
+  const pageUrl = location.href ? location.href : site.siteMetadata.url
   return (
-    <Layout theme={blogTheme}>
-      <SEO title={title} ogImage={pageContext.ogImage} />
-      <CoverImage
-        fluid={coverImage.childImageSharp.fluid}
-        author={coverImageAuthor || "Andrey Okonetchnikov"}
-        url={coverImageLink || "https://okonet.ru"}
-      />
-      <Container variant="section">
-        <Grid gap={0} columns={[1, 12]}>
+    <PageLayout
+      theme={blogTheme}
+      title={title}
+      coverImage={
+        <CoverImage
+          fluid={coverImage.childImageSharp.fluid}
+          author={coverImageAuthor || "Andrey Okonetchnikov"}
+          url={coverImageLink || "https://okonet.ru"}
+        />
+      }
+      heading={
+        <Box sx={{ mx: [0, 0, -4] }}>
           <Box
             as="nav"
-            sx={{ color: "muted", fontSize: 0, gridColumn: [1, "1 / span 8"] }}
+            sx={{
+              color: "muted",
+              fontSize: 0,
+            }}
           >
             <Group separator=" → ">
               <Link to={`/${blogPath}`}>← Alle Blog Einträge</Link>
@@ -41,52 +52,43 @@ export default ({ data, pageContext }) => {
           <Styled.h1
             sx={{
               mt: 1,
-              gridColumnStart: [1, 1],
-              gridColumnEnd: [1, 12],
               ":first-letter": { textTransform: "uppercase" },
             }}
           >
             {title}
           </Styled.h1>
+        </Box>
+      }
+    >
+      <SEO ogImage={pageContext.ogImage} />
 
-          <Box
-            sx={{
-              gridColumnStart: [1, 1],
-              gridColumnEnd: [1, 12],
-              "& > p:first-of-type": {
-                variant: "textStyles.lead",
-              },
-            }}
-          >
-            <MDXRenderer>{body}</MDXRenderer>
-          </Box>
+      <Grid gap={4} columns={[1, 12]} sx={{ mx: [0, 0, -4] }}>
+        <Box
+          sx={{
+            gridColumnStart: [1, 1],
+            gridColumnEnd: [1, 11],
+            "& > p:first-of-type": {
+              variant: "textStyles.lead",
+            },
+          }}
+        >
+          <MDXRenderer>{body}</MDXRenderer>
+        </Box>
 
-          <Box
-            sx={{
-              mt: 4,
-              display: "flex",
-              alignItems: "baseline",
-              gridColumnStart: [1, 1],
-              gridColumnEnd: [1, 12],
-            }}
-          >
-            {categories && (
-              <>
-                <Styled.h3 sx={{ m: 0, mr: 2 }}>Kategorien:</Styled.h3>
-                <Box sx={{ m: 0 }}>
-                  <Group as="p" separator=" ">
-                    {categories.map((category) => (
-                      <Tag key={category.id} sx={{ my: 1 }}>
-                        <Link to={category.slug}>{category.id}</Link>
-                      </Tag>
-                    ))}
-                  </Group>
-                </Box>
-              </>
-            )}
-          </Box>
-        </Grid>
-      </Container>
-    </Layout>
+        <Box
+          as="aside"
+          sx={{
+            my: 3,
+            gridColumn: [1, 1, "11 / span 2"],
+          }}
+        >
+          <Styled.h3 sx={{ m: 0, mr: 2 }}>Veröffentlicht am</Styled.h3>
+          <Styled.p>{date}</Styled.p>
+
+          <TagList tags={categories} />
+          <ShareButtons pageUrl={pageUrl} title={title} />
+        </Box>
+      </Grid>
+    </PageLayout>
   )
 }

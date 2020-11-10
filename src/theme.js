@@ -27,6 +27,7 @@ export const palette = {
   beige: createAccents("#ac7b2e"),
   green: createAccents("#74a308"),
   teal: createAccents("#1e5f92"),
+  purple: createAccents("#634b99"),
 }
 
 const theme = {
@@ -39,13 +40,15 @@ const theme = {
     accent: palette.cyan[2],
     secondary: palette.gray[3],
     muted: palette.gray[5],
+    headerBg: palette.cyan[6],
+    sectionBg: palette.white,
   },
   fonts: {
     body: '"IBM Plex Sans", Helvetica, Arial, sans-serif',
     heading: '"IBM Plex Sans", Helvetica, Arial, sans-serif',
     monospace: '"IBM Plex Mono", monospace',
   },
-  fontSizes: ["0.85em", "1em", "1.25em", "3em"],
+  fontSizes: ["0.85em", "1em", "1.25em", "3em", "5rem"],
   fontWeights: {
     body: 400,
     heading: 700,
@@ -96,7 +99,7 @@ const theme = {
     },
     secondary: {
       fontSize: 0,
-      color: "secondary",
+      color: "primary",
       bg: "transparent",
       border: "thin",
       borderColor: "muted",
@@ -105,7 +108,7 @@ const theme = {
       transition: "border-color .25s",
       ":hover": {
         color: "text",
-        borderColor: "secondary",
+        borderColor: "primary",
       },
     },
     print: {
@@ -123,7 +126,7 @@ const theme = {
       fontSize: 1,
       fontFamily: "monospace",
       borderRadius: "medium",
-      borderColor: "secondary",
+      borderColor: "primary",
       "::placeholder": {
         color: "muted",
       },
@@ -134,7 +137,9 @@ const theme = {
   },
   textStyles: {
     pageTitle: {
+      my: 0,
       color: "primary",
+      ":first-letter": { textTransform: "uppercase" },
     },
     title: {
       m: 0,
@@ -159,6 +164,22 @@ const theme = {
       fontSize: 0,
       fontWeight: "bold",
       fontFamily: "heading",
+      lineHeight: "body",
+    },
+    cardTitle: {
+      m: 0,
+      color: "background",
+      fontSize: 1,
+      fontWeight: "bold",
+      fontFamily: "heading",
+      lineHeight: "body",
+    },
+    cardMeta: {
+      m: 0,
+      color: "background",
+      fontSize: 0,
+      fontFamily: "body",
+      fontWeight: "normal",
       lineHeight: "body",
     },
     lead: {
@@ -190,12 +211,17 @@ const theme = {
       px: [3, 3, 0],
       maxWidth: 844, // 10 x (70px + 16px gap)
     },
+    containerWide: {
+      px: [3, 4, 72],
+      maxWidth: 984, // 12 x (70px + 16px gap)
+    },
     section: {
+      flexGrow: 1,
       maxWidth: 984, // 12 x (70px + 16px gap)
       py: [3, 4],
-      px: [3, 3, 72],
-      mt: [0, -4],
-      bg: "white",
+      px: [3, 4, 5],
+      mt: [0, -3],
+      bg: "sectionBg",
       borderRadius: ["none", "none", "medium"],
       zIndex: 1,
     },
@@ -222,7 +248,6 @@ const theme = {
     },
     h1: {
       variant: "textStyles.title",
-      mt: 4,
     },
     h2: {
       variant: "textStyles.subTitle",
@@ -260,6 +285,37 @@ const theme = {
       mb: 3,
       variant: "textStyles.body",
     },
+    table: {
+      borderCollapse: "collapse",
+      width: "100%",
+    },
+    th: {
+      p: 2,
+      textAlign: "center",
+    },
+    tr: {
+      "& + &": {
+        borderTop: "thin",
+        borderColor: "muted",
+      },
+    },
+    td: {
+      px: 2,
+      py: 1,
+      ":not(:first-of-type)": {
+        textAlign: "center",
+      },
+    },
+    blockquote: {
+      p: 0,
+      ml: 4,
+      my: 4,
+      fontStyle: "italic",
+      fontSize: 2,
+      "> p": {
+        m: 0,
+      },
+    },
   },
 }
 
@@ -267,11 +323,11 @@ export const homeTheme = {
   ...theme,
   colors: {
     ...theme.colors,
-    text: palette.gray[1],
     background: palette.gray[6],
-    primary: palette.cyan[3],
+    sectionBg: palette.gray[6],
+    headerBg: palette.gray[6],
   },
-  coverSrc: unsplashURL("HlNcigvUi4Q"),
+  // coverSrc: unsplashURL("HMSRWdQn5jM"),
 }
 
 export const aboutTheme = {
@@ -284,8 +340,9 @@ export const aboutTheme = {
     primary: palette.pink[3],
     secondary: palette.pink[4],
     muted: palette.pink[5],
+    headerBg: palette.pink[5],
   },
-  coverSrc: unsplashURL("pAnjPqQP0UQ"),
+  coverSrc: unsplashURL("W6cPNv8daRA"),
 }
 
 export const offersTheme = {
@@ -298,16 +355,11 @@ export const offersTheme = {
     primary: palette.green[3],
     secondary: palette.green[4],
     muted: palette.green[5],
+    headerBg: palette.green[5],
   },
-  textStyles: {
-    ...theme.textStyles,
-    pageTitle: {
-      color: "background",
-    },
-  },
-  // coverSrc: unsplashURL("sTPy-oeA3h0"),
+  coverSrc: unsplashURL("sTPy-oeA3h0"),
   // coverSrc: unsplashURL("kcRFW-Hje8Y"),
-  coverSrc: unsplashURL("AWMWcR3hQUg"),
+  // coverSrc: unsplashURL("AWMWcR3hQUg"),
 }
 
 export const testimonialsTheme = {
@@ -324,6 +376,21 @@ export const testimonialsTheme = {
   coverSrc: unsplashURL("j_YWoV_uzRw"),
 }
 
+export const projectsTheme = {
+  ...theme,
+  colors: {
+    ...theme.colors,
+    text: palette.cyan[1],
+    background: palette.cyan[6],
+    accent: palette.cyan[2],
+    primary: palette.cyan[3],
+    secondary: palette.cyan[4],
+    muted: palette.cyan[5],
+    headerBg: palette.cyan[5],
+  },
+  coverSrc: unsplashURL("bwKUJ3Y5JS4"),
+}
+
 export const recipesTheme = {
   ...theme,
   colors: {
@@ -334,7 +401,10 @@ export const recipesTheme = {
     accent: palette.teal[2],
     secondary: palette.teal[3],
     muted: palette.teal[5],
+    sectionBg: palette.beige[6],
+    headerBg: palette.orange[5],
   },
+  coverSrc: unsplashURL("pAnjPqQP0UQ"),
 }
 
 export const blogTheme = {
@@ -345,6 +415,8 @@ export const blogTheme = {
     background: palette.teal[6],
     accent: palette.cyan[2],
     primary: palette.cyan[2],
+    sectionBg: palette.teal[6],
+    headerBg: palette.teal[5],
   },
   coverSrc: unsplashURL("j_YWoV_uzRw"),
 }

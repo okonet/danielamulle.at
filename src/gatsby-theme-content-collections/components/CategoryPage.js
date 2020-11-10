@@ -1,11 +1,15 @@
 import React from "react"
 import BlogCategoryPage from "../../components/BlogCategoryPage"
 import RecipeCategoryPage from "../../components/RecipesCategory"
+import ProjectsCategoryPage from "../../components/ProjectsCategoryPage"
 
 function PostPage(props) {
   switch (props.pageContext.collection) {
     case "posts": {
       return <BlogCategoryPage {...props} />
+    }
+    case "projects": {
+      return <ProjectsCategoryPage {...props} />
     }
     case "recipes": {
       return <RecipeCategoryPage {...props} />

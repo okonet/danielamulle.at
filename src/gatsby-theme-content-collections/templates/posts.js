@@ -9,6 +9,7 @@ export const query = graphql`
     ) {
       nodes {
         ...PostMeta
+        date(locale: "de", formatString: "DD MMMM YYYY")
       }
     }
     recipes: allPost(filter: { collection: { eq: "recipes" } }) {
@@ -16,12 +17,26 @@ export const query = graphql`
         ...PostMeta
       }
     }
+    projects: allCategory(filter: { collection: { eq: "projects" } }) {
+      nodes {
+        id
+        slug
+        postCount
+        coverImage {
+          childImageSharp {
+            fluid(maxWidth: 300) {
+              ...GatsbyImageSharpFluid_tracedSVG
+            }
+          }
+        }
+      }
+    }
     testimonials: allPost(filter: { collection: { eq: "testimonials" } }) {
       nodes {
         ...PostMeta
       }
     }
-    allCategory(
+    recipesCategories: allCategory(
       filter: { isTag: { eq: true }, collection: { eq: "recipes" } }
     ) {
       nodes {

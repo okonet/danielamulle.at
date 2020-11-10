@@ -1,4 +1,5 @@
 module.exports = {
-  recipesPath: `recipes`,
   blogPath: `posts`,
+  projectsPath: `projects`,
+  recipesPath: `recipes`,
 }

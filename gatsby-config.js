@@ -23,7 +23,7 @@ module.exports = {
       options: {
         basePath: "content", // This is where the content is stored
         assetPath: "assets", // Path to assets referenced in the content relative to basePath
-        collections: ["posts", "recipes", "testimonials"],
+        collections: ["posts", "recipes", "projects", "testimonials"],
       },
     },
     {

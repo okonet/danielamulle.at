@@ -8,8 +8,9 @@ import {
   recipesTheme,
   offersTheme,
   testimonialsTheme,
+  projectsTheme,
 } from "../theme"
-import { blogPath, recipesPath } from "../../paths"
+import { blogPath, projectsPath, recipesPath } from "../../paths"
 
 const pages = [
   {
@@ -37,6 +38,11 @@ const pages = [
     to: `/${blogPath}`,
     theme: blogTheme,
   },
+  // {
+  //   title: "Projekte",
+  //   to: `/${projectsPath}`,
+  //   theme: projectsTheme,
+  // },
 ]
 
 const NavLink = React.forwardRef((props, ref) => {

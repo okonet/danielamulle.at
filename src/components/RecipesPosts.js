@@ -1,25 +1,24 @@
 /* @jsx jsx */
 import React, { useCallback } from "react"
-import { Box, Container, Flex, jsx, Text, Input } from "theme-ui"
+import { Box, Container, Flex, Input, jsx, Text } from "theme-ui"
 import { useFlexSearch } from "react-use-flexsearch"
 import groupBy from "lodash.groupby"
-import SEO from "../components/seo"
 import Group from "react-group"
-import Layout from "../components/layout"
 import { recipesTheme } from "../theme"
 import Link from "./Link"
 import Tag from "./Tag"
-import Content from "../../content/sections/recipes.mdx"
+import Content, * as meta from "../../content/sections/recipes.mdx"
 import RecipesList from "./RecipesList"
+import PageLayout from "./PageLayout"
 
 const RecipesPosts = ({ data, location, navigate }) => {
-  const { allCategory, recipes, localSearchRecipes } = data
+  const { recipesCategories, recipes, localSearchRecipes } = data
   const searchParams = new URLSearchParams(location.search)
   const query = searchParams.get("q") || ""
   const { index, store } = localSearchRecipes
   const results = useFlexSearch(query, index, JSON.parse(store))
   const resIds = results.map((res) => res.id)
-  const tags = allCategory.nodes
+  const tags = recipesCategories.nodes
   const filteredRecipes = query
     ? recipes.nodes.filter((recipe) => resIds.includes(recipe.id))
     : recipes.nodes
@@ -41,67 +40,60 @@ const RecipesPosts = ({ data, location, navigate }) => {
   })
 
   return (
-    <Layout theme={recipesTheme}>
-      <SEO title="Rezepte" />
-
-      <Container>
-        <Box sx={{ display: ["none", "block"] }}>
-          <Content />
-        </Box>
-        <Flex
-          as="aside"
+    <PageLayout theme={recipesTheme} title={meta._frontmatter.title}>
+      <Box sx={{ display: ["none", "block"] }}>
+        <Content />
+      </Box>
+      <Flex
+        as="aside"
+        sx={{
+          my: 3,
+          flexWrap: "wrap",
+          alignItems: "baseline",
+        }}
+      >
+        <Input
+          type="search"
+          value={query}
+          onChange={handleChange}
+          placeholder="Filter nach Zutaten..."
           sx={{
-            my: 3,
-            flexWrap: "wrap",
-            alignItems: "baseline",
+            p: 1,
+            fontSize: 0,
+            width: ["100%", 225],
+          }}
+        />
+        <Text
+          sx={{
+            display: ["none", "block"],
+            mx: 2,
+            fontSize: 0,
+            color: "secondary",
           }}
         >
-          <Input
-            type="search"
-            value={query}
-            onChange={handleChange}
-            placeholder="Filter nach Zutaten..."
-            sx={{
-              p: 1,
-              fontSize: 0,
-              width: ["100%", 225],
-            }}
-          />
-          <Text
-            sx={{
-              display: ["none", "block"],
-              mx: 2,
-              fontSize: 0,
-              color: "secondary",
-            }}
-          >
-            {" oder wähle eine Kategorie: "}
-          </Text>
-          {tags && (
-            <Group as="nav" separator={" "}>
-              {tags.map((tag) => (
-                <Tag key={tag.id} sx={{ my: 1, mr: 2, color: "text" }}>
-                  <Link to={tag.slug} key={tag.id}>
-                    {tag.id}
-                  </Link>
-                  <Text as="span" sx={{ pl: 1, fontSize: 0, color: "muted" }}>
-                    ×
-                  </Text>
-                  <Text
-                    as="span"
-                    sx={{ pl: 1, fontSize: 0, color: "secondary" }}
-                  >
-                    {tag.postCount}
-                  </Text>
-                </Tag>
-              ))}
-            </Group>
-          )}
-        </Flex>
-      </Container>
+          {" oder wähle eine Kategorie: "}
+        </Text>
+        {tags && (
+          <Group as="nav" separator={" "}>
+            {tags.map((tag) => (
+              <Tag key={tag.id} sx={{ my: 1, mr: 2, color: "text" }}>
+                <Link to={tag.slug} key={tag.id}>
+                  {tag.id}
+                </Link>
+                <Text as="span" sx={{ pl: 1, fontSize: 0, color: "muted" }}>
+                  ×
+                </Text>
+                <Text as="span" sx={{ pl: 1, fontSize: 0, color: "secondary" }}>
+                  {tag.postCount}
+                </Text>
+              </Tag>
+            ))}
+          </Group>
+        )}
+      </Flex>
 
       <RecipesList recipes={groupedRecipes} />
-    </Layout>
+    </PageLayout>
   )
 }
 
