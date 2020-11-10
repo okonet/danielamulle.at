@@ -1,19 +1,9 @@
 /* @jsx jsx */
 import React from "react"
-import {
-  Box,
-  Container,
-  Flex,
-  Grid,
-  jsx,
-  Styled,
-  ThemeProvider,
-} from "theme-ui"
+import { Box, Flex, Grid, jsx, Styled, ThemeProvider } from "theme-ui"
 import { graphql, useStaticQuery } from "gatsby"
-import Home from "../../content/sections/home.mdx"
+import Home, { _frontmatter } from "../../content/sections/home.mdx"
 import { blogTheme, homeTheme, recipesTheme } from "../theme"
-import SEO from "../components/seo"
-import Layout from "../components/layout"
 import PostCard from "../components/PostCard"
 import Link from "../components/Link"
 import { blogPath, recipesPath } from "../../paths"
@@ -50,7 +40,12 @@ const IndexPage = () => {
     }
   `)
   return (
-    <PageLayout theme={homeTheme}>
+    <PageLayout
+      theme={homeTheme}
+      heading={
+        <Styled.h1 sx={{ my: 0, mb: -4 }}>{_frontmatter.title}</Styled.h1>
+      }
+    >
       <Flex
         sx={{
           flexDirection: ["column", "row"],
@@ -86,6 +81,7 @@ const IndexPage = () => {
         <Box
           sx={{
             display: "block",
+            mt: -4,
             pb: 4,
             flex: 1,
             "& > p:first-of-type": {
@@ -98,45 +94,41 @@ const IndexPage = () => {
       </Flex>
 
       <ThemeProvider theme={recipesTheme}>
-        <Container>
-          <Styled.h2>
-            Letzte{" "}
-            <Link to={`/${recipesPath}`} sx={{ color: "inherit" }}>
-              Rezepte
-            </Link>
-          </Styled.h2>
-          <Grid gap={3} columns={[1, 3]} sx={{ my: 3 }}>
-            {data.latestRecipes.nodes.map(({ slug, coverImage, title }) => (
-              <PostCard
-                key={slug}
-                slug={slug}
-                coverImage={coverImage}
-                title={title}
-              />
-            ))}
-          </Grid>
-        </Container>
+        <Styled.h2>
+          Letzte{" "}
+          <Link to={`/${recipesPath}`} sx={{ color: "inherit" }}>
+            Rezepte
+          </Link>
+        </Styled.h2>
+        <Grid gap={3} columns={[1, 3]} sx={{ my: 3, mx: [0, 0, -4] }}>
+          {data.latestRecipes.nodes.map(({ slug, coverImage, title }) => (
+            <PostCard
+              key={slug}
+              slug={slug}
+              coverImage={coverImage}
+              title={title}
+            />
+          ))}
+        </Grid>
       </ThemeProvider>
 
       <ThemeProvider theme={blogTheme}>
-        <Container>
-          <Styled.h2>
-            Aktuell im{" "}
-            <Link to={`/${blogPath}`} sx={{ color: "inherit" }}>
-              Blog
-            </Link>
-          </Styled.h2>
-          <Grid gap={3} columns={[1, 3]} sx={{ my: 3 }}>
-            {data.latestBlogPosts.nodes.map(({ slug, coverImage, title }) => (
-              <PostCard
-                key={slug}
-                slug={slug}
-                coverImage={coverImage}
-                title={title}
-              />
-            ))}
-          </Grid>
-        </Container>
+        <Styled.h2>
+          Aktuell im{" "}
+          <Link to={`/${blogPath}`} sx={{ color: "inherit" }}>
+            Blog
+          </Link>
+        </Styled.h2>
+        <Grid gap={3} columns={[1, 3]} sx={{ my: 3, mx: [0, 0, -4] }}>
+          {data.latestBlogPosts.nodes.map(({ slug, coverImage, title }) => (
+            <PostCard
+              key={slug}
+              slug={slug}
+              coverImage={coverImage}
+              title={title}
+            />
+          ))}
+        </Grid>
       </ThemeProvider>
     </PageLayout>
   )
