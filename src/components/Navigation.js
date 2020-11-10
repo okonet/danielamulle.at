@@ -34,14 +34,14 @@ const pages = [
     theme: recipesTheme,
   },
   {
-    title: "Projekte",
-    to: `/${projectsPath}`,
-    theme: projectsTheme,
-  },
-  {
     title: "Blog",
     to: `/${blogPath}`,
     theme: blogTheme,
+  },
+  {
+    title: "Projekte",
+    to: `/${projectsPath}`,
+    theme: projectsTheme,
   },
 ]
 
