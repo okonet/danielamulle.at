@@ -41,7 +41,7 @@ export default ({ data, pageContext, location }) => {
         />
       }
       heading={
-        <>
+        <Box sx={{ mx: [0, 0, -4] }}>
           <Box
             as="nav"
             sx={{
@@ -67,12 +67,12 @@ export default ({ data, pageContext, location }) => {
           >
             {title}
           </Styled.h1>
-        </>
+        </Box>
       }
     >
       <SEO ogImage={pageContext.ogImage} />
 
-      <Grid gap={4} columns={[1, 12]}>
+      <Grid gap={4} columns={[1, 12]} sx={{ mx: [0, 0, -4] }}>
         <Box
           sx={{
             gridColumnStart: [1, 1],

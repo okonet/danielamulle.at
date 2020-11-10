@@ -35,7 +35,7 @@ const theme = {
   space: [0, 4, 8, 16, 32, 64, 128],
   colors: {
     text: palette.gray[1],
-    background: palette.gray[6],
+    background: palette.white,
     primary: palette.cyan[3],
     accent: palette.cyan[2],
     secondary: palette.gray[3],
@@ -219,8 +219,8 @@ const theme = {
       flexGrow: 1,
       maxWidth: 984, // 12 x (70px + 16px gap)
       py: [3, 4],
-      px: [3, 4, 72],
-      mt: [0, -4],
+      px: [3, 4, 5],
+      mt: [0, -3],
       bg: "sectionBg",
       borderRadius: ["none", "none", "medium"],
       zIndex: 1,
@@ -323,10 +323,11 @@ export const homeTheme = {
   ...theme,
   colors: {
     ...theme.colors,
-    background: palette.white,
-    headerBg: palette.green[5],
+    background: palette.gray[6],
+    sectionBg: palette.gray[6],
+    headerBg: palette.gray[6],
   },
-  coverSrc: unsplashURL("HMSRWdQn5jM"),
+  // coverSrc: unsplashURL("HMSRWdQn5jM"),
 }
 
 export const aboutTheme = {
@@ -339,7 +340,7 @@ export const aboutTheme = {
     primary: palette.pink[3],
     secondary: palette.pink[4],
     muted: palette.pink[5],
-    headerBg: palette.gray[5],
+    headerBg: palette.pink[5],
   },
   coverSrc: unsplashURL("W6cPNv8daRA"),
 }
@@ -400,6 +401,7 @@ export const recipesTheme = {
     accent: palette.teal[2],
     secondary: palette.teal[3],
     muted: palette.teal[5],
+    sectionBg: palette.beige[6],
     headerBg: palette.orange[5],
   },
   coverSrc: unsplashURL("pAnjPqQP0UQ"),
@@ -413,6 +415,7 @@ export const blogTheme = {
     background: palette.teal[6],
     accent: palette.cyan[2],
     primary: palette.cyan[2],
+    sectionBg: palette.teal[6],
     headerBg: palette.teal[5],
   },
   coverSrc: unsplashURL("j_YWoV_uzRw"),

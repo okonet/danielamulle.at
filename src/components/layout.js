@@ -22,7 +22,7 @@ const Layout = ({ theme = defaultTheme, children, mainStyles }) => {
         <Box
           as={"header"}
           sx={{
-            position: "absolute",
+            position: "relative",
             top: 0,
             py: 3,
             width: "100%",
