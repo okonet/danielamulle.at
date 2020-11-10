@@ -1,8 +1,6 @@
 /* @jsx jsx */
 import React from "react"
-import { Container, Grid, jsx } from "theme-ui"
-import SEO from "../components/seo"
-import Layout from "../components/layout"
+import { Grid, jsx } from "theme-ui"
 import { blogTheme } from "../theme"
 import PostCard from "./PostCard"
 import Content, * as meta from "../../content/sections/blog.mdx"
