@@ -4,7 +4,6 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Section from "../components/Section"
 import { Container, jsx, Styled } from "theme-ui"
-import CoverImage from "./CoverImage"
 
 export default ({
   title,
@@ -48,6 +47,7 @@ export default ({
           display: "flex",
           pt: [6, 5],
           pb: [3, 5],
+          mt: -6,
           backgroundColor: "headerBg",
           minHeight: [200, 280],
           alignItems: "flex-end",

@@ -11,6 +11,7 @@ import SEO from "./seo"
 import CoverImage from "./CoverImage"
 import ShareButtons from "./ShareButtons"
 import TagList from "./TagList"
+import PageLayout from "./PageLayout"
 
 export default ({ data, pageContext, location }) => {
   const { post, site } = data
@@ -25,71 +26,69 @@ export default ({ data, pageContext, location }) => {
   } = post
   const pageUrl = location.href ? location.href : site.siteMetadata.url
   return (
-    <Layout theme={blogTheme}>
-      <SEO title={title} ogImage={pageContext.ogImage} />
-      <CoverImage
-        fluid={coverImage.childImageSharp.fluid}
-        author={coverImageAuthor || "Andrey Okonetchnikov"}
-        url={coverImageLink || "https://okonet.ru"}
-      />
-      <Container variant="section">
-        <Grid gap={4} columns={[1, 12]}>
-          <Grid
-            gap={2}
-            sx={{
-              gridColumnStart: [1, 1],
-              gridColumnEnd: [1, 12],
-            }}
-          >
-            <Box
-              as="nav"
-              sx={{
-                color: "muted",
-                fontSize: 0,
-              }}
-            >
-              <Group separator=" → ">
-                <Link to={`/${blogPath}`}>← Alle Blog Einträge</Link>
-              </Group>
-            </Box>
-            <Styled.h1
-              sx={{
-                mt: 1,
-                ":first-letter": { textTransform: "uppercase" },
-              }}
-            >
-              {title}
-            </Styled.h1>
-          </Grid>
-
+    <PageLayout
+      theme={blogTheme}
+      title={title}
+      coverImage={
+        <CoverImage
+          fluid={coverImage.childImageSharp.fluid}
+          author={coverImageAuthor || "Andrey Okonetchnikov"}
+          url={coverImageLink || "https://okonet.ru"}
+        />
+      }
+      heading={
+        <Box sx={{ mx: [0, 0, -4] }}>
           <Box
+            as="nav"
             sx={{
-              gridColumnStart: [1, 1],
-              gridColumnEnd: [1, 10],
-              "& > p:first-of-type": {
-                variant: "textStyles.lead",
-              },
+              color: "muted",
+              fontSize: 0,
             }}
           >
-            <MDXRenderer>{body}</MDXRenderer>
+            <Group separator=" → ">
+              <Link to={`/${blogPath}`}>← Alle Blog Einträge</Link>
+            </Group>
           </Box>
-
-          <Box
-            as="aside"
+          <Styled.h1
             sx={{
-              my: 3,
-              gridColumn: [1, "10 / span 3"],
-              gridRow: [3, 2],
+              mt: 1,
+              ":first-letter": { textTransform: "uppercase" },
             }}
           >
-            <Styled.h3 sx={{ m: 0, mr: 2 }}>Veröffentlicht am</Styled.h3>
-            <Styled.p>{date}</Styled.p>
+            {title}
+          </Styled.h1>
+        </Box>
+      }
+    >
+      <SEO ogImage={pageContext.ogImage} />
 
-            <TagList tags={categories} />
-            <ShareButtons pageUrl={pageUrl} title={title} />
-          </Box>
-        </Grid>
-      </Container>
-    </Layout>
+      <Grid gap={4} columns={[1, 12]} sx={{ mx: [0, 0, -4] }}>
+        <Box
+          sx={{
+            gridColumnStart: [1, 1],
+            gridColumnEnd: [1, 11],
+            "& > p:first-of-type": {
+              variant: "textStyles.lead",
+            },
+          }}
+        >
+          <MDXRenderer>{body}</MDXRenderer>
+        </Box>
+
+        <Box
+          as="aside"
+          sx={{
+            my: 3,
+            gridColumn: [1, 1, "11 / span 2"],
+          }}
+        >
+          <Styled.h3 sx={{ m: 0, mr: 2 }}>Veröffentlicht am</Styled.h3>
+          <Styled.p>{date}</Styled.p>
+
+          <TagList tags={categories} />
+          <ShareButtons pageUrl={pageUrl} title={title} />
+        </Box>
+      </Grid>
+    </PageLayout>
   )
 }
