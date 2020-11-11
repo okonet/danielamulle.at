@@ -3,7 +3,7 @@ categories:
   - value: Diätologische Jahresstart
     label: Diätologische Jahresstart
 title: Nährstoffmangel durch vegane Ernährung?
-date: 2020-11-11T18:45:35.116Z
+date: 2021-01-10T05:00:00.000Z
 coverImage: ../assets/mitbauchgefuehl_rezept.jpg
 coverImageAuthor: Verena Lang & Cora Sommer
 coverImageLink: mitbauchgefuehl.at
