@@ -8,4 +8,8 @@ coverImage: ../assets/böhm_l-rezept.jpg
 coverImageAuthor: Lena Böhm
 coverImageLink: "www.lb-diaetologie.com "
 ---
-Rheumatoide Arthritis ist eine wohlbekannte chronisch-entzündliche Erkrankung. Weniger bekannt ist jedoch, dass wir mit unserer Ernährung Einfluss auf das Entzündungsgeschehen nehmen können. In diesem Artikel erfährst du, mit welchen gezielten Essentscheidungen du deine rheumatischen Symptome positiv beeinflussen kannst.
+Rheumatoide Arthritis ist eine wohlbekannte chronisch-entzündliche Erkrankung. Weniger bekannt ist jedoch, dass wir mit unserer Ernährung Einfluss auf das Entzündungsgeschehen nehmen können. 
+
+In diesem Artikel erfährst du, mit welchen gezielten Essentscheidungen du deine rheumatischen Symptome positiv beeinflussen kannst.
+
+Und zum Nachkochen gibt's leckere Spaghetti mit Linsensugo.
