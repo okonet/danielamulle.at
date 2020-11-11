@@ -3,7 +3,7 @@ categories:
   - value: Diätologische Jahresstart
     label: Diätologische Jahresstart
 title: Untergewicht bei Kindern
-date: 2021-01-01T19:56:46.101Z
+date: 2021-01-01T05:00:00.000Z
 coverImage: ../assets/böhm-b_rezept.jpg
 coverImageAuthor: Brigitte Böhm Klabischnig
 coverImageLink: www.klabischnig.at
