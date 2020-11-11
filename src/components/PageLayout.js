@@ -1,25 +1,40 @@
 /* @jsx jsx */
 import React from "react"
+import { useLocation } from "@reach/router"
+import { Container, jsx, Styled } from "theme-ui"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Section from "../components/Section"
-import { Container, jsx, Styled } from "theme-ui"
+import OgImage from "../components/OgImage"
+import CoverImage from "./CoverImage"
 
 export default ({
   title,
   heading,
   coverImage,
+  coverImageAuthor = "Andrey Okonetchnikov",
+  coverImageLink = "https://okonet.ru",
   children,
   theme,
   blendMode = "screen",
   sx,
   ...props
 }) => {
+  const { search } = useLocation()
+  if (search.includes("ogImage")) {
+    return <OgImage title={title} coverImage={coverImage} />
+  }
   if (coverImage) {
     return (
       <Layout theme={theme}>
-        <SEO title={title} />
-        {coverImage}
+        <SEO title={title} ogImage={true} />
+        {coverImage && (
+          <CoverImage
+            fluid={coverImage.childImageSharp.fluid}
+            author={coverImageAuthor}
+            url={coverImageLink}
+          />
+        )}
         <Container variant="section">
           {heading ? (
             heading

@@ -8,11 +8,10 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { Box, Container, Flex, ThemeProvider } from "theme-ui"
-import { transparentize } from "@theme-ui/color"
 import Logo from "./Logo"
 import Navigation from "./Navigation"
 import Footer from "./Footer"
-import { default as defaultTheme, footerTheme } from "../theme"
+import { default as defaultTheme } from "../theme"
 import SubscribeForm from "./SubscribeForm"
 
 const Layout = ({ theme = defaultTheme, children, mainStyles }) => {

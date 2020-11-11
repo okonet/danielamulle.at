@@ -13,6 +13,7 @@ import Group from "react-group"
 import Tag from "./Tag"
 import ShareButtons from "./ShareButtons"
 import TagList from "./TagList"
+import PageLayout from "./PageLayout"
 
 const ProjectsPostPage = ({ data, pageContext, location }) => {
   const { post, site } = data
@@ -29,15 +30,14 @@ const ProjectsPostPage = ({ data, pageContext, location }) => {
   const pageUrl = location.href ? location.href : site.siteMetadata.url
   const tags = categories.filter((cat) => cat.isTag)
   return (
-    <Layout theme={projectsTheme}>
-      <SEO title={title} ogImage={pageContext.ogImage} />
-      <CoverImage
-        fluid={coverImage.childImageSharp.fluid}
-        author={coverImageAuthor}
-        url={coverImageLink}
-      />
-      <Container variant="section">
-        <Grid gap={4} columns={[1, 12]}>
+    <PageLayout
+      theme={projectsTheme}
+      title={title}
+      coverImage={coverImage}
+      coverImageAuthor={coverImageAuthor}
+      coverImageLink={coverImageLink}
+      heading={
+        <Box sx={{ mx: [0, 0, -4] }}>
           <Box
             as="nav"
             sx={{ color: "muted", fontSize: 0, gridColumn: [1, "1 / span 10"] }}
@@ -54,49 +54,51 @@ const ProjectsPostPage = ({ data, pageContext, location }) => {
           >
             {title}
           </Styled.h1>
+        </Box>
+      }
+    >
+      <Grid gap={4} columns={[1, 12]} sx={{ mx: [0, 0, -4] }}>
+        <Box
+          sx={{
+            gridColumnStart: [1, 1],
+            gridColumnEnd: [1, 11],
+            "& > p:first-of-type": {
+              variant: "textStyles.lead",
+            },
+          }}
+        >
+          <MDXRenderer>{body}</MDXRenderer>
+        </Box>
 
+        <Box
+          as="aside"
+          sx={{
+            my: 0,
+            gridColumn: [1, 1, "11 / span 2"],
+          }}
+        >
           <Box
             sx={{
-              gridColumnStart: [1, 1],
-              gridColumnEnd: [1, 10],
-              "& > p:first-of-type": {
-                variant: "textStyles.lead",
+              "@media print": {
+                display: "none",
               },
             }}
           >
-            <MDXRenderer>{body}</MDXRenderer>
+            <Styled.h3>
+              <InfoIcon width={17} sx={{ mr: 1, mb: -1 }} />
+              Author
+            </Styled.h3>
+            <Styled.p>
+              <Styled.a href={coverImageLink}>{coverImageAuthor}</Styled.a>
+            </Styled.p>
           </Box>
 
-          <Box
-            as="aside"
-            sx={{
-              gridColumn: [1, "10 / span 3"],
-              gridRow: [4, "3 / span 2"],
-            }}
-          >
-            <Box
-              sx={{
-                "@media print": {
-                  display: "none",
-                },
-              }}
-            >
-              <Styled.h3>
-                <InfoIcon width={17} sx={{ mr: 1, mb: -1 }} />
-                Author
-              </Styled.h3>
-              <Styled.p>
-                <Styled.a href={coverImageLink}>{coverImageAuthor}</Styled.a>
-              </Styled.p>
-            </Box>
+          <TagList tags={tags} />
 
-            <TagList tags={tags} />
-
-            <ShareButtons pageUrl={pageUrl} title={title} />
-          </Box>
-        </Grid>
-      </Container>
-    </Layout>
+          <ShareButtons pageUrl={pageUrl} title={title} />
+        </Box>
+      </Grid>
+    </PageLayout>
   )
 }
 
