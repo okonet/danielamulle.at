@@ -1,9 +1,9 @@
 import React from "react"
 import Img from "gatsby-image"
+import { graphql, useStaticQuery } from "gatsby"
 import { Box, Flex, Text, ThemeProvider } from "theme-ui"
 import { transparentize } from "@theme-ui/color"
-import theme, { palette } from "../../theme"
-import { graphql, useStaticQuery } from "gatsby"
+import theme, { palette } from "../theme"
 
 function Logo() {
   const data = useStaticQuery(graphql`
@@ -68,7 +68,7 @@ function Logo() {
   )
 }
 
-export default function({ coverImage, slug, title, ...props }) {
+export default function({ coverImage, title, ...props }) {
   const gradient = () => (theme) => {
     return `linear-gradient(45deg,
             ${transparentize("teal.3", 0.5)(theme)}, 
