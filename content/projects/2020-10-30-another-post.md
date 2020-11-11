@@ -2,13 +2,12 @@
 categories:
   - value: Diätologische Jahresstart
     label: Diätologische Jahresstart
-title: Another Post
+title: Untergewicht bei Kindern
 date: 2021-01-01T19:56:46.101Z
-coverImage: ../assets/20200509-DSC02635.jpg
-coverImageAuthor: Daniela Mulle
-coverImageLink: https://danielamulle.at
+coverImage: ../assets/böhm-b_rezept.jpg
+coverImageAuthor: Brigitte Böhm Klabischnig
+coverImageLink: www.klabischnig.at
 ---
+Ist mein Kind untergewichtig? Dein Kind isst gerade Miniportionen. Oder es mag nur mehr eine bestimmte Speise und sonst nix. Und warum ist das Kind meiner Freundin so ein guter Esser? Viele Eltern machen sich Sorgen, weil ihr Kind vermeintlich nicht gut isst und ihnen untergewichtig erscheint.
 
-Dein Körper besteht zu > 50 % aus Wasser. Es spielt eine zentrale Rolle: als Transporter, Lösungsmittel aber auch zur Kühlung durch Schwitzen.
 
-Trinkst du zu wenig, wird dein Blut dickflüssiger, Muskeln & Gehirn werden weniger gut mit Sauerstoff & Nährstoffen versorgt. Du wirst müde, unkonzentriert, und bringst bei deiner Arbeit, in Schule oder Uni und auch beim Sport nicht mehr deine gewohnte Leistung. Außerdem kann dein Körper Abbauprodukte über die Nieren nicht mehr vollständig loswerden.
