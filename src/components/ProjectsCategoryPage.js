@@ -17,7 +17,6 @@ import {
 } from "date-fns"
 import { projectsTheme } from "../theme"
 import PageLayout from "./PageLayout"
-import CoverImage from "./CoverImage"
 import CalendarCard from "./CalendarCard"
 
 const defaultOptions = {
@@ -85,13 +84,9 @@ const ProjectsCategoryPage = ({ data }) => {
     <PageLayout
       theme={projectsTheme}
       title={`${category.id}`}
-      coverImage={
-        <CoverImage
-          fluid={coverImage.childImageSharp.fluid}
-          author={coverImageAuthor}
-          url={coverImageLink}
-        />
-      }
+      coverImage={coverImage}
+      coverImageAuthor={coverImageAuthor}
+      coverImageLink={coverImageLink}
     >
       <section dangerouslySetInnerHTML={{ __html: description }} />
       <Grid gap={2} columns={[2, 3, 4]} sx={{ my: 4, mx: [2, 0, -4], p: 0 }}>

@@ -34,7 +34,7 @@
     "babel-preset-gatsby": "^0.4.7",
     "gatsby-plugin-local-search": "^1.1.1",
     "gatsby-plugin-mdx": "^1.1.4",
-    "gatsby-theme-content-collections": "^2.0.1",
+    "gatsby-theme-content-collections": "^2.1.0",
     "husky": ">=4",
     "lint-staged": ">=10",
     "mdast-util-to-string": "^1.1.0",
