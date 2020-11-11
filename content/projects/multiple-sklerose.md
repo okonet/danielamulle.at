@@ -1,0 +1,13 @@
+---
+categories:
+  - value: Diätologische Jahresstart
+    label: Diätologische Jahresstart
+title: Multiple Sklerose
+date: 2021-01-17T21:10:06.846Z
+coverImage: ../assets/prammer_c-rezept.jpg
+coverImageAuthor: Caroline Prammer
+coverImageLink: www.praxis-ernaehrung.at
+---
+In der Literatur finden sich verschiedene Ernährungsempfehlungen beim Erkrankungsbild Multiple Sklerose, mit dafür teilweise eigens aufgestellten MS-Diäten. Bei dieser Erkrankung zählen als Grundlage aber ebenso die allgemeinen Empfehlungen einer gesunden Ernährungsweise wie für gesunde Menschen. Es verändern sich aber die Schwerpunkte und Mengen ausgewählter Lebensmittelgruppen. 
+
+Dieser Artikel gibt einen ersten Einblick darüber, und zum Nachkochen gibt's ein Rezept für eine köstliche Gemüsepfanne mit Sesamreis, Lachs und Kräutersauce.
