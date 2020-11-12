@@ -1,7 +1,7 @@
 import React from "react"
 import Img from "gatsby-image"
 import { graphql, useStaticQuery } from "gatsby"
-import { Box, Flex, Text, ThemeProvider } from "theme-ui"
+import { AspectRatio, Box, Flex, Text, ThemeProvider } from "theme-ui"
 import { transparentize } from "@theme-ui/color"
 import theme, { palette } from "../theme"
 
@@ -16,7 +16,7 @@ function Logo() {
       }
       image: file(relativePath: { eq: "logo@2x.png" }) {
         childImageSharp {
-          fixed(width: 128) {
+          fixed(width: 256) {
             ...GatsbyImageSharpFixed
           }
         }
@@ -68,7 +68,12 @@ function Logo() {
   )
 }
 
-export default function({ coverImage, title, ...props }) {
+export default function({
+  coverImage,
+  title,
+  width = "100vw",
+  height = "100vh",
+}) {
   const gradient = () => (theme) => {
     return `linear-gradient(45deg,
             ${transparentize("teal.3", 0.5)(theme)}, 
@@ -78,73 +83,61 @@ export default function({ coverImage, title, ...props }) {
 
   const ogTheme = {
     ...theme,
-    space: [0, "2vmin", "3vmin", "4vmin", "5vmin"],
-    fontSizes: ["3vmin", "4vmin", "8vmin", "4vmin", "5vmin"],
+    space: [0, "2rem", "3rem", "4rem", "5rem"],
+    fontSizes: ["1.25rem", "3rem", "5rem", "7rem", "9rem"],
     colors: {
       ...palette,
+      text: "white",
+      secondary: "white",
     },
   }
   return (
     <ThemeProvider theme={ogTheme}>
-      <Flex
+      <AspectRatio
+        ratio={width / height}
         sx={{
-          flexDirection: "column",
-          width: "100vw",
-          height: "100vh",
+          width,
+          height,
         }}
       >
-        {coverImage && (
-          <Img
-            fluid={coverImage.childImageSharp.fluid}
-            fadeIn={false}
-            backgroundColor="#1e5f92"
-            className="image"
-            loading="eager"
-          />
-        )}
+        <Box
+          sx={{
+            position: "absolute",
+            left: 0,
+            top: 0,
+            width: "100%",
+            height: "100%",
+            backgroundImage: `url(${coverImage.childImageSharp.fluid.src})`,
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover",
+            backgroundPosition: "center center",
+          }}
+        />
         <Flex
           sx={{
-            flexDirection: "column",
             position: "absolute",
-            top: 0,
             left: 0,
-            width: "100vw",
-            height: "100vh",
+            top: 0,
+            flexDirection: "column",
+            justifyContent: "space-between",
+            py: 1,
+            px: 2,
+            width,
+            height,
             backgroundImage: gradient,
           }}
         >
-          <Box
+          <Logo />
+          <Text
             sx={{
-              flex: 1,
-              p: "10vmin",
+              variant: "textStyles.sectionTitle",
+              fontSize: 2,
             }}
           >
-            <ThemeProvider
-              theme={{
-                ...ogTheme,
-                colors: {
-                  text: "white",
-                  secondary: "white",
-                },
-              }}
-            >
-              <Logo />
-            </ThemeProvider>
-          </Box>
-          <Box>
-            <Text
-              sx={{
-                variant: "textStyles.sectionTitle",
-                fontSize: 2,
-                my: 0,
-                p: "10vmin",
-              }}
-            >
-              <Text sx={{ color: "background" }}>{title}</Text>
-            </Text>
-          </Box>
+            {title}
+          </Text>
         </Flex>
-      </Flex>
+      </AspectRatio>
     </ThemeProvider>
   )
 }
