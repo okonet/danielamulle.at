@@ -5,7 +5,7 @@ import { Container, jsx, Styled } from "theme-ui"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Section from "../components/Section"
-import OgImage from "../components/OgImage"
+import SocialImage from "./SocialImage"
 import CoverImage from "./CoverImage"
 
 export default ({
@@ -22,7 +22,24 @@ export default ({
 }) => {
   const { search } = useLocation()
   if (search.includes("ogImage")) {
-    return <OgImage title={title} coverImage={coverImage} />
+    return (
+      <SocialImage
+        title={title}
+        coverImage={coverImage}
+        width={1012}
+        height={506}
+      />
+    )
+  }
+  if (search.includes("instagram")) {
+    return (
+      <SocialImage
+        title={title}
+        coverImage={coverImage}
+        width={1080}
+        height={1080}
+      />
+    )
   }
   if (coverImage) {
     return (

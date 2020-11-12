@@ -6,6 +6,9 @@ import Group from "react-group"
 import Link from "./Link"
 import { graphql, useStaticQuery } from "gatsby"
 import ContactInfo from "./ContactInfo"
+import { Grid } from "@theme-ui/components"
+import FacebookIcon from "./FacebookIcon"
+import InstagramIcon from "./InstagramIcon"
 
 function Footer() {
   const { site } = useStaticQuery(graphql`
@@ -15,6 +18,7 @@ function Footer() {
           title
           author
           authorDegree
+          socialHandle
         }
       }
     }
@@ -27,16 +31,42 @@ function Footer() {
           sx={{ bg: "transparent", color: "secondary", fontSize: 0 }}
         >
           <Box sx={{ display: ["block", "flex"], alignItems: "flex-end" }}>
-            <Box sx={{ flex: 1 }}>
+            <Grid gap={1} sx={{ flex: 1, "> p": { m: 0 } }}>
               <Styled.p>
                 <ContactInfo type="phone" />
-                <br />
-                <ContactInfo type="email" />
-                <br />© {site.siteMetadata.authorDegree}{" "}
-                {site.siteMetadata.author}, {new Date().getFullYear()}
               </Styled.p>
-            </Box>
-            <Box sx={{ textAlign: ["left", "right"] }}>
+              <Styled.p>
+                <ContactInfo type="email" />
+              </Styled.p>
+              <Styled.p>
+                <Styled.a
+                  href={`https://facebook.com/${site.siteMetadata.socialHandle}`}
+                >
+                  <FacebookIcon /> {site.siteMetadata.socialHandle}
+                </Styled.a>
+              </Styled.p>
+              <Styled.p>
+                <Styled.a
+                  href={`https://instagram.com/${site.siteMetadata.socialHandle}`}
+                >
+                  <InstagramIcon /> {site.siteMetadata.socialHandle}
+                </Styled.a>
+              </Styled.p>
+            </Grid>
+            <Grid
+              gap={2}
+              sx={{ textAlign: ["left", "right"], "> p": { m: 0 } }}
+            >
+              <Styled.p>
+                Made with ♡ by{" "}
+                <Styled.a href="https://component-driven.io">
+                  Component-Driven
+                </Styled.a>
+              </Styled.p>
+              <Styled.p>
+                © {site.siteMetadata.authorDegree} {site.siteMetadata.author},{" "}
+                {new Date().getFullYear()}
+              </Styled.p>
               <Box
                 css={{
                   "@media print": {
@@ -49,13 +79,7 @@ function Footer() {
                   <Link to="/datenschutz">Datenschutz</Link>
                 </Group>
               </Box>
-              <Styled.p>
-                Made with ♡ by{" "}
-                <Styled.a href="https://component-driven.io">
-                  Component-Driven
-                </Styled.a>
-              </Styled.p>
-            </Box>
+            </Grid>
           </Box>
         </Container>
       </Box>

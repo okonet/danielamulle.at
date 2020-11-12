@@ -44,7 +44,8 @@ function SEO({ description, lang, meta, title, ogImage }) {
   const ogImagePath = ogImage
     ? `${openGraphService}api/screenshot?url=${canonicalURL}?ogImage`
     : src
-  let siteTitle = title || site.siteMetadata.title
+
+  const siteTitle = title || site.siteMetadata.title
   return (
     <Helmet
       htmlAttributes={{
