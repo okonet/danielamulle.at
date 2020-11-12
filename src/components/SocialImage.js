@@ -6,15 +6,16 @@ import { transparentize } from "@theme-ui/color"
 import theme, { palette } from "../theme"
 
 function Logo() {
-  const data = useStaticQuery(graphql`
+  const { site, logo } = useStaticQuery(graphql`
     query {
       site {
         siteMetadata {
           author
           role
+          socialHandle
         }
       }
-      image: file(relativePath: { eq: "logo@2x.png" }) {
+      logo: file(relativePath: { eq: "logo@2x.png" }) {
         childImageSharp {
           fixed(width: 256) {
             ...GatsbyImageSharpFixed
@@ -34,7 +35,7 @@ function Logo() {
       <Img
         loading="eager"
         fadeIn={false}
-        fixed={data.image.childImageSharp.fixed}
+        fixed={logo.childImageSharp.fixed}
         alt="Logo"
       />
       <Box sx={{ ml: 1 }}>
@@ -48,7 +49,7 @@ function Logo() {
             lineHeight: 1,
           }}
         >
-          {data.site.siteMetadata.role}
+          {site.siteMetadata.role}
         </Text>
         <Text
           as="h1"
@@ -61,7 +62,17 @@ function Logo() {
             fontSize: 2,
           }}
         >
-          {data.site.siteMetadata.author}
+          {site.siteMetadata.author}
+        </Text>
+        <Text
+          as="h2"
+          sx={{
+            variant: "textStyles.subHeading",
+            color: "text",
+            fontSize: 1,
+          }}
+        >
+          @{site.siteMetadata.socialHandle}
         </Text>
       </Box>
     </Box>
