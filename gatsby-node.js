@@ -1,3 +1,5 @@
+const babel = require("@babel/core")
+const mdx = require("@mdx-js/mdx")
 const visit = require("unist-util-visit")
 const toString = require("mdast-util-to-string")
 
@@ -15,6 +17,25 @@ const mdxResolver = (fieldName) => async (source, args, context, info) => {
 
 exports.createResolvers = ({ createResolvers }) => {
   createResolvers({
+    Category: {
+      description: {
+        type: "String",
+        async resolve(source) {
+          const { description } = source
+          if (description) {
+            const code = await mdx(description)
+            const res = await babel.transformAsync(code, {
+              presets: ["babel-preset-gatsby"],
+            })
+            return res.code
+              .replace("exports.__esModule = true;", "")
+              .replace("exports.default = MDXContent;", "")
+              .replace("function MDXContent", "return function MDXContent")
+          }
+          return null
+        },
+      },
+    },
     Post: {
       ingredients: {
         type: "[String]",

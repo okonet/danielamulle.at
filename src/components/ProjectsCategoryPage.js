@@ -15,6 +15,7 @@ import {
   isWeekend,
   startOfWeek,
 } from "date-fns"
+import { MDXRenderer } from "gatsby-plugin-mdx"
 import { projectsTheme } from "../theme"
 import PageLayout from "./PageLayout"
 import CalendarCard from "./CalendarCard"
@@ -88,7 +89,7 @@ const ProjectsCategoryPage = ({ data }) => {
       coverImageAuthor={coverImageAuthor}
       coverImageLink={coverImageLink}
     >
-      <section dangerouslySetInnerHTML={{ __html: description }} />
+      <MDXRenderer>{description}</MDXRenderer>
       <Grid gap={2} columns={[2, 3, 4]} sx={{ my: 4, mx: [2, 0, -4], p: 0 }}>
         {state.weeks.map((week) =>
           week.map(
