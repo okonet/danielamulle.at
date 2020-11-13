@@ -6,12 +6,11 @@ import Link from "./Link"
 import { blogTheme } from "../theme"
 import { blogPath } from "../../paths"
 import Group from "react-group"
-import SEO from "./seo"
 import ShareButtons from "./ShareButtons"
 import TagList from "./TagList"
 import PageLayout from "./PageLayout"
 
-export default ({ data, pageContext, location }) => {
+export default ({ data, location }) => {
   const { post, site } = data
   const {
     body,

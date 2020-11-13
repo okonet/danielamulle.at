@@ -11,15 +11,8 @@ export default function({
   width = "100vw",
   height = "100vh",
 }) {
-  const { site, logo } = useStaticQuery(graphql`
+  const { logo } = useStaticQuery(graphql`
     query {
-      site {
-        siteMetadata {
-          author
-          role
-          socialHandle
-        }
-      }
       logo: file(relativePath: { eq: "logo@2x.png" }) {
         childImageSharp {
           fixed(width: 256) {

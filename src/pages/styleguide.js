@@ -5,7 +5,6 @@ import {
   Swatch,
   Swatches,
   SwatchToken,
-  SwatchValue,
   Typography,
 } from "@component-driven/react-design-tokens"
 import { Box, Container, Grid, Styled } from "theme-ui"

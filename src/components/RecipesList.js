@@ -1,5 +1,5 @@
 import React from "react"
-import { Box, Container, Grid, Text } from "theme-ui"
+import { Grid, Text } from "theme-ui"
 import PostCard from "./PostCard"
 
 function RecipesList({ recipes }) {

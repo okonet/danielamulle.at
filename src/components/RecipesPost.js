@@ -6,14 +6,13 @@ import Group from "react-group"
 import Link from "./Link"
 import { recipesTheme } from "../theme"
 import { recipesPath } from "../../paths"
-import SEO from "./seo"
 import InfoIcon from "./InfoIcon"
 import ClockIcon from "./ClockIcon"
 import ShareButtons from "./ShareButtons"
 import TagList from "./TagList"
 import PageLayout from "./PageLayout"
 
-export default ({ data, pageContext, location }) => {
+export default ({ data, location }) => {
   const { post, site } = data
   const {
     body,

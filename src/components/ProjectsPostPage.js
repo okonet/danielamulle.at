@@ -1,21 +1,15 @@
 /** @jsx jsx */
 import React from "react"
 import { MDXRenderer } from "gatsby-plugin-mdx"
-import { Box, Container, Grid, jsx, Styled } from "theme-ui"
-import Layout from "./layout"
+import { Box, Grid, jsx, Styled } from "theme-ui"
 import Link from "./Link"
 import { projectsTheme } from "../theme"
-import SEO from "./seo"
-import CoverImage from "./CoverImage"
 import InfoIcon from "./InfoIcon"
-import TagIcon from "./TagIcon"
-import Group from "react-group"
-import Tag from "./Tag"
 import ShareButtons from "./ShareButtons"
 import TagList from "./TagList"
 import PageLayout from "./PageLayout"
 
-const ProjectsPostPage = ({ data, pageContext, location }) => {
+const ProjectsPostPage = ({ data, location }) => {
   const { post, site } = data
   const {
     body,
