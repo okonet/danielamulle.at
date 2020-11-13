@@ -5,7 +5,12 @@ import { AspectRatio, Box, Flex, Text, ThemeProvider } from "theme-ui"
 import { transparentize } from "@theme-ui/color"
 import theme, { palette } from "../theme"
 
-function Logo() {
+export default function({
+  coverImage,
+  title,
+  width = "100vw",
+  height = "100vh",
+}) {
   const { site, logo } = useStaticQuery(graphql`
     query {
       site {
@@ -24,71 +29,10 @@ function Logo() {
       }
     }
   `)
-
-  return (
-    <Box
-      sx={{
-        display: "inline-flex",
-        alignItems: "center",
-      }}
-    >
-      <Img
-        loading="eager"
-        fadeIn={false}
-        fixed={logo.childImageSharp.fixed}
-        alt="Logo"
-      />
-      <Box sx={{ ml: 1 }}>
-        <Text
-          as="p"
-          sx={{
-            m: 0,
-            color: "secondary",
-            fontFamily: "monospace",
-            fontSize: 0,
-            lineHeight: 1,
-          }}
-        >
-          {site.siteMetadata.role}
-        </Text>
-        <Text
-          as="h1"
-          sx={{
-            m: 0,
-            color: "text",
-            fontFamily: "body",
-            fontWeight: "heading",
-            lineHeight: 1,
-            fontSize: 2,
-          }}
-        >
-          {site.siteMetadata.author}
-        </Text>
-        <Text
-          as="h2"
-          sx={{
-            variant: "textStyles.subHeading",
-            color: "text",
-            fontSize: 1,
-          }}
-        >
-          @{site.siteMetadata.socialHandle}
-        </Text>
-      </Box>
-    </Box>
-  )
-}
-
-export default function({
-  coverImage,
-  title,
-  width = "100vw",
-  height = "100vh",
-}) {
   const gradient = () => (theme) => {
     return `linear-gradient(45deg,
-            ${transparentize("teal.3", 0.5)(theme)}, 
-            ${transparentize("orange.2", 0.5)(theme)} 
+            ${transparentize("cyan.3", 0.25)(theme)},
+            ${transparentize("beige.4", 0.75)(theme)}
         )`
   }
 
@@ -138,11 +82,17 @@ export default function({
             backgroundImage: gradient,
           }}
         >
-          <Logo />
+          <Img
+            loading="eager"
+            fadeIn={false}
+            fixed={logo.childImageSharp.fixed}
+            alt="Logo"
+          />
           <Text
             sx={{
               variant: "textStyles.sectionTitle",
               fontSize: 2,
+              lineHeight: 1.125,
             }}
           >
             {title}
