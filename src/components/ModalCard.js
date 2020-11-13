@@ -17,17 +17,16 @@ const modalStyles = {
 Modal.setAppElement(`#___gatsby`);
 Modal.defaultStyles.overlay.zIndex = 2;
 
-function ModalCard(props) {
-  const { _closeModal, isOpen } = props;
+function ModalCard({ closeModal, isOpen }) {
   return (
     <div>
       <Modal
         isOpen={isOpen}
-        onRequestClose={_closeModal}
+        onRequestClose={closeModal}
         style={modalStyles}
         shouldCloseOnOverlayClick={true}
       >
-        <Close onClick={_closeModal}/>
+        <Close onClick={closeModal}/>
         <SubscribeForm />
       </Modal>
     </div>

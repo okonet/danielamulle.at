@@ -15,11 +15,7 @@ import Footer from "./Footer"
 import { default as defaultTheme, footerTheme } from "../theme"
 import SubscribeForm from "./SubscribeForm"
 
-// eslint-disable-next-line no-restricted-globals
-const _location = location;
-
-const Layout = ({ theme = defaultTheme, children, mainStyles }) => {
-  const shouldShowSubscribe = !_location.pathname.match(/projects\/\S+/ig);
+const Layout = ({ theme = defaultTheme, children, mainStyles, shouldShowSubscribe }) => {
   return (
     <ThemeProvider theme={theme}>
       <Flex sx={{ flexDirection: "column", minHeight: "100vh" }}>
@@ -60,7 +56,7 @@ const Layout = ({ theme = defaultTheme, children, mainStyles }) => {
           {children}
         </Flex>
 
-        {shouldShowSubscribe && <SubscribeForm />}
+        {!!shouldShowSubscribe && <SubscribeForm />}
 
         <Footer />
       </Flex>
@@ -70,6 +66,10 @@ const Layout = ({ theme = defaultTheme, children, mainStyles }) => {
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
+}
+
+Layout.defaultProps = {
+  shouldShowSubscribe: true,
 }
 
 export default Layout

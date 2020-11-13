@@ -17,13 +17,12 @@ CalendarCard.propTypes = {
   }),
 }
 
-function CalendarCard({ day, ...props }) {
+function CalendarCard({ day, openModal }) {
   const { dayOfMonth, dayEvents, isSameMonth } = day
   const event = dayEvents[0] || {}
   const { coverImageAuthor, coverImage, slug, title } = event
   const isBeforeToday = isBefore(day.date, new Date())
   const borderColor = isSameMonth ? (day.isToday ? "accent" : "text") : "muted"
-  const openModal = props._openModal;
   return (
     <Box
       sx={{
