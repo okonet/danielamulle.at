@@ -23,6 +23,7 @@ function CalendarCard({ day, ...props }) {
   const { coverImageAuthor, coverImage, slug, title } = event
   const isBeforeToday = isBefore(day.date, new Date())
   const borderColor = isSameMonth ? (day.isToday ? "accent" : "text") : "muted"
+  const openModal = props._openModal;
   return (
     <Box
       sx={{
@@ -56,11 +57,7 @@ function CalendarCard({ day, ...props }) {
           slug={isBeforeToday ? slug : undefined}
           title={title}
           onClick={(event) => {
-            if (!isBeforeToday) {
-              prompt("Sign up and we'll email you")
-              event.preventDefault()
-              event.stopPropagation()
-            }
+            if (!isBeforeToday) openModal()
           }}
           sx={{
             cursor: "pointer",

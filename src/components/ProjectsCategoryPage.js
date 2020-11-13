@@ -19,6 +19,7 @@ import { projectsTheme } from "../theme"
 import PageLayout from "./PageLayout"
 import CoverImage from "./CoverImage"
 import CalendarCard from "./CalendarCard"
+import ModalCard from "./ModalCard"
 
 const defaultOptions = {
   numOfWeeks: 6,
@@ -81,6 +82,9 @@ const ProjectsCategoryPage = ({ data }) => {
     ...defaultOptions,
     events: projectPosts.nodes,
   })
+  const [modalIsOpen, setIsOpen] = React.useState(false);
+  const openModal = () => setIsOpen(true)
+  const closeModal = () => setIsOpen(false)
   return (
     <PageLayout
       theme={projectsTheme}
@@ -94,11 +98,12 @@ const ProjectsCategoryPage = ({ data }) => {
       }
     >
       <section dangerouslySetInnerHTML={{ __html: description }} />
+      <ModalCard _closeModal={closeModal} isOpen={modalIsOpen} />
       <Grid gap={2} columns={[2, 3, 4]} sx={{ my: 4, mx: [2, 0, -4], p: 0 }}>
         {state.weeks.map((week) =>
           week.map(
             (day) =>
-              day.isSameMonth && <CalendarCard day={day} key={day.dayOfMonth} />
+              day.isSameMonth && <CalendarCard day={day} key={day.dayOfMonth} _openModal={openModal}/>
           )
         )}
       </Grid>
