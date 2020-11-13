@@ -17,7 +17,7 @@ CalendarCard.propTypes = {
   }),
 }
 
-function CalendarCard({ day, openModal }) {
+function CalendarCard({ day, openModal, ...props }) {
   const { dayOfMonth, dayEvents, isSameMonth } = day
   const event = dayEvents[0] || {}
   const { coverImageAuthor, coverImage, slug, title } = event

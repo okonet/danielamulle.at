@@ -87,7 +87,7 @@ const ProjectsCategoryPage = ({ data }) => {
     <PageLayout
       theme={projectsTheme}
       title={`${category.id}`}
-      shouldShowSubscribe=false
+      shouldShowSubscribe={false}
       coverImage={
         <CoverImage
           fluid={coverImage.childImageSharp.fluid}
