@@ -1,19 +1,26 @@
 {
   "categories": [
     {
-      "id": "Diätologische Jahresstart",
-      "coverImage": "../assets/20200901-DSC03710.jpg",
-      "coverImageAuthor": "Andrey Okonetchnikov",
-      "coverImageLink": "https://okonet.ru",
-      "startDate": "2021-01-01T20:45:33.845Z",
-      "description": "## Test heading\n\nProject description goes here"
+      "coverImage": "../assets/glen-carrie-af-gyalxzww-unsplash-2.jpg",
+      "isPublished": true,
+      "endDate": "2020-12-05T23:00:00.000Z",
+      "coverImageAuthor": "Glen Carrie",
+      "isTag": false,
+      "startDate": "2020-11-16T23:00:00.000Z",
+      "id": "Lockdown Rezepte",
+      "description": "## Test heading\n\nProject description goes here",
+      "coverImageLink": "https://unsplash.com/@glencarrie"
     },
     {
+      "coverImage": "../assets/20200901-DSC03710.jpg",
+      "isPublished": false,
+      "endDate": "2021-02-01T20:45:33.845Z",
+      "coverImageAuthor": "Andrey Okonetchnikov",
       "isTag": false,
-      "id": "Superfood",
-      "coverImage": "../assets/20200603-DSC02921.jpg",
-      "startDate": "2020-10-01T19:45:33.861Z",
-      "description": "In meinem Blog serviere ich dir virtuelle Gabelbissen zum Thema Darmgesundheit, Gewichtsmanagment & anderen Ernährungsfragen. Guten Appetit beim Stöbern & Schmökern!\n\n- kjdfhgkhdf\n- sjdkfksjdhf"
+      "startDate": "2021-01-01T20:45:33.845Z",
+      "id": "Diätologische Jahresstart",
+      "description": "## Test heading\n\nProject description goes here",
+      "coverImageLink": "https://okonet.ru"
     }
   ]
 }

@@ -141,7 +141,11 @@ collections:
             name: "categories"
             fields:
               - { label: Name, name: id, widget: string }
+              - { label: Published, name: isPublished, widget: boolean }
               - { label: Cover, name: coverImage, widget: "image" }
+              - { label: "Cover author", name: "coverImageAuthor", widget: "string", default: "Andrey Okonetchnikov" }
+              - { label: "Cover link", name: "coverImageLink", widget: "string", default: "https://okonet.ru" }
               - { label: Start Date, name: startDate, widget: "datetime" }
+              - { label: End Date, name: endDate, widget: "datetime" }
               - { label: Body, name: description, widget: "markdown" }
               - { label: Tag, name: isTag, widget: "hidden", default: false }

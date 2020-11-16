@@ -382,12 +382,12 @@ export const projectsTheme = {
     ...theme.colors,
     text: palette.cyan[1],
     background: palette.cyan[6],
+    headerBg: palette.cyan[5],
     sectionBg: palette.cyan[6],
     accent: palette.cyan[2],
     primary: palette.cyan[3],
     secondary: palette.cyan[4],
     muted: palette.cyan[5],
-    headerBg: palette.cyan[5],
   },
   coverSrc: unsplashURL("bwKUJ3Y5JS4"),
 }
