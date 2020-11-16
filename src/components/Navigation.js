@@ -38,11 +38,11 @@ const pages = [
     to: `/${blogPath}`,
     theme: blogTheme,
   },
-  // {
-  //   title: "Projekte",
-  //   to: `/${projectsPath}`,
-  //   theme: projectsTheme,
-  // },
+  {
+    title: "Projekte",
+    to: `/${projectsPath}`,
+    theme: projectsTheme,
+  },
 ]
 
 const NavLink = React.forwardRef((props, ref) => {

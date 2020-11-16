@@ -17,7 +17,9 @@ export const query = graphql`
         ...PostMeta
       }
     }
-    projects: allCategory(filter: { collection: { eq: "projects" } }) {
+    projects: allCategory(
+      filter: { collection: { eq: "projects" }, isPublished: { eq: true } }
+    ) {
       nodes {
         id
         slug

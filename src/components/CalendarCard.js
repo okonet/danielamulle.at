@@ -18,11 +18,11 @@ CalendarCard.propTypes = {
 }
 
 function CalendarCard({ day, ...props }) {
-  const { dayOfMonth, dayEvents, isSameMonth } = day
+  const { dayOfMonth, month, dayEvents } = day
   const event = dayEvents[0] || {}
   const { coverImageAuthor, coverImage, slug, title } = event
   const isBeforeToday = isBefore(day.date, new Date())
-  const borderColor = isSameMonth ? (day.isToday ? "accent" : "text") : "muted"
+  const color = day.isToday ? "accent" : "text"
   return (
     <Box
       sx={{
@@ -30,21 +30,21 @@ function CalendarCard({ day, ...props }) {
         borderRadius: "medium",
         overflow: "hidden",
         boxShadow: "float",
-        bg: borderColor,
-        borderColor,
+        bg: color,
+        borderColor: color,
         "::after": {
           position: "absolute",
           top: 0,
           left: 0,
           p: 1,
-          minWidth: "2.125rem",
-          height: "2.125rem",
+          minWidth: "4rem",
+          height: "2rem",
           fontFamily: "body",
           fontSize: 0,
-          bg: borderColor,
+          bg: color,
           color: "background",
           clipPath: "polygon(0% 0%, 100% 0%, 0% 100%)",
-          content: `"${dayOfMonth}"`,
+          content: `"${dayOfMonth} ${month}"`,
         },
       }}
       {...props}

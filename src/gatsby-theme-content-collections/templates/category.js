@@ -19,7 +19,9 @@ export const query = graphql`
       coverImageAuthor
       coverImageLink
       startDate
+      endDate
       description
+      isPublished
     }
     projectPosts: allPost(
       filter: {
