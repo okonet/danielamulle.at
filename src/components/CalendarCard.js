@@ -2,6 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { isBefore } from "date-fns"
 import { Box } from "theme-ui"
+import { useLocation } from "@reach/router"
 import PostCard from "./PostCard"
 
 CalendarCard.propTypes = {
@@ -17,7 +18,8 @@ CalendarCard.propTypes = {
   }),
 }
 
-function CalendarCard({ day, location, ...props }) {
+function CalendarCard({ day, ...props }) {
+  const location = useLocation()
   const { dayOfMonth, month, dayEvents } = day
   const event = dayEvents[0] || {}
   const { coverImageAuthor, coverImage, slug, title } = event

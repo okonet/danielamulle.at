@@ -12,11 +12,11 @@ import {
 } from "date-fns"
 import { de } from "date-fns/locale"
 import { MDXRenderer } from "gatsby-plugin-mdx"
+import { globalHistory, navigate } from "@reach/router"
 import { projectsTheme } from "../theme"
 import PageLayout from "./PageLayout"
 import CalendarCard from "./CalendarCard"
 import ModalCard from "./ModalCard"
-import { globalHistory, navigate } from "@reach/router"
 
 function transformDate(startDate, date, locale) {
   return {
