@@ -40,92 +40,79 @@ function SubscribeForm() {
     }
   }
   return (
-    <Box as="section" sx={{ bg: "background" }}>
-      <Container
-        variant="section"
+    <>
+      {state === states.ERROR && (
+        <Alert variant="error" mb={2}>
+          Es ist ein Fehler aufgetreten. Probiere noch ein Mal.
+        </Alert>
+      )}
+      {state === states.OK && (
+        <Alert variant="success" mb={2}>
+          Danke! Checke Dein Email...
+        </Alert>
+      )}
+      <Grid
+        as="form"
+        method="post"
+        onSubmit={handleSubmit}
         sx={{
-          mt: [4, 4],
-          bg: "transparent",
+          alignItems: "flex-end",
+          gridTemplateColumns: ["auto", "1fr 1fr auto"],
         }}
       >
-        <Styled.h2 sx={{ mt: 0, mb: 3 }}>Newsletter</Styled.h2>
-        <Styled.p>
-          Verpasse keine meiner tollen Tipps & Tricks, interessanten Infos &
-          köstlichen Rezepte.
-        </Styled.p>
-        {state === states.ERROR && (
-          <Alert variant="error" mb={2}>
-            Es ist ein Fehler aufgetreten. Probiere noch ein Mal.
-          </Alert>
-        )}
-        {state === states.OK && (
-          <Alert variant="success" mb={2}>
-            Danke! Checke Dein Email...
-          </Alert>
-        )}
-        <Grid
-          as="form"
-          method="post"
-          onSubmit={handleSubmit}
+        <input type="hidden" name="u" value="1" />
+        <input type="hidden" name="f" value="1" />
+        <input type="hidden" name="s" />
+        <input type="hidden" name="c" value="0" />
+        <input type="hidden" name="m" value="0" />
+        <input type="hidden" name="act" value="sub" />
+        <input type="hidden" name="v" value="2" />
+        <Box>
+          <Label htmlFor="email" sx={{ mb: 1 }}>
+            Deine Email-Adresse
+          </Label>
+          <Input
+            id="email"
+            type="email"
+            name="email"
+            placeholder="max@mustermann.at"
+            required
+            disabled={state === states.SUBMITTING}
+          />
+        </Box>
+        <Box>
+          <Label htmlFor="firstname" sx={{ mb: 1 }}>
+            Dein Vorname
+          </Label>
+          <Input
+            type="text"
+            id="firstname"
+            name="firstname"
+            required
+            disabled={state === states.SUBMITTING}
+          />
+        </Box>
+        <Button type="submit" disabled={state === states.SUBMITTING}>
+          {state === states.SUBMITTING && (
+            <Spinner
+              sx={{ color: "white", width: 18, height: 18, mb: "-3px" }}
+            />
+          )}{" "}
+          Abonnieren
+        </Button>
+        <Styled.p
           sx={{
-            alignItems: "flex-end",
-            gridTemplateColumns: ["auto", "1fr 1fr auto"],
+            m: 0,
+            variant: "textStyles.disclaimer",
+            gridColumnStart: 1,
+            gridColumnEnd: [1, 4],
           }}
         >
-          <input type="hidden" name="u" value="1" />
-          <input type="hidden" name="f" value="1" />
-          <input type="hidden" name="s" />
-          <input type="hidden" name="c" value="0" />
-          <input type="hidden" name="m" value="0" />
-          <input type="hidden" name="act" value="sub" />
-          <input type="hidden" name="v" value="2" />
-          <Box>
-            <Label htmlFor="email" sx={{ mb: 1 }}>
-              Deine Email-Adresse
-            </Label>
-            <Input
-              id="email"
-              type="email"
-              name="email"
-              placeholder="max@mustermann.at"
-              required
-              disabled={state === states.SUBMITTING}
-            />
-          </Box>
-          <Box>
-            <Label htmlFor="firstname" sx={{ mb: 1 }}>
-              Dein Vorname
-            </Label>
-            <Input
-              type="text"
-              id="firstname"
-              name="firstname"
-              required
-              disabled={state === states.SUBMITTING}
-            />
-          </Box>
-          <Button type="submit" disabled={state === states.SUBMITTING}>
-            {state === states.SUBMITTING && (
-              <Spinner
-                sx={{ color: "white", width: 18, height: 18, mb: "-3px" }}
-              />
-            )}{" "}
-            Abonnieren
-          </Button>
-          <Styled.p
-            sx={{
-              m: 0,
-              variant: "textStyles.disclaimer",
-              gridColumnStart: 1,
-              gridColumnEnd: [1, 4],
-            }}
-          >
-            Mit Deiner Anmeldung stimmst Du meiner{" "}
-            <Link to="/datenschutz">Datenschutzerklärung</Link> zu.
-          </Styled.p>
-        </Grid>
-      </Container>
-    </Box>
+          Mit Deiner Anmeldung stimmst Du meiner{" "}
+          <Link to="/datenschutz">Datenschutzerklärung</Link> zu.
+        </Styled.p>
+      </Grid>
+    </>
   )
 }
 

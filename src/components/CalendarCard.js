@@ -38,14 +38,10 @@ function CalendarCard({ day, ...props }) {
           position: "absolute",
           top: 0,
           left: 0,
-          p: 1,
-          minWidth: "4rem",
-          height: "2rem",
+          p: 3,
           fontFamily: "body",
           fontSize: 0,
-          bg: color,
           color: "background",
-          clipPath: "polygon(0% 0%, 100% 0%, 0% 100%)",
           content: `"${dayOfMonth} ${month}"`,
         },
       }}
@@ -63,7 +59,7 @@ function CalendarCard({ day, ...props }) {
           }}
         />
       ) : (
-        <PostCard slug={"/signup"} />
+        <PostCard slug={"?signup"} />
       )}
     </Box>
   )
