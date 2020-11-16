@@ -2,30 +2,19 @@
 import React from "react"
 import { Grid, jsx } from "theme-ui"
 import {
-  addDays,
   eachDayOfInterval,
-  endOfWeek,
   format,
   getDate,
   getDayOfYear,
-  getMonth,
-  getYear,
   isSameDay,
   isSameMonth,
   isWeekend,
-  startOfWeek,
 } from "date-fns"
+import { de } from "date-fns/locale"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import { projectsTheme } from "../theme"
 import PageLayout from "./PageLayout"
 import CalendarCard from "./CalendarCard"
-
-const defaultOptions = {
-  numOfWeeks: 6,
-  numOfDays: 7,
-  locale: undefined,
-  events: [],
-}
 
 function transformDate(startDate, date, locale) {
   return {
@@ -33,39 +22,26 @@ function transformDate(startDate, date, locale) {
     dayOfWeek: format(date, "EEEE", { locale }),
     dayOfYear: getDayOfYear(date),
     dayOfMonth: getDate(date),
+    month: format(date, "MMM", { locale }),
     isToday: isSameDay(new Date(), date),
     isSameMonth: isSameMonth(date, startDate),
     isWeekend: isWeekend(date),
   }
 }
 
-function getDays(date, options = defaultOptions) {
-  let currentDate = startOfWeek(new Date(getYear(date), getMonth(date)))
-  const { events } = options
-  const weeks = Array.from({ length: options.numOfWeeks }).map(
-    (_, weekIndex) => {
-      return Array.from({ length: options.numOfDays }).map((_, dayIndex) => {
-        const day = transformDate(date, currentDate, options.locale)
-        const dayEvents = events.filter((event) =>
-          isSameDay(new Date(event.date), currentDate)
-        )
-        currentDate = addDays(currentDate, 1)
-        return { dayIndex, weekIndex, dayEvents, ...day }
-      })
+function getDays({ startDate, endDate, events = [], locale = de }) {
+  return eachDayOfInterval({
+    start: startDate,
+    end: endDate,
+  }).map((day) => {
+    const dayEvents = events.filter((event) =>
+      isSameDay(new Date(event.date), day)
+    )
+    return {
+      ...transformDate(startDate, day, locale),
+      dayEvents,
     }
-  )
-  const days = eachDayOfInterval({
-    start: startOfWeek(currentDate),
-    end: endOfWeek(currentDate),
-  }).map((day) => format(day, "EEE", { locale: options.locale }))
-
-  return {
-    startDate: date,
-    month: format(date, "LLLL"),
-    year: getYear(date),
-    weeks,
-    days,
-  }
+  })
 }
 
 const ProjectsCategoryPage = ({ data }) => {
@@ -75,10 +51,12 @@ const ProjectsCategoryPage = ({ data }) => {
     coverImageAuthor,
     coverImageLink,
     startDate,
+    endDate,
     description,
   } = category
-  const state = getDays(new Date(startDate), {
-    ...defaultOptions,
+  const days = getDays({
+    startDate: new Date(startDate),
+    endDate: new Date(endDate),
     events: projectPosts.nodes,
   })
   return (
@@ -91,12 +69,9 @@ const ProjectsCategoryPage = ({ data }) => {
     >
       <MDXRenderer>{description}</MDXRenderer>
       <Grid gap={2} columns={[2, 3, 4]} sx={{ my: 4, mx: [2, 0, -4], p: 0 }}>
-        {state.weeks.map((week) =>
-          week.map(
-            (day) =>
-              day.isSameMonth && <CalendarCard day={day} key={day.dayOfMonth} />
-          )
-        )}
+        {days.map((day) => (
+          <CalendarCard day={day} key={day.dayOfMonth} />
+        ))}
       </Grid>
     </PageLayout>
   )

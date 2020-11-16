@@ -12,17 +12,19 @@ const ProjectsPosts = ({ data }) => {
   return (
     <PageLayout theme={projectsTheme} title={meta._frontmatter.title}>
       <Content />
-      <Grid as="ul" columns={[1, 2]} sx={{ p: 0 }}>
-        {projects.nodes.map((project) => (
-          <PostCard
-            as="li"
-            coverImage={project.coverImage}
-            slug={project.slug}
-            title={project.id}
-            key={project.id}
-          />
-        ))}
-      </Grid>
+      {projects.nodes.length > 0 && (
+        <Grid as="ul" columns={[1, 2]} sx={{ p: 0 }}>
+          {projects.nodes.map((project) => (
+            <PostCard
+              as="li"
+              coverImage={project.coverImage}
+              slug={project.slug}
+              title={project.id}
+              key={project.id}
+            />
+          ))}
+        </Grid>
+      )}
     </PageLayout>
   )
 }
