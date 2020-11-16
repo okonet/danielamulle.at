@@ -1,19 +1,16 @@
 /** @jsx jsx */
 import React from "react"
 import { MDXRenderer } from "gatsby-plugin-mdx"
-import { Box, Container, Grid, jsx, Styled } from "theme-ui"
-import Layout from "./layout"
+import { Box, Grid, jsx, Styled } from "theme-ui"
 import Link from "./Link"
 import { blogTheme } from "../theme"
 import { blogPath } from "../../paths"
 import Group from "react-group"
-import SEO from "./seo"
-import CoverImage from "./CoverImage"
 import ShareButtons from "./ShareButtons"
 import TagList from "./TagList"
 import PageLayout from "./PageLayout"
 
-export default ({ data, pageContext, location }) => {
+export default ({ data, location }) => {
   const { post, site } = data
   const {
     body,
@@ -29,13 +26,9 @@ export default ({ data, pageContext, location }) => {
     <PageLayout
       theme={blogTheme}
       title={title}
-      coverImage={
-        <CoverImage
-          fluid={coverImage.childImageSharp.fluid}
-          author={coverImageAuthor || "Andrey Okonetchnikov"}
-          url={coverImageLink || "https://okonet.ru"}
-        />
-      }
+      coverImage={coverImage}
+      coverImageAuthor={coverImageAuthor}
+      coverImageLink={coverImageLink}
       heading={
         <Box sx={{ mx: [0, 0, -4] }}>
           <Box
@@ -60,8 +53,6 @@ export default ({ data, pageContext, location }) => {
         </Box>
       }
     >
-      <SEO ogImage={pageContext.ogImage} />
-
       <Grid gap={4} columns={[1, 12]} sx={{ mx: [0, 0, -4] }}>
         <Box
           sx={{

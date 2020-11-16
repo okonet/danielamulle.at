@@ -15,9 +15,9 @@ import {
   isWeekend,
   startOfWeek,
 } from "date-fns"
+import { MDXRenderer } from "gatsby-plugin-mdx"
 import { projectsTheme } from "../theme"
 import PageLayout from "./PageLayout"
-import CoverImage from "./CoverImage"
 import CalendarCard from "./CalendarCard"
 import ModalCard from "./ModalCard"
 
@@ -88,16 +88,12 @@ const ProjectsCategoryPage = ({ data }) => {
       theme={projectsTheme}
       title={`${category.id}`}
       shouldShowSubscribe={false}
-      coverImage={
-        <CoverImage
-          fluid={coverImage.childImageSharp.fluid}
-          author={coverImageAuthor}
-          url={coverImageLink}
-        />
-      }
+      coverImage={coverImage}
+      coverImageAuthor={coverImageAuthor}
+      coverImageLink={coverImageLink}
     >
-      <section dangerouslySetInnerHTML={{ __html: description }} />
       <ModalCard closeModal={() => setIsOpen(false)} isOpen={modalIsOpen} />
+      <MDXRenderer>{description}</MDXRenderer>
       <Grid gap={2} columns={[2, 3, 4]} sx={{ my: 4, mx: [2, 0, -4], p: 0 }}>
         {state.weeks.map((week) =>
           week.map(

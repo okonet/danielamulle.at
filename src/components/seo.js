@@ -9,7 +9,9 @@ import React from "react"
 import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
-import { jsx } from "theme-ui"
+import { useLocation } from "@reach/router"
+
+const openGraphService = "https://component-driven.dev/"
 
 function SEO({ description, lang, meta, title, ogImage }) {
   const { site, defaultImage } = useStaticQuery(
@@ -35,11 +37,15 @@ function SEO({ description, lang, meta, title, ogImage }) {
       }
     `
   )
-
+  const location = useLocation()
   const metaDescription = description || site.siteMetadata.description
+  const canonicalURL = new URL(location.pathname, site.siteMetadata.url)
   const { src } = defaultImage.childImageSharp.original
-  const ogImagePath = site.siteMetadata.url + (ogImage ? ogImage.path : src)
-  let siteTitle = title || site.siteMetadata.title
+  const ogImagePath = ogImage
+    ? `${openGraphService}api/screenshot?url=${canonicalURL}?ogImage`
+    : src
+
+  const siteTitle = title || site.siteMetadata.title
   return (
     <Helmet
       htmlAttributes={{
@@ -117,6 +123,7 @@ SEO.propTypes = {
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string,
+  ogImage: PropTypes.bool,
 }
 
 export default SEO

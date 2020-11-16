@@ -6,15 +6,13 @@ import Group from "react-group"
 import Link from "./Link"
 import { recipesTheme } from "../theme"
 import { recipesPath } from "../../paths"
-import SEO from "./seo"
 import InfoIcon from "./InfoIcon"
 import ClockIcon from "./ClockIcon"
-import CoverImage from "./CoverImage"
 import ShareButtons from "./ShareButtons"
 import TagList from "./TagList"
 import PageLayout from "./PageLayout"
 
-export default ({ data, pageContext, location }) => {
+export default ({ data, location }) => {
   const { post, site } = data
   const {
     body,
@@ -28,18 +26,13 @@ export default ({ data, pageContext, location }) => {
   const pageUrl = location.href ? location.href : site.siteMetadata.url
   const mainCategory = categories.find((cat) => !cat.isTag)
   const tags = categories.filter((cat) => cat.isTag)
-  const coverImageFluid = coverImage.childImageSharp.fluid
   return (
     <PageLayout
       theme={recipesTheme}
       title={title}
-      coverImage={
-        <CoverImage
-          fluid={coverImageFluid}
-          author={coverImageAuthor || "Andrey Okonetchnikov"}
-          url={coverImageLink || "https://okonet.ru"}
-        />
-      }
+      coverImage={coverImage}
+      coverImageAuthor={coverImageAuthor}
+      coverImageLink={coverImageLink}
       heading={
         <Box sx={{ mx: [0, 0, -4] }}>
           <Box
@@ -70,8 +63,6 @@ export default ({ data, pageContext, location }) => {
         </Box>
       }
     >
-      <SEO ogImage={pageContext.ogImage} />
-
       <Grid gap={4} columns={[1, 12]} sx={{ mx: [0, 0, -4] }}>
         <Box
           sx={{

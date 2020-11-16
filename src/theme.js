@@ -382,6 +382,7 @@ export const projectsTheme = {
     ...theme.colors,
     text: palette.cyan[1],
     background: palette.cyan[6],
+    sectionBg: palette.cyan[6],
     accent: palette.cyan[2],
     primary: palette.cyan[3],
     secondary: palette.cyan[4],

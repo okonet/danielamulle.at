@@ -10,12 +10,7 @@ module.exports = {
     url: "https://danielamulle.at",
     lang: "de",
     locale: "de_AT",
-    social: [
-      {
-        name: "Facebook",
-        url: "facebook.com",
-      },
-    ],
+    socialHandle: "bauchdetektivin",
   },
   plugins: [
     {

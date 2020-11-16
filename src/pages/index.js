@@ -1,5 +1,5 @@
 /* @jsx jsx */
-import React from "react"
+import * as React from "react"
 import { Box, Flex, Grid, jsx, Styled, ThemeProvider } from "theme-ui"
 import { graphql, useStaticQuery } from "gatsby"
 import Home, { _frontmatter } from "../../content/sections/home.mdx"

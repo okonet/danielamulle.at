@@ -1,6 +1,6 @@
 /* @jsx jsx */
 import React from "react"
-import { Container, Grid, Styled, jsx } from "theme-ui"
+import { jsx, Styled } from "theme-ui"
 import PageLayout from "./PageLayout"
 import { testimonialsTheme } from "../theme"
 import Content, * as meta from "../../content/sections/testimonials.mdx"

@@ -1,14 +1,19 @@
 /* @jsx jsx */
 import React from "react"
+import { useLocation } from "@reach/router"
+import { Container, jsx, Styled } from "theme-ui"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Section from "../components/Section"
-import { Container, jsx, Styled } from "theme-ui"
+import SocialImage from "./SocialImage"
+import CoverImage from "./CoverImage"
 
 export default ({
   title,
   heading,
   coverImage,
+  coverImageAuthor = "Andrey Okonetchnikov",
+  coverImageLink = "https://okonet.ru",
   children,
   theme,
   blendMode = "screen",
@@ -16,11 +21,38 @@ export default ({
   shouldShowSubscribe,
   ...props
 }) => {
+  const { search } = useLocation()
+  if (search.includes("ogImage")) {
+    return (
+      <SocialImage
+        title={title}
+        coverImage={coverImage}
+        width={1012}
+        height={506}
+      />
+    )
+  }
+  if (search.includes("instagram")) {
+    return (
+      <SocialImage
+        title={title}
+        coverImage={coverImage}
+        width={1080}
+        height={1080}
+      />
+    )
+  }
   if (coverImage) {
     return (
       <Layout theme={theme} shouldShowSubscribe={shouldShowSubscribe}>
-        <SEO title={title} />
-        {coverImage}
+        <SEO title={title} ogImage={true} />
+        {coverImage && (
+          <CoverImage
+            fluid={coverImage.childImageSharp.fluid}
+            author={coverImageAuthor}
+            url={coverImageLink}
+          />
+        )}
         <Container variant="section">
           {heading ? (
             heading
