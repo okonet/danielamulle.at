@@ -17,7 +17,7 @@ CalendarCard.propTypes = {
   }),
 }
 
-function CalendarCard({ day, openModal, ...props }) {
+function CalendarCard({ day, location, ...props }) {
   const { dayOfMonth, dayEvents, isSameMonth } = day
   const event = dayEvents[0] || {}
   const { coverImageAuthor, coverImage, slug, title } = event
@@ -53,7 +53,7 @@ function CalendarCard({ day, openModal, ...props }) {
         <PostCard
           coverImage={coverImage}
           coverImageAuthor={coverImageAuthor}
-          slug={isBeforeToday ? slug : undefined}
+          slug={isBeforeToday ? slug : `${location.pathname}?signup`}
           title={title}
           sx={{
             cursor: "pointer",

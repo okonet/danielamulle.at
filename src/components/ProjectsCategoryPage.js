@@ -1,5 +1,5 @@
 /* @jsx jsx */
-import React from "react"
+import React, { useEffect, useState } from "react"
 import { Grid, jsx } from "theme-ui"
 import {
   addDays,
@@ -10,6 +10,7 @@ import {
   getDayOfYear,
   getMonth,
   getYear,
+  isBefore,
   isSameDay,
   isSameMonth,
   isWeekend,
@@ -20,6 +21,7 @@ import { projectsTheme } from "../theme"
 import PageLayout from "./PageLayout"
 import CalendarCard from "./CalendarCard"
 import ModalCard from "./ModalCard"
+import { globalHistory, useLocation, navigate } from "@reach/router"
 
 const defaultOptions = {
   numOfWeeks: 6,
@@ -69,7 +71,7 @@ function getDays(date, options = defaultOptions) {
   }
 }
 
-const ProjectsCategoryPage = ({ data }) => {
+const ProjectsCategoryPage = ({ data, location }) => {
   const { category, projectPosts } = data
   const {
     coverImage,
@@ -82,6 +84,23 @@ const ProjectsCategoryPage = ({ data }) => {
     ...defaultOptions,
     events: projectPosts.nodes,
   })
+  const [isOpen, setIsOpen] = useState(false)
+  useEffect(() => {
+    return globalHistory.listen(({ location }) => {
+      // Show a modal when we have a signup in the search part of URL
+      if (location.search.includes("signup")) {
+        setIsOpen(true)
+      }
+    })
+  }, [])
+
+  useEffect(() => {
+    // Clean up the URL if we close the modal
+    if (!isOpen) {
+      navigate(location.pathname, { replace: true })
+    }
+  }, [isOpen])
+
   return (
     <PageLayout
       theme={projectsTheme}
@@ -91,13 +110,20 @@ const ProjectsCategoryPage = ({ data }) => {
       coverImageAuthor={coverImageAuthor}
       coverImageLink={coverImageLink}
     >
-      <ModalCard />
+      <ModalCard isOpen={isOpen} closeModal={() => setIsOpen(false)} />
       <MDXRenderer>{description}</MDXRenderer>
       <Grid gap={2} columns={[2, 3, 4]} sx={{ my: 4, mx: [2, 0, -4], p: 0 }}>
         {state.weeks.map((week) =>
           week.map(
             (day) =>
-              day.isSameMonth && <CalendarCard day={day} key={day.dayOfMonth} />
+              day.isSameMonth && (
+                <CalendarCard
+                  day={day}
+                  key={day.dayOfMonth}
+                  location={location}
+                  openModal={() => setIsOpen(true)}
+                />
+              )
           )
         )}
       </Grid>
