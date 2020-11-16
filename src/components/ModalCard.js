@@ -22,7 +22,6 @@ function ModalCard({ closeModal, isOpen }) {
   const [modalIsOpen, setIsOpen] = useState(false);
   useEffect(() => {
     return globalHistory.listen(({ location }) => {
-      console.log(new RegExp(/\/projects\/\S+\/\S+/).test(location.pathname))
       if (new RegExp(/\/projects\/\S+\/\S+/).test(location.pathname)) setIsOpen(true)
     })
   }, [])
