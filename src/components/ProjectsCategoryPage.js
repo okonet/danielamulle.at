@@ -82,7 +82,6 @@ const ProjectsCategoryPage = ({ data }) => {
     ...defaultOptions,
     events: projectPosts.nodes,
   })
-  const [modalIsOpen, setIsOpen] = React.useState(false);
   return (
     <PageLayout
       theme={projectsTheme}
@@ -92,13 +91,13 @@ const ProjectsCategoryPage = ({ data }) => {
       coverImageAuthor={coverImageAuthor}
       coverImageLink={coverImageLink}
     >
-      <ModalCard closeModal={() => setIsOpen(false)} isOpen={modalIsOpen} />
+      <ModalCard />
       <MDXRenderer>{description}</MDXRenderer>
       <Grid gap={2} columns={[2, 3, 4]} sx={{ my: 4, mx: [2, 0, -4], p: 0 }}>
         {state.weeks.map((week) =>
           week.map(
             (day) =>
-              day.isSameMonth && <CalendarCard day={day} key={day.dayOfMonth} openModal={() => setIsOpen(true)}/>
+              day.isSameMonth && <CalendarCard day={day} key={day.dayOfMonth} />
           )
         )}
       </Grid>

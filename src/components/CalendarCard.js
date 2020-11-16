@@ -55,9 +55,6 @@ function CalendarCard({ day, openModal, ...props }) {
           coverImageAuthor={coverImageAuthor}
           slug={isBeforeToday ? slug : undefined}
           title={title}
-          onClick={(event) => {
-            if (!isBeforeToday) openModal()
-          }}
           sx={{
             cursor: "pointer",
             opacity: isBeforeToday ? 1 : 0.25,
