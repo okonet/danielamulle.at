@@ -18,6 +18,7 @@ export default ({
   theme,
   blendMode = "screen",
   sx,
+  shouldShowSubscribe,
   ...props
 }) => {
   const { search } = useLocation()
@@ -43,7 +44,7 @@ export default ({
   }
   if (coverImage) {
     return (
-      <Layout theme={theme}>
+      <Layout theme={theme} shouldShowSubscribe={shouldShowSubscribe}>
         <SEO title={title} ogImage={true} />
         {coverImage && (
           <CoverImage
@@ -70,7 +71,7 @@ export default ({
     )
   }
   return (
-    <Layout theme={theme}>
+    <Layout theme={theme} shouldShowSubscribe={shouldShowSubscribe}>
       <SEO title={title} />
       <Section
         theme={theme}

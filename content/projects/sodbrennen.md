@@ -8,7 +8,8 @@ coverImage: ../assets/schmuck_angelika_rezept.jpg
 coverImageAuthor: Angelika Schmuck
 coverImageLink: www.diaetologin-angelika.at
 ---
-Als Sodbrennen oder Reflux, bezeichnet man das Zurückfließen des sauren Magensafts in die Speiseröhre. Passiert dieser Vorgang öfter, können sich weitere Beschwerden wie Aufstoßen von Luft und Speisebrei, Mundgeruch, Schluckbeschwerden, trockner Reizhusten, Heiserkeit und Schmerzen/ Brennen im oberen Bauch bemerkbar machen. 
+
+Als Sodbrennen oder Reflux, bezeichnet man das Zurückfließen des sauren Magensafts in die Speiseröhre. Passiert dieser Vorgang öfter, können sich weitere Beschwerden wie Aufstoßen von Luft und Speisebrei, Mundgeruch, Schluckbeschwerden, trockner Reizhusten, Heiserkeit und Schmerzen/ Brennen im oberen Bauch bemerkbar machen.
 
 Warum die Symptome entstehen und wie du selbst dagegen aktiv werden kannst, erfährst du in meinem Beitrag.
 

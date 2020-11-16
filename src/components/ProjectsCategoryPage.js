@@ -1,5 +1,5 @@
 /* @jsx jsx */
-import React from "react"
+import React, { useEffect, useState } from "react"
 import { Grid, jsx } from "theme-ui"
 import {
   eachDayOfInterval,
@@ -12,9 +12,11 @@ import {
 } from "date-fns"
 import { de } from "date-fns/locale"
 import { MDXRenderer } from "gatsby-plugin-mdx"
+import { globalHistory, navigate } from "@reach/router"
 import { projectsTheme } from "../theme"
 import PageLayout from "./PageLayout"
 import CalendarCard from "./CalendarCard"
+import ModalCard from "./ModalCard"
 
 function transformDate(startDate, date, locale) {
   return {
@@ -44,7 +46,7 @@ function getDays({ startDate, endDate, events = [], locale = de }) {
   })
 }
 
-const ProjectsCategoryPage = ({ data }) => {
+const ProjectsCategoryPage = ({ data, location }) => {
   const { category, projectPosts } = data
   const {
     coverImage,
@@ -59,14 +61,33 @@ const ProjectsCategoryPage = ({ data }) => {
     endDate: new Date(endDate),
     events: projectPosts.nodes,
   })
+  const [isOpen, setIsOpen] = useState(false)
+  useEffect(() => {
+    return globalHistory.listen(({ location }) => {
+      // Show a modal when we have a signup in the search part of URL
+      if (location.search.includes("signup")) {
+        setIsOpen(true)
+      }
+    })
+  }, [])
+
+  useEffect(() => {
+    // Clean up the URL if we close the modal
+    if (!isOpen) {
+      navigate(location.pathname, { replace: true })
+    }
+  }, [isOpen])
+
   return (
     <PageLayout
       theme={projectsTheme}
       title={`${category.id}`}
+      shouldShowSubscribe={false}
       coverImage={coverImage}
       coverImageAuthor={coverImageAuthor}
       coverImageLink={coverImageLink}
     >
+      <ModalCard isOpen={isOpen} closeModal={() => setIsOpen(false)} />
       <MDXRenderer>{description}</MDXRenderer>
       <Grid gap={2} columns={[2, 3, 4]} sx={{ my: 4, mx: [2, 0, -4], p: 0 }}>
         {days.map((day) => (

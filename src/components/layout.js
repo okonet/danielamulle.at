@@ -14,7 +14,7 @@ import Footer from "./Footer"
 import { default as defaultTheme } from "../theme"
 import SubscribeForm from "./SubscribeForm"
 
-const Layout = ({ theme = defaultTheme, children, mainStyles }) => {
+const Layout = ({ theme = defaultTheme, children, mainStyles, shouldShowSubscribe }) => {
   return (
     <ThemeProvider theme={theme}>
       <Flex sx={{ flexDirection: "column", minHeight: "100vh" }}>
@@ -55,7 +55,7 @@ const Layout = ({ theme = defaultTheme, children, mainStyles }) => {
           {children}
         </Flex>
 
-        <SubscribeForm />
+        {!!shouldShowSubscribe && <SubscribeForm />}
 
         <Footer />
       </Flex>
@@ -65,6 +65,10 @@ const Layout = ({ theme = defaultTheme, children, mainStyles }) => {
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
+}
+
+Layout.defaultProps = {
+  shouldShowSubscribe: true,
 }
 
 export default Layout
