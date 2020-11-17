@@ -1,7 +1,7 @@
 ---
 categories:
-  - value: Diätologische Jahresstart
-    label: Diätologische Jahresstart
+  - value: Diätologischer Jahresstart 2021
+    label: Diätologischer Jahresstart 2021
 title: "Magenverkleinerung: was kann ich danach essen?"
 date: 2021-01-20T05:00:00.000Z
 coverImage: ../assets/spindelberger_s-rezept.jpg

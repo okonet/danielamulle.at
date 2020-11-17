@@ -1,11 +1,12 @@
 ---
 categories:
-  - value: Diätologische Jahresstart
-    label: Diätologische Jahresstart
+  - value: Diätologischer Jahresstart 2021
+    label: Diätologischer Jahresstart 2021
 title: Depression & Ernährung
 date: 2021-01-07T05:00:00.000Z
 coverImage: ../assets/fischer_h-rezept.jpg
 coverImageAuthor: Hanna Fischer
 coverImageLink: www.diaetologie-fischer.com
 ---
-Ernährung beeinflusst uns und unseren Gemütszustand. Nicht umsonst gibt es Sprichwörter wie „Sauer macht lustig“ oder „Schokolade ist Balsam für die Seele“. Doch gibt es auch eine Ernährung gegen Depressionen? Mit diesem Thema beschäftigen sich zurzeit unzählige Studien. Die aktuellen Erkenntnisse möchte ich dir in meinem Beitrag näherbringen. 
+
+Ernährung beeinflusst uns und unseren Gemütszustand. Nicht umsonst gibt es Sprichwörter wie „Sauer macht lustig“ oder „Schokolade ist Balsam für die Seele“. Doch gibt es auch eine Ernährung gegen Depressionen? Mit diesem Thema beschäftigen sich zurzeit unzählige Studien. Die aktuellen Erkenntnisse möchte ich dir in meinem Beitrag näherbringen.

@@ -1,7 +1,7 @@
 ---
 categories:
-  - value: Diätologische Jahresstart
-    label: Diätologische Jahresstart
+  - value: Diätologischer Jahresstart 2021
+    label: Diätologischer Jahresstart 2021
 title: Knochenstarke Ernährung leicht gemacht
 date: 2021-01-21T05:00:00.000Z
 coverImage: ../assets/thuile_h-rezept.jpg
