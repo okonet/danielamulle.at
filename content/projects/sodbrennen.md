@@ -1,7 +1,7 @@
 ---
 categories:
-  - value: Diätologische Jahresstart
-    label: Diätologische Jahresstart
+  - value: Diätologischer Jahresstart 2021
+    label: Diätologischer Jahresstart 2021
 title: Sodbrennen
 date: 2021-01-19T05:00:00.000Z
 coverImage: ../assets/schmuck_angelika_rezept.jpg
