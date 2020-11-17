@@ -22,6 +22,7 @@ export const query = graphql`
       endDate
       description
       isPublished
+      listId
     }
     projectPosts: allPost(
       filter: {
@@ -34,6 +35,7 @@ export const query = graphql`
         ...PostMeta
         date
         coverImageAuthor
+        linkedPost
       }
     }
   }

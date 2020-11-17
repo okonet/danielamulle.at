@@ -22,7 +22,8 @@ function CalendarCard({ day, ...props }) {
   const location = useLocation()
   const { dayOfMonth, month, dayEvents } = day
   const event = dayEvents[0] || {}
-  const { coverImageAuthor, coverImage, slug, title } = event
+  const { coverImageAuthor, coverImage, slug, title, linkedPost } = event
+  const linkTo = linkedPost || slug
   const isBeforeToday = isBefore(day.date, new Date())
   const color = day.isToday ? "accent" : "text"
   return (
@@ -38,14 +39,10 @@ function CalendarCard({ day, ...props }) {
           position: "absolute",
           top: 0,
           left: 0,
-          p: 1,
-          minWidth: "4rem",
-          height: "2rem",
+          p: 3,
           fontFamily: "body",
           fontSize: 0,
-          bg: color,
           color: "background",
-          clipPath: "polygon(0% 0%, 100% 0%, 0% 100%)",
           content: `"${dayOfMonth} ${month}"`,
         },
       }}
@@ -55,7 +52,7 @@ function CalendarCard({ day, ...props }) {
         <PostCard
           coverImage={coverImage}
           coverImageAuthor={coverImageAuthor}
-          slug={isBeforeToday ? slug : `${location.pathname}?signup`}
+          slug={isBeforeToday ? linkTo : `${location.pathname}?signup`}
           title={title}
           sx={{
             cursor: "pointer",
@@ -63,7 +60,7 @@ function CalendarCard({ day, ...props }) {
           }}
         />
       ) : (
-        <PostCard slug={"/signup"} />
+        <PostCard slug={"?signup"} />
       )}
     </Box>
   )

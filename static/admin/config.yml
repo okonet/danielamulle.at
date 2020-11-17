@@ -100,9 +100,10 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Cover", name: "coverImage", widget: "image" }
-      - { label: "Author", name: "coverImageAuthor", widget: "string" }
-      - { label: "Link", name: "coverImageLink", widget: "string" }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Author", name: "coverImageAuthor", widget: "string", default: "Daniela Mulle" }
+      - { label: "Link", name: "coverImageLink", widget: "string", default: "https://danielamulle.at" }
+      - { label: "Body", name: "body", widget: "markdown", required: false }
+      - { label: "Link to a post", name: "linkedPost", widget: "string", required: false }
 
   - name: config
     label: Config
@@ -148,4 +149,5 @@ collections:
               - { label: Start Date, name: startDate, widget: "datetime" }
               - { label: End Date, name: endDate, widget: "datetime" }
               - { label: Body, name: description, widget: "markdown" }
+              - { label: "Active Campaign List", name: "listId", widget: "string", required: false }
               - { label: Tag, name: isTag, widget: "hidden", default: false }

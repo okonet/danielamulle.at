@@ -1,13 +1,7 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
+/** @jsx jsx */
 import React from "react"
 import PropTypes from "prop-types"
-import { Box, Container, Flex, ThemeProvider } from "theme-ui"
+import { Box, Container, Flex, jsx, Styled, ThemeProvider } from "theme-ui"
 import Logo from "./Logo"
 import Navigation from "./Navigation"
 import Footer from "./Footer"
@@ -18,7 +12,7 @@ const Layout = ({
   theme = defaultTheme,
   children,
   mainStyles,
-  shouldShowSubscribe,
+  shouldShowSubscribe = true,
 }) => {
   return (
     <ThemeProvider theme={theme}>
@@ -60,7 +54,24 @@ const Layout = ({
           {children}
         </Flex>
 
-        {!!shouldShowSubscribe && <SubscribeForm />}
+        {shouldShowSubscribe && (
+          <Box as="section" sx={{ bg: "background" }}>
+            <Container
+              variant="section"
+              sx={{
+                mt: 4,
+                bg: "transparent",
+              }}
+            >
+              <Styled.h2 sx={{ mt: 0, mb: 3 }}>Newsletter</Styled.h2>
+              <Styled.p>
+                Verpasse keine meiner tollen Tipps & Tricks, interessanten Infos
+                & köstlichen Rezepte.
+              </Styled.p>
+              <SubscribeForm />
+            </Container>
+          </Box>
+        )}
 
         <Footer />
       </Flex>
@@ -70,10 +81,6 @@ const Layout = ({
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
-}
-
-Layout.defaultProps = {
-  shouldShowSubscribe: true,
 }
 
 export default Layout
