@@ -69,12 +69,11 @@ const Layout = ({
                 bg: "transparent",
               }}
             >
-              <Styled.h2 sx={{ mt: 0, mb: 3 }}>Newsletter</Styled.h2>}
+              <Styled.h2 sx={{ mt: 0, mb: 3 }}>Newsletter</Styled.h2>
               <Styled.p>
                 Verpasse keine meiner tollen Tipps & Tricks, interessanten Infos
                 & köstlichen Rezepte.
               </Styled.p>
-              }
               <SubscribeForm />
             </Container>
           </Box>
