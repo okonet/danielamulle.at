@@ -17,7 +17,6 @@
     "gatsby-plugin-local-search": "^1.1.1",
     "gatsby-plugin-mdx": "^1.4.0",
     "gatsby-plugin-netlify-cms": "^4.2.1",
-    "gatsby-plugin-prefetch-google-fonts": "^1.4.3",
     "gatsby-plugin-react-helmet": "^3.1.24",
     "gatsby-plugin-theme-ui": "^0.3.0",
     "gatsby-theme-content-collections": "^2.1.0",

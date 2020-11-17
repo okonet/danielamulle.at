@@ -14,7 +14,12 @@ import Footer from "./Footer"
 import { default as defaultTheme } from "../theme"
 import SubscribeForm from "./SubscribeForm"
 
-const Layout = ({ theme = defaultTheme, children, mainStyles, shouldShowSubscribe }) => {
+const Layout = ({
+  theme = defaultTheme,
+  children,
+  mainStyles,
+  shouldShowSubscribe,
+}) => {
   return (
     <ThemeProvider theme={theme}>
       <Flex sx={{ flexDirection: "column", minHeight: "100vh" }}>
