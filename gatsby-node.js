@@ -25,12 +25,12 @@ exports.createResolvers = ({ createResolvers }) => {
           if (description) {
             const code = await mdx(description)
             const res = await babel.transformAsync(code, {
-              presets: ["babel-preset-gatsby"],
+              presets: ["@babel/preset-react"],
             })
-            return res.code
-              .replace("exports.__esModule = true;", "")
-              .replace("exports.default = MDXContent;", "")
-              .replace("function MDXContent", "return function MDXContent")
+            return res.code.replace(
+              "export default function MDXContent",
+              "return function MDXContent"
+            )
           }
           return null
         },
