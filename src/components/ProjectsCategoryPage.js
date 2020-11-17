@@ -128,7 +128,7 @@ const ProjectsCategoryPage = ({ data, location }) => {
           />
           <Styled.h2 sx={{ mt: -2 }}>Anmeldung</Styled.h2>
           <Styled.p>
-            Dieser Eintrag ist noch nicht verfügbar. Bitte trag' Dich ein, und ich
+            Dieser Beitrag ist noch nicht verfügbar. Bitte melde Dich an, und ich
             schicke Dir eine Email, wenn es soweit ist.
           </Styled.p>
           <SubscribeForm listId={listId} />
