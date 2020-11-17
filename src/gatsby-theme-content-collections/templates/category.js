@@ -34,6 +34,7 @@ export const query = graphql`
         ...PostMeta
         date
         coverImageAuthor
+        linkedPost
       }
     }
   }
