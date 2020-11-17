@@ -126,10 +126,10 @@ const ProjectsCategoryPage = ({ data, location }) => {
             onClick={closeModal}
             sx={{ position: "absolute", top: 8, right: 8, color: "secondary" }}
           />
-          <Styled.h2 sx={{ mt: -2 }}>Newsletter</Styled.h2>
+          <Styled.h2 sx={{ mt: -2 }}>Anmeldung</Styled.h2>
           <Styled.p>
-            Diese Seite ist noch nicht verfügbar. Bitte trage Dich ein und ich
-            schicke Dir eine Email wenn es ist soweit.
+            Dieser Eintrag ist noch nicht verfügbar. Bitte trag' Dich ein, und ich
+            schicke Dir eine Email, wenn es soweit ist.
           </Styled.p>
           <SubscribeForm listId={listId} />
         </Box>
