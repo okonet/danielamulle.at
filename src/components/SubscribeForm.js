@@ -98,7 +98,7 @@ function SubscribeForm() {
               sx={{ color: "white", width: 18, height: 18, mb: "-3px" }}
             />
           )}{" "}
-          Abonnieren
+          Anmelden
         </Button>
         <Styled.p
           sx={{

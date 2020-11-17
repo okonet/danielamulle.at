@@ -127,6 +127,7 @@ const theme = {
       fontFamily: "monospace",
       borderRadius: "medium",
       borderColor: "primary",
+      bg: "white",
       "::placeholder": {
         color: "muted",
       },

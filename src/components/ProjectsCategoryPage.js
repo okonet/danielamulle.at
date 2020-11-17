@@ -1,13 +1,11 @@
 /* @jsx jsx */
 import React, { useEffect, useState } from "react"
-import { Close, Grid, jsx } from "theme-ui"
+import { Box, Close, Grid, jsx, Styled } from "theme-ui"
 import {
   eachDayOfInterval,
   format,
   getDate,
   getDayOfYear,
-  isBefore,
-  isAfter,
   isSameDay,
   isSameMonth,
   isWeekend,
@@ -20,7 +18,6 @@ import PageLayout from "./PageLayout"
 import CalendarCard from "./CalendarCard"
 import SubscribeForm from "./SubscribeForm"
 import Modal from "react-modal"
-import { Box } from "@theme-ui/components"
 import Thanks from "../../content/sections/thanks.mdx"
 
 Modal.setAppElement(`#___gatsby`)
@@ -89,7 +86,6 @@ const ProjectsCategoryPage = ({ data, location }) => {
     navigate(location.pathname, { replace: true })
     setIsOpen(false)
   }
-  const startsLater = isAfter(new Date(startDate), new Date())
   const signupComplete = location.search.includes("thanks")
 
   useEffect(() => {
@@ -116,11 +112,25 @@ const ProjectsCategoryPage = ({ data, location }) => {
         style={modalStyles}
         shouldCloseOnOverlayClick={true}
       >
-        <Box sx={{ position: "relative", p: 4 }}>
+        <Box
+          sx={{
+            position: "relative",
+            p: 4,
+            bg: "sectionBg",
+            border: "thick",
+            borderColor: "secondary",
+            borderRadius: "medium",
+          }}
+        >
           <Close
             onClick={closeModal}
-            sx={{ position: "absolute", top: 8, right: 8 }}
+            sx={{ position: "absolute", top: 8, right: 8, color: "secondary" }}
           />
+          <Styled.h2 sx={{ mt: -2 }}>Newsletter</Styled.h2>
+          <Styled.p>
+            Diese Seite ist noch nicht verfügbar. Bitte trage Dich ein und ich
+            schicke Dir eine Email wenn es ist soweit.
+          </Styled.p>
           <SubscribeForm />
         </Box>
       </Modal>
@@ -133,7 +143,7 @@ const ProjectsCategoryPage = ({ data, location }) => {
 
       <MDXRenderer>{description}</MDXRenderer>
 
-      {startsLater && !signupComplete && <SubscribeForm listId={listId} />}
+      {!signupComplete && <SubscribeForm listId={listId} />}
 
       <Grid gap={2} columns={[2, 3, 4]} sx={{ my: 4, mx: [2, 0, -4], p: 0 }}>
         {days.map((day) => (
