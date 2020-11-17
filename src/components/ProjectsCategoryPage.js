@@ -131,7 +131,7 @@ const ProjectsCategoryPage = ({ data, location }) => {
             Diese Seite ist noch nicht verfügbar. Bitte trage Dich ein und ich
             schicke Dir eine Email wenn es ist soweit.
           </Styled.p>
-          <SubscribeForm />
+          <SubscribeForm listId={listId} />
         </Box>
       </Modal>
 

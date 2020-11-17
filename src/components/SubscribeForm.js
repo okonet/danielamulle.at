@@ -21,7 +21,7 @@ const states = {
   ERROR: "error",
 }
 
-function SubscribeForm() {
+function SubscribeForm({ listId = "1" }) {
   const [state, setState] = React.useState(states.IDLE)
   const handleSubmit = async (event) => {
     event.preventDefault()
@@ -60,8 +60,8 @@ function SubscribeForm() {
           gridTemplateColumns: ["auto", "1fr 1fr auto"],
         }}
       >
-        <input type="hidden" name="u" value="1" />
-        <input type="hidden" name="f" value="1" />
+        <input type="hidden" name="u" value={listId} />
+        <input type="hidden" name="f" value={listId} />
         <input type="hidden" name="s" />
         <input type="hidden" name="c" value="0" />
         <input type="hidden" name="m" value="0" />

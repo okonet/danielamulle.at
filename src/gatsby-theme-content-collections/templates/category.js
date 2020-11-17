@@ -22,6 +22,7 @@ export const query = graphql`
       endDate
       description
       isPublished
+      listId
     }
     projectPosts: allPost(
       filter: {
