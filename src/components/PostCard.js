@@ -90,7 +90,7 @@ function PostCard({
                     variant: "textStyles.cardMeta",
                   }}
                 >
-                  bei {author}
+                  von {author}
                 </Text>
               )}
               {date && (
