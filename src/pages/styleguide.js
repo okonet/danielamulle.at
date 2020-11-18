@@ -15,6 +15,8 @@ import logoSVG from "../images/logo/logo.svg"
 import { graphql, useStaticQuery } from "gatsby"
 import SocialImage from "../components/SocialImage"
 
+const version = 2
+
 export default () => {
   const { recipes } = useStaticQuery(
     graphql`
@@ -104,7 +106,7 @@ export default () => {
             <Styled.h3>Preview</Styled.h3>
             <img
               alt={`Instagram Image for ${title}`}
-              src={`https://component-driven.dev/api/screenshot?width=1080&height=1080&url=https://danielamulle.at${slug}?instagram`}
+              src={`https://component-driven.dev/api/screenshot?v=${version}&width=1080&height=1080&url=https://danielamulle.at${slug}?instagram`}
               width={1080 / 2}
               height={1080 / 2}
             />
