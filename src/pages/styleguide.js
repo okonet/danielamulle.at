@@ -14,6 +14,7 @@ import logo2x from "../images/logo/logo@2x.png"
 import logoSVG from "../images/logo/logo.svg"
 import { graphql, useStaticQuery } from "gatsby"
 import SocialImage from "../components/SocialImage"
+import Link from "../components/Link"
 
 const version = 2
 
@@ -43,7 +44,7 @@ export default () => {
         bg: "#fff",
       }}
     >
-      <Container>
+      <Container variant="full" sx={{ maxWidth: 1200 }}>
         <Grid gap={4}>
           <Styled.h1>Logos</Styled.h1>
           <Grid gap={4}>
@@ -96,23 +97,23 @@ export default () => {
 
           <Styled.h1>Social Images</Styled.h1>
         </Grid>
+        <Grid gap={2} columns={2}>
+          {recipes.nodes.map(({ id, slug, title, socialImage }) => (
+            <Box key={id}>
+              <Box sx={{ mb: 3 }}>
+                <Styled.h2>{title}</Styled.h2>
+                <Link to={slug + "?instagram"}>{slug}</Link>
+              </Box>
+              <img
+                alt={`Instagram Image for ${title}`}
+                src={`https://component-driven.dev/api/screenshot?v=${version}&width=1080&height=1080&url=https://danielamulle.at${slug}?instagram`}
+                width={1080 / 2}
+                height={1080 / 2}
+              />
+            </Box>
+          ))}
+        </Grid>
       </Container>
-      <Grid gap={2}>
-        {recipes.nodes.map(({ id, slug, title, coverImage, socialImage }) => (
-          <Box key={id}>
-            <Styled.h2>{title}</Styled.h2>
-            <Styled.h3>Live</Styled.h3>
-            <SocialImage image={socialImage} width={1080} height={1080} />
-            <Styled.h3>Preview</Styled.h3>
-            <img
-              alt={`Instagram Image for ${title}`}
-              src={`https://component-driven.dev/api/screenshot?v=${version}&width=1080&height=1080&url=https://danielamulle.at${slug}?instagram`}
-              width={1080 / 2}
-              height={1080 / 2}
-            />
-          </Box>
-        ))}
-      </Grid>
     </Box>
   )
 }
