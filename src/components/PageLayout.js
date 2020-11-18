@@ -35,7 +35,7 @@ export default ({
   if (search.includes("instagram")) {
     return (
       <SocialImage
-        title={title}
+        title={null}
         coverImage={coverImage}
         width={1080}
         height={1080}

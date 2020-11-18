@@ -5,7 +5,7 @@ import { AspectRatio, Box, Flex, Text, ThemeProvider } from "theme-ui"
 import { transparentize } from "@theme-ui/color"
 import theme, { palette } from "../theme"
 
-export default function({
+export default function ({
   coverImage,
   title,
   width = "100vw",
@@ -23,9 +23,10 @@ export default function({
     }
   `)
   const gradient = () => (theme) => {
-    return `linear-gradient(45deg,
-            ${transparentize("cyan.3", 0.25)(theme)},
-            ${transparentize("beige.4", 0.75)(theme)}
+    return `linear-gradient(135deg,
+            ${transparentize("cyan.4", 0)(theme)},
+            ${transparentize("beige.5", 0)(theme)},
+            ${transparentize("pink.5", 0)(theme)}
         )`
   }
 
@@ -41,26 +42,15 @@ export default function({
   }
   return (
     <ThemeProvider theme={ogTheme}>
-      <AspectRatio
-        ratio={width / height}
-        sx={{
-          width,
-          height,
-        }}
-      >
-        <Box
-          sx={{
-            position: "absolute",
-            left: 0,
-            top: 0,
-            width: "100%",
-            height: "100%",
-            backgroundImage: `url(${coverImage.childImageSharp.fluid.src})`,
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "cover",
-            backgroundPosition: "center center",
-          }}
+      <AspectRatio ratio={width / height} sx={{ width, height }}>
+        <Img
+          alt={title}
+          loading="eager"
+          fadeIn={false}
+          fluid={coverImage.childImageSharp.fluid}
+          style={{ width: "100%", height: "100%" }}
         />
+
         <Flex
           sx={{
             position: "absolute",
@@ -70,9 +60,9 @@ export default function({
             justifyContent: "space-between",
             py: 1,
             px: 2,
-            width,
-            height,
-            backgroundImage: gradient,
+            width: "100%",
+            height: "100%",
+            border: "thin",
           }}
         >
           <Img
@@ -81,15 +71,22 @@ export default function({
             fixed={logo.childImageSharp.fixed}
             alt="Logo"
           />
-          <Text
-            sx={{
-              variant: "textStyles.sectionTitle",
-              fontSize: 2,
-              lineHeight: 1.125,
-            }}
-          >
-            {title}
-          </Text>
+          {title && (
+            <Text
+              as="h1"
+              sx={{
+                position: "relative",
+                fontSize: 2,
+                lineHeight: 1.125,
+                background: gradient,
+                "-webkitBackgroundClip": "text",
+                "-webkitTextFillColor": "transparent",
+                mixBlendMode: "hard-light",
+              }}
+            >
+              {title}
+            </Text>
+          )}
         </Flex>
       </AspectRatio>
     </ThemeProvider>
