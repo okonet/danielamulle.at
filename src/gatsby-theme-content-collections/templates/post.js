@@ -12,6 +12,13 @@ export const query = graphql`
       timeToCook
       ...PostContent
       ...Categories
+      socialImage: coverImage {
+        childImageSharp {
+          fixed(height: 1080) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
     }
   }
 `

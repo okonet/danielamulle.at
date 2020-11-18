@@ -5,12 +5,7 @@ import { AspectRatio, Box, Flex, Text, ThemeProvider } from "theme-ui"
 import { transparentize } from "@theme-ui/color"
 import theme, { palette } from "../theme"
 
-export default function ({
-  coverImage,
-  title,
-  width = "100vw",
-  height = "100vh",
-}) {
+export default function ({ image, title, width = "100vw", height = "100vh" }) {
   const { logo } = useStaticQuery(graphql`
     query {
       logo: file(relativePath: { eq: "logo@2x.png" }) {
@@ -47,7 +42,7 @@ export default function ({
           alt={title}
           loading="eager"
           fadeIn={false}
-          fluid={coverImage.childImageSharp.fluid}
+          fixed={image.childImageSharp.fixed}
           style={{ width: "100%", height: "100%" }}
         />
 
@@ -62,7 +57,6 @@ export default function ({
             px: 2,
             width: "100%",
             height: "100%",
-            border: "thin",
           }}
         >
           <Img

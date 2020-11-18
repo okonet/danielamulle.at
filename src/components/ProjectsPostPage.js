@@ -16,6 +16,7 @@ const ProjectsPostPage = ({ data, location }) => {
     coverImage,
     coverImageAuthor,
     coverImageLink,
+    socialImage,
     title,
     categories,
   } = post
@@ -30,6 +31,7 @@ const ProjectsPostPage = ({ data, location }) => {
       coverImage={coverImage}
       coverImageAuthor={coverImageAuthor}
       coverImageLink={coverImageLink}
+      socialImage={socialImage}
       heading={
         <Box sx={{ mx: [0, 0, -4] }}>
           <Box

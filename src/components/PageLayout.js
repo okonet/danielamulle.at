@@ -11,6 +11,7 @@ import CoverImage from "./CoverImage"
 export default ({
   title,
   heading,
+  socialImage,
   coverImage,
   coverImageAuthor = "Andrey Okonetchnikov",
   coverImageLink = "https://okonet.ru",
@@ -26,7 +27,7 @@ export default ({
     return (
       <SocialImage
         title={title}
-        coverImage={coverImage}
+        image={socialImage}
         width={1012}
         height={506}
       />
@@ -36,7 +37,7 @@ export default ({
     return (
       <SocialImage
         title={null}
-        coverImage={coverImage}
+        image={socialImage}
         width={1080}
         height={1080}
       />

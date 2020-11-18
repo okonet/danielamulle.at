@@ -22,6 +22,13 @@ export default () => {
         recipes: allPost(filter: { collection: { eq: "recipes" } }) {
           nodes {
             ...PostMeta
+            socialImage: coverImage {
+              childImageSharp {
+                fixed(height: 1080) {
+                  ...GatsbyImageSharpFixed
+                }
+              }
+            }
           }
         }
       }
@@ -89,13 +96,19 @@ export default () => {
         </Grid>
       </Container>
       <Grid gap={2}>
-        {recipes.nodes.map(({ id, coverImage }) => (
-          <SocialImage
-            key={id}
-            coverImage={coverImage}
-            width={1080}
-            height={1080}
-          />
+        {recipes.nodes.map(({ id, slug, title, coverImage, socialImage }) => (
+          <Box key={id}>
+            <Styled.h2>{title}</Styled.h2>
+            <Styled.h3>Live</Styled.h3>
+            <SocialImage image={socialImage} width={1080} height={1080} />
+            <Styled.h3>Preview</Styled.h3>
+            <img
+              alt={`Instagram Image for ${title}`}
+              src={`https://component-driven.dev/api/screenshot?width=1080&height=1080&url=https://danielamulle.at${slug}?instagram`}
+              width={1080 / 2}
+              height={1080 / 2}
+            />
+          </Box>
         ))}
       </Grid>
     </Box>
