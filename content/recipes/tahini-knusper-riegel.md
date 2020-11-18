@@ -31,7 +31,7 @@ Knackig-knusprig, süss & köstlich, diese supereinfache Nascherei. Und dein Kö
 - 50 g Tahini
 - 30 g Sesam
 - 30 g Chiasamen
-- 75 g Kürbisoder Pinienkerne
+- 75 g Kürbis- oder Pinienkerne
 - 100 g Sonnenblumenkerne
 - 1/2 TL Salz 
 
