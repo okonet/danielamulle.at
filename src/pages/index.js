@@ -43,27 +43,27 @@ const IndexPage = () => {
     <PageLayout theme={homeTheme} title={_frontmatter.title}>
       <Flex
         sx={{
-          flexDirection: ["column", "row"],
-          alignItems: ["center", "flex-end"],
+          flexDirection: ["column", "column", "row"],
+          alignItems: "flex-end",
           h1: {
-            textAlign: ["center", "left"],
+            textAlign: ["center", "center", "left"],
           },
         }}
       >
         <Flex
           sx={{
-            order: [0, 1],
+            order: [0, 0, 1],
             flex: "0 1 auto",
-            mr: [0, 4],
-            mb: [4, 0],
-            mt: [-4, 0],
+            mr: [0, 0, -5],
+            mb: [4, 4, 0],
+            mt: [-170, -200, 0],
           }}
         >
           <Box
             sx={{
-              width: [150, 300],
-              height: [150, "auto"],
-              borderRadius: ["round", "none"],
+              width: [150, 150, 300],
+              height: [150, 150, "auto"],
+              borderRadius: ["round", "round", "none"],
               overflow: "hidden",
               objectFit: "cover",
             }}

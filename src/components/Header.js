@@ -53,10 +53,9 @@ function Header() {
         transform: `translateY(${visible ? 0 : -100}%)`,
         transition: "all 0.5s ease-in-out",
         willChange: "transform, background, box-shadow",
-        ":hover": {
-          transform: `translateY(0%)`,
-        },
       }}
+      onMouseEnter={() => setTransparent(false)}
+      onMouseLeave={() => setTransparent(prevScrollTop.current <= 0)}
     >
       <Container variant="full">
         <Box

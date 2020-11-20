@@ -59,7 +59,9 @@ const NavLink = React.forwardRef((props, ref) => {
         px: 0,
         mb: "3px",
         textDecoration: "none",
+        fontFamily: "body",
         fontWeight: "bold",
+        fontSize: 1,
         borderBottom: "none",
         bg: "transparent",
         color: "primary",
@@ -85,7 +87,7 @@ const Navigation = (props) => {
       as="nav"
       {...props}
       sx={{
-        alignItems: "flex-end",
+        alignItems: "center",
         overflow: "auto",
         "::-webkit-scrollbar": {
           width: 0,
@@ -103,9 +105,7 @@ const Navigation = (props) => {
       {pages.map(({ title, theme, to }) => {
         return (
           <ThemeProvider theme={theme} key={to}>
-            <NavLink key={to} to={to}>
-              {title}
-            </NavLink>
+            <NavLink to={to}>{title}</NavLink>
           </ThemeProvider>
         )
       })}

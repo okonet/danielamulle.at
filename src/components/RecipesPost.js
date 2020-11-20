@@ -42,7 +42,6 @@ export default ({ data, location }) => {
             sx={{
               color: "muted",
               fontSize: 0,
-              gridColumn: [1, "1 / span 10"],
               "@media print": {
                 visibility: "hidden",
               },
@@ -56,8 +55,7 @@ export default ({ data, location }) => {
           <Styled.h1
             sx={{
               mt: 1,
-              gridColumn: [1, "1 / span 10"],
-              ":first-letter": { textTransform: "uppercase" },
+              variant: "textStyles.pageTitle",
             }}
           >
             {title}

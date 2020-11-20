@@ -42,29 +42,31 @@ function Logo() {
       <Img fixed={image.childImageSharp.fixed} alt="Logo" />
       <Box sx={{ ml: 1, position: "relative" }}>
         <Text
-          as="p"
-          sx={{
-            m: 0,
-            color: "secondary",
-            fontFamily: "monospace",
-            fontSize: "11px",
-            letterSpacing: "condensed",
-            maxWidth: "20ch",
-          }}
-        >
-          {site.siteMetadata.role}
-        </Text>
-        <Text
           as="h1"
           sx={{
             m: 0,
             color: "text",
-            fontFamily: "body",
-            fontWeight: "heading",
+            fontFamily: "heading",
+            fontWeight: "normal",
             fontSize: 2,
           }}
         >
           {site.siteMetadata.author}
+        </Text>
+        <Text
+          as="p"
+          sx={{
+            display: ["none", "block"],
+            m: 0,
+            ml: "1px",
+            color: "secondary",
+            fontFamily: "monospace",
+            fontSize: "11px",
+            fontStyle: "italic",
+            maxWidth: ["20ch", "20ch", "20ch", "40ch"],
+          }}
+        >
+          {site.siteMetadata.role}
         </Text>
       </Box>
     </Link>
