@@ -40,12 +40,7 @@ const IndexPage = () => {
     }
   `)
   return (
-    <PageLayout
-      theme={homeTheme}
-      heading={
-        <Styled.h1 sx={{ my: 0, mb: -4 }}>{_frontmatter.title}</Styled.h1>
-      }
-    >
+    <PageLayout theme={homeTheme} title={_frontmatter.title}>
       <Flex
         sx={{
           flexDirection: ["column", "row"],
