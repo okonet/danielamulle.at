@@ -36,16 +36,20 @@ const ProjectsPostPage = ({ data, location }) => {
         <Box sx={{ mx: [0, 0, -4] }}>
           <Box
             as="nav"
-            sx={{ color: "muted", fontSize: 0, gridColumn: [1, "1 / span 10"] }}
+            sx={{
+              color: "muted",
+              fontSize: 0,
+              "@media print": {
+                visibility: "hidden",
+              },
+            }}
           >
             <Link to={project.slug}>← {project.id}</Link>
           </Box>
           <Styled.h1
             sx={{
               mt: 1,
-              gridColumnStart: [1, 1],
-              gridColumnEnd: [1, 10],
-              ":first-letter": { textTransform: "uppercase" },
+              variant: "textStyles.pageTitle",
             }}
           >
             {title}

@@ -38,6 +38,9 @@ export default ({ data, location }) => {
             sx={{
               color: "muted",
               fontSize: 0,
+              "@media print": {
+                visibility: "hidden",
+              },
             }}
           >
             <Group separator=" → ">
@@ -47,7 +50,7 @@ export default ({ data, location }) => {
           <Styled.h1
             sx={{
               mt: 1,
-              ":first-letter": { textTransform: "uppercase" },
+              variant: "textStyles.pageTitle",
             }}
           >
             {title}
