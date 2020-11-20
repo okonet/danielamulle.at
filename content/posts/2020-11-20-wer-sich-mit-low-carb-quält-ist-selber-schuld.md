@@ -14,8 +14,6 @@ categories:
   - value: Ballaststoffe
     label: Ballaststoffe
 ---
-# Wer sich mit Low Carb quält, ist selber schuld.
-
 Versuchst du auch Nudeln, Kartoffeln, Reis & Co. endgültig von deinem Teller zu verbannen? Plagt dich jedesmal das schlechte Gewissen, wenn du in eine knusprige Semmel oder ein fruchtiges Marmeladebrot beisst? Ja? Kein Wunder. Denn Low Carb liegt voll im Trend. Leider. 
 
 **Low Carb bedeutet viel weniger Kohlenhydrate zu essen, als allgemein üblich.**
@@ -67,8 +65,8 @@ Unterm Strich handelst du dir also ein höheres Risiko für Zuckerkrankheit, Üb
 - Du beugst Diabetes, Zahnkaries, Übergewicht, Herzinfarkt, Schlaganfall und Dickdarmkrebs vor.
 
 ## 5 Schritte wie du's richtig machst:
-1. Steig' auf Vollkorn um.
 
+### 1. Steig' auf Vollkorn um.
 Egal ob aus Brot, Gebäck, Kuchen, Nudeln, Reis - Greif' zur Vollkornvariante, denn es ist immer ein Gewinn für dich: 
 - Alles was dein Körper zum Verarbeiten braucht, wird im Vollkornpaket gleich mitgeliefert.
 - Dein Körper ist gut beschäftigt, und verbraucht dabei mehr Energie.
@@ -76,22 +74,18 @@ Egal ob aus Brot, Gebäck, Kuchen, Nudeln, Reis - Greif' zur Vollkornvariante, 
 - Vollkorn hat automatisch weniger Kalorien als die gleiche Menge Weißmehl-Lebensmittel.
 - Die Ballaststoffe sind Futter für Deinen Darmbakterien-Zoo und verbessern deine Verdauung.
 
-2. Bleib' nicht immer nur beim Weizen.
-
-Dein Körper liebt Abwechslung, denn so kann er aus einer großen Nährstoffe-Palette immer das auswählen, was er gerade braucht. Und auch Dein Darmbakterienzoo tickt ganz ähnlich, und wird es dir danken. Darum probier' auch mal Dinkel, Grünkern, Mais, Hirse, Buchweizen, Quinoa, Amaranth. [Rezept-Inspirationen](https://www.danielamulle.at/recipes) findest Du gleich hier auf meiner Website.
+### 2. Bleib' nicht immer nur beim Weizen.
+Dein Körper liebt Abwechslung, denn so kann er aus einer großen Nährstoffe-Palette immer das auswählen, was er gerade braucht. Und auch Dein Darmbakterienzoo tickt ganz ähnlich, und wird es dir danken. Darum probier' auch mal Dinkel, Grünkern, Mais, Hirse, Buchweizen, Quinoa, Amaranth. [Rezept-Inspirationen](https://www.danielamulle.at/recipes) findest Du gleich hier auf meiner Website.
 
  
-3. Verwende Zucker immer sparsam.⁠
-
+### 3. Verwende Zucker immer sparsam.⁠
 Egal ob Kristallzucker, Rohrzucker, Honig, Ahornsirup, Kokosblütenzucker & Co. Wenn du alle Zuckerarten problemlos verträgst, sind nur zwei Punkte wirklich wichtig: ⁠Wieviel Zucker & in welcher Kombination. Wenn du selbst kochst und bäckst, kannst du die Zuckermenge deiner Rezepte um mindestens 1/3 reduzieren. Kombiniere Zucker auch immer mit Ballaststoffen, Eiweiß und/oder Fett: Also z.B. ein Glas Limonade zum Mittagessen oder ein paar Kekse als Nachspeise, und nicht auf leeren Magen. So kommt der Zucker viel langsamer ins Blut⁠,⁠ und dein Körper kann ihn stressfrei wegräumen. 
 
-4. Iss' täglich Obst und Trockenfrüchte.
+### 4. Iss' täglich Obst und Trockenfrüchte.
+Im Obst kommen Zucker automatisch in einer Verpackung aus unterschiedlichen Ballaststoffen, je nach Sorte. Zugleich bekommst du einen bunten Mix an anderen wertvollen Stoffen mitgeliefert: Vitamine, Mineralstoffe, Spurenelemente und Sekundäre Pflanzenstoffe zum Beispiel. Auch hier gilt: die Abwechslung macht's aus, also koste dich durch -je nachdem, was gerade reif und in Saison ist. Trockenfrüchten fehlt das Wasser, deswegen sind Zucker und andere Nährstoffe darin hoch konzentriert. Du kannst somit Rosinen, Datteln, Feigen & Co. kleingeschnitten, püriert oder im Ganzen perfekt zum Süßen verwenden: beim Backen von Kuchen oder Keksen, in Süßspeisen oder für deine Müslis und Porridges.
 
-Im Obst kommen Zucker automatisch in einer Verpackung aus unterschiedlichen Ballaststoffen, je nach Sorte. Zugleich bekommst du einen bunten Mix an anderen wertvollen Stoffen mitgeliefert: Vitamine, Mineralstoffe, Spurenelemente und Sekundäre Pflanzenstoffe zum Beispiel. Auch hier gilt: die Abwechslung macht's aus, also koste dich durch -je nachdem, was gerade reif und in Saison ist. Trockenfrüchten fehlt das Wasser, deswegen sind Zucker und andere Nährstoffe darin hoch konzentriert. Du kannst somit Rosinen, Datteln, Feigen & Co. kleingeschnitten, püriert oder im Ganzen perfekt zum Süßen verwenden: beim Backen von Kuchen oder Keksen, in Süßspeisen oder für deine Müslis und Porridges.
-
-5. Trink' genug.
-
-Die Ballaststoffe in Vollkorn und Obst saugen Wasser auf wie ein Schwamm. Darum achte bitte unbedingt darauf, dass du genug trinkst. Dein Körpergewicht mal 35 ergibt die Menge in Milliliter, die du pro Tag brauchst. Angenommen, du hast 70 kg, dann wären das insgesamt 70 x 35 = 2.450 ml. Du solltest also mindestens 2 Liter gut über den Tag verteilt trinken, den Rest bekommst du über's Essen, z.B. Suppen, Saucen, Dressings, Joghurt, Gurken, Melonen usw.). Das beste Getränk ist übrigens Wasser. Limonaden, Wellnessgetränke, Energydrinks und Sirupe enthalten leider Unmengen an Zucker. Auch Milch oder Alkohol sind keine Durstlöscher. Genieße auch Fruchtsäfte und Smoothies nur ab und zu - Säfte am besten großzügig (1:3) mit Wasser verdünnt. Generell hat dein Körper Obst im Ganzen viel lieber als flüssig.
+### 5. Trink' genug.
+Die Ballaststoffe in Vollkorn und Obst saugen Wasser auf wie ein Schwamm. Darum achte bitte unbedingt darauf, dass du genug trinkst. Dein Körpergewicht mal 35 ergibt die Menge in Milliliter, die du pro Tag brauchst. Angenommen, du hast 70 kg, dann wären das insgesamt 70 x 35 = 2.450 ml. Du solltest also mindestens 2 Liter gut über den Tag verteilt trinken, den Rest bekommst du über's Essen, z.B. Suppen, Saucen, Dressings, Joghurt, Gurken, Melonen usw.). Das beste Getränk ist übrigens Wasser. Limonaden, Wellnessgetränke, Energydrinks und Sirupe enthalten leider Unmengen an Zucker. Auch Milch oder Alkohol sind keine Durstlöscher. Genieße auch Fruchtsäfte und Smoothies nur ab und zu - Säfte am besten großzügig (1:3) mit Wasser verdünnt. Generell hat dein Körper Obst im Ganzen viel lieber als flüssig.
 
 ## Jetzt möchte ich dir noch 2 häufige Irrtümer zeigen, damit sie dir nicht passieren:
 
@@ -101,5 +95,6 @@ Brot und Gebäck aus Weißmehl wird oft nur mit Malzzucker dunkler gefärbt, um 
 ### 2. Dinkel ist nicht Vollkorn.
 Dinkel ist die alte Kulturform des Weizens, und kann genauso weiß ausgemahlen werden wie Weizen. Wenn du Vollkornmehl, -brot oder -nudeln kaufen möchtest, dann schau' darauf, dass das Wort "Vollkorn" tatsächlich in der Zutatenliste steht. Am besten gleich als eine der ersten 3 Zutaten, denn die Regel lautet: „Je weiter vorne, desto mehr ist drin.“
 
-## Zusammengefasst: warum kein Low Carb? Weil die richtigen Kohlenhydrate für dich und deine Gesundheit unverzichtbar sind.
+**Zusammengefasst: warum kein Low Carb? Weil die richtigen Kohlenhydrate für dich und deine Gesundheit unverzichtbar sind.**
+
 Hast du noch Fragen, die offen geblieben sind? Oder vielleicht eine ganz andere Meinung zum Thema Low Carb? Dann lass' es mich bitte wissen - ich freue mich über dein Mail: contact@danielamulle.at.
