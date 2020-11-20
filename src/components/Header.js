@@ -8,7 +8,7 @@ const SCROLL_THRESHOLD = 30
 
 function Header() {
   let scrollTop = 0
-  if (window) {
+  if (typeof window !== "undefined") {
     scrollTop = window.document.scrollingElement.scrollTop
   }
   const [visible, setVisible] = useState(scrollTop === 0)
