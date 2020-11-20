@@ -4,24 +4,35 @@ import { Box, Container, jsx } from "theme-ui"
 import Logo from "./Logo"
 import Navigation from "./Navigation"
 
+const SCROLL_THRESHOLD = 30
+
 function Header() {
-  const [visible, setVisible] = useState(true)
-  const [transparent, setTransparent] = useState(true)
-  const prevScrollTop = useRef(0)
+  let scrollTop = 0
+  if (window) {
+    scrollTop = window.document.scrollingElement.scrollTop
+  }
+  const [visible, setVisible] = useState(scrollTop === 0)
+  const [transparent, setTransparent] = useState(scrollTop === 0)
+  const prevScrollTop = useRef(scrollTop)
   useEffect(() => {
     const handleScroll = (event) => {
-      // console.log(event.target.scrollingElement.scrollTop)
-      const scrollTop = event.target.scrollingElement.scrollTop
-      const delta = scrollTop - prevScrollTop.current
-      if (delta > 0) {
+      const { scrollTop, scrollHeight } = event.target.scrollingElement
+      const clampedScrollTop = Math.max(0, Math.min(scrollTop, scrollHeight))
+      const delta = clampedScrollTop - prevScrollTop.current
+      if (delta > SCROLL_THRESHOLD) {
         // Hide when scrolling down
-        setVisible(false)
-      } else {
+        if (visible) {
+          setVisible(false)
+        }
+        prevScrollTop.current = clampedScrollTop
+      } else if (delta < -SCROLL_THRESHOLD) {
         // Set visible if we're scrolling up
-        setVisible(true)
-        setTransparent(scrollTop <= 0)
+        if (!visible) {
+          setVisible(true)
+        }
+        prevScrollTop.current = clampedScrollTop
       }
-      prevScrollTop.current = scrollTop
+      setTransparent(scrollTop <= 0)
     }
     window.addEventListener("scroll", handleScroll)
     return () => {
