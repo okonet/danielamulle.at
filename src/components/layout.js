@@ -2,11 +2,10 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { Box, Container, Flex, jsx, Styled, ThemeProvider } from "theme-ui"
-import Logo from "./Logo"
-import Navigation from "./Navigation"
 import Footer from "./Footer"
 import { default as defaultTheme } from "../theme"
 import SubscribeForm from "./SubscribeForm"
+import Header from "./Header"
 
 const Layout = ({
   theme = defaultTheme,
@@ -17,30 +16,7 @@ const Layout = ({
   return (
     <ThemeProvider theme={theme}>
       <Flex sx={{ flexDirection: "column", minHeight: "100vh" }}>
-        <Box
-          as={"header"}
-          sx={{
-            position: "relative",
-            top: 0,
-            py: 3,
-            width: "100%",
-            // bg: transparentize("background", 0.5),
-            // backgroundImage: `linear-gradient(rgba(255,255,255,0.75), rgba(255,255,255,0.25) 75%, rgba(255,255,255,0))`,
-            // backdropFilter: "blur(16px)",
-            zIndex: 10,
-          }}
-        >
-          <Container variant="full">
-            <Box
-              sx={{
-                display: ["block", "flex", "flex"],
-              }}
-            >
-              <Logo />
-              <Navigation sx={{ ml: "auto" }} />
-            </Box>
-          </Container>
-        </Box>
+        <Header />
 
         <Flex
           as="main"

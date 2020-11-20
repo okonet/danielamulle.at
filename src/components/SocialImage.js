@@ -1,7 +1,7 @@
 import React from "react"
 import Img from "gatsby-image"
 import { graphql, useStaticQuery } from "gatsby"
-import { AspectRatio, Box, Flex, Text, ThemeProvider } from "theme-ui"
+import { AspectRatio, Flex, Text, ThemeProvider } from "theme-ui"
 import { transparentize } from "@theme-ui/color"
 import theme, { palette } from "../theme"
 

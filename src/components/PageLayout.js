@@ -81,9 +81,8 @@ export default ({
           display: "flex",
           pt: [6, 5],
           pb: [3, 5],
-          mt: -6,
           backgroundColor: "headerBg",
-          minHeight: [200, 280],
+          minHeight: [220, 240, 260],
           alignItems: "flex-end",
           ...sx,
         }}

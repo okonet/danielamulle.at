@@ -48,7 +48,7 @@ const theme = {
     heading: '"IBM Plex Sans", Helvetica, Arial, sans-serif',
     monospace: '"IBM Plex Mono", monospace',
   },
-  fontSizes: ["0.85em", "1em", "1.25em", "3em", "5rem"],
+  fontSizes: ["0.85em", "1em", "1.25em", "2.5em", "4em"],
   fontWeights: {
     body: 400,
     heading: 700,
