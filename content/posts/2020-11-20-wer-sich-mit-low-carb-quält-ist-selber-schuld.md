@@ -9,6 +9,10 @@ categories:
     label: Abnehmen
   - value: Gewicht
     label: Gewicht
+  - value: Low Carb
+    label: Low Carb
+  - value: Ballaststoffe
+    label: Ballaststoffe
 ---
 # Wer sich mit Low Carb quält, ist selber schuld.
 
