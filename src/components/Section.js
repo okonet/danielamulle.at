@@ -1,14 +1,13 @@
 /** @jsx jsx */
 import * as React from "react"
 import * as PropTypes from "prop-types"
-import Img from "gatsby-image"
 import { Box, Container, jsx, ThemeProvider } from "theme-ui"
 import { default as defaultTheme } from "../theme"
 
 function Section({
   theme = defaultTheme,
   coverSrc,
-  coverFluid,
+  coverImage,
   blendMode = "normal",
   children,
   sx,
@@ -25,6 +24,7 @@ function Section({
       )})`
     }
     imageStyles = {
+      backgroundColor: "headerBg",
       backgroundImage: bgSrc,
       backgroundSize: "cover",
       backgroundRepeat: "no-repeat",
@@ -42,33 +42,20 @@ function Section({
         }}
         {...props}
       >
-        {imageSrc && (
-          <Box
-            sx={{
-              position: "absolute",
-              top: 0,
-              left: 0,
-              width: "100%",
-              height: "100%",
-              zIndex: 0,
-              backgroundColor: "headerBg",
-              ...imageStyles,
-            }}
-          />
-        )}
-        {coverFluid && (
-          <Img
-            fluid={coverFluid}
-            style={{
-              position: "absolute",
-              top: 0,
-              left: 0,
-              width: "100%",
-              height: "100%",
-              zIndex: 0,
-            }}
-          />
-        )}
+        <Box
+          sx={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            zIndex: 0,
+            ...imageStyles,
+          }}
+        >
+          {coverImage}
+        </Box>
+
         <Container
           variant="containerWide"
           sx={{ position: "relative", zIndex: 1 }}
