@@ -40,7 +40,7 @@ function Logo() {
       }}
     >
       <Img fixed={image.childImageSharp.fixed} alt="Logo" />
-      <Box sx={{ ml: 1 }}>
+      <Box sx={{ ml: 1, position: "relative" }}>
         <Text
           as="p"
           sx={{
