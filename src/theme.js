@@ -31,7 +31,7 @@ export const palette = {
 }
 
 const theme = {
-  breakpoints: ["32em", "40em", "64em"],
+  // breakpoints: ["32em", "40em", "64em"],
   space: [0, 4, 8, 16, 32, 64, 128],
   colors: {
     text: palette.gray[1],
@@ -44,11 +44,11 @@ const theme = {
     sectionBg: palette.white,
   },
   fonts: {
-    body: '"IBM Plex Sans", Helvetica, Arial, sans-serif',
-    heading: '"IBM Plex Sans", Helvetica, Arial, sans-serif',
+    body: '"IBM Plex Mono", Helvetica, Arial, sans-serif',
+    heading: '"Yeseva One", "IBM Plex Sans", Helvetica, Arial, sans-serif',
     monospace: '"IBM Plex Mono", monospace',
   },
-  fontSizes: ["0.85em", "1em", "1.25em", "2.5em", "4em"],
+  fontSizes: ["0.85em", "1em", "1.25em", "1.5em", "2.5em", "3.25em"],
   fontWeights: {
     body: 400,
     heading: 700,
@@ -56,7 +56,8 @@ const theme = {
     bold: 700,
   },
   lineHeights: {
-    body: 1.5,
+    body: 1.75,
+    blockquote: 1.5,
     heading: 1.125,
   },
   letterSpacings: {
@@ -138,15 +139,21 @@ const theme = {
   },
   textStyles: {
     pageTitle: {
-      my: 0,
+      m: 0,
       color: "primary",
+      fontSize: 5,
+      fontWeight: "normal",
+      fontFamily: "heading",
+      lineHeight: "heading",
+      wordBreak: "break-word", // closes #43
+      hyphens: "auto",
       ":first-letter": { textTransform: "uppercase" },
     },
     title: {
       m: 0,
       color: "primary",
-      fontSize: 3,
-      fontWeight: "body",
+      fontSize: 4,
+      fontWeight: "normal",
       fontFamily: "heading",
       lineHeight: "heading",
       wordBreak: "break-word", // closes #43
@@ -164,7 +171,7 @@ const theme = {
       color: "secondary",
       fontSize: 0,
       fontWeight: "bold",
-      fontFamily: "heading",
+      fontFamily: "body",
       lineHeight: "body",
     },
     cardTitle: {
@@ -172,7 +179,7 @@ const theme = {
       color: "background",
       fontSize: 1,
       fontWeight: "bold",
-      fontFamily: "heading",
+      fontFamily: "body",
       lineHeight: "body",
     },
     cardMeta: {
@@ -221,7 +228,6 @@ const theme = {
       maxWidth: 984, // 12 x (70px + 16px gap)
       py: [3, 4],
       px: [3, 4, 5],
-      mt: [0, -3],
       bg: "sectionBg",
       borderRadius: ["none", "none", "medium"],
       zIndex: 1,
@@ -272,14 +278,13 @@ const theme = {
         left: 0,
         fontSize: "11px",
         lineHeight: 2.2,
-        // variant: "textStyles.sectionTitle",
         color: "muted",
         content: '" ✼ "',
       },
     },
     ol: {
       p: 0,
-      pl: 3,
+      pl: 4,
       my: 2,
     },
     li: {
@@ -287,7 +292,7 @@ const theme = {
       variant: "textStyles.body",
     },
     table: {
-      display: "block",
+      display: ["block", "block", "table"],
       borderCollapse: "collapse",
       width: "100%",
       overflow: "auto",
@@ -313,10 +318,12 @@ const theme = {
       p: 0,
       ml: 4,
       my: 4,
-      fontStyle: "italic",
-      fontSize: 2,
       "> p": {
         m: 0,
+        fontSize: 2,
+        fontFamily: "body",
+        fontStyle: "italic",
+        lineHeight: "blockquote",
       },
     },
   },
@@ -339,11 +346,12 @@ export const aboutTheme = {
     ...theme.colors,
     text: palette.pink[1],
     background: palette.pink[6],
+    headerBg: palette.pink[5],
+    sectionBg: palette.pink[6],
     accent: palette.pink[2],
     primary: palette.pink[3],
     secondary: palette.pink[4],
     muted: palette.pink[5],
-    headerBg: palette.pink[5],
   },
   coverSrc: unsplashURL("W6cPNv8daRA"),
 }
@@ -354,11 +362,12 @@ export const offersTheme = {
     ...theme.colors,
     text: palette.green[1],
     background: palette.green[6],
+    headerBg: palette.green[5],
+    sectionBg: palette.green[6],
     accent: palette.green[2],
     primary: palette.green[3],
     secondary: palette.green[4],
     muted: palette.green[5],
-    headerBg: palette.green[5],
   },
   coverSrc: unsplashURL("sTPy-oeA3h0"),
   // coverSrc: unsplashURL("kcRFW-Hje8Y"),
