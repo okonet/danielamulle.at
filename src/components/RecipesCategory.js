@@ -1,15 +1,12 @@
 /* @jsx jsx */
 import React from "react"
 import { Box, Container, jsx, Styled, Text } from "theme-ui"
-import SEO from "../components/seo"
-import Layout from "../components/layout"
 import Link from "../components/Link"
 import { recipesTheme } from "../theme"
 import { recipesPath } from "../../paths"
 import groupBy from "lodash.groupby"
 import RecipesList from "./RecipesList"
 import Group from "react-group"
-import Section from "./Section"
 import PageLayout from "./PageLayout"
 
 export default ({ data }) => {
