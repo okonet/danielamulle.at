@@ -55,6 +55,8 @@ const IndexPage = () => {
             order: [0, 1],
             flex: "0 1 auto",
             mr: [0, 4],
+            mb: [4, 0],
+            mt: [-4, 0],
           }}
         >
           <Box
