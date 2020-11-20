@@ -287,8 +287,10 @@ const theme = {
       variant: "textStyles.body",
     },
     table: {
+      display: "block",
       borderCollapse: "collapse",
       width: "100%",
+      overflow: "auto",
     },
     th: {
       p: 2,
