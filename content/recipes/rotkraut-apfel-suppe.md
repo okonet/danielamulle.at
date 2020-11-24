@@ -25,19 +25,19 @@ Diese fruchtige Suppe hast du im Handumdrehen fertig, und sie ist nicht nur gesc
 
 <Ingredients yields="4 Personen">
 
-- 1/2 Kopf Rotkraut
-- 1 Zwiebel
-- 1 Knoblauchzehe
-- Rapsöl
-- 1 Apfel
-- 150 g Linsen (gelb oder rot)
-- 1,5 TL Salz
-- Pfeffer
-- 2 Lorbeerblätter
-- 1/2 TL Kümmel
-- 1 daumengroßes Stück Ingwer (optional)
-- 1 entkernte rote Chili (optional)
-- Saft 1/2 Zitrone oder 1 EL Apfelessig
+* 1/2 Kopf Rotkraut
+* 1 Zwiebel
+* 1 Knoblauchzehe
+* Rapsöl
+* 1 Apfel
+* 150 g Linsen (gelb oder rot)
+* 1,5 TL Salz
+* Pfeffer
+* 2 Lorbeerblätter
+* 1/2 TL Kümmel
+* 1 daumengroßes Stück Ingwer (optional)
+* 1 entkernte rote Chili (optional)
+* Saft 1/2 Zitrone oder 1 EL Apfelessig
 
 </Ingredients>
 <Preparation>
@@ -54,4 +54,4 @@ Diese fruchtige Suppe hast du im Handumdrehen fertig, und sie ist nicht nur gesc
 </Preparation>
 
 Falls Du keine frischen Ingwer oder Chili zuhause hast, kannst du diese Gewürze natürlich auch weglassen - die Suppe schmeckt trotzdem. 
-Die Inspiration zu diesem köstlichen Rezept stammt übrigens von [Hanna Thuile](www.ernaehrung-thuile.it), einer Kollegin aus Südtirol.
+Die Inspiration zu diesem köstlichen Rezept stammt übrigens von [](www.ernaehrung-thuile.it)[](https://www.ernaehrung-thuile.it/)[Hanna Thuile](https://www.ernaehrung-thuile.it/), einer Kollegin aus Südtirol.
