@@ -54,4 +54,4 @@ Diese fruchtige Suppe hast du im Handumdrehen fertig, und sie ist nicht nur gesc
 </Preparation>
 
 Falls Du keine frischen Ingwer oder Chili zuhause hast, kannst du diese Gewürze natürlich auch weglassen - die Suppe schmeckt trotzdem. 
-Die Inspiration zu diesem köstlichen Rezept stammt übrigens von [](www.ernaehrung-thuile.it)[](https://www.ernaehrung-thuile.it/)[Hanna Thuile](https://www.ernaehrung-thuile.it/), einer Kollegin aus Südtirol.
+Die Inspiration zu diesem köstlichen Rezept stammt übrigens von [Hanna Thuile](https://www.ernaehrung-thuile.it/), einer Kollegin aus Südtirol.
