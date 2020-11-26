@@ -1,7 +1,9 @@
 ---
-title: Rotes Linsencurry mit Süßkartoffeln & Spinat
+title: Linsencurry mit Süßkartoffeln & Spinat
 date: 2020-06-23T13:12:11.830Z
 coverImage: ../assets/DSC03002.jpg
+coverImageAuthor: Andrey Okonechnikov
+coverImageLink: https://okonet.ru/
 categories:
   - value: Hauptspeisen
     label: Hauptspeisen
@@ -17,7 +19,7 @@ categories:
     label: glutenfrei
   - value: fruktosearm
     label: fruktosearm
-timeToCook: 30 Minuten vorbereiten + 45 Minuten köcheln
+timeToCook: 20 Minuten vorbereiten + 45 Minuten köcheln
 ---
 
 In diesem eiweißreichen Curry kommt "ausnahmsweise" Instant-Currypaste vor, aber auch saisonales Gemüse aus regionalem Anbau.
@@ -42,18 +44,17 @@ In diesem eiweißreichen Curry kommt "ausnahmsweise" Instant-Currypaste vor, abe
 </Ingredients>
 <Preparation>
 
-1. Süßkartoffel schälen und in 2 cm große Würfel schneiden.
-2. Zwiebel und Knoblauch schälen, Zwiebel fein hacken.
-3. 2 EL Rapsöl in einer großen Pfanne / Wok erhitzen, die Süßkartoffelwürfel darin rundherum braun anbraten.
-4. Herausnehmen und beiseitestellen.
-5. Noch 1 EL Rapsöl in die Pfanne geben und den gehackten Zwiebel bei mittlerer Hitze ca. 5 Minuten glasig dünsten.
-6. Currypaste, Kurkumapulver, Knoblauch, Ingwer und Chili dazugeben und ca. 1 Minute rösten, bis die Mischung duftet.
-7. Linsen, Gemüsesuppe und Wasser unterrühren und ca. 20 Minuten bei geringer Hitze köcheln lassen, bis die Linsen weich sind.
-8. Kokosmilch und die Süßkartoffelwürfel einrühren.
-9. Noch ca. 15 Minuten weiter köcheln, bis die Linsen cremig zerfallen.
-10. Spinat zugeben und ca. 3 Minuten im Curry zusammenfallen lassen.
-11. Mit Limettensaft abschmecken.
-12. Mit frischen Korianderblättern und Kokosraspeln garnieren und mit (Vollkorn)reis servieren.
+1. Süsskartoffel schälen und in 2 cm große Würfel schneiden.
+2. Zwiebel, Knoblauch und Ingwer schälen.
+3. Zwiebel fein hacken, Knoblauch und Ingwer durch die Knoblauchpresse drücken.
+4. Etwas Rapsöl in einen großen Topf geben und Zwiebel & Knoblauch bei mittlerer Hitze ca. fünf Minuten glasig dünsten.
+5. Currypaste, Kurkumapulver, Ingwer und Chili dazugeben und ca. eine Minute rösten, bis die Mischung duftet.
+6. Linsen, Gemüsesuppe und Wasser unterrühren und ca. 20 Minuten bei geringer Hitze köcheln lassen, bis die Linsen weich sind.
+7. Kokosmilch und die Süsskartoffelwürfel einrühren.
+8. Noch ca. 15 Minuten weiterköcheln, bis die Linsen cremig zerfallen.
+9. Spinat zugeben und ca. drei Minuten im Curry zusammenfallen lassen.
+10. Mit Limettensaft abschmecken.
+11. Mit frischen Korianderblättern und Kokosraspeln garnieren und mit Reis servieren.
 
 </Preparation>
 
