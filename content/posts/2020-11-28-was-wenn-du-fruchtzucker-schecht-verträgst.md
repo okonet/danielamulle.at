@@ -38,7 +38,9 @@ Sobald deine Beschwerden verschwunden sind, erweiterst du deinen Speiseplan vors
 - Nimm davon erst wenig, dann steigere langsam bis zur Menge, die für dich gut passt, z.B.: 
 > Naturjoghurt + 1/4 Banane - Naturjoghurt + 1/2 Banane - Naturjoghurt + 1 Banane
 - Schreib genau auf, wann du was und wieviel gegessen hast, und welche Beschwerden du eventuell hattest, z.B.:
-> 14:00 Uhr 1 kleiner Becher Naturjoghurt + 1 große Banane - 14:50 Uhr leichter Durchfall
+> 14:00 Uhr 1 kleiner Becher Naturjoghurt + 1 große Banane
+14:50 Uhr leichter Durchfall
+
 - Es gibt auch Smartphone-Apps zum Mitschreiben z.B. Foody
 - Notiere problemlose Mengen & Kombinationen neben das entsprechende Lebensmittel in deiner Liste: so entsteht deine persönliche "Fruchtzucker-Postivliste".
 
