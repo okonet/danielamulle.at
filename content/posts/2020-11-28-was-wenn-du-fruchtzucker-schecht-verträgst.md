@@ -12,8 +12,7 @@ categories:
   - value: Reizdarm
     label: Reizdarm
 ---
-# Was, wenn du Fruchtzucker schecht verträgst?
-Vor kurzem erreichte mich dieses Email:
+Vor kurzem fand ich eines Morgens dieses Email in mein Ordinationspostfach:
 > Liebe Frau Mulle,
 > 
 > ich bin echt verzweifelt, und brauche dringend Hilfe: Vor 2,5 Monaten wurde bei mir eine "Fruktosemalabsorption" festgestellt. Seitdem verzichte ich wirklich streng auf Fruchtzucker. Am Anfang hat das geholfen, aber jetzt habe ich wieder fast jeden Tag Bauchschmerzen, starke Blähungen und oft auch Durchfall. Ich hab echt schon kaum Lust, überhaupt etwas zu kochen oder zu essen. Was mache ich denn falsch? Können Sie mir weiterhelfen?
