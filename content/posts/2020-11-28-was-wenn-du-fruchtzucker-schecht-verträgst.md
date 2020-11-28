@@ -21,7 +21,7 @@ Vor kurzem erreichte mich dieses Email:
 Leider bei weitem kein Einzelfall. Und wenn es dir ähnlich geht, möchte ich dir hier kurz erklären, wie du nach der Diagnose "Fruktosemalabsorption" startest. 
 
 ## Der Weg ist das Ziel
-Damit du herausfindest, welche Lebensmittel dir Probleme bereiten, gehst du nacheinander drei Schritte. Lass dich am besten von einer Diätologin begleiten, denn sie kennt den Weg:
+Damit du herausfindest, welche Lebensmittel dir Probleme bereiten, gehst du nacheinander drei Schritte. Lass dich am besten von einer Diätologin begleiten, denn sie kennt den Weg ganz genau:
 
 ## Schritt 1: Fruchtzucker-Auszeit
 Bitte starte erst, wenn du deine *Diagnose von einem Arzt erhalten hast*. Der Arzt hat dann schon abgeklärt, ob du vielleicht noch andere Unverträglichkeiten, Allergien oder eine Krankheit hast, die deine Bauch-Beschwerden auslösen. Außerdem prüft er dein Blut auf Nährstofflücken, z.B. an Zink, Vitamin D, Eisen, B12, Folsäure, etc. Das kann vorkommen, wenn du schon länger Probleme hast, und diese Lücken müssen geschlossen werden.
@@ -40,6 +40,7 @@ Ein paar Expertentipps für diese spannende Zeit:
 > Naturjoghurt + 1/4 Banane - Naturjoghurt + 1/2 Banane - Naturjoghurt + 1 Banane
 - Schreib genau auf, wann du was und wieviel gegessen hast, und welche Beschwerden du eventuell hattest, z.B.:
 > 14:00 Uhr 1 kleiner Becher Naturjoghurt + 1 Banane
+
 > 14:50 Uhr starke Blähungen
 - Es gibt auch Smartphone-Apps zum Mitschreiben z.B. Foody
 - Notiere problemlose Mengen & Kombinationen neben das entsprechende Lebensmittel in deiner Liste: so entsteht deine persönliche "Fruchtzucker-Postivliste".
