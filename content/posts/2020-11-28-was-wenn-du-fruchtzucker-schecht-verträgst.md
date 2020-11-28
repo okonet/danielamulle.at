@@ -16,7 +16,7 @@ Vor kurzem fand ich eines Morgens dieses Email in mein Ordinationspostfach:
 > Liebe Frau Mulle,
 > 
 > ich bin echt verzweifelt, und brauche dringend Hilfe: Vor 2,5 Monaten wurde bei mir eine "Fruktosemalabsorption" festgestellt. Seitdem verzichte ich wirklich streng auf Fruchtzucker. Am Anfang hat das geholfen, aber jetzt habe ich wieder fast jeden Tag Bauchschmerzen, starke Blähungen und oft auch Durchfall. Ich hab echt schon kaum Lust, überhaupt etwas zu kochen oder zu essen. Was mache ich denn falsch? Können Sie mir weiterhelfen?
-> 
+
 Leider bei weitem kein Einzelfall. Und wenn es dir ähnlich geht, möchte ich dir hier kurz erklären, wie du nach der Diagnose "Fruktosemalabsorption" startest. 
 
 ## Der Weg ist das Ziel
@@ -30,7 +30,7 @@ Der 1. Schritt gibt deinem Bauch eine Erholungszeit. Das schaffst du, in dem du 
 ## Schritt 2: Fruchtzucker-Testen
 Sobald deine Beschwerden verschwunden sind, erweiterst du deinen Speiseplan vorsichtig wieder um fruchtzuckerhaltige Lebensmittel. Das ist sehr wichtig, weil dein Darm die Arbeit mit dem Fruchtzucker nicht verlernen soll. Und auch, weil du sonst zu einseitig isst und nicht alle Nährstoffe bekommst. Es gibt viele Bücher, Websiten und Apps mit *Verträglichkeitslisten*, die du als Anhaltspunkt verwenden kannst. Dein Darm ist aber einzigartig, darum brauchst du unbedingt Zeit zum Ausprobieren.
 
-Ein paar Expertentipps für diese spannende Zeit:
+**Ein paar Expertentipps für diese spannende Zeit:**
 - Bleib weiter bei deiner Fruchtzucker-Auszeit-Ernährung.
 - Teste nur, wenn es dir wirklich gut geht.
 - Mach eine Liste aller Lebensmittel, die du testen möchtest.
