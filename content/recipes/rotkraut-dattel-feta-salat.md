@@ -2,6 +2,8 @@
 title: Rotkraut-Dattel-Feta-Salat
 date: 2020-06-18T08:57:17.575Z
 coverImage: ../assets/20200407-dsc02417.jpeg
+coverImageAuthor: Andrey Okonechnikov
+coverImageLink: https://okonet.ru/
 categories:
   - value: Salate
     label: Salate
@@ -37,7 +39,7 @@ Ein phänomenaler Salat, den du unbedingt probieren solltest! Die Idee stammt vo
 </Ingredients>
 <Preparation>
 
-1. Rotkraut reiben oder in feine Streifen schneiden.
+1. Rotkraut reiben oder in feine Streifen schneiden, am besten mit Handschuhen oder du überlässt diese Arbeit deiner Küchenmaschine.
 2. Mit 1 TL Salz verkneten.
 3. Mit Zitronensaft, Olivenöl und Pfeffer kräftig würzen.
 4. Datteln & Petersilie fein hacken.
