@@ -2,6 +2,8 @@
 title: Überbackene Tomaten-Ricotta-Pasta
 date: 2020-07-26T05:14:12.515Z
 coverImage: ../assets/tomatenricottapasta.jpg
+coverImageAuthor: Andrey Okonechnikov
+coverImageLink: okonet.ru
 categories:
   - value: Hauptspeisen
     label: Hauptspeisen
@@ -57,7 +59,7 @@ Du liebst Lasagne, aber das ist dir zum Selberkochen zu kompliziert? Dann sollte
 15. 1/3 der Pasta einfüllen.
 16. 1/3 der restlichen Tomatensauce darübergeben.
 17. Die Hälfte der Ricotta-Mischung in Klecksen darüberlöffeln und 1/3 der Mozzarellastücke darauf verteilen.
-18. Schritte 18 20 nochmals wiederholen.
+18. Schritte 15-17 nochmals wiederholen.
 19. Mit Pasta & Tomatensauce abschließen.
 20. Mit den restlichen Mozzarellastücken & Parmesan belegen.
 21. Bei 200 Grad ca. 30 Minuten braun backen.
