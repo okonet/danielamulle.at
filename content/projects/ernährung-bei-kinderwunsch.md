@@ -3,7 +3,7 @@ categories:
   - value: Diätologischer Jahresstart 2021
     label: Diätologischer Jahresstart 2021
 title: Ernährung bei Kinderwunsch
-date: 2021-01-24T05:00:00.000Z
+date: 2021-01-10T05:00:00.000Z
 coverImage: ../assets/koller_f-rezept.jpg
 coverImageAuthor: Flora Koller
 coverImageLink: www.flora-koller.at
