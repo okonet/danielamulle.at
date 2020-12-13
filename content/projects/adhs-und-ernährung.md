@@ -16,20 +16,20 @@ Zum Nachkochen habe ich einen leckeren Aufstrich für dich, der ganz schnell fer
 
 ## Forellen-Aufstrich
 
-4 Portionen
+- 250 g Magertopfen
+- 100 g Forellenfilet geräuchert
+- 2 Esslöffel Sauerrahm
+- 1-2 Esslöffel Zitronensaft
+- ½ Teelöffel geriebenen Zitronenschale
+- 1 Knoblauchzehe
+- 1 Bund Petersilie gehackt
+- 1 Teelöffel Kümmelöl
+- Pfeffer
+- Kräutersalz
+- Kümmel gemahlen  
 
-250 g Magertopfen
-100 g Forellenfilet geräuchert
-2 Esslöffel Sauerrahm
-1-2 Esslöffel Zitronensaft
-½ Teelöffel geriebenen Zitronenschale
-1 Knoblauchzehe
-1 Bund Petersilie gehackt
-1 Teelöffel Kümmelöl
-Pfeffer, Kräutersalz
-Kümmel gemahlen  
+1. Alle Zutaten vermischen und mit den Gewürzen abschmecken. 
+2. Eine Stunde im Kühlschrank ziehen lassen.
 
-Alle Zutaten vermischen und mit den Gewürzen abschmecken. 
-Eine Stunde im Kühlschrank ziehen lassen.
-
-Für die laktosefreie Variante laktosefreie Milchprodukte verwenden. Dieser Aufstrich ist glutenfrei. Achte auf die Herkunft der Fische (Gütesiegel) und regionale Fischsorten bevorzugen - Siehe hierzu auch den [Fischratgeber](https://fischratgeber.wwf.at/).
+Für die laktosefreie Variante laktosefreie Milchprodukte verwenden. Dieser Aufstrich ist glutenfrei.
+ Achte auf die Herkunft der Fische (Gütesiegel) und regionale Fischsorten bevorzugen - Siehe hierzu auch den [Fischratgeber](https://fischratgeber.wwf.at/).
