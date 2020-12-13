@@ -10,4 +10,26 @@ coverImageLink: www.essen-leib-seele.at
 ---
 Diagnose Aufmerksamkeitsdefizit-Hyperaktivitätsstörung (ADHS) – eine Challenge für die ganze Familie? Mit einer individuellen und positiv behafteten Ernährung kann die Therapie positiv unterstütz und der Ernährungsalltag entspannt werden. 
 
-In meinem [Beitrag](https://www.essen-leib-seele.at/2020/11/30/ern%C3%A4hrung-bei-adhs-bei-kindern-und-jugendlichen/) erfährst du mehr darüber, wie du ADHS positiv mit dem täglichen Essen & Trinken beeinflussen kannst.  Und zum Nachkochen habe ich einen leckeren Forellenaufstrich für dich.
+In meinem [Beitrag](https://www.essen-leib-seele.at/2020/11/30/ern%C3%A4hrung-bei-adhs-bei-kindern-und-jugendlichen/) erfährst du mehr darüber, wie du ADHS positiv mit dem täglichen Essen & Trinken beeinflussen kannst.
+
+Zum Nachkochen habe ich einen leckeren Aufstrich für dich, der ganz schnell fertig ist:
+
+## Forellen-Aufstrich
+
+4 Portionen
+
+250 g Magertopfen
+100 g Forellenfilet geräuchert
+2 Esslöffel Sauerrahm
+1-2 Esslöffel Zitronensaft
+½ Teelöffel geriebenen Zitronenschale
+1 Knoblauchzehe
+1 Bund Petersilie gehackt
+1 Teelöffel Kümmelöl
+Pfeffer, Kräutersalz
+Kümmel gemahlen  
+
+Alle Zutaten vermischen und mit den Gewürzen abschmecken. 
+Eine Stunde im Kühlschrank ziehen lassen.
+
+Für die laktosefreie Variante laktosefreie Milchprodukte verwenden. Dieser Aufstrich ist glutenfrei. Achte auf die Herkunft der Fische (Gütesiegel) und regionale Fischsorten bevorzugen - Siehe hierzu auch den [Fischratgeber](https://fischratgeber.wwf.at/).
