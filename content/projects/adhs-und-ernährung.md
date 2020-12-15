@@ -32,4 +32,4 @@ Zum Nachkochen habe ich einen leckeren Aufstrich für dich, der ganz schnell fer
 2. Eine Stunde im Kühlschrank ziehen lassen.
 
 Für die laktosefreie Variante laktosefreie Milchprodukte verwenden. Dieser Aufstrich ist glutenfrei.
- Achte auf die Herkunft der Fische (Gütesiegel) und regionale Fischsorten bevorzugen - Siehe hierzu auch den [Fischratgeber](https://fischratgeber.wwf.at/).
+Achte auf die Herkunft der Fische (Gütesiegel) und regionale Fischsorten bevorzugen - Siehe hierzu auch den [Fischratgeber](https://fischratgeber.wwf.at/).
