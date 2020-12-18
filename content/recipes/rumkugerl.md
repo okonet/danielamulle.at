@@ -25,7 +25,7 @@ timeToCook: 30 Minuten vorbereiten + 30 Minuten rollen
 ---
 Rumkugerl sind eine meiner Lieblingssorten am Weichnachtskeksteller. So habe ich lange gesucht, gefeilt & optimiert, bis zum für mich perfekten Rezept. Ich verwende dabei ganz bewusst Walnüsse (wenn möglich frisch in der Küchenmaschine/Blender gerieben), um die rumig-schokoladigen Köstlichkeiten noch mit einer Extraportion omega-3-Fetten aufzupeppen. 
 
-<Ingredients yields="ca. 100 Stück>
+<Ingredients yields="ca. 100 Stück">
 
 - 250 ml Schlagobers oder Soja creme cuisine
 - 700 g Bitterschokolade mit mindestens 70 % Kakaoanteil
