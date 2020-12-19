@@ -8,13 +8,14 @@ coverImage: ../assets/kühtreiber_k_rezept.jpg
 coverImageAuthor: Katharina Kühtreiber
 coverImageLink: www.eatmoveenjoy.at
 ---
+Eisenmangel ist eine weit verbreitete Diagnose heutzutage. Viele Menschen leben damit und wissen es nicht einmal, da sie eines der Hauptsymptome – Müdigkeit – ihrem Lebenswandel und dauerhaftem Stress zuordnen.
 
 Wusstest du, dass
 
-- Eisenmangel weltweit zu den großen 4 Mangelerscheinungen neben Jod, Eiweiß und Vitamin A zählt?
-- du auch durch diverse pflanzliche Lebensmittel deinen Eisengehalt verbessern kannst?
-- du speziell als Frau prädestiniert dafür bist, einen Eisenmangel zu haben?
+* Eisenmangel weltweit zu den großen 4 Mangelerscheinungen neben Jod, Eiweiß und Vitamin A zählt?
+* du auch durch diverse pflanzliche Lebensmittel deinen Eisengehalt verbessern kannst?
+* du speziell als Frau prädestiniert dafür bist, einen Eisenmangel zu haben?
 
-Was du alles über das lebensnotwendige Spurenelement Eisen wissen musst, in welchen Lebensmitteln zu es vorfindest und wann du besonders auf deine Eisenzufuhr sowie den Eisenwert in deinem Körper achten sollst, erfährst du in diesem Artikel.
+Was du alles über das lebensnotwendige Spurenelement Eisen wissen musst, in welchen Lebensmitteln zu es vorfindest und wann du besonders auf deine Eisenzufuhr sowie den Eisenwert in deinem Körper achten sollst, erfährst du in diesem [Artikel](https://www.eatmoveenjoy.at/eisen-unter-die-lupe-genommen/).
 
 Und zum Nachkochen habe ich ein Rezept für einen leckeren Indischen Eintopf für dich.
