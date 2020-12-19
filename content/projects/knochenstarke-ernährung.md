@@ -29,8 +29,7 @@ Wenn du keine Milchprodukte magst, verträgst oder aus ethischen Gründen darauf
 - mit Calcium angereicherte Pflanzendrinks („Soja-Drink“) 
 - Mineralwasser mit einem Calcium-Gehalt von >150 mg/Liter 
 
-## So kannst du deinen Körper bei der Calciumaufnahme helfen:
-
+## So kannst du deinen Körper bei der Calciumaufnahme helfen
 Der bedeutendste Stoff, welcher die Calciumaufnahme im Körper fördert, ist das Vitamin D. Vitamin D wird hauptsächlich von unserem Körper unter Einfluss von Sonnenlicht gebildet. Auch andere Lebensmittelinhaltsstoffe unterstützen die Calciumaufnahme im Körper: Vitamin C und die Fruchtsäuren in Obst und Gemüse; Laktose (Milchzucker) in Milchprodukten; der Ballaststoff Oligofruktose, vertreten in Artischocken, Spargel, Topinambur, Chicorée, Knoblauch; Vitamin K in Kohlgemüse und grünem Blattgemüse; Magnesium in Hirse, Banane, Vollkornprodukten, Sesam, Sonnenblumenkernen, Hülsenfrüchten; sowie Phytoöstrogene in Sojaprodukten. Wichtig ist es diese Lebensmittel mit calciumreichen Nahrungsmitteln zu kombinieren, um das enthaltenen Calcium optimal ausnutzen zu können.
 
 ## Achtung bei Calciumräubern!
