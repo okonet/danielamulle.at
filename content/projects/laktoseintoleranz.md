@@ -8,7 +8,7 @@ coverImage: ../assets/mitterschiffthaler_s-rezept.jpg
 coverImageAuthor: Sophie Mitterschiffthaler
 coverImageLink: www.danielamulle.at
 ---
-Begib dich mit mir auf einen kleinen Ausflug: Es ist Sommer, schön warm und wir flanieren auf den Straßen, dabei kommen wir bei einer kleinen Eistheke vorbei. Die bunten schön angerichteten Eissorten strahlen uns an und wir wissen beide, dass wir nicht daran vorbei gehen können, ohne ein Eis zu essen. Ja, die Sorten sehen nicht nur schön aus, das kühle Eis schmilzt auf unseren Lippen und die Kugeln schmecken genauso lecker, wie sie aussehen. Wir spazieren weiter und plötzlich beginnt dein Bauch zu rumoren und sich aufzublähen, das passiert dir in letzter Zeit öfter. Auch gestern nachdem du ein Stück Topfentorte gegessen hast, aber auch bei der „Quattro formagi“-Pizza vor ein paar Tagen. „Vielleicht hast du eine Laktoseintoleranz“, sage ich. Ich sehe dich an und sehe nur zwei große Fragezeichen in deinen Augen. „Na komm!“, sage ich, „Ich erkläre es dir!“ und wir spazieren weiter.
+Begib dich mit mir auf einen kleinen Ausflug: Es ist Sommer, schön warm und wir flanieren auf den Straßen, dabei kommen wir bei einer kleinen Eistheke vorbei. Die bunten schön angerichteten Eissorten strahlen uns an und wir wissen beide, dass wir nicht daran vorbei gehen können, ohne ein Eis zu essen. Ja, die Sorten sehen nicht nur schön aus, das kühle Eis schmilzt auf unseren Lippen und die Kugeln schmecken genauso lecker, wie sie aussehen. Wir spazieren weiter und plötzlich beginnt dein Bauch zu rumoren und sich aufzublähen - das passiert dir in letzter Zeit öfter. Auch gestern nachdem du ein Stück Topfentorte gegessen hast, aber auch bei der „Quattro formagi“-Pizza vor ein paar Tagen. „Vielleicht hast du eine Laktoseintoleranz“, sage ich. Ich sehe dich an und sehe nur zwei große Fragezeichen in deinen Augen. „Na komm!“, sage ich, „Ich erkläre es dir!“ und wir spazieren weiter.
 
 ## Was ist Laktose?
 Laktose ist dasselbe wie Milchzucker. Dieser Zucker besteht aus zwei Bausteinen – Galaktose und Glucose. Damit wir Laktose in unserem Körper verdauen können, müssen diese beiden Bausteine erst voneinander getrennt werden. Man kann sich das so vorstellen wie eine Schere, die nur genau diese Verbindung aufschneiden kann, diese Schere heißt Laktase und ist im Dünndarm aktiv. 
@@ -39,7 +39,7 @@ Mittlerweile ist das Angebot an laktosefreien Produkten sehr groß: Milch, Topfe
 Hier habe ich eine kleine Orientierungshilfe für den Laktosegehalt von unterschiedlichen Lebensmitteln:
 
 ### Laktosefrei	
-das sind alle Lebensmittel, die keine Milch oder Milchprodukte enthalten, also Fleisch, Fisch, Kartoffeln, Getreide, Reis, Teigwaren, Ei, Gemüse, Obst, Marmeladen, Pflanzenöle, milchfreie Margarinen, milchfreie Getränke wie Kaffee, Tee, Sirup, Obstsäfte.
+Das sind alle Lebensmittel, die keine Milch oder Milchprodukte enthalten, also Fleisch, Fisch, Kartoffeln, Getreide, Reis, Teigwaren, Ei, Gemüse, Obst, Marmeladen, Pflanzenöle, milchfreie Margarinen, milchfreie Getränke wie Kaffee, Tee, Sirup, Obstsäfte.
 
 ### Fast Laktosefrei (< 1 g Laktose/100 g)
 Butter, Hart- und Schnittkäse sowie manche Weichkäsesorten: Emmentaler, Tilsiter, Bergkäse, Inntaler, Alpenkäse, Edamer, Gorgonzola, Parmesan, Mozzarella, Ricotta, Feta.
@@ -54,14 +54,15 @@ Milch (Kuh-, Schaf-, Stuten-, Ziegenmilch), Milchpulver, Molkepulver, Molkegetr�
 Es gibt die Möglichkeit die Laktase von außen zuzuführen, damit der Körper die Laktose im Körper gespalten werden kann. Diese Laktasepräparate sind als Nahrungsergänzungsmittel registriert und können rezeptfrei in der Apotheke erworben werden. Wenn du also Laktose konsumieren willst oder auf bestimmte laktosehältige Produkte nicht verzichten willst, zum Beispiel im Urlaub, im Restaurant oder bei der Familienfeier, kannst du vor der Mahlzeit 1-3 Tabletten einnehmen. Die Dosierung ist dabei sehr individuell und muss selbst ausgetestet werden.
 
 ## Muss ich sonst noch auf etwas aufpassen?
-Milch und Milchprodukte sind erstklassige Calciumquellen, wenn man nun auf diese Lebensmittel verzichtet, ist es wichtig seinen Calciumbedarf von täglich 1000 mg anders zu decken. Calcium ist ein lebenswichtiger Mineralstoff, der für die Stabilität von Zähnen und Knochen verantwortlich ist. Zudem lässt sich Osteroporose vorbeugen. Einen hohen Stellenwert nehmen calciumhältige Mineralwässer (> 150 mg Calcium/Liter) ein. Außerdem sind Grünkohl, Brokkoli, Fenchel und Rote Beete und Nüsse wie Mandeln, Haselnüsse und Paranüsse gute Calciumquellen. Wer gerne Pflanzenmilch wie Mandelmilch, Dinkelmilch, Hafermilch, … trinkt, kann zusätzlich darauf achten, dass diese mit Calcium angereichert ist. So kann bestimmt nichts schief gehen.
+Milch und Milchprodukte sind erstklassige Calciumquellen, wenn man nun auf diese Lebensmittel verzichtet, ist es wichtig seinen Calciumbedarf von täglich 1.000 mg anders zu decken. Calcium ist ein lebenswichtiger Mineralstoff, der für die Stabilität von Zähnen und Knochen verantwortlich ist. Zudem lässt sich Osteroporose vorbeugen. Einen hohen Stellenwert nehmen calciumhältige Mineralwässer (> 150 mg Calcium/Liter) ein. Außerdem sind Grünkohl, Brokkoli, Fenchel und Rote Beete und Nüsse wie Mandeln, Haselnüsse und Paranüsse gute Calciumquellen. Wer gerne Pflanzenmilch wie Mandelmilch, Dinkelmilch, Hafermilch, … trinkt, kann zusätzlich darauf achten, dass diese mit Calcium angereichert ist. So kann bestimmt nichts schief gehen.
 
 Die Fragezeichen in deinen Augen sind mittlerweile verschwunden. Nun sehen mich zwei müde Augen an. „Lass uns auf einen Kaffee gehen!“, fragst du hoffnungsvoll. „Ja klar, aber für dich laktosefrei“. 
 
 Und hier hab ich noch ein tolles, laktosefreies Rezept zum Nachbacken für dich, das perfekt zum deinem Kaffee passt:
  
 ## Vegane Apfel Bananen Muffins
-### Für 12 Stück
+
+**Zutaten für 12 Stück**
 - 2 rote Äpfel
 - 3 reife Bananen, geschält
 - 3 ½ EL Kokosmilch
@@ -74,7 +75,7 @@ Und hier hab ich noch ein tolles, laktosefreies Rezept zum Nachbacken für dich,
 - 1 Prise Zimt, gemahlen
 - etwas Zimt zum Garnieren
 
-### Zubereitung
+**Zubereitung**
 1. Backrohr auf 200°C (Umluft 180°C) vorheizen. 
 2. Papierförmchen in eine Muffinform mit 12 Mulden setzen.
 3. Einen der beiden Äpfel schälen, entkernen, in kleine Stücke schneiden und beiseitestellen. 
