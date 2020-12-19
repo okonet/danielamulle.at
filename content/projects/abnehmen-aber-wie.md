@@ -8,7 +8,8 @@ coverImage: ../assets/müller_c-rezept.jpg
 coverImageAuthor: Carina Müller
 coverImageLink: https://diaetologin-mueller.jimdofree.com/
 ---
-
 Eine erfolgreiche Gewichtsreduktion ist schnell entschieden, dauert jedoch meist länger als in diversen Medien beworben. Es kommen dabei Höhen und Tiefen vor, aber keine Sorge das ist ganz normal.
 
-Der folgende Artikel bietet Hilfestellungen um deine Motivation bis zum Zielgewicht aufrecht zu erhalten. Und zum Nachkochen gibt es heute einen Kürbis-Kraut-Strudel für dich.
+Der folgende [Artikel](https://diaetologin-mueller.jimdofree.com/blog-1/) bietet Hilfestellungen, um deine Motivation bis zum Zielgewicht aufrecht zu erhalten. 
+
+Und zum Nachkochen gibt es heute einen köstlichen Kürbis-Kraut-Strudel für dich.
