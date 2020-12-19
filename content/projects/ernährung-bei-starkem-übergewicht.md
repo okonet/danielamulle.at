@@ -28,9 +28,9 @@ Langfristig gesehen führen falsche Ess- und Trinkverhalten und zu wenig Bewegun
 - Gallensteine (Cholezystolithiasis) 
 - und viele mehr                                                                                  
 
-## Die 3 Grundpfeiler: 
+## Die drei Grundpfeiler: 
 1. Realistische Ziele setzen – um am Ende nicht enttäuscht zu sein! 
-2. Sehr wichtig ist es zuallererst, sich realistische Ziele zu nehmen. Es geht nicht darum, innerhalb kürzester Zeit möglichst viele Kilos purzeln zu lassen. Gesünder und langfristig erfolgreicher ist es, langsam und kontinuierlich abzunehmen, um dann das Gewicht auch zu halten. Denn sonst kommt der Jojo-Effekt, auf den keiner Lust hat… 
+2. Sehr wichtig ist es zuallererst, sich realistische Ziele zu nehmen. Es geht nicht darum, innerhalb kürzester Zeit möglichst viele Kilos purzeln zu lassen. Gesünder und langfristig erfolgreicher ist es, langsam und kontinuierlich abzunehmen, um dann das Gewicht auch zu halten. Denn sonst kommt der Jojo-Effekt, auf den keiner Lust hat.
 3. Als Faustregel gilt es, max. ½ 1 kg pro Woche abzunehmen (= pro Jahr ca. 25 – 50 kg). Ganz wichtig ist es auch für die Muskelmasse, nicht zu schnell zu viel Gewicht abzunehmen. 
 
 ## Was ist nun beim Essen und Trinken zu beachten? 
