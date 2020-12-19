@@ -32,7 +32,7 @@ Auch folgende Faktoren Gicht auslösen:
 - Fastenphasen, weil hier die Ketonkörpern wird die Harnsäureausscheidung hemmen.
 - verminderten Wasserhaushalt des Körper, weil so die Harnsäure nicht ausreichend aus dem Körper transportiert werden kann.
 
-## 8 Tipps, die dir bei erhöhten Harnsäurewerten helfen:
+## Acht Tipps, die dir bei erhöhten Harnsäurewerten helfen:
 1. Schränke den Verzehr purinreicher Lebensmittel ein. Verzichte auf sehr purinreiche Lebensmittel wie Innereien, bestimmte Fischsorten, fettreiches Fleisch sowie die Haut von Geflügel und Fisch und 
 2. Bevorzuge purinarme Lebensmittel wie z.B. Kartoffeln, Reis, Gemüse, Obst und magere Milchprodukte. 
 3. Versuche maximal 2 bis 3 mal pro Woche 1 Portion mageres Fleisch oder Wurst wie gekochter Schinken (ca. 125 g) zu verzehren und bau dafür vermehrt Milch, fettarmen Käse und andere Milchprodukte mit niedrigem Fettgehalt wie Topfen oder Cottage Cheese in den Speiseplan ein. 
@@ -49,20 +49,19 @@ Hier noch ein super einfaches, schnelles, vegetarisches und vor allem gesundes R
 
 ## Kartoffeln mit Topfen, Leinöl und frischen Kräutern
 
-### Zutaten für 4 Personen:
-12 mittelgroße Kartoffeln (3 Stk. pro Person)
-500 g Topfen bis 20% Fett
-250 g Joghurt bis 3,5% Fett
-Etwa 1 TL Salz und Pfeffer
-3 EL Leinöl
-Frische Kräuter je nach Saison und Vorlieben, z.B.: Schnittlauch, Petersilie, Dill, Basilikum, Kerbel, Rosmarin, Giersch.
-klein geschnittene Frühlingszwiebel (optional)
+**Zutaten für 4 Personen**
+- 12 mittelgroße Kartoffeln (3 Stk. pro Person)
+- 500 g Topfen bis 20% Fett
+- 250 g Joghurt bis 3,5% Fett
+- Etwa 1 TL Salz und Pfeffer
+- 3 EL Leinöl
+- Frische Kräuter je nach Saison und Vorlieben, z.B.: Schnittlauch, Petersilie, Dill, Basilikum, Kerbel, Rosmarin, Giersch.
+- klein geschnittene Frühlingszwiebel (optional)
 
-### Zubereitung
+**Zubereitung**
 1. Kartoffeln bissfest garen und anschließend schälen. (bei entsprechender Sorte können sie auch ungeschält verzehren).
 2. Topfen mit Joghurt, Salz, Pfeffer, Kräutern und ggf. Frühlingszwiebeln verrühren.
 3. Beides auf Teller anrichten und mit Leinöl übergießen und in Ruhe bei schönem Ambiente genießen.
-
 
 
 
