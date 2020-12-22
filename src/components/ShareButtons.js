@@ -28,12 +28,13 @@ const ShareButtons = ({ pageUrl, title }) => {
         gap={1}
         sx={{
           gridAutoFlow: "column",
-          alignItems: "center",
+          alignItems: "start",
         }}
       >
         <Button
           variant="print"
           title="Seite drucken"
+          sx={{ mt: "1px" }}
           onClick={() => {
             if (typeof window !== "undefined") {
               window.print()
