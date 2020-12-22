@@ -1,7 +1,7 @@
 /* @jsx jsx */
 import React from "react"
 import { useLocation } from "@reach/router"
-import { Box, Container, Flex, jsx, Styled, ThemeProvider } from "theme-ui"
+import { Container, Flex, jsx, Styled, ThemeProvider } from "theme-ui"
 import SEO from "../components/seo"
 import Section from "../components/Section"
 import SocialImage from "./SocialImage"
@@ -25,7 +25,7 @@ export default ({
   coverImageAuthor = "Andrey Okonetchnikov",
   coverImageLink = "https://okonet.ru",
   children,
-  theme,
+  theme = {},
   blendMode = "screen",
   shouldShowSubscribe = true,
 }) => {
