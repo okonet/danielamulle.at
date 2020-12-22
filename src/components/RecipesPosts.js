@@ -1,6 +1,6 @@
 /* @jsx jsx */
 import React, { useCallback } from "react"
-import { Box, Container, Flex, Input, jsx, Text } from "theme-ui"
+import { Box, Flex, Input, jsx, Text } from "theme-ui"
 import { useFlexSearch } from "react-use-flexsearch"
 import groupBy from "lodash.groupby"
 import Group from "react-group"
@@ -41,9 +41,7 @@ const RecipesPosts = ({ data, location, navigate }) => {
 
   return (
     <PageLayout theme={recipesTheme} title={meta._frontmatter.title}>
-      <Box sx={{ display: ["none", "block"] }}>
-        <Content />
-      </Box>
+      <Content />
       <Flex
         as="aside"
         sx={{
