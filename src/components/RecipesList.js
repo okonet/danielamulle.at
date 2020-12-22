@@ -1,5 +1,5 @@
 import React from "react"
-import { Grid, Text } from "theme-ui"
+import { Box, Grid, Text } from "theme-ui"
 import PostCard from "./PostCard"
 
 function RecipesList({ recipes }) {
@@ -19,7 +19,9 @@ function RecipesList({ recipes }) {
           sx={{ p: 0, mt: 3, mb: 4, mx: [0, 0, -5], px: [0, 0, 2] }}
         >
           {recipe.map((recipe) => (
-            <PostCard as="li" {...recipe} key={recipe.slug} />
+            <Box as="li" sx={{ m: 0, p: 0, listStyle: "none" }}>
+              <PostCard {...recipe} key={recipe.slug} />
+            </Box>
           ))}
         </Grid>
       )}

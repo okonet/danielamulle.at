@@ -4,109 +4,112 @@ import Link from "./Link"
 import Img from "gatsby-image"
 import { AspectRatio, Box, Flex, Text } from "theme-ui"
 import { transparentize } from "@theme-ui/color"
-import { Grid } from "@theme-ui/components"
 
 PostCard.propTypes = {
   author: PropTypes.string,
-  coverImage: PropTypes.object.isRequired,
+  coverImage: PropTypes.object,
   date: PropTypes.string,
+  disabled: PropTypes.bool,
   slug: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
+  sx: PropTypes.object,
+  title: PropTypes.string,
 }
 
-function PostCard({
-  coverImage,
-  coverImageAuthor: author,
-  date,
-  slug,
-  title,
-  ...props
-}) {
+function PostCard({ coverImage, author, date, disabled, slug, title, sx }) {
   const gradient = () => (theme) => {
     return `linear-gradient(
-            ${transparentize("text", 1)(theme)}, 
+            ${transparentize("text", 1)(theme)} 50%, 
             ${transparentize("text", 0)(theme)}
         )`
   }
   return (
-    <Box
+    <Link
+      to={slug}
+      disabled={disabled}
       sx={{
-        borderRadius: "medium",
+        display: "block",
         overflow: "hidden",
-        boxShadow: "float",
+        borderRadius: "medium",
+        bg: "text",
+        ".image": {
+          transition: "transform 500ms ease-in-out",
+        },
+        ":hover:not([disabled]) .image": {
+          transform: "scale(1.125)",
+        },
+        ":focus:not([disabled]) .image": {
+          transform: "scale(1.125)",
+        },
+        ...sx,
       }}
-      {...props}
     >
-      <Link
-        to={slug}
-        sx={{
-          display: "block",
-          overflow: "hidden",
-          bg: "teal.1",
-          ".image": {
-            transition: "transform 500ms ease-in-out",
-          },
-          ":hover .image": {
-            transform: "scale(1.125)",
-          },
-        }}
-      >
-        <AspectRatio ratio={1.5}>
-          {coverImage && (
+      <AspectRatio ratio={1.5}>
+        {coverImage && (
+          <Box
+            sx={{
+              opacity: disabled ? 0.25 : 1,
+            }}
+          >
             <Img
               fluid={coverImage.childImageSharp.fluid}
               fadeIn={true}
               backgroundColor="#1e5f92"
               className="image"
             />
-          )}
+          </Box>
+        )}
+        <Flex
+          sx={{
+            p: 3,
+            flexDirection: "column",
+            position: "absolute",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            backgroundImage: gradient,
+          }}
+        >
           <Flex
             sx={{
+              order: 2,
               flexDirection: "column",
-              position: "absolute",
-              bottom: 0,
-              left: 0,
-              width: "100%",
+              opacity: disabled ? 0.25 : 1,
             }}
           >
-            <Grid
-              gap={2}
+            <Text
+              as="h3"
               sx={{
-                p: 3,
-                backgroundImage: gradient,
+                variant: "textStyles.cardTitle",
               }}
             >
+              {title}
+            </Text>
+            {author && (
               <Text
-                as="h3"
                 sx={{
-                  variant: "textStyles.cardTitle",
+                  variant: "textStyles.cardMeta",
                 }}
               >
-                {title}
+                von {author}
               </Text>
-              {author && (
-                <Text
-                  sx={{
-                    variant: "textStyles.cardMeta",
-                  }}
-                >
-                  von {author}
-                </Text>
-              )}
-              {date && (
-                <Text
-                  sx={{
-                    variant: "textStyles.cardMeta",
-                  }}
-                >
-                  {date}
-                </Text>
-              )}
-            </Grid>
+            )}
           </Flex>
-        </AspectRatio>
-      </Link>
-    </Box>
+          <Box sx={{ flexGrow: 1, order: 1 }}>
+            {date && (
+              <Text
+                sx={{
+                  variant: "textStyles.cardMeta",
+                  order: 0,
+                }}
+              >
+                {date}
+              </Text>
+            )}
+          </Box>
+        </Flex>
+      </AspectRatio>
+    </Link>
   )
 }
 

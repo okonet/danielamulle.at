@@ -43,7 +43,7 @@ function transformDate(startDate, date, locale) {
     dayOfWeek: format(date, "EEEE", { locale }),
     dayOfYear: getDayOfYear(date),
     dayOfMonth: getDate(date),
-    month: format(date, "MMM", { locale }),
+    month: format(date, "MMMM", { locale }),
     isToday: isSameDay(new Date(), date),
     isSameMonth: isSameMonth(date, startDate),
     isWeekend: isWeekend(date),
@@ -128,8 +128,8 @@ const ProjectsCategoryPage = ({ data, location }) => {
           />
           <Styled.h2 sx={{ mt: -2 }}>Anmeldung</Styled.h2>
           <Styled.p>
-            Dieser Beitrag ist noch nicht verfügbar. Bitte melde Dich an, und ich
-            schicke Dir eine Email, wenn es soweit ist.
+            Dieser Beitrag ist noch nicht verfügbar. Bitte melde Dich an, und
+            ich schicke Dir eine Email, wenn es soweit ist.
           </Styled.p>
           <SubscribeForm listId={listId} />
         </Box>
@@ -145,9 +145,16 @@ const ProjectsCategoryPage = ({ data, location }) => {
 
       {!signupComplete && <SubscribeForm listId={listId} />}
 
-      <Grid gap={2} columns={[2, 3, 4]} sx={{ my: 4, mx: [2, 0, -4], p: 0 }}>
+      <Grid
+        as="ol"
+        gap={[2, 1, 2]}
+        columns={[2, 3]}
+        sx={{ p: 0, mt: 3, mb: 4, mx: [0, 0, -5], px: [0, 0, 2] }}
+      >
         {days.map((day) => (
-          <CalendarCard day={day} key={day.date} />
+          <Box as="li" sx={{ m: 0, p: 0, listStyle: "none" }}>
+            <CalendarCard day={day} key={day.date} />
+          </Box>
         ))}
       </Grid>
     </PageLayout>

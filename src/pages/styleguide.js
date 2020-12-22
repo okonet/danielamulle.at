@@ -8,13 +8,15 @@ import {
   SwatchToken,
   Typography,
 } from "@component-driven/react-design-tokens"
-import { Box, Container, Grid, Styled } from "theme-ui"
+import { Box, Container, Flex, Grid, Styled } from "theme-ui"
 import theme, * as themes from "../theme"
 import logo from "../images/logo/logo.png"
 import logo2x from "../images/logo/logo@2x.png"
 import logoSVG from "../images/logo/logo.svg"
 import { graphql, useStaticQuery } from "gatsby"
 import Link from "../components/Link"
+import PostCard from "../components/PostCard"
+import CalendarCard from "../components/CalendarCard"
 
 const version = 2
 
@@ -96,6 +98,44 @@ export default () => {
               <Colors theme={themes[sectionName]} />
             </React.Fragment>
           ))}
+
+        <Styled.h2>Post Card</Styled.h2>
+
+        <Grid columns={[1, 2, 3]} gap={2}>
+          <PostCard
+            coverImage={recipes.nodes[0].coverImage}
+            title={recipes.nodes[0].title}
+            slug={recipes.nodes[0].slug}
+          />
+          <PostCard
+            coverImage={recipes.nodes[1].coverImage}
+            title={recipes.nodes[1].title}
+            slug={recipes.nodes[1].slug}
+            author="Daniela Mulle"
+          />
+          <PostCard
+            coverImage={recipes.nodes[3].coverImage}
+            title={recipes.nodes[3].title}
+            slug={recipes.nodes[3].slug}
+            date="2020-12-12"
+          />
+          <PostCard
+            coverImage={recipes.nodes[5].coverImage}
+            title={recipes.nodes[5].title}
+            slug={recipes.nodes[5].slug}
+            author="Daniela Mulle"
+            date="2020-12-12"
+          />
+          <PostCard
+            disabled
+            coverImage={recipes.nodes[5].coverImage}
+            title={recipes.nodes[5].title}
+            slug={recipes.nodes[5].slug}
+            author="Daniela Mulle"
+            date="2020-12-12"
+          />
+          <PostCard disabled slug={"/"} date="2020-12-12" />
+        </Grid>
 
         <Styled.h2>Social Images</Styled.h2>
         {recipes.nodes.map(({ id, slug, title, socialImage }) => (
