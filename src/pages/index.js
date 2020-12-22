@@ -44,25 +44,27 @@ const IndexPage = () => {
       <Flex
         sx={{
           flexDirection: ["column", "column", "row"],
-          alignItems: "flex-end",
-          h1: {
-            textAlign: ["center", "center", "left"],
-          },
+          alignItems: "flex-start",
         }}
       >
-        <Flex
+        <Box
           sx={{
-            order: [0, 0, 1],
-            flex: "0 1 auto",
-            mr: [0, 0, -5],
-            mb: [4, 4, 0],
-            mt: [-170, -200, 0],
+            display: "block",
+            mt: [-4, -5, -5],
+            pb: 4,
+            flex: 1,
+            "& > p:first-of-type": {
+              variant: "textStyles.lead",
+            },
           }}
         >
           <Box
+            as="figure"
             sx={{
-              width: [150, 150, 300],
-              height: [150, 150, "auto"],
+              float: "right",
+              mt: [-1, -3, -6],
+              width: [200, 250, 300],
+              height: [200, 250, "auto"],
               borderRadius: ["round", "round", "none"],
               overflow: "hidden",
               objectFit: "cover",
@@ -74,18 +76,6 @@ const IndexPage = () => {
               sx={{ width: "100%", verticalAlign: "top" }}
             />
           </Box>
-        </Flex>
-        <Box
-          sx={{
-            display: "block",
-            mt: -4,
-            pb: 4,
-            flex: 1,
-            "& > p:first-of-type": {
-              variant: "textStyles.lead",
-            },
-          }}
-        >
           <Home />
         </Box>
       </Flex>
