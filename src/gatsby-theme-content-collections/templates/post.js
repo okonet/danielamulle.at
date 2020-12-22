@@ -12,6 +12,8 @@ export const query = graphql`
       timeToCook
       ...PostContent
       ...Categories
+      coverImageAuthor
+      coverImageLink
       socialImage: coverImage {
         childImageSharp {
           fixed(height: 1080) {
