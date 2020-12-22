@@ -9,9 +9,13 @@ export const query = graphql`
       }
     }
     post(id: { eq: $id }) {
-      timeToCook
       ...PostContent
-      ...Categories
+      categories {
+        id
+        slug
+        isTag
+      }
+      timeToCook
       coverImageAuthor
       coverImageLink
       socialImage: coverImage {

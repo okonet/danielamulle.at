@@ -93,8 +93,6 @@ const ProjectsPostPage = ({ data, location }) => {
             </Styled.p>
           </Box>
 
-          <TagList tags={tags} />
-
           <ShareButtons pageUrl={pageUrl} title={title} />
         </Box>
       </Grid>
