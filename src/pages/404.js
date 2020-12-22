@@ -4,7 +4,7 @@ import Link from "../components/Link"
 import PageLayout from "../components/PageLayout"
 
 const NotFoundPage = () => (
-  <PageLayout title="Seite nicht gefunden">
+  <PageLayout title="Seite nicht gefunden" shouldShowSubscribe={false}>
     <Text as="p" sx={{ variant: "textStyles.lead", color: "secondary" }}>
       😢 Die Seite existiert nicht. <Link to="/">Zur Startseite</Link>
     </Text>

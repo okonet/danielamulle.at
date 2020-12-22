@@ -4,7 +4,7 @@ import PageLayout from "../components/PageLayout"
 
 function Impressum() {
   return (
-    <PageLayout title={Content._frontmatter.title}>
+    <PageLayout title={Content._frontmatter.title} shouldShowSubscribe={false}>
       <Content.default />
     </PageLayout>
   )
