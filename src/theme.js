@@ -235,8 +235,10 @@ const theme = {
   },
   styles: {
     root: {
-      bg: "background",
+      fontSize: 1,
       fontFamily: "body",
+      fontWeight: "normal",
+      lineHeight: "body",
       "@media print": {
         fontSize: "10pt",
       },
