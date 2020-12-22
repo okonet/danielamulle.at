@@ -1,6 +1,6 @@
 /* @jsx jsx */
 import React from "react"
-import { jsx, Box } from "theme-ui"
+import { jsx } from "theme-ui"
 import Ingredients from "../components/Ingredients"
 import Preparation from "../components/Preparation"
 

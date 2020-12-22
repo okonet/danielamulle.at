@@ -1,3 +1,4 @@
+/* @jsx jsx */
 import React from "react"
 import Helmet from "react-helmet"
 import {
@@ -6,9 +7,10 @@ import {
   Swatch,
   Swatches,
   SwatchToken,
+  SwatchValue,
   Typography,
 } from "@component-driven/react-design-tokens"
-import { Box, Container, Flex, Grid, Styled } from "theme-ui"
+import { Box, Container, Flex, Grid, Styled, jsx } from "theme-ui"
 import theme, * as themes from "../theme"
 import logo from "../images/logo/logo.png"
 import logo2x from "../images/logo/logo@2x.png"
@@ -84,7 +86,48 @@ export default () => {
         <Styled.h2>Spacing</Styled.h2>
         <Spacing theme={theme} />
 
-        <Styled.h2>Typography</Styled.h2>
+        <Styled.h2>Font families</Styled.h2>
+        <Styled.p>Following custom fonts are being used:</Styled.p>
+        <Styled.ul sx={{ fontSize: 5 }}>
+          <Styled.li>
+            <Styled.a
+              href="https://fonts.google.com/specimen/IBM+Plex+Mono?query=IBM+Plex+Mono"
+              sx={{
+                fontFamily: "body",
+              }}
+            >
+              IBM Plex Mono
+            </Styled.a>
+          </Styled.li>
+          <Styled.li>
+            <Styled.a
+              href="https://fonts.google.com/specimen/Yeseva+One?query=Yeseva+One"
+              sx={{
+                fontFamily: "heading",
+              }}
+            >
+              Yeseva One
+            </Styled.a>
+          </Styled.li>
+        </Styled.ul>
+        <Styled.p>Following font families are defined:</Styled.p>
+        <Swatches theme={theme} items={theme.fonts}>
+          {(token, value) => (
+            <Swatch token={token} value={value} key={token}>
+              <Grid
+                sx={{
+                  gridTemplateColumns: "100px 1fr",
+                  alignItems: "center",
+                }}
+              >
+                <SwatchToken>{token}</SwatchToken>
+                <SwatchValue>{value}</SwatchValue>
+              </Grid>
+            </Swatch>
+          )}
+        </Swatches>
+
+        <Styled.h2>Text styles</Styled.h2>
         <Typography theme={theme} />
 
         <Styled.h2>Palette</Styled.h2>

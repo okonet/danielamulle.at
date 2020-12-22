@@ -45,7 +45,7 @@ const theme = {
   },
   fonts: {
     body: '"IBM Plex Mono", Helvetica, Arial, sans-serif',
-    heading: '"Yeseva One", "IBM Plex Sans", Helvetica, Arial, sans-serif',
+    heading: '"Yeseva One", Helvetica, Arial, sans-serif',
     monospace: '"IBM Plex Mono", monospace',
   },
   fontSizes: ["0.85em", "1em", "1.25em", "1.5em", "2.5em", "3.25em"],
@@ -273,13 +273,12 @@ const theme = {
     ul: {
       position: "relative",
       my: 2,
-      pl: 3,
+      pl: "1em",
       listStyle: "none",
       "li::before": {
         position: "absolute",
         left: 0,
-        fontSize: "11px",
-        lineHeight: 2.2,
+        fontSize: "95%",
         color: "muted",
         content: '" ✼ "',
       },
