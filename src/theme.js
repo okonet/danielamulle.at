@@ -403,7 +403,7 @@ export const projectsTheme = {
     secondary: palette.cyan[4],
     muted: palette.cyan[5],
   },
-  coverSrc: unsplashURL("bwKUJ3Y5JS4"),
+  coverSrc: unsplashURL("0e7zpLLKSzA"),
 }
 
 export const recipesTheme = {
