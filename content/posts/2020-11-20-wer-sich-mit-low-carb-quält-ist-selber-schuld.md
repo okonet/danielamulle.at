@@ -1,6 +1,6 @@
 ---
 title: Wer sich mit Low Carb quält, ist selber schuld
-date: 2020-11-20T09:18:47.571Z
+date: 2020-12-29T09:18:47.571Z
 coverImage: ../assets/low-carb-rich-smith-15tru0ogpuk-unsplash.jpg
 coverImageAuthor: Rich Smith
 coverImageLink: https://unsplash.com/@richwilliamsmith
