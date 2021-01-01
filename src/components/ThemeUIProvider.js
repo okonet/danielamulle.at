@@ -4,7 +4,6 @@ import PropTypes from "prop-types"
 import { ThemeProvider } from "theme-ui"
 
 export default function ThemeUIProvider({ theme, children }) {
-  console.log(theme)
   return (
     <>
       <Helmet>
