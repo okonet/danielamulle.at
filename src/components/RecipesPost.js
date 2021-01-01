@@ -11,6 +11,7 @@ import ClockIcon from "./ClockIcon"
 import ShareButtons from "./ShareButtons"
 import TagList from "./TagList"
 import PageLayout from "./PageLayout"
+import PostTemplate from "./PostTemplate"
 
 export default ({ data, location }) => {
   const { post, site } = data
@@ -63,54 +64,42 @@ export default ({ data, location }) => {
         </Box>
       }
     >
-      <Grid gap={4} columns={[1, 12]} sx={{ mx: [0, 0, -4] }}>
-        <Box
-          sx={{
-            gridColumnStart: [1, 1],
-            gridColumnEnd: [1, 10],
-            "& > p:first-of-type": {
-              variant: "textStyles.lead",
-            },
-          }}
-        >
-          <MDXRenderer>{body}</MDXRenderer>
-        </Box>
-
-        <Box
-          as="aside"
-          sx={{
-            gridColumn: [1, "10 / span 3"],
-          }}
-        >
-          <Styled.h3>
-            <ClockIcon width={17} sx={{ mr: 1, mb: -1 }} />
-            Zubereitungszeit
-          </Styled.h3>
-          <Styled.p>{timeToCook}</Styled.p>
-
-          <TagList tags={tags} />
-
-          <Box
-            sx={{
-              "@media print": {
-                display: "none",
-              },
-            }}
-          >
+      <PostTemplate
+        main={<MDXRenderer>{body}</MDXRenderer>}
+        sidebar={
+          <>
             <Styled.h3>
-              <InfoIcon width={17} sx={{ mr: 1, mb: -1 }} />
-              Nährwerte
+              <ClockIcon width={17} sx={{ mr: 1, mb: -1 }} />
+              Zubereitungszeit
             </Styled.h3>
-            <Styled.p>
-              Du suchst die Nährwertangaben? In{" "}
-              <Link to="/posts/2020-07-07-nährwertangaben">diesem Artikel</Link>{" "}
-              erklärte ich, warum du hier keine findest.
-            </Styled.p>
-          </Box>
+            <Styled.p>{timeToCook}</Styled.p>
 
-          <ShareButtons pageUrl={pageUrl} title={title} />
-        </Box>
-      </Grid>
+            <TagList tags={tags} />
+
+            <Box
+              sx={{
+                "@media print": {
+                  display: "none",
+                },
+              }}
+            >
+              <Styled.h3>
+                <InfoIcon width={17} sx={{ mr: 1, mb: -1 }} />
+                Nährwerte
+              </Styled.h3>
+              <Styled.p>
+                Du suchst die Nährwertangaben? In{" "}
+                <Link to="/posts/2020-07-07-nährwertangaben">
+                  diesem Artikel
+                </Link>{" "}
+                erklärte ich, warum du hier keine findest.
+              </Styled.p>
+            </Box>
+
+            <ShareButtons pageUrl={pageUrl} title={title} />
+          </>
+        }
+      />
     </PageLayout>
   )
 }

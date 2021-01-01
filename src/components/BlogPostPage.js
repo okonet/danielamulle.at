@@ -9,6 +9,7 @@ import Group from "react-group"
 import ShareButtons from "./ShareButtons"
 import TagList from "./TagList"
 import PageLayout from "./PageLayout"
+import PostTemplate from "./PostTemplate"
 
 export default ({ data, location }) => {
   const { post, site } = data
@@ -58,33 +59,18 @@ export default ({ data, location }) => {
         </Box>
       }
     >
-      <Grid gap={4} columns={[1, 12]} sx={{ mx: [0, 0, -4] }}>
-        <Box
-          sx={{
-            gridColumnStart: [1, 1],
-            gridColumnEnd: [1, 11],
-            "& > p:first-of-type": {
-              variant: "textStyles.lead",
-            },
-          }}
-        >
-          <MDXRenderer>{body}</MDXRenderer>
-        </Box>
+      <PostTemplate
+        main={<MDXRenderer>{body}</MDXRenderer>}
+        sidebar={
+          <>
+            <Styled.h3 sx={{ m: 0, mr: 2 }}>Veröffentlicht am</Styled.h3>
+            <Styled.p>{date}</Styled.p>
 
-        <Box
-          as="aside"
-          sx={{
-            my: 3,
-            gridColumn: [1, 1, "11 / span 2"],
-          }}
-        >
-          <Styled.h3 sx={{ m: 0, mr: 2 }}>Veröffentlicht am</Styled.h3>
-          <Styled.p>{date}</Styled.p>
-
-          <TagList tags={categories} />
-          <ShareButtons pageUrl={pageUrl} title={title} />
-        </Box>
-      </Grid>
+            <TagList tags={categories} />
+            <ShareButtons pageUrl={pageUrl} title={title} />
+          </>
+        }
+      />
     </PageLayout>
   )
 }

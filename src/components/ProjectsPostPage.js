@@ -8,6 +8,7 @@ import InfoIcon from "./InfoIcon"
 import ShareButtons from "./ShareButtons"
 import TagList from "./TagList"
 import PageLayout from "./PageLayout"
+import PostTemplate from "./PostTemplate"
 
 const ProjectsPostPage = ({ data, location }) => {
   const { post, site } = data
@@ -57,33 +58,10 @@ const ProjectsPostPage = ({ data, location }) => {
         </Box>
       }
     >
-      <Grid gap={4} columns={[1, 12]} sx={{ mx: [0, 0, -4] }}>
-        <Box
-          sx={{
-            gridColumnStart: [1, 1],
-            gridColumnEnd: [1, 11],
-            "& > p:first-of-type": {
-              variant: "textStyles.lead",
-            },
-          }}
-        >
-          <MDXRenderer>{body}</MDXRenderer>
-        </Box>
-
-        <Box
-          as="aside"
-          sx={{
-            my: 0,
-            gridColumn: [1, 1, "11 / span 2"],
-          }}
-        >
-          <Box
-            sx={{
-              "@media print": {
-                display: "none",
-              },
-            }}
-          >
+      <PostTemplate
+        main={<MDXRenderer>{body}</MDXRenderer>}
+        sidebar={
+          <>
             <Styled.h3>
               <InfoIcon width={17} sx={{ mr: 1, mb: -1 }} />
               Author
@@ -91,11 +69,11 @@ const ProjectsPostPage = ({ data, location }) => {
             <Styled.p>
               <Styled.a href={coverImageLink}>{coverImageAuthor}</Styled.a>
             </Styled.p>
-          </Box>
 
-          <ShareButtons pageUrl={pageUrl} title={title} />
-        </Box>
-      </Grid>
+            <ShareButtons pageUrl={pageUrl} title={title} />
+          </>
+        }
+      />
     </PageLayout>
   )
 }
