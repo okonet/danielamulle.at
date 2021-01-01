@@ -43,6 +43,17 @@ export default ({
       />
     )
   }
+  if (search.includes("instagramWithTitle")) {
+    return (
+      <SocialImage
+        author={author}
+        title={title}
+        image={socialImage}
+        width={1080}
+        height={1080}
+      />
+    )
+  }
   if (search.includes("instagram")) {
     return (
       <SocialImage
