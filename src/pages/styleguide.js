@@ -28,13 +28,6 @@ export default () => {
         recipes: allPost(filter: { collection: { eq: "recipes" } }) {
           nodes {
             ...PostMeta
-            socialImage: coverImage {
-              childImageSharp {
-                fixed(height: 1080) {
-                  ...GatsbyImageSharpFixed
-                }
-              }
-            }
           }
         }
       }
@@ -172,22 +165,6 @@ export default () => {
             />
             <PostCard disabled slug={"/"} date="2020-12-12" />
           </Grid>
-
-          <Styled.h2>Social Images</Styled.h2>
-          {recipes.nodes.map(({ id, slug, title, socialImage }) => (
-            <Box key={id}>
-              <Box sx={{ mb: 3 }}>
-                <Styled.h3>{title}</Styled.h3>
-                <Link to={slug + "?instagram"}>{slug}</Link>
-              </Box>
-              <img
-                alt={`Instagram Image for ${title}`}
-                src={`https://component-driven.dev/api/screenshot?v=${version}&width=1080&height=1080&url=https://danielamulle.at${slug}?instagram`}
-                width={1080 / 2}
-                height={1080 / 2}
-              />
-            </Box>
-          ))}
         </Grid>
       </Container>
     </ThemeUIProvider>
