@@ -1,6 +1,6 @@
 /* @jsx jsx */
 import React, { useCallback } from "react"
-import { Box, Flex, Input, jsx, Text } from "theme-ui"
+import { Flex, Input, jsx, Text } from "theme-ui"
 import { useFlexSearch } from "react-use-flexsearch"
 import groupBy from "lodash.groupby"
 import Group from "react-group"
