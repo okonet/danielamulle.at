@@ -29,6 +29,7 @@ const ShareButtons = ({ pageUrl, title }) => {
         sx={{
           gridAutoFlow: "column",
           alignItems: "start",
+          justifyContent: "space-between",
         }}
       >
         <Button
