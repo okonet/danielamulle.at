@@ -1,7 +1,7 @@
 /* @jsx jsx */
 import React from "react"
 import { useLocation } from "@reach/router"
-import { Container, Flex, jsx, Styled, ThemeProvider } from "theme-ui"
+import { Container, Flex, jsx, Styled } from "theme-ui"
 import SEO from "../components/seo"
 import Section from "../components/Section"
 import SocialImage from "./SocialImage"
@@ -9,6 +9,7 @@ import CoverImage from "./CoverImage"
 import Header from "./Header"
 import SubscribeForm from "./SubscribeForm"
 import Footer from "./Footer"
+import ThemeUIProvider from "./ThemeUIProvider"
 
 const Heading = ({ heading, title }) =>
   heading ? (
@@ -52,67 +53,69 @@ export default ({
   }
 
   return (
-    <ThemeProvider theme={theme}>
+    <>
       <SEO title={title} ogImage={!!coverImage} />
-      <Flex
-        sx={{ flexDirection: "column", minHeight: "100vh", bg: "background" }}
-      >
-        <Header />
+      <ThemeUIProvider theme={theme}>
         <Flex
-          as="main"
-          sx={{
-            flexDirection: "column",
-            flexGrow: 1,
-            bg: "background",
-          }}
+          sx={{ flexDirection: "column", minHeight: "100vh", bg: "background" }}
         >
-          {coverImage ? (
-            <CoverImage
-              fluid={coverImage.childImageSharp.fluid}
-              author={coverImageAuthor}
-              url={coverImageLink}
-            />
-          ) : (
+          <Header />
+          <Flex
+            as="main"
+            sx={{
+              flexDirection: "column",
+              flexGrow: 1,
+              bg: "background",
+            }}
+          >
+            {coverImage ? (
+              <CoverImage
+                fluid={coverImage.childImageSharp.fluid}
+                author={coverImageAuthor}
+                url={coverImageLink}
+              />
+            ) : (
+              <Section
+                theme={theme}
+                blendMode={blendMode}
+                sx={{
+                  display: "flex",
+                  pt: [6, 5],
+                  pb: [3, 5],
+                  backgroundColor: "headerBg",
+                  minHeight: [280, 260, 260],
+                  alignItems: "flex-end",
+                }}
+              >
+                <Heading heading={heading} title={title} />
+              </Section>
+            )}
+
+            <Container variant="section">
+              {coverImage && <Heading heading={heading} title={title} />}
+              {children}
+            </Container>
+          </Flex>
+          {shouldShowSubscribe && (
             <Section
               theme={theme}
               blendMode={blendMode}
               sx={{
-                display: "flex",
-                pt: [6, 5],
-                pb: [3, 5],
-                backgroundColor: "headerBg",
-                minHeight: [280, 260, 260],
-                alignItems: "flex-end",
+                py: 4,
               }}
             >
-              <Heading heading={heading} title={title} />
+              <Styled.h2 sx={{ mt: 0, mb: 3 }}>Newsletter</Styled.h2>
+              <Styled.p>
+                Verpasse keine meiner tollen Tipps & Tricks, interessanten Infos
+                & köstlichen Rezepte.
+              </Styled.p>
+              <SubscribeForm />
             </Section>
           )}
 
-          <Container variant="section">
-            {coverImage && <Heading heading={heading} title={title} />}
-            {children}
-          </Container>
+          <Footer />
         </Flex>
-        {shouldShowSubscribe && (
-          <Section
-            theme={theme}
-            blendMode={blendMode}
-            sx={{
-              py: 4,
-            }}
-          >
-            <Styled.h2 sx={{ mt: 0, mb: 3 }}>Newsletter</Styled.h2>
-            <Styled.p>
-              Verpasse keine meiner tollen Tipps & Tricks, interessanten Infos &
-              köstlichen Rezepte.
-            </Styled.p>
-            <SubscribeForm />
-          </Section>
-        )}
-
-        <Footer />
-      </Flex>
-    </ThemeProvider>
+      </ThemeUIProvider>
+    </>
   )
 }
