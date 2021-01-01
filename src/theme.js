@@ -141,7 +141,7 @@ const theme = {
     pageTitle: {
       m: 0,
       color: "primary",
-      fontSize: 5,
+      fontSize: [4, 5],
       fontWeight: "normal",
       fontFamily: "heading",
       lineHeight: "heading",
@@ -149,22 +149,13 @@ const theme = {
       hyphens: "auto",
       ":first-letter": { textTransform: "uppercase" },
     },
-    title: {
-      m: 0,
-      color: "primary",
-      fontSize: 4,
-      fontWeight: "normal",
-      fontFamily: "heading",
-      lineHeight: "heading",
-      wordBreak: "break-word", // closes #43
-    },
     subTitle: {
       m: 0,
       color: "primary",
-      fontSize: 2,
+      fontSize: 3,
       fontWeight: "normal",
       fontFamily: "heading",
-      lineHeight: "heading",
+      lineHeight: ["heading", "body"],
     },
     sectionTitle: {
       m: 0,
@@ -256,7 +247,7 @@ const theme = {
       },
     },
     h1: {
-      variant: "textStyles.title",
+      variant: "textStyles.pageTitle",
     },
     h2: {
       variant: "textStyles.subTitle",
@@ -264,7 +255,7 @@ const theme = {
     },
     h3: {
       variant: "textStyles.sectionTitle",
-      mt: 4,
+      mt: 3,
     },
     p: {
       my: 3,

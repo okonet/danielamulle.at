@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import React from "react"
 import { MDXRenderer } from "gatsby-plugin-mdx"
-import { Box, Grid, jsx, Styled } from "theme-ui"
+import { Box, jsx, Styled } from "theme-ui"
 import Link from "./Link"
 import { blogTheme } from "../theme"
 import { blogPath } from "../../paths"
@@ -63,7 +63,7 @@ export default ({ data, location }) => {
         main={<MDXRenderer>{body}</MDXRenderer>}
         sidebar={
           <>
-            <Styled.h3 sx={{ m: 0, mr: 2 }}>Veröffentlicht am</Styled.h3>
+            <Styled.h3>Veröffentlicht am</Styled.h3>
             <Styled.p>{date}</Styled.p>
 
             <TagList tags={categories} />

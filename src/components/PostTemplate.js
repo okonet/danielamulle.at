@@ -4,7 +4,7 @@ import { Box, Grid, jsx } from "theme-ui"
 
 export default function PostTemplate({ main, sidebar }) {
   return (
-    <Grid gap={4} columns={[1, 1, 12]} sx={{ mx: [0, 0, -4] }}>
+    <Grid gap={4} columns={[1, 1, 12]} sx={{ mx: [0, 0, -4], mt: 3 }}>
       <Box
         sx={{
           gridColumnStart: 1,
@@ -20,7 +20,7 @@ export default function PostTemplate({ main, sidebar }) {
       <Box
         as="aside"
         sx={{
-          my: 3,
+          mb: 3,
           gridColumn: [1, 1, "10 / span 3"],
         }}
       >
