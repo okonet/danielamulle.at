@@ -19,6 +19,7 @@ const Heading = ({ heading, title }) =>
   )
 
 export default ({
+  author,
   title,
   heading,
   socialImage,
@@ -34,6 +35,7 @@ export default ({
   if (search.includes("ogImage")) {
     return (
       <SocialImage
+        author={author}
         title={title}
         image={socialImage}
         width={1012}

@@ -24,10 +24,11 @@ const ProjectsPostPage = ({ data, location }) => {
 
   const project = categories[0]
   const pageUrl = location.href ? location.href : site.siteMetadata.url
-  const tags = categories.filter((cat) => cat.isTag)
+
   return (
     <PageLayout
       theme={projectsTheme}
+      author={coverImageAuthor}
       title={title}
       coverImage={coverImage}
       coverImageAuthor={coverImageAuthor}

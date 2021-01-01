@@ -89,6 +89,7 @@ export default function ({
             {author && (
               <Styled.h2
                 sx={{
+                  m: 0,
                   background: gradient,
                   "-webkitBackgroundClip": "text",
                   "-webkitTextFillColor": "transparent",
