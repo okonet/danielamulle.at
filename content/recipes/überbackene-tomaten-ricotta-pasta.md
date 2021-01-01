@@ -3,7 +3,7 @@ title: Überbackene Tomaten-Ricotta-Pasta
 date: 2020-07-26T05:14:12.515Z
 coverImage: ../assets/tomatenricottapasta.jpg
 coverImageAuthor: Andrey Okonechnikov
-coverImageLink: okonet.ru
+.coverImageLink: https://okonet.ru
 categories:
   - value: Hauptspeisen
     label: Hauptspeisen

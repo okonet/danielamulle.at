@@ -3,7 +3,7 @@ title: Nudeltorte
 date: 2020-08-27T13:20:19.439Z
 coverImage: ../assets/DSC03518.jpg
 coverImageAuthor: Daniela Mulle
-coverImageLink: www.danielamulle.at
+.coverImageLink: https://www.danielamulle.at
 categories:
   - value: Hauptspeisen
     label: Hauptspeisen
