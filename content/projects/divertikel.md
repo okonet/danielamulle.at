@@ -6,7 +6,7 @@ title: Divertikel
 date: 2021-01-08T05:00:00.000Z
 coverImage: ../assets/mittelbach_l-rezept.jpg
 coverImageAuthor: Lisa Mittelbach
-coverImageLink: https://www.facebook.com/lisa.mittelbach
+coverImageLink: https://www.linkedin.com/in/lisa-mittelbach-7224431a7/
 ---
 Hast du bereits von Divertikeln gehört und möchtest nun Genaueres über diese wissen? Ist dir der Begriff noch unbekannt, du interessierst dich jedoch für medizinische und ernährungstherapeutische Themen? Dann bist du hier genau richtig. In den nächsten Absätzen werde ich dir einen Überblick über Divertikel geben und erklären, in welchem Zusammenhang die Ernährung damit steht. Am Ende des Artikels erwartet dich sogar ein köstliches und zu dem Thema passendes Rezept, das du sofort ausprobieren kannst!
 
