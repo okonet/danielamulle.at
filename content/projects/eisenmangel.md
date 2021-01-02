@@ -7,6 +7,7 @@ date: 2021-01-09T05:00:00.000Z
 coverImage: ../assets/kühtreiber_k_rezept.jpg
 coverImageAuthor: Katharina Kühtreiber
 .coverImageLink: https://www.eatmoveenjoy.at
+coverImageLink: http://www.eatmoveenjoy.at/
 ---
 
 Eisenmangel ist eine weit verbreitete Diagnose heutzutage. Viele Menschen leben damit und wissen es nicht einmal, da sie eines der Hauptsymptome – Müdigkeit – ihrem Lebenswandel und dauerhaftem Stress zuordnen.
