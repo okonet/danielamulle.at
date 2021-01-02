@@ -7,7 +7,7 @@ date: 2021-01-04T05:00:00.000Z
 coverImage: ../assets/brunnmayr-m_rezept.jpg
 coverImageAuthor: Martina Brunnmayr
 .coverImageLink: https://www.essen-leib-seele.at
-coverImageLink: https://essen-leib-seele.at/
+coverImageLink: https://www.essen-leib-seele.at/
 ---
 Was tun, wenn die Verdauung nicht so funktioniert wie sie soll? Bzw. der Darm gereizt ist? Merkst du, dass dein Darm gereizt ist? Hast du bereits medizinische Ursachen abgeklärt?
 
