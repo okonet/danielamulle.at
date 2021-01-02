@@ -7,6 +7,7 @@ date: 2021-01-10T05:00:00.000Z
 coverImage: ../assets/koller_f-rezept.jpg
 coverImageAuthor: Flora Koller
 .coverImageLink: https://www.flora-koller.at
+coverImageLink: https://www.flora-koller.at/
 ---
 
 „Kinder kriegen – nichts einfacher als das!“ Doch Schwierigkeiten beim Schwangerwerden sind häufiger als gedacht. Lebensstil und Umwelt spielen dabei eine oft unterschätzte Rolle. Damit unser Körper gesunde Eizellen oder Spermien produzieren kann, braucht er nämlich geeignete Rohstoffe. Wie lässt sich durch die Ernährung nun die Fruchtbarkeit steigern?
