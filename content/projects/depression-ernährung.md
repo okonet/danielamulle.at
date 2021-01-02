@@ -7,6 +7,7 @@ date: 2021-01-07T05:00:00.000Z
 coverImage: ../assets/fischer_h-rezept.jpg
 coverImageAuthor: Hanna Fischer
 .coverImageLink: https://www.diaetologie-fischer.com
+coverImageLink: https://www.diaetologie-fischer.com/
 ---
 
 Ernährung beeinflusst uns und unseren Gemütszustand. Nicht umsonst gibt es Sprichwörter wie „Sauer macht lustig“ oder „Schokolade ist Balsam für die Seele“. Doch gibt es auch eine Ernährung gegen Depressionen?
