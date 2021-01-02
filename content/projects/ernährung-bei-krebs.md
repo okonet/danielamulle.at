@@ -7,6 +7,7 @@ date: 2021-01-05T05:00:00.000Z
 coverImage: ../assets/chmelar_s-rezept.jpg
 coverImageAuthor: Sabine Chmelar
 .coverImageLink: https://www.ernährungswege.at
+coverImageLink: https://www.ernaehrungswege.at/
 ---
 
 “Ich habe Krebs – was soll ich essen? - auf diese Frage gibt es keine allgemein gültige Antwort. Jede Krebspatientin und jeder Krebspatient ist individuell – und genauso individuell sollte die Ernährung auf die Betroffenen abgestimmt sein.
