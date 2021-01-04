@@ -26,22 +26,16 @@ export default function ({
     }
   `)
   const gradient = () => (theme) => {
-    return `linear-gradient(135deg,
-            ${transparentize("cyan.4", 0)(theme)},
-            ${transparentize("beige.5", 0)(theme)},
-            ${transparentize("pink.5", 0)(theme)}
+    return `linear-gradient(
+            ${transparentize("text", 1)(theme)} 30%, 
+            ${transparentize("text", 0)(theme)}
         )`
   }
 
   const ogTheme = {
     ...theme,
     space: [0, "2rem", "3rem", "4rem", "5rem"],
-    fontSizes: ["1.85rem", "2rem", "2.25rem", "2.5rem", "3.5rem", "4.25rem"],
-    colors: {
-      ...palette,
-      text: "white",
-      secondary: "white",
-    },
+    fontSizes: ["1.5rem", "2rem", "2.5rem", "3rem", "3rem", "4rem"],
   }
   return (
     <ThemeUIProvider theme={ogTheme}>
@@ -65,6 +59,7 @@ export default function ({
             px: 2,
             width: "100%",
             height: "100%",
+            backgroundImage: gradient,
           }}
         >
           <Img
@@ -73,14 +68,12 @@ export default function ({
             fixed={logo.childImageSharp.fixed}
             alt="Logo"
           />
-          <Box>
+          <Box sx={{}}>
             {title && (
               <Styled.h1
                 sx={{
-                  background: gradient,
-                  "-webkitBackgroundClip": "text",
-                  "-webkitTextFillColor": "transparent",
-                  mixBlendMode: "hard-light",
+                  variant: "textStyles.pageTitle",
+                  color: "background",
                 }}
               >
                 {title}
@@ -90,10 +83,10 @@ export default function ({
               <Styled.h2
                 sx={{
                   m: 0,
-                  background: gradient,
-                  "-webkitBackgroundClip": "text",
-                  "-webkitTextFillColor": "transparent",
-                  mixBlendMode: "hard-light",
+                  variant: "textStyles.cardTitle",
+                  color: "background",
+                  fontWeight: "normal",
+                  opacity: 0.65,
                 }}
               >
                 von {author}
