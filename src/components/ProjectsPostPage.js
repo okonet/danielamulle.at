@@ -65,7 +65,7 @@ const ProjectsPostPage = ({ data, location }) => {
           <>
             <Styled.h3>
               <InfoIcon width={17} sx={{ mr: 1, mb: -1 }} />
-              Author
+              Autorin
             </Styled.h3>
             <Styled.p>
               <Styled.a href={coverImageLink}>{coverImageAuthor}</Styled.a>
