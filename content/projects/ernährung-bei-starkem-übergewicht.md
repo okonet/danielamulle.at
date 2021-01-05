@@ -6,7 +6,7 @@ title: Ernährung bei starkem Übergewicht
 date: 2021-01-25T05:00:00.000Z
 coverImage: ../assets/stix-e_rezept.jpg
 coverImageAuthor: Eva-Maria Stix
-coverImageLink: https://danielamulle.at
+coverImageLink: https://www.facebook.com/eva.stix.1
 ---
 Du hast dich schon öfters gefragt, was eigentlich der Unterschied zwischen Übergewicht und Adipositas ist? Und vor allem, wie man es wieder wegbekommt? Dann hoffe ich, dass ich dir hier eine kleine Hilfestellung geben kann, um diese Fragen zu beantworten.
 
