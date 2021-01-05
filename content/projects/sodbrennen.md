@@ -7,6 +7,7 @@ date: 2021-01-19T05:00:00.000Z
 coverImage: ../assets/schmuck_angelika_rezept.jpg
 coverImageAuthor: Angelika Schmuck
 .coverImageLink: https://www.diaetologin-angelika.at
+coverImageLink: https://www.diaetologin-angelika.at
 ---
 
 Als Sodbrennen oder Reflux, bezeichnet man das Zurückfließen des sauren Magensafts in die Speiseröhre.
