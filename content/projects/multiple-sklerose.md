@@ -3,10 +3,11 @@ categories:
   - value: Diätologischer Jahresstart 2021
     label: Diätologischer Jahresstart 2021
 title: Multiple Sklerose
-date: 2021-01-17T21:10:06.846Z
+date: 2021-01-17T05:00:00.000Z
 coverImage: ../assets/prammer_c-rezept.jpg
 coverImageAuthor: Caroline Prammer
 .coverImageLink: https://www.praxis-ernaehrung.at
+coverImageLink: https://praxis-ernaehrung.at/
 ---
 
 In der Literatur finden sich verschiedene Ernährungsempfehlungen beim Erkrankungsbild Multiple Sklerose, mit dafür teilweise eigens aufgestellten MS-Diäten.
