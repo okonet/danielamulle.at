@@ -7,6 +7,7 @@ date: 2021-01-24T05:00:00.000Z
 coverImage: ../assets/brunnmayr-m_rezept-24-01-2021.jpeg
 coverImageAuthor: Martina Brunnmayr
 .coverImageLink: https://www.essen-leib-seele.at
+coverImageLink: https://www.essen-leib-seele.at
 ---
 
 In meinem [Beitrag](https://www.essen-leib-seele.at/2020/11/30/ern%C3%A4hrung-bei-adhs-bei-kindern-und-jugendlichen/) erfährst du mehr darüber, wie du ADHS positiv mit dem täglichen Essen & Trinken beeinflussen kannst.
