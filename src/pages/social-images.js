@@ -1,12 +1,22 @@
 /* @jsx jsx */
 import React from "react"
-import { Box, Container, Flex, Grid, Label, Radio, jsx, Styled } from "theme-ui"
+import {
+  Box,
+  Container,
+  Flex,
+  Grid,
+  Label,
+  Radio,
+  jsx,
+  Styled,
+  Button,
+} from "theme-ui"
 import theme from "../theme"
 import { graphql, useStaticQuery } from "gatsby"
 import Link from "../components/Link"
 import ThemeUIProvider from "../components/ThemeUIProvider"
 
-const version = 2
+const initialVersion = 2
 
 const IMAGE_TYPES = [
   {
@@ -26,9 +36,14 @@ const IMAGE_TYPES = [
   },
 ]
 
-function Post({ id, title, slug, imageType = "instagram" }) {
+function Post({ id, title, slug, imageType = "instagram", version }) {
   const selectedImageType = IMAGE_TYPES.find((type) => type.name === imageType)
   const { width, height } = selectedImageType
+  const queryParams = new URLSearchParams("")
+  queryParams.set("width", width)
+  queryParams.set("height", height)
+  queryParams.set("version", version)
+  queryParams.set("url", `https://danielamulle.at${slug}?${imageType}`)
   return (
     <Box key={id}>
       <Box sx={{ mb: 3 }}>
@@ -37,7 +52,7 @@ function Post({ id, title, slug, imageType = "instagram" }) {
       </Box>
       <img
         alt={`Instagram Image for ${title}`}
-        src={`https://component-driven.dev/api/screenshot?v=${version}&width=${width}&height=${height}&url=https://danielamulle.at${slug}?${imageType}`}
+        src={`https://www.component-driven.dev/api/screenshot?${queryParams.toString()}`}
         width={width / 2}
         height={height / 2}
       />
@@ -59,6 +74,7 @@ export default ({ location, navigate }) => {
   )
   const searchParams = new URLSearchParams(location.search)
   const selectedPostSlug = searchParams.get("post")
+  const version = searchParams.get("v") || initialVersion
   const imageType = searchParams.get("type") || IMAGE_TYPES[0].name
   const selectedPost = posts.nodes.find(
     (post) => post.slug === selectedPostSlug
@@ -74,6 +90,14 @@ export default ({ location, navigate }) => {
       replace: true,
     })
   }
+  const handleRefresh = (event) => {
+    event.preventDefault()
+    searchParams.set("v", Date.now())
+    const nextUrl = `${location.pathname}?${searchParams.toString()}`
+    navigate(nextUrl, {
+      replace: true,
+    })
+  }
   return (
     <ThemeUIProvider theme={theme}>
       <Container
@@ -83,7 +107,7 @@ export default ({ location, navigate }) => {
           height: "100vh",
         }}
       >
-        <Grid gap={4} sx={{ py: 4, height: "100%", width: "100%" }}>
+        <Grid gap={4} sx={{ py: 0, height: "100%", width: "100%" }}>
           <Styled.h1>Social Images</Styled.h1>
           <Flex sx={{ overflow: "hidden", width: "100%" }}>
             <Flex
@@ -117,12 +141,13 @@ export default ({ location, navigate }) => {
                     onChange={handleFormChange}
                     sx={{
                       alignItems: "center",
+                      justifyContent: "flex-start",
                     }}
                   >
                     {IMAGE_TYPES.map((type) => {
                       const isChecked = imageType === type.name
                       return (
-                        <Label>
+                        <Label sx={{ width: "auto", mr: 4 }}>
                           <Radio
                             name={type.name}
                             value={type.name}
@@ -132,8 +157,15 @@ export default ({ location, navigate }) => {
                         </Label>
                       )
                     })}
+                    <Button type="button" onClick={handleRefresh}>
+                      Refresh
+                    </Button>
                   </Flex>
-                  <Post {...selectedPost} imageType={imageType} />
+                  <Post
+                    {...selectedPost}
+                    imageType={imageType}
+                    version={version}
+                  />
                 </>
               ) : (
                 <Styled.p>Please select a post</Styled.p>
