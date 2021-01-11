@@ -7,6 +7,7 @@ date: 2021-01-13T05:00:00.000Z
 coverImage: ../assets/mitterschiffthaler_s-rezept.jpg
 coverImageAuthor: Sophie Mitterschiffthaler
 .coverImageLink: https://www.danielamulle.at
+coverImageLink: https://www.instagram.com/philowsophie01/
 ---
 
 Begib dich mit mir auf einen kleinen Ausflug: Es ist Sommer, schön warm und wir flanieren auf den Straßen, dabei kommen wir bei einer kleinen Eistheke vorbei. Die bunten schön angerichteten Eissorten strahlen uns an und wir wissen beide, dass wir nicht daran vorbei gehen können, ohne ein Eis zu essen. Ja, die Sorten sehen nicht nur schön aus, das kühle Eis schmilzt auf unseren Lippen und die Kugeln schmecken genauso lecker, wie sie aussehen. Wir spazieren weiter und plötzlich beginnt dein Bauch zu rumoren und sich aufzublähen - das passiert dir in letzter Zeit öfter. Auch gestern nachdem du ein Stück Topfentorte gegessen hast, aber auch bei der „Quattro formagi“-Pizza vor ein paar Tagen. „Vielleicht hast du eine Laktoseintoleranz“, sage ich. Ich sehe dich an und sehe nur zwei große Fragezeichen in deinen Augen. „Na komm!“, sage ich, „Ich erkläre es dir!“ und wir spazieren weiter.
@@ -75,7 +76,7 @@ Und hier hab ich noch ein tolles, laktosefreies Rezept zum Nachbacken für dich,
 
 
 
-## Vegane Apfel Bananen Muffins
+## Vegane Apfel-Bananen-Muffins
 
 **Zutaten für 12 Stück **
 
