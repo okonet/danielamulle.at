@@ -10,6 +10,6 @@ coverImageLink: https://diaetologin-mueller.jimdofree.com/
 ---
 Eine erfolgreiche Gewichtsreduktion ist schnell entschieden, dauert jedoch meist länger als in diversen Medien beworben. Es kommen dabei Höhen und Tiefen vor, aber keine Sorge das ist ganz normal.
 
-Der folgende [Artikel](https://diaetologin-mueller.jimdofree.com/blog-1/) bietet Hilfestellungen, um deine Motivation bis zum Zielgewicht aufrecht zu erhalten. 
+Mein [Beitrag](https://diaetologin-mueller.jimdofree.com/2020/12/13/abnehmen-aber-wie/) wird dir helfen, deine Motivation bis zum Zielgewicht aufrecht zu erhalten. 
 
 Und zum Nachkochen gibt es heute einen köstlichen Kürbis-Kraut-Strudel für dich.
