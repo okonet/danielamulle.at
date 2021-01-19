@@ -31,7 +31,7 @@ Diese cremige Suppe schmeckt herrlich, ganz besonders an einem kühlen Herbst- o
 
 - 1 mittelgroße Zwiebel oder 2 Frühlingszwiebeln
 - 1 kleine Sellerieknolle
-- 1 große Pastinake (ca. x g)
+- 1 große Pastinake (ca. 160 g)
 - 4 mittelgroße Kartoffeln (ca. 400 g)
 - 1 Becher Sauerrahm oder 200 ml Soja creme cusine (optional)
 - 1 TL Koriandersamen (optional)
@@ -54,4 +54,4 @@ Diese cremige Suppe schmeckt herrlich, ganz besonders an einem kühlen Herbst- o
 
 </Preparation>
 
-Tipp: Ich koche bei Suppen gerne noch 100 g gelbe oder rote Linsen mit: Sie liefern dir noch eine kleine Extraportion sättigendes Eiweiß und machen die Suppe auch ohne Rahm oder Obers wunderbar cremig.
+*Tipp*: Ich koche bei Suppen gerne noch 100 g gelbe oder rote Linsen mit: Sie liefern dir noch eine kleine Extraportion sättigendes Eiweiß und machen die Suppe auch ohne Rahm oder Obers wunderbar cremig.
