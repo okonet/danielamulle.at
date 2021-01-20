@@ -4,7 +4,7 @@ categories:
     label: Diätologischer Jahresstart 2021
 title: ADHS und Ernährung
 date: 2021-01-24T05:00:00.000Z
-coverImage: ../assets/brunnmayr-m_rezept-24-01-2021.jpeg
+coverImage: ../assets/adhs.jpg
 coverImageAuthor: Martina Brunnmayr
 .coverImageLink: https://www.essen-leib-seele.at
 coverImageLink: https://www.essen-leib-seele.at
