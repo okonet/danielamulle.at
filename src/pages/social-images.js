@@ -52,7 +52,7 @@ function Post({ id, title, slug, imageType = "instagram", version }) {
       </Box>
       <img
         alt={`Instagram Image for ${title}`}
-        src={`https://www.component-driven.dev/api/screenshot?${queryParams.toString()}`}
+        src={`https://shotter.component-driven.dev/api/screenshot?${queryParams.toString()}`}
         width={width / 2}
         height={height / 2}
       />
