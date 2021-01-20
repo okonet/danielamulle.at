@@ -21,7 +21,7 @@ categories:
     label: glutenfrei
 timeToCook: 20 Minuten kochen + 10 Minuten zubereiten
 ---
-Dieser köstliche, eiweißreiche Salat funktioniert auch super als leichte Hauptspeise. Prinzipiell kannst du dafür alle Linsen verwenden, die du zuhause hast. Rote oder gelbe Linsen werden beim Kochen eher breiig, aber Tellerlinsen klappen gut.
+Dieser köstliche, eiweißreiche Salat funktioniert auch super als leichte Hauptspeise. Prinzipiell kannst du dafür alle Linsen verwenden, die du zuhause hast. Rote oder gelbe Linsen werden beim Kochen eher breiig, aber Tellerlinsen klappen gut. Der Salat schmeckt übrigens noch genialer, wenn er einige Zeit zum Durchziehen hat.
 
 <Ingredients yields="4 Personen">
 
