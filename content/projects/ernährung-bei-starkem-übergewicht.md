@@ -27,23 +27,25 @@ Langfristig gesehen führen falsche Ess- und Trinkverhalten und zu wenig Bewegun
 - Diabetes Typ 2 
 - Gallensteine (Cholezystolithiasis) 
 - und viele mehr                                                                                  
-
 ## Die drei Grundpfeiler: 
-1. Realistische Ziele setzen – um am Ende nicht enttäuscht zu sein! 
-2. Sehr wichtig ist es zuallererst, sich realistische Ziele zu nehmen. Es geht nicht darum, innerhalb kürzester Zeit möglichst viele Kilos purzeln zu lassen. Gesünder und langfristig erfolgreicher ist es, langsam und kontinuierlich abzunehmen, um dann das Gewicht auch zu halten. Denn sonst kommt der Jojo-Effekt, auf den keiner Lust hat.
-3. Als Faustregel gilt es, max. ½ 1 kg pro Woche abzunehmen (= pro Jahr ca. 25 – 50 kg). Ganz wichtig ist es auch für die Muskelmasse, nicht zu schnell zu viel Gewicht abzunehmen. 
+1. Diätberatung: Umstellung auf eine ausgewogene Ernährung.
+2. Verhaltenstherapie: Hungerund Sättigungs-gefühl neu erlernen.
+3. Regelmäßige Bewegung
+
+## Realistische Ziele setzen – um am Ende nicht enttäuscht zu sein! 
+Sehr wichtig ist es zuallererst, sich realistische Ziele zu nehmen. Es geht nicht darum, innerhalb kürzester Zeit möglichst viele Kilos purzeln zu lassen. Gesünder und langfristig erfolgreicher ist es, langsam und kontinuierlich abzunehmen, um dann das Gewicht auch zu halten. Denn sonst kommt der Jojo-Effekt, auf den keiner Lust hat. Als Faustregel gilt es, max. ½ - 1 kg pro Woche abzunehmen (= pro Jahr ca. 25 – 50 kg). Ganz wichtig ist es auch für die Muskelmasse, nicht zu schnell zu viel Gewicht abzunehmen. 
 
 ## Was ist nun beim Essen und Trinken zu beachten? 
-1. Reichlich Flüssigkeit: Wasser ist lebensnotwendig – trinke mind. 1,5-2 Liter davon pro Tag. Alkoholische Getränke sollten nur gelegentlich konsumiert werden. 
-2. Wenig Fett und fettreiche Lebensmittel: Nahrungsfett in Grenzen halten und Fett pflanzlichen Ursprungs bevorzugen. Auf unsichtbares Fett in manchen Fleischerzeugnissen, Süßwaren etc. achten.
-3. Vielseitig essen: Genieße die Vielfalt der Lebensmittelauswahl! Es kommt bei allem auf die Menge, Auswahl und Kombination an. 
-4. Gemüse und Obst – 5 Mal am Tag: Esse 3 Portionen Gemüse und 2 Portionen Obst/Tag – möglichst frisch und nur kurz gegart. 
-5. Zucker und Salz in Maßen: Nur gelegentlich sollten Zucker und mit Zuckerzusatz hergestellte Lebensmittel bzw. Getränke konsumiert werden. Stattdessen besser mit Kräutern und Gewürzen die Speisen abschmecken und würzen.
-6. Täglich mehrmals Getreideprodukte & Kartoffeln: Brot, Nudeln, Reis etc. am besten aus Vollkorn. Vollkornprodukte und Kartoffeln enthalten wichtige Vitamine, Mineralstoffe und Spurenelemente sowie Ballaststoffe.
-7. Täglich Milch und Milchprodukte, 1x/Tag Fisch, Fleisch oder Wurstwaren /Eier in Maßen: Diese Lebensmittel enthalten wertvolle Nährstoffe, wie zum Beispiel Protein. Bevorzuge fettarme Produkte, vor allem bei Fleischerzeugnissen und Milchprodukten. 
-8. Schmackhaft und trotzdem schonend zubereiten: Idealerweise die Speisen bei möglichst niedrigen Temperaturen garen, mit wenig Fett und Wasser. 
-9. Zeit nehmen, um zu genießen: Bewusst zu essen hilft, richtig zu essen. Das Auge isst mit. Lass dir Zeit beim Essen. Das kann auch dein Sättigungsgefühl positiv beeinflussen. 
-10. Bleib in Bewegung: Mit reichlich Bewegung bleibt man in Schwung. 
+1. **Reichlich Flüssigkeit:** Wasser ist lebensnotwendig – trinke mindestens 1,5 - 2 Liter davon pro Tag. Alkoholische Getränke sollten nur gelegentlich konsumiert werden. 
+2. **Wenig Fett und fettreiche Lebensmittel:** Nahrungsfett in Grenzen halten und Fett pflanzlichen Ursprungs bevorzugen. Auf unsichtbares Fett in manchen Fleischerzeugnissen, Süßwaren etc. achten.
+3. **Vielseitig essen:** Genieße die Vielfalt der Lebensmittelauswahl! Es kommt bei allem auf die Menge, Auswahl und Kombination an. 
+4. **Gemüse und Obst – 5 Mal am Tag:** Esse 3 Portionen Gemüse und 2 Portionen Obst/Tag – möglichst frisch und nur kurz gegart. 
+5. **Zucker und Salz in Maßen:** Nur gelegentlich sollten Zucker und mit Zuckerzusatz hergestellte Lebensmittel bzw. Getränke konsumiert werden. Stattdessen besser mit Kräutern und Gewürzen die Speisen abschmecken und würzen.
+6. **Täglich mehrmals Getreideprodukte & Kartoffeln:** Brot, Nudeln, Reis etc. am besten aus Vollkorn. Vollkornprodukte und Kartoffeln enthalten wichtige Vitamine, Mineralstoffe und Spurenelemente sowie Ballaststoffe.
+7. **Täglich Milch und Milchprodukte, 1x/Tag Fisch, Fleisch oder Wurstwaren /Eier in Maßen:** Diese Lebensmittel enthalten wertvolle Nährstoffe, wie zum Beispiel Protein. Bevorzuge fettarme Produkte, vor allem bei Fleischerzeugnissen und Milchprodukten. 
+8. **Schmackhaft und trotzdem schonend zubereiten:** Idealerweise die Speisen bei möglichst niedrigen Temperaturen garen, mit wenig Fett und Wasser. 
+9. **Zeit nehmen, um zu genießen:** Bewusst zu essen hilft, richtig zu essen. Das Auge isst mit. Lass dir Zeit beim Essen. Das kann auch dein Sättigungsgefühl positiv beeinflussen. 
+10. **Bleib in Bewegung:** Mit reichlich Bewegung bleibt man in Schwung.  
 
 Nach diesen Tipps habe ich auch noch ein köstliches Rezept für dich zum Nachkochen:
 
