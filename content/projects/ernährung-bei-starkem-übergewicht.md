@@ -10,7 +10,8 @@ coverImageLink: https://www.facebook.com/eva.stix.1
 ---
 Du hast dich schon öfters gefragt, was eigentlich der Unterschied zwischen Übergewicht und Adipositas ist? Und vor allem, wie man es wieder wegbekommt? Dann hoffe ich, dass ich dir hier eine kleine Hilfestellung geben kann, um diese Fragen zu beantworten.
 
-Was ist jetzt eigentlich diese „Adipositas“? Unter Adipositas versteht man im eigentlichen Sinn starkes Übergewicht, also eine Vermehrung des Körperfettes mit krankhaften Auswirkungen. Ziemlich sicher hast du schon einmal vom BMI, dem Body Mass Index, gehört. Dieser gibt an, wie viele Kilogramm ein Körper pro Quadratmeter wiegt. Wenn Adipositas vorliegt, ist der BMI größer als 30 pro Quadratmeter, also schwerer als 30 Kilo. 
+## Was ist jetzt eigentlich diese „Adipositas“? 
+Unter Adipositas versteht man im eigentlichen Sinn starkes Übergewicht, also eine Vermehrung des Körperfettes mit krankhaften Auswirkungen. Ziemlich sicher hast du schon einmal vom BMI, dem Body Mass Index, gehört. Dieser gibt an, wie viele Kilogramm ein Körper pro Quadratmeter wiegt. Wenn Adipositas vorliegt, ist der BMI größer als 30 pro Quadratmeter, also schwerer als 30 Kilo. 
 
 ## Auslöser von einem „Zuviel“ an Kilos 
 Natürlich kann bei Übergewicht auch die Vererbung eine Rolle spielen. Trotzdem sind Ernährungs- und Lebensweise hauptsächlich verantwortlich dafür, ob man nun tatsächlich „dick“ wird oder nicht. 
@@ -29,8 +30,8 @@ Langfristig gesehen führen falsche Ess- und Trinkverhalten und zu wenig Bewegun
 - und viele mehr                                                                                  
 ## Die drei Grundpfeiler: 
 1. Diätberatung: Umstellung auf eine ausgewogene Ernährung.
-2. Verhaltenstherapie: Hungerund Sättigungs-gefühl neu erlernen.
-3. Regelmäßige Bewegung
+2. Verhaltenstherapie: Hunger- und Sättigungsgefühl neu erlernen.
+3. Regelmäßige Bewegung.
 
 ## Realistische Ziele setzen – um am Ende nicht enttäuscht zu sein! 
 Sehr wichtig ist es zuallererst, sich realistische Ziele zu nehmen. Es geht nicht darum, innerhalb kürzester Zeit möglichst viele Kilos purzeln zu lassen. Gesünder und langfristig erfolgreicher ist es, langsam und kontinuierlich abzunehmen, um dann das Gewicht auch zu halten. Denn sonst kommt der Jojo-Effekt, auf den keiner Lust hat. Als Faustregel gilt es, max. ½ - 1 kg pro Woche abzunehmen (= pro Jahr ca. 25 – 50 kg). Ganz wichtig ist es auch für die Muskelmasse, nicht zu schnell zu viel Gewicht abzunehmen. 
