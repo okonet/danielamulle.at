@@ -1,9 +1,9 @@
 ---
 title: Wer sich mit Low Carb quält, ist selber schuld
 date: 2020-12-29T09:18:47.571Z
-coverImage: ../assets/low-carb-rich-smith-15tru0ogpuk-unsplash.jpg
-coverImageAuthor: Rich Smith
-coverImageLink: https://unsplash.com/@richwilliamsmith
+coverImage: ../assets/lowcarb_pixabay-cc0.jpg
+coverImageAuthor: Pixabay CC0 auf Pexels
+coverImageLink: https://www.pexels.com/de-de/foto/wurst-in-scheiben-schneiden-208450/
 categories:
   - value: Abnehmen
     label: Abnehmen
