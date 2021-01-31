@@ -21,7 +21,8 @@ categories:
     label: glutenfrei
 timeToCook: 20 Minuten kochen + 10 Minuten zubereiten
 ---
-Dieser köstliche, eiweißreiche Salat funktioniert auch super als leichte Hauptspeise. Prinzipiell kannst du dafür alle Linsen verwenden, die du zuhause hast. Rote oder gelbe Linsen werden beim Kochen eher breiig, aber Tellerlinsen klappen gut. Der Salat schmeckt übrigens noch genialer, wenn er einige Zeit zum Durchziehen hat.
+Dieser köstliche, eiweißreiche Salat funktioniert auch super als leichte Hauptspeise. Die rote Rübe ist eine echte Vitamin- und Mineralstoffbombe: Sie liefert dir B-Vitamine, Vitamin C, Mineralstoffe wie Jod, Kalzium, Kalium, Magnesium, Natrium, Phosphor und sehr viel Eisen. Die intensive Farbe kommt übrigens vom Sekundäre Pflanzenstoff Betanin. Er hilft deinem Körper schädliche Anreicherungen von Sauerstoff (freie Radikale) abzufangen und Entzündungen zu bekämpfen.
+
 
 <Ingredients yields="4 Personen">
 
@@ -39,10 +40,12 @@ Dieser köstliche, eiweißreiche Salat funktioniert auch super als leichte Haupt
 
 1. Linsen ca. 20 Minuten bissfest kochen.
 2. Kochwasser abseihen und gut mit Wasser abspülen, das reduziert blähende Stoffe.
-3. Rote Rüben in mundgerechte Stücke schneiden oder reiben, dabei am besten Handschuhe verwenden.
+3. Einstweilen Rote Rüben in mundgerechte Stücke schneiden oder reiben. Dazu am besten Handschuhe verwenden, da das Betanin sehr stark färbt.
 3. Linsen und rote Rüben in einer großen Schüssel mischen.
 4. Mit Kren, Senf, Salz, Pfeffer, Olivenöl & Zitronensaft marinieren.
 5. Mit Frühlingszwiebeln bestreuen.
 6. Mit Vollkornbrot und -gebäck servieren.
 
 </Preparation>
+
+Du kannst alle Linsen verwenden, die du zuhause hast. Rote oder gelbe Linsen werden beim Kochen eher breiig, aber Tellerlinsen klappen neben Berg- und Belugalinsen wirklich gut. Wenn's schnell gehen muss, dann nimm' essfertige Linsen aus der Dose, die du ebenfalls gut abspülst.
