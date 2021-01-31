@@ -48,4 +48,4 @@ Dieser köstliche, eiweißreiche Salat funktioniert auch super als leichte Haupt
 
 </Preparation>
 
-Du kannst alle Linsen verwenden, die du zuhause hast. Rote oder gelbe Linsen werden beim Kochen eher breiig, aber Tellerlinsen klappen neben Berg- und Belugalinsen wirklich gut. Wenn's schnell gehen muss, dann nimm' essfertige Linsen aus der Dose, die du ebenfalls gut abspülst.
+Du kannst alle Linsen verwenden, die du zuhause hast. Rote oder gelbe Linsen werden beim Kochen eher breiig, aber Tellerlinsen klappen neben Berg- und Belugalinsen wirklich gut. Wenn's schnell gehen muss, dann nimm' essfertige Linsen aus der Dose, die du ebenfalls gut abspülst. Der Salat schmeckt allerdings noch besser, wenn er einige Zeit zum Durchziehen hat
