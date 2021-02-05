@@ -1,9 +1,9 @@
 ---
 title: Buttermilch-Dinkel-Weckerl
 date: 2021-02-05T08:27:49.139Z
-coverImage: ../assets/buttermilchweckerl_metin-ozer-unsplash.jpg
-coverImageAuthor: Metin Ozer
-coverImageLink: https://unsplash.com/@metinozer
+coverImage: ../assets/buttermilchweckerl_chiara-polo-unsplash.jpg
+coverImageAuthor: Chiara Polo
+coverImageLink: https://unsplash.com/@chiara_art
 categories:
   - value: Kuchen, Kekserl & Co
     label: Kuchen, Kekserl & Co
@@ -17,7 +17,7 @@ categories:
     label: zum Mitnehmen
 timeToCook: 10 Minuten vorbereiten + 20 Minuten backen
 ---
-Dieses einfache Rezept habe ich schon seit vielen Jahren in meinem Fundus. Je nachdem welche Kerne, Nüsse oder Samen du verwendest kannst du die Weckerl super nach deinem Geschmack variieren. Wenn du lieber einen Brotlaib formen möchtest dann backe dein Brot für ca. 40 Minuten.
+Dieses einfache Rezept habe ich schon seit vielen Jahren in meinem Fundus. Je nachdem welche Kerne, Nüsse, Samen oder Flocken du verwendest, kannst du die Weckerl super nach deinem Geschmack variieren. Wenn du lieber einen Brotlaib formen möchtest dann backe dein Brot für ca. 40 Minuten.
 
 
 
@@ -33,7 +33,7 @@ Dieses einfache Rezept habe ich schon seit vielen Jahren in meinem Fundus. Je na
 - 1 TL Salz
 - 30 g Sonnenblumen- oder Kürbiskerne
 - 2 EL Leinsamen
-- Kerne, Nüsse oder Samen zum Bestreuen
+- Kerne, Nüsse, Samen oder Flocken zum Bestreuen
 - Sojadrink oder Kuhmilch zum Bestreichen
 
 
@@ -47,7 +47,7 @@ Dieses einfache Rezept habe ich schon seit vielen Jahren in meinem Fundus. Je na
 2. Buttermilch und Rapsöl einrühren.
 3. Gut verkneten und an einem warmen Ort aufgehen lassen.
 5. Weckerl formen und mit Sojadrink oder Kuhmilch bestreichen.
-6. Mit Kernen, Nüssen oder Samen deiner Wahl bestreuen.
+6. Mit Kernen, Nüssen, Samen oder Flocken deiner Wahl bestreuen.
 7. bei 200 Grad ca. 20 Minuten goldbraun backen.
 
 
