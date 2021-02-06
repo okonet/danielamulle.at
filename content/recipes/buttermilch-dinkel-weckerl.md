@@ -15,7 +15,7 @@ categories:
     label: gut vorzubereiten
   - value: zum Mitnehmen
     label: zum Mitnehmen
-timeToCook: 10 Minuten vorbereiten + 20 Minuten backen
+timeToCook: 10 Minuten vorbereiten, ca. 40 Minuten aufgehen + 20 Minuten backen
 ---
 Dieses einfache Rezept habe ich schon seit vielen Jahren in meinem Fundus. Je nachdem welche Kerne, Nüsse, Samen oder Flocken du verwendest, kannst du die Weckerl super nach deinem Geschmack variieren. Wenn du lieber einen Brotlaib formen möchtest dann backe dein Brot für ca. 40 Minuten.
 
@@ -48,7 +48,7 @@ Dieses einfache Rezept habe ich schon seit vielen Jahren in meinem Fundus. Je na
 3. Gut verkneten und an einem warmen Ort aufgehen ca. 2 x aufgehen lassen.
 5. Weckerl formen, aufs Blech legen und mit Sojadrink oder Kuhmilch bestreichen.
 6. Mit Kernen, Nüssen, Samen oder Flocken deiner Wahl bestreuen.
-7. Falls du Zeit hast kannst du die Weckerl bzw. deine Laib am Blech nochmals aufgehen lassen.
+7. Falls du Zeit hast kannst du die Weckerl am Blech nochmals aufgehen lassen.
 8. Dann bei 200 Grad ca. 20 Minuten goldbraun backen.
 
 
