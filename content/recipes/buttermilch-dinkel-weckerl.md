@@ -46,10 +46,10 @@ Dieses einfache Rezept habe ich schon seit vielen Jahren in meinem Fundus. Je na
 1. Trockene Zutaten inklusive der Hefe in einer großen Schüssel vermischen.
 2. Buttermilch und Rapsöl einrühren.
 3. Gut verkneten und an einem warmen Ort aufgehen ca. 2 x aufgehen lassen.
-5. Weckerl formen und mit Sojadrink oder Kuhmilch bestreichen.
+5. Weckerl formen, aufs Blech legen und mit Sojadrink oder Kuhmilch bestreichen.
 6. Mit Kernen, Nüssen, Samen oder Flocken deiner Wahl bestreuen.
-
-7. Bei 200 Grad ca. 20 Minuten goldbraun backen.
+7. Falls du Zeit hast kannst du die Weckerl bzw. deine Laib am Blech nochmals aufgehen lassen.
+8. Dann bei 200 Grad ca. 20 Minuten goldbraun backen.
 
 
 
