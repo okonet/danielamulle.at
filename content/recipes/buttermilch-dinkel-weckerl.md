@@ -28,7 +28,7 @@ Dieses einfache Rezept habe ich schon seit vielen Jahren in meinem Fundus. Je na
 - 350 g Dinkel-Vollkornmehl
 - 350 ml zimmerwarme Buttermilch
 - 25 ml Rapsöl
-- 1 Pkg. Germ (Hefe)
+- 1 Pkg. frische oder getrocknete Germ (Hefe)
 - 1 EL Zucker
 - 1 TL Salz
 - 30 g Sonnenblumen- oder Kürbiskerne
@@ -43,11 +43,12 @@ Dieses einfache Rezept habe ich schon seit vielen Jahren in meinem Fundus. Je na
 
 
 
-1. Trockene Zutaten in einer großen Schüssel vermischen.
+1. Trockene Zutaten inklusive der Hefe in einer großen Schüssel vermischen.
 2. Buttermilch und Rapsöl einrühren.
-3. Gut verkneten und an einem warmen Ort aufgehen lassen.
+3. Gut verkneten und an einem warmen Ort aufgehen ca. 2 x aufgehen lassen.
 5. Weckerl formen und mit Sojadrink oder Kuhmilch bestreichen.
 6. Mit Kernen, Nüssen, Samen oder Flocken deiner Wahl bestreuen.
+
 7. Bei 200 Grad ca. 20 Minuten goldbraun backen.
 
 
