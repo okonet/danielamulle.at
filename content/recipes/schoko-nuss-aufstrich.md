@@ -21,14 +21,14 @@ categories:
     label: glutenfrei
 timeToCook: 20 Minuten
 ---
-Dieser Aufstrich schmeckt köstlich, und kommt dabei ohne jeglichen Industriezucker aus, ist dafür aber ballaststoffreich. Ich verwende ganz bewusst Walnüsse, um noch eine Extraportion omega-3-Fette einzubauen. Mit Erdnussmus bekommst du mehr Eiweiß in deinen Aufstrich, es hat aber einen intensiveren Eigengeschmack. Cashew- oder Mandelmus schmeckt relativ neutral. 
+Dieser Aufstrich schmeckt köstlich, und kommt dabei ohne jeglichen Industriezucker aus, ist dafür aber ballaststoffreich. Ich verwende ganz bewusst Rapsöl und Walnüsse, um noch eine Extraportion tolle omega-3-Fette einzubauen. Mit Erdnussmus bekommst du mehr Eiweiß in deinen Aufstrich, es hat aber einen intensiveren Eigengeschmack. Cashew- oder Mandelmus schmeckt relativ neutral. 
 
 <Ingredients yields="6 kleine Gläschen à 140 g">
 
 - 370 g weiche Datteln, z.B. Medjoul-Datteln
 - 130 g Erdnuss-, Cashew- oder Mandelmus 
 - 60 ml Pflanzendrink
-- 60 g Rapssöl
+- 60 g Rapsöl
 - 3 EL Kakaopulver
 - 80 g geriebene Walnüsse
 - 1 TL Salz
