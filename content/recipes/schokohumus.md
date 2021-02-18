@@ -2,6 +2,8 @@
 title: Schokohumus
 date: 2020-06-21T17:06:29.037Z
 coverImage: ../assets/schokohumus.jpg
+coverImageAuthor: Andrey Okonechnikov
+coverImageLink: okonet.ru
 categories:
   - value: Snacks
     label: Snacks
@@ -22,7 +24,7 @@ categories:
 timeToCook: 15 Minuten einweichen + 10 Minuten zubereiten
 ---
 
-Diese Nascherei ist im handumdrehen fertig, echt lecker und noch dazu gesund. Natürlich kannst du die Süsse nach deinem Geschmack anpassen. Für eine fruktosefreie Variante lass' die Trockenfrüchte weg, und süsse mit Reissirup.
+Diese Nascherei ist im Handumdrehen fertig, echt lecker und noch dazu gesund. Natürlich kannst du die Süße deinem Geschmack anpassen. Für eine fruktosefreie Variante lass' die Trockenfrüchte weg, und süße mit von Natur aus fruktosefreiem Reissirup.
 
 <Ingredients yields="4 Naschkatzen">
 
@@ -31,9 +33,8 @@ Diese Nascherei ist im handumdrehen fertig, echt lecker und noch dazu gesund. Na
 - 3 gehäufte EL ungesüßtes Kakaopulver
 - 1 Pkg. Vanillezucker
 - 1/8 TL Salz
-- 2 EL Nussmus oder Erdnussbutter
+- 3 EL Nussmus oder Erdnussbutter
 - 5 EL Pflanzendrink (oder Kuhmilch)
-- 1 EL Nussmus (optional)
 - 2-3 EL Honig, Ahornsirup oder Reissirup (=fruktosefrei)
 - eventuell gehackte Nüsse oder Schokoraspeln zum Bestreuen
 - Obst deiner Wahl zum Dippen (optional)
@@ -41,11 +42,11 @@ Diese Nascherei ist im handumdrehen fertig, echt lecker und noch dazu gesund. Na
 </Ingredients>
 <Preparation>
 
-1. Datteln/Feigen 15 Minuten in kochendem Wasser einweichen.
+1. Datteln/Feigen ca. 15 Minuten in kochendem Wasser einweichen.
 2. Kichererbsen gut mit Wasser abseihen.
 3. Datteln/Feigen aus dem Einweichwasser nehmen.
 4. Alle Zutaten in einem Blender zu einer dicken, cremigen Sauce pürieren.
 5. Falls dir die Konsistenz zu fest ist mit etwas Datteleinweichwasser verdünnen.
-6. Schokohumus in Schüsseln füllen und genießen.
+6. Schokohumus in Schüsseln füllen, nach Lust & Laune bestreuen und genießen.
 
 </Preparation>
