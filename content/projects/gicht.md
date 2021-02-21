@@ -4,9 +4,9 @@ categories:
     label: Diätologischer Jahresstart 2021
 title: Gicht
 date: 2021-01-22T05:00:00.000Z
-coverImage: ../assets/kiener-m_rezept.jpg
-coverImageAuthor: Maria Kiener
-coverImageLink: https://www.facebook.com/maria.kiener.7
+coverImage: ../assets/benjamin-manley-paxu2_st5jo-unsplash.jpg
+coverImageAuthor: Benjamin Manley
+coverImageLink: https://unsplash.com/@benjaminmanley
 ---
 Bei Hyperurikämie und Gicht häufen sich Harnsäurekristalle vor allem in Zehen- und Fingergelenken an, was sehr schmerzhaft sein kann. Es ist eine klassische Wohlstandskrankheit, weil sie oft durch zuviel an Fleisch und Alkohol ausgelöst wird. Unbehandelt kommt es häufig zu unangenehmen Folgen wie äußerst schmerzhafte Gichtanfälle. Mit der ernährungstherapeutischen Unterstützung durch deine DiätologInnen, kannst du das vermeiden, und auch, Medikamente einnehmen zu müssen.
 
