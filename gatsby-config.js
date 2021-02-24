@@ -67,5 +67,11 @@ module.exports = {
       resolve: "gatsby-plugin-netlify-cms",
       options: { modulePath: `${__dirname}/src/cms/cms.js` },
     },
+    {
+      resolve: `gatsby-plugin-facebook-pixel`,
+      options: {
+        pixelId: "175080330711004",
+      },
+    },
   ],
 }
