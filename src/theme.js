@@ -370,8 +370,10 @@ export const testimonialsTheme = {
   ...theme,
   colors: {
     ...theme.colors,
-    text: palette.beige[1],
-    background: palette.beige[6],
+    text: palette.teal[1],
+    background: palette.teal[6],
+    sectionBg: palette.teal[6],
+    headerBg: palette.cyan[5],
     accent: palette.teal[2],
     primary: palette.teal[3],
     secondary: palette.teal[4],

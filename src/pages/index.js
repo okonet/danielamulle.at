@@ -8,6 +8,7 @@ import PostCard from "../components/PostCard"
 import Link from "../components/Link"
 import { blogPath, recipesPath } from "../../paths"
 import PageLayout from "../components/PageLayout"
+import AboutBlock from "../components/AboutBlock"
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
@@ -30,55 +31,13 @@ const IndexPage = () => {
           ...PostMeta
         }
       }
-      portraitImage: file(relativePath: { eq: "portrait.png" }) {
-        childImageSharp {
-          resize(width: 400, quality: 100) {
-            src
-          }
-        }
-      }
     }
   `)
   return (
     <PageLayout theme={homeTheme} title={_frontmatter.title}>
-      <Flex
-        sx={{
-          flexDirection: ["column", "column", "row"],
-          alignItems: "flex-start",
-        }}
-      >
-        <Box
-          sx={{
-            display: "block",
-            mt: [-4, -5, -5],
-            pb: 4,
-            flex: 1,
-            "& > p:first-of-type": {
-              variant: "textStyles.lead",
-            },
-          }}
-        >
-          <Box
-            as="figure"
-            sx={{
-              float: "right",
-              mt: [-1, -3, -6],
-              width: [200, 250, 300],
-              height: [200, 250, "auto"],
-              borderRadius: ["round", "round", "none"],
-              overflow: "hidden",
-              objectFit: "cover",
-            }}
-          >
-            <img
-              src={data.portraitImage.childImageSharp.resize.src}
-              alt="Portrait von Daniela Mulle"
-              sx={{ width: "100%", verticalAlign: "top" }}
-            />
-          </Box>
-          <Home />
-        </Box>
-      </Flex>
+      <AboutBlock sx={{ mt: [0, -5] }}>
+        <Home />
+      </AboutBlock>
 
       <ThemeProvider theme={recipesTheme}>
         <Styled.h2>

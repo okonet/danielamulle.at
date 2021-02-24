@@ -2,12 +2,10 @@ import React from "react"
 import * as Content from "../../content/sections/thanks.mdx"
 import PageLayout from "../components/PageLayout"
 
-function Impressum() {
+export default function ThanksPage() {
   return (
-    <PageLayout title={Content._frontmatter.title}>
+    <PageLayout shouldShowSubscribe={false}>
       <Content.default />
     </PageLayout>
   )
 }
-
-export default Impressum

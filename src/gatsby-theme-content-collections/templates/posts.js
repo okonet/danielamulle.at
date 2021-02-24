@@ -38,6 +38,11 @@ export const query = graphql`
         ...PostMeta
       }
     }
+    resources: allPost(filter: { collection: { eq: "resources" } }) {
+      nodes {
+        ...PostMeta
+      }
+    }
     recipesCategories: allCategory(
       filter: { isTag: { eq: true }, collection: { eq: "recipes" } }
     ) {

@@ -15,6 +15,7 @@ export const query = graphql`
         slug
         isTag
       }
+      subtitle
       timeToCook
       coverImageAuthor
       coverImageLink
