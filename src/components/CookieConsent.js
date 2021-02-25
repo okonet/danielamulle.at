@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import * as React from "react"
 import { Portal } from "react-portal"
-import { Alert, Button, Close, jsx, Styled } from "theme-ui"
+import { Alert, Box, Button, Close, jsx, Styled } from "theme-ui"
 import { useCookies } from "react-cookie"
 import { useLocation } from "@reach/router"
 import { initializeAndTrack } from "gatsby-plugin-gdpr-cookies"
@@ -70,18 +70,27 @@ function CookieConsent({}) {
                 ...transitionStyles[state],
               }}
             >
-              <p>
+              <Box as="p">
                 Hier gibt's nicht nur 🍪Cookie-Rezepte: mehr Infos im{" "}
-                <Link to="/datenschutz">Datenschutz</Link>:
-              </p>
-              <Button
-                onClick={handleConsent}
-                sx={{ mr: 2, py: 1, cursor: "pointer" }}
-              >
-                Einverstanden
-              </Button>
-
-              <Close onClick={handleRejection} ml="auto" mr={-2} />
+                <Link to="/datenschutz">Datenschutz</Link>.
+                <Button
+                  onClick={handleConsent}
+                  sx={{
+                    display: "inline-block",
+                    mr: 2,
+                    py: 1,
+                    cursor: "pointer",
+                  }}
+                >
+                  Okay
+                </Button>
+              </Box>
+              <Close
+                onClick={handleRejection}
+                ml="auto"
+                mr={-2}
+                sx={{ flexShrink: 0 }}
+              />
             </Alert>
           </Portal>
         )

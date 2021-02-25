@@ -90,6 +90,7 @@ const theme = {
       bg: palette.green[3],
     },
     cookieDialog: {
+      py: 2,
       color: "text",
       bg: "muted",
       zIndex: "dialog",
