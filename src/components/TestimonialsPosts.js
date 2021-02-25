@@ -7,13 +7,13 @@ import Content, * as meta from "../../content/sections/testimonials.mdx"
 import Link from "./Link"
 
 const TestimonialsPosts = ({ data }) => {
-  const { testimonials } = data
+  const { resources } = data
 
   return (
     <PageLayout theme={testimonialsTheme} title={meta._frontmatter.title}>
       <Content />
       <Styled.ol>
-        {testimonials.nodes.map((post) => (
+        {resources.nodes.map((post) => (
           <Styled.li key={post.id}>
             <Link to={post.slug}>{post.title}</Link>
           </Styled.li>

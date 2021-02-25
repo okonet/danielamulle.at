@@ -7,7 +7,7 @@ import { transparentize } from "@theme-ui/color"
 import ThemeUIProvider from "./ThemeUIProvider"
 import theme, { palette } from "../theme"
 
-export default function ({
+export default function SocialImage({
   image,
   title,
   author,

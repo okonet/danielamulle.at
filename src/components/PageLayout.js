@@ -10,6 +10,7 @@ import Header from "./Header"
 import SubscribeForm from "./SubscribeForm"
 import Footer from "./Footer"
 import ThemeUIProvider from "./ThemeUIProvider"
+import CookieConsent from "./CookieConsent"
 
 const Heading = ({ heading, title }) =>
   heading ? (
@@ -18,7 +19,7 @@ const Heading = ({ heading, title }) =>
     <Styled.h1 sx={{ variant: "textStyles.pageTitle" }}>{title}</Styled.h1>
   )
 
-export default ({
+export default function PageLayout({
   author,
   title,
   heading,
@@ -30,7 +31,7 @@ export default ({
   theme = {},
   blendMode = "screen",
   shouldShowSubscribe = true,
-}) => {
+}) {
   const { search } = useLocation()
   if (search.includes("ogImage")) {
     return (
@@ -69,6 +70,7 @@ export default ({
     <>
       <SEO title={title} ogImage={!!coverImage} />
       <ThemeUIProvider theme={theme}>
+        <CookieConsent />
         <Flex
           sx={{ flexDirection: "column", minHeight: "100vh", bg: "background" }}
         >

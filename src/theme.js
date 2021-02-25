@@ -77,7 +77,10 @@ const theme = {
   },
   shadows: {
     none: "none",
-    float: "0px 4px 16px rgba(25, 25, 25, 0.075);",
+    float: "0px 4px 16px rgba(25, 25, 25, 0.125);",
+  },
+  zIndices: {
+    dialog: 99999,
   },
   alerts: {
     error: {
@@ -85,6 +88,12 @@ const theme = {
     },
     success: {
       bg: palette.green[3],
+    },
+    cookieDialog: {
+      color: "text",
+      bg: "muted",
+      zIndex: "dialog",
+      boxShadow: "float",
     },
   },
   buttons: {
@@ -370,8 +379,10 @@ export const testimonialsTheme = {
   ...theme,
   colors: {
     ...theme.colors,
-    text: palette.beige[1],
-    background: palette.beige[6],
+    text: palette.teal[1],
+    background: palette.teal[6],
+    sectionBg: palette.teal[6],
+    headerBg: palette.cyan[5],
     accent: palette.teal[2],
     primary: palette.teal[3],
     secondary: palette.teal[4],

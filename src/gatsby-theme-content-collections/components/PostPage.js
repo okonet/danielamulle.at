@@ -3,6 +3,7 @@ import BlogPostPage from "../../components/BlogPostPage"
 import RecipePage from "../../components/RecipesPost"
 import TestimonialsPost from "../../components/TestimonialsPost"
 import ProjectsPostPage from "../../components/ProjectsPostPage"
+import ResourcePostPage from "../../components/ResourcePostPage"
 
 function PostPage(props) {
   switch (props.pageContext.collection) {
@@ -17,6 +18,9 @@ function PostPage(props) {
     }
     case "testimonials": {
       return <TestimonialsPost {...props} />
+    }
+    case "resources": {
+      return <ResourcePostPage {...props} />
     }
     default:
       return <h1>No page for this collection is defined</h1>

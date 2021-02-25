@@ -80,6 +80,22 @@ collections:
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Body", name: "body", widget: "markdown" }
 
+  - name: "resources"
+    label: "Resources"
+    folder: "content/resources"
+    create: true
+    slug: "{{slug}}"
+    editor:
+      preview: false
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Sub-Title", name: "subtitle", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Cover", name: "coverImage", widget: "image" }
+      - { label: "Cover author", name: "coverImageAuthor", widget: "string", default: "Andrey Okonetchnikov" }
+      - { label: "Cover link", name: "coverImageLink", widget: "string", default: "https://okonet.ru" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
   - name: "projects"
     label: "Project Posts"
     folder: "content/projects"
