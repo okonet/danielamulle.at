@@ -3,7 +3,7 @@ import * as React from "react"
 import { Portal } from "react-portal"
 import { Alert, Button, Close, jsx, Styled } from "theme-ui"
 import { useCookies } from "react-cookie"
-import { useLocation } from "@reach/router" // this helps tracking the location
+import { useLocation } from "@reach/router"
 import { initializeAndTrack } from "gatsby-plugin-gdpr-cookies"
 import { Transition } from "react-transition-group"
 import Link from "./Link"
