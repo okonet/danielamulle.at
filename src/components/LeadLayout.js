@@ -9,6 +9,7 @@ import Footer from "./Footer"
 import ThemeUIProvider from "./ThemeUIProvider"
 import Img from "gatsby-image"
 import { graphql, useStaticQuery } from "gatsby"
+import CookieConsent from "./CookieConsent"
 
 export default function LeadLayout({
   author,
@@ -71,6 +72,7 @@ export default function LeadLayout({
     <>
       <SEO title={title} ogImage={!!coverImage} />
       <ThemeUIProvider theme={theme}>
+        <CookieConsent />
         <Flex
           sx={{ flexDirection: "column", minHeight: "100vh", bg: "background" }}
         >

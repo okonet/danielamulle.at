@@ -10,6 +10,7 @@ import Header from "./Header"
 import SubscribeForm from "./SubscribeForm"
 import Footer from "./Footer"
 import ThemeUIProvider from "./ThemeUIProvider"
+import CookieConsent from "./CookieConsent"
 
 const Heading = ({ heading, title }) =>
   heading ? (
@@ -69,6 +70,7 @@ export default function PageLayout({
     <>
       <SEO title={title} ogImage={!!coverImage} />
       <ThemeUIProvider theme={theme}>
+        <CookieConsent />
         <Flex
           sx={{ flexDirection: "column", minHeight: "100vh", bg: "background" }}
         >

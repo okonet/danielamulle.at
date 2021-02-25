@@ -68,9 +68,14 @@ module.exports = {
       options: { modulePath: `${__dirname}/src/cms/cms.js` },
     },
     {
-      resolve: `gatsby-plugin-facebook-pixel`,
+      resolve: "gatsby-plugin-gdpr-cookies",
       options: {
-        pixelId: "175080330711004",
+        facebookPixel: {
+          pixelId: "175080330711004",
+          cookieName: "gdpr-facebook-pixel",
+        },
+        // defines the environments where the tracking should be available  - default is ["production"]
+        environments: ["production", "development"],
       },
     },
   ],

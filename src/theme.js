@@ -77,7 +77,10 @@ const theme = {
   },
   shadows: {
     none: "none",
-    float: "0px 4px 16px rgba(25, 25, 25, 0.075);",
+    float: "0px 4px 16px rgba(25, 25, 25, 0.25);",
+  },
+  zIndices: {
+    dialog: 99999,
   },
   alerts: {
     error: {
