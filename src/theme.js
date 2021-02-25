@@ -77,7 +77,7 @@ const theme = {
   },
   shadows: {
     none: "none",
-    float: "0px 4px 16px rgba(25, 25, 25, 0.25);",
+    float: "0px 4px 16px rgba(25, 25, 25, 0.125);",
   },
   zIndices: {
     dialog: 99999,
@@ -88,6 +88,12 @@ const theme = {
     },
     success: {
       bg: palette.green[3],
+    },
+    cookieDialog: {
+      color: "text",
+      bg: "muted",
+      zIndex: "dialog",
+      boxShadow: "float",
     },
   },
   buttons: {

@@ -58,6 +58,7 @@ function CookieConsent({}) {
           <Portal>
             <Alert
               role="dialog"
+              variant="cookieDialog"
               sx={{
                 mx: 4,
                 mb: 3,
@@ -65,26 +66,17 @@ function CookieConsent({}) {
                 left: 0,
                 right: 0,
                 bottom: 0,
-                bg: "primary",
-                zIndex: "dialog",
-                boxShadow: "float",
                 transition: `all ${duration}ms cubic-bezier(0.68,-0.55,0.27,1.55);`,
                 ...transitionStyles[state],
               }}
             >
-              <Styled.p sx={{ color: "background", mr: 2, fontSize: 0 }}>
+              <p>
                 Hier gibt's nicht nur 🍪Cookie-Rezepte: mehr Infos im{" "}
-                <Link
-                  sx={{ color: "background", textDecoration: "underline" }}
-                  to="/datenschutz"
-                >
-                  Datenschutz
-                </Link>
-                :
-              </Styled.p>
+                <Link to="/datenschutz">Datenschutz</Link>:
+              </p>
               <Button
                 onClick={handleConsent}
-                sx={{ mr: 2, fontSize: 0, py: 1, cursor: "pointer" }}
+                sx={{ mr: 2, py: 1, cursor: "pointer" }}
               >
                 Einverstanden
               </Button>
