@@ -12,14 +12,14 @@ coverImageLink: https://unsplash.com/@americanheritagechocolate
 
 
 Eigentlich möchtest du endlich ein paar Pfunde loswerden. 
-Aber ständig auf Schokolade, Chips & Co. verzichten? Ein Ding der Unmöglichkeit!
+Aber ständig auf Schokolade, Chips & Co. verzichten? Für Dich als Naschkatze oder Genussmensch in Ding der Unmöglichkeit!
 
 
 
 ## Genießen ohne zunehmen - das wäre doch genial, oder?
 
 
-In meiner kostenlosen Email-Miniserie verrate ich dir meine 4 Top-Tipps, die bei meinen KundInnen am besten klappen.
+In meiner kostenlosen Email-Miniserie verrate ich dir meine 4 Top-Tipps, die bei meinen KundInnen am besten klappen:
 - Keine 0/8/15-Empfehlungen.
 - Dafür echte Experten-Tipps, an die du bisher sicher noch nicht gedacht hast.
 - Damit auch du deine Lieblingssüßigkeit oder -knabberei ohne Reue genießen kannst.
