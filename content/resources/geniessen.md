@@ -15,6 +15,10 @@ Hier habe ich einige (Kunden)stimmen für Dich gesammelt:
 
 Frau Mag. Mulle ist eine fantastische Ernährungsberaterin, die es bewirkt hat, dass ich nie mehr Hunger habe (hab ganz vergessen, was das ist), und auch keinen Heißhunger auf irgend etwas, nicht zunehme, und keine Bauchprobleme mehr habe.
 
+</Container>
+<BioBlock />
+<Container variant="section">
+
 ## Was bekommst du?
 
 - Liste
@@ -29,7 +33,7 @@ Frau Mag. Mulle ist eine fantastische Ernährungsberaterin, die es bewirkt hat, 
 
 </Container>
 
-<CTABlock listId={11}>
+<CTABlock>
 
 ## Verpasse keine meiner tollen Tipps & Tricks, interessanten Infos & köstlichen Rezepte.
 
@@ -37,4 +41,3 @@ Frau Mag. Mulle ist eine fantastische Ernährungsberaterin, die es bewirkt hat, 
 
 </CTABlock>
 
-<BioBlock />
