@@ -16,13 +16,13 @@ Aber ständig auf Schokolade, Chips & Co. verzichten? Ein Ding der Unmöglichkei
 
 
 
-*Genießen ohne zunehmen - das wäre doch genial, oder?*
-*Hol dir meine kostenlose Email-Miniserie und erfahre wie das geht!*
+## Genießen ohne zunehmen - das wäre doch genial, oder?
 
 
-
-**In meiner Email-Miniserie verrate ich dir meine 4 Top-Tipps, die bei meinen KundInnen am besten klappen. Keine 0/8/15-Empfehlungen, sondern echte Experten-Tipps, an die du bisher sicher noch nicht gedacht hast.**
-Damit auch du deine Lieblingssüßigkeit oder -knabberei ohne Reue genießen kannst.
+In meiner kostenlosen Email-Miniserie verrate ich dir meine 4 Top-Tipps, die bei meinen KundInnen am besten klappen.
+- Keine 0/8/15-Empfehlungen.
+- Dafür echte Experten-Tipps, an die du bisher sicher noch nicht gedacht hast.
+- Damit auch du deine Lieblingssüßigkeit oder -knabberei ohne Reue genießen kannst.
 
 
 
@@ -43,9 +43,9 @@ Damit auch du deine Lieblingssüßigkeit oder -knabberei ohne Reue genießen kan
 
 
 ## Was du von mir bekommst:
-- vier ausgewählte Tipps, die bei meinen Kundinnen am besten klappen.
-- ein Tipp pro Tag, direkt in Deine Email-Inbox zum sofort Durchstarten.
-- zum Abschluss eine kleinen Spielidee als Überblick.
+- Vier ausgewählte Tipps, die bei meinen Kundinnen am besten klappen.
+- Ein Tipp pro Tag, direkt in Deine Email-Inbox zum sofort Durchstarten.
+- Zum Abschluss eine kleinen Spielidee als Überblick.
 
 
 
