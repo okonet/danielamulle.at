@@ -12,7 +12,7 @@ coverImageLink: https://unsplash.com/@americanheritagechocolate
 
 
 Eigentlich möchtest du endlich ein paar Pfunde loswerden. 
-Aber ständig auf Schokolade, Chips & Co. verzichten? Für Dich als Naschkatze oder Genussmensch in Ding der Unmöglichkeit!
+Aber ständig auf Schokolade, Chips & Co. verzichten?? Ein Ding der Unmöglichkeit!
 
 
 
