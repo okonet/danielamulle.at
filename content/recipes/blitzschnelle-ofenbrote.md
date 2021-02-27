@@ -35,10 +35,10 @@ Die blitzschnellen Ofenbrote sind nicht nur schnell gemacht, sondern auch eine i
 
 
 
-- 8-10 Scheiben Vollkorn-Sauerteigbrot (bei Bedarf glutenfrei)
-- 200 g Mais
-- Sauerrahm oder Sojajoghurt
-- 200 g fertiger Aufstrich
+- 8-10 Scheiben Vollkorn-Sauerteigbrot
+- ca. 150 g Mais
+- ca. 100 g Sauerrahm oder Sojajoghurt
+- 150 g fertiger Aufstrich (z.B. Humus)
 - 1 Knoblauchzehe (optional)
 - getrocknete oder frische Kräuter
 - geriebener Käse oder Fetakäse (optional)
