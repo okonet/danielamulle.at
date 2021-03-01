@@ -120,11 +120,11 @@ Brot und Gebäck aus Weißmehl wird oft nur mit Malzzucker dunkler gefärbt, um 
 Dinkel ist die alte Kulturform des Weizens, und kann genauso weiß ausgemahlen werden wie Weizen. Wenn du Vollkornmehl, -brot oder -nudeln kaufen möchtest, dann schau' darauf, dass das Wort "Vollkorn" tatsächlich in der Zutatenliste steht. Am besten gleich als eine der ersten 3 Zutaten, denn die Regel lautet: „Je weiter vorne, desto mehr ist drin.“
 
 ## Zusammenfassung: 
-Warum kein Low Carb? Weil Smart Carb - also die richtigen Kohlenhydrate - für dich und deine Gesundheit unverzichtbar sind. 
+Warum kein Low Carb? Weil "Smart Carb" - die richtigen Kohlenhydrate - für dich und deine Gesundheit unverzichtbar sind. 
 
 ### Beachte also zwei Punkte:
-1. Iss viele Ballaststoffe
-2. Iss wenig Zucker & leere Kohlenhydrate
+1. Iss viele Ballaststoffe.
+2. Iss wenig Zucker & leere Kohlenhydrate.
 
 ### Was bringt dir das? Du... 
 - kannst dich gut konzentrieren.
