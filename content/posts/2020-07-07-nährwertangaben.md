@@ -14,9 +14,10 @@ categories:
 
 Leider erlebe ich in meinem Beruf immer wieder, wie sehr der Fokus auf dem Zählen von Kalorien, Eiweiß o.ä. liegt. Mit Apps und Tabellen wird peinlichst genau alles getrackt und ausgerechnet, wieviel noch fehlt, und was man sich an Essen & Trinken heute noch "leisten" kann. Und das obwohl in manchen Apps leider weder der eigene Bedarf, noch die Nährwerte der Speisen & Getränke stimmen.
 
+## Vergiss' das Zählen und Tracken
 Um dich mit allem nötigen zu versorgen musst du aber keine Kalorien, Eiweiß oder sonstigen Nährstoffe zählen. Selbst beim Abnehmen ist das nicht wichtig, sondern sogar oft kontraproduktiv! Wenn du gesund bist, ist bunt & abwechslungsreich zu Essen absolut ausreichend.
 
-Versuche diese 5 Punkte in deinen Essalltag einzubauen:
+## Versuche diese 5 Punkte in deinen Essalltag einzubauen:
 
 1. *pflanzliche Lebensmittel als Hauptdarsteller:* Gemüse, Salate und Obst sollten in etwa die Hälfte Deiner Mahlzeit ausmachen.
 2. *Vollkorn statt Weißmehlprodukte:* greif' bei Brot, Gebäck, Kuchen, Nudeln, Reis, Nockerl, Knödel, Couscous, etc. zu Vollkornvarianten.
@@ -27,3 +28,6 @@ Versuche diese 5 Punkte in deinen Essalltag einzubauen:
 Beherzigst du diese 5 Punkte, bleibt für Süßes, Fettes, Weißmehlprodukte & Alkohol automatisch nur noch wenig Platz auf deinem Teller bzw. in deinem Glas übrig. Auch mit meinen [Rezepten](https://www.danielamulle.at/recipes) liegst du automatisch richtig, und obwohl ich die einzelnen Nährwerte natürlich genau kenne, habe ich sie dort ganz bewusst nicht angegeben. 
 
 Viel Spaß & Freude beim gesund Genießen!
+
+## Werde ein Teil meiner Community!
+Falls du keinen Blogartikel mehr verpassen möchtest, dann melde dich hier unten für meinen Newsletter an. Einmal pro Woche bekommst du außerdem Tipps und Tricks, interessanten Infos und köstliche Rezepte direkt in deine Email-Inbox. Ich freue mich auf dich!
