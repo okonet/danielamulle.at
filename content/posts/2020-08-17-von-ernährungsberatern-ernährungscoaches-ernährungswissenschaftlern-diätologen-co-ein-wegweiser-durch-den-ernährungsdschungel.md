@@ -86,10 +86,7 @@ Diese acht Punkte sind für Deine Diätologin *nicht nur selbstverständlich*, s
 
 So, ich hoffe, du findest dich im "Ernährungsdschungel" nun etwas besser zurecht.
 
-Ich würde ich mich jedenfalls sehr freuen, dir weiterzuhelfen. Deinen Wunschtermin bei mir kannst du bequem online [suchen & buchen](https://mednanny.doctena.at/servlet/customer.DocAppointmentHP?p_id=58889&res_id=2339&dedicated_htx=doc58889/DocAppointmentHP_58889de.htx)!
+Für eine leichtere Lesbarkeit habe ich auf Nennung beider Geschlechter verzichtet. Literaturquellen schicke ich dir gerne, schreib mir einfach.
 
-Ich freue mich auf Dich!
-
-Deine Daniela
-
-Für eine leichtere Lesbarkeit habe ich auf Nennung beider Geschlechter verzichtet. Literaturquellen schicke ich dir gerne, schreib mir einfach: contact@danielamulle.at
+## Werde ein Teil meiner Community!
+Falls du keinen Blogartikel mehr verpassen möchtest, dann melde dich hier unten für meinen Newsletter an. Einmal pro Woche bekommst du außerdem Tipps und Tricks, interessanten Infos und köstliche Rezepte direkt in deine Email-Inbox. Ich freue mich auf dich!
