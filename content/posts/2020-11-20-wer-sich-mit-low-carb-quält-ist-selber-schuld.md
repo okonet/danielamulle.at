@@ -142,7 +142,7 @@ Warum kein Low Carb? Weil "Smart Carb" - die richtigen Kohlenhydrate - für dich
 4. Iss' täglich Obst und Trockenfrüchte.
 5. Trink' genug.
 
-## Sei mit dabei!
+## Werde ein Teil meiner Community!
 Falls du keinen Blogartikel mehr verpassen möchtest, dann melde dich hier unten für meinen Newsletter an. Einmal pro Woche bekommst du außerdem Tipps und Tricks, interessanten Infos und köstliche Rezepte direkt in deine Email-Inbox. Ich freue mich auf dich!
 
 
