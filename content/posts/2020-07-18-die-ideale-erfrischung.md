@@ -1,5 +1,5 @@
 ---
-title: Wasser ist für dich lebensnotwendig
+title: Warum Wasser für dich lebensnotwendig ist
 date: 2020-07-18T05:56:24.617Z
 coverImage: ../assets/infused-water.jpg
 coverImageAuthor: Freddy G
