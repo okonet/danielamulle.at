@@ -34,9 +34,15 @@ Für deinen Körper zählt nicht nur die Menge, sondern vor allem die Regelmäß
 ## Was sollst du trinken?
 Das beste Getränk ist Wasser. Egal, ob direkt aus der Leitung oder Flasche, oder ob mit bzw. ohne Kohlensäure. 
 
-Limonaden, Wellnessgetränke, Energydrinks und Sirupe enthalten leider Unmengen an Zucker. Auch Milch oder Alkohol sind keine Durstlöscher. Genieße auch Fruchtsäfte und Smoothies nur ab und zu - Säfte am besten großzügig (1:3) mit Wasser verdünnt. Generell hat dein Körper Obst im Ganzen viel lieber als flüssig.
+*Limonaden, Wellnessgetränke, Energydrinks und Sirupe* enthalten leider meist *Unmengen an Zucker*. Als Beispiel: 330 ml normales (gezuckertes) Cola hat ca. 12 Stück Würfelzucker (35 g), je nach Marke.
 
-Falls dir Wasser zu fad ist, sind ungezuckerte Kräuter- und Früchtetees eine gute Abwechslung, oder Infused Water: „Infused“ bedeutet „aufgegossen“: Dabei gibst du Obst, Gemüse und diverse Kräuter einfach in frisches Wasser. Diese Mischung lässt du eine Weile ziehen, damit die Aromen der Zutaten ins Wasser übergehen. Deiner Fantasie sind dabei keine Grenzen gesetzt. Wasche alles gründlich und verwende idealerweise Bio-Produkte. Das Ergebnis schmeckt jedenfalls köstlich, und ist auch optisch ein Genuss.
+**Viel Zucker auf einmal, besonders als Getränk, bedeutet für deinen Körper Stress pur:** Zucker schadet den Blutgefäßen, daher möchte ihn dein Körper so schnell wie möglich aus dem Blut weghaben. Deine Bauchspeicheldrüse beeilt sich also, viele, viele Schlüssel herzugeben, um deine Zelltüren aufzusperren. Man nennt diese Schlüssel Insulin. ⁠Flott wird der Zucker in deine Zellen eingeräumt. ⁠⁠Wenn sowas sehr oft passiert, wird’s deinem Körper irgendwann zu viel: Die Zellen lassen sich nicht mehr aufsperren: Der Zucker bleibt also im Blut, und macht dort langsam aber sicher deine Gefäße kaputt. ⁠ Unterm Strich handelst du dir also ein höheres Risiko für Zuckerkrankheit, Übergewicht, Herzinfarkt, Schlaganfall und Zahnkaries ein. Daher raten Ernährungsgesellschaften unisono: Maximal 10 % der Gesamtenergiemenge sollte Zucker sein, also ca. 50 g pro Tag maximal.
+
+Auch *Milch oder Alkohol sind keine Durstlöscher*. Genieße auch *Fruchtsäfte und Smoothies* nur ab und zu - Säfte am besten großzügig (1:3) mit Wasser verdünnt. Generell hat dein Körper Obst im Ganzen viel lieber als flüssig.
+
+Falls dir Wasser zu fad ist, sind *ungezuckerte Kräuter- und Früchtetees* eine gute Abwechslung, oder *Infused Water*: „Infused“ bedeutet „aufgegossen“: Dabei gibst du Obst, Gemüse und diverse Kräuter einfach in frisches Wasser. Diese Mischung lässt du eine Weile ziehen, damit die Aromen der Zutaten ins Wasser übergehen. Deiner Fantasie sind dabei keine Grenzen gesetzt. Wasche alles gründlich und verwende idealerweise Bio-Produkte. Das Ergebnis schmeckt jedenfalls köstlich, und ist auch optisch ein Genuss.
+
+
 
 ## Hier hab ich vier Infused-Water-Ideen für dich: 
 Etwa 1 Liter Mineral- oder Leitungswasser plus
