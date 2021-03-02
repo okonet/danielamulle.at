@@ -45,5 +45,5 @@ Etwa 1 Liter Mineral- oder Leitungswasser plus
 - 1 Handvoll Beeren und 1 Stängel Melisse
 - 4-5 Wassermelonenstücke und 2 Stängel Basilikum
 
-## Sei mit dabei!
+## Werde ein Teil meiner Community!
 Falls du keinen Blogartikel mehr verpassen möchtest, dann melde dich hier unten für meinen Newsletter an. Einmal pro Woche bekommst du außerdem Tipps und Tricks, interessanten Infos und köstliche Rezepte direkt in deine Email-Inbox. Ich freue mich auf dich!
