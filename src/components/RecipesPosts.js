@@ -7,7 +7,7 @@ import Group from "react-group"
 import { recipesTheme } from "../theme"
 import Link from "./Link"
 import Tag from "./Tag"
-import Content, * as meta from "../../content/sections/recipes.mdx"
+import Content, { title } from "../../content/sections/recipes.mdx"
 import RecipesList from "./RecipesList"
 import PageLayout from "./PageLayout"
 
@@ -40,7 +40,7 @@ const RecipesPosts = ({ data, location, navigate }) => {
   })
 
   return (
-    <PageLayout theme={recipesTheme} title={meta._frontmatter.title}>
+    <PageLayout theme={recipesTheme} title={title}>
       <Content />
       <Flex
         as="aside"

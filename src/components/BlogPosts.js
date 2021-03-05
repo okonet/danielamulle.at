@@ -3,14 +3,14 @@ import React from "react"
 import { Grid, jsx } from "theme-ui"
 import { blogTheme } from "../theme"
 import PostCard from "./PostCard"
-import Content, * as meta from "../../content/sections/blog.mdx"
+import Content, { title } from "../../content/sections/blog.mdx"
 import PageLayout from "./PageLayout"
 
 const BlogPosts = ({ data }) => {
   const { posts } = data
 
   return (
-    <PageLayout theme={blogTheme} title={meta._frontmatter.title}>
+    <PageLayout theme={blogTheme} title={title}>
       <Content />
       <Grid
         gap={3}
