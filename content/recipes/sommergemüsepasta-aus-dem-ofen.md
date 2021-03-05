@@ -1,7 +1,7 @@
 ---
 title: Sommergemüsepasta aus dem Ofen
 date: 2020-06-29T10:09:36.298Z
-coverImage: ../assets/20200601-DSC02914.jpg
+coverImage: /assets/20200601-DSC02914.jpg
 categories:
   - value: Hauptspeisen
     label: Hauptspeisen

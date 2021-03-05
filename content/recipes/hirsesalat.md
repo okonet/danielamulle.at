@@ -1,7 +1,7 @@
 ---
 title: Hirsesalat
 date: 2020-06-29T09:49:34.149Z
-coverImage: ../assets/img_2141.jpg
+coverImage: /assets/img_2141.jpg
 categories:
   - value: Salate
     label: Salate

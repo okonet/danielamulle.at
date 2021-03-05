@@ -1,7 +1,7 @@
 ---
 title: Kicher-Cookies
 date: 2020-06-21T17:09:53.713Z
-coverImage: ../assets/DSC03072.jpg
+coverImage: /assets/DSC03072.jpg
 categories:
   - value: "Kuchen, Kekserl & Co"
     label: "Kuchen, Kekserl & Co"

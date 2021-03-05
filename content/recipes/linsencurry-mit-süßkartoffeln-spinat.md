@@ -1,7 +1,7 @@
 ---
 title: Linsencurry mit Süßkartoffeln & Spinat
 date: 2020-06-23T13:12:11.830Z
-coverImage: ../assets/DSC03002.jpg
+coverImage: /assets/DSC03002.jpg
 coverImageAuthor: Andrey Okonechnikov
 coverImageLink: https://okonet.ru/
 categories:

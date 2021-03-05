@@ -1,7 +1,7 @@
 ---
 title: Joghurt-Kräuter-Dip
 date: 2020-06-23T12:48:12.958Z
-coverImage: ../assets/kräuter.jpg
+coverImage: /assets/kräuter.jpg
 coverImageAuthor: Rich Smith
 coverImageLink: https://unsplash.com/@richwilliamsmith
 categories:

@@ -1,7 +1,7 @@
 ---
 title: Müsliriegel
 date: 2020-07-21T12:24:55.984Z
-coverImage: ../assets/img_1945.jpg
+coverImage: /assets/img_1945.jpg
 categories:
   - value: Snacks
     label: Snacks

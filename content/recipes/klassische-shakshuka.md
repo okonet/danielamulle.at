@@ -1,7 +1,7 @@
 ---
 title: Klassische Shakshuka
 date: 2020-08-25T11:30:09.988Z
-coverImage: ../assets/shakshuka.jpg
+coverImage: /assets/shakshuka.jpg
 coverImageAuthor: Daniela Mulle
 .coverImageLink: https://www.danielamulle.at
 categories:

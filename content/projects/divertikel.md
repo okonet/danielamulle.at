@@ -4,17 +4,16 @@ categories:
     label: Diätologischer Jahresstart 2021
 title: Divertikel
 date: 2021-01-08T05:00:00.000Z
-coverImage: ../assets/mittelbach_l-rezept.jpg
+coverImage: /assets/mittelbach_l-rezept.jpg
 coverImageAuthor: Lisa Mittelbach
 coverImageLink: https://www.linkedin.com/in/lisa-mittelbach-7224431a7/
 ---
+
 Hast du bereits von Divertikeln gehört und möchtest nun Genaueres über diese wissen? Ist dir der Begriff noch unbekannt, du interessierst dich jedoch für medizinische und ernährungstherapeutische Themen? Dann bist du hier genau richtig. In den nächsten Absätzen werde ich dir einen Überblick über Divertikel geben und erklären, in welchem Zusammenhang die Ernährung damit steht. Am Ende des Artikels erwartet dich sogar ein köstliches und zu dem Thema passendes Rezept, das du sofort ausprobieren kannst!
 
 ## Was sind Divertikel?
 
-Divertikulose ist die Bezeichnung für bestimmte Veränderungen im Darm. Es bilden sich kleine, sackförmige Ausstülpungen in der Darmwand, die sogenannten Divertikel. 
-![](../assets/mittelbach_l-aritkel-foto.jpg)
-Meist kommen diese in einem bestimmten Teil des hinteren Dickdarms, dem Sigma, vor. Divertikel können aber auch seltener im restlichen Dickdarm oder anderen Abschnitten des Verdauungstraktes auftreten. Auch wenn man nicht so häufig über Divertikel hört, ist die Divertikulose sehr häufig und zählt sogar zu den Zivilisationskrankheiten.
+Divertikulose ist die Bezeichnung für bestimmte Veränderungen im Darm. Es bilden sich kleine, sackförmige Ausstülpungen in der Darmwand, die sogenannten Divertikel. ![](/assets/mittelbach_l-aritkel-foto.jpg) Meist kommen diese in einem bestimmten Teil des hinteren Dickdarms, dem Sigma, vor. Divertikel können aber auch seltener im restlichen Dickdarm oder anderen Abschnitten des Verdauungstraktes auftreten. Auch wenn man nicht so häufig über Divertikel hört, ist die Divertikulose sehr häufig und zählt sogar zu den Zivilisationskrankheiten.
 
 ## Wo und wie entstehen Divertikel?
 
@@ -30,8 +29,7 @@ Du fragst dich nun bestimmt, wie dein Essen bei vorhandenen Divertikeln aussehen
 
 Bei **beschwerdefreien Divertikeln (=Divertikulose**) und auch zur Vorbeugung solltest du ballaststoffreich essen und gleichzeitig ausreichend Flüssigkeit trinken. Ballaststoffe quellen im Verdauungstrakt auf und stimulieren die Darmbewegungen – dies wird auch Peristaltik genannt. Durch die Darmbewegungen werden vorhandene Divertikel durchgespült und gereinigt, und das Risiko für Entzündungen wird dadurch gesenkt. Auch körperliche Bewegung hat diesen Effekt, das heißt Sport und Bewegung regen ebenfalls Ihre Darmbewegung an und reinigen die Divertikel. Insgesamt ist es besonders wichtig, dass du auf einen regelmäßigen Stuhlgang achtest und bei Verstopfung Maßnahmen setzt – wie ausreichend zu trinken, sich zu bewegen oder Dörrpflaumen zu essen. Ziel ist es, den Druck in deinem Darminneren möglichst niedrig zu halten.
 
-**Die Ernährungsweise bei einer Divertikulitis ist hingegen völlig anders.**
-Hier ist es wichtig, die Entzündung gut ausheilen zu lassen und deinen Darm möglichst ruhig zu stellen. Das bedeutet, dass du deinen Darm nicht mit einer großem Ballaststoffmenge, schwer verdaulichen oder blähenden Lebensmitteln überfordern solltest und sich die Darmbewegung reduziert. Bei einem Krankenhausaufenthalt gibt es üblicherweise einige Tage Nahrungskarenz, an denen nichts gegessen werden soll. Anschließend solltest du die Menge nach und nach steigern – keine Sorge: du wirst sowohl von Ärztinnen und Ärzten als auch von Diätologinnen und Diätologen begleitet. Bei einer Divertikulitis solltest du ballaststoffarm und leicht Verdauliches essen und ausreichend Flüssigkeit trinken. Unter Fachkräften ist diese leicht verdauliche Ernährungsweise als „Leichte Vollkost“ (kurz LVK) bekannt und hat den Zweck, den gesamten Verdauungstrakt zu entlasten. Bei der Leichten Vollkost gibt es keine starren Regeln. Es sollte vor allem schwer Verdauliches wie sehr kalte oder heiße Speisen, scharf und stark Gewürztes, Frittiertes und stark Blähendes wie Zwiebel, Knoblauch, Kohl, Hülsenfrüchte oder Mineralwasser gemieden werden. Von Vorteil sind mehrere kleine Mahlzeiten und langsames Essen. Ein Beispiel für eine leicht verdauliche Speise wären gekochte Kartoffeln mit gedünsteter Zucchini und Aubergine und einem Joghurt-Dip. In Absprache mit deiner Diätologin oder deinem Diätologen wird die Leichte Vollkost ganz individuell auf dich abgestimmt und soll abhängig vom Verlauf der Entzündung ca. 4-6 Wochen eingehalten werden. Danach solltest du wieder langsam und schrittweise auf eine ballaststoffreichere Ernährung umstellen und regelmäßig Bewegung einbauen. Nach kompletter Ausheilung der Divertikulitis kannst du dann wieder ballaststoffreich, jedoch nicht blähend essen und trinken.
+**Die Ernährungsweise bei einer Divertikulitis ist hingegen völlig anders.** Hier ist es wichtig, die Entzündung gut ausheilen zu lassen und deinen Darm möglichst ruhig zu stellen. Das bedeutet, dass du deinen Darm nicht mit einer großem Ballaststoffmenge, schwer verdaulichen oder blähenden Lebensmitteln überfordern solltest und sich die Darmbewegung reduziert. Bei einem Krankenhausaufenthalt gibt es üblicherweise einige Tage Nahrungskarenz, an denen nichts gegessen werden soll. Anschließend solltest du die Menge nach und nach steigern – keine Sorge: du wirst sowohl von Ärztinnen und Ärzten als auch von Diätologinnen und Diätologen begleitet. Bei einer Divertikulitis solltest du ballaststoffarm und leicht Verdauliches essen und ausreichend Flüssigkeit trinken. Unter Fachkräften ist diese leicht verdauliche Ernährungsweise als „Leichte Vollkost“ (kurz LVK) bekannt und hat den Zweck, den gesamten Verdauungstrakt zu entlasten. Bei der Leichten Vollkost gibt es keine starren Regeln. Es sollte vor allem schwer Verdauliches wie sehr kalte oder heiße Speisen, scharf und stark Gewürztes, Frittiertes und stark Blähendes wie Zwiebel, Knoblauch, Kohl, Hülsenfrüchte oder Mineralwasser gemieden werden. Von Vorteil sind mehrere kleine Mahlzeiten und langsames Essen. Ein Beispiel für eine leicht verdauliche Speise wären gekochte Kartoffeln mit gedünsteter Zucchini und Aubergine und einem Joghurt-Dip. In Absprache mit deiner Diätologin oder deinem Diätologen wird die Leichte Vollkost ganz individuell auf dich abgestimmt und soll abhängig vom Verlauf der Entzündung ca. 4-6 Wochen eingehalten werden. Danach solltest du wieder langsam und schrittweise auf eine ballaststoffreichere Ernährung umstellen und regelmäßig Bewegung einbauen. Nach kompletter Ausheilung der Divertikulitis kannst du dann wieder ballaststoffreich, jedoch nicht blähend essen und trinken.
 
 ## Was bedeutet „ballaststoffreich“ genau?
 
@@ -47,19 +45,19 @@ Dieses Overnight Bircher Müsli ist perfekt für deinen Start in den Morgen. Das
 
 ### Zutaten für 1 Portion
 
-* 40 g Haferflocken (feinblättrig oder grob)
-* 10 g Haferkleie
-* 10 g geschrotete Leinsamen
-* 15 g Rosinen
-* etwas Zimt nach Geschmack
-* 150 ml Kuhmilch oder Pflanzendrink (z.B. Soja, Hafer)
-* 100 g Naturoder Sojajoghurt
-* 1 kleiner Apfel (geschnitten oder gerieben)
-* Optional: 10 g gehackte Nüsse (z.B. Walnüsse, Haselnüsse, Paranüsse)
+- 40 g Haferflocken (feinblättrig oder grob)
+- 10 g Haferkleie
+- 10 g geschrotete Leinsamen
+- 15 g Rosinen
+- etwas Zimt nach Geschmack
+- 150 ml Kuhmilch oder Pflanzendrink (z.B. Soja, Hafer)
+- 100 g Naturoder Sojajoghurt
+- 1 kleiner Apfel (geschnitten oder gerieben)
+- Optional: 10 g gehackte Nüsse (z.B. Walnüsse, Haselnüsse, Paranüsse)
 
 ### Zubereitung
 
-1. Die Haferflocken mit der Haferkleie, den Leinsamen, Rosinen und Zimt in ein Glas füllen und mit der Kuhmilch oder dem Pflanzendrink auffüllen. 
+1. Die Haferflocken mit der Haferkleie, den Leinsamen, Rosinen und Zimt in ein Glas füllen und mit der Kuhmilch oder dem Pflanzendrink auffüllen.
 2. Alles gut umrühren und abgedeckt bzw. verschlossen über Nacht in den Kühlschrank stellen.
-3. Am nächsten Morgen den Naturoder Sojajoghurt und einen kleinen geschnittenen oder geriebenen Apfel unterrühren. 
+3. Am nächsten Morgen den Naturoder Sojajoghurt und einen kleinen geschnittenen oder geriebenen Apfel unterrühren.
 4. Optional mit gehackten Nüssen garnieren und genießen!

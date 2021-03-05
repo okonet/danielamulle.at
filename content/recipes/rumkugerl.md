@@ -1,7 +1,7 @@
 ---
 title: Rumkugerl
 date: 2020-12-18T14:29:35.471Z
-coverImage: ../assets/rumkugerl_marc-markstein-unsplash.jpg
+coverImage: /assets/rumkugerl_marc-markstein-unsplash.jpg
 coverImageAuthor: Marc Markstein
 coverImageLink: https://unsplash.com/@g_r_a_f_i_s_c_h
 categories:
@@ -23,7 +23,8 @@ categories:
     label: laktosefrei
 timeToCook: 30 Minuten vorbereiten + 30 Minuten rollen
 ---
-Rumkugerl sind eine meiner Lieblingssorten am Weichnachtskeksteller. So habe ich lange gesucht, gefeilt & optimiert, bis zum für mich perfekten Rezept. Ich verwende dabei ganz bewusst Walnüsse (wenn möglich frisch in der Küchenmaschine/Blender gerieben), um die rumig-schokoladigen Köstlichkeiten noch mit einer Extraportion omega-3-Fetten aufzupeppen. 
+
+Rumkugerl sind eine meiner Lieblingssorten am Weichnachtskeksteller. So habe ich lange gesucht, gefeilt & optimiert, bis zum für mich perfekten Rezept. Ich verwende dabei ganz bewusst Walnüsse (wenn möglich frisch in der Küchenmaschine/Blender gerieben), um die rumig-schokoladigen Köstlichkeiten noch mit einer Extraportion omega-3-Fetten aufzupeppen.
 
 <Ingredients yields="ca. 100 Stück">
 

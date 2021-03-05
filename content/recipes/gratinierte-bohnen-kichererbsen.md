@@ -1,7 +1,7 @@
 ---
 title: Gratinierte Bohnen & Kichererbsen
 date: 2020-07-13T14:50:30.961Z
-coverImage: ../assets/20200526-DSC02862.jpg
+coverImage: /assets/20200526-DSC02862.jpg
 categories:
   - value: Hauptspeisen
     label: Hauptspeisen

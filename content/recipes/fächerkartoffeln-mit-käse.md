@@ -1,7 +1,7 @@
 ---
 title: Fächerkartoffeln mit Käse
 date: 2020-06-24T06:33:03.042Z
-coverImage: ../assets/DSC03063.jpg
+coverImage: /assets/DSC03063.jpg
 categories:
   - value: Hauptspeisen
     label: Hauptspeisen

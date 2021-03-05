@@ -1,7 +1,7 @@
 ---
 title: Topfen-Reisauflauf
 date: 2020-06-24T05:29:47.089Z
-coverImage: ../assets/DSC03013.jpg
+coverImage: /assets/DSC03013.jpg
 categories:
   - value: Hauptspeisen
     label: Hauptspeisen

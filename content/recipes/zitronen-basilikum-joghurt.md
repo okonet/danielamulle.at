@@ -1,7 +1,7 @@
 ---
 title: Zitronen-Basilikum-Joghurt
 date: 2020-06-23T13:03:00.562Z
-coverImage: ../assets/zitrone.jpg
+coverImage: /assets/zitrone.jpg
 coverImageAuthor: Courtney Cook
 coverImageLink: https://unsplash.com/@courtneymcook
 categories:

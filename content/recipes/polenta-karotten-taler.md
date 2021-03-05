@@ -1,7 +1,7 @@
 ---
 title: Polenta-Karotten-Taler
 date: 2020-06-23T12:42:31.030Z
-coverImage: ../assets/DSC02999.jpg
+coverImage: /assets/DSC02999.jpg
 categories:
   - value: Hauptspeisen
     label: Hauptspeisen

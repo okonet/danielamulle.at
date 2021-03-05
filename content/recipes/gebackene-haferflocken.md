@@ -1,7 +1,7 @@
 ---
 title: Gebackene Haferflocken
 date: 2020-06-29T09:29:31.053Z
-coverImage: ../assets/DSC03566.jpg
+coverImage: /assets/DSC03566.jpg
 coverImageAuthor: Andrey Okonechnikov
 coverImageLink: https://okonet.ru/
 categories:

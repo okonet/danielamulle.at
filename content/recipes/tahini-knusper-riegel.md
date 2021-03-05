@@ -1,7 +1,7 @@
 ---
 title: Tahini-Knusper-Riegel
 date: 2020-11-18T09:29:23.907Z
-coverImage: ../assets/20201103-DSC04296.jpg
+coverImage: /assets/20201103-DSC04296.jpg
 coverImageAuthor: Andrey Okonetchnikov
 coverImageLink: https://okonet.ru
 categories:
@@ -23,17 +23,18 @@ categories:
     label: glutenfrei
 timeToCook: 15 Minuten vorbereiten + 20 Minuten backen
 ---
+
 Knackig-knusprig, süss & köstlich, diese supereinfache Nascherei. Und dein Körper freut sich über seine Extraportion Ballaststoffe, Eiweiß, Mikronährstoffe & gesunde Fette.
 
 <Ingredients yields="15 Stück">
 
-- 120 g Honig (bei Bedarf Reissirup) 
+- 120 g Honig (bei Bedarf Reissirup)
 - 50 g Tahini
 - 30 g Sesam
 - 30 g Chiasamen
 - 75 g Kürbis- oder Pinienkerne
 - 100 g Sonnenblumenkerne
-- 1/2 TL Salz 
+- 1/2 TL Salz
 
 </Ingredients>
 <Preparation>
@@ -49,5 +50,4 @@ Knackig-knusprig, süss & köstlich, diese supereinfache Nascherei. Und dein Kö
 
 </Preparation>
 
-Falls du Fruchtzucker nicht gut verträgst, ersetze den Honig durch Reissirup. Natürlich kannst du auch andere Samen (Mohn, Leinsamen, etc.) oder auch gehackte Nüsse verwenden. Erdnuss-, Mandel- oder Kokosmus statt Tahini sind auch leckere Varianten.
-Die Inspiration zu diesem Rezept stammt von [Laura Tilt](https://www.lauratilt.com/), einer Kollegin aus England.
+Falls du Fruchtzucker nicht gut verträgst, ersetze den Honig durch Reissirup. Natürlich kannst du auch andere Samen (Mohn, Leinsamen, etc.) oder auch gehackte Nüsse verwenden. Erdnuss-, Mandel- oder Kokosmus statt Tahini sind auch leckere Varianten. Die Inspiration zu diesem Rezept stammt von [Laura Tilt](https://www.lauratilt.com/), einer Kollegin aus England.

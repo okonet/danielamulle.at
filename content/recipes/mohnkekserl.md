@@ -1,7 +1,7 @@
 ---
 title: Mohnkekserl
 date: 2020-09-26T13:44:21.783Z
-coverImage: ../assets/20200901-DSC03713.jpg
+coverImage: /assets/20200901-DSC03713.jpg
 coverImageAuthor: Andrey Okonetchnikov
 coverImageLink: https://okonet.ru
 categories:
@@ -25,11 +25,12 @@ categories:
     label: glutenfrei
 timeToCook: 40 Minuten zubereiten + 1 Stunde rasten
 ---
+
 Meine Mohnkekse fallen nicht unter "klassische Weihnachtskekse", du kannst sie getrost das ganze Jahr über backen. Sie eignen sich gut zum Mitnehmen, und passen - da sie nicht so süss sind - auch perfekt zu einem Glaserl Wein.
 
 <Ingredients yields="4 Bleche">
 
-- 280 g Vollkornmehl (bei Bedarf glutenfrei)
+- 280 g Vollkornmehl (bei Bedarf glutenfrei)
 - 90 g brauner Zucker
 - 120 g Margarine
 - 80 g ungeriebener Mohn

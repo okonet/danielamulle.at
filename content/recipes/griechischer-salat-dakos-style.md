@@ -1,7 +1,7 @@
 ---
 title: Griechischer Salat dakos-style
 date: 2020-06-29T09:37:45.650Z
-coverImage: ../assets/DSC03509.jpg
+coverImage: /assets/DSC03509.jpg
 categories:
   - value: Salate
     label: Salate

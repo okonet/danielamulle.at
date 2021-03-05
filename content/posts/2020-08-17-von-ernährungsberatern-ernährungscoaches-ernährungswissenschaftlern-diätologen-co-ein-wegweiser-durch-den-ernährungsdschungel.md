@@ -1,24 +1,25 @@
 ---
 title: Ein Wegweiser durch den Ernährungsdschungel
 date: 2020-08-17T19:27:28.595Z
-coverImage: ../assets/dschungel.jpg
+coverImage: /assets/dschungel.jpg
 coverImageAuthor: "@Nick van den Berg"
 coverImageLink: https://unsplash.com/@nngvandenberg?utm_source=unsplash&amp
 categories:
   - value: Diätologin
     label: Diätologin
 ---
+
 Ernährungsberater, Ernährungscoach, Ernährungstherapeut, TCM-Ernährungsexperte, Ernährungswissenschaftler, Diätologe: das Angebot ist riesig & absolut undurchsichtig. Vielleicht hast du dich selbst schon gefragt:
 
-* Nach welchen Kriterien soll ich einen wirklich qualifizierten Berater suchen?
-* Wie kann ich das passende Angebot für mich finden?
-* Und was ist überhaupt der Unterschied zwischen all den "Experten"?
+- Nach welchen Kriterien soll ich einen wirklich qualifizierten Berater suchen?
+- Wie kann ich das passende Angebot für mich finden?
+- Und was ist überhaupt der Unterschied zwischen all den "Experten"?
 
 ## Bist du krank oder gesund?
 
-Das ist die wichtigste Frage! Wenn es dir um Vorbeugung oder Information zu *gesunder Ernährung* geht, hast du die "Qual der Wahl": Gerade im Internet finden sich zahlreiche "Experten" deren Ausbildung, Kompetenz & Qualifikation meist nicht überprüft wird. In Österreich ist zur Ernährungsberatung ein abgeschlossenes Ernährungswissenschaftsstudium inklusive Gewerbeschein oder ein Diätologiestudium gesetzliche Voraussetzung.
+Das ist die wichtigste Frage! Wenn es dir um Vorbeugung oder Information zu _gesunder Ernährung_ geht, hast du die "Qual der Wahl": Gerade im Internet finden sich zahlreiche "Experten" deren Ausbildung, Kompetenz & Qualifikation meist nicht überprüft wird. In Österreich ist zur Ernährungsberatung ein abgeschlossenes Ernährungswissenschaftsstudium inklusive Gewerbeschein oder ein Diätologiestudium gesetzliche Voraussetzung.
 
-Fühlst du dich *krank* oder hast bereits eine *ärztliche Diagnose*, z.B. krankhaftes Übergewicht (BMI > 30), Reizdarm, Laktoseintoleranz, erhöhte Blutfette & Cholesterin, Diabetes, etc. ist die Wahl klar & einfach: Nur Diätologen & Ärzte mit der Zusatzausbildung Ernährungsmedizin können und dürfen dir dann nämlich weiterhelfen. Das Gesetz schreibt klipp & klar vor, dass Kranke & Krankheitsgefährdete nur von diesen beiden Expertengruppen betreut werden dürfen. Warum ist das so?
+Fühlst du dich _krank_ oder hast bereits eine _ärztliche Diagnose_, z.B. krankhaftes Übergewicht (BMI > 30), Reizdarm, Laktoseintoleranz, erhöhte Blutfette & Cholesterin, Diabetes, etc. ist die Wahl klar & einfach: Nur Diätologen & Ärzte mit der Zusatzausbildung Ernährungsmedizin können und dürfen dir dann nämlich weiterhelfen. Das Gesetz schreibt klipp & klar vor, dass Kranke & Krankheitsgefährdete nur von diesen beiden Expertengruppen betreut werden dürfen. Warum ist das so?
 
 ## "Better safe than sorry" oder auf gut Deutsch "Sicher ist sicher"
 
@@ -42,34 +43,34 @@ Selbst Ernährungswissenschaftlern dürfen laut österreichischem Gesetz nur mit
 
 ## Ausbildung
 
-|                         | Diätologe | Ernährungsberater | Ernährungswissenschaftler |
-| ----------------------- | --------- | ----------------- | ------------------------- |
-| Akademisch              | ja        | nein              | ja                        |
-| Bewerbungsgespräch      | ja        | nein              | nein                      |
-| Eignungstest            | ja        | nein              | nein                      |
-| Dauer                   | 3 Jahre   | 1-6 Monate        | 3 Jahre                   |
-| Vollzeit                | ja        | nein              | ja                        |
-| Gesetzlich geregelt     | ja        | nein              | ja                        |
-| Qualitätsgesichert      | ja        | teilweise         | ja                        |
-| Verpflichtende Praktika | ja        | nein              | nein                      |
-| Zwischenprüfungen       | ja        | nein              | ja                        |
-| Diätologische Prozesse  | ja        | nein              | nein                      |
-| Abschlussprüfung        | ja        | teilweise         | ja                        |
-| Abschlussarbeit         | ja        | nein              | ja                        |
+|  | Diätologe | Ernährungsberater | Ernährungswissenschaftler |
+| --- | --- | --- | --- |
+| Akademisch | ja | nein | ja |
+| Bewerbungsgespräch | ja | nein | nein |
+| Eignungstest | ja | nein | nein |
+| Dauer | 3 Jahre | 1-6 Monate | 3 Jahre |
+| Vollzeit | ja | nein | ja |
+| Gesetzlich geregelt | ja | nein | ja |
+| Qualitätsgesichert | ja | teilweise | ja |
+| Verpflichtende Praktika | ja | nein | nein |
+| Zwischenprüfungen | ja | nein | ja |
+| Diätologische Prozesse | ja | nein | nein |
+| Abschlussprüfung | ja | teilweise | ja |
+| Abschlussarbeit | ja | nein | ja |
 
 ## Praktische Arbeit
 
-|                                   | Diätologe | Ernährungsberater | Ernährungswissenschaftler |
-| --------------------------------- | --------- | ----------------- | ------------------------- |
-| Gesunde                           | ja        | ja                | ja                        |
-| Krankheitsverdächtige             | ja        | nein              | nein                      |
-| Kranke                            | ja        | nein              | nein                      |
-| Kooperation mit Ärzten            | ja        | nein              | nein                      |
-| Schweigepflicht                   | ja        | nein              | nein                      |
-| Weiterbildungspflicht             | ja        | nein              | nein                      |
-| Dokumentationspflicht             | ja        | nein              | nein                      |
-| Eintrag Gesundheitsberuferegister | ja        | nein              | nein                      |
-| Gewerbeschein nötig               | nein      | ja                | ja                        |
+|  | Diätologe | Ernährungsberater | Ernährungswissenschaftler |
+| --- | --- | --- | --- |
+| Gesunde | ja | ja | ja |
+| Krankheitsverdächtige | ja | nein | nein |
+| Kranke | ja | nein | nein |
+| Kooperation mit Ärzten | ja | nein | nein |
+| Schweigepflicht | ja | nein | nein |
+| Weiterbildungspflicht | ja | nein | nein |
+| Dokumentationspflicht | ja | nein | nein |
+| Eintrag Gesundheitsberuferegister | ja | nein | nein |
+| Gewerbeschein nötig | nein | ja | ja |
 
 ## Acht Punkte, warum es sich für dich lohnt, eine Diätologin zu engagieren:
 
@@ -82,11 +83,12 @@ Selbst Ernährungswissenschaftlern dürfen laut österreichischem Gesetz nur mit
 7. Sie schreibt die gemeinsame Arbeit genau auf, diese Mitschrift kannst du zehn Jahre lang jederzeit bekommen.
 8. Deine (Kranken)geschichte bleibt immer unter vier Augen.
 
-Diese acht Punkte sind für Deine Diätologin *nicht nur selbstverständlich*, sie ist auch *gesetzlich dazu verpflichtet* - im Gegensatz zu allen anderen Beratern im Ernährungsbereich.
+Diese acht Punkte sind für Deine Diätologin _nicht nur selbstverständlich_, sie ist auch _gesetzlich dazu verpflichtet_ - im Gegensatz zu allen anderen Beratern im Ernährungsbereich.
 
 So, ich hoffe, du findest dich im "Ernährungsdschungel" nun etwas besser zurecht.
 
 Für eine leichtere Lesbarkeit habe ich auf Nennung beider Geschlechter verzichtet. Literaturquellen schicke ich dir gerne, schreib mir einfach.
 
 ## Werde ein Teil meiner Community!
+
 Falls du keinen Blogartikel mehr verpassen möchtest, dann melde dich hier unten für meinen Newsletter an. Einmal pro Woche bekommst du außerdem Tipps und Tricks, interessanten Infos und köstliche Rezepte direkt in deine Email-Inbox. Ich freue mich auf dich!

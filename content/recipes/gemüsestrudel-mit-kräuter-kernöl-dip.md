@@ -1,7 +1,7 @@
 ---
 title: Gemüsestrudel mit Kräuter-Kernöl-Dip
 date: 2020-07-06T12:43:04.477Z
-coverImage: ../assets/DSC03467.jpg
+coverImage: /assets/DSC03467.jpg
 categories:
   - value: Hauptspeisen
     label: Hauptspeisen

@@ -1,7 +1,7 @@
 ---
 title: Süße Hirse
 date: 2020-06-24T06:36:21.198Z
-coverImage: ../assets/DSC03082.jpg
+coverImage: /assets/DSC03082.jpg
 categories:
   - value: Snacks
     label: Snacks

@@ -4,7 +4,7 @@ categories:
     label: Diätologischer Jahresstart 2021
 title: "Diabetes: Alles Vollkorn?"
 date: 2021-01-03T05:00:00.000Z
-coverImage: ../assets/böhm-b_rezept.jpg
+coverImage: /assets/böhm-b_rezept.jpg
 coverImageAuthor: Bettina Böhm
 .coverImageLink: https://www.teambesseressen.at
 coverImageLink: https://www.teambesseressen.at/

@@ -1,7 +1,7 @@
 ---
 title: Was, wenn du Fruchtzucker schlecht verträgst?
 date: 2020-11-28T06:37:46.730Z
-coverImage: ../assets/randy-fath_fma.jpg
+coverImage: /assets/randy-fath_fma.jpg
 coverImageAuthor: Randy Fath
 coverImageLink: https://unsplash.com/@randyfath
 categories:

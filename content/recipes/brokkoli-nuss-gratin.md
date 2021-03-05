@@ -1,7 +1,7 @@
 ---
 title: Brokkoli-Nuss-Gratin
 date: 2020-07-11T14:07:38.003Z
-coverImage: ../assets/20200528-DSC02869.jpg
+coverImage: /assets/20200528-DSC02869.jpg
 categories:
   - value: Hauptspeisen
     label: Hauptspeisen

@@ -1,7 +1,7 @@
 ---
 title: Schokohumus
 date: 2020-06-21T17:06:29.037Z
-coverImage: ../assets/schokohumus.jpg
+coverImage: /assets/schokohumus.jpg
 coverImageAuthor: Andrey Okonechnikov
 coverImageLink: okonet.ru
 categories:

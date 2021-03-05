@@ -1,7 +1,7 @@
 ---
 title: Bohnen-Pilz-Stew
 date: 2020-06-24T06:40:21.885Z
-coverImage: ../assets/DSC03094.jpg
+coverImage: /assets/DSC03094.jpg
 categories:
   - value: Hauptspeisen
     label: Hauptspeisen

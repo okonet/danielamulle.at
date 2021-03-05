@@ -1,7 +1,7 @@
 ---
 title: Haferflocken-Walnuss-Torte
 date: 2020-06-21T14:52:49.096Z
-coverImage: ../assets/20200509-dsc02635.jpeg
+coverImage: /assets/20200509-dsc02635.jpeg
 categories:
   - value: "Kuchen, Kekserl & Co"
     label: "Kuchen, Kekserl & Co"

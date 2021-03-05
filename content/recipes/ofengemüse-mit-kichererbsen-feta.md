@@ -1,7 +1,7 @@
 ---
 title: Ofengemüse mit Kichererbsen & Feta
 date: 2020-07-21T12:27:04.746Z
-coverImage: ../assets/DSC03494.jpg
+coverImage: /assets/DSC03494.jpg
 categories:
   - value: Hauptspeisen
     label: Hauptspeisen

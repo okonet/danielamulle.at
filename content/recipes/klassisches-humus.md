@@ -1,7 +1,7 @@
 ---
 title: Klassisches Humus
 date: 2020-07-31T13:59:42.818Z
-coverImage: ../assets/humus.jpg
+coverImage: /assets/humus.jpg
 categories:
   - value: Aufstriche/Saucen/Dips
     label: Aufstriche/Saucen/Dips

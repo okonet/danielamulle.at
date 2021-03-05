@@ -1,7 +1,7 @@
 ---
 title: Kräuter-Ei-Sauce
 date: 2020-06-25T19:26:15.299Z
-coverImage: ../assets/kräuter-ei-sauce.jpg
+coverImage: /assets/kräuter-ei-sauce.jpg
 categories:
   - value: Aufstriche/Saucen/Dips
     label: Aufstriche/Saucen/Dips

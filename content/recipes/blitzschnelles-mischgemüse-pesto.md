@@ -1,7 +1,7 @@
 ---
 title: Blitzschnelles Mischgemüse-Pesto
 date: 2020-07-13T15:08:50.755Z
-coverImage: ../assets/20200524-DSC02853.jpg
+coverImage: /assets/20200524-DSC02853.jpg
 categories:
   - value: Hauptspeisen
     label: Hauptspeisen

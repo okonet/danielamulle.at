@@ -1,7 +1,7 @@
 ---
 title: Kartoffel-Erdnuss-Suppe mit Kichererbsen
 date: 2020-10-28T21:17:21.880Z
-coverImage: ../assets/20201013-DSC04189.jpg
+coverImage: /assets/20201013-DSC04189.jpg
 coverImageAuthor: Andrey Okonetchnikov
 coverImageLink: https://okonet.ru
 categories:
@@ -25,6 +25,7 @@ categories:
     label: histaminfrei
 timeToCook: 35 Minuten
 ---
+
 Diese cremige Suppe schmeckt köstlich, ganz besonders an einem kühlen Herbst- oder Wintertag. Eine komplette, gesunde Mahlzeit inklusive einem Hauch Exotik.
 
 <Ingredients yields="6 Personen">
@@ -51,7 +52,7 @@ Diese cremige Suppe schmeckt köstlich, ganz besonders an einem kühlen Herbst- 
 4. Rapsöl in einem großen Topf erhitzen.
 5. Frühlingszwiebelstücke und Knoblauch darin kurz andünsten.
 6. Kreuzkümmel und Senfkörner zugeben und einige Minuten mitrösten.
-7. Karotten-, Kartoffelwürfel und Kichererbsen dazugeben. 
+7. Karotten-, Kartoffelwürfel und Kichererbsen dazugeben.
 8. Mit Wasser + 1 TL Salz oder Gemüsesuppe aufgießen und aufkochen.
 9. Auf kleine Hitze zurückschalten und zugedeckt ca. 15 Min. köcheln lassen.
 10. Gemeinsam mit dem Erdnussmus pürieren.

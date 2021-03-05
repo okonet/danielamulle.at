@@ -1,7 +1,7 @@
 ---
 title: Mangold-Quiche
 date: 2020-06-21T15:04:03.968Z
-coverImage: ../assets/img_6241.jpeg
+coverImage: /assets/img_6241.jpeg
 categories:
   - value: Hauptspeisen
     label: Hauptspeisen

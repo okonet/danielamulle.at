@@ -1,7 +1,7 @@
 ---
 title: Schoko-Nuss-Aufstrich
 date: 2021-01-24T07:25:16.884Z
-coverImage: ../assets/nutella-reloaded_lala-azizli.jpg
+coverImage: /assets/nutella-reloaded_lala-azizli.jpg
 coverImageAuthor: Lala Azizli
 coverImageLink: https://unsplash.com/@lazizli
 categories:
@@ -21,12 +21,13 @@ categories:
     label: glutenfrei
 timeToCook: 20 Minuten
 ---
-Dieser Aufstrich schmeckt köstlich, und kommt dabei ohne jeglichen Industriezucker aus, ist dafür aber ballaststoffreich. Ich verwende ganz bewusst Rapsöl und Walnüsse, um noch eine Extraportion tolle omega-3-Fette einzubauen. Mit Erdnussmus bekommst du mehr Eiweiß in deinen Aufstrich, es hat aber einen intensiveren Eigengeschmack. Cashew- oder Mandelmus schmeckt relativ neutral. 
+
+Dieser Aufstrich schmeckt köstlich, und kommt dabei ohne jeglichen Industriezucker aus, ist dafür aber ballaststoffreich. Ich verwende ganz bewusst Rapsöl und Walnüsse, um noch eine Extraportion tolle omega-3-Fette einzubauen. Mit Erdnussmus bekommst du mehr Eiweiß in deinen Aufstrich, es hat aber einen intensiveren Eigengeschmack. Cashew- oder Mandelmus schmeckt relativ neutral.
 
 <Ingredients yields="6 kleine Gläschen à 140 g">
 
 - 370 g weiche Datteln, z.B. Medjoul-Datteln
-- 130 g Erdnuss-, Cashew- oder Mandelmus 
+- 130 g Erdnuss-, Cashew- oder Mandelmus
 - 60 ml Pflanzendrink
 - 60 g Rapsöl
 - 3 EL Kakaopulver
@@ -42,5 +43,4 @@ Dieser Aufstrich schmeckt köstlich, und kommt dabei ohne jeglichen Industriezuc
 
 </Preparation>
 
-Falls du keine Medjoul-Datteln bekommst, dann weiche deine Datteln ca. 10 Minuten mit heißem Wasser bedeckt ein. Dieses Wasser kannst du in Schritt 2 eventuell noch zugeben, wenn dir die Masse zu fest ist.
-Die Inspiration zu diesem Rezept stammt von der Foodbloggerin [Vera Hood](https://verahood.com/).
+Falls du keine Medjoul-Datteln bekommst, dann weiche deine Datteln ca. 10 Minuten mit heißem Wasser bedeckt ein. Dieses Wasser kannst du in Schritt 2 eventuell noch zugeben, wenn dir die Masse zu fest ist. Die Inspiration zu diesem Rezept stammt von der Foodbloggerin [Vera Hood](https://verahood.com/).

@@ -4,7 +4,7 @@ categories:
     label: Diätologischer Jahresstart 2021
 title: "Ernährung bei Wechselbeschwerden "
 date: 2021-01-11T05:00:00.000Z
-coverImage: ../assets/mayr_j-rezept.jpg
+coverImage: /assets/mayr_j-rezept.jpg
 coverImageAuthor: "Julia Mayr "
 .coverImageLink: https://www.bauchfreundin.at
 coverImageLink: http://www.bauchfreundin.at

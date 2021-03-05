@@ -1,7 +1,7 @@
 ---
 title: Alpenhumus
 date: 2020-06-29T09:23:31.562Z
-coverImage: ../assets/DSC03444.jpg
+coverImage: /assets/DSC03444.jpg
 categories:
   - value: Aufstriche/Saucen/Dips
     label: Aufstriche/Saucen/Dips

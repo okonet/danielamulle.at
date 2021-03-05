@@ -1,7 +1,7 @@
 ---
 title: Süßer Bandnudel-Auflauf
 date: 2020-07-15T11:38:23.461Z
-coverImage: ../assets/DSC03105.jpg
+coverImage: /assets/DSC03105.jpg
 categories:
   - value: Hauptspeisen
     label: Hauptspeisen

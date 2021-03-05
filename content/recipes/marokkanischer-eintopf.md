@@ -1,7 +1,7 @@
 ---
 title: Marokkanischer Eintopf
 date: 2020-12-01T13:39:32.527Z
-coverImage: ../assets/20201024-DSC04205.jpg
+coverImage: /assets/20201024-DSC04205.jpg
 coverImageAuthor: Andrey Okonetchnikov
 coverImageLink: https://okonet.ru
 categories:
@@ -21,6 +21,7 @@ categories:
     label: glutenfrei
 timeToCook: 20 Minuten vorbereiten + 45 Minuten kochen.
 ---
+
 Dieses Rezept ist herzhaft & wärmend - ein richtiges Wohlfühlessen für kalte Herbst- und Wintertage: Tolles pflanzliches Eiweiß aus Kichererbsen, saisonales Gemüse, aromatische Süße der Rosinen und ein Hauch Exotik durch die wärmenden Gewürze. Meine Familie hat dieses unkomplizierte Essen sofort ins Herz geschlossen.
 
 <Ingredients yields="8 Personen">

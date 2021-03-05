@@ -1,7 +1,7 @@
 ---
 title: Buchweizen-Tabouleh
 date: 2020-06-29T09:42:02.549Z
-coverImage: ../assets/20200603-DSC02918.jpg
+coverImage: /assets/20200603-DSC02918.jpg
 categories:
   - value: Salate
     label: Salate

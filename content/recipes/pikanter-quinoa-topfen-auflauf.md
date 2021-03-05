@@ -1,7 +1,7 @@
 ---
 title: Pikanter Quinoa-Topfen-Auflauf
 date: 2020-06-23T13:16:13.431Z
-coverImage: ../assets/DSC03007.jpg
+coverImage: /assets/DSC03007.jpg
 categories:
   - value: Hauptspeisen
     label: Hauptspeisen

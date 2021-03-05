@@ -1,7 +1,7 @@
 ---
 title: Rhabarber-Topfen-Kuchen
 date: 2020-06-23T07:24:36.411Z
-coverImage: ../assets/20200531-dsc02898.jpg
+coverImage: /assets/20200531-dsc02898.jpg
 categories:
   - value: "Kuchen, Kekserl & Co"
     label: "Kuchen, Kekserl & Co"

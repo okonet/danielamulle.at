@@ -1,7 +1,7 @@
 ---
 title: Würzige Kichererbsen-Bulgur-Suppe mit Fetacreme
 date: 2020-06-21T17:29:36.015Z
-coverImage: ../assets/20200515-dsc02766.jpg
+coverImage: /assets/20200515-dsc02766.jpg
 categories:
   - value: Suppen
     label: Suppen

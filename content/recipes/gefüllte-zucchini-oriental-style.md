@@ -1,7 +1,7 @@
 ---
 title: Gefüllte Zucchini oriental style
 date: 2020-07-11T12:43:39.870Z
-coverImage: ../assets/20200529-DSC02884.jpg
+coverImage: /assets/20200529-DSC02884.jpg
 categories:
   - value: Hauptspeisen
     label: Hauptspeisen

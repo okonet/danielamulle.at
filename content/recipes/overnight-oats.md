@@ -1,7 +1,7 @@
 ---
 title: Overnight Oats
 date: 2020-06-29T09:15:42.944Z
-coverImage: ../assets/img_2180.jpg
+coverImage: /assets/img_2180.jpg
 categories:
   - value: Snacks
     label: Snacks

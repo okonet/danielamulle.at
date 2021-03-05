@@ -1,7 +1,7 @@
 ---
 title: Penne mit Spitzpaprika-Haselnuss-Pesto
 date: 2020-07-10T11:44:05.901Z
-coverImage: ../assets/20200513-DSC02756.jpg
+coverImage: /assets/20200513-DSC02756.jpg
 categories:
   - value: Hauptspeisen
     label: Hauptspeisen

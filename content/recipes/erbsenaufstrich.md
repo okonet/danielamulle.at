@@ -1,7 +1,7 @@
 ---
 title: Erbsenaufstrich
 date: 2020-09-07T13:01:21.981Z
-coverImage: ../assets/DSC03524.jpg
+coverImage: /assets/DSC03524.jpg
 coverImageAuthor: Andrey Okonetchnikov
 coverImageLink: https://okonet.ru
 categories:
@@ -23,7 +23,8 @@ categories:
     label: glutenfrei
 timeToCook: 15 Minuten
 ---
-Dieser Austrich ist nicht nur mega lecker, sondern auch eine kleine Eiweißbombe. Außerdem kannst du ihn superflott zubereiten und ganz wunderbar variieren: 
+
+Dieser Austrich ist nicht nur mega lecker, sondern auch eine kleine Eiweißbombe. Außerdem kannst du ihn superflott zubereiten und ganz wunderbar variieren:
 
 <Ingredients yields="4 Personen">
 

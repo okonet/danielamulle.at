@@ -1,7 +1,7 @@
 ---
 title: Kartoffelaufstrich aka Erdapfelkas
 date: 2020-06-21T17:38:26.402Z
-coverImage: ../assets/DSC03077.jpg
+coverImage: /assets/DSC03077.jpg
 categories:
   - value: Aufstriche/Saucen/Dips
     label: Aufstriche/Saucen/Dips

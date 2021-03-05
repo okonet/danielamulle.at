@@ -4,7 +4,7 @@ categories:
     label: Diätologischer Jahresstart 2021
 title: Depression & Ernährung
 date: 2021-01-07T05:00:00.000Z
-coverImage: ../assets/fischer_h-rezept.jpg
+coverImage: /assets/fischer_h-rezept.jpg
 coverImageAuthor: Hanna Fischer
 .coverImageLink: https://www.diaetologie-fischer.com
 coverImageLink: https://www.diaetologie-fischer.com/

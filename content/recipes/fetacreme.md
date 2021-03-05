@@ -1,7 +1,7 @@
 ---
 title: Fetacreme
 date: 2020-06-23T12:59:17.409Z
-coverImage: ../assets/20200515-dsc02768.jpg
+coverImage: /assets/20200515-dsc02768.jpg
 categories:
   - value: Aufstriche/Saucen/Dips
     label: Aufstriche/Saucen/Dips

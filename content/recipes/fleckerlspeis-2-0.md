@@ -1,7 +1,7 @@
 ---
 title: Fleckerlspeis' 2.0
 date: 2020-10-28T21:40:54.711Z
-coverImage: ../assets/20201014-DSC04192.jpg
+coverImage: /assets/20201014-DSC04192.jpg
 coverImageAuthor: Andrey Okonetchnikov
 coverImageLink: https://okonet.ru
 categories:
@@ -23,6 +23,7 @@ categories:
     label: glutenfrei
 timeToCook: 20 Minuten
 ---
+
 Diese flott zubereitete vegane Variante eines österreichischen Hausmannskost-Klassikers wird dich geschmacklich verblüffen. Vor allem mit etwas Kürbiskernöl verfeinert. Und dein Körper ist überglücklich wegen dem tollen pflanzliches Eiweiß (Bohnen) und den gesunden Fetten: omega 3 (Walnüsse), omega 6 (Kernöl) und omega 9 (Olivenöl).
 
 <Ingredients yields="5 Personen">
@@ -49,7 +50,7 @@ Diese flott zubereitete vegane Variante eines österreichischen Hausmannskost-Kl
 6. Karotten, Tomaten und Bohnen zugeben und ca. 5 Minuten mitbraten.
 7. Einstweilen Fleckerl laut Packungsanleitung al dente kochen.
 8. Fleckerl abseihen und unter die Tomaten-Bohnen-Mischung rühren.
-9. Mit Salz und Pfeffer abschmecken. 
+9. Mit Salz und Pfeffer abschmecken.
 10. Mit grob zerkleinerten Basilikumblättern und gehackten Walnüssen bestreuen.
 11. Mit Kernöl verfeinert servieren.
 
