@@ -86,7 +86,8 @@ export default function PageLayout({
           >
             {coverImage ? (
               <CoverImage
-                src={null}
+                alt={title}
+                src={coverImage}
                 author={coverImageAuthor}
                 url={coverImageLink}
               />

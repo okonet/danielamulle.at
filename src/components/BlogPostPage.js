@@ -1,18 +1,21 @@
 /** @jsx jsx */
 import React from "react"
-import { MDXRenderer } from "gatsby-plugin-mdx"
 import { Box, jsx, Styled } from "theme-ui"
 import Link from "./Link"
 import { blogTheme } from "../theme"
-import { blogPath } from "../../paths"
 import Group from "react-group"
 import ShareButtons from "./ShareButtons"
 import TagList from "./TagList"
 import PageLayout from "./PageLayout"
 import PostTemplate from "./PostTemplate"
+import { useRouter } from "next/router"
+import config from "../../site.config"
+import hydrate from "next-mdx-remote/hydrate"
+import components from "../gatsby-plugin-theme-ui/components"
 
-export default ({ data, location }) => {
-  const { post, site } = data
+export default function BlogPostPage({ data }) {
+  const { asPath } = useRouter()
+  const { post } = data
   const {
     body,
     date,
@@ -23,7 +26,7 @@ export default ({ data, location }) => {
     title,
     categories,
   } = post
-  const pageUrl = location.href ? location.href : site.siteMetadata.url
+  const pageUrl = `${config.homepage}/${asPath}`
   return (
     <PageLayout
       theme={blogTheme}
@@ -45,7 +48,9 @@ export default ({ data, location }) => {
             }}
           >
             <Group separator=" → ">
-              <Link to={`/${blogPath}`}>← Alle Blog Einträge</Link>
+              <Link href={`/${config.collections.blog}`}>
+                ← Alle Blog Einträge
+              </Link>
             </Group>
           </Box>
           <Styled.h1
@@ -60,7 +65,7 @@ export default ({ data, location }) => {
       }
     >
       <PostTemplate
-        main={<MDXRenderer>{body}</MDXRenderer>}
+        main={hydrate(body, { components })}
         sidebar={
           <>
             <Styled.h3>Veröffentlicht am</Styled.h3>

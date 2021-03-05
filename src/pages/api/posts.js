@@ -18,10 +18,18 @@ export function getPostBySlug(collectionName, slug) {
     },
   })
 
+  // TODO: Convert categories to the proper schema
+  // TODO: Format Date
+
   return {
     slug: `${collectionName}/${slug}`,
     originalSlug: slug,
     ...data,
+    categories: data.categories.map((category) => ({
+      ...category,
+      id: category.value, // TODO: Maybe keep value/label instead?
+      slug: category.value, // TODO: Add proper slug
+    })),
     content,
   }
 }

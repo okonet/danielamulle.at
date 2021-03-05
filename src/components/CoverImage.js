@@ -1,10 +1,10 @@
 /** @jsx jsx */
 import React from "react"
 import Img from "next/image"
-import { Box, Flex, jsx, Text } from "theme-ui"
+import { AspectRatio, Flex, jsx, Text } from "theme-ui"
 import { transparentize } from "@theme-ui/color"
 
-function CoverImage({ src, author, url, children }) {
+function CoverImage({ alt, src, author, url, children, withOverlay = false }) {
   const gradient = () => (theme) => {
     return `linear-gradient(
             ${transparentize("secondary", 1)(theme)} 30%, 
@@ -12,19 +12,15 @@ function CoverImage({ src, author, url, children }) {
         )`
   }
   return (
-    <Box
-      as="figure"
-      sx={{
-        position: "relative",
-      }}
-    >
+    <AspectRatio ratio={16 / 5} as="figure">
       <Img
+        alt={alt}
         src={src}
         layout="fill"
-        style={{
-          maxHeight: 500,
-        }}
+        objectFit="cover"
+        sx={{ zIndex: 0 }}
       />
+
       <Flex
         sx={{
           position: "absolute",
@@ -36,7 +32,7 @@ function CoverImage({ src, author, url, children }) {
           px: 2,
           width: "100%",
           height: "100%",
-          backgroundImage: gradient,
+          backgroundImage: withOverlay ?? gradient,
         }}
       >
         {children}
@@ -65,7 +61,7 @@ function CoverImage({ src, author, url, children }) {
           © {url ? <a href={url}>{author}</a> : author}
         </Text>
       )}
-    </Box>
+    </AspectRatio>
   )
 }
 

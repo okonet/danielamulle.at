@@ -50,12 +50,7 @@ function PostCard({ coverImage, author, date, disabled, slug, title, sx }) {
               opacity: disabled ? 0.25 : 1,
             }}
           >
-            <Img
-              src={coverImage.replace("../", "/")}
-              layout="fill"
-              // fadeIn={true}
-              // backgroundColor="#1e5f92"
-            />
+            <Img src={coverImage} layout="fill" />
           </Box>
         )}
         <Flex

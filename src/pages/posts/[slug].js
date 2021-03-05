@@ -1,13 +1,11 @@
 /* @jsx jsx */
+import { jsx } from "theme-ui"
 import React from "react"
 import renderToString from "next-mdx-remote/render-to-string"
-import hydrate from "next-mdx-remote/hydrate"
-import { jsx } from "theme-ui"
-import PageLayout from "../../components/PageLayout"
-import { blogTheme } from "../../theme"
 import { getAllPosts, getPostBySlug } from "../api/posts"
-import components from "../../gatsby-plugin-theme-ui/components"
 import config from "../../../site.config"
+import components from "../../gatsby-plugin-theme-ui/components"
+import BlogPostPage from "../../components/BlogPostPage"
 
 export async function getStaticProps({ params }) {
   const { slug } = params
@@ -23,7 +21,7 @@ export async function getStaticProps({ params }) {
   return {
     props: {
       ...post,
-      source: mdxSource,
+      body: mdxSource,
     },
   }
 }
@@ -41,14 +39,8 @@ export async function getStaticPaths() {
   }
 }
 
-function BlogPost({ title, source }) {
-  const content = hydrate(source, { components })
-
-  return (
-    <PageLayout title={title} theme={blogTheme}>
-      {content}
-    </PageLayout>
-  )
+function BlogPost(props) {
+  return <BlogPostPage data={{ post: props }} />
 }
 
 export default BlogPost
