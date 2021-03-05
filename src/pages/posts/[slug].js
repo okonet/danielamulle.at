@@ -5,12 +5,13 @@ import hydrate from "next-mdx-remote/hydrate"
 import { jsx } from "theme-ui"
 import PageLayout from "../../components/PageLayout"
 import { blogTheme } from "../../theme"
-import { getAllPosts, getDocBySlug, sectionDirectory } from "../api/posts"
+import { getAllPosts, getCollectionPath, getDocBySlug } from "../api/posts"
 import components from "../../gatsby-plugin-theme-ui/components"
+import config from "../../../site.config"
 
 export async function getStaticProps({ params }) {
   const { slug } = params
-  const post = getDocBySlug(sectionDirectory, slug)
+  const post = getDocBySlug(getCollectionPath(config.collections.blog), slug)
   if (!post) {
     return {
       notFound: true,
@@ -28,9 +29,11 @@ export async function getStaticProps({ params }) {
 
 export async function getStaticPaths() {
   return {
-    paths: getAllPosts(sectionDirectory).map((post) => ({
-      params: { slug: post.slug },
-    })),
+    paths: getAllPosts(getCollectionPath(config.collections.blog)).map(
+      (post) => ({
+        params: { slug: post.slug },
+      })
+    ),
     fallback: false,
   }
 }

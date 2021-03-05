@@ -10,4 +10,9 @@ export default {
   lang: "de",
   locale: "de_AT",
   socialHandle: "bauchdetektivin",
+  collections: {
+    blog: "posts",
+    projects: "projects",
+    recipes: "recipes",
+  },
 }

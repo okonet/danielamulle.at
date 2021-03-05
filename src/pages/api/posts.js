@@ -3,7 +3,9 @@ import fs from "fs"
 import matter from "gray-matter"
 import yaml from "js-yaml"
 
-export const sectionDirectory = join(process.cwd(), "content", "recipes")
+export function getCollectionPath(name) {
+  return join(process.cwd(), "content", name)
+}
 
 export function getDocBySlug(path, slug) {
   const fullPath = join(path, `${slug}.md`)

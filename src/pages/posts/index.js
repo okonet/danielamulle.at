@@ -2,11 +2,12 @@ import React from "react"
 import PageLayout from "../../components/PageLayout"
 import Content, { title } from "../../../content/sections/blog.mdx"
 import { blogTheme } from "../../theme"
-import { getAllPosts, sectionDirectory } from "../api/posts"
+import { getAllPosts, getCollectionPath } from "../api/posts"
 import Link from "../../components/Link"
+import config from "../../../site.config"
 
 export async function getStaticProps({ params }) {
-  const posts = getAllPosts(sectionDirectory)
+  const posts = getAllPosts(getCollectionPath(config.collections.blog))
 
   return {
     props: {
@@ -21,8 +22,8 @@ function BlogIndex({ posts }) {
       <Content />
       <ol>
         {posts.map((post) => (
-          <li>
-            <Link key={post.slug} href={`posts/${post.slug}`}>
+          <li key={post.slug}>
+            <Link href={`${config.collections.blog}/${post.slug}`}>
               {post.meta.title}
             </Link>
           </li>
