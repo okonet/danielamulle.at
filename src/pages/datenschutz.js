@@ -1,13 +1,13 @@
 import React from "react"
-import * as Content from "../../content/sections/datenschutz.mdx"
+import Content, { title } from "../../content/sections/datenschutz.mdx"
 import PageLayout from "../components/PageLayout"
 
-function Impressum() {
+function Datenschutz() {
   return (
-    <PageLayout title={Content._frontmatter.title} shouldShowSubscribe={false}>
-      <Content.default />
+    <PageLayout title={title} shouldShowSubscribe={false}>
+      <Content />
     </PageLayout>
   )
 }
 
-export default Impressum
+export default Datenschutz

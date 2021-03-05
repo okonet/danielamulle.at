@@ -1,15 +1,19 @@
 /* @jsx jsx */
 import React from "react"
-import { jsx } from "theme-ui"
-import { Link } from "gatsby"
+import { Styled, jsx } from "theme-ui"
+import NextLink from "next/link"
 
-export default ({ sx, ...props }) => (
-  <Link
-    activeClassName="active"
-    sx={{
-      variant: "styles.a",
-      ...sx,
-    }}
-    {...props}
-  />
-)
+export default function Link({ sx, children, ...props }) {
+  return (
+    <NextLink passHref {...props}>
+      <Styled.a
+        sx={{
+          variant: "styles.a",
+          ...sx,
+        }}
+      >
+        {children}
+      </Styled.a>
+    </NextLink>
+  )
+}

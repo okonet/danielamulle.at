@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import * as React from "react"
 import { Portal } from "react-portal"
-import { Alert, Box, Button, Close, jsx, Styled } from "theme-ui"
+import { Alert, Box, Button, Close, jsx } from "theme-ui"
 import { useCookies } from "react-cookie"
 import { useLocation } from "@reach/router"
 import { initializeAndTrack } from "gatsby-plugin-gdpr-cookies"

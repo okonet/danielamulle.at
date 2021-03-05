@@ -1,7 +1,7 @@
 /* @jsx jsx */
 import React from "react"
-import { Flex, jsx, ThemeProvider } from "theme-ui"
-import Link from "../components/Link"
+import { Styled, Flex, jsx, ThemeProvider } from "theme-ui"
+import Link from "next/link"
 import {
   aboutTheme,
   blogTheme,
@@ -15,73 +15,74 @@ import { blogPath, projectsPath, recipesPath } from "../../paths"
 const pages = [
   {
     title: "Angebot",
-    to: "/offers",
+    href: "/offers",
     theme: offersTheme,
   },
   // {
   //   title: "Referenzen",
-  //   to: "testimonials",
+  //   href: "testimonials",
   //   theme: testimonialsTheme,
   // },
   {
     title: "Über mich",
-    to: "/about",
+    href: "/about",
     theme: aboutTheme,
   },
   {
     title: "Rezepte",
-    to: `/${recipesPath}`,
+    href: `/${recipesPath}`,
     theme: recipesTheme,
   },
   {
     title: "Blog",
-    to: `/${blogPath}`,
+    href: `/${blogPath}`,
     theme: blogTheme,
   },
   {
     title: "Projekte",
-    to: `/${projectsPath}`,
+    href: `/${projectsPath}`,
     theme: projectsTheme,
   },
 ]
 
 const NavLink = React.forwardRef((props, ref) => {
-  const { sx, to, ...rest } = props
+  const { sx, href = "/", children, ...rest } = props
   return (
-    <Link
-      ref={ref}
-      to={to}
-      partiallyActive
-      {...rest}
-      sx={{
-        position: "relative",
-        py: 1,
-        px: 0,
-        mb: "3px",
-        textDecoration: "none",
-        fontFamily: "body",
-        fontWeight: "bold",
-        fontSize: 1,
-        borderBottom: "none",
-        bg: "transparent",
-        color: "primary",
-        whiteSpace: "nowrap",
-        ":hover": {
-          mb: "2px",
+    <Link href={href} passHref {...rest}>
+      <Styled.a
+        ref={ref}
+        sx={{
+          position: "relative",
+          py: 1,
+          px: 0,
+          mb: "3px",
           textDecoration: "none",
-          borderBottom: "thin",
-        },
-        "&.active": {
-          mb: 0,
-          borderBottom: "thick",
-        },
-        ...sx,
-      }}
-    />
+          fontFamily: "body",
+          fontWeight: "bold",
+          fontSize: 1,
+          borderBottom: "none",
+          bg: "transparent",
+          color: "primary",
+          whiteSpace: "nowrap",
+          ":hover": {
+            mb: "2px",
+            textDecoration: "none",
+            borderBottom: "thin",
+          },
+          "&.active": {
+            mb: 0,
+            borderBottom: "thick",
+          },
+          ...sx,
+        }}
+      >
+        {children}
+      </Styled.a>
+    </Link>
   )
 })
 
-const Navigation = (props) => {
+export default function Navigation(props) {
   return (
     <Flex
       as="nav"
@@ -102,15 +103,13 @@ const Navigation = (props) => {
         ...props.sx,
       }}
     >
-      {pages.map(({ title, theme, to }) => {
+      {pages.map(({ title, theme, href }) => {
         return (
-          <ThemeProvider theme={theme} key={to}>
-            <NavLink to={to}>{title}</NavLink>
+          <ThemeProvider theme={theme} key={href}>
+            <NavLink href={href}>{title}</NavLink>
           </ThemeProvider>
         )
       })}
     </Flex>
   )
 }
-
-export default Navigation

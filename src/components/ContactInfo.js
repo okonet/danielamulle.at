@@ -1,28 +1,19 @@
 /* @jsx jsx */
 import React from "react"
-import { graphql, useStaticQuery } from "gatsby"
-import PhoneIcon from "./PhoneIcon"
 import { jsx, Styled } from "theme-ui"
+import PhoneIcon from "./PhoneIcon"
 import MailIcon from "./MailIcon"
+import config from "../../site.config"
 
 function ContactInfo(props) {
-  const { site } = useStaticQuery(graphql`
-    query ContactInfoQuery {
-      site {
-        siteMetadata {
-          phone
-          email
-        }
-      }
-    }
-  `)
+  const { phone, email } = config
   switch (props.type) {
     case "phone": {
       return (
         <span sx={{ whiteSpace: "nowrap" }}>
-          <Styled.a href={`tel:${site.siteMetadata.phone}`}>
+          <Styled.a href={`tel:${phone}`}>
             <PhoneIcon width={16} sx={{ mr: 1, mb: -1 }} />
-            {site.siteMetadata.phone}
+            {phone}
           </Styled.a>
         </span>
       )
@@ -30,9 +21,9 @@ function ContactInfo(props) {
     case "email": {
       return (
         <span sx={{ whiteSpace: "nowrap" }}>
-          <Styled.a href={`mailto:${site.siteMetadata.email}`}>
+          <Styled.a href={`mailto:${email}`}>
             <MailIcon width={16} sx={{ mr: 1, mb: -1 }} />
-            {site.siteMetadata.email}
+            {email}
           </Styled.a>
         </span>
       )

@@ -11,28 +11,24 @@ import {
 } from "@component-driven/react-design-tokens"
 import { Box, Container, Grid, jsx, Styled } from "theme-ui"
 import theme, * as themes from "../theme"
-import logo from "../images/logo/logo.png"
-import logo2x from "../images/logo/logo@2x.png"
-import logoSVG from "../images/logo/logo.svg"
-import { graphql, useStaticQuery } from "gatsby"
-import Link from "../components/Link"
 import PostCard from "../components/PostCard"
 import ThemeUIProvider from "../components/ThemeUIProvider"
 
 const version = 2
 
 export default () => {
-  const { recipes } = useStaticQuery(
-    graphql`
-      query {
-        recipes: allPost(filter: { collection: { eq: "recipes" } }) {
-          nodes {
-            ...PostMeta
-          }
-        }
-      }
-    `
-  )
+  const recipes = []
+  // const { recipes } = useStaticQuery(
+  //   graphql`
+  //     query {
+  //       recipes: allPost(filter: { collection: { eq: "recipes" } }) {
+  //         nodes {
+  //           ...PostMeta
+  //         }
+  //       }
+  //     }
+  //   `
+  // )
   return (
     <ThemeUIProvider theme={theme}>
       <Container variant="full">
@@ -43,9 +39,9 @@ export default () => {
             <Swatches
               theme={theme}
               items={{
-                png: logo,
-                "png@2x": logo2x,
-                svg: logoSVG,
+                png: "/logo/logo.png",
+                "png@2x": "/logo/logo@2x.png",
+                svg: "/logo/logo.svg",
               }}
             >
               {(token, value) => (

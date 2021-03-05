@@ -6,9 +6,8 @@
 # testing
 /coverage
 
-# production
-.cache
-/public
+# next.js
+.next
 
 # misc
 .DS_Store

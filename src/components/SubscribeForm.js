@@ -4,15 +4,14 @@ import {
   Alert,
   Box,
   Button,
-  Container,
   Grid,
   Input,
   jsx,
   Label,
-  Styled,
   Spinner,
+  Styled,
 } from "theme-ui"
-import Link from "./Link"
+import Link from "next/link"
 
 const states = {
   IDLE: "idle",
@@ -109,7 +108,10 @@ function SubscribeForm({ listId = "1" }) {
           }}
         >
           Mit Deiner Anmeldung stimmst Du meiner{" "}
-          <Link to="/datenschutz">Datenschutzerklärung</Link> zu.
+          <Link href="/datenschutz" passHref>
+            <Styled.a>Datenschutzerklärung</Styled.a>
+          </Link>{" "}
+          zu.
         </Styled.p>
       </Grid>
     </>

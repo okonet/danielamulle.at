@@ -1,10 +1,10 @@
 /** @jsx jsx */
 import React from "react"
-import Img from "gatsby-image"
-import { AspectRatio, Box, Flex, jsx, Text } from "theme-ui"
+import Img from "next/image"
+import { Box, Flex, jsx, Text } from "theme-ui"
 import { transparentize } from "@theme-ui/color"
 
-function CoverImage({ fluid, author, url, children }) {
+function CoverImage({ src, author, url, children }) {
   const gradient = () => (theme) => {
     return `linear-gradient(
             ${transparentize("secondary", 1)(theme)} 30%, 
@@ -19,7 +19,8 @@ function CoverImage({ fluid, author, url, children }) {
       }}
     >
       <Img
-        fluid={fluid}
+        src={src}
+        layout="fill"
         style={{
           maxHeight: 500,
         }}
