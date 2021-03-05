@@ -1,13 +1,13 @@
 import React from "react"
 import PropTypes from "prop-types"
-import Link from "./Link"
-import Img from "gatsby-image"
+import Img from "next/image"
 import { AspectRatio, Box, Flex, Text } from "theme-ui"
 import { transparentize } from "@theme-ui/color"
+import Link from "./Link"
 
 PostCard.propTypes = {
   author: PropTypes.string,
-  coverImage: PropTypes.object,
+  coverImage: PropTypes.string,
   date: PropTypes.string,
   disabled: PropTypes.bool,
   slug: PropTypes.string.isRequired,
@@ -24,20 +24,20 @@ function PostCard({ coverImage, author, date, disabled, slug, title, sx }) {
   }
   return (
     <Link
-      to={slug}
+      href={slug}
       disabled={disabled}
       sx={{
         display: "block",
         overflow: "hidden",
         borderRadius: "medium",
         bg: "text",
-        ".image": {
+        img: {
           transition: "transform 500ms ease-in-out",
         },
-        ":hover:not([disabled]) .image": {
+        ":hover:not([disabled]) img": {
           transform: "scale(1.125)",
         },
-        ":focus:not([disabled]) .image": {
+        ":focus:not([disabled]) img": {
           transform: "scale(1.125)",
         },
         ...sx,
@@ -51,10 +51,10 @@ function PostCard({ coverImage, author, date, disabled, slug, title, sx }) {
             }}
           >
             <Img
-              fluid={coverImage.childImageSharp.fluid}
-              fadeIn={true}
-              backgroundColor="#1e5f92"
-              className="image"
+              src={coverImage.replace("../", "/")}
+              layout="fill"
+              // fadeIn={true}
+              // backgroundColor="#1e5f92"
             />
           </Box>
         )}

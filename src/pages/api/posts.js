@@ -3,12 +3,14 @@ import fs from "fs"
 import matter from "gray-matter"
 import yaml from "js-yaml"
 
-export function getCollectionPath(name) {
-  return join(process.cwd(), "content", name)
+const BASE_PATH = "content"
+
+export function getCollectionPath(collectionName) {
+  return join(process.cwd(), BASE_PATH, collectionName)
 }
 
-export function getDocBySlug(path, slug) {
-  const fullPath = join(path, `${slug}.md`)
+export function getPostBySlug(collectionName, slug) {
+  const fullPath = join(getCollectionPath(collectionName), `${slug}.md`)
   const fileContents = fs.readFileSync(fullPath, "utf8")
   const { data, content } = matter(fileContents, {
     engines: {
@@ -16,20 +18,33 @@ export function getDocBySlug(path, slug) {
     },
   })
 
-  return { slug, meta: data, content }
+  return {
+    slug: `${collectionName}/${slug}`,
+    originalSlug: slug,
+    ...data,
+    content,
+  }
 }
 
-export function getAllPosts(path) {
+export function getAllPosts(collectionName) {
+  const path = getCollectionPath(collectionName)
   return (
     fs
       .readdirSync(path)
       // Only include md(x) files
       .filter((path) => /\.mdx?$/.test(path))
-      .map((file) => getDocBySlug(path, file.replace(/\.md$/, "")))
+      .map((file) => {
+        const slug = file.replace(/\.md$/, "")
+        return getPostBySlug(collectionName, slug)
+      })
   )
 }
 
 export default async function handler(req, res) {
-  // const posts = getDocBySlug({ req, res });
-  // res.json(posts);
+  const { collection } = req.query
+  if (!collection) {
+    res.error("Please specify a collection")
+  }
+  const posts = getAllPosts(collection)
+  res.json(posts)
 }

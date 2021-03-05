@@ -2,12 +2,13 @@ import React from "react"
 import PageLayout from "../../components/PageLayout"
 import Content, { title } from "../../../content/sections/blog.mdx"
 import { blogTheme } from "../../theme"
-import { getAllPosts, getCollectionPath } from "../api/posts"
-import Link from "../../components/Link"
+import { getAllPosts } from "../api/posts"
 import config from "../../../site.config"
+import PostCard from "../../components/PostCard"
+import { Grid } from "theme-ui"
 
 export async function getStaticProps({ params }) {
-  const posts = getAllPosts(getCollectionPath(config.collections.blog))
+  const posts = getAllPosts(config.collections.blog)
 
   return {
     props: {
@@ -20,15 +21,15 @@ function BlogIndex({ posts }) {
   return (
     <PageLayout title={title} theme={blogTheme}>
       <Content />
-      <ol>
+      <Grid
+        gap={3}
+        columns={[1, 2, 3]}
+        sx={{ my: 4, mx: [0, 0, -5], px: [0, 0, 2] }}
+      >
         {posts.map((post) => (
-          <li key={post.slug}>
-            <Link href={`${config.collections.blog}/${post.slug}`}>
-              {post.meta.title}
-            </Link>
-          </li>
+          <PostCard {...post} key={post.slug} />
         ))}
-      </ol>
+      </Grid>
     </PageLayout>
   )
 }
