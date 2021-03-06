@@ -2,6 +2,8 @@
 title: Gurken-Karotten-Salat
 date: 2020-06-25T19:16:31.517Z
 coverImage: ../assets/20200522-dsc02822.jpg
+coverImageAuthor: Andrey Okonechnikov
+coverImageLink: http://okonet.ru/
 categories:
   - value: Salate
     label: Salate
@@ -19,6 +21,10 @@ categories:
     label: histaminfrei
   - value: glutenfrei
     label: glutenfrei
+  - value: "schnell "
+    label: "schnell "
+  - value: Mealprep-geeignet
+    label: Mealprep-geeignet
 timeToCook: 15 Minuten
 ---
 
