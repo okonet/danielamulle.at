@@ -2,6 +2,8 @@
 title: Griechisches Spalterbsenpüree aka Fava
 date: 2020-06-25T19:21:15.530Z
 coverImage: ../assets/20200605-dsc02939.jpg
+coverImageAuthor: Andrey Okonechnikov
+coverImageLink: http://okonet.ru/
 categories:
   - value: Aufstriche/Saucen/Dips
     label: Aufstriche/Saucen/Dips
@@ -19,6 +21,8 @@ categories:
     label: laktosefrei
   - value: glutenfrei
     label: glutenfrei
+  - value: Mealprep-geeignet
+    label: Mealprep-geeignet
 timeToCook: 15 Minuten zubereiten + ca. 60 Minuten Kochzeit
 ---
 
