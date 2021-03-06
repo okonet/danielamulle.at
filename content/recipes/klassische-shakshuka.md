@@ -1,9 +1,10 @@
 ---
+coverImage: ../assets/shakshuka.jpg
+.coverImageLink: https://www.danielamulle.at
 title: Klassische Shakshuka
 date: 2020-08-25T11:30:09.988Z
-coverImage: ../assets/shakshuka.jpg
 coverImageAuthor: Daniela Mulle
-.coverImageLink: https://www.danielamulle.at
+coverImageLink: www.danielamulle.at
 categories:
   - value: Hauptspeisen
     label: Hauptspeisen
@@ -17,6 +18,8 @@ categories:
     label: glutenfrei
   - value: gut vorzubereiten
     label: gut vorzubereiten
+  - value: Mealprep-geeignet
+    label: Mealprep-geeignet
 timeToCook: 35 Minuten
 ---
 
