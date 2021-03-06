@@ -21,6 +21,10 @@ categories:
     label: laktosefrei
   - value: glutenfrei
     label: glutenfrei
+  - value: "schnell "
+    label: "schnell "
+  - value: Mealprep-geeignet
+    label: Mealprep-geeignet
 timeToCook: 20 Minuten
 ---
 Diese flott zubereitete vegane Variante eines österreichischen Hausmannskost-Klassikers wird dich geschmacklich verblüffen. Vor allem mit etwas Kürbiskernöl verfeinert. Und dein Körper ist überglücklich wegen dem tollen pflanzliches Eiweiß (Bohnen) und den gesunden Fetten: omega 3 (Walnüsse), omega 6 (Kernöl) und omega 9 (Olivenöl).
