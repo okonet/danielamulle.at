@@ -19,6 +19,8 @@ categories:
     label: laktosefrei
   - value: histaminarm
     label: histaminarm
+  - value: Mealprep-geeignet
+    label: Mealprep-geeignet
 timeToCook: 20 Minuten vorbereiten + ca. 40 Minuten Kochzeit
 ---
 Grünkern ist keine eigene Getreideart, sondern unreif geernteter Dinkel. Er wird durch Trocknen (Darren) haltbar gemacht, und entwickelt dabei seinen typischen Geschmack und die olivgrüne Farbe. In diesem Salat kommen die nussig-würzigen Körner herrlich zur Geltung.
