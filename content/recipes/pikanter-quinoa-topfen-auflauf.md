@@ -2,6 +2,8 @@
 title: Pikanter Quinoa-Topfen-Auflauf
 date: 2020-06-23T13:16:13.431Z
 coverImage: ../assets/DSC03007.jpg
+coverImageAuthor: Andrey Okonechnikov
+coverImageLink: http://okonet.ru/
 categories:
   - value: Hauptspeisen
     label: Hauptspeisen
@@ -13,6 +15,12 @@ categories:
     label: fruktosearm
   - value: histaminarm
     label: histaminarm
+  - value: gut vorzubereiten
+    label: gut vorzubereiten
+  - value: Mealprep-geeignet
+    label: Mealprep-geeignet
+  - value: glutenfrei
+    label: glutenfrei
 timeToCook: 20 Minuten vorbereiten + 40 Minuten backen
 ---
 
