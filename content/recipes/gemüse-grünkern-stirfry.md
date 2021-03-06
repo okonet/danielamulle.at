@@ -17,6 +17,10 @@ categories:
     label: laktosefrei
   - value: histaminarm
     label: histaminarm
+  - value: "schnell "
+    label: "schnell "
+  - value: Mealprep-geeignet
+    label: Mealprep-geeignet
 timeToCook: 30 Minuten
 ---
 Für dieses Gericht kannst du wirklich jegliches Gemüse und auch Getreide verwenden, das dir schmeckt und du gerade zuhause hast. Es ist somit auch eine tolle Möglichkeit zur Resteverwertung.
