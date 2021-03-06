@@ -21,6 +21,10 @@ categories:
     label: histaminfrei
   - value: glutenfrei
     label: glutenfrei
+  - value: "schnell "
+    label: "schnell "
+  - value: Mealprep-geeignet
+    label: Mealprep-geeignet
 timeToCook: 30 Minuten
 ---
 Krautfleckerl sind aus der österreichischen Hausmannskost nicht wegzudenken. Meine eigene Variante ist nicht nur rein optisch & ernährungsphysiologisch kein Vergleich zum Original: Hast du sie erst einmal gekostet, wirst du deine Krautfleckerl nie wieder anders kochen.
