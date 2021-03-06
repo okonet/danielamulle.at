@@ -2,6 +2,8 @@
 title: Bohnen-Pilz-Stew
 date: 2020-06-24T06:40:21.885Z
 coverImage: ../assets/DSC03094.jpg
+coverImageAuthor: Andrey Okonechnikov
+coverImageLink: http://okonet.ru/
 categories:
   - value: Hauptspeisen
     label: Hauptspeisen
@@ -17,6 +19,8 @@ categories:
     label: laktosefrei
   - value: glutenfrei
     label: glutenfrei
+  - value: Mealprep-geeignet
+    label: Mealprep-geeignet
 timeToCook: 20 Minuten vorbereiten + ca. 45 Minuten kochen
 ---
 
