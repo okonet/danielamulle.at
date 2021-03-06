@@ -1,23 +1,4 @@
 ---
-title: Hirsesalat
-date: 2020-06-29T09:49:34.149Z
-coverImage: ../assets/img_2141.jpg
-categories:
-  - value: Salate
-    label: Salate
-  - value: vegetarisch
-    label: vegetarisch
-  - value: gut vorzubereiten
-    label: gut vorzubereiten
-  - value: zum Mitnehmen
-    label: zum Mitnehmen
-  - value: fruktosearm
-    label: fruktosearm
-  - value: laktosefrei
-    label: laktosefrei
-  - value: glutenfrei
-    label: glutenfrei
-timeToCook: 30 Minuten vorbereiten + ca. 1 Stunde durchziehen
 ingredients:
   - "für 4 Personen als Vorspeise:"
   - 130 g Hirse
@@ -33,6 +14,29 @@ ingredients:
   - 2 EL frischer Oregano oder Basilikum
   - Saft 1/2 Zitrone
   - Olivenöl
+title: Hirsesalat
+date: 2020-06-29T09:49:34.149Z
+coverImage: ../assets/img_2141.jpg
+coverImageAuthor: Andrey Okonechnikov
+coverImageLink: http://okonet.ru/
+categories:
+  - value: Salate
+    label: Salate
+  - value: vegetarisch
+    label: vegetarisch
+  - value: gut vorzubereiten
+    label: gut vorzubereiten
+  - value: zum Mitnehmen
+    label: zum Mitnehmen
+  - value: fruktosearm
+    label: fruktosearm
+  - value: laktosefrei
+    label: laktosefrei
+  - value: glutenfrei
+    label: glutenfrei
+  - value: Mealprep-geeignet
+    label: Mealprep-geeignet
+timeToCook: 30 Minuten vorbereiten + ca. 1 Stunde durchziehen
 ---
 
 Dieser Salat eignet sich wunderbar zum Mitnehmen. Er schmeckt toll zum Mittagessen unterwegs, und ist wahrscheinlich das Highlight deiner nächsten Picknicks oder Parties.
