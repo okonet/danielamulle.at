@@ -19,6 +19,10 @@ categories:
     label: laktosefrei
   - value: glutenfrei
     label: glutenfrei
+  - value: "schnell "
+    label: "schnell "
+  - value: Mealprep-geeignet
+    label: Mealprep-geeignet
 timeToCook: 20 Minuten kochen + 10 Minuten zubereiten
 ---
 Dieser köstliche, eiweißreiche Salat funktioniert auch super als leichte Hauptspeise. Die rote Rübe ist eine echte Vitamin- und Mineralstoffbombe: Sie liefert dir B-Vitamine, Vitamin C, Mineralstoffe wie Jod, Kalzium, Kalium, Magnesium, Natrium, Phosphor und sehr viel Eisen. Die intensive Farbe kommt übrigens vom Sekundäre Pflanzenstoff Betanin. Er hilft deinem Körper schädliche Anreicherungen von Sauerstoff (freie Radikale) abzufangen und Entzündungen zu bekämpfen.
