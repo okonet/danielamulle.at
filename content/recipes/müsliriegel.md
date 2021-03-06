@@ -2,6 +2,8 @@
 title: Müsliriegel
 date: 2020-07-21T12:24:55.984Z
 coverImage: ../assets/img_1945.jpg
+coverImageAuthor: Andrey Okonechnikov
+coverImageLink: http://okonet.ru/
 categories:
   - value: Snacks
     label: Snacks
