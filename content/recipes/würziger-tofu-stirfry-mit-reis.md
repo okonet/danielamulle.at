@@ -2,6 +2,8 @@
 title: Würziger Tofu-Stirfry mit Reis
 date: 2020-06-21T14:32:10.571Z
 coverImage: ../assets/20200512-dsc02747.jpg
+coverImageAuthor: Andrey Okonechnikov
+coverImageLink: http://okonet.ru/
 categories:
   - value: Hauptspeisen
     label: Hauptspeisen
@@ -15,6 +17,10 @@ categories:
     label: histaminfrei
   - value: glutenfrei
     label: glutenfrei
+  - value: gut vorzubereiten
+    label: gut vorzubereiten
+  - value: Mealprep-geeignet
+    label: Mealprep-geeignet
 timeToCook: 45 Minuten
 ---
 
