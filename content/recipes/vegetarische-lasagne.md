@@ -2,6 +2,8 @@
 title: Vegetarische Lasagne
 date: 2020-08-03T15:53:39.609Z
 coverImage: ../assets/img_6225.jpeg
+coverImageAuthor: Andrey Okonechnikov
+coverImageLink: http://okonet.ru/
 categories:
   - value: Hauptspeisen
     label: Hauptspeisen
@@ -17,6 +19,8 @@ categories:
     label: fruktosefrei
   - value: laktosearm
     label: laktosearm
+  - value: Mealprep-geeignet
+    label: Mealprep-geeignet
 timeToCook: 40 Minuten vorbereiten + 40 Minuten backen
 ---
 
