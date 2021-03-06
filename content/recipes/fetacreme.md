@@ -30,12 +30,12 @@ categories:
 timeToCook: 15 Minuten
 ---
 
-Ob als Sauce zu Gegrilltem, als Dip, Aufstrich, zum Aufpeppen von Suppen oder Salaten und sogar als Pastasauce: Eine sehr feine Rezept-Idee von [Yotam Ottolenghi](https://ottolenghi.co.uk/).
+Ob als Sauce zu Gegrilltem, als Dip, Aufstrich, zum Aufpeppen von Suppen oder Salaten und mit etwas frischen Tomaten verfeinert sogar als Pastasauce: Eine sehr feine Rezept-Idee von [Yotam Ottolenghi](https://ottolenghi.co.uk/).
 
 <Ingredients>
 
 - 100 g Fetakäse
-- 60 g Sauerrahm
+- 60 g Sauerrahm oder Sojajoghurt
 - 15 g frischer Koriander
 - 15 g frische Minze
 - Salz und Pfeffer
@@ -47,3 +47,6 @@ Ob als Sauce zu Gegrilltem, als Dip, Aufstrich, zum Aufpeppen von Suppen oder Sa
 2. Mit Salz und Pfeffer abschmecken.
 
 </Preparation>
+
+Du kannst die Kräuter nach deinem Geschmack variieren: auch Schnittlauch mit Petersilie oder Basilikum sind eine tolle Kombination.
+
