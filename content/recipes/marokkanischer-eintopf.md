@@ -19,6 +19,8 @@ categories:
     label: laktosefrei
   - value: glutenfrei
     label: glutenfrei
+  - value: Mealprep-geeignet
+    label: Mealprep-geeignet
 timeToCook: 20 Minuten vorbereiten + 45 Minuten kochen.
 ---
 Dieses Rezept ist herzhaft & wärmend - ein richtiges Wohlfühlessen für kalte Herbst- und Wintertage: Tolles pflanzliches Eiweiß aus Kichererbsen, saisonales Gemüse, aromatische Süße der Rosinen und ein Hauch Exotik durch die wärmenden Gewürze. Meine Familie hat dieses unkomplizierte Essen sofort ins Herz geschlossen.
