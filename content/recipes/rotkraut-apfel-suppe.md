@@ -19,6 +19,8 @@ categories:
     label: glutenfrei
   - value: histaminarm
     label: histaminarm
+  - value: Mealprep-geeignet
+    label: Mealprep-geeignet
 timeToCook: 15 Minuten vorbereiten + 30 Minuten köcheln
 ---
 Diese fruchtige Suppe hast du im Handumdrehen fertig, und sie ist nicht nur geschmacklich sondern auch optisch ein Hit. Außerdem ist sie ein toller Booster für dein Immunsystem, denn Kraut ist ein Vitamin-C-Wunder: Normalerweise wird Vitamin C beim Kochen zerstört, Kraut enthält den Stoff Ascorbigen, der erst durch's Kochen in Vitamin C (Ascorbinsäure) umgewandelt wird.
