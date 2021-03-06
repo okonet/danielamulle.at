@@ -1,7 +1,22 @@
 ---
+ingredients:
+  - "für 4 Personen als Vorspeise:"
+  - 130 g Buchweizen
+  - mindestens 1/2 Bund Petersilie (60 g)
+  - 300 g Tomaten
+  - 1 kleine rote Zwiebel
+  - Saft einer Zitrone
+  - 10 g Minzblätter
+  - ca. 100 g Fetakäse
+  - je 15 ml Olivenöl und Walnussöl
+  - Salz und Pfeffer
+  - "optional: gemörserte Mischung aus 2 Gewürznelken, 1 TL Kreuzkümmel, 1/2 TL
+    Koriandersamen, Prise Muskatnuss"
 title: Buchweizen-Tabouleh
 date: 2020-06-29T09:42:02.549Z
 coverImage: ../assets/20200603-DSC02918.jpg
+coverImageAuthor: Andrey Okonechnikov
+coverImageLink: http://okonet.ru/
 categories:
   - value: Salate
     label: Salate
@@ -17,20 +32,11 @@ categories:
     label: laktosefrei
   - value: glutenfrei
     label: glutenfrei
+  - value: "schnell "
+    label: "schnell "
+  - value: Mealprep-geeignet
+    label: Mealprep-geeignet
 timeToCook: 30 Minuten vorbereiten + ca. 1 Stunde durchziehen
-ingredients:
-  - "für 4 Personen als Vorspeise:"
-  - 130 g Buchweizen
-  - mindestens 1/2 Bund Petersilie (60 g)
-  - 300 g Tomaten
-  - 1 kleine rote Zwiebel
-  - Saft einer Zitrone
-  - 10 g Minzblätter
-  - ca. 100 g Fetakäse
-  - je 15 ml Olivenöl und Walnussöl
-  - Salz und Pfeffer
-  - >-
-    optional: gemörserte Mischung aus 2 Gewürznelken, 1 TL Kreuzkümmel, 1/2 TL Koriandersamen, Prise Muskatnuss
 ---
 
 Tabouleh wird im Libanon und Syrien gerne als Beilage zu Fisch- oder Fleischgerichten oder als Vorspeise gegessen.
