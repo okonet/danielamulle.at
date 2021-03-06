@@ -2,6 +2,8 @@
 title: Zucchini-Basilikum-Pasta
 date: 2020-07-28T06:17:54.368Z
 coverImage: ../assets/zucchini-pasta.jpg
+coverImageAuthor: Andrey Okonechnikov
+coverImageLink: http://okonet.ru/
 categories:
   - value: Hauptspeisen
     label: Hauptspeisen
@@ -17,6 +19,10 @@ categories:
     label: histaminfrei
   - value: glutenfrei
     label: glutenfrei
+  - value: Mealprep-geeignet
+    label: Mealprep-geeignet
+  - value: "schnell "
+    label: "schnell "
 timeToCook: 30 Minuten
 ---
 
