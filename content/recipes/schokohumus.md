@@ -21,6 +21,10 @@ categories:
     label: laktosefrei
   - value: fruktosefrei
     label: fruktosefrei
+  - value: "schnell "
+    label: "schnell "
+  - value: Mealprep-geeignet
+    label: Mealprep-geeignet
 timeToCook: 15 Minuten einweichen + 10 Minuten zubereiten
 ---
 
