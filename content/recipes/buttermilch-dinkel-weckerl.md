@@ -15,6 +15,8 @@ categories:
     label: gut vorzubereiten
   - value: zum Mitnehmen
     label: zum Mitnehmen
+  - value: Mealprep-geeignet
+    label: Mealprep-geeignet
 timeToCook: 10 Minuten vorbereiten, ca. 40 Minuten aufgehen + 20 Minuten backen
 ---
 Dieses einfache Rezept habe ich schon seit vielen Jahren in meinem Fundus. Je nachdem welche Kerne, Nüsse, Samen oder Flocken du verwendest, kannst du die Weckerl super nach deinem Geschmack variieren. Wenn du lieber einen Brotlaib formen möchtest dann backe dein Brot für ca. 40 Minuten.
