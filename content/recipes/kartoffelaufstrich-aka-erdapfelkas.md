@@ -2,6 +2,8 @@
 title: Kartoffelaufstrich aka Erdapfelkas
 date: 2020-06-21T17:38:26.402Z
 coverImage: ../assets/DSC03077.jpg
+coverImageAuthor: Andrey Okonechnikov
+coverImageLink: http://okonet.ru/
 categories:
   - value: Aufstriche/Saucen/Dips
     label: Aufstriche/Saucen/Dips
@@ -19,6 +21,8 @@ categories:
     label: histaminfrei
   - value: glutenfrei
     label: glutenfrei
+  - value: Mealprep-geeignet
+    label: Mealprep-geeignet
 timeToCook: 30 Minuten kochen + 20 Minuten zubereiten
 ---
 
