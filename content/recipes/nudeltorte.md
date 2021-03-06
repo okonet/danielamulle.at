@@ -1,9 +1,10 @@
 ---
+coverImage: ../assets/DSC03518.jpg
+.coverImageLink: https://www.danielamulle.at
 title: Nudeltorte
 date: 2020-08-27T13:20:19.439Z
-coverImage: ../assets/DSC03518.jpg
 coverImageAuthor: Daniela Mulle
-.coverImageLink: https://www.danielamulle.at
+coverImageLink: www.danielamulle.at
 categories:
   - value: Hauptspeisen
     label: Hauptspeisen
@@ -21,6 +22,8 @@ categories:
     label: histaminfrei
   - value: glutenfrei
     label: glutenfrei
+  - value: Mealprep-geeignet
+    label: Mealprep-geeignet
 timeToCook: 30 Minuten vorbereiten + 40 Minuten backen
 ---
 
