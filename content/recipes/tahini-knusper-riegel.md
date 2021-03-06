@@ -21,6 +21,8 @@ categories:
     label: histaminfrei
   - value: glutenfrei
     label: glutenfrei
+  - value: Mealprep-geeignet
+    label: Mealprep-geeignet
 timeToCook: 15 Minuten vorbereiten + 20 Minuten backen
 ---
 Knackig-knusprig, süss & köstlich, diese supereinfache Nascherei. Und dein Körper freut sich über seine Extraportion Ballaststoffe, Eiweiß, Mikronährstoffe & gesunde Fette.
