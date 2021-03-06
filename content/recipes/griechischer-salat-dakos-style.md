@@ -1,7 +1,20 @@
 ---
+ingredients:
+  - "für 4 Personen:"
+  - 1 Salatgurke
+  - ca. 200 g Rispentomaten
+  - 150 g Fetakäse
+  - 1 kleine rote Zwiebel
+  - ca. 100 g schwarze Oliven
+  - 1 Scheibe Südtiroler Schüttelbrot, ca. 100 g
+  - Olivenöl, Balsamicoessig
+  - Salz, Pfeffer
+  - frisches Basilikum
 title: Griechischer Salat dakos-style
 date: 2020-06-29T09:37:45.650Z
 coverImage: ../assets/DSC03509.jpg
+coverImageAuthor: Andrey Okonechnikov
+coverImageLink: http://okonet.ru/
 categories:
   - value: Salate
     label: Salate
@@ -15,18 +28,11 @@ categories:
     label: fruktosefrei
   - value: laktosefrei
     label: laktosefrei
+  - value: "schnell "
+    label: "schnell "
+  - value: Mealprep-geeignet
+    label: Mealprep-geeignet
 timeToCook: 20 Minuten
-ingredients:
-  - "für 4 Personen:"
-  - 1 Salatgurke
-  - ca. 200 g Rispentomaten
-  - 150 g Fetakäse
-  - 1 kleine rote Zwiebel
-  - ca. 100 g schwarze Oliven
-  - "1 Scheibe Südtiroler Schüttelbrot, ca. 100 g"
-  - "Olivenöl, Balsamicoessig"
-  - "Salz, Pfeffer"
-  - frisches Basilikum
 ---
 
 Dakos ist ein Gericht aus Kreta: Tomaten, Kräuter & Feta werden dabei auf Paximadi, ein zwiebackähnliches Gersternbrot, serviert.
