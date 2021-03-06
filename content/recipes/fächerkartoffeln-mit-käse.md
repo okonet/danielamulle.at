@@ -2,6 +2,8 @@
 title: Fächerkartoffeln mit Käse
 date: 2020-06-24T06:33:03.042Z
 coverImage: ../assets/DSC03063.jpg
+coverImageAuthor: Andrey Okonechnikov
+coverImageLink: http://okonet.ru/
 categories:
   - value: Hauptspeisen
     label: Hauptspeisen
@@ -15,6 +17,8 @@ categories:
     label: laktosefrei
   - value: histaminarm
     label: histaminarm
+  - value: Mealprep-geeignet
+    label: Mealprep-geeignet
 timeToCook: 15 Minuten vorbereiten + ca. 40 Minuten backen
 ---
 
