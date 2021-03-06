@@ -2,6 +2,8 @@
 title: Mungobohnen mit Karotten
 date: 2020-06-25T19:00:26.816Z
 coverImage: ../assets/20200605-dsc02936.jpg
+coverImageAuthor: Andrey Okonechnikov
+coverImageLink: http://okonet.ru/
 categories:
   - value: Salate
     label: Salate
@@ -19,6 +21,8 @@ categories:
     label: laktosefrei
   - value: glutenfrei
     label: glutenfrei
+  - value: Mealprep-geeignet
+    label: Mealprep-geeignet
 timeToCook: 15 Minuten zubereiten + ca. 30 Minuten Koch- und Backzeit
 ---
 
