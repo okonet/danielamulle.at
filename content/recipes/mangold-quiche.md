@@ -2,6 +2,8 @@
 title: Mangold-Quiche
 date: 2020-06-21T15:04:03.968Z
 coverImage: ../assets/img_6241.jpeg
+coverImageAuthor: Andrey Okonechnikov
+coverImageLink: http://okonet.ru/
 categories:
   - value: Hauptspeisen
     label: Hauptspeisen
@@ -15,6 +17,8 @@ categories:
     label: laktosearm
   - value: histaminfrei
     label: histaminfrei
+  - value: Mealprep-geeignet
+    label: Mealprep-geeignet
 timeToCook: 30 Minuten vorbereiten + ca. 40 Minuten backen
 ---
 
