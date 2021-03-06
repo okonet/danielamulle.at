@@ -2,6 +2,8 @@
 title: Fiesta Tamale Pie
 date: 2020-06-16T15:19:11.375Z
 coverImage: ../assets/DSC03026.jpg
+coverImageAuthor: Andrey Okonechnikov
+coverImageLink: http://okonet.ru/
 categories:
   - value: Hauptspeisen
     label: Hauptspeisen
@@ -17,6 +19,8 @@ categories:
     label: glutenfrei
   - value: fruktosearm
     label: fruktosearm
+  - value: Mealprep-geeignet
+    label: Mealprep-geeignet
 timeToCook: 30 Minuten vorbereiten + 45 Minuten backen
 ---
 
