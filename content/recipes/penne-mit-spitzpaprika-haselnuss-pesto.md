@@ -2,6 +2,8 @@
 title: Penne mit Spitzpaprika-Haselnuss-Pesto
 date: 2020-07-10T11:44:05.901Z
 coverImage: ../assets/20200513-DSC02756.jpg
+coverImageAuthor: Andrey Okonechnikov
+coverImageLink: http://okonet.ru/
 categories:
   - value: Hauptspeisen
     label: Hauptspeisen
@@ -17,6 +19,8 @@ categories:
     label: laktosefrei
   - value: glutenfrei
     label: glutenfrei
+  - value: Mealprep-geeignet
+    label: Mealprep-geeignet
 timeToCook: 15 Minuten vorbereiten + ca. 20 Minuten rösten
 ---
 
