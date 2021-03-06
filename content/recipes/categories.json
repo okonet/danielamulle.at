@@ -75,6 +75,10 @@
     {
       "id": "glutenfrei",
       "isTag": true
+    },
+    {
+      "isTag": true,
+      "id": "schnell "
     }
   ]
 }
