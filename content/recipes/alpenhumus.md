@@ -1,7 +1,18 @@
 ---
+ingredients:
+  - "für 6 Personen als Snack:"
+  - 400 g weiße Bohnen (Dose)
+  - 2 EL Zitronensaft
+  - 3 EL Kürbiskernöl
+  - 3 EL Kürbiskerne
+  - 1 Knoblauchzehe
+  - 1 TL gemahlener Kümmel
+  - je 1/2 TL Salz und Pfeffer
 title: Alpenhumus
 date: 2020-06-29T09:23:31.562Z
 coverImage: ../assets/DSC03444.jpg
+coverImageAuthor: Andrey Okonechnikov
+coverImageLink: www.okonet.ru
 categories:
   - value: Aufstriche/Saucen/Dips
     label: Aufstriche/Saucen/Dips
@@ -19,16 +30,9 @@ categories:
     label: laktosefrei
   - value: glutenfrei
     label: glutenfrei
+  - value: Mealprep-geeignet
+    label: Mealprep-geeignet
 timeToCook: 10 Minuten + 1 Stunde durchziehen im Kühlschrank
-ingredients:
-  - "für 6 Personen als Snack:"
-  - 400 g weiße Bohnen (Dose)
-  - 2 EL Zitronensaft
-  - 3 EL Kürbiskernöl
-  - 3 EL Kürbiskerne
-  - 1 Knoblauchzehe
-  - 1 TL gemahlener Kümmel
-  - je 1/2 TL Salz und Pfeffer
 ---
 
 Der Alpenhumus ist ein flott gemixter, eiweißreicher Aufstrich, der dich gerne auf die nächste Party, zum Picknick, Badeausflug oder auch ins Büro begleitet.
