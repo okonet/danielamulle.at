@@ -2,6 +2,8 @@
 title: Würzige Kichererbsen-Bulgur-Suppe mit Fetacreme
 date: 2020-06-21T17:29:36.015Z
 coverImage: ../assets/20200515-dsc02766.jpg
+coverImageAuthor: Andrey Okonechnikov
+coverImageLink: http://okonet.ru/
 categories:
   - value: Suppen
     label: Suppen
@@ -17,6 +19,8 @@ categories:
     label: laktosefrei
   - value: fruktosearm
     label: fruktosearm
+  - value: Mealprep-geeignet
+    label: Mealprep-geeignet
 timeToCook: 30 Minuten vorbereiten + 30 Minuten kochen
 ---
 
