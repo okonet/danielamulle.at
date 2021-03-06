@@ -2,6 +2,8 @@
 title: Gefüllte Zucchini oriental style
 date: 2020-07-11T12:43:39.870Z
 coverImage: ../assets/20200529-DSC02884.jpg
+coverImageAuthor: Andrey Okonechnikov
+coverImageLink: http://okonet.ru/
 categories:
   - value: Hauptspeisen
     label: Hauptspeisen
@@ -17,6 +19,8 @@ categories:
     label: histaminfrei
   - value: glutenfrei
     label: glutenfrei
+  - value: Mealprep-geeignet
+    label: Mealprep-geeignet
 timeToCook: 30 Minuten vorbereiten + 50 Min backen
 ---
 
