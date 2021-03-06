@@ -6,7 +6,7 @@ import ProjectsPostPage from "../../components/ProjectsPostPage"
 import ResourcePostPage from "../../components/ResourcePostPage"
 
 function PostPage(props) {
-  switch (props.pageContext.collection) {
+  switch (props.collection) {
     case "posts": {
       return <BlogPostPage {...props} />
     }

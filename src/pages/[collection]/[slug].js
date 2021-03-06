@@ -3,9 +3,8 @@ import { jsx } from "theme-ui"
 import React from "react"
 import renderToString from "next-mdx-remote/render-to-string"
 import { getAllPosts, getPostBySlug } from "../api/posts"
-import config from "../../../site.config"
 import components from "../../gatsby-plugin-theme-ui/components"
-import RecipesPost from "../../components/RecipesPost"
+import PostPage from "../../gatsby-theme-content-collections/components/PostPage"
 
 export async function getStaticProps({ params }) {
   const { collection, slug } = params
@@ -20,8 +19,11 @@ export async function getStaticProps({ params }) {
   const mdxSource = await renderToString(post.content, { components })
   return {
     props: {
-      ...post,
-      body: mdxSource,
+      collection,
+      post: {
+        ...post,
+        body: mdxSource,
+      },
     },
   }
 }
@@ -40,8 +42,8 @@ export async function getStaticPaths({ params }) {
   }
 }
 
-function RecipesPostPage(props) {
-  return <RecipesPost data={{ post: props }} />
+function SinglePostPage(props) {
+  return <PostPage data={props} />
 }
 
-export default RecipesPostPage
+export default SinglePostPage

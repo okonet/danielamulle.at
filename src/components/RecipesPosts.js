@@ -1,5 +1,5 @@
 /* @jsx jsx */
-import React, { useCallback } from "react"
+import * as React from "react"
 import { Flex, Input, jsx, Text } from "theme-ui"
 import { useFlexSearch } from "react-use-flexsearch"
 import groupBy from "lodash.groupby"
@@ -10,34 +10,45 @@ import Tag from "./Tag"
 import Content, { title } from "../../content/sections/recipes.mdx"
 import RecipesList from "./RecipesList"
 import PageLayout from "./PageLayout"
+import { useRouter } from "next/router"
 
-const RecipesPosts = ({ data, location, navigate }) => {
-  const { recipesCategories, recipes, localSearchRecipes } = data
-  const searchParams = new URLSearchParams(location.search)
-  const query = searchParams.get("q") || ""
-  const { index, store } = localSearchRecipes
-  const results = useFlexSearch(query, index, JSON.parse(store))
-  const resIds = results.map((res) => res.id)
-  const tags = recipesCategories.nodes
-  const filteredRecipes = query
-    ? recipes.nodes.filter((recipe) => resIds.includes(recipe.id))
-    : recipes.nodes
+const RecipesPosts = ({ data }) => {
+  const router = useRouter()
+  const { query } = router
+  const { q: searchQuery } = query
+  const {
+    collection,
+    categories = [],
+    posts: recipes,
+    localSearchRecipes = {},
+  } = data
+
+  // const { index, store } = localSearchRecipes
+  // const results = useFlexSearch(query, index, JSON.parse(store))
+  const resIds = [] //results.map((res) => res.id)
+  const tags = categories
+  const filteredRecipes = searchQuery
+    ? recipes.filter((recipe) => resIds.includes(recipe.id))
+    : recipes
   const groupedRecipes = groupBy(
     filteredRecipes,
-    (node) => node.categories[0].id
+    (post) => post.categories[0].id
   )
 
-  const handleChange = useCallback((event) => {
-    const searchQuery = event.target.value
-    searchParams.set("q", searchQuery)
-    const nextUrl =
-      searchQuery !== ""
-        ? `${location.pathname}?${searchParams.toString()}`
-        : location.pathname
-    navigate(nextUrl, {
-      replace: true,
-    })
-  })
+  const handleChange = (event) => {
+    router.replace(
+      {
+        query: {
+          collection,
+          q: event.target.value,
+        },
+      },
+      undefined,
+      {
+        scroll: false,
+      }
+    )
+  }
 
   return (
     <PageLayout theme={recipesTheme} title={title}>
@@ -52,7 +63,7 @@ const RecipesPosts = ({ data, location, navigate }) => {
       >
         <Input
           type="search"
-          value={query}
+          value={searchQuery}
           onChange={handleChange}
           placeholder="Filter nach Zutaten..."
           sx={{

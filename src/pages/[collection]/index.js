@@ -7,11 +7,15 @@ import RecipesPosts from "../../components/RecipesPosts"
 export async function getStaticProps({ params }) {
   const { collection } = params
   const posts = getAllPosts(collection)
+  const categories = [] // TODO get categoriees from categories.json
+
+  // TODO: Should grouping happening here?
 
   return {
     props: {
       collection,
       posts,
+      categories,
     },
   }
 }
@@ -36,16 +40,17 @@ export async function getStaticPaths() {
   }
 }
 
-function RecipesIndex({ collection, ...props }) {
+function RecipesIndex(props) {
+  const { collection } = props
   switch (collection) {
     case "posts": {
-      return <BlogPosts {...props} />
+      return <BlogPosts data={props} />
     }
     case "projects": {
-      return <ProjectsPosts {...props} />
+      return <ProjectsPosts data={props} />
     }
     case "recipes": {
-      return <RecipesPosts {...props} />
+      return <RecipesPosts data={props} />
     }
     // case "testimonials": {
     //   return <TestimonialsPosts {...props} />
