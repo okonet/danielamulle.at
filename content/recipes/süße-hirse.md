@@ -2,6 +2,8 @@
 title: Süße Hirse
 date: 2020-06-24T06:36:21.198Z
 coverImage: ../assets/DSC03082.jpg
+coverImageAuthor: Andrey Okonechnikov
+coverImageLink: http://okonet.ru/
 categories:
   - value: Snacks
     label: Snacks
@@ -19,6 +21,8 @@ categories:
     label: laktosefrei
   - value: glutenfrei
     label: glutenfrei
+  - value: Mealprep-geeignet
+    label: Mealprep-geeignet
 timeToCook: 10 Minuten vorbereiten + ca. 30 Minuten kochen
 ---
 
