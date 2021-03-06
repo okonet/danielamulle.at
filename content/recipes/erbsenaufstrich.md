@@ -21,6 +21,10 @@ categories:
     label: laktosefrei
   - value: glutenfrei
     label: glutenfrei
+  - value: "schnell "
+    label: "schnell "
+  - value: Mealprep-geeignet
+    label: Mealprep-geeignet
 timeToCook: 15 Minuten
 ---
 Dieser Austrich ist nicht nur mega lecker, sondern auch eine kleine Eiweißbombe. Außerdem kannst du ihn superflott zubereiten und ganz wunderbar variieren: 
