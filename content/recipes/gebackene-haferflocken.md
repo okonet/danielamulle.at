@@ -25,6 +25,10 @@ categories:
     label: glutenfrei
   - value: vegan
     label: vegan
+  - value: "schnell "
+    label: "schnell "
+  - value: Mealprep-geeignet
+    label: Mealprep-geeignet
 timeToCook: 10 Minuten vorbereiten + 20 Minuten backen
 ---
 
