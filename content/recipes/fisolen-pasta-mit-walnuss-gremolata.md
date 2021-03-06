@@ -19,6 +19,10 @@ categories:
     label: glutenfrei
   - value: zum Mitnehmen
     label: zum Mitnehmen
+  - value: Mealprep-geeignet
+    label: Mealprep-geeignet
+  - value: "schnell "
+    label: "schnell "
 timeToCook: 30 Minuten
 ---
 In diesem flotten Pastagericht habe ich die klassiche lombardische Kräuter-Würzmischung "Gremolata" etwas abgewandelt, und dadurch mit omega-3-Fetten gepimt - das geht auch ganz ohne Fisch.
