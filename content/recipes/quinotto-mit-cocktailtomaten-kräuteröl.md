@@ -2,6 +2,8 @@
 title: Quinotto mit Cocktailtomaten & Kräuteröl
 date: 2020-07-06T12:28:25.327Z
 coverImage: ../assets/20200514-DSC02759.jpg
+coverImageAuthor: Andrey Okonechnikov
+coverImageLink: http://okonet.ru/
 categories:
   - value: Hauptspeisen
     label: Hauptspeisen
