@@ -23,6 +23,8 @@ categories:
     label: glutenfrei
   - value: fruktosefrei
     label: fruktosefrei
+  - value: Mealprep-geeignet
+    label: Mealprep-geeignet
 timeToCook: 5 Minuten vorbereiten + ca. 2 Stunden köcheln
 ---
 Hier serviere ich dir meine persönliche Variante des traditionell chinesischen Reisbreis. In China wird Congee nur mit Wasser gekocht, und sowohl süß als auch pikant zum Frühstück gegessen.
