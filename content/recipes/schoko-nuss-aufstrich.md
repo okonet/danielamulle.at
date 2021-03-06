@@ -19,6 +19,10 @@ categories:
     label: laktosefrei
   - value: glutenfrei
     label: glutenfrei
+  - value: "schnell "
+    label: "schnell "
+  - value: Mealprep-geeignet
+    label: Mealprep-geeignet
 timeToCook: 20 Minuten
 ---
 Dieser Aufstrich schmeckt köstlich, und kommt dabei ohne jeglichen Industriezucker aus, ist dafür aber ballaststoffreich. Ich verwende ganz bewusst Rapsöl und Walnüsse, um noch eine Extraportion tolle omega-3-Fette einzubauen. Mit Erdnussmus bekommst du mehr Eiweiß in deinen Aufstrich, es hat aber einen intensiveren Eigengeschmack. Cashew- oder Mandelmus schmeckt relativ neutral. 
