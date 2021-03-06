@@ -1,9 +1,9 @@
 ---
 title: Blitzschnelle Ofenbrote
 date: 2021-02-27T05:45:06.571Z
-coverImage: ../assets/jude-infantini-ryoqbtcgp1c-unsplash.jpg
-coverImageAuthor: Jude Infantini
-coverImageLink: https://unsplash.com/@easy_emu
+coverImage: ../assets/sean-bernstein-2fny7z0wmr4-unsplash.jpg
+coverImageAuthor: Sean Bernstein
+coverImageLink: https://unsplash.com/@pixldlife
 categories:
   - value: Snacks
     label: Snacks
