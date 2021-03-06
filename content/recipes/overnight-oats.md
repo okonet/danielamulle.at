@@ -1,7 +1,18 @@
 ---
+ingredients:
+  - "für 2 Personen:"
+  - 100 g Haferflocken (bei Bedarf glutenfrei)
+  - 2 EL geschroteter Leinsamen
+  - 100 ml (Soja)joghurt natur
+  - 200 ml Pflanzendrink (oder Kuhmilch)
+  - 2-3 Handvoll Beeren, frisch oder tiefgekühlt
+  - 1 TL Zimt
+  - eventuell 2 EL brauner Zucker (bei Bedarf Reissirup)
 title: Overnight Oats
 date: 2020-06-29T09:15:42.944Z
 coverImage: ../assets/img_2180.jpg
+coverImageAuthor: Andrey Okonechnikov
+coverImageLink: http://okonet.ru/
 categories:
   - value: Snacks
     label: Snacks
@@ -23,16 +34,11 @@ categories:
     label: laktosefrei
   - value: glutenfrei
     label: glutenfrei
+  - value: "schnell "
+    label: "schnell "
+  - value: Mealprep-geeignet
+    label: Mealprep-geeignet
 timeToCook: "10 Minuten vorbereiten + über Nacht durchziehen "
-ingredients:
-  - "für 2 Personen:"
-  - 100 g Haferflocken (bei Bedarf glutenfrei)
-  - 2 EL geschroteter Leinsamen
-  - 100 ml (Soja)joghurt natur
-  - 200 ml Pflanzendrink (oder Kuhmilch)
-  - "2-3 Handvoll Beeren, frisch oder tiefgekühlt"
-  - 1 TL Zimt
-  - eventuell 2 EL brauner Zucker (bei Bedarf Reissirup)
 ---
 
 Die Overnight Oats sind wirklich superschnell zubereitet. Sie eignen sich sehr gut für's Frühstück, und sind und auch ein toller Snack für unterwegs.
