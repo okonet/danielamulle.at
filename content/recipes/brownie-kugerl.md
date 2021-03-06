@@ -2,9 +2,11 @@
 title: Brownie-Kugerl
 date: 2020-07-21T12:14:45.497Z
 coverImage: ../assets/img_2020.jpg
+coverImageAuthor: Andrey Okonechnikov
+coverImageLink: http://okonet.ru/
 categories:
-  - value: "Kuchen, Kekserl & Co"
-    label: "Kuchen, Kekserl & Co"
+  - value: Kuchen, Kekserl & Co
+    label: Kuchen, Kekserl & Co
   - value: vegan
     label: vegan
   - value: gut vorzubereiten
@@ -19,6 +21,8 @@ categories:
     label: glutenfrei
   - value: histaminarm
     label: histaminarm
+  - value: Mealprep-geeignet
+    label: Mealprep-geeignet
 timeToCook: 30 Minuten zubereiten + einige Stunden rasten lassen
 ---
 
