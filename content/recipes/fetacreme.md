@@ -2,6 +2,8 @@
 title: Fetacreme
 date: 2020-06-23T12:59:17.409Z
 coverImage: ../assets/20200515-dsc02768.jpg
+coverImageAuthor: Andrey Okonechnikov
+coverImageLink: http://okonet.ru/
 categories:
   - value: Aufstriche/Saucen/Dips
     label: Aufstriche/Saucen/Dips
@@ -21,10 +23,14 @@ categories:
     label: histaminfrei
   - value: glutenfrei
     label: glutenfrei
+  - value: "schnell "
+    label: "schnell "
+  - value: Mealprep-geeignet
+    label: Mealprep-geeignet
 timeToCook: 15 Minuten
 ---
 
-Ob als Sauce zu Gegrilltem, als Dip, Aufstrich oder zum Aufpeppen von Suppen oder Salaten: Eine sehr feine Rezept-Idee von [Yotam Ottolenghi](https://ottolenghi.co.uk/).
+Ob als Sauce zu Gegrilltem, als Dip, Aufstrich, zum Aufpeppen von Suppen oder Salaten und sogar als Pastasauce: Eine sehr feine Rezept-Idee von [Yotam Ottolenghi](https://ottolenghi.co.uk/).
 
 <Ingredients>
 
