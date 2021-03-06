@@ -23,6 +23,8 @@ categories:
     label: glutenfrei
   - value: histaminfrei
     label: histaminfrei
+  - value: Mealprep-geeignet
+    label: Mealprep-geeignet
 timeToCook: 35 Minuten
 ---
 Diese cremige Suppe schmeckt köstlich, ganz besonders an einem kühlen Herbst- oder Wintertag. Eine komplette, gesunde Mahlzeit inklusive einem Hauch Exotik.
