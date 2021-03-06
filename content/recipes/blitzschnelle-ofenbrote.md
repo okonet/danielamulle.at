@@ -25,6 +25,10 @@ categories:
     label: glutenfrei
   - value: histaminfrei
     label: histaminfrei
+  - value: "schnell "
+    label: "schnell "
+  - value: Mealprep-geeignet
+    label: Mealprep-geeignet
 timeToCook: 10 Minuten + 15 Minuten backen
 ---
 Die blitzschnellen Ofenbrote sind nicht nur schnell gemacht, sondern auch eine ideale Resteverwertung für übrige Aufstriche, Käse, Gemüse etc. Ich verwende als Aufstrich-Basis gerne Humus für eine Extraportion Eiweiß, aber du kannst die Zutaten nach Lust & Laune variieren.
