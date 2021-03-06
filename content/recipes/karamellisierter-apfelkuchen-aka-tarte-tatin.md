@@ -2,9 +2,11 @@
 title: Karamellisierter Apfelkuchen aka Tarte Tatin
 date: 2020-06-25T18:46:29.969Z
 coverImage: ../assets/DSC03305.jpg
+coverImageAuthor: Andrey Okonechnikov
+coverImageLink: http://okonet.ru/
 categories:
-  - value: "Kuchen, Kekserl & Co"
-    label: "Kuchen, Kekserl & Co"
+  - value: Kuchen, Kekserl & Co
+    label: Kuchen, Kekserl & Co
   - value: vegan
     label: vegan
   - value: gut vorzubereiten
@@ -15,6 +17,8 @@ categories:
     label: laktosefrei
   - value: histaminfrei
     label: histaminfrei
+  - value: Mealprep-geeignet
+    label: Mealprep-geeignet
 timeToCook: 30 Minuten vorbereiten + ca. 30 Minuten backen
 ---
 
