@@ -17,6 +17,8 @@ categories:
     label: laktosefrei
   - value: glutenfrei
     label: glutenfrei
+  - value: Mealprep-geeignet
+    label: Mealprep-geeignet
 timeToCook: 20 Minuten vorbereiten + 35 Minuten backen
 ---
 Ich liebe diese einzigartige Kombination aus süßer Karotte & Pastinake mit würzigem Blauschimmelkäse, dazu frisches Dinkelvollkorn-Sauerteigbrot. Es ist wirklich ein Gaumenschmaus für die ganze Familie. Statt nur Schlagobers zu nehmen verwende ich immer zur Hälfte Soja creme cuisine, damit das Gericht etwas leichter wird.
