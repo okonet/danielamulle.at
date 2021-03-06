@@ -7,6 +7,16 @@ coverImageLink: https://okonet.ru
 categories:
   - value: Hauptspeisen
     label: Hauptspeisen
+  - value: vegetarisch
+    label: vegetarisch
+  - value: gut vorzubereiten
+    label: gut vorzubereiten
+  - value: zum Mitnehmen
+    label: zum Mitnehmen
+  - value: fruktosefrei
+    label: fruktosefrei
+  - value: histaminfrei
+    label: histaminfrei
 timeToCook: 40 Minuten vorbereiten + ca. 40 Minuten backen
 ---
 
