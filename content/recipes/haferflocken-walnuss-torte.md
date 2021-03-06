@@ -2,9 +2,11 @@
 title: Haferflocken-Walnuss-Torte
 date: 2020-06-21T14:52:49.096Z
 coverImage: ../assets/20200509-dsc02635.jpeg
+coverImageAuthor: Andrey Okonechnikov
+coverImageLink: http://okonet.ru/
 categories:
-  - value: "Kuchen, Kekserl & Co"
-    label: "Kuchen, Kekserl & Co"
+  - value: Kuchen, Kekserl & Co
+    label: Kuchen, Kekserl & Co
   - value: vegetarisch
     label: vegetarisch
   - value: gut vorzubereiten
@@ -17,6 +19,8 @@ categories:
     label: laktosefrei
   - value: glutenfrei
     label: glutenfrei
+  - value: Mealprep-geeignet
+    label: Mealprep-geeignet
 timeToCook: 20 Minuten vorbereiten + ca. 50 Minuten backen
 ---
 
