@@ -17,6 +17,10 @@ categories:
     label: histaminarm
   - value: glutenfrei
     label: glutenfrei
+  - value: Mealprep-geeignet
+    label: Mealprep-geeignet
+  - value: "schnell "
+    label: "schnell "
 timeToCook: 20 Minuten vorbereiten + 10-15 Minuten backen
 ---
 Dieses leckere Gericht hast du im Nu fertig. Je nach Lust & Saison kannst du unzählige Varianten kreieren: Beim Belegen sind deiner Kreativität wirklich keine Grenzen gesetzt.
