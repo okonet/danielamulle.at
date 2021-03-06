@@ -23,6 +23,10 @@ categories:
     label: histaminfrei
   - value: glutenfrei
     label: glutenfrei
+  - value: "schnell "
+    label: "schnell "
+  - value: Mealprep-geeignet
+    label: Mealprep-geeignet
 timeToCook: 15 Minuten vorbereiten + ca. 15 Minuten köcheln
 ---
 Diese cremige Suppe schmeckt herrlich, ganz besonders an einem kühlen Herbst- oder Wintertag. Eine komplette, gesunde Mahlzeit die du im Handumdrehen fertig hast. Falls du Sellerie oder Pastinaken nicht magst, dann ersetze sie einfach durch anderes Gemüse, z.B. Karotten, Karfiol (Blumenkohl) oder Kürbis.
