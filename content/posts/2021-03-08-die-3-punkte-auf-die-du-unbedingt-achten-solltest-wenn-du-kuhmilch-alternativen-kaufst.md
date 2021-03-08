@@ -56,15 +56,18 @@ Oft enthalten Pflanzendrinks neben Zucker und Salz noch
 - Emulgatoren
 - Stabilisatoren
 - Verdickungsmittel
+
 Darum schau' beim Einkaufen immer die Zutatenliste: Hier gilt ganz einfach “weniger ist mehr”. Auch beim Zucker empfehle ich dir im Bereich von Kuhmilch zu bleiben, also maximal 5 g Zucker pro 100 ml Pflanzendrink.
 
 ### 2. Achte auf Mikronährstoffe!
 Viele Pflanzendrinks werden schon mit Vitaminen, Mineralstoffen und Spurenelementen angereichert.
 Wenn du komplett auf Tiermilch verzichten möchtest, dann kaufe dir unbedingt Pflanzendrinks die
-- Calcium (120 mg Calcium pro 100 ml)
+- Calcium: 120 mg pro 100 ml
 - Vitamin D
 - Vitamin B12 
 enthalten. 
+
+
 So bist du auf jeden Fall gut versorgt.
 
 ### 3. Nur Sojadrinks enthalten Eiweiß! 
