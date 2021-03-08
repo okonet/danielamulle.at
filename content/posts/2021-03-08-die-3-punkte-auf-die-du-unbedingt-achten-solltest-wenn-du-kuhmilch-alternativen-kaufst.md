@@ -28,19 +28,19 @@ Sojagetränke werden aus zerkleinerten Sojabohnen hergestellt. Sie quellen zuers
 
 Sojadrinks haben mit 3–4 g Eiweiß pro 100 ml etwa den gleichen Eiweißgehalt wie Kuhmilch.
 
-**Gut geeignet:** Kochen oder Backen. Im Kaffee oder Tee können Sie je nach Sorte ausflocken. 
+**Gut geeignet:** Kochen und Backen. Im Kaffee oder Tee können sie je nach Sorte ausflocken. 
 
 ### 2. Getreidedrinks
 Das Getreide, z.B. Hafer, gemahlener Dinkel, Buchweizen, Hirse, Qunioa oder Naturreis, wird zuerst mit Wasser zu einer dickflüssigen Masse gekocht. Dann wird die Flüssigkeit von den festen Bestandteilen getrennt und Enzyme zugegeben. Diese Enzyme spalten die Getreidestärke in die einzelnen Zuckerbausteine, dadurch schmecken die Drinks süß. Für die bekannte cremig-milchige Konsistenz werden noch Pflanzenöle dazugegeben. 
 
-**Gut geeignet:** Kochen und Backen oder im Tee bzw. Kaffee - besonders Haferdrink lässt sich sehr gut aufzuschäumen).
+**Gut geeignet:** Kochen und Backen oder im Tee bzw. Kaffee - besonders Haferdrink lässt sich sehr gut aufzuschäumen.
 
 ### 3. Nussdrinks
 Die *Nüsse (Mandeln, Hasel-, Cashew-, Macadamianüsse,…)* werden fein gemahlen, manchmal zuvor auch geröstet. Die gemahlenen Nüsse werden mit Wasser gemischt und aufgekocht. Danach filtert man die festen Bestandteile aus der Nussflüssigkeit heraus: Fertig ist ein cremiger Pflanzendrink mit mild bis kräftig nussigem Aroma.
 
 **Gut geeignet:** Kochen und Backen - sehr lecker für Süßspeisen.
 
-Für *Kokosmilch* wird das zerkleinerte Fruchtfleisch reifer Kokosnüsse gepresst. Es ist nicht dasselbe wie das *klare Kokoswasser*, das sich im Inneren einer unreifen Kokosnuss sammelt. Kokosmilch ist weiß bis gräulich, dickflüssig-cremig und hat einen ganz typischen, fruchtig-nussigen Geschmack. Der Fettgehalt von 15 – 20 % liegt weit über allen anderen Pflanzendrinks.  
+Für *Kokosmilch* wird das zerkleinerte Fruchtfleisch reifer Kokosnüsse gepresst. Kokosmilch ist übrigens nicht dasselbe wie das *klare Kokoswasser*, das sich im Inneren einer unreifen Kokosnuss sammelt. Kokosmilch ist weiß bis gräulich, dickflüssig-cremig und hat einen ganz typischen, fruchtig-nussigen Geschmack. Der Fettgehalt von 15 – 20 % liegt weit über allen anderen Pflanzendrinks.  
 
 **Gut geeignet:** ideal zum Kochen und Backen, vor allem wenn du exotischen Geschmack möchtest.
 
