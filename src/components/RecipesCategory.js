@@ -1,6 +1,6 @@
 /* @jsx jsx */
 import React from "react"
-import { Box, Container, jsx, Styled, Text } from "theme-ui"
+import { Box, Container, Grid, jsx, Styled, Text } from "theme-ui"
 import Link from "../components/Link"
 import { recipesTheme } from "../theme"
 import { recipesPath } from "../../paths"
@@ -8,13 +8,9 @@ import groupBy from "lodash.groupby"
 import RecipesList from "./RecipesList"
 import Group from "react-group"
 import PageLayout from "./PageLayout"
+import PostCard from "./PostCard"
 
-export default ({ data }) => {
-  const { category } = data
-  const groupedRecipes = groupBy(
-    category.posts,
-    (node) => node.categories[0].id
-  )
+export default ({ category, posts }) => {
   return (
     <PageLayout
       theme={recipesTheme}
@@ -37,7 +33,18 @@ export default ({ data }) => {
       }
     >
       {category.postCount > 0 ? (
-        <RecipesList recipes={groupedRecipes} />
+        <Grid
+          as="ol"
+          gap={[2, 1, 2]}
+          columns={[2, 3]}
+          sx={{ p: 0, mt: 3, mb: 4, mx: [0, 0, -5], px: [0, 0, 2] }}
+        >
+          {posts.map((post) => (
+            <Box as="li" sx={{ m: 0, p: 0, listStyle: "none" }}>
+              <PostCard {...post} key={post.slug} />
+            </Box>
+          ))}
+        </Grid>
       ) : (
         <Container>
           <Text as="p" sx={{ variant: "textStyles.lead", color: "secondary" }}>

@@ -8,8 +8,7 @@ import Group from "react-group"
 import PageLayout from "./PageLayout"
 import PostCard from "./PostCard"
 
-export default ({ data }) => {
-  const { category } = data
+export default ({ category }) => {
   return (
     <PageLayout
       theme={blogTheme}
@@ -44,7 +43,7 @@ export default ({ data }) => {
       ) : (
         <Container>
           <Text as="p" sx={{ variant: "textStyles.lead", color: "secondary" }}>
-            Keine Rezepte für diese Kategorie gefunden.{" "}
+            Keine Einträge für diese Kategorie gefunden.{" "}
             <Link to={`/${blogPath}`}>Alle Einträge</Link>.
           </Text>
         </Container>

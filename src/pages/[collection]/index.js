@@ -3,7 +3,7 @@ import { getAllPostsAndCategories } from "../api/posts"
 import BlogPosts from "../../components/BlogPosts"
 import ProjectsPosts from "../../components/ProjectsPosts"
 import RecipesPosts from "../../components/RecipesPosts"
-import config from "site.config"
+import config from "../../../site.config"
 
 export async function getStaticProps({ params }) {
   const { collection } = params
@@ -32,7 +32,7 @@ export async function getStaticPaths() {
   }
 }
 
-function RecipesIndex(props) {
+function PostsPage(props) {
   const { collection } = props
   switch (collection) {
     case "posts": {
@@ -55,4 +55,4 @@ function RecipesIndex(props) {
   }
 }
 
-export default RecipesIndex
+export default PostsPage

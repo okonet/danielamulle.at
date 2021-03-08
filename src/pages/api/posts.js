@@ -15,7 +15,7 @@ const normalizeCategory = (collectionName) => (category) => {
   return {
     ...category,
     id: categoryId, // TODO: Maybe keep value/label instead?
-    slug: `/${collectionName}/${slug(categoryId)}`,
+    slug: `/${collectionName}/category/${slug(categoryId)}`,
   }
 }
 
@@ -37,7 +37,7 @@ export function getPostBySlug(collectionName, slug) {
   // TODO: Format Date
 
   return {
-    slug: `${collectionName}/${slug}`,
+    slug: `/${collectionName}/${slug}`,
     originalSlug: slug,
     ...data,
     categories,
@@ -70,7 +70,7 @@ export function getAllPostsAndCategories(collectionName) {
       )
       return {
         ...category,
-        // posts: postsWithCategory,
+        posts: postsWithCategory,
         postCount: postsWithCategory.length || 0,
       }
     }
