@@ -27,48 +27,54 @@ export function getPostBySlug(collectionName, slug) {
     },
   })
 
+  const allCategories = getCategoriesByCollection(collectionName)
+  const postCategoriesIds = data.categories.map((tag) => tag.value)
+  const categories = allCategories.filter((category) =>
+    postCategoriesIds.includes(category.id)
+  )
+
   // TODO: Format Date
 
   return {
     slug: `${collectionName}/${slug}`,
     originalSlug: slug,
     ...data,
-    categories: data.categories.map(normalizeCategory(collectionName)),
+    categories,
     content,
   }
 }
 
 export function getCategoriesByCollection(collectionName) {
-  const posts = getAllPosts(collectionName)
   const filePath = join(getCollectionPath(collectionName), `categories.json`)
   const fileContents = fs.readFileSync(filePath, "utf8")
   const data = JSON.parse(fileContents)
-  return data.categories
-    .map(normalizeCategory(collectionName))
-    .map((category) => {
+  return data.categories.map(normalizeCategory(collectionName))
+}
+
+export function getAllPostsAndCategories(collectionName) {
+  const path = getCollectionPath(collectionName)
+  const posts = fs
+    .readdirSync(path)
+    // Only include md(x) files
+    .filter((path) => /\.mdx?$/.test(path))
+    .map((file) => {
+      const slug = file.replace(/\.md$/, "")
+      return getPostBySlug(collectionName, slug)
+    })
+  // Add post count to matching categories
+  const categories = getCategoriesByCollection(collectionName).map(
+    (category) => {
       const postsWithCategory = posts.filter((post) =>
-        post.categories.some((cat) => cat.value === category.id)
+        post.categories.some((cat) => cat.id === category.id)
       )
       return {
         ...category,
         // posts: postsWithCategory,
         postCount: postsWithCategory.length || 0,
       }
-    })
-}
-
-export function getAllPosts(collectionName) {
-  const path = getCollectionPath(collectionName)
-  return (
-    fs
-      .readdirSync(path)
-      // Only include md(x) files
-      .filter((path) => /\.mdx?$/.test(path))
-      .map((file) => {
-        const slug = file.replace(/\.md$/, "")
-        return getPostBySlug(collectionName, slug)
-      })
+    }
   )
+  return [posts, categories]
 }
 
 export default async function handler(req, res) {
@@ -76,6 +82,9 @@ export default async function handler(req, res) {
   if (!collection) {
     res.error("Please specify a collection")
   }
-  const posts = getAllPosts(collection)
-  res.json(posts)
+  const [posts, categories] = getAllPostsAndCategories(collection)
+  res.json({
+    posts,
+    categories,
+  })
 }

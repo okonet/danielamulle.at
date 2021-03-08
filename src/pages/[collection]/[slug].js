@@ -3,7 +3,7 @@ import { jsx } from "theme-ui"
 import React from "react"
 import renderToString from "next-mdx-remote/render-to-string"
 import {
-  getAllPosts,
+  getAllPostsAndCategories,
   getCategoriesByCollection,
   getPostBySlug,
 } from "../api/posts"
@@ -60,7 +60,7 @@ export async function getStaticPaths() {
   ]
 
   const collectionsWithPosts = collections.flatMap((collection) => {
-    const allPosts = getAllPosts(collection)
+    const [allPosts] = getAllPostsAndCategories(collection)
     return allPosts.map((post) => {
       const [_, slug] = post.slug.split("/")
       return {

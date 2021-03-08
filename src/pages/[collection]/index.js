@@ -1,15 +1,12 @@
 import React from "react"
-import { getAllPosts, getCategoriesByCollection } from "../api/posts"
+import { getAllPostsAndCategories } from "../api/posts"
 import BlogPosts from "../../components/BlogPosts"
 import ProjectsPosts from "../../components/ProjectsPosts"
 import RecipesPosts from "../../components/RecipesPosts"
 
 export async function getStaticProps({ params }) {
   const { collection } = params
-  const posts = getAllPosts(collection)
-  const categories = getCategoriesByCollection(collection)
-
-  console.log(categories)
+  const [posts, categories] = getAllPostsAndCategories(collection)
 
   // TODO: Should grouping happening here?
 
