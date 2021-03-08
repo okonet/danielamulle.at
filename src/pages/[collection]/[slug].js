@@ -9,6 +9,7 @@ import {
 } from "../api/posts"
 import components from "../../gatsby-plugin-theme-ui/components"
 import PostPage from "../../gatsby-theme-content-collections/components/PostPage"
+import config from "site.config"
 
 export async function getStaticProps({ params }) {
   const { collection, slug } = params
@@ -51,26 +52,20 @@ export async function getStaticProps({ params }) {
 }
 
 export async function getStaticPaths() {
-  const collections = [
-    "posts",
-    "recipes",
-    // "projects",
-    // "testimonials",
-    // "resources",
-  ]
-
-  const collectionsWithPosts = collections.flatMap((collection) => {
-    const [allPosts] = getAllPostsAndCategories(collection)
-    return allPosts.map((post) => {
-      const [_, slug] = post.slug.split("/")
-      return {
-        params: {
-          collection,
-          slug,
-        },
-      }
-    })
-  })
+  const collectionsWithPosts = Object.values(config.collections).flatMap(
+    (collection) => {
+      const [allPosts] = getAllPostsAndCategories(collection)
+      return allPosts.map((post) => {
+        const [_, slug] = post.slug.split("/")
+        return {
+          params: {
+            collection,
+            slug,
+          },
+        }
+      })
+    }
+  )
 
   return {
     paths: collectionsWithPosts,

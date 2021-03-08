@@ -3,6 +3,7 @@ import { getAllPostsAndCategories } from "../api/posts"
 import BlogPosts from "../../components/BlogPosts"
 import ProjectsPosts from "../../components/ProjectsPosts"
 import RecipesPosts from "../../components/RecipesPosts"
+import config from "site.config"
 
 export async function getStaticProps({ params }) {
   const { collection } = params
@@ -20,17 +21,9 @@ export async function getStaticProps({ params }) {
 }
 
 export async function getStaticPaths() {
-  // get all collections
-  const collections = [
-    "posts",
-    "recipes",
-    // "projects",
-    // "testimonials",
-    // "resources",
-  ]
-
   return {
-    paths: collections.map((collection) => {
+    // get all collections
+    paths: Object.values(config.collections).map((collection) => {
       return {
         params: { collection },
       }
