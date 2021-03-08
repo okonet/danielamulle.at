@@ -2,9 +2,9 @@
 title: Die 3 Punkte, auf die du unbedingt achten solltest, wenn du
   Kuhmilch-Alternativen kaufst
 date: 2021-03-08T14:03:13.780Z
-coverImage: ../assets/ryan-song-0zn-fzoyv7c-unsplash-1-.jpg
-coverImageAuthor: Ryan Song
-coverImageLink: https://unsplash.com/@ryansong
+coverImage: ../assets/megumi-nachev-qkqr-orvzic-unsplash.jpg
+coverImageAuthor: Megumi Nachev
+coverImageLink: https://unsplash.com/@meguminachev
 categories:
   - value: Trinken
     label: Trinken
@@ -16,10 +16,10 @@ Dann lies jetzt hier weiter. Denn ich erkläre dir
 - auf welche 3 Punkte du beim Einkauf unbedingt achten solltest.
 
 ## Zwei Fakten zu Milchzucker, Cholesterin und Eiweiß 
-- alle **Pflanzendrinks** sind von Natur aus **milchzucker- und cholesterinfrei.**
+- Alle **Pflanzendrinks** sind von Natur aus **milchzucker- und cholesterinfrei.**
 Das ist super für dich, wenn du Milchzucker (Laktose) nicht verträgst und/oder du mit einem hohen Cholesterinspiegel kämpfst.
 
-- **nur Sojadrinks** sind **eiweißreich**.
+- **Nur Sojadrinks** sind **eiweißreich**.
 Falls du einen hohen Eiweißbedarf hast (z.B. Schwangerschaft, Leistungssport, verschiedene Erkrankungen) ist es schlau, Sojadrinks zu bevorzugen. Vor allem, wenn du bis jetzt viel Kuhmilch verwendet hast.
 
 ## Aus diesen 3 Kuhmilch-Alternativen kannst du wählen:
@@ -29,26 +29,26 @@ Sojagetränke werden aus zerkleinerten Sojabohnen hergestellt. Sie quellen zuers
 
 Sojadrinks haben mit 3–4 g Eiweiß pro 100 ml etwa den gleichen Eiweißgehalt wie Kuhmilch.
 
-Gut geeignet: Kochen oder Backen. Im Kaffee oder Tee können Sie je nach Sorte ausflocken. 
+**Gut geeignet:** Kochen oder Backen. Im Kaffee oder Tee können Sie je nach Sorte ausflocken. 
 
 ### 2. Getreidedrinks
 Das Getreide, z.B. Hafer, gemahlener Dinkel, Buchweizen, Hirse, Qunioa oder Naturreis, wird zuerst mit Wasser zu einer dickflüssigen Masse gekocht. Dann wird die Flüssigkeit von den festen Bestandteilen getrennt und Enzyme zugegeben. Diese Enzyme spalten die Getreidestärke in die einzelnen Zuckerbausteine, dadurch schmecken die Drinks süß. Für die bekannte cremig-milchige Konsistenz werden noch Pflanzenöle dazugegeben. 
 
-Gut geeignet: Kochen und Backen oder im Tee bzw. Kaffee - besonders Haferdrink lässt sich sehr gut aufzuschäumen).
+**Gut geeignet:** Kochen und Backen oder im Tee bzw. Kaffee - besonders Haferdrink lässt sich sehr gut aufzuschäumen).
 
 ### 3. Nussdrinks
 Die *Nüsse (Mandeln, Hasel-, Cashew-, Macadamianüsse,…)* werden fein gemahlen, manchmal zuvor auch geröstet. Die gemahlenen Nüsse werden mit Wasser gemischt und aufgekocht. Danach filtert man die festen Bestandteile aus der Nussflüssigkeit heraus: Fertig ist ein cremiger Pflanzendrink mit mild bis kräftig nussigem Aroma.
 
-Gut geeignet: Kochen und Backen - sehr lecker für Süßspeisen.
+**Gut geeignet:** Kochen und Backen - sehr lecker für Süßspeisen.
 
 Für *Kokosmilch* wird das zerkleinerte Fruchtfleisch reifer Kokosnüsse gepresst. Es ist nicht dasselbe wie das *klare Kokoswasser*, das sich im Inneren einer unreifen Kokosnuss sammelt. Kokosmilch ist weiß bis gräulich, dickflüssig-cremig und hat einen ganz typischen, fruchtig-nussigen Geschmack. Der Fettgehalt von 15 – 20 % liegt weit über allen anderen Pflanzendrinks.  
 
-Gut geeignet: ideal zum Kochen und Backen, vor allem wenn du exotischen Geschmack möchtest.
+**Gut geeignet:** ideal zum Kochen und Backen, vor allem wenn du exotischen Geschmack möchtest.
 
 Kokosmilch ist übrigens der einzige Pflanzendrink der "Milch" genannt werden darf.
-Alle anderen Milchalternativen heißen "Pflanzendrinks", weil der Begriff “Milch” durch das([Urteil des Europäischen Gerichtshofs vom 14.06.2017](http://curia.europa.eu/juris/document/document.jsf?text=&docid=191704&pageIndex=0&doclang=de&mode=req&dir=&occ=first&part=1&cid=782744)) nur für tierische Produkte reserviert ist.
+Alle anderen Milchalternativen heißen "Pflanzendrinks", weil der Begriff “Milch” durch das [Urteil des Europäischen Gerichtshofs vom 14.06.2017](http://curia.europa.eu/juris/document/document.jsf?text=&docid=191704&pageIndex=0&doclang=de&mode=req&dir=&occ=first&part=1&cid=782744) nur für tierische Produkte reserviert ist.
 
-## Diese 3 Dinge solltest du beim Einkaufen unbedingt beachten:
+## Diese 3 Punkte solltest du beim Einkaufen unbedingt beachten:
 
 ### 1. Weniger ist mehr!
 Oft enthalten Pflanzendrinks neben Zucker und Salz noch
@@ -79,7 +79,7 @@ Sojadrinks sind mit 3–4 g Eiweiß pro 100 ml gleich eiweißreich wie Kuhmilch.
 2. Getreidedrinks, z.B. Hafer, Dinkel, Buchweizen, Hirse, Qunioa, Naturreis
 3. Nussdrinks, z.B. Mandel, Hasel-, Cashew-, Macadamia-.
 
-### Checkliste für's Einkaufen:
+### Deine Checkliste für's Einkaufen:
 - Überprüfe die Zutatenliste: Weniger ist mehr!
 - Maximal 5 g Zucker pro 100 ml Pflanzendrink.
 - Unbedingt inklusive Calcium, Vitamin D und Vitamin B12.
