@@ -1,6 +1,5 @@
 ---
-title: Die 3 Punkte, auf die du unbedingt achten solltest, wenn du
-  Kuhmilch-Alternativen kaufst
+title: Die 3 Punkte auf die du bei Kuhmilch-Alternativen unbedingt achten solltest
 date: 2021-03-08T14:03:13.780Z
 coverImage: ../assets/megumi-nachev-qkqr-orvzic-unsplash.jpg
 coverImageAuthor: Megumi Nachev
