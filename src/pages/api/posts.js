@@ -2,6 +2,7 @@ import { join } from "path"
 import fs from "fs"
 import matter from "gray-matter"
 import yaml from "js-yaml"
+import slug from "slug"
 
 const BASE_PATH = "content"
 
@@ -14,7 +15,7 @@ const normalizeCategory = (collectionName) => (category) => {
   return {
     ...category,
     id: categoryId, // TODO: Maybe keep value/label instead?
-    slug: `/${collectionName}/${categoryId}`, // TODO: Add proper slug?
+    slug: `/${collectionName}/${slug(categoryId)}`,
   }
 }
 
