@@ -13,9 +13,9 @@ import config from "../../site.config"
 import hydrate from "next-mdx-remote/hydrate"
 import components from "../gatsby-plugin-theme-ui/components"
 
-export default function BlogPostPage({ data }) {
+export default function BlogPostPage({ post }) {
   const { asPath } = useRouter()
-  const { post } = data
+  const pageUrl = `${config.homepage}/${asPath}`
   const {
     body,
     date,
@@ -26,7 +26,6 @@ export default function BlogPostPage({ data }) {
     title,
     categories,
   } = post
-  const pageUrl = `${config.homepage}/${asPath}`
   return (
     <PageLayout
       theme={blogTheme}

@@ -1,7 +1,6 @@
 /** @jsx jsx */
 import React from "react"
-import { MDXRenderer } from "gatsby-plugin-mdx"
-import { Box, Grid, jsx, Styled } from "theme-ui"
+import { Box, jsx, Styled } from "theme-ui"
 import Group from "react-group"
 import Link from "./Link"
 import { recipesTheme } from "../theme"
@@ -12,9 +11,14 @@ import ShareButtons from "./ShareButtons"
 import TagList from "./TagList"
 import PageLayout from "./PageLayout"
 import PostTemplate from "./PostTemplate"
+import config from "../../site.config"
+import { useRouter } from "next/router"
+import hydrate from "next-mdx-remote/hydrate"
+import components from "../gatsby-plugin-theme-ui/components"
 
-export default ({ data, location }) => {
-  const { post, site } = data
+export default ({ post, collection }) => {
+  const { asPath } = useRouter()
+  const pageUrl = `${config.homepage}/${asPath}`
   const {
     body,
     coverImage,
@@ -22,12 +26,11 @@ export default ({ data, location }) => {
     coverImageLink,
     socialImage,
     title,
-    categories,
+    tags,
+    category,
     timeToCook,
   } = post
-  const pageUrl = location.href ? location.href : site.siteMetadata.url
-  const mainCategory = categories.find((cat) => !cat.isTag)
-  const tags = categories.filter((cat) => cat.isTag)
+
   return (
     <PageLayout
       theme={recipesTheme}
@@ -50,7 +53,7 @@ export default ({ data, location }) => {
           >
             <Group separator=" → ">
               <Link to={`/${recipesPath}`}>Alle Rezepte</Link>
-              <Link to={mainCategory.slug}>{mainCategory.id}</Link>
+              <Link to={category.slug}>{category.id}</Link>
             </Group>
           </Box>
           <Styled.h1
@@ -65,7 +68,7 @@ export default ({ data, location }) => {
       }
     >
       <PostTemplate
-        main={<MDXRenderer>{body}</MDXRenderer>}
+        main={hydrate(body, { components })}
         sidebar={
           <>
             <Styled.h3>

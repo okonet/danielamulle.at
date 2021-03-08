@@ -17,8 +17,8 @@ const BlogPosts = ({ data }) => {
         columns={[1, 2, 3]}
         sx={{ my: 4, mx: [0, 0, -5], px: [0, 0, 2] }}
       >
-        {posts.nodes.map((post) => (
-          <PostCard {...post} key={post.id} />
+        {posts.map((post) => (
+          <PostCard {...post} key={post.slug} />
         ))}
       </Grid>
     </PageLayout>

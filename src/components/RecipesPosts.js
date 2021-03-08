@@ -18,7 +18,7 @@ const RecipesPosts = ({ data }) => {
   const { q: searchQuery } = query
   const {
     collection,
-    categories = [],
+    categories,
     posts: recipes,
     localSearchRecipes = {},
   } = data
@@ -27,6 +27,7 @@ const RecipesPosts = ({ data }) => {
   // const results = useFlexSearch(query, index, JSON.parse(store))
   const resIds = [] //results.map((res) => res.id)
   const tags = categories
+
   const filteredRecipes = searchQuery
     ? recipes.filter((recipe) => resIds.includes(recipe.id))
     : recipes
