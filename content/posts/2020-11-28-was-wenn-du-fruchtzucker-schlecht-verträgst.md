@@ -54,8 +54,6 @@ Sobald deine Beschwerden verschwunden sind, erweiterst du deinen Speiseplan vors
 
 Wenn du deine Liste durchgetestet hast, gib deinen "Positiv-Kandidaten" wieder einen fixen Platz in deinem Speiseplan. Fruchtzucker total zu streichen ist keine gute Idee: Du bekommst dadurch schon bei Minimengen arge Probleme: In deinem Bauch gibt es nämlich „Fruchtzucker-Schaufeln“ die den Fruchtzucker ins Blut transportieren. Ohne Arbeit „verkümmern“ sie. Gehe deswegen unbedingt alle drei Schritte.
 
-Ich hoffe, ich konnte für dich etwas Licht ins Dunkel bringen. Bitte kontaktiere mich, wenn du Hilfe brauchst – Ich freue mich auf dich!
+## Werde ein Teil meiner Community!
+Falls du keinen Blogartikel mehr verpassen möchtest, dann melde dich hier unten für meinen Newsletter an. Einmal pro Woche bekommst du außerdem Tipps und Tricks, interessanten Infos und köstliche Rezepte direkt in deine Email-Inbox. Ich freue mich auf dich!
 
-Deine Bauchdetektivin Daniela
-
-Für eine leichtere Lesbarkeit habe ich auf Nennung beider Geschlechter verzichtet. Literaturquellen schicke ich dir gerne, schreib mir einfach: contact@danielamulle.at.
