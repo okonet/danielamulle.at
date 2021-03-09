@@ -27,9 +27,9 @@ export function getPostBySlug(collectionName, slug) {
       yaml: (s) => yaml.safeLoad(s, { schema: yaml.JSON_SCHEMA }),
     },
   })
-
+  const postCategories = data.categories ?? []
   const allCategories = getCategoriesByCollection(collectionName)
-  const postCategoriesIds = data.categories.map((tag) => tag.value)
+  const postCategoriesIds = postCategories.map((tag) => tag.value)
   const categories = allCategories.filter((category) =>
     postCategoriesIds.includes(category.id)
   )
@@ -47,9 +47,15 @@ export function getPostBySlug(collectionName, slug) {
 
 export function getCategoriesByCollection(collectionName) {
   const filePath = join(getCollectionPath(collectionName), `categories.json`)
-  const fileContents = fs.readFileSync(filePath, "utf8")
-  const data = JSON.parse(fileContents)
-  return data.categories.map(normalizeCategory(collectionName))
+  try {
+    const fileContents = fs.readFileSync(filePath, "utf8")
+    const data = JSON.parse(fileContents)
+    return data.categories.map(normalizeCategory(collectionName))
+  } catch (e) {
+    console.warn(`Could not get categories for collection ${collectionName}`)
+    console.error(e)
+    return []
+  }
 }
 
 export function getAllPostsAndCategories(collectionName) {

@@ -3,17 +3,16 @@ import React from "react"
 import { jsx, Styled } from "theme-ui"
 import PageLayout from "./PageLayout"
 import { testimonialsTheme } from "../theme"
-import Content, * as meta from "../../content/sections/testimonials.mdx"
+import Content, { title } from "../../content/sections/testimonials.mdx"
 import Link from "./Link"
 
-const TestimonialsPosts = ({ data }) => {
-  const { resources } = data
-
+const TestimonialsPosts = ({ posts }) => {
+  console.log(posts)
   return (
-    <PageLayout theme={testimonialsTheme} title={meta._frontmatter.title}>
+    <PageLayout theme={testimonialsTheme} title={title}>
       <Content />
       <Styled.ol>
-        {resources.nodes.map((post) => (
+        {posts.map((post) => (
           <Styled.li key={post.id}>
             <Link to={post.slug}>{post.title}</Link>
           </Styled.li>

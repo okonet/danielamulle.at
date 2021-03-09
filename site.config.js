@@ -14,5 +14,6 @@ export default {
     blog: "posts",
     projects: "projects",
     recipes: "recipes",
+    testimonials: "testimonials",
   },
 }

@@ -3,6 +3,7 @@ import { getAllPostsAndCategories } from "../api/posts"
 import BlogPosts from "../../components/BlogPosts"
 import ProjectsPosts from "../../components/ProjectsPosts"
 import RecipesPosts from "../../components/RecipesPosts"
+import TestimonialsPosts from "../../components/TestimonialsPosts"
 import config from "../../../site.config"
 
 export async function getStaticProps({ params }) {
@@ -44,9 +45,9 @@ function PostsPage(props) {
     case "recipes": {
       return <RecipesPosts {...props} />
     }
-    // case "testimonials": {
-    //   return <TestimonialsPosts {...props} />
-    // }
+    case "testimonials": {
+      return <TestimonialsPosts {...props} />
+    }
     // case "resources": {
     //   return <TestimonialsPosts {...props} />
     // }
