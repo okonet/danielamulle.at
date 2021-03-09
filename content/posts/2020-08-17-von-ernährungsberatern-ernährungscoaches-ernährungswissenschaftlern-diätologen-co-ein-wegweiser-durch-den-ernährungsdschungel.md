@@ -18,7 +18,9 @@ Ernährungsberater, Ernährungscoach, Ernährungstherapeut, TCM-Ernährungsexper
 
 Das ist die wichtigste Frage! Wenn es dir um Vorbeugung oder Information zu *gesunder Ernährung* geht, hast du die "Qual der Wahl": Gerade im Internet finden sich zahlreiche "Experten" deren Ausbildung, Kompetenz & Qualifikation meist nicht überprüft wird. In Österreich ist zur Ernährungsberatung ein abgeschlossenes Ernährungswissenschaftsstudium inklusive Gewerbeschein oder ein Diätologiestudium gesetzliche Voraussetzung.
 
-Fühlst du dich *krank* oder hast bereits eine *ärztliche Diagnose*, z.B. krankhaftes Übergewicht (BMI > 30), Reizdarm, Laktoseintoleranz, erhöhte Blutfette & Cholesterin, Diabetes, etc. ist die Wahl klar & einfach: Nur Diätologen & Ärzte mit der Zusatzausbildung Ernährungsmedizin können und dürfen dir dann nämlich weiterhelfen. Das Gesetz schreibt klipp & klar vor, dass Kranke & Krankheitsgefährdete nur von diesen beiden Expertengruppen betreut werden dürfen. Warum ist das so?
+Fühlst du dich *krank* oder hast bereits eine *ärztliche Diagnose*, z.B. krankhaftes Übergewicht (BMI > 30), Reizdarm, Laktoseintoleranz, erhöhte Blutfette & Cholesterin, Diabetes, etc. ist die Wahl klar & einfach: Nur Diätologen & Ärzte mit der Zusatzausbildung Ernährungsmedizin können und dürfen dir dann nämlich weiterhelfen. 
+
+Das [Gesetz](https://www.ris.bka.gv.at/Dokumente/BgblPdf/1998_169_1/1998_169_1.pdf) schreibt klipp & klar vor, dass Kranke & Krankheitsgefährdete nur von Diätologen und Ärzten betreut werden dürfen. Warum ist das so?
 
 ## "Better safe than sorry" oder auf gut Deutsch "Sicher ist sicher"
 
@@ -89,4 +91,5 @@ So, ich hoffe, du findest dich im "Ernährungsdschungel" nun etwas besser zurech
 Für eine leichtere Lesbarkeit habe ich auf Nennung beider Geschlechter verzichtet. Literaturquellen schicke ich dir gerne, schreib mir einfach.
 
 ## Werde ein Teil meiner Community!
+
 Falls du keinen Blogartikel mehr verpassen möchtest, dann melde dich hier unten für meinen Newsletter an. Einmal pro Woche bekommst du außerdem Tipps und Tricks, interessanten Infos und köstliche Rezepte direkt in deine Email-Inbox. Ich freue mich auf dich!
