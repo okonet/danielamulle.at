@@ -5,10 +5,12 @@ import { useRouter } from "next/router"
 import SocialImage from "../components/SocialImage"
 
 function CustomApp({ Component, pageProps }) {
-  if (pageProps.post) {
-    const { coverImage, author, title, subPageType } = pageProps?.post
+  const { pageType, post } = pageProps
 
-    switch (subPageType) {
+  if (post) {
+    const { coverImage, author, title } = post
+
+    switch (pageType) {
       case "ogImage": {
         return (
           <SocialImage

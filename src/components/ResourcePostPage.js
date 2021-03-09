@@ -7,7 +7,7 @@ import LeadLayout from "./LeadLayout"
 import hydrate from "next-mdx-remote/hydrate"
 import components from "../gatsby-plugin-theme-ui/components"
 
-export default function ResourcePostPage({ post }) {
+export default function ResourcePostPage({ post, pageType }) {
   const {
     body,
     coverImage,
@@ -16,9 +16,8 @@ export default function ResourcePostPage({ post }) {
     socialImage,
     title,
     subtitle,
-    subPageType,
   } = post
-  let isThanksPage = subPageType === "thanks"
+  const isThanksPage = pageType === "thanks"
   return (
     <LeadLayout
       theme={testimonialsTheme}

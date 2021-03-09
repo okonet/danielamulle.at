@@ -15,7 +15,7 @@ import ResourcePostPage from "../../components/ResourcePostPage"
 
 export async function getStaticProps({ params }) {
   const { collection, slug } = params
-  const subPageType = slug[1] ?? "default"
+  const pageType = slug[1] ?? "default"
   const post = getPostBySlug(collection, slug[0])
   const collectionCategories = getCategoriesByCollection(collection)
 
@@ -47,8 +47,8 @@ export async function getStaticProps({ params }) {
         body: mdxSource,
         category,
         tags,
-        subPageType,
       },
+      pageType,
     },
   }
 }
