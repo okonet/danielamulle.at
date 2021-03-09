@@ -6,7 +6,8 @@ import RecipesPosts from "../../components/RecipesPosts"
 import TestimonialsPosts from "../../components/TestimonialsPosts"
 import config from "../../../site.config"
 
-export async function getStaticProps({ params }) {
+export async function getStaticProps({ params, locale }) {
+  console.log(locale)
   const { collection } = params
   const [posts, categories] = getAllPostsAndCategories(collection)
 

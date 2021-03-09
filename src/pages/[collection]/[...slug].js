@@ -13,10 +13,11 @@ import BlogPostPage from "../../components/BlogPostPage"
 import RecipePage from "../../components/RecipesPost"
 import ResourcePostPage from "../../components/ResourcePostPage"
 
-export async function getStaticProps({ params }) {
+export async function getStaticProps({ params, locale }) {
+  console.log(locale)
   const { collection, slug } = params
   const pageType = slug[1] ?? "default"
-  const post = getPostBySlug(collection, slug[0])
+  const post = getPostBySlug(collection, slug[0], { locale })
   const collectionCategories = getCategoriesByCollection(collection)
 
   if (!post) {

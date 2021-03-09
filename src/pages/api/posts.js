@@ -1,7 +1,6 @@
 import { join } from "path"
 import fs from "fs"
 import matter from "gray-matter"
-import yaml from "js-yaml"
 import slug from "slug"
 
 const BASE_PATH = "content"
@@ -19,14 +18,14 @@ const normalizeCategory = (collectionName) => (category) => {
   }
 }
 
-export function getPostBySlug(collectionName, slug) {
+export function getPostBySlug(
+  collectionName,
+  slug,
+  options = { locale: "en-US" }
+) {
   const fullPath = join(getCollectionPath(collectionName), `${slug}.md`)
   const fileContents = fs.readFileSync(fullPath, "utf8")
-  const { data, content } = matter(fileContents, {
-    engines: {
-      yaml: (s) => yaml.safeLoad(s, { schema: yaml.JSON_SCHEMA }),
-    },
-  })
+  const { data, content } = matter(fileContents)
   const postCategories = data.categories ?? []
   const allCategories = getCategoriesByCollection(collectionName)
   const postCategoriesIds = postCategories.map((tag) => tag.value)
@@ -34,12 +33,13 @@ export function getPostBySlug(collectionName, slug) {
     postCategoriesIds.includes(category.id)
   )
 
-  // TODO: Format Date
-
   return {
     slug: `/${collectionName}/${slug}`,
     originalSlug: slug,
     ...data,
+    date: new Intl.DateTimeFormat(options.locale, {
+      dateStyle: "long",
+    }).format(data.date),
     categories,
     content,
   }
