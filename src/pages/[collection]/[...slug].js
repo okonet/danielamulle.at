@@ -8,18 +8,19 @@ import {
   getPostBySlug,
 } from "../api/posts"
 import components from "../../gatsby-plugin-theme-ui/components"
-import PostPage from "../../gatsby-theme-content-collections/components/PostPage"
 import config from "../../../site.config"
+import BlogPostPage from "../../components/BlogPostPage"
+import RecipePage from "../../components/RecipesPost"
+import ResourcePostPage from "../../components/ResourcePostPage"
 
 export async function getStaticProps({ params }) {
   const { collection, slug } = params
-  const post = getPostBySlug(collection, slug)
+  const subPageType = slug[1] ?? "default"
+  const post = getPostBySlug(collection, slug[0])
   const collectionCategories = getCategoriesByCollection(collection)
 
   if (!post) {
-    return {
-      notFound: true, // TODO: Remove in favor of fallback: true
-    }
+    console.error("Could not fetch post...")
   }
 
   let matchTagsWithCategory = (post, category) => {
@@ -46,6 +47,7 @@ export async function getStaticProps({ params }) {
         body: mdxSource,
         category,
         tags,
+        subPageType,
       },
     },
   }
@@ -59,7 +61,7 @@ export async function getStaticPaths() {
         return {
           params: {
             collection,
-            slug: post.originalSlug,
+            slug: [post.originalSlug], // TODO: Should be a flag on the collection?
           },
         }
       })
@@ -68,12 +70,30 @@ export async function getStaticPaths() {
 
   return {
     paths: collectionsWithPosts,
-    fallback: false,
+    fallback: true,
   }
 }
 
 function SinglePostPage(props) {
-  return <PostPage {...props} />
+  switch (props.collection) {
+    case "posts": {
+      return <BlogPostPage {...props} />
+    }
+    // case "projects": {
+    //   return <ProjectsPostPage {...props} />
+    // }
+    case "recipes": {
+      return <RecipePage {...props} />
+    }
+    // case "testimonials": {
+    //   return <TestimonialsPost {...props} />
+    // }
+    case "resources": {
+      return <ResourcePostPage {...props} />
+    }
+    default:
+      return <h1>No page for this collection is defined</h1>
+  }
 }
 
 export default SinglePostPage

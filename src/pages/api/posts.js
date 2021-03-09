@@ -53,7 +53,6 @@ export function getCategoriesByCollection(collectionName) {
     return data.categories.map(normalizeCategory(collectionName))
   } catch (e) {
     console.warn(`Could not get categories for collection ${collectionName}`)
-    console.error(e)
     return []
   }
 }

@@ -1,16 +1,14 @@
 /* @jsx jsx */
 import React from "react"
-import { useRouter } from "next/router"
 import { Container, Flex, jsx, Styled } from "theme-ui"
 import SEO from "../components/seo"
 import Section from "../components/Section"
-// import SocialImage from "./SocialImage"
 import CoverImage from "./CoverImage"
 import Header from "./Header"
 import SubscribeForm from "./SubscribeForm"
 import Footer from "./Footer"
 import ThemeUIProvider from "./ThemeUIProvider"
-import CookieConsent from "./CookieConsent"
+// import CookieConsent from "./CookieConsent"
 import defaultTheme from "../theme"
 
 const Heading = ({ heading, title }) =>
@@ -21,10 +19,8 @@ const Heading = ({ heading, title }) =>
   )
 
 export default function PageLayout({
-  author,
   title,
   heading,
-  socialImage,
   coverImage,
   coverImageAuthor = "Andrey Okonetchnikov",
   coverImageLink = "https://okonet.ru",
@@ -33,40 +29,6 @@ export default function PageLayout({
   blendMode = "screen",
   shouldShowSubscribe = true,
 }) {
-  const { route } = useRouter()
-  // if (route.includes("ogImage")) {
-  //   return (
-  //     <SocialImage
-  //       author={author}
-  //       title={title}
-  //       image={socialImage}
-  //       width={1012}
-  //       height={506}
-  //     />
-  //   )
-  // }
-  // if (route.includes("instagramWithTitle")) {
-  //   return (
-  //     <SocialImage
-  //       author={author}
-  //       title={title}
-  //       image={socialImage}
-  //       width={1080}
-  //       height={1080}
-  //     />
-  //   )
-  // }
-  // if (route.includes("instagram")) {
-  //   return (
-  //     <SocialImage
-  //       title={null}
-  //       image={socialImage}
-  //       width={1080}
-  //       height={1080}
-  //     />
-  //   )
-  // }
-
   return (
     <>
       <SEO title={title} ogImage={!!coverImage} />

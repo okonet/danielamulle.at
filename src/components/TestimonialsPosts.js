@@ -7,7 +7,6 @@ import Content, { title } from "../../content/sections/testimonials.mdx"
 import Link from "./Link"
 
 const TestimonialsPosts = ({ posts }) => {
-  console.log(posts)
   return (
     <PageLayout theme={testimonialsTheme} title={title}>
       <Content />

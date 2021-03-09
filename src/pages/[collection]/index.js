@@ -48,9 +48,9 @@ function PostsPage(props) {
     case "testimonials": {
       return <TestimonialsPosts {...props} />
     }
-    // case "resources": {
-    //   return <TestimonialsPosts {...props} />
-    // }
+    case "resources": {
+      return <TestimonialsPosts {...props} />
+    }
     default:
       return <h1>No page for this collection is defined</h1>
   }
