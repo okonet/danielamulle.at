@@ -2,19 +2,21 @@
 import React from "react"
 import {
   Box,
+  Button,
   Container,
   Flex,
   Grid,
+  jsx,
   Label,
   Radio,
-  jsx,
   Styled,
-  Button,
 } from "theme-ui"
+import { useRouter } from "next/router"
 import theme from "../theme"
-import { graphql, useStaticQuery } from "gatsby"
 import Link from "../components/Link"
 import ThemeUIProvider from "../components/ThemeUIProvider"
+import { getAllPostsAndCategories } from "./api/posts"
+import config from "../../site.config"
 
 const initialVersion = 2
 
@@ -35,6 +37,19 @@ const IMAGE_TYPES = [
     height: 506,
   },
 ]
+
+export async function getStaticProps() {
+  const posts = Object.values(config.collections).flatMap((collection) => {
+    const [posts] = getAllPostsAndCategories(collection)
+    return posts
+  })
+
+  return {
+    props: {
+      posts,
+    },
+  }
+}
 
 function Post({ id, title, slug, imageType = "instagram", version }) {
   const selectedImageType = IMAGE_TYPES.find((type) => type.name === imageType)
@@ -60,44 +75,32 @@ function Post({ id, title, slug, imageType = "instagram", version }) {
   )
 }
 
-export default ({ location, navigate }) => {
-  const { posts } = useStaticQuery(
-    graphql`
-      query {
-        posts: allPost {
-          nodes {
-            ...PostMeta
-          }
-        }
-      }
-    `
-  )
-  const searchParams = new URLSearchParams(location.search)
-  const selectedPostSlug = searchParams.get("post")
-  const version = searchParams.get("v") || initialVersion
-  const imageType = searchParams.get("type") || IMAGE_TYPES[0].name
-  const selectedPost = posts.nodes.find(
-    (post) => post.slug === selectedPostSlug
-  )
+export default function SocialImagesPage({ posts }) {
+  const { query, replace } = useRouter()
+  const selectedPostSlug = query.post
+  const version = query.v || initialVersion
+  const imageType = query.type || IMAGE_TYPES[0].name
+  const selectedPost = posts.find((post) => post.slug === selectedPostSlug)
+
   const handleFormChange = (event) => {
-    const value = event.target.value
-    searchParams.set("type", value)
-    const nextUrl =
-      value !== ""
-        ? `${location.pathname}?${searchParams.toString()}`
-        : location.pathname
-    navigate(nextUrl, {
-      replace: true,
+    replace({
+      query: {
+        ...query,
+        type: event.target.value,
+      },
     })
   }
+
   const handleRefresh = (event) => {
     event.preventDefault()
-    searchParams.set("v", Date.now())
-    const nextUrl = `${location.pathname}?${searchParams.toString()}`
-    navigate(nextUrl, {
-      replace: true,
+    replace({
+      query: {
+        ...query,
+        v: Date.now(),
+      },
     })
   }
+
   return (
     <ThemeUIProvider theme={theme}>
       <Container
@@ -120,7 +123,7 @@ export default ({ location, navigate }) => {
               }}
             >
               <Styled.ul sx={{ flexDirection: "column" }}>
-                {posts.nodes.map(({ slug, title }) => (
+                {posts.map(({ slug, title }) => (
                   <Styled.li>
                     <Link to={`?post=${slug}`}>{title}</Link>
                   </Styled.li>
