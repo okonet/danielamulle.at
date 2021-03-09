@@ -6,9 +6,7 @@ import PostCard from "./PostCard"
 import Content, { title } from "../../content/sections/blog.mdx"
 import PageLayout from "./PageLayout"
 
-const BlogPosts = ({ data }) => {
-  const { posts } = data
-
+const BlogPosts = ({ posts }) => {
   return (
     <PageLayout theme={blogTheme} title={title}>
       <Content />

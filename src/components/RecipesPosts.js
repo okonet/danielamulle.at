@@ -12,16 +12,15 @@ import RecipesList from "./RecipesList"
 import PageLayout from "./PageLayout"
 import { useRouter } from "next/router"
 
-const RecipesPosts = ({ data }) => {
+const RecipesPosts = ({
+  collection,
+  categories,
+  posts,
+  localSearchRecipes = {},
+}) => {
   const router = useRouter()
   const { query } = router
   const { q: searchQuery } = query
-  const {
-    collection,
-    categories,
-    posts: recipes,
-    localSearchRecipes = {},
-  } = data
 
   // const { index, store } = localSearchRecipes
   // const results = useFlexSearch(query, index, JSON.parse(store))
@@ -29,8 +28,8 @@ const RecipesPosts = ({ data }) => {
   const tags = categories
 
   const filteredRecipes = searchQuery
-    ? recipes.filter((recipe) => resIds.includes(recipe.id))
-    : recipes
+    ? posts.filter((recipe) => resIds.includes(recipe.id))
+    : posts
   const groupedRecipes = groupBy(
     filteredRecipes,
     (post) => post.categories[0].id

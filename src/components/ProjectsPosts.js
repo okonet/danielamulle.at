@@ -6,13 +6,13 @@ import Content, { title } from "../../content/sections/projects.mdx"
 import PageLayout from "./PageLayout"
 import PostCard from "./PostCard"
 
-const ProjectsPosts = ({ posts: projects }) => {
+const ProjectsPosts = ({ posts }) => {
   return (
     <PageLayout theme={projectsTheme} title={title}>
       <Content />
-      {projects.length > 0 && (
+      {posts.length > 0 && (
         <Grid as="ul" columns={[1, 2]} sx={{ p: 0 }}>
-          {projects.map((project) => (
+          {posts.map((project) => (
             <Box as="li" sx={{ m: 0, p: 0, listStyle: "none" }}>
               <PostCard
                 coverImage={project.coverImage}

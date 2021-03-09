@@ -36,13 +36,13 @@ function PostsPage(props) {
   const { collection } = props
   switch (collection) {
     case "posts": {
-      return <BlogPosts data={props} />
+      return <BlogPosts {...props} />
     }
     case "projects": {
-      return <ProjectsPosts data={props} />
+      return <ProjectsPosts {...props} />
     }
     case "recipes": {
-      return <RecipesPosts data={props} />
+      return <RecipesPosts {...props} />
     }
     // case "testimonials": {
     //   return <TestimonialsPosts {...props} />
