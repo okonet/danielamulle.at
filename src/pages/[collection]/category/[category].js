@@ -5,8 +5,9 @@ import BlogCategoryPage from "../../../components/BlogCategoryPage"
 // import ProjectsCategoryPage from "../../../components/ProjectsCategoryPage"
 import RecipeCategoryPage from "../../../components/RecipesCategory"
 import slug from "slug"
+import { compareDesc } from "date-fns"
 
-export async function getStaticProps({ params }) {
+export async function getStaticProps({ params, locale }) {
   const { collection, category } = params
   const [_, categories] = getAllPostsAndCategories(collection)
 
@@ -20,7 +21,17 @@ export async function getStaticProps({ params }) {
     props: {
       collection,
       category: categoryMatch,
-      posts: categoryMatch.posts,
+      posts: categoryMatch.posts
+        .map((post) => ({
+          ...post,
+          date: new Intl.DateTimeFormat(locale, {
+            dateStyle: "long",
+          }).format(new Date(post.date)),
+        }))
+        // Sort posts chronologically
+        .sort((postLeft, postRight) => {
+          return compareDesc(new Date(postLeft.date), new Date(postRight.date))
+        }),
       categories,
     },
   }

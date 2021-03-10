@@ -3,7 +3,6 @@ import { Box, Grid, Text } from "theme-ui"
 import PostCard from "./PostCard"
 
 function RecipesList({ recipes }) {
-  console.log(recipes)
   const categories = Object.keys(recipes)
   return Object.entries(recipes).map(([category, recipe]) => (
     <React.Fragment key={category}>

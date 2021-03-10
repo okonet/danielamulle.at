@@ -19,11 +19,7 @@ const normalizeCategory = (collectionName) => (category) => {
   }
 }
 
-export function getPostBySlug(
-  collectionName,
-  slug,
-  options = { locale: "en-US" }
-) {
+export function getPostBySlug(collectionName, slug) {
   const fullPath = join(getCollectionPath(collectionName), `${slug}.md`)
   const fileContents = fs.readFileSync(fullPath, "utf8")
   const { data, content } = matter(fileContents)
@@ -38,10 +34,7 @@ export function getPostBySlug(
     slug: `/${collectionName}/${slug}`,
     rawSlug: slug,
     ...data,
-    rawDate: data.date.toJSON(),
-    date: new Intl.DateTimeFormat(options.locale, {
-      dateStyle: "long",
-    }).format(data.date),
+    date: data.date.toJSON(),
     categories,
     content,
   }
@@ -69,13 +62,7 @@ export function getAllPostsAndCategories(collectionName) {
       const slug = file.replace(/\.md$/, "")
       return getPostBySlug(collectionName, slug)
     })
-    // Sort posts chronologically
-    .sort((postLeft, postRight) => {
-      return compareDesc(
-        new Date(postLeft.rawDate),
-        new Date(postRight.rawDate)
-      )
-    })
+
   // Add post count to matching categories
   const categories = getCategoriesByCollection(collectionName).map(
     (category) => {

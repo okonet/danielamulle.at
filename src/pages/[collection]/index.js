@@ -5,9 +5,9 @@ import ProjectsPosts from "../../components/ProjectsPosts"
 import RecipesPosts from "../../components/RecipesPosts"
 import TestimonialsPosts from "../../components/TestimonialsPosts"
 import config from "../../../site.config"
+import { compareDesc } from "date-fns"
 
 export async function getStaticProps({ params, locale }) {
-  console.log(locale)
   const { collection } = params
   const [posts, categories] = getAllPostsAndCategories(collection)
 
@@ -16,7 +16,17 @@ export async function getStaticProps({ params, locale }) {
   return {
     props: {
       collection,
-      posts,
+      posts: posts
+        .map((post) => ({
+          ...post,
+          date: new Intl.DateTimeFormat(locale, {
+            dateStyle: "long",
+          }).format(new Date(post.date)),
+        }))
+        // Sort posts chronologically
+        .sort((postLeft, postRight) => {
+          return compareDesc(new Date(postLeft.date), new Date(postRight.date))
+        }),
       categories,
     },
   }

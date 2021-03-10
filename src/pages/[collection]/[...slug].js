@@ -14,7 +14,6 @@ import RecipePage from "../../components/RecipesPost"
 import ResourcePostPage from "../../components/ResourcePostPage"
 
 export async function getStaticProps({ params, locale }) {
-  console.log(locale)
   const { collection, slug } = params
   const pageType = slug[1] ?? "default"
   const post = getPostBySlug(collection, slug[0], { locale })
@@ -48,6 +47,9 @@ export async function getStaticProps({ params, locale }) {
         body: mdxSource,
         category,
         tags,
+        date: new Intl.DateTimeFormat(locale, {
+          dateStyle: "full",
+        }).format(new Date(post.date)),
       },
       pageType,
     },
