@@ -2,6 +2,7 @@ import { join } from "path"
 import fs from "fs"
 import matter from "gray-matter"
 import slug from "slug"
+import { compareDesc } from "date-fns"
 
 const BASE_PATH = "content"
 
@@ -37,7 +38,7 @@ export function getPostBySlug(
     slug: `/${collectionName}/${slug}`,
     rawSlug: slug,
     ...data,
-    rawDate: data.date,
+    rawDate: data.date.toJSON(),
     date: new Intl.DateTimeFormat(options.locale, {
       dateStyle: "long",
     }).format(data.date),
@@ -67,6 +68,13 @@ export function getAllPostsAndCategories(collectionName) {
     .map((file) => {
       const slug = file.replace(/\.md$/, "")
       return getPostBySlug(collectionName, slug)
+    })
+    // Sort posts chronologically
+    .sort((postLeft, postRight) => {
+      return compareDesc(
+        new Date(postLeft.rawDate),
+        new Date(postRight.rawDate)
+      )
     })
   // Add post count to matching categories
   const categories = getCategoriesByCollection(collectionName).map(
