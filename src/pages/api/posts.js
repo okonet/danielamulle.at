@@ -13,7 +13,7 @@ const normalizeCategory = (collectionName) => (category) => {
   const categoryId = category.id ?? category.value
   return {
     ...category,
-    id: categoryId, // TODO: Maybe keep value/label instead?
+    id: categoryId, // TODO: Drop `value` key
     slug: `/${collectionName}/category/${slug(categoryId)}`,
   }
 }
