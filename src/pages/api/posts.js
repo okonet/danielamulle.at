@@ -35,7 +35,7 @@ export function getPostBySlug(
 
   return {
     slug: `/${collectionName}/${slug}`,
-    originalSlug: slug,
+    rawSlug: slug,
     ...data,
     date: new Intl.DateTimeFormat(options.locale, {
       dateStyle: "long",

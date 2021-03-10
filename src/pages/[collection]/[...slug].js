@@ -62,7 +62,7 @@ export async function getStaticPaths() {
         return {
           params: {
             collection,
-            slug: [post.originalSlug], // TODO: Should be a flag on the collection?
+            slug: [post.rawSlug],
           },
         }
       })
