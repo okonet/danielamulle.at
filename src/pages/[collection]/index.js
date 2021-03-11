@@ -50,11 +50,12 @@ function PostsPage(props) {
     case "posts": {
       return <BlogPosts {...props} />
     }
-    case "projects": {
-      return <ProjectsPosts {...props} />
-    }
     case "recipes": {
       return <RecipesPosts {...props} />
+    }
+    case "projects":
+    case "diatologischer-jahresstart-2021": {
+      return <ProjectsPosts {...props} />
     }
     case "testimonials": {
       return <TestimonialsPosts {...props} />

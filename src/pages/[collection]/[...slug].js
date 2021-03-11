@@ -12,6 +12,8 @@ import config from "../../../site.config"
 import BlogPostPage from "../../components/BlogPostPage"
 import RecipePage from "../../components/RecipesPost"
 import ResourcePostPage from "../../components/ResourcePostPage"
+import ProjectsCategoryPage from "../../components/ProjectsCategoryPage"
+import ProjectsPostPage from "../../components/ProjectsPostPage"
 
 export async function getStaticProps({ params, locale }) {
   const { collection, slug } = params
@@ -82,9 +84,12 @@ function SinglePostPage(props) {
     case "posts": {
       return <BlogPostPage {...props} />
     }
-    // case "projects": {
-    //   return <ProjectsPostPage {...props} />
-    // }
+    case "projects": {
+      return <ProjectsCategoryPage {...props} />
+    }
+    case "diatologischer-jahresstart-2021": {
+      return <ProjectsPostPage {...props} />
+    }
     case "recipes": {
       return <RecipePage {...props} />
     }

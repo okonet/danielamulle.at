@@ -1,7 +1,7 @@
 {
   "categories": [
     {
-      "coverImage": "../assets/glen-carrie-af-gyalxzww-unsplash-2.jpg",
+      "coverImage": "/assets/glen-carrie-af-gyalxzww-unsplash-2.jpg",
       "isPublished": true,
       "endDate": "2020-12-05T23:00:00.000Z",
       "coverImageAuthor": "Glen Carrie",
@@ -13,7 +13,7 @@
       "coverImageLink": "https://unsplash.com/@glencarrie"
     },
     {
-      "coverImage": "../assets/vernon-raineil-cenzon-vlf2n8fifpy-unsplash.jpg",
+      "coverImage": "/assets/vernon-raineil-cenzon-vlf2n8fifpy-unsplash.jpg",
       "isPublished": true,
       "endDate": "2021-01-25T22:00:00.000Z",
       "coverImageAuthor": "Vernon Raineil Cenzon",
