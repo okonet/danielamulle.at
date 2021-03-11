@@ -3,9 +3,6 @@ import { jsx } from "theme-ui"
 import RootThemeProvider from "../components/ThemeUIProvider"
 import SocialImage from "../components/SocialImage"
 import Head from "next/head"
-import SEO from "../components/seo"
-// import CookieConsent from "./CookieConsent"
-import config from "../../site.config"
 
 function CustomApp({ Component, pageProps }) {
   const { pageType, post } = pageProps
@@ -54,7 +51,6 @@ function CustomApp({ Component, pageProps }) {
 
   return (
     <>
-      <SEO title={post.title || config.title} ogImage={!!post?.coverImage} />
       <Head>
         <script
           type="text/javascript"

@@ -1,6 +1,7 @@
 import React from "react"
+import PropTypes from "prop-types"
 import Head from "next/head"
-import { Styled, ThemeProvider } from "theme-ui"
+import { ThemeProvider, Styled } from "theme-ui"
 import defaultTheme from "../theme"
 
 export default function ThemeUIProvider({ theme = defaultTheme, children }) {
@@ -18,4 +19,8 @@ export default function ThemeUIProvider({ theme = defaultTheme, children }) {
       </ThemeProvider>
     </>
   )
+}
+
+ThemeUIProvider.propTypes = {
+  theme: PropTypes.object.isRequired,
 }

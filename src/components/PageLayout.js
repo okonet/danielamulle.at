@@ -1,12 +1,14 @@
 /* @jsx jsx */
 import React from "react"
 import { Container, Flex, jsx, Styled } from "theme-ui"
+import SEO from "../components/seo"
 import Section from "../components/Section"
 import CoverImage from "./CoverImage"
 import Header from "./Header"
 import SubscribeForm from "./SubscribeForm"
 import Footer from "./Footer"
 import ThemeUIProvider from "./ThemeUIProvider"
+// import CookieConsent from "./CookieConsent"
 import defaultTheme from "../theme"
 
 const Heading = ({ heading, title }) =>
@@ -29,7 +31,9 @@ export default function PageLayout({
 }) {
   return (
     <>
+      <SEO title={title} ogImage={!!coverImage} />
       <ThemeUIProvider theme={theme}>
+        {/*<CookieConsent />*/}
         <Flex
           sx={{ flexDirection: "column", minHeight: "100vh", bg: "background" }}
         >
