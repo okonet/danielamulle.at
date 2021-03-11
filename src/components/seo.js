@@ -13,11 +13,7 @@ export function useCanonical() {
   return new URL(router.asPath, config.homepage)
 }
 
-function SEO({
-  description = config.description,
-  title = config.title,
-  ogImage,
-}) {
+function SEO({ description = config.description, title, ogImage }) {
   const { homepage, locale } = config
   const canonicalURL = useCanonical()
   const ogImagePath = ogImage
@@ -26,7 +22,7 @@ function SEO({
 
   return (
     <DefaultSeo
-      title={title}
+      title={[title, config.title].join(" : ")}
       description={description}
       canonical={homepage}
       openGraph={{
