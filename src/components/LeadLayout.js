@@ -35,6 +35,7 @@ export default function LeadLayout({
               src={coverImage}
               author={coverImageAuthor}
               url={coverImageLink}
+              withOverlay
             >
               <Flex
                 sx={{

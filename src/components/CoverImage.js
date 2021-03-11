@@ -32,7 +32,7 @@ function CoverImage({ alt, src, author, url, children, withOverlay = false }) {
           px: 2,
           width: "100%",
           height: "100%",
-          backgroundImage: withOverlay ?? gradient,
+          backgroundImage: withOverlay ? gradient : "none",
         }}
       >
         {children}
