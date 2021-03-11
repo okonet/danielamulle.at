@@ -2,7 +2,7 @@ import { join } from "path"
 import fs from "fs"
 import matter from "gray-matter"
 import slug from "slug"
-import { compareDesc } from "date-fns"
+import yaml from "js-yaml"
 
 const BASE_PATH = "content"
 
@@ -15,6 +15,7 @@ const normalizeCategory = (collectionName) => (category) => {
   return {
     ...category,
     id: categoryId, // TODO: Drop `value` key
+    rawSlug: slug(categoryId),
     slug: `/${collectionName}/category/${slug(categoryId)}`,
   }
 }
@@ -22,7 +23,11 @@ const normalizeCategory = (collectionName) => (category) => {
 export function getPostBySlug(collectionName, slug) {
   const fullPath = join(getCollectionPath(collectionName), `${slug}.md`)
   const fileContents = fs.readFileSync(fullPath, "utf8")
-  const { data, content } = matter(fileContents)
+  const { data, content } = matter(fileContents, {
+    engines: {
+      yaml: (s) => yaml.safeLoad(s, { schema: yaml.JSON_SCHEMA }),
+    },
+  })
   const postCategories = data.categories ?? []
   const allCategories = getCategoriesByCollection(collectionName)
   const postCategoriesIds = postCategories.map((tag) => tag.value)
@@ -34,7 +39,6 @@ export function getPostBySlug(collectionName, slug) {
     slug: `/${collectionName}/${slug}`,
     rawSlug: slug,
     ...data,
-    date: data.date.toJSON(),
     categories,
     content,
   }
