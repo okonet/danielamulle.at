@@ -5,7 +5,6 @@ import SEO from "../components/seo"
 import CoverImage from "./CoverImage"
 import Footer from "./Footer"
 import ThemeUIProvider from "./ThemeUIProvider"
-// import CookieConsent from "./CookieConsent"
 import Logo from "./Logo"
 
 export default function LeadLayout({
@@ -19,9 +18,7 @@ export default function LeadLayout({
 }) {
   return (
     <>
-      <SEO title={title} ogImage={!!coverImage} />
       <ThemeUIProvider theme={theme}>
-        {/*<CookieConsent />*/}
         <Flex
           sx={{ flexDirection: "column", minHeight: "100vh", bg: "background" }}
         >
