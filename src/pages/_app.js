@@ -2,7 +2,6 @@
 import { jsx } from "theme-ui"
 import RootThemeProvider from "../components/ThemeUIProvider"
 import SocialImage from "../components/SocialImage"
-import Head from "next/head"
 
 function CustomApp({ Component, pageProps }) {
   const { pageType, post } = pageProps
@@ -50,17 +49,9 @@ function CustomApp({ Component, pageProps }) {
   }
 
   return (
-    <>
-      <Head>
-        <script
-          type="text/javascript"
-          src="https://identity.netlify.com/v1/netlify-identity-widget.js"
-        />
-      </Head>
-      <RootThemeProvider>
-        <Component {...pageProps} />
-      </RootThemeProvider>
-    </>
+    <RootThemeProvider>
+      <Component {...pageProps} />
+    </RootThemeProvider>
   )
 }
 
