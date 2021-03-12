@@ -7,7 +7,6 @@ import PageLayout from "./PageLayout"
 import PostCard from "./PostCard"
 
 const ProjectsPosts = ({ posts }) => {
-  console.log(posts)
   return (
     <PageLayout theme={projectsTheme} title={title}>
       <Content />

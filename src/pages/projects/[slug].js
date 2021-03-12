@@ -75,7 +75,6 @@ export async function getStaticPaths() {
 }
 
 function ProjectPage(props) {
-  console.log(props)
   switch (props.type) {
     case "list": {
       return <ProjectsCategoryPage {...props} />
