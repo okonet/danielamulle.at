@@ -15,7 +15,6 @@ export async function getStaticProps() {
 }
 
 function PostsPage(props) {
-  console.log(props)
   return <ProjectsPosts {...props} />
 }
 

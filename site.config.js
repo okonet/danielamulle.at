@@ -12,7 +12,7 @@ export default {
   socialHandle: "bauchdetektivin",
   collections: {
     blog: "posts",
-    projects: "projects",
+    // projects: "projects",
     recipes: "recipes",
     // testimonials: "testimonials",
     resources: "resources",

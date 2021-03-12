@@ -4,15 +4,12 @@ import React from "react"
 import renderToString from "next-mdx-remote/render-to-string"
 import { getAllPostsAndCategories } from "../api/posts"
 import components from "../../gatsby-plugin-theme-ui/components"
-import config from "../../../site.config"
 import ProjectsCategoryPage from "../../components/ProjectsCategoryPage"
 import ProjectsPostPage from "../../components/ProjectsPostPage"
 
 export async function getStaticProps({ params }) {
   const { slug } = params
-  const [posts, categories] = getAllPostsAndCategories(
-    config.collections.projects
-  )
+  const [posts, categories] = getAllPostsAndCategories("projects")
 
   const projectPost = categories.find((category) => category.rawSlug === slug)
 
@@ -63,10 +60,7 @@ export async function getStaticProps({ params }) {
 }
 
 export async function getStaticPaths() {
-  // const categories = getCategoriesByCollection(config.collections.projects)
-  const [posts, categories] = getAllPostsAndCategories(
-    config.collections.projects
-  )
+  const [posts, categories] = getAllPostsAndCategories("projects")
 
   return {
     paths: [...posts, ...categories].map((item) => {
