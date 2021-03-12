@@ -7,6 +7,7 @@ import PageLayout from "./PageLayout"
 import PostCard from "./PostCard"
 
 const ProjectsPosts = ({ posts }) => {
+  console.log(posts)
   return (
     <PageLayout theme={projectsTheme} title={title}>
       <Content />
@@ -20,8 +21,8 @@ const ProjectsPosts = ({ posts }) => {
             >
               <PostCard
                 coverImage={project.coverImage}
-                slug={project.slug}
-                title={project.title}
+                slug={`/projects/${project.rawSlug}`}
+                title={project.id}
               />
             </Box>
           ))}

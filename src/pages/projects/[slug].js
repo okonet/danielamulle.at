@@ -2,43 +2,77 @@
 import { jsx } from "theme-ui"
 import React from "react"
 import renderToString from "next-mdx-remote/render-to-string"
-import { getAllPostsAndCategories, getPostBySlug } from "../api/posts"
+import { getAllPostsAndCategories } from "../api/posts"
 import components from "../../gatsby-plugin-theme-ui/components"
 import config from "../../../site.config"
 import ProjectsCategoryPage from "../../components/ProjectsCategoryPage"
+import ProjectsPostPage from "../../components/ProjectsPostPage"
 
 export async function getStaticProps({ params }) {
   const { slug } = params
-  const collection = config.collections.projects
-  const post = getPostBySlug(collection, slug)
+  const [posts, categories] = getAllPostsAndCategories(
+    config.collections.projects
+  )
 
-  if (!post) {
-    console.error(`Could not find project with slug ${slug}`)
+  const projectPost = categories.find((category) => category.rawSlug === slug)
+
+  // It's a project list
+  if (projectPost) {
+    const projectPosts = posts.filter((post) => {
+      return post.categories[0].rawSlug === slug
+    })
+    const mdxSource = await renderToString(projectPost.description, {
+      components,
+    })
+
+    return {
+      props: {
+        type: "list",
+        post: {
+          ...projectPost,
+          body: mdxSource,
+        },
+        posts: projectPosts,
+      },
+    }
   }
 
-  const [posts] = getAllPostsAndCategories(slug)
+  // It's a post
+  const post = posts.find((post) => post.rawSlug === slug)
 
-  const mdxSource = await renderToString(post.content, { components })
+  if (!post) {
+    console.error(`Could not find post with slug ${slug}`)
+    return {
+      notFound: true,
+    }
+  }
+
+  const mdxSource = await renderToString(post.content, {
+    components,
+  })
+
   return {
     props: {
-      collection,
+      type: "post",
       post: {
         ...post,
         body: mdxSource,
       },
-      posts,
     },
   }
 }
 
 export async function getStaticPaths() {
-  const [posts] = getAllPostsAndCategories(config.collections.projects)
+  // const categories = getCategoriesByCollection(config.collections.projects)
+  const [posts, categories] = getAllPostsAndCategories(
+    config.collections.projects
+  )
 
   return {
-    paths: posts.map((post) => {
+    paths: [...posts, ...categories].map((item) => {
       return {
         params: {
-          slug: post.rawSlug,
+          slug: item.rawSlug,
         },
       }
     }),
@@ -47,7 +81,15 @@ export async function getStaticPaths() {
 }
 
 function ProjectPage(props) {
-  return <ProjectsCategoryPage {...props} />
+  console.log(props)
+  switch (props.type) {
+    case "list": {
+      return <ProjectsCategoryPage {...props} />
+    }
+    default: {
+      return <ProjectsPostPage {...props} />
+    }
+  }
 }
 
 export default ProjectPage

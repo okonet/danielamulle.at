@@ -16,7 +16,5 @@ export default {
     recipes: "recipes",
     // testimonials: "testimonials",
     resources: "resources",
-    "corona-lockdown": "corona-lockdown",
-    "diatologischer-jahresstart-2021": "diatologischer-jahresstart-2021",
   },
 }
