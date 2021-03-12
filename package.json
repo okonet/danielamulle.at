@@ -57,15 +57,13 @@
   },
   "scripts": {
     "postinstall": "patch-package",
-    "build": "gatsby build",
-    "predevelop": "npm run clean",
-    "dev:gatsby": "gatsby develop -H 0.0.0.0",
+    "build": "next build",
+    "develop": "run-p dev:*",
+    "dev:next": "next",
     "dev:cmd": "npx netlify-cms-proxy-server",
     "format": "prettier --loglevel warn --write \"**/*.{js,jsx,json,md}\"",
-    "start": "run-p dev:*",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "start": "next start",
+    "test": "echo \"No tests!\" && exit 1"
   },
   "husky": {
     "hooks": {
