@@ -14,30 +14,16 @@ import theme, * as themes from "../theme"
 import PostCard from "../components/PostCard"
 import ThemeUIProvider from "../components/ThemeUIProvider"
 import { getAllPostsAndCategories } from "./api/posts"
-import { compareDesc } from "date-fns"
 import config from "../../site.config"
 
 const version = 2
 
-export async function getStaticProps({ _, locale }) {
-  const collection = config.collections.recipes
-  const [posts, categories] = getAllPostsAndCategories(collection)
+export async function getStaticProps() {
+  const [posts, _] = getAllPostsAndCategories(config.collections.recipes)
 
   return {
     props: {
-      collection,
-      posts: posts
-        .map((post) => ({
-          ...post,
-          date: new Intl.DateTimeFormat(locale, {
-            dateStyle: "long",
-          }).format(new Date(post.date)),
-        }))
-        // Sort posts chronologically
-        .sort((postLeft, postRight) => {
-          return compareDesc(new Date(postLeft.date), new Date(postRight.date))
-        }),
-      categories,
+      posts,
     },
   }
 }
