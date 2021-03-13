@@ -13,22 +13,36 @@ import { Box, Container, Grid, jsx, Styled } from "theme-ui"
 import theme, * as themes from "../theme"
 import PostCard from "../components/PostCard"
 import ThemeUIProvider from "../components/ThemeUIProvider"
+import { getAllPostsAndCategories } from "./api/posts"
+import { compareDesc } from "date-fns"
+import config from "../../site.config"
 
 const version = 2
 
-export default () => {
-  const recipes = []
-  // const { recipes } = useStaticQuery(
-  //   graphql`
-  //     query {
-  //       recipes: allPost(filter: { collection: { eq: "recipes" } }) {
-  //         nodes {
-  //           ...PostMeta
-  //         }
-  //       }
-  //     }
-  //   `
-  // )
+export async function getStaticProps({ _, locale }) {
+  const collection = config.collections.recipes
+  const [posts, categories] = getAllPostsAndCategories(collection)
+
+  return {
+    props: {
+      collection,
+      posts: posts
+        .map((post) => ({
+          ...post,
+          date: new Intl.DateTimeFormat(locale, {
+            dateStyle: "long",
+          }).format(new Date(post.date)),
+        }))
+        // Sort posts chronologically
+        .sort((postLeft, postRight) => {
+          return compareDesc(new Date(postLeft.date), new Date(postRight.date))
+        }),
+      categories,
+    },
+  }
+}
+
+export default function Styleguide({ posts }) {
   return (
     <ThemeUIProvider theme={theme}>
       <Container variant="full">
@@ -128,34 +142,34 @@ export default () => {
 
           <Grid columns={[1, 2, 3]} gap={2}>
             <PostCard
-              coverImage={recipes.nodes[0].coverImage}
-              title={recipes.nodes[0].title}
-              slug={recipes.nodes[0].slug}
+              coverImage={posts[0].coverImage}
+              title={posts[0].title}
+              slug={posts[0].slug}
             />
             <PostCard
-              coverImage={recipes.nodes[1].coverImage}
-              title={recipes.nodes[1].title}
-              slug={recipes.nodes[1].slug}
+              coverImage={posts[1].coverImage}
+              title={posts[1].title}
+              slug={posts[1].slug}
               author="Daniela Mulle"
             />
             <PostCard
-              coverImage={recipes.nodes[3].coverImage}
-              title={recipes.nodes[3].title}
-              slug={recipes.nodes[3].slug}
+              coverImage={posts[3].coverImage}
+              title={posts[3].title}
+              slug={posts[3].slug}
               date="2020-12-12"
             />
             <PostCard
-              coverImage={recipes.nodes[5].coverImage}
-              title={recipes.nodes[5].title}
-              slug={recipes.nodes[5].slug}
+              coverImage={posts[5].coverImage}
+              title={posts[5].title}
+              slug={posts[5].slug}
               author="Daniela Mulle"
               date="2020-12-12"
             />
             <PostCard
               disabled
-              coverImage={recipes.nodes[5].coverImage}
-              title={recipes.nodes[5].title}
-              slug={recipes.nodes[5].slug}
+              coverImage={posts[5].coverImage}
+              title={posts[5].title}
+              slug={posts[5].slug}
               author="Daniela Mulle"
               date="2020-12-12"
             />
