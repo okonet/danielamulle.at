@@ -3,6 +3,7 @@ import fs from "fs"
 import matter from "gray-matter"
 import slug from "slug"
 import yaml from "js-yaml"
+import { compareDesc } from "date-fns"
 
 const BASE_PATH = "content"
 
@@ -65,6 +66,10 @@ export function getAllPostsAndCategories(collectionName) {
     .map((file) => {
       const slug = file.replace(/\.md$/, "")
       return getPostBySlug(collectionName, slug)
+    })
+    // Sort posts chronologically
+    .sort((postLeft, postRight) => {
+      return compareDesc(new Date(postLeft.date), new Date(postRight.date))
     })
 
   // Add post count to matching categories
