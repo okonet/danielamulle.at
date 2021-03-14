@@ -35,7 +35,9 @@ const RecipesPosts = ({ categories, posts, searchIndex, searchDoc }) => {
   const router = useRouter()
   const { query } = router
   const { q: searchQuery = "" } = query
-  const matches = useFlexSearch(searchQuery, searchIndex, searchDoc)
+  const matches = useFlexSearch(searchQuery, searchIndex, searchDoc, {
+    field: "ingredients",
+  })
 
   const filteredRecipes = searchQuery
     ? posts.filter((recipe) => matches.includes(recipe.id))
