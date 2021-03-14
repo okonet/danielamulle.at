@@ -2,7 +2,7 @@
 import * as React from "react"
 import { Flex, Input, jsx, Text } from "theme-ui"
 import { useFlexSearch } from "react-use-flexsearch"
-import groupBy from "lodash.groupby"
+import { groupBy } from "lodash"
 import Group from "react-group"
 import { recipesTheme } from "../theme"
 import Link from "./Link"
