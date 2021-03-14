@@ -42,7 +42,6 @@ const RecipesPosts = ({
   const { query } = router
   const { q: searchQuery = "" } = query
   const matches = useFlexSearch(searchQuery, searchIndex, searchDoc)
-  const tags = categories
 
   const filteredRecipes = searchQuery
     ? posts.filter((recipe) => matches.includes(recipe.id))
@@ -101,9 +100,9 @@ const RecipesPosts = ({
         >
           {" oder wähle eine Kategorie: "}
         </Text>
-        {tags && (
+        {categories && (
           <Group as="nav" separator={" "}>
-            {tags.map((tag) => (
+            {categories.map((tag) => (
               <Tag key={tag.id} sx={{ my: 1, mr: 2, color: "text" }}>
                 <Link to={tag.slug} key={tag.id}>
                   {tag.id}
