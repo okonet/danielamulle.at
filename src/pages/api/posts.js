@@ -37,6 +37,7 @@ export function getPostBySlug(collectionName, slug) {
   )
 
   return {
+    id: slug,
     slug: `/${collectionName}/${slug}`,
     rawSlug: slug,
     ...data,

@@ -1,7 +1,8 @@
 /* @jsx jsx */
 import * as React from "react"
+import { useEffect, useMemo, useState } from "react"
 import { Flex, Input, jsx, Text } from "theme-ui"
-import { useFlexSearch } from "react-use-flexsearch"
+import FlexSearch from "flexsearch"
 import { groupBy } from "lodash"
 import Group from "react-group"
 import { recipesTheme } from "../theme"
@@ -12,24 +13,41 @@ import RecipesList from "./RecipesList"
 import PageLayout from "./PageLayout"
 import { useRouter } from "next/router"
 
+export const useFlexSearch = (query, providedIndex, doc, searchOptions) => {
+  const [index, setIndex] = useState(null)
+
+  useEffect(() => {
+    const importedIndex = FlexSearch.create({ doc })
+    importedIndex.import(providedIndex)
+
+    setIndex(importedIndex)
+  }, [providedIndex])
+
+  return useMemo(() => {
+    if (!query || !index) return []
+
+    const rawResults = index.search(query, searchOptions)
+    return rawResults.map((res) => res.id)
+  }, [query, index])
+}
+
 const RecipesPosts = ({
   collection,
   categories,
   posts,
-  localSearchRecipes = {},
+  searchIndex,
+  searchDoc,
 }) => {
   const router = useRouter()
   const { query } = router
-  const { q: searchQuery } = query
-
-  // const { index, store } = localSearchRecipes
-  // const results = useFlexSearch(query, index, JSON.parse(store))
-  const resIds = [] //results.map((res) => res.id)
+  const { q: searchQuery = "" } = query
+  const matches = useFlexSearch(searchQuery, searchIndex, searchDoc)
   const tags = categories
 
   const filteredRecipes = searchQuery
-    ? posts.filter((recipe) => resIds.includes(recipe.id))
+    ? posts.filter((recipe) => matches.includes(recipe.id))
     : posts
+
   const groupedRecipes = groupBy(
     filteredRecipes,
     (post) => post.categories[0].id

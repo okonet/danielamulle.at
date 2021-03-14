@@ -28,11 +28,14 @@ export async function getStaticProps({ params, locale }) {
 export async function getStaticPaths() {
   return {
     // get all collections
-    paths: Object.values(config.collections).map((collection) => {
-      return {
-        params: { collection },
-      }
-    }),
+    paths: Object.values(config.collections)
+      // We have a separate index.js for recipes
+      .filter((collection) => collection !== config.collections.recipes)
+      .map((collection) => {
+        return {
+          params: { collection },
+        }
+      }),
     fallback: false,
   }
 }

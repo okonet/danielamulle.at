@@ -19,8 +19,8 @@ function RecipesList({ recipes }) {
           sx={{ p: 0, mt: 3, mb: 4, mx: [0, 0, -5], px: [0, 0, 2] }}
         >
           {recipe.map((recipe) => (
-            <Box as="li" sx={{ m: 0, p: 0, listStyle: "none" }}>
-              <PostCard {...recipe} key={recipe.slug} />
+            <Box key={recipe.id} as="li" sx={{ m: 0, p: 0, listStyle: "none" }}>
+              <PostCard {...recipe} />
             </Box>
           ))}
         </Grid>
