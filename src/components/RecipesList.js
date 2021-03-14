@@ -20,7 +20,7 @@ function RecipesList({ recipes }) {
         >
           {recipe.map((recipe) => (
             <Box key={recipe.id} as="li" sx={{ m: 0, p: 0, listStyle: "none" }}>
-              <PostCard {...recipe} />
+              <PostCard {...{ ...recipe, date: undefined }} />
             </Box>
           ))}
         </Grid>
