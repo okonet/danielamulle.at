@@ -31,13 +31,7 @@ export const useFlexSearch = (query, providedIndex, doc, searchOptions) => {
   }, [query, index])
 }
 
-const RecipesPosts = ({
-  collection,
-  categories,
-  posts,
-  searchIndex,
-  searchDoc,
-}) => {
+const RecipesPosts = ({ categories, posts, searchIndex, searchDoc }) => {
   const router = useRouter()
   const { query } = router
   const { q: searchQuery = "" } = query
@@ -56,7 +50,6 @@ const RecipesPosts = ({
     router.replace(
       {
         query: {
-          collection,
           q: event.target.value,
         },
       },
