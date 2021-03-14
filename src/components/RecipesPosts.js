@@ -64,6 +64,7 @@ const RecipesPosts = ({
       undefined,
       {
         scroll: false,
+        shallow: true,
       }
     )
   }

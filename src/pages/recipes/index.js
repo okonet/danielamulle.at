@@ -12,9 +12,7 @@ export async function getStaticProps() {
     field: "title",
     store: ["id", "title"],
   }
-  const index = new FlexSearch({
-    doc: searchDoc,
-  })
+  const index = FlexSearch.create({ doc: searchDoc })
   index.add(recipes)
   // TODO: Should grouping happening here?
 
