@@ -24,7 +24,7 @@
     "gatsby-plugin-theme-ui": "^0.3.0",
     "gatsby-theme-content-collections": "^2.1.0",
     "gray-matter": "^4.0.2",
-    "lodash.groupby": "^4.6.0",
+    "lodash": "^4.17.21",
     "mdast-util-to-string": "^1.1.0",
     "netlify-cms-app": "^2.11.32",
     "next": "^10.0.8",
