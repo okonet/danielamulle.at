@@ -87,9 +87,6 @@ function SinglePostPage(props) {
     case "projects": {
       return <ProjectsCategoryPage {...props} />
     }
-    case "diatologischer-jahresstart-2021": {
-      return <ProjectsPostPage {...props} />
-    }
     case "recipes": {
       return <RecipePage {...props} />
     }
