@@ -51,7 +51,7 @@ export async function getStaticProps() {
   }
 }
 
-function Post({ id, title, slug, imageType = "instagram", version }) {
+function Post({ title, slug, imageType = "instagram", version }) {
   const selectedImageType = IMAGE_TYPES.find((type) => type.name === imageType)
   const { width, height } = selectedImageType
   const queryParams = new URLSearchParams("")
@@ -60,7 +60,7 @@ function Post({ id, title, slug, imageType = "instagram", version }) {
   queryParams.set("version", version)
   queryParams.set("url", `https://danielamulle.at${slug}?${imageType}`)
   return (
-    <Box key={id}>
+    <Box>
       <Box sx={{ mb: 3 }}>
         <Styled.h2 sx={{ m: 0 }}>{title}</Styled.h2>
         <Link to={`${slug}?${imageType}`}>{slug}</Link>
@@ -124,8 +124,8 @@ export default function SocialImagesPage({ posts }) {
             >
               <Styled.ul sx={{ flexDirection: "column" }}>
                 {posts.map(({ slug, title }) => (
-                  <Styled.li>
-                    <Link to={`?post=${slug}`}>{title}</Link>
+                  <Styled.li key={slug}>
+                    <Link to={`/social-images?post=${slug}`}>{title}</Link>
                   </Styled.li>
                 ))}
               </Styled.ul>
@@ -141,7 +141,6 @@ export default function SocialImagesPage({ posts }) {
                 <>
                   <Flex
                     as="form"
-                    onChange={handleFormChange}
                     sx={{
                       alignItems: "center",
                       justifyContent: "flex-start",
@@ -150,11 +149,12 @@ export default function SocialImagesPage({ posts }) {
                     {IMAGE_TYPES.map((type) => {
                       const isChecked = imageType === type.name
                       return (
-                        <Label sx={{ width: "auto", mr: 4 }}>
+                        <Label key={type.name} sx={{ width: "auto", mr: 4 }}>
                           <Radio
                             name={type.name}
                             value={type.name}
                             checked={isChecked}
+                            onChange={handleFormChange}
                           />
                           {type.name}
                         </Label>
