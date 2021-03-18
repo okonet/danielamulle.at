@@ -1,19 +1,14 @@
-import { join, resolve } from "path"
+import path from "path"
 import fs from "fs"
 import matter from "gray-matter"
 import slug from "slug"
 import yaml from "js-yaml"
 import { compareDesc } from "date-fns"
-import getConfig from "next/config"
 
-const BASE_PATH = "public/content"
+const BASE_PATH = path.join(process.cwd(), "public", "content")
 
 export function getCollectionPath(collectionName) {
-  console.log(resolve(__dirname))
-  console.log(resolve(process.cwd()))
-  console.log(process.cwd())
-  console.log(getConfig())
-  return join(process.cwd(), BASE_PATH, collectionName)
+  return path.join(BASE_PATH, collectionName)
 }
 
 const normalizeCategory = (collectionName) => (category) => {
