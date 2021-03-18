@@ -4,11 +4,16 @@ import matter from "gray-matter"
 import slug from "slug"
 import yaml from "js-yaml"
 import { compareDesc } from "date-fns"
+import getConfig from "next/config"
 
-const BASE_PATH = "./public/content"
+const BASE_PATH = "public/content"
 
 export function getCollectionPath(collectionName) {
-  return resolve(join(".", BASE_PATH, collectionName))
+  console.log(resolve(__dirname))
+  console.log(resolve(process.cwd()))
+  console.log(process.cwd())
+  console.log(getConfig())
+  return join(process.cwd(), BASE_PATH, collectionName)
 }
 
 const normalizeCategory = (collectionName) => (category) => {
@@ -60,6 +65,7 @@ export function getCategoriesByCollection(collectionName) {
 
 export function getAllPostsAndCategories(collectionName) {
   const path = getCollectionPath(collectionName)
+  console.log(path)
   const posts = fs
     .readdirSync(path)
     // Only include md(x) files
