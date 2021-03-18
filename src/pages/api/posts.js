@@ -5,7 +5,7 @@ import slug from "slug"
 import yaml from "js-yaml"
 import { compareDesc } from "date-fns"
 
-const BASE_PATH = "content"
+const BASE_PATH = "./public/content"
 
 export function getCollectionPath(collectionName) {
   return resolve(join(".", BASE_PATH, collectionName))

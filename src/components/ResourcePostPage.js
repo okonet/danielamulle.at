@@ -2,7 +2,7 @@
 import React from "react"
 import { Box, jsx } from "theme-ui"
 import { testimonialsTheme } from "../theme"
-import Content from "../../content/sections/thanks.mdx"
+import Content from "../../public/content/sections/thanks.mdx"
 import LeadLayout from "./LeadLayout"
 import hydrate from "next-mdx-remote/hydrate"
 import components from "../gatsby-plugin-theme-ui/components"

@@ -2,7 +2,7 @@
 import React from "react"
 import { Box, Grid, jsx } from "theme-ui"
 import { projectsTheme } from "../theme"
-import Content, { title } from "../../content/sections/projects.mdx"
+import Content, { title } from "../../public/content/sections/projects.mdx"
 import PageLayout from "./PageLayout"
 import PostCard from "./PostCard"
 

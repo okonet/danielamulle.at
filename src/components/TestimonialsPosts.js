@@ -3,7 +3,7 @@ import React from "react"
 import { jsx, Styled } from "theme-ui"
 import PageLayout from "./PageLayout"
 import { testimonialsTheme } from "../theme"
-import Content, { title } from "../../content/sections/testimonials.mdx"
+import Content, { title } from "../../public/content/sections/testimonials.mdx"
 import Link from "./Link"
 
 const TestimonialsPosts = ({ posts }) => {

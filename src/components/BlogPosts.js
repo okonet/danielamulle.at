@@ -3,7 +3,7 @@ import React from "react"
 import { Grid, jsx } from "theme-ui"
 import { blogTheme } from "../theme"
 import PostCard from "./PostCard"
-import Content, { title } from "../../content/sections/blog.mdx"
+import Content, { title } from "../../public/content/sections/blog.mdx"
 import PageLayout from "./PageLayout"
 
 const BlogPosts = ({ posts }) => {

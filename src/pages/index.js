@@ -2,7 +2,7 @@
 import * as React from "react"
 import { Grid, jsx, Styled, ThemeProvider } from "theme-ui"
 import { take } from "lodash"
-import Home, { title } from "../../content/sections/home.mdx"
+import Home, { title } from "../../public/content/sections/home.mdx"
 import { blogTheme, homeTheme, recipesTheme } from "../theme"
 import PostCard from "../components/PostCard"
 import Link from "../components/Link"

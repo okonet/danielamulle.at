@@ -1,5 +1,5 @@
 import React from "react"
-import Content, { title } from "../../content/sections/offers.mdx"
+import Content, { title } from "../../public/content/sections/offers.mdx"
 import { offersTheme } from "../theme"
 import PageLayout from "../components/PageLayout"
 

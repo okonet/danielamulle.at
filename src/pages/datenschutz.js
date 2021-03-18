@@ -1,5 +1,5 @@
 import React from "react"
-import Content, { title } from "../../content/sections/datenschutz.mdx"
+import Content, { title } from "../../public/content/sections/datenschutz.mdx"
 import PageLayout from "../components/PageLayout"
 
 function Datenschutz() {

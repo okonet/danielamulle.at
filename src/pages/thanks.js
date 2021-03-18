@@ -1,5 +1,5 @@
 import React from "react"
-import Content from "../../content/sections/thanks.mdx"
+import Content from "../../public/content/sections/thanks.mdx"
 import PageLayout from "../components/PageLayout"
 
 export default function ThanksPage() {
