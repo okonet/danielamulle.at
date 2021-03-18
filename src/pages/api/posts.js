@@ -1,4 +1,4 @@
-import { join } from "path"
+import { join, resolve } from "path"
 import fs from "fs"
 import matter from "gray-matter"
 import slug from "slug"
@@ -8,7 +8,7 @@ import { compareDesc } from "date-fns"
 const BASE_PATH = "content"
 
 export function getCollectionPath(collectionName) {
-  return join(process.cwd(), BASE_PATH, collectionName)
+  return resolve(join(".", BASE_PATH, collectionName))
 }
 
 const normalizeCategory = (collectionName) => (category) => {
