@@ -11,9 +11,11 @@ export function getCollectionPath(collectionName) {
   return path.join(BASE_PATH, collectionName)
 }
 
-const normalizeCategory = (collectionName) => (category) => {
+const normalizeCategory = (collectionName) => (
+  category: Partial<Category>
+): Category => {
   const categoryId = category.id ?? category.value
-  return {
+  return <Category>{
     ...category,
     id: categoryId, // TODO: Drop `value` key
     rawSlug: slug(categoryId),
@@ -21,8 +23,27 @@ const normalizeCategory = (collectionName) => (category) => {
   }
 }
 
-export function getPostBySlug(collectionName, slug) {
-  const fullPath = join(getCollectionPath(collectionName), `${slug}.md`)
+type Category = {
+  id: string
+  slug: string
+  rawSlug: string
+  value: string
+  label: string
+  postCount: number
+}
+
+type Post = {
+  id: string
+  title: string
+  slug: string
+  rawSlug: string
+  date: string
+  categories: Array<Category>
+  content: string
+}
+
+export function getPostBySlug(collectionName, slug): Post {
+  const fullPath = path.join(getCollectionPath(collectionName), `${slug}.md`)
   const fileContents = fs.readFileSync(fullPath, "utf8")
   const { data, content } = matter(fileContents, {
     engines: {
@@ -36,7 +57,7 @@ export function getPostBySlug(collectionName, slug) {
     postCategoriesIds.includes(category.id)
   )
 
-  return {
+  return <Post>{
     id: slug,
     slug: `/${collectionName}/${slug}`,
     rawSlug: slug,
@@ -46,8 +67,11 @@ export function getPostBySlug(collectionName, slug) {
   }
 }
 
-export function getCategoriesByCollection(collectionName) {
-  const filePath = join(getCollectionPath(collectionName), `categories.json`)
+export function getCategoriesByCollection(collectionName): Array<Category> {
+  const filePath = path.join(
+    getCollectionPath(collectionName),
+    `categories.json`
+  )
   try {
     const fileContents = fs.readFileSync(filePath, "utf8")
     const data = JSON.parse(fileContents)
@@ -58,7 +82,9 @@ export function getCategoriesByCollection(collectionName) {
   }
 }
 
-export function getAllPostsAndCategories(collectionName) {
+export function getAllPostsAndCategories(
+  collectionName
+): [Array<Post>, Array<Category>] {
   const path = getCollectionPath(collectionName)
   console.log(path)
   const posts = fs
