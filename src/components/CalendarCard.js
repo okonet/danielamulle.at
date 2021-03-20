@@ -1,7 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { isBefore } from "date-fns"
-import { useLocation } from "@reach/router"
 import PostCard from "./PostCard"
 import { useRouter } from "next/router"
 

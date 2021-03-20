@@ -11,7 +11,6 @@ import {
   isWeekend,
 } from "date-fns"
 import { de } from "date-fns/locale"
-import { globalHistory } from "@reach/router"
 import { projectsTheme } from "../theme"
 import PageLayout from "./PageLayout"
 import CalendarCard from "./CalendarCard"
