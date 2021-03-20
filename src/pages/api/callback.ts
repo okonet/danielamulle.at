@@ -1,4 +1,4 @@
-import { NowRequest, NowResponse } from "@now/node"
+import { VercelRequest, VercelResponse } from "@vercel/node"
 import { AuthorizationCode } from "simple-oauth2"
 import { config } from "./auth"
 
@@ -22,7 +22,7 @@ const renderBody: RenderBody = (status, content) => `
 </script>
 `
 
-export default async (req: NowRequest, res: NowResponse) => {
+export default async (req: VercelRequest, res: VercelResponse) => {
   const code = req.query.code as string
   const { host } = req.headers
 
