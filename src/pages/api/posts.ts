@@ -86,7 +86,6 @@ export function getAllPostsAndCategories(
   collectionName
 ): [Array<Post>, Array<Category>] {
   const path = getCollectionPath(collectionName)
-  console.log(path)
   const posts = fs
     .readdirSync(path)
     // Only include md(x) files
@@ -119,7 +118,7 @@ export function getAllPostsAndCategories(
 export default async function handler(req, res) {
   const { collection } = req.query
   if (!collection) {
-    res.status(500).json({ error: "Please specify a collection" })
+    return res.status(500).json({ error: "Please specify a collection" })
   }
   const [posts, categories] = getAllPostsAndCategories(collection)
   res.json({
