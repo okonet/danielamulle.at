@@ -11,6 +11,4 @@ module.exports = withMDX({
     locales: ["de-AT"],
     defaultLocale: "de-AT",
   },
-  target: "serverless", // This is needed to enable now deployments
-  pageExtensions: ["js", "jsx", "mdx"],
 })
