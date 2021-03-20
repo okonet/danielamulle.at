@@ -4,6 +4,7 @@ import matter from "gray-matter"
 import slug from "slug"
 import yaml from "js-yaml"
 import { compareDesc } from "date-fns"
+import { VercelRequest, VercelResponse } from "@vercel/node"
 
 const BASE_PATH = path.join(process.cwd(), "public", "content")
 
@@ -83,7 +84,7 @@ export function getCategoriesByCollection(collectionName): Array<Category> {
 }
 
 export function getAllPostsAndCategories(
-  collectionName
+  collectionName: string
 ): [Array<Post>, Array<Category>] {
   const path = getCollectionPath(collectionName)
   const posts = fs
@@ -115,10 +116,13 @@ export function getAllPostsAndCategories(
   return [posts, categories]
 }
 
-export default async function handler(req, res) {
+export default async function handler(req: VercelRequest, res: VercelResponse) {
   const { collection } = req.query
   if (!collection) {
     return res.status(500).json({ error: "Please specify a collection" })
+  }
+  if (Array.isArray(collection)) {
+    return res.status(500).json({ error: "Collection must be a string" })
   }
   const [posts, categories] = getAllPostsAndCategories(collection)
   res.json({
