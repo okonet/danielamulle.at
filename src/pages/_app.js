@@ -2,6 +2,7 @@
 import { jsx } from "theme-ui"
 import RootThemeProvider from "../components/ThemeUIProvider"
 import SocialImage from "../components/SocialImage"
+import CookieConsent from "../components/CookieConsent"
 
 function CustomApp({ Component, pageProps }) {
   const { pageType, post } = pageProps
@@ -50,6 +51,7 @@ function CustomApp({ Component, pageProps }) {
 
   return (
     <RootThemeProvider>
+      <CookieConsent />
       <Component {...pageProps} />
     </RootThemeProvider>
   )
