@@ -12,7 +12,7 @@ function CoverImage({ alt, src, author, url, children, withOverlay = false }) {
         )`
   }
   return (
-    <AspectRatio ratio={16 / 5} as="figure">
+    <AspectRatio ratio={15 / 6} as="figure">
       <Img
         alt={alt}
         src={src}
