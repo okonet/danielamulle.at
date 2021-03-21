@@ -1,50 +1,32 @@
 import * as React from "react"
 import { useCookies } from "react-cookie"
+import { CookieSetOptions } from "universal-cookie"
 
-declare global {
-  var fbq: (type: string, payload: string) => void
-}
-
-const defaultCookieName = "gdpr-consent"
-
-const defaultCookieOptions = {
+const defaultCookieOptions: Partial<CookieSetOptions> = {
   path: "/", // Apply for all pages
-  maxAge: 365 * 24 * 60 * 60, // 1 year
+  maxAge: 365 * 24 * 60 * 60, // set for  1 year
 }
 
-const TRUE = "1"
-const FALSE = "0"
+type Consent = "not-given" | "allowed" | "not-allowed"
 
 export default function useGdprConsent(
-  options: {
-    cookieName?: string
-    cookieOptions?: object
-  } = {}
-): {
-  trackingAllowed: boolean
-  consentGiven: boolean
-  setConsent: (value: boolean) => void
-} {
-  const {
-    cookieName = defaultCookieName,
-    cookieOptions = defaultCookieOptions,
-  } = options
-  const [cookies, setCookie] = useCookies([cookieName])
-
-  const consentCookie = cookies[cookieName]
-  const trackingAllowed = consentCookie === TRUE
+  cookieName: string,
+  options?: CookieSetOptions
+): [consent: Consent, setConsent: (value: Consent) => void] {
+  const cookieOptions = { ...defaultCookieOptions, ...options }
+  const [cookies, setCookie, removeCookie] = useCookies([cookieName])
+  const cookieValue: Consent = cookies[cookieName]
 
   const setConsent = React.useCallback(
     (value) => {
-      const cookieValue = value ? TRUE : FALSE
-      setCookie(cookieName, cookieValue, cookieOptions)
+      if (value === "not-given") {
+        removeCookie(cookieName)
+      } else {
+        setCookie(cookieName, value, cookieOptions)
+      }
     },
     [cookieName, cookieOptions]
   )
 
-  return {
-    consentGiven: consentCookie === undefined,
-    setConsent,
-    trackingAllowed,
-  }
+  return [cookieValue === undefined ? "not-given" : cookieValue, setConsent]
 }

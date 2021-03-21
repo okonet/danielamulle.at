@@ -19,18 +19,14 @@ const transitionStyles = {
 
 function CookieConsent({}) {
   const [visible, setVisible] = React.useState(false)
-  const { consentGiven, setConsent, trackingAllowed } = useGdprConsent()
+  const [consent, setConsent] = useGdprConsent("gdpr-consent")
+
+  const consentNotGiven = consent === "not-given"
+  const allowTracking = consent === "allowed"
+
   React.useEffect(() => {
-    setVisible(consentGiven)
-  }, [consentGiven])
-
-  const handleConsent = () => {
-    setConsent(true)
-  }
-
-  const handleRejection = () => {
-    setConsent(false)
-  }
+    setVisible(consentNotGiven)
+  }, [consentNotGiven])
 
   return (
     <>
@@ -62,7 +58,9 @@ function CookieConsent({}) {
                   Hier gibt's nicht nur 🍪Cookie-Rezepte: mehr Infos im{" "}
                   <Link to="/datenschutz">Datenschutz</Link>.
                   <Button
-                    onClick={handleConsent}
+                    onClick={() => {
+                      setConsent("allowed")
+                    }}
                     sx={{
                       display: "inline-block",
                       mr: 2,
@@ -74,7 +72,9 @@ function CookieConsent({}) {
                   </Button>
                 </Box>
                 <Close
-                  onClick={handleRejection}
+                  onClick={() => {
+                    setConsent("not-allowed")
+                  }}
                   ml="auto"
                   mr={-2}
                   sx={{ flexShrink: 0 }}
@@ -84,12 +84,9 @@ function CookieConsent({}) {
           )
         }
       </Transition>
-      <FacebookPixel
-        pixelId="175080330711004"
-        allowTracking={trackingAllowed}
-      />
-      {trackingAllowed && (
+      {allowTracking && (
         <Head>
+          <FacebookPixel pixelId="175080330711004" />
           <script async src="https://cdn.splitbee.io/sb.js" />
         </Head>
       )}
