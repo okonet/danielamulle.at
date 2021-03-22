@@ -7,6 +7,7 @@ import slug from "slug"
 import yaml from "js-yaml"
 import { compareDesc } from "date-fns"
 import { VercelRequest, VercelResponse } from "@vercel/node"
+import { getSection } from "./sections"
 
 const BASE_PATH = path.join(process.cwd(), "public", "content")
 
@@ -75,18 +76,11 @@ export function getPostBySlug(collectionName: string, slug: string): Post {
 export function getCategoriesByCollection(
   collectionName: string
 ): Array<Category> {
-  const filePath = path.join(
-    getCollectionPath(collectionName),
-    `categories.json`
-  )
-  try {
-    const fileContents = fs.readFileSync(filePath, "utf8")
-    const data = JSON.parse(fileContents)
-    return data.categories.map(normalizeCategory(collectionName))
-  } catch (e) {
-    console.warn(`Could not get categories for collection ${collectionName}`)
-    return []
+  const { categories } = getSection(collectionName)
+  if (categories) {
+    return categories.map(normalizeCategory(collectionName))
   }
+  return []
 }
 
 export function getAllPostsAndCategories(
