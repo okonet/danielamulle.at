@@ -46,7 +46,11 @@ export async function getStaticPaths() {
     // get all collections
     paths: Object.values(config.collections)
       // We have a separate index.js for recipes
-      .filter((collection) => collection !== config.collections.recipes)
+      .filter(
+        (collection) =>
+          collection !== config.collections.recipes &&
+          collection !== config.collections.resources
+      )
       .map((collection) => {
         return {
           params: { collection },

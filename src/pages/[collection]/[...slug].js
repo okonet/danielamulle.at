@@ -58,8 +58,9 @@ export async function getStaticProps({ params, locale }) {
 }
 
 export async function getStaticPaths() {
-  const collectionsWithPosts = Object.values(config.collections).flatMap(
-    (collection) => {
+  const collectionsWithPosts = Object.values(config.collections)
+    .filter((collection) => collection !== config.collections.projects)
+    .flatMap((collection) => {
       const [allPosts] = getAllPostsAndCategories(collection)
       return allPosts.map((post) => {
         return {
@@ -69,8 +70,7 @@ export async function getStaticPaths() {
           },
         }
       })
-    }
-  )
+    })
 
   return {
     paths: collectionsWithPosts,
