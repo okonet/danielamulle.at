@@ -8,7 +8,6 @@ import hydrate from "next-mdx-remote/hydrate"
 import components from "../gatsby-plugin-theme-ui/components"
 
 const BlogPosts = ({ posts, section }) => {
-  console.log(section.body)
   return (
     <PageLayout theme={blogTheme} title={section.title}>
       {hydrate(section.body, { components })}
