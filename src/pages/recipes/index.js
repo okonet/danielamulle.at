@@ -7,10 +7,24 @@ import toString from "mdast-util-to-string"
 import fromMarkdown from "mdast-util-from-markdown"
 import syntax from "micromark-extension-mdxjs"
 import mdx from "mdast-util-mdx"
+import renderToString from "next-mdx-remote/render-to-string"
+import components from "../../gatsby-plugin-theme-ui/components"
+import { getSection } from "../api/sections"
 
 export async function getStaticProps() {
   const collection = "recipes"
   const [recipes, categories] = getAllPostsAndCategories(collection)
+
+  // Get section and parse section content as MDX
+  let section = getSection(collection)
+  const { content } = section
+  if (content) {
+    const sectionMDX = await renderToString(content, { components })
+    section = {
+      ...section,
+      body: sectionMDX,
+    }
+  }
 
   const recipesWithIngredients = recipes.map((recipe) => {
     const tree = fromMarkdown(recipe.content, {
@@ -48,12 +62,12 @@ export async function getStaticProps() {
 
   return {
     props: {
+      section,
       collection,
       posts: recipesWithIngredients,
       categories,
       searchIndex: index.export(),
       searchDoc,
-      // searchStore: JSON.stringify(store),
     },
   }
 }

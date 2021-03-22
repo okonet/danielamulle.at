@@ -8,10 +8,11 @@ import Group from "react-group"
 import { recipesTheme } from "../theme"
 import Link from "./Link"
 import Tag from "./Tag"
-import Content, { title } from "../../public/content/sections/recipes.mdx"
 import RecipesList from "./RecipesList"
 import PageLayout from "./PageLayout"
 import { useRouter } from "next/router"
+import hydrate from "next-mdx-remote/hydrate"
+import components from "../gatsby-plugin-theme-ui/components"
 
 export const useFlexSearch = (query, providedIndex, doc, searchOptions) => {
   const [index, setIndex] = useState(null)
@@ -31,7 +32,13 @@ export const useFlexSearch = (query, providedIndex, doc, searchOptions) => {
   }, [query, index])
 }
 
-const RecipesPosts = ({ categories, posts, searchIndex, searchDoc }) => {
+const RecipesPosts = ({
+  categories,
+  posts,
+  searchIndex,
+  searchDoc,
+  section,
+}) => {
   const router = useRouter()
   const { query } = router
   const { q: searchQuery = "" } = query
@@ -64,8 +71,8 @@ const RecipesPosts = ({ categories, posts, searchIndex, searchDoc }) => {
   }
 
   return (
-    <PageLayout theme={recipesTheme} title={title}>
-      <Content />
+    <PageLayout theme={recipesTheme} title={section.title}>
+      {hydrate(section.body, { components })}
       <Flex
         as="aside"
         sx={{

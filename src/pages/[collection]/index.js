@@ -1,18 +1,34 @@
 import React from "react"
+import renderToString from "next-mdx-remote/render-to-string"
 import { getAllPostsAndCategories } from "../api/posts"
 import BlogPosts from "../../components/BlogPosts"
 import RecipesPosts from "../../components/RecipesPosts"
-import TestimonialsPosts from "../../components/TestimonialsPosts"
 import config from "../../../site.config"
+import components from "../../gatsby-plugin-theme-ui/components"
+import DefaultPage from "../../components/DefaultPage"
+import { getSection } from "../api/sections"
+import ProjectsPosts from "../../components/ProjectsPosts"
 
 export async function getStaticProps({ params, locale }) {
   const { collection } = params
   const [posts, categories] = getAllPostsAndCategories(collection)
 
+  // Get section and parse section content as MDX
+  let section = getSection(collection)
+  const { content } = section
+  if (content) {
+    const sectionMDX = await renderToString(content, { components })
+    section = {
+      ...section,
+      body: sectionMDX,
+    }
+  }
+
   // TODO: Should grouping happening here?
 
   return {
     props: {
+      section,
       collection,
       posts: posts.map((post) => ({
         ...post,
@@ -40,7 +56,7 @@ export async function getStaticPaths() {
   }
 }
 
-function PostsPage(props) {
+export default function CollectionIndexPage(props) {
   const { collection } = props
   switch (collection) {
     case "posts": {
@@ -49,15 +65,12 @@ function PostsPage(props) {
     case "recipes": {
       return <RecipesPosts {...props} />
     }
-    case "testimonials": {
-      return <TestimonialsPosts {...props} />
+    case "projects": {
+      return <ProjectsPosts {...props} />
     }
-    case "resources": {
-      return <TestimonialsPosts {...props} />
+    default: {
+      // Render default page with a single page
+      return <DefaultPage {...props} />
     }
-    default:
-      return <h1>No page for this collection is defined</h1>
   }
 }
-
-export default PostsPage

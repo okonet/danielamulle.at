@@ -33,7 +33,6 @@ export default function PageLayout({
     <>
       <SEO title={title} ogImage={!!coverImage} />
       <ThemeUIProvider theme={theme}>
-        {/*<CookieConsent />*/}
         <Flex
           sx={{ flexDirection: "column", minHeight: "100vh", bg: "background" }}
         >

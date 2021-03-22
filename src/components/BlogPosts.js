@@ -3,13 +3,15 @@ import React from "react"
 import { Grid, jsx } from "theme-ui"
 import { blogTheme } from "../theme"
 import PostCard from "./PostCard"
-import Content, { title } from "../../public/content/sections/blog.mdx"
 import PageLayout from "./PageLayout"
+import hydrate from "next-mdx-remote/hydrate"
+import components from "../gatsby-plugin-theme-ui/components"
 
-const BlogPosts = ({ posts }) => {
+const BlogPosts = ({ posts, section }) => {
+  console.log(section.body)
   return (
-    <PageLayout theme={blogTheme} title={title}>
-      <Content />
+    <PageLayout theme={blogTheme} title={section.title}>
+      {hydrate(section.body, { components })}
       <Grid
         gap={3}
         columns={[1, 2, 3]}

@@ -1,18 +1,20 @@
 import path from "path"
 import fs from "fs"
 import matter from "gray-matter"
+// @ts-ignore
 import slug from "slug"
+// @ts-ignore
 import yaml from "js-yaml"
 import { compareDesc } from "date-fns"
 import { VercelRequest, VercelResponse } from "@vercel/node"
 
 const BASE_PATH = path.join(process.cwd(), "public", "content")
 
-export function getCollectionPath(collectionName) {
+export function getCollectionPath(collectionName: string) {
   return path.join(BASE_PATH, collectionName)
 }
 
-const normalizeCategory = (collectionName) => (
+const normalizeCategory = (collectionName: string) => (
   category: Partial<Category>
 ): Category => {
   const categoryId = category.id ?? category.value
@@ -24,7 +26,7 @@ const normalizeCategory = (collectionName) => (
   }
 }
 
-type Category = {
+export type Category = {
   id: string
   slug: string
   rawSlug: string
@@ -33,7 +35,7 @@ type Category = {
   postCount: number
 }
 
-type Post = {
+export type Post = {
   id: string
   title: string
   slug: string
@@ -43,8 +45,10 @@ type Post = {
   content: string
 }
 
-export function getPostBySlug(collectionName, slug): Post {
+export function getPostBySlug(collectionName: string, slug: string): Post {
   const fullPath = path.join(getCollectionPath(collectionName), `${slug}.md`)
+  // TODO: Check if file exist
+
   const fileContents = fs.readFileSync(fullPath, "utf8")
   const { data, content } = matter(fileContents, {
     engines: {
@@ -53,7 +57,7 @@ export function getPostBySlug(collectionName, slug): Post {
   })
   const postCategories = data.categories ?? []
   const allCategories = getCategoriesByCollection(collectionName)
-  const postCategoriesIds = postCategories.map((tag) => tag.value)
+  const postCategoriesIds = postCategories.map((tag: Category) => tag.value)
   const categories = allCategories.filter((category) =>
     postCategoriesIds.includes(category.id)
   )
@@ -68,7 +72,9 @@ export function getPostBySlug(collectionName, slug): Post {
   }
 }
 
-export function getCategoriesByCollection(collectionName): Array<Category> {
+export function getCategoriesByCollection(
+  collectionName: string
+): Array<Category> {
   const filePath = path.join(
     getCollectionPath(collectionName),
     `categories.json`
@@ -91,6 +97,7 @@ export function getAllPostsAndCategories(
     .readdirSync(path)
     // Only include md(x) files
     .filter((path) => /\.mdx?$/.test(path))
+    .filter((path) => !path.includes("index")) // Do not include index.mdx? in the Post[]
     .map((file) => {
       const slug = file.replace(/\.md$/, "")
       return getPostBySlug(collectionName, slug)

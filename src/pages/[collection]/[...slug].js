@@ -13,12 +13,11 @@ import BlogPostPage from "../../components/BlogPostPage"
 import RecipePage from "../../components/RecipesPost"
 import ResourcePostPage from "../../components/ResourcePostPage"
 import ProjectsCategoryPage from "../../components/ProjectsCategoryPage"
-import ProjectsPostPage from "../../components/ProjectsPostPage"
 
 export async function getStaticProps({ params, locale }) {
   const { collection, slug } = params
   const pageType = slug[1] ?? "default"
-  const post = getPostBySlug(collection, slug[0], { locale })
+  const post = getPostBySlug(collection, slug[0])
   const collectionCategories = getCategoriesByCollection(collection)
 
   if (!post) {
@@ -90,9 +89,6 @@ function SinglePostPage(props) {
     case "recipes": {
       return <RecipePage {...props} />
     }
-    // case "testimonials": {
-    //   return <TestimonialsPost {...props} />
-    // }
     case "resources": {
       return <ResourcePostPage {...props} />
     }

@@ -1,4 +1,7 @@
 {
+  "title": "Blog",
+  "theme": "postsTheme",
+  "content": "In meinem Blog serviere ich dir virtuelle Gabelbissen zum Thema Darmgesundheit, Gewichtsmanagment & anderen Ernährungsfragen. Guten Appetit beim Stöbern & Schmökern!\n\nIch freue mich über deine Fragen und Themenvorschläge unter contact@danielamulle.at\n",
   "categories": [
     {
       "isTag": true,

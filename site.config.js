@@ -11,10 +11,13 @@ export default {
   locale: "de_AT",
   socialHandle: "bauchdetektivin",
   collections: {
-    blog: "posts",
-    // projects: "projects",
+    about: "about",
+    offers: "offers",
     recipes: "recipes",
-    // testimonials: "testimonials",
+    blog: "posts",
+    projects: "projects",
     resources: "resources",
+    impressum: "impressum",
+    datenschutz: "datenschutz",
   },
 }

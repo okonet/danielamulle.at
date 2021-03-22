@@ -2,17 +2,18 @@
 import React from "react"
 import { Box, Grid, jsx } from "theme-ui"
 import { projectsTheme } from "../theme"
-import Content, { title } from "../../public/content/sections/projects.mdx"
 import PageLayout from "./PageLayout"
 import PostCard from "./PostCard"
+import hydrate from "next-mdx-remote/hydrate"
+import components from "../gatsby-plugin-theme-ui/components"
 
-const ProjectsPosts = ({ posts }) => {
+const ProjectsPosts = ({ categories, section }) => {
   return (
-    <PageLayout theme={projectsTheme} title={title}>
-      <Content />
-      {posts.length > 0 && (
+    <PageLayout theme={projectsTheme} title={section.title}>
+      {section.body && hydrate(section.body, { components })}
+      {categories.length > 0 && (
         <Grid as="ul" columns={[1, 2]} sx={{ p: 0 }}>
-          {posts.map((project) => (
+          {categories.map((project) => (
             <Box
               key={project.slug}
               as="li"
