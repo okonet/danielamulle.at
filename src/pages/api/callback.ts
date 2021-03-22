@@ -2,12 +2,15 @@ import { VercelRequest, VercelResponse } from "@vercel/node"
 import { AuthorizationCode } from "simple-oauth2"
 import { config } from "./auth"
 
-type RenderBody = {
-  (status: "success", content: { token: string; provider: "github" }): string
-  (status: "error", content: Object): string
+type Success = {
+  status: "success"
+  content: { token: string; provider: "github" }
 }
 
-const renderBody: RenderBody = (status, content) => `
+type Error = { status: "error"; content: Object }
+
+function renderBody({ status, content }: Success | Error): string {
+  return `
 <script>
   const receiveMessage = (message) => {
     window.opener.postMessage(
@@ -21,6 +24,7 @@ const renderBody: RenderBody = (status, content) => `
   window.opener.postMessage("authorizing:github", "*");
 </script>
 `
+}
 
 export default async (req: VercelRequest, res: VercelResponse) => {
   const code = req.query.code as string
@@ -37,13 +41,16 @@ export default async (req: VercelRequest, res: VercelResponse) => {
     const { token } = client.createToken(accessToken)
 
     res.status(200).send(
-      renderBody("success", {
-        token: token.access_token,
-        provider: "github",
+      renderBody({
+        status: "success",
+        content: {
+          token: token.access_token,
+          provider: "github",
+        },
       })
     )
   } catch (error) {
     console.log("Access Token Error", error.message)
-    res.status(200).send(renderBody("error", error))
+    res.status(200).send(renderBody({ status: "error", content: error }))
   }
 }
