@@ -9,7 +9,7 @@ import { compareDesc } from "date-fns"
 import { VercelRequest, VercelResponse } from "@vercel/node"
 import { getSection } from "./sections"
 
-const BASE_PATH = path.join(process.cwd(), "public", "content")
+const BASE_PATH = path.join(process.cwd(), "content")
 
 export function getCollectionPath(collectionName: string) {
   return path.join(BASE_PATH, collectionName)

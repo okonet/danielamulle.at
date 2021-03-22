@@ -2,7 +2,7 @@
 import * as React from "react"
 import { Container, jsx } from "theme-ui"
 import AboutBlock from "./AboutBlock"
-import Content from "../../public/content/sections/bio-short.mdx"
+import Content from "../../content/sections/bio-short.mdx"
 
 export default function BioBlock(props) {
   return (
