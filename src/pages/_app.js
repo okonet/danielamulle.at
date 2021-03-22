@@ -1,5 +1,6 @@
 /* @jsx jsx */
 import { jsx } from "theme-ui"
+import Head from "next/head"
 import RootThemeProvider from "../components/ThemeUIProvider"
 import SocialImage from "../components/SocialImage"
 import CookieConsent from "../components/CookieConsent"
@@ -51,6 +52,14 @@ function CustomApp({ Component, pageProps }) {
 
   return (
     <RootThemeProvider>
+      <Head>
+        <link rel="icon" href="/icons/favicon-32x32.png" />
+        <link rel="icon" href="/icons/logo.svg" type="image/svg+xml" />
+        <link
+          rel="apple-touch-icon"
+          href="/icons/apple-touch-icon-180x180.png"
+        />
+      </Head>
       <CookieConsent />
       <Component {...pageProps} />
     </RootThemeProvider>
