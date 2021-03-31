@@ -35,7 +35,6 @@ export default function SocialImage({
           width={width}
           height={height}
           objectFit="cover"
-          sx={{ zIndex: 0 }}
         />
 
         <Flex

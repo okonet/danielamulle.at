@@ -18,7 +18,7 @@ function CoverImage({ alt, src, author, url, children, withOverlay = false }) {
         src={src}
         layout="fill"
         objectFit="cover"
-        sx={{ zIndex: 0 }}
+        sx={{ zIndex: 0 /* TODO: Probably not needed anymore */ }}
       />
 
       <Flex

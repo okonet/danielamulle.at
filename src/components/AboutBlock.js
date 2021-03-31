@@ -37,7 +37,6 @@ export default function AboutBlock({ children, ...props }) {
             alt="Portrait von Daniela Mulle"
             width={400}
             height={600}
-            layout=""
             sx={{ width: "100%", verticalAlign: "top" }}
           />
         </Box>

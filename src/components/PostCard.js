@@ -50,7 +50,7 @@ function PostCard({ coverImage, author, date, disabled, slug, title, sx }) {
               opacity: disabled ? 0.25 : 1,
             }}
           >
-            <Img src={coverImage} width={420} height={280} />
+            <Img src={coverImage} layout="fill" />
           </Box>
         )}
         <Flex

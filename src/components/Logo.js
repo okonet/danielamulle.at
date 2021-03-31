@@ -24,11 +24,11 @@ function Logo({ variant = "full", size = 64 }) {
         }}
       >
         <Img
+          alt="Logo"
           src="/images/logo@2x.png"
           width={size}
           height={size}
           layout="fixed"
-          alt="Logo"
         />
         {variant === "full" && (
           <Box sx={{ ml: 1, position: "relative" }}>
