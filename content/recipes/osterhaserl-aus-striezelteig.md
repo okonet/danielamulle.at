@@ -21,7 +21,7 @@ categories:
     label: laktosefrei
   - value: Mealprep-geeignet
     label: Mealprep-geeignet
-timeToCook: 15 Minuten + 60 Minuten rasten + 2
+timeToCook: 15 Minuten zubereiten + ca. 1 Stunde aufgehen + 20 Minuten backen
 ---
 <Ingredients yields="ca. 12 Osterhasen oder 1 Striezel">
 
