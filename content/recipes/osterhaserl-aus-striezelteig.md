@@ -23,6 +23,8 @@ categories:
     label: Mealprep-geeignet
 timeToCook: 15 Minuten zubereiten + ca. 1 Stunde aufgehen + 20 Minuten backen
 ---
+Diese Haserl dürfen bei uns zu Ostern bei meinem Buben nicht fehlen. Und auch als Striezel mit gehobelten Mandeln oder Sonnenblumenkernen bestreut ein Gedicht. Für eine vegane Version verwendest du einfach einen Pflanzendrink und lässt das Ei weg, das funktioniert garantiert & schmeckt super!
+
 <Ingredients yields="ca. 12 Osterhasen oder 1 Striezel">
 
 
