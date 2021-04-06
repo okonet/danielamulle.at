@@ -1,9 +1,9 @@
 ---
 title: Erdnuss-Schoko-Riegel
 date: 2021-04-05T05:25:11.964Z
-coverImage: ../assets/elena-mozhvilo-4yrf1hc60wu-unsplash.jpg
-coverImageAuthor: Elena Mozhvilo
-coverImageLink: https://unsplash.com/@miracleday
+coverImage: ../assets/20210314-DSC04997.jpg
+coverImageAuthor: Andrey Okonechnikov
+coverImageLink: http://okonet.ru/
 categories:
   - value: Kuchen, Kekserl & Co
     label: Kuchen, Kekserl & Co
