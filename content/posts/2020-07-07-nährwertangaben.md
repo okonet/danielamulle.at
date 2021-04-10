@@ -19,7 +19,7 @@ Um dich mit allem nötigen zu versorgen musst du aber keine Kalorien, Eiweiß od
 
 
 
-Wenn du etwas "tracken" willst, dann schau auf die Verteilung der Nährstoffe auf deinem Teller: Fett, Eiweiß, Kohlenhydrate. Wirf auch einen Blick auf Vitamine, Mineralstoffe, Spurenelemente.
+Wenn du unbedingt etwas genau im Auge haben willst, dann schau auf die Verteilung auf deinem Teller: Fett, Eiweiß, Kohlenhydrate. Wirf auch einen Blick auf Vitamine, Mineralstoffe, Spurenelemente.
 
 ## Wenn du diese 5 Punkte beherzigst liegst du automatisch richtig:
 
