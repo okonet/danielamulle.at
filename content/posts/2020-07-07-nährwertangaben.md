@@ -23,11 +23,11 @@ Wenn du etwas "tracken" willst, dann schau auf die Verteilung der Nährstoffe au
 
 ## Wenn du diese 5 Punkte beherzigst liegst du automatisch richtig:
 
-1. *pflanzliche Lebensmittel als Hauptdarsteller:* Gemüse, Salate und Obst sollten in etwa die Hälfte Deiner Mahlzeit ausmachen.
+1. *Pflanzen als Hauptdarsteller:* Gemüse, Salate und Obst sollten in etwa die Hälfte Deiner Mahlzeit ausmachen.
 2. *Vollkorn statt Weißmehlprodukte:* greif' bei Brot, Gebäck, Kuchen, Nudeln, Reis, Nockerl, Knödel, Couscous, etc. zu Vollkornvarianten.
 3. *Genug Trinken:* dein Körper braucht pro Tag ca. 35 ml Flüssigkeit pro kg Deines Gewichts an Flüssigkeit aus Speisen & Getränken. Der ideale Durstlöscher ist Wasser.
-4. *Nicht täglich Fleisch & Wurst, Schinken, etc.:* nur an drei Tagen pro Woche reicht deinem Körper völlig aus.
-5. *Pflanzenfette statt Butter & Co.:* damit versorgst du dich mit ganz besonderen Fetten: omega 9, z.B. Olive, omega 3, z.B. Walnuss oder Raps und omega 6, z.B. Sonnenblume. Sie sind für deinen Körper super spannend, denn im Gegensatz zu Butter, Schmalz, Obers oder Kokosfett kann der Körper die omega-Fette nicht selber bauen.
+4. *Nicht täglich Fleisch & Wurst, Schinken, etc.:* nur an drei Tagen pro Woche reicht deinem Körper völlig aus. Iss' stattdessen doch mal Kichererbsen, Linsen, Erbsen, Bohnen, Milchprodukte oder probier' Tofu aus.
+5. *Pflanzenfette statt Butter & Co.:* damit versorgst du dich mit ganz besonders kostbaren Fetten: omega 9, z.B. Olive, omega 3, z.B. Walnuss oder Raps und omega 6, z.B. Sonnenblume. Sie sind für deinen Körper super spannend, denn im Gegensatz zu Butter, Schmalz, Obers oder Kokosfett kann der Körper die omega-Fette nicht selber bauen.
 
 Wenn Du auf diese 5 Punkte schaust, bleibt für Süßes, Fettes, Weißmehlprodukte und Alkohol automatisch nur noch wenig Platz am Teller bzw. im Glas übrig. Auch mit meinen [Rezepten](https://www.danielamulle.at/recipes) liegst du automatisch richtig, und OBWOHL ich die einzelnen Nährwerte natürlich genau kenne, habe ich sie dort bewusst NICHT ANGEGEBEN. 
 
