@@ -29,7 +29,7 @@ Dieses Bananenbrot ist unglaublich saftig, obwohl es ganz ohne Eier auskommt. Ka
 
 
 
-<Ingredients yields="4 Personen">
+<Ingredients yields="1 Kastenform">
 
 
 
