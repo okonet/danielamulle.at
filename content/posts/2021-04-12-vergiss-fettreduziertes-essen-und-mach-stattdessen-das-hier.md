@@ -122,16 +122,18 @@ Ebenfalls 10 g Fett haben alle diese Lebensmittel - allerdings aus der "Altbekan
 Wichtiger als WAS du dir auf's Brot streichst ist die MENGE davon: Die [Deutsche Gesellschaft für Ernährung (DGE)](https://www.dge-ernaehrungskreis.de/lebensmittelgruppen/oele-und-fette/)  empfiehlt maximal 30 Gramm Butter oder Margarine. 
 
 **Butter**
+
 Um ein Kilogramm Butter herzustellen braucht man 25 Liter frische Milch bzw. 2,5 Liter Rahm. Meist wird Kuhmilch verwendet, es gibt aber auch Butter aus Schaf- oder Ziegenmilch. 
 Du erinnerst dich: in Butter überwiegt die Gruppe der "altbekannten Fette" bei weitem.
 Ob und wie viele omega-Fette sich in der Butter tummeln hängt vom Futter ab: Stallkühe bekommen mehr Kraftfutter und weniger frisches Gras oder Kräuter. Ihre Milch hat daher viel weniger omega-Fette als die von Weidekühen.
 
 **Margarine**
-"Pflanzenmargarine" wird zu 100 Prozent aus Pflanzenfetten gemacht, und hat deswegen viel mehr kostbare omega-Fette als Butter. 
 
-Steht auf der Packung nur "Margarine" können tierische Fette bis zu 2 Prozent des Gesamtfettgehaltes untergemischt werden. Das gilt auch, wenn in der Bezeichnung auf eine bestimmte Pflanzenart hingewiesen wird, z.B. "Sonnenblumenmargarine".
+*"Pflanzenmargarine"* wird zu 100 Prozent aus Pflanzenfetten gemacht, und hat deswegen viel mehr kostbare omega-Fette als Butter. 
 
-"Spezialmargarine" mit Phytosterinen muss extra gekennzeichnet sein, weil sie für Schwangere, Stillende und Kinder unter fünf Jahren nicht geeignet ist: Die Phytosterine senken den Cholesterinspiegel im Blut. Und das macht klarerweise nur für Menschen mit überhöhten Cholesterinwerten Sinn.
+Steht auf der Packung nur *"Margarine"* können tierische Fette bis zu 2 Prozent des Gesamtfettgehaltes untergemischt werden. Das gilt auch, wenn in der Bezeichnung auf eine bestimmte Pflanzenart hingewiesen wird, z.B. "Sonnenblumenmargarine".
+
+*"Spezialmargarine" mit Phytosterinen* muss extra gekennzeichnet sein, weil sie für Schwangere, Stillende und Kinder unter fünf Jahren nicht geeignet ist: Die Phytosterine senken den Cholesterinspiegel im Blut. Und das macht klarerweise nur für Menschen mit überhöhten Cholesterinwerten Sinn.
 
 ## Sind raffinierte Öle schlecht?
 
@@ -150,15 +152,16 @@ Diese Stoffe wirken neben den kostbaren omega-Fetten noch zusätzlich positiv au
 
 ### Meine Tipps für dich:
 
-**Nimm raffinierte Öle wenn's "heiß" hergeht**, also 
+**Nimm raffinierte Öle wenn's "heiß" hergeht**, also zum
 
-* zum Braten 
-* zum Andünsten 
-* zum Backen 
+* Braten 
+* Anrösten
+* Andünsten 
+* Backen 
 
 Durch die Raffination hält das Öl Hitze besser aus. Gleichzeitig wird es aber auch relativ geschmacksneutral.
 
-**Nimm kaltgepresste und native Öle für deine kalte Gerichte**, also 
+**Nimm kaltgepresste und native Öle für deine kalten Gerichte**, also für
 
 * Salate
 * Antipasti wie Tomaten mit Mozzarella,...
