@@ -260,13 +260,13 @@ Dein Körper braucht sie unbedingt, weil er sie nicht oder nur schwer selbst bau
 
 ### Warum sind Fette wichtig?
 
-1. sorgen dafür, dass dein Essen super schmeckt und dich wohlig satt macht.
-2. sind kleine, mega-kompakte Energiespender.
-3. helfen dir dabei, die Vitamine A, D, E und K aufzunehmen und zu verwerten.
-4. sind wichtige Bausteine für deine Zellwände und dein Gehirn (omega-Fette).
-5. schützen deine Blutgefäße (omega-3-Fette).
-6. beeinflussen Entzündungen (omega-Fette).
-7. stützen und schützen deine inneren Organe wie z.B. deine Nieren.
+1. Sie sorgen dafür, dass dein Essen super schmeckt und dich wohlig satt macht.
+2. Fette sind kleine, mega-kompakte Energiespender.
+3. Sie helfen dir dabei, die Vitamine A, D, E und K aufzunehmen und zu verwerten.
+4. Fette sind wichtige Bausteine für deine Zellwände und dein Gehirn (omega-Fette).
+5. Sie schützen deine Blutgefäße (omega-3-Fette).
+6. Fette beeinflussen Entzündungen (omega-Fette).
+7. sie stützen und schützen deine inneren Organe wie z.B. deine Nieren.
 
 ### Wieviel Fett pro Tag?
 
