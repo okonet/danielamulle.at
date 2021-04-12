@@ -203,7 +203,8 @@ Und genau das ist bei Erkrankungen wie z.B.
 * Mukoviszidose
 * Bauchspeicheldrüsenentzündungen
 * Gallensäureverlustsyndrom 
-  ein entscheidender Vorteil gegenüber den "normalen" Fetten mit ihren 14-24 Fettbausteinchen.
+
+ein entscheidender Vorteil gegenüber den "normalen" Fetten mit ihren 14-24 Fettbausteinchen.
 
 ### 2. Du nimmst kaltgepresste Öle zum Braten.
 
@@ -223,16 +224,16 @@ Der Rauchpunkt ist von der Vorbehandlung der Fette abhängig:
 
 Das Öl raucht sehr stark und wird dunkler und dickflüssiger. Wenn der Rauch schon in deinen Augen brennt und dich beim Atmen sticht, muss du das Öl sofort austauschen. Oberhalb des Rauchpunkts bilden sich rasch gesundheitsschädliche, krebserregende Stoffe, sogenannte Acroleine.
 
-Im [Rauchpunkte-Vergleich](https://www.bzfe.de/lebensmittel/lebensmittelkunde/speisefette-und-oele/) kannst du den großen Unterschied zwischen unraffinierten und raffinierten Fetten und Ölen gut erkennen:
+Im **[Rauchpunkte-Vergleich]**(https://www.bzfe.de/lebensmittel/lebensmittelkunde/speisefette-und-oele/) kannst du den großen Unterschied zwischen unraffinierten und raffinierten Fetten und Ölen gut erkennen:
 
-Unraffinierte Fette:
+**Unraffinierte Fette:**
 
 * Rapsöl: 110 Grad Celsius
 * Butter: 175 Grad Celsius
 * Sesamöl: 170 Grad Celsius
 * Natives Olivenöl: 160-180 Grad Celsius
 
-Raffinierte Pflanzenöle:
+**Raffinierte Pflanzenöle:**
 
 * Kokosfett: 185-205 Grad Celsius
 * Rapsöl: 190-230 Grad Celsius
@@ -245,11 +246,14 @@ Raffinierte Pflanzenöle:
 ## Zusammenfassung
 
 Es gibt zwei große Fettgruppen: 
+
 **Gruppe 1 - Die Altbekannten**
+
 Butter, Obers, Schmalz, fetter Käse, Fleisch, Speck, Wurst, Kokosöl und Palmöl. 
 Sind für deinen Körper nichts Besonderes, er kann sie sich sogar selbst bauen. 
 
 **Gruppe 2 - Die Kostbaren**
+
 Omega-Fetten aus Nüssen, Samen, Kernen, Pflanzenölen, Fischen und Algen. 
 Dein Körper braucht sie unbedingt, weil er sie nicht oder nur schwer selbst bauen kann.
 
