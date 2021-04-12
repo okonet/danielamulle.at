@@ -94,9 +94,9 @@ Es gibt Situationen, bei denen du mehr als 30 Prozent deiner Tageskalorien als F
 
 Hier ein Beispiel für alle, die's genau wissen wollen: Meine Tageskalorien liegen bei ca. 2.017 Kilokalorien. Ich sollte also täglich:
 
-* insgesamt maximal 67 Gramm Fett essen.
+* Insgesamt maximal 67 Gramm Fett essen.
 * 30 Gramm davon am Brot, als Butter oder Margarine.
-* 0,25 Gramm davon als omega-Fette.
+* 0,25 Gramm davon als omega-3-Fette.
 
 **Wichtig ist aber kein Zahlenjonglieren, sondern ein ungefähres Gefühl für Fett in Deinem Essen.**
 
@@ -164,8 +164,8 @@ Durch die Raffination hält das Öl Hitze besser aus. Gleichzeitig wird es aber 
 **Nimm kaltgepresste und native Öle für deine kalten Gerichte**, also für
 
 * Salate
-* Antipasti wie Tomaten mit Mozzarella,...
-* zum Abschmecken von Saucen, Aufstrichen, Dips, Aufstrichen,..
+* Antipasti wie Tomaten mit Mozzarella, Humus,...
+* zum Abschmecken von Saucen, Aufstrichen, Dips, Aufstrichen,...
 * zum Verfeinern von Suppen, Gemüse, Pasta, Aufläufen,...
 
 Kaltgepresste Öle behalten ihren typisches Aroma, und das kann in der kalten Küche perfekt zur Geltung kommen.
@@ -225,7 +225,7 @@ Der Rauchpunkt ist von der Vorbehandlung der Fette abhängig:
 
 Das Öl raucht sehr stark und wird dunkler und dickflüssiger. Wenn der Rauch schon in deinen Augen brennt und dich beim Atmen sticht, muss du das Öl sofort austauschen. Oberhalb des Rauchpunkts bilden sich rasch gesundheitsschädliche, krebserregende Stoffe, sogenannte Acroleine.
 
-Im **[Rauchpunkte-Vergleich]**(https://www.bzfe.de/lebensmittel/lebensmittelkunde/speisefette-und-oele/) kannst du den großen Unterschied zwischen unraffinierten und raffinierten Fetten und Ölen gut erkennen:
+Im **[Rauchpunkt-Vergleich](https://www.bzfe.de/lebensmittel/lebensmittelkunde/speisefette-und-oele/)** kannst du den großen Unterschied zwischen unraffinierten und raffinierten Fetten und Ölen gut erkennen:
 
 **Unraffinierte Fette:**
 
@@ -266,18 +266,18 @@ Dein Körper braucht sie unbedingt, weil er sie nicht oder nur schwer selbst bau
 4. Fette sind wichtige Bausteine für deine Zellwände und dein Gehirn (omega-Fette).
 5. Sie schützen deine Blutgefäße (omega-3-Fette).
 6. Fette beeinflussen Entzündungen (omega-Fette).
-7. sie stützen und schützen deine inneren Organe wie z.B. deine Nieren.
+7. Sie stützen und schützen deine inneren Organe wie z.B. deine Nieren.
 
 ### Wieviel Fett pro Tag?
 
-* maximal 30 Prozent deiner Tageskalorien sollten aus Fetten kommen.
-* davon maximal 30 Gramm aus Butter oder Margarine.
+* Maximal 30 Prozent deiner Tageskalorien sollten aus Fetten kommen,
+* davon maximal 30 Gramm aus Butter oder Margarine,
 * und mindestens 0,25 Gramm omega-3-Fette.
 
 ### Vier Tipps für deine Grundausstattung zuhause:
 
 1. Butter, Pflanzenmargarine oder Butter-Margarine-Mischung auf's Brot.
-2. ein raffiniertes Pflanzenöl, idealerweise Rapsöl, zum Kochen.
+2. Ein raffiniertes Pflanzenöl, idealerweise Rapsöl, zum Kochen.
 3. Kaltgepresstes, natives Pflanzenöl, z.B. Olive, Walnuss, Raps für die kalte Küche.
 4. Außerdem viele Nüsse, Samen und Kerne: Walnüsse, Mandeln, Haselnüsse, Nussmus, Sonnenblumen- und Kürbiskerne, Sesam, Leinsamen, etc. 
 
