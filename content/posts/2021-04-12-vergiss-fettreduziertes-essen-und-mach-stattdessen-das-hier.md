@@ -225,7 +225,7 @@ Der Rauchpunkt ist von der Vorbehandlung der Fette abhängig:
 
 Das Öl raucht sehr stark und wird dunkler und dickflüssiger. Wenn der Rauch schon in deinen Augen brennt und dich beim Atmen sticht, muss du das Öl sofort austauschen. Oberhalb des Rauchpunkts bilden sich rasch gesundheitsschädliche, krebserregende Stoffe, sogenannte Acroleine.
 
-Im **[Rauchpunkt-Vergleich](https://www.bzfe.de/lebensmittel/lebensmittelkunde/speisefette-und-oele/)** kannst du den großen Unterschied zwischen unraffinierten und raffinierten Fetten und Ölen gut erkennen:
+Im **Rauchpunkte-Vergleich** kannst du den großen Unterschied zwischen unraffinierten und raffinierten Fetten und Ölen gut erkennen:
 
 **Unraffinierte Fette:**
 
@@ -243,6 +243,8 @@ Im **[Rauchpunkt-Vergleich](https://www.bzfe.de/lebensmittel/lebensmittelkunde/s
 * Distelöl: 210 Grad Celsius
 * Erdnussöl: 200-235 Grad Celsius
 * Sonnenblumenöl: 210-225 Grad Celsius
+
+[Vergleichsquelle](https://www.bzfe.de/lebensmittel/lebensmittelkunde/speisefette-und-oele/)
 
 ## Zusammenfassung
 
