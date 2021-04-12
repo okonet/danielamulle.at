@@ -117,9 +117,7 @@ Ebenfalls 10 g Fett haben alle diese Lebensmittel - allerdings aus der "Altbekan
 * 345 Gramm Cottage Cheese
 * 2 Liter Buttermilch
 
-Jetzt möchte ich zwei Fragen beantworten, die mir oft von meinen PatientInnen gestellt werden:
-
-### 1. Was ist besser: Butter oder Margarine?
+## Was ist besser: Butter oder Margarine?
 
 Wichtiger als WAS du dir auf's Brot streichst ist die MENGE davon: Die [Deutsche Gesellschaft für Ernährung (DGE)](https://www.dge-ernaehrungskreis.de/lebensmittelgruppen/oele-und-fette/)  empfiehlt maximal 30 Gramm Butter oder Margarine. 
 
@@ -135,7 +133,7 @@ Steht auf der Packung nur "Margarine" können tierische Fette bis zu 2 Prozent d
 
 "Spezialmargarine" mit Phytosterinen muss extra gekennzeichnet sein, weil sie für Schwangere, Stillende und Kinder unter fünf Jahren nicht geeignet ist: Die Phytosterine senken den Cholesterinspiegel im Blut. Und das macht klarerweise nur für Menschen mit überhöhten Cholesterinwerten Sinn.
 
-### 2. Sind raffinierte Öle schlecht?
+## Sind raffinierte Öle schlecht?
 
 Kaltgepresste und raffinierte Öle haben fast die gleiche Fett-Zusammensetzung. 
 
