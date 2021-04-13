@@ -18,7 +18,7 @@ Aber auch wenn du total fettarm isst, kannst du trotzdem zu viel Kalorien bekomm
 
 Und es gibt noch etwas, das du vielleicht nicht weißt: Manche Fette sind für deinen Körper einzigartige Baustoffe, auf die er nicht verzichten kann. Beispielsweise kostbare Omega-Fette. 
 
-Ungesund wird Fett erst, wenn du zu viel davon isst. Vor allem von der "Altbekannten" Kategorie - dazu jetzt gleich mehr.
+**Ungesund wird Fett erst, wenn du zu viel davon isst. Vor allem von den "Altbekannten Fetten".** Was meine ich damit?
 
 ## Fett ist nicht gleich Fett!
 
@@ -39,13 +39,13 @@ Warum?
 1. Dein Körper kennt sie auswendig: sie haben dieselbe Struktur wie dein eigenes Körperfett. Kein Wunder, wir sind zoologisch ja auch Säugetiere.
 2. Außerdem kann sich dein Körper diese Fette perfekt selbst bauen. Und das macht er z.B. wenn du die Energie aus deinem Essen oder Trinken gerade nicht verbrauchst: ein Zuviel an Stärke, Zucker,  Alkohol oder auch Eiweiß wird in der Leber zu Fetten (Triglyeriden) umgebaut, und in deinen Fettzellen für Notzeiten gespeichert.
 
-Im Fachjargon nennt man diese Gruppe "gesättigte Fette" und beschreibt damit ihre chemische Struktur. Ich finde diesen Begriff eine super Merkhilfe: Dein Körper hat "Die Altbekannten" satt, er ist "gesättigt".
+Im Fachjargon nennt man diese Gruppe "gesättigte Fette" und beschreibt damit ihre chemische Struktur. Ich finde diesen Begriff **eine super Merkhilfe: Dein Körper hat die Altbekannten Fette satt, er ist von ihnen "gesättigt".**
 
 ### Gruppe 2 - Die Kostbaren
 
-Bei den wertvollen Omega-Fetten aus Nüssen, Samen, Kernen, Pflanzenölen, Fischen und Algen ist das ganz anders: 
+Bei den kostbaren Omega-Fetten aus Nüssen, Samen, Kernen, Pflanzenölen, Fischen und Algen ist das ganz anders: 
 
-Sie sind für deinen Körper Gold wert! Er braucht sie un-be-dingt 
+Sie sind für deinen Körper unglaublich wertvoll! Er braucht sie un-be-dingt... 
 
 * als einzigartige Zellwand-Bausteine.
 * als unentbehrliche Baustoffe für dein Gehirn.
@@ -68,7 +68,7 @@ Sonnenblumenkerne, Mais- und Weizenkeime, Soja, Kürbiskerne, Disteln, Traubenke
 **Omega-9-Fette**
 sind die Hauptfette in Oliven und im Olivenöl. Du findest größere Mengen aber auch in Erdnüssen, Mandeln, Haselnüssen, Sesam und den Ölen daraus.
 
-## 7 Gründe, warum Fette für dich wichtig sind
+## Sieben Gründe, warum Fette für dich wichtig sind:
 
 1. Sie sorgen dafür, dass dein Essen super schmeckt und dich wohlig satt macht.
 2. Fette sind kleine, mega-kompakte Energiespender.
@@ -80,10 +80,10 @@ sind die Hauptfette in Oliven und im Olivenöl. Du findest größere Mengen aber
 
 ## Wieviel Fett solltest du täglich essen?
 
-[Internationale Ernährungsgesellschaften](https://www.dge.de/wissenschaft/referenzwerte/fett/) empfehlen, dass:
+[Internationale Ernährungsgesellschaften](https://www.dge.de/wissenschaft/referenzwerte/fett/) empfehlen, dass...
 
-* maximal 30 Prozent deiner Tageskalorien aus Fetten kommen sollten.
-* davon maximal 30 Gramm als Butter oder Margarine auf deinem Brot oder Gebäck.
+* maximal 30 Prozent deiner Tageskalorien aus Fetten kommen sollten,
+* davon maximal 30 Gramm als Butter oder Margarine auf deinem Brot oder Gebäck,
 * und mindestens [0,25 Gramm](https://www.efsa.europa.eu/de/press/news/120727) omega-3-Fette. 
 
 Es gibt Situationen, bei denen du mehr als 30 Prozent deiner Tageskalorien als Fett brauchst, z.B.
