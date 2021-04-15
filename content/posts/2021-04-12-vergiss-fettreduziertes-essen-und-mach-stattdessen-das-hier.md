@@ -212,7 +212,8 @@ Und genau das ist bei Erkrankungen wie z.B.
 ein Vorteil gegenüber den "normalen" Fetten mit ihren 14-24 Fettbausteinchen.
 
 **Fazit:**
-Wenn du natives (unraffiniertes) Kokosöl ab und zu wegen seines typischen Geschmacks verwenden möchtest, spricht da überhaupt nichts dagegen. Nur steige bitte nicht aus "gesundheitlichen" Gründen auf Kokosöl um. Denn das wird leider von vielen "ExpertInnen" immer noch oft empfohlen.
+
+Wenn du natives, unraffiniertes Kokosöl ab und zu wegen seines typischen Geschmacks verwenden möchtest, spricht da überhaupt nichts dagegen. Nur steige bitte nicht aus "gesundheitlichen" Gründen auf Kokosöl um. Denn das wird leider immer noch oft empfohlen.
 
 ### 2. Du nimmst kaltgepresste Öle zum Braten.
 
