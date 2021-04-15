@@ -191,9 +191,13 @@ Kaufe eher kleinere Mengen - sie sind meist nur wenige Wochen haltbar.
 ### 1. Du setzt auf Kokosöl.
 
 Kokosöl liegt voll im Trend. Nicht aber für deinen Körper!
+
 Für ihn ist Kokosöl absolut nichts Besonderes: Die Fette darin haben Großteils dieselbe Struktur wie dein eigenes Körperfett. Außerdem kann sich dein Körper diese Fette auch selbst bauen.
 
-**Nur bei bestimmten Krankheiten kann es sinnvoll sein, vorübergehend Kokosöl zu verwenden:** 
+Und nicht nur das: 
+[WissenschafterInnen](https://www.ahajournals.org/doi/10.1161/CIRCULATIONAHA.119.043052) haben aktuelle Studien durchforstet, die Gesundheitswirkung von Kokosöl mit anderen Fetten verglichen haben. Dabei zeigt sich klipp und klar, dass Kokosöl für die Herz- und Gefäßgesundheit ungünstig ist.
+
+**Nur bei bestimmten Krankheiten kann es eventuell sinnvoll sein, vorübergehend Kokosöl zu verwenden, weil:**
 
 Kokos- und Palmkernöl enthalten viele kurze Fettstücke, sogenannte MCTs: Middle-Chain-Triglycerides. 
 Die "MCTs" bestehen nur aus 8-12 Fettbausteinchen - der Körper kann sie somit leicht aufnehmen und verarbeiten. 
@@ -205,7 +209,10 @@ Und genau das ist bei Erkrankungen wie z.B.
 * Bauchspeicheldrüsenentzündungen
 * Gallensäureverlustsyndrom 
 
-ein entscheidender Vorteil gegenüber den "normalen" Fetten mit ihren 14-24 Fettbausteinchen.
+ein Vorteil gegenüber den "normalen" Fetten mit ihren 14-24 Fettbausteinchen.
+
+**Fazit:**
+Wenn du natives (unraffiniertes) Kokosöl ab und zu wegen seines typischen Geschmacks verwenden möchtest, spricht da überhaupt nichts dagegen. Nur steige bitte nicht aus "gesundheitlichen" Gründen auf Kokosöl um. Denn das wird leider von vielen "ExpertInnen" immer noch oft empfohlen.
 
 ### 2. Du nimmst kaltgepresste Öle zum Braten.
 
