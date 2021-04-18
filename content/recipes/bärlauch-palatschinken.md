@@ -45,7 +45,7 @@ Diese Palatschinken schmecken natürlich auch, wenn gerade keine Bärlauchzeit i
 
 
 1. Bärlauch waschen und grob in Streifen schneiden.
-2. Vollkornmehl, Salz, Chiasamen und Pflanzendrink zu einem glatten Teig mixen.
+2. Vollkornmehl, Salz, Ei und Pflanzendrink zu einem glatten Teig mixen.
 3. Bärlauch zum Palatschinkenteig geben und mit dem Pürierstab zerkleinern.
 4. Palatschinken in einer beschichteten Pfanne mit etwas Rapsöl ausbacken.
 5. Eine Hälfte mit Käse bestreuen und einschlagen.
@@ -56,4 +56,4 @@ Diese Palatschinken schmecken natürlich auch, wenn gerade keine Bärlauchzeit i
 
 
 
-Falls du gerade kein Ei daheim hast, oder vegane Palatschinken backen möchtest: Mische 1 EL Chia- oder Leinsamen mit 4 EL warmes Wasser und lasse diese Mischung ca. 5 Minuten stehen, bis sie gut aufgequollen ist.
+Falls du gerade kein Ei daheim hast, oder vegane Palatschinken backen möchtest: Mische 1 EL Chia- oder Leinsamen mit 4 EL warmem Wasser und lass' diese Mischung ca. 5 Minuten stehen, bis sie gut aufgequollen ist.
