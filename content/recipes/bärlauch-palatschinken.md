@@ -21,7 +21,7 @@ categories:
     label: "schnell "
 timeToCook: 30 Minuten
 ---
-Palatschinken schmecken natürlich auch wenn gerade keine Bärlauchzeit ist: Hier findest Du mein Basisrezept sowohl als vegetarische als auch vegane Variante. Die "klassischen" Palatschinken sind ein All-time-Favorite meiner beiden Buben, vor allem gefüllt mit Sauerrahm und Zimt & Zucker.
+Diese Palatschinken schmecken natürlich auch, wenn gerade keine Bärlauchzeit ist: Hier teile ich mit Dir mein Palatschinken-Basisrezept, sowohl für eine vegetarische als auch vegane Variante. Die "klassischen" Palatschinken sind ein All-time-Favourite meiner beiden Buben, vor allem gefüllt mit Sauerrahm, Zimt und Zucker.
 
 
 
