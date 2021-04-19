@@ -43,7 +43,7 @@ Im Fachjargon nennt man diese Gruppe "gesättigte Fette" und beschreibt damit ih
 
 ### Gruppe 2 - Die Kostbaren
 
-Bei den kostbaren Omega-Fetten aus Nüssen, Samen, Kernen, Pflanzenölen, Fischen und Algen ist das ganz anders: 
+Bei den kostbaren Omega-Fetten aus Nüssen, Samen, Kernen, Pflanzenöl, Mikroalgenöl und fettem Kaltwasserfisch (der omega-3-reiche Mikroalgen und Krill frisst) ist das ganz anders: 
 
 Sie sind für deinen Körper unglaublich wertvoll! Er braucht sie un-be-dingt... 
 
@@ -60,7 +60,7 @@ Je nach chemischer Struktur kannst du die "Kostbaren" in drei Untergruppen einte
 * Omega-9-Fette
 
 **Omega-3-Fetten** 
-sind für deinen Körper besonders kostbar, weil du sie normalerweise relativ selten isst. Bestimmte Pflanzen wie Raps, Walnüsse, Lein und Hanf haben sehr viel von dieser Gruppe, aber Mikroalgen und fettreiche Kaltwasserfische die diese Algen fressen.
+sind für deinen Körper besonders kostbar, weil du sie normalerweise relativ selten isst. Bestimmte Pflanzen wie Raps, Walnüsse, Lein und Hanf haben sehr viel von dieser Gruppe. Genauso wie Mikroalgenöl und fettreiche Kaltwasserfische, die ja omega-3-reichen Krill und Mikroalgen fressen.
 
 **Omega-6-Fette** 
 Sonnenblumenkerne, Mais- und Weizenkeime, Soja, Kürbiskerne, Disteln, Traubenkerne und die daraus hergestellten Öle enthalten hauptsächlich diese Gruppe.
@@ -265,7 +265,7 @@ Sind für deinen Körper nichts Besonderes, er kann sie sich sogar selbst bauen.
 
 **Gruppe 2 - Die Kostbaren**
 
-Omega-Fetten aus Nüssen, Samen, Kernen, Pflanzenölen, Mikroalgen und fetten Kaltwasserfischen, die sich von Mikroalgen ernähren. 
+Omega-Fetten aus Nüssen, Samen, Kernen, Pflanzenölen, Mikroalgen und fetten Kaltwasserfischen, die sich von Mikroalgen und Krill ernähren. 
 Dein Körper braucht sie unbedingt, weil er sie nicht oder nur schwer selbst bauen kann.
 
 ### Warum sind Fette wichtig?
