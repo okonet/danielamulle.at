@@ -60,7 +60,7 @@ Je nach chemischer Struktur kannst du die "Kostbaren" in drei Untergruppen einte
 * Omega-9-Fette
 
 **Omega-3-Fetten** 
-sind für deinen Körper besonders kostbar, weil du sie normalerweise relativ selten isst. Fische haben sehr viel von dieser Gruppe, aber auch gewisse Pflanzen: Algen, Raps, Walnüsse, Lein und Hanf.
+sind für deinen Körper besonders kostbar, weil du sie normalerweise relativ selten isst. Bestimmte Pflanzen wie Raps, Walnüsse, Lein und Hanf haben sehr viel von dieser Gruppe, aber Mikroalgen und fettreiche Kaltwasserfische die diese Algen fressen.
 
 **Omega-6-Fette** 
 Sonnenblumenkerne, Mais- und Weizenkeime, Soja, Kürbiskerne, Disteln, Traubenkerne und die daraus hergestellten Öle enthalten hauptsächlich diese Gruppe.
@@ -75,7 +75,7 @@ sind die Hauptfette in Oliven und im Olivenöl. Du findest größere Mengen aber
 3. Sie helfen dir dabei, die Vitamine A, D, E und K aufzunehmen und zu verwerten.
 4. Fette sind wichtige Bausteine für deine Zellwände und dein Gehirn (omega-Fette).
 5. Sie schützen deine Blutgefäße (omega-3-Fette).
-6. Fette beeinflussen Entzündungen (omega-Fette).
+6. Fette beeinflussen Entzündungen (omega-3 und 6-Fette).
 7. Sie stützen und schützen deine inneren Organe wie z.B. deine Nieren.
 
 ## Wieviel Fett solltest du täglich essen?
@@ -173,8 +173,8 @@ Kaltgepresste Öle behalten ihren typisches Aroma, und das kann in der kalten K�
 ## Drei Regeln für eine gute Fett-Kombi in deiner Ernährung:
 
 1. Baue Pflanzenöle, Nüsse, Kerne + Samen abwechselnd in jedes deiner Essen ein: so bekommst du genug von den kostbaren omega-Fetten.
-2. Iss täglich fleissig Omega-3-Fette: Rapsöl, Leinsamen, Leinöl, Walnüsse, Walnussöl, Hanföl,  Leindotteröl, Fisch. Omega-3-Kapseln mit Fisch- oder Mikroalgenöl sind auch eine Möglichkeit.
-3. Sei sparsam mit Fetten vom Tier, Kokos- und Palmöl: sie sind für deinen Körper unspannend. Große Ausnahme ist Fisch!
+2. Iss täglich fleissig Omega-3-Fette: Rapsöl, Leinsamen, Leinöl, Walnüsse, Walnussöl, Hanföl,  Leindotteröl. Omega-3-Kapseln mit Mikroalgenöl sind auch eine gute Möglichkeit.
+3. Sei sparsam mit Fetten vom Tier, Kokos- und Palmöl: sie sind für deinen Körper unspannend.
 
 ## Vier Tipps für deine Grundausstattung zuhause:
 
@@ -265,7 +265,7 @@ Sind für deinen Körper nichts Besonderes, er kann sie sich sogar selbst bauen.
 
 **Gruppe 2 - Die Kostbaren**
 
-Omega-Fetten aus Nüssen, Samen, Kernen, Pflanzenölen, Fischen und Algen. 
+Omega-Fetten aus Nüssen, Samen, Kernen, Pflanzenölen, Mikroalgen und fetten Kaltwasserfischen, die sich von Mikroalgen ernähren. 
 Dein Körper braucht sie unbedingt, weil er sie nicht oder nur schwer selbst bauen kann.
 
 ### Warum sind Fette wichtig?
