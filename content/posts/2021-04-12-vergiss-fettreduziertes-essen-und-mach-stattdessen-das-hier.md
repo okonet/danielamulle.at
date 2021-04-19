@@ -83,7 +83,7 @@ sind die Hauptfette in Oliven und im Olivenöl. Du findest größere Mengen aber
 [Internationale Ernährungsgesellschaften](https://www.dge.de/wissenschaft/referenzwerte/fett/) empfehlen, dass...
 
 * maximal 30 Prozent deiner Tageskalorien aus Fetten kommen sollten,
-* davon maximal 30 Gramm als Butter oder Margarine auf deinem Brot oder Gebäck,
+* davon maximal [30 Gramm](https://www.dge-ernaehrungskreis.de/lebensmittelgruppen/oele-und-fette/) als Butter oder Margarine auf deinem Brot oder Gebäck,
 * und mindestens [0,25 Gramm](https://www.efsa.europa.eu/de/press/news/120727) omega-3-Fette. 
 
 Es gibt Situationen, bei denen du mehr als 30 Prozent deiner Tageskalorien als Fett brauchst, z.B.
