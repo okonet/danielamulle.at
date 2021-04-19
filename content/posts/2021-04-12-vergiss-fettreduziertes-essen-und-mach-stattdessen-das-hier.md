@@ -1,5 +1,5 @@
 ---
-title: Vergiss fettreduziertes Essen - und mach stattdessen das hier.
+title: Vergiss fettreduziertes Essen - und mach stattdessen das hier
 date: 2021-04-12T19:10:04.354Z
 coverImage: ../assets/butter_sorin-gheorghita-094mp_cbdpm-unsplash.jpg
 coverImageAuthor: Sorin Gheorghita
