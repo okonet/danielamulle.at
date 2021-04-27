@@ -60,7 +60,7 @@ Je nach chemischer Struktur kannst du die "Kostbaren" in drei Untergruppen einte
 * Omega-9-Fette
 
 **Omega-3-Fetten** 
-sind für deinen Körper besonders kostbar, weil du sie normalerweise relativ selten isst. Bestimmte Pflanzen wie Raps, Walnüsse, Lein und Hanf haben sehr viel von dieser Gruppe. Genauso wie Mikroalgenöl und fettreiche Kaltwasserfische, die ja omega-3-reichen Krill und Mikroalgen fressen.
+sind für deinen Körper besonders kostbar. Bestimmte Pflanzen wie Raps, Walnüsse, Lein-, Chia- und Hanfsamen haben sehr viel von dieser Gruppe. Genauso wie Mikroalgenöl und fettreiche Kaltwasserfische. Diese Fische speichern die omega-3-Fette ihres Futters - kleinere Fische, die sich von omega-3-reichen Mikroalgen und Krill ernähren.
 
 **Omega-6-Fette** 
 Sonnenblumenkerne, Mais- und Weizenkeime, Soja, Kürbiskerne, Disteln, Traubenkerne und die daraus hergestellten Öle enthalten hauptsächlich diese Gruppe.
@@ -180,7 +180,7 @@ Kaltgepresste Öle behalten ihren typisches Aroma, und das kann in der kalten K�
 
 1. Ein Brotaufstrich nach deinem Geschmack: Butter, Pflanzenmargarine oder Butter-Margarine-Mischung.
 2. Zum Kochen: ein raffiniertes Pflanzenöl, idealerweise Rapsöl.
-3. Für kalte Gerichte: kaltgepresstes, natives Pflanzenöl, z.B. Olive, Walnuss, Raps 
+3. Für kalte Gerichte: kaltgepresstes, natives Pflanzenöl, z.B. Olive, Walnuss, Raps. 
 4. Außerdem viele Nüsse, Samen und Kerne, z.B.: Walnüsse, Mandeln, Haselnüsse, Nussmus, Sonnenblumen- und Kürbiskerne, Sesam, Leinsamen, etc. 
 
 Lagere deine kaltgepressten Pflanzenöle kühl und dunkel. 
@@ -265,7 +265,7 @@ Sind für deinen Körper nichts Besonderes, er kann sie sich sogar selbst bauen.
 
 **Gruppe 2 - Die Kostbaren**
 
-Omega-Fetten aus Nüssen, Samen, Kernen, Pflanzenölen, Mikroalgen und fetten Kaltwasserfischen, die sich von Mikroalgen und Krill ernähren. 
+Omega-Fetten aus Nüssen, Samen, Kernen, Pflanzenölen, Mikroalgen und fetten Kaltwasserfischen, die omega-3-Fette aus ihrer Nahrung anreichern. 
 Dein Körper braucht sie unbedingt, weil er sie nicht oder nur schwer selbst bauen kann.
 
 ### Warum sind Fette wichtig?
