@@ -43,7 +43,7 @@ Im Fachjargon nennt man diese Gruppe "gesättigte Fette" und beschreibt damit ih
 
 ### Gruppe 2 - Die Kostbaren
 
-Bei den kostbaren Omega-Fetten aus Nüssen, Samen, Kernen, Pflanzenöl, Mikroalgenöl und fettem Kaltwasserfisch (der omega-3-reiche Mikroalgen und Krill frisst) ist das ganz anders: 
+Bei den kostbaren Omega-Fetten aus Nüssen, Samen, Kernen, Pflanzenölen, Mikroalgenöl und fetten Kaltwasserfischen (die omega-3-Fette aus ihrer Nahrung anreichern) ist das ganz anders: 
 
 Sie sind für deinen Körper unglaublich wertvoll! Er braucht sie un-be-dingt... 
 
