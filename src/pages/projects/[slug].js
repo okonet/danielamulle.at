@@ -4,9 +4,15 @@ import React from "react"
 import renderToString from "next-mdx-remote/render-to-string"
 import { getAllPostsAndCategories } from "../api/posts"
 import components from "../../gatsby-plugin-theme-ui/components"
-import ProjectsCategoryPage from "../../components/ProjectsCategoryPage"
-import ProjectsPostPage from "../../components/ProjectsPostPage"
 import smartypants from "@silvenon/remark-smartypants"
+import dynamic from "next/dynamic"
+
+const ProjectsCategoryPage = dynamic(() =>
+  import("../../components/ProjectsCategoryPage")
+)
+const ProjectsPostPage = dynamic(() =>
+  import("../../components/ProjectsPostPage")
+)
 
 export async function getStaticProps({ params }) {
   const { slug } = params

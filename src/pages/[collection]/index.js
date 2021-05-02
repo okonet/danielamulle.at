@@ -1,14 +1,16 @@
 import React from "react"
+import dynamic from "next/dynamic"
 import renderToString from "next-mdx-remote/render-to-string"
 import smartypants from "@silvenon/remark-smartypants"
 import { getAllPostsAndCategories } from "../api/posts"
-import BlogPosts from "../../components/BlogPosts"
-import RecipesPosts from "../../components/RecipesPosts"
 import config from "../../../site.config"
 import components from "../../gatsby-plugin-theme-ui/components"
-import DefaultPage from "../../components/DefaultPage"
 import { getSection } from "../api/sections"
-import ProjectsPosts from "../../components/ProjectsPosts"
+
+const DefaultPage = dynamic(() => import("../../components/DefaultPage"))
+const BlogPosts = dynamic(() => import("../../components/BlogPosts"))
+const RecipesPosts = dynamic(() => import("../../components/RecipesPosts"))
+const ProjectsPosts = dynamic(() => import("../../components/ProjectsPosts"))
 
 export async function getStaticProps({ params, locale }) {
   const { collection } = params

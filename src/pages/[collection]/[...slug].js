@@ -1,19 +1,25 @@
 /* @jsx jsx */
 import { jsx } from "theme-ui"
 import React from "react"
+import dynamic from "next/dynamic"
+import smartypants from "@silvenon/remark-smartypants"
 import renderToString from "next-mdx-remote/render-to-string"
 import {
   getAllPostsAndCategories,
   getCategoriesByCollection,
   getPostBySlug,
 } from "../api/posts"
-import components from "../../gatsby-plugin-theme-ui/components"
 import config from "../../../site.config"
-import BlogPostPage from "../../components/BlogPostPage"
-import RecipePage from "../../components/RecipesPost"
-import ResourcePostPage from "../../components/ResourcePostPage"
-import ProjectsCategoryPage from "../../components/ProjectsCategoryPage"
-import smartypants from "@silvenon/remark-smartypants"
+import components from "../../gatsby-plugin-theme-ui/components"
+
+const BlogPostPage = dynamic(() => import("../../components/BlogPostPage"))
+const RecipePage = dynamic(() => import("../../components/RecipesPost"))
+const ResourcePostPage = dynamic(() =>
+  import("../../components/ResourcePostPage")
+)
+const ProjectsCategoryPage = dynamic(() =>
+  import("../../components/ProjectsCategoryPage")
+)
 
 export async function getStaticProps({ params, locale }) {
   const { collection, slug } = params
