@@ -1,14 +1,6 @@
-const smartypants = require("@silvenon/remark-smartypants")
-const withMDX = require("next-mdx-frontmatter")({
-  extension: /\.mdx?$/,
-  MDXOptions: {
-    remarkPlugins: [smartypants],
-  },
-})
-
-module.exports = withMDX({
+module.exports = {
   i18n: {
     locales: ["de-AT"],
     defaultLocale: "de-AT",
   },
-})
+}
