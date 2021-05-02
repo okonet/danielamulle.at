@@ -16,7 +16,7 @@ import { useRouter } from "next/router"
 import hydrate from "next-mdx-remote/hydrate"
 import components from "../gatsby-plugin-theme-ui/components"
 
-export default ({ post }) => {
+export default function RecipesPost({ post }) {
   const { asPath } = useRouter()
   const pageUrl = `${config.homepage}/${asPath}`
   const {
