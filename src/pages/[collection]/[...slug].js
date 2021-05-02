@@ -19,9 +19,10 @@ export async function getStaticProps({ params, locale }) {
   const { collection, slug } = params
   const pageType = slug[1] ?? "default"
   const post = getPostBySlug(collection, slug[0])
+  const thanksPost = getPostBySlug("sections", "thanks")
   const collectionCategories = getCategoriesByCollection(collection)
 
-  if (!post) {
+  if (!post || !thanksPost) {
     console.error("Could not fetch post...")
   }
 
@@ -40,12 +41,15 @@ export async function getStaticProps({ params, locale }) {
       return matchedTag && !category.isTag
     }) ?? null
 
-  const mdxSource = await renderToString(post.content, {
+  const contentSrc = pageType === "thanks" ? thanksPost.content : post.content
+
+  const mdxSource = await renderToString(contentSrc, {
     components,
     mdxOptions: {
       remarkPlugins: [smartypants],
     },
   })
+
   return {
     props: {
       collection,

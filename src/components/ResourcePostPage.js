@@ -1,13 +1,12 @@
 /** @jsx jsx */
 import React from "react"
-import { Box, jsx } from "theme-ui"
+import { jsx } from "theme-ui"
 import { testimonialsTheme } from "../theme"
-import Content from "../../content/sections/thanks.md"
 import LeadLayout from "./LeadLayout"
 import hydrate from "next-mdx-remote/hydrate"
 import components from "../gatsby-plugin-theme-ui/components"
 
-export default function ResourcePostPage({ post, pageType }) {
+export default function ResourcePostPage({ post }) {
   const {
     body,
     coverImage,
@@ -17,7 +16,6 @@ export default function ResourcePostPage({ post, pageType }) {
     title,
     subtitle,
   } = post
-  const isThanksPage = pageType === "thanks"
   return (
     <LeadLayout
       theme={testimonialsTheme}
@@ -28,13 +26,7 @@ export default function ResourcePostPage({ post, pageType }) {
       coverImageLink={coverImageLink}
       socialImage={socialImage}
     >
-      {isThanksPage ? (
-        <Box sx={{ mt: 4 }}>
-          <Content />
-        </Box>
-      ) : (
-        hydrate(body, { components })
-      )}
+      {hydrate(body, { components })}
     </LeadLayout>
   )
 }

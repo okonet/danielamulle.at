@@ -16,7 +16,6 @@ import PageLayout from "./PageLayout"
 import CalendarCard from "./CalendarCard"
 import SubscribeForm from "./SubscribeForm"
 import Modal from "react-modal"
-import Thanks from "../../content/sections/thanks.md"
 import { useRouter } from "next/router"
 import hydrate from "next-mdx-remote/hydrate"
 import components from "../gatsby-plugin-theme-ui/components"
@@ -89,7 +88,7 @@ const ProjectsCategoryPage = ({ post, posts }) => {
       shallow: true,
     })
   }
-  const signupComplete = query.thanks
+  const signupComplete = "thanks" in query
 
   useEffect(() => {
     // Toggle modal when we have a signup in the search part of URL
@@ -133,12 +132,6 @@ const ProjectsCategoryPage = ({ post, posts }) => {
           <SubscribeForm listId={listId} />
         </Box>
       </Modal>
-
-      {signupComplete && (
-        <Box sx={{ my: 4 }}>
-          <Thanks />
-        </Box>
-      )}
 
       {hydrate(body, { components })}
 
