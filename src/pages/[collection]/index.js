@@ -1,5 +1,6 @@
 import React from "react"
 import renderToString from "next-mdx-remote/render-to-string"
+import smartypants from "@silvenon/remark-smartypants"
 import { getAllPostsAndCategories } from "../api/posts"
 import BlogPosts from "../../components/BlogPosts"
 import RecipesPosts from "../../components/RecipesPosts"
@@ -17,7 +18,12 @@ export async function getStaticProps({ params, locale }) {
   let section = getSection(collection)
   const { content } = section
   if (content) {
-    const sectionMDX = await renderToString(content, { components })
+    const sectionMDX = await renderToString(content, {
+      components,
+      mdxOptions: {
+        remarkPlugins: [smartypants],
+      },
+    })
     section = {
       ...section,
       body: sectionMDX,

@@ -13,6 +13,7 @@ import BlogPostPage from "../../components/BlogPostPage"
 import RecipePage from "../../components/RecipesPost"
 import ResourcePostPage from "../../components/ResourcePostPage"
 import ProjectsCategoryPage from "../../components/ProjectsCategoryPage"
+import smartypants from "@silvenon/remark-smartypants"
 
 export async function getStaticProps({ params, locale }) {
   const { collection, slug } = params
@@ -39,7 +40,12 @@ export async function getStaticProps({ params, locale }) {
       return matchedTag && !category.isTag
     }) ?? null
 
-  const mdxSource = await renderToString(post.content, { components })
+  const mdxSource = await renderToString(post.content, {
+    components,
+    mdxOptions: {
+      remarkPlugins: [smartypants],
+    },
+  })
   return {
     props: {
       collection,

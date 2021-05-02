@@ -10,6 +10,7 @@ import mdx from "mdast-util-mdx"
 import renderToString from "next-mdx-remote/render-to-string"
 import components from "../../gatsby-plugin-theme-ui/components"
 import { getSection } from "../api/sections"
+import smartypants from "@silvenon/remark-smartypants"
 
 export async function getStaticProps() {
   const collection = "recipes"
@@ -19,7 +20,12 @@ export async function getStaticProps() {
   let section = getSection(collection)
   const { content } = section
   if (content) {
-    const sectionMDX = await renderToString(content, { components })
+    const sectionMDX = await renderToString(content, {
+      components,
+      mdxOptions: {
+        remarkPlugins: [smartypants],
+      },
+    })
     section = {
       ...section,
       body: sectionMDX,

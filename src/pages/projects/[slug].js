@@ -6,6 +6,7 @@ import { getAllPostsAndCategories } from "../api/posts"
 import components from "../../gatsby-plugin-theme-ui/components"
 import ProjectsCategoryPage from "../../components/ProjectsCategoryPage"
 import ProjectsPostPage from "../../components/ProjectsPostPage"
+import smartypants from "@silvenon/remark-smartypants"
 
 export async function getStaticProps({ params }) {
   const { slug } = params
@@ -20,6 +21,9 @@ export async function getStaticProps({ params }) {
     })
     const mdxSource = await renderToString(projectPost.description, {
       components,
+      mdxOptions: {
+        remarkPlugins: [smartypants],
+      },
     })
 
     return {
