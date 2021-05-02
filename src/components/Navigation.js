@@ -11,6 +11,7 @@ import {
   projectsTheme,
 } from "../theme"
 import { blogPath, projectsPath, recipesPath } from "../../paths"
+import { useRouter } from "next/router"
 
 const pages = [
   {
@@ -47,10 +48,13 @@ const pages = [
 
 const NavLink = React.forwardRef((props, ref) => {
   const { sx, href = "/", children, ...rest } = props
+  const router = useRouter()
+  const isActive = router.asPath.includes(href)
   return (
     <Link href={href} passHref {...rest}>
       <Styled.a
         ref={ref}
+        className={isActive ? "active" : undefined}
         sx={{
           position: "relative",
           py: 1,
