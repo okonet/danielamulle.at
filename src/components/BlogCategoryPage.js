@@ -8,7 +8,7 @@ import Group from "react-group"
 import PageLayout from "./PageLayout"
 import PostCard from "./PostCard"
 
-export default ({ category }) => {
+export default function BlogCategoryPage({ category }) {
   return (
     <PageLayout
       theme={blogTheme}

@@ -8,7 +8,7 @@ import Group from "react-group"
 import PageLayout from "./PageLayout"
 import PostCard from "./PostCard"
 
-export default ({ category, posts }) => {
+export default function RecipesCategory({ category, posts }) {
   return (
     <PageLayout
       theme={recipesTheme}
@@ -38,7 +38,7 @@ export default ({ category, posts }) => {
           sx={{ p: 0, mt: 3, mb: 4, mx: [0, 0, -5], px: [0, 0, 2] }}
         >
           {posts.map((post) => (
-            <Box as="li" sx={{ m: 0, p: 0, listStyle: "none" }}>
+            <Box key={post.slug} as="li" sx={{ m: 0, p: 0, listStyle: "none" }}>
               <PostCard {...post} key={post.slug} />
             </Box>
           ))}
