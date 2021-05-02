@@ -2,20 +2,13 @@
 title: Hurra, es hat funktioniert!
 ---
 
-import { Flex } from "theme-ui"
-import CheckCircleIcon from "../../src/components/CheckCircleIcon"
-
 <Flex sx={{ p: 4, mt: -4, bg: "background", alignItems:"center", flexDirection: "column" }}>
 
-<CheckCircleIcon
-  width={128}
-  height={128}
-  sx={{
+<CheckCircleIcon width={128} height={128} sx={{
     color: "primary",
     stroke: "sectionBg",
     strokeWidth: "1px",
-  }}
-/>
+  }} />
 
 # Hurra, es hat funktioniert!
 

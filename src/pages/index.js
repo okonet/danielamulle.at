@@ -2,33 +2,48 @@
 import * as React from "react"
 import { Grid, jsx, Styled, ThemeProvider } from "theme-ui"
 import { take } from "lodash"
-import Home, { title } from "../../content/sections/home.mdx"
 import { blogTheme, homeTheme, recipesTheme } from "../theme"
 import PostCard from "../components/PostCard"
 import Link from "../components/Link"
 import { blogPath, recipesPath } from "../../paths"
 import PageLayout from "../components/PageLayout"
 import AboutBlock from "../components/AboutBlock"
-import { getAllPostsAndCategories } from "./api/posts"
+import { getAllPostsAndCategories, getPostBySlug } from "./api/posts"
 import config from "../../site.config"
+import renderToString from "next-mdx-remote/render-to-string"
+import hydrate from "next-mdx-remote/hydrate"
+import smartypants from "@silvenon/remark-smartypants"
+import components from "../gatsby-plugin-theme-ui/components"
 
 export async function getStaticProps() {
   const [recipes] = getAllPostsAndCategories(config.collections.recipes)
   const [posts] = getAllPostsAndCategories(config.collections.blog)
+  const pagePost = getPostBySlug("sections", "home")
+
+  const mdxSource = await renderToString(pagePost.content, {
+    components,
+    mdxOptions: {
+      remarkPlugins: [smartypants],
+    },
+  })
 
   return {
     props: {
+      post: {
+        ...pagePost,
+        body: mdxSource,
+      },
       latestRecipes: take(recipes, 3),
       latestPosts: take(posts, 3),
     },
   }
 }
 
-export default function IndexPage({ latestRecipes, latestPosts }) {
+export default function IndexPage({ post, latestRecipes, latestPosts }) {
   return (
-    <PageLayout theme={homeTheme} title={title}>
+    <PageLayout theme={homeTheme} title={post.title}>
       <AboutBlock sx={{ mt: [0, -5] }}>
-        <Home />
+        {hydrate(post.body, { components })}
       </AboutBlock>
 
       <ThemeProvider theme={recipesTheme}>

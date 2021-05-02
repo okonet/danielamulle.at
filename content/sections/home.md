@@ -2,8 +2,6 @@
 title: 👋, ich bin Daniela
 ---
 
-import ContactInfo from "../../src/components/ContactInfo"
-
 Bauchdetektivin mit Herz und Hirn.
 
 - _Du suchst rasche Hilfe bei Darmproblemen?_
