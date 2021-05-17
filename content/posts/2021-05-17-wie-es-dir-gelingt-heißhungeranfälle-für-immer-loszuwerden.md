@@ -12,10 +12,12 @@ categories:
 ---
 Linda arbeitet als Marketingleiterin in einem großen Verlag. An ihren Arbeitstagen jagt ein mehrstündiges Meeting das andere, dazwischen klingelt das Handy fast ununterbrochen und unzählige dringende Emails warten auf Beantwortung. Zeit für ein Mittagessen gibt es selten - maximal ein Käsestangerl das ihr eine Kollegin vom Bäcker mitbringt oder einen Apfel aus der Obstschale in der Teeküche. Wenn sie dann gegen 19:00 Uhr heimkommt führt ihr Weg schnurstraks zum Kühlschrank, und dann gibt es kein Halten mehr: sie fühlt sich ihrem unbändigen Heißhunger völlig ausgeliefert und isst was ihr in die Finger kommt. 
 
-Bei Clara ist es anders: Sie isst mittags immer mit ihren Kolleginnen in der Betriebskantine. Morgens nimmt sie sich meistens ein Joghurt mit ein paar Löfferl Früchtemüsli mit ins Büro. Eigentlich alles ganz gut, wäre da nicht ihre Chefin: Nichts kann sie ihr Recht machen, nichts schnell genug erledigen. Wenn ein Email nicht innerhalb von fünf Minuten beantwortet ist klingelt schon das Telefon. Clara traut sich kaum abzuheben. Während sie schweißgebadet den Hörer auflegt greift sie schon in ihrer Schreibtischlade: Flugs wandern fünf Schokopralinen in ihren Mund, gefolgt von einer halben Packung Schoko-Nuss-Schnitten. Jetzt geht's wieder so halbwegs. Plötzlch fällt Clara ein, dass sie heute eigentlich nichts Naschen wollte. Mit Tränen in den Augen schnappt sie sich drei Rippen Milchschokolade aus ihrer Lade - jetzt ist eh schon egal!
+*Bei Clara ist es anders: Sie isst mittags immer in der Betriebskantine. Morgens nimmt sie sich ein Joghurt mit ein paar Löfferl Früchtemüsli mit ins Büro. Eigentlich alles ganz gut, wäre da nicht ihre Chefin: Nichts kann sie ihr Recht machen. Wenn ein Email nicht innerhalb von fünf Minuten beantwortet ist klingelt schon das Telefon. Clara traut sich kaum abzuheben. Wenn sie danach schweißgebadet den Hörer auflegt greift sie gleich in ihre Schreibtischlade: Flugs wandern fünf Schokopralinen in ihren Mund, gefolgt von einer halben Packung Schoko-Nuss-Schnitten. Jetzt geht's wieder so halbwegs. Plötzlich fällt Clara ein, dass sie heute eigentlich nichts Naschen wollte. Mit Tränen in den Augen schnappt sie sich drei Rippen Milchschokolade aus ihrer Lade - jetzt ist eh schon egal!*
 
 Findest du dich in diesen Geschichten wieder? 
+
 Würdest Du gerne wissen, ob und wie du deine Heißhungerattacken bezwingen kannst?
+
 Dann ist dieser Blogartikel genau richtig für dich!
 
 **Ich möchte dir vier verschiedene Heißhunger-Arten vorstellen, und dir erklären, was du dagegen machen kannst.**
@@ -47,7 +49,7 @@ Normalerweise klappt es gut, wenn du diese vier Komponenten in deinem Essen komb
 1. Kohlenhydrate, idealerweise Vollkorn:
    Vollkornbrot oder -gebäck, Vollkornnudeln, Vollkornreis, Vollkorncouscous oder -bulgur, Quinoa, Hirse, Buchweizen, Rollgerste, Kartoffeln, Amaranth, verschiedene Getreideflocken, etc.
 2. Eiweiß:
-   Hülsenfrüche (Erbsen, Linsen, Kichererbsen, bohnen), Soja (Tofu, Sojabohnen, Miso), Milchprodukte (Käse, Topfen (Quark), Cottage Cheese, Skyr, Joghurt,...), Eier, Fleisch, Fisch.
+   Hülsenfrüchte (Erbsen, Linsen, Kichererbsen, bohnen), Soja (Tofu, Sojabohnen, Miso), Milchprodukte (Käse, Topfen (Quark), Cottage Cheese, Skyr, Joghurt,...), Eier, Fleisch, Fisch.
 3. Gemüse, Salat und/oder Obst: das versorgt dich unter anderem mit Vitaminen, Mineralstoffen, Spurenelementen, Ballaststoffen und sekundären Pflanzenstoffen.
 4. wertvolle omega-Fette:
    Nüsse, Samen (Sesam, Lein-, Hanf- oder Chiasamen, Mohn), Kerne (Sonnenblumen-, Kürbis-, Pinienkerne) und/oder kaltgepresste Pflanzenöle (Walnuss, Hanf, Raps, Olive, etc.).
@@ -125,7 +127,7 @@ Genieße aber ganz bewusst, nicht beim Vorratsschrank oder deiner Naschlade steh
 
 ## 4. Verbots-Heißhunger
 
-Zwei Monate hast du jetzt schon komplett auf Süßigkeiten verzichtet. Seit letzter Woche kreisen deine Gedanken aber fast ständig um Karamellkekse, Gummibärchen und deine Lieblingsschokolade. Heimlich holst du dir heute eine Rippe davon, doch kaum hast du sie hastig im Stehen runtergeschluckt nimmst du automatisch die zweite, die dritte...bis die ganze 300-Gramm-Tafel weg ist. Und "weil's jetzt eh schon egal ist" schiebst du gleich noch eine Packung Karamellkekse hinterher, und zwei Handvoll Gummibärchen. Danach ist dir kotzübel, du fühlst dich besch..... und beschließt, morgen noch strenger mit dir zu sein.
+Zwei Monate hast du jetzt schon komplett auf Süßigkeiten verzichtet. Seit letzter Woche kreisen deine Gedanken aber fast ständig um Karamellkekse, Gummibärchen und deine Lieblingsschokolade. Heimlich holst du dir heute eine Rippe davon, doch kaum hast du sie hastig im Stehen runtergeschluckt nimmst du automatisch die zweite, die dritte - bis die ganze 300-Gramm-Tafel weg ist. Und "weil's jetzt eh schon egal ist" schiebst du gleich noch eine Packung Karamellkekse hinterher, und zwei Handvoll Gummibärchen. Danach ist dir kotzübel, du fühlst dich beschxxxxx und beschließt, morgen noch strenger mit dir zu sein.
 
 ### Hintergrund
 
@@ -146,7 +148,7 @@ Je nach Grund bzw. Auslöser gibt es vier Arten von Heißhunger:
 3. Gewohnheits-Heißhunger
 4. Verbots-Heißhunger
 
-Finde heraus, welcher davon auf dich zutrifft.
+Finde heraus, welcher davon auf dich zutrifft. \
 Danach versuche meine Tipps für dich umzusetzen.
 Falls du dabei Hilfe brauchst unterstütze ich dich sehr gerne.
 
