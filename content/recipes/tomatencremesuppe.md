@@ -34,7 +34,7 @@ Diese Suppe ist aus einer "Restlverwertungsaktion" von Koriander und Brokkoli en
 - 1 mittelgroße Zwiebel
 - 1 Knoblauchzehe
 - 150 g gelbe oder rote Linsen
-- 600 ml passierte Tomaten
+- 700 ml passierte Tomaten
 - 1 Brokkolistrunk (optional)
 - 200 ml Soja creme cuisine oder Sauerrahm (bei Bedarf laktosefrei)
 - Rapsöl
@@ -50,7 +50,7 @@ Diese Suppe ist aus einer "Restlverwertungsaktion" von Koriander und Brokkoli en
 3. 3 EL Rapsöl in einem großen Topf bei mittlerer Hitze erwärmen.
 4. Zwiebel und Knoblauch einige Minuten darin anbraten.
 5. Linsen und Brokkoli zugeben und einige Minuten mitrösten.
-6. Mit Wasser bedecken, 1 TL Salz zugeben und aufkochen.
+6. Gut mit Wasser bedecken, 1 TL Salz zugeben und aufkochen.
 7. Passierte Tomaten und Koriander unterrühren.
 8. Auf niedrige Hitze zurückschalten und ca. 10 Minuten zugedeckt köcheln lassen, bis die Linsen zerfallen.
 9. Pürieren und Soja creme cuisine oder Sauerrahm untermixen.
