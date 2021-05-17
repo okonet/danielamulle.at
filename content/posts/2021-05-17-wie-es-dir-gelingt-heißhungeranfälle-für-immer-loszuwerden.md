@@ -12,7 +12,7 @@ categories:
 ---
 Linda arbeitet als Marketingleiterin in einem großen Verlag. An ihren Arbeitstagen jagt ein mehrstündiges Meeting das andere, dazwischen klingelt das Handy fast ununterbrochen und unzählige dringende Emails warten auf Beantwortung. Zeit für ein Mittagessen gibt es selten - maximal ein Käsestangerl das ihr eine Kollegin vom Bäcker mitbringt oder einen Apfel aus der Obstschale in der Teeküche. Wenn sie dann gegen 19:00 Uhr heimkommt führt ihr Weg schnurstraks zum Kühlschrank, und dann gibt es kein Halten mehr: sie fühlt sich ihrem unbändigen Heißhunger völlig ausgeliefert und isst was ihr in die Finger kommt. 
 
-*Bei Clara ist es anders: Sie isst mittags immer in der Betriebskantine. Morgens nimmt sie sich ein Joghurt mit ein paar Löfferl Früchtemüsli mit ins Büro. Eigentlich alles ganz gut, wäre da nicht ihre Chefin: Nichts kann sie ihr Recht machen. Wenn ein Email nicht innerhalb von fünf Minuten beantwortet ist klingelt schon das Telefon. Clara traut sich kaum abzuheben. Wenn sie danach schweißgebadet den Hörer auflegt greift sie gleich in ihre Schreibtischlade: Flugs wandern fünf Schokopralinen in ihren Mund, gefolgt von einer halben Packung Schoko-Nuss-Schnitten. Jetzt geht's wieder so halbwegs. Plötzlich fällt Clara ein, dass sie heute eigentlich nichts Naschen wollte. Mit Tränen in den Augen schnappt sie sich drei Rippen Milchschokolade aus ihrer Lade - jetzt ist eh schon egal!*
+*Bei Clara ist es anders: Sie isst mittags immer in der Betriebskantine. Morgens nimmt sie sich ein Joghurt mit Obst und Müsli mit ins Büro. Eigentlich alles ganz gut, wäre da nicht ihre Chefin: Nichts kann sie ihr Recht machen. Wenn ein Email nicht innerhalb von fünf Minuten beantwortet ist klingelt schon das Telefon. Clara traut sich kaum abzuheben. Wenn sie danach schweißgebadet den Hörer auflegt greift sie gleich in ihre Schreibtischlade: Flugs wandern fünf Schokopralinen in ihren Mund, gefolgt von einer halben Packung Schoko-Nuss-Schnitten. Jetzt geht's wieder so halbwegs. Plötzlich fällt Clara ein, dass sie heute eigentlich nichts Naschen wollte. Mit Tränen in den Augen schnappt sie sich drei Rippen Milchschokolade aus ihrer Lade - jetzt ist's eh schon egal!*
 
 Findest du dich in diesen Geschichten wieder? 
 
@@ -22,7 +22,7 @@ Dann ist dieser Blogartikel genau richtig für dich!
 
 **Ich möchte dir vier verschiedene Heißhunger-Arten vorstellen, und dir erklären, was du dagegen machen kannst.**
 
-Lies' dir die vier Arten durch und finde heraus bei welchen du dich wiederfindest:
+Lies' dir die vier Arten durch: bei welchen findest du dich wieder?
 
 ## 1. Körperlicher Heißhunger
 
