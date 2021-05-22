@@ -54,7 +54,6 @@ function CustomApp({ Component, pageProps }) {
     <RootThemeProvider>
       <Head>
         <link rel="icon" href="/icons/favicon-32x32.png" />
-        <link rel="icon" href="/icons/logo.svg" type="image/svg+xml" />
         <link
           rel="apple-touch-icon"
           href="/icons/apple-touch-icon-180x180.png"
