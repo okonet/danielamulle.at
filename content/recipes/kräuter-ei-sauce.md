@@ -2,6 +2,8 @@
 title: Kräuter-Ei-Sauce
 date: 2020-06-25T19:26:15.299Z
 coverImage: /assets/kräuter-ei-sauce.jpg
+coverImageAuthor: Andrey Okonechnikov
+coverImageLink: http://okonet.ru/
 categories:
   - value: Aufstriche/Saucen/Dips
     label: Aufstriche/Saucen/Dips
@@ -19,6 +21,10 @@ categories:
     label: histaminarm
   - value: glutenfrei
     label: glutenfrei
+  - value: Mealprep-geeignet
+    label: Mealprep-geeignet
+  - value: "schnell "
+    label: "schnell "
 timeToCook: 20 Minuten
 ---
 

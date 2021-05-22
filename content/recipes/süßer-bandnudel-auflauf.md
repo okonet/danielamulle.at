@@ -2,6 +2,8 @@
 title: Süßer Bandnudel-Auflauf
 date: 2020-07-15T11:38:23.461Z
 coverImage: /assets/DSC03105.jpg
+coverImageAuthor: Andrey Okonechnikov
+coverImageLink: http://okonet.ru/
 categories:
   - value: Hauptspeisen
     label: Hauptspeisen
@@ -19,6 +21,8 @@ categories:
     label: histaminfrei
   - value: glutenfrei
     label: glutenfrei
+  - value: Mealprep-geeignet
+    label: Mealprep-geeignet
 timeToCook: 15 Minuten vorbereiten + 30 Minuten backen
 ---
 

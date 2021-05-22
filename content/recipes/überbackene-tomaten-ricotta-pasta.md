@@ -1,9 +1,10 @@
 ---
+coverImage: /assets/tomatenricottapasta.jpg
+.coverImageLink: https://okonet.ru
 title: Überbackene Tomaten-Ricotta-Pasta
 date: 2020-07-26T05:14:12.515Z
-coverImage: /assets/tomatenricottapasta.jpg
 coverImageAuthor: Andrey Okonechnikov
-.coverImageLink: https://okonet.ru
+coverImageLink: http://okonet.ru/
 categories:
   - value: Hauptspeisen
     label: Hauptspeisen
@@ -17,6 +18,8 @@ categories:
     label: fruktosefrei
   - value: glutenfrei
     label: glutenfrei
+  - value: Mealprep-geeignet
+    label: Mealprep-geeignet
 timeToCook: 20 Minuten vorbereiten + je 30 Minuten köcheln & backen
 ---
 

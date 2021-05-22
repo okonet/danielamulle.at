@@ -2,6 +2,8 @@
 title: Hirsepizza
 date: 2020-07-25T05:31:14.234Z
 coverImage: /assets/hirsepizza.jpg
+coverImageAuthor: Andrey Okonechnikov
+coverImageLink: http://okonet.ru/
 categories:
   - value: Hauptspeisen
     label: Hauptspeisen
@@ -17,6 +19,8 @@ categories:
     label: laktosefrei
   - value: glutenfrei
     label: glutenfrei
+  - value: Mealprep-geeignet
+    label: Mealprep-geeignet
 timeToCook: 30 Minuten vorbereiten + 30 Minuten backen
 ---
 

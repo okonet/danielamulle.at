@@ -2,6 +2,8 @@
 title: Zucchini-Apfel-Cremesuppe
 date: 2020-07-10T11:54:22.915Z
 coverImage: /assets/20200525-DSC02857.jpg
+coverImageAuthor: Andrey Okonechnikov
+coverImageLink: http://okonet.ru/
 categories:
   - value: Suppen
     label: Suppen
@@ -17,6 +19,10 @@ categories:
     label: histaminfrei
   - value: glutenfrei
     label: glutenfrei
+  - value: "schnell "
+    label: "schnell "
+  - value: Mealprep-geeignet
+    label: Mealprep-geeignet
 timeToCook: 15 Minuten vorbereiten + ca. 15 Minuten köcheln
 ---
 
@@ -30,7 +36,7 @@ Bei Suppen verwende ich statt der üblichen Kartoffel gerne Linsen für die Crem
 - 1,5 mittelgroße Zucchini (ca. 500 g)
 - 1 großer Apfel (ca. 240 g)
 - 100 g gelbe oder rote Linsen
-- frische Petersilie: 3-4 Stängel & Blätter
+- frische Petersilie: 3-4 Stängel & Blätter (optional)
 - 3 schwarze Pfefferkörner
 - Salz
 - Olivenöl

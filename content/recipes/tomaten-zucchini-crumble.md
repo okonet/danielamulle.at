@@ -19,6 +19,9 @@ categories:
     label: laktosefrei
   - value: glutenfrei
     label: glutenfrei
+  - value: Mealprep-geeignet
+    label: Mealprep-geeignet
+timeToCook: 20 Min vorbereiten + ca. 35 Min backen
 ---
 
 Ich liebe Crumbles, doch traditionell sind sie meist für Süßspeisen, Kuchen & Desserts reserviert. Ein Grund mehr für mich, auch mal eine pikante Variante zu kochen. Mit Haferflocken für den Crumble-Knuspereffekt und einer raffinierten Kombination von Zitrone & Kräutern:

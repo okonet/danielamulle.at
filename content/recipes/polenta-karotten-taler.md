@@ -2,6 +2,8 @@
 title: Polenta-Karotten-Taler
 date: 2020-06-23T12:42:31.030Z
 coverImage: /assets/DSC02999.jpg
+coverImageAuthor: Andrey Okonechnikov
+coverImageLink: http://okonet.ru/
 categories:
   - value: Hauptspeisen
     label: Hauptspeisen
@@ -19,6 +21,10 @@ categories:
     label: histaminfrei
   - value: glutenfrei
     label: glutenfrei
+  - value: "schnell "
+    label: "schnell "
+  - value: Mealprep-geeignet
+    label: Mealprep-geeignet
 timeToCook: 15 Minuten vorbereiten + 15 Minuten braten oder backen
 ---
 

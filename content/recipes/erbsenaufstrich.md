@@ -21,10 +21,14 @@ categories:
     label: laktosefrei
   - value: glutenfrei
     label: glutenfrei
+  - value: "schnell "
+    label: "schnell "
+  - value: Mealprep-geeignet
+    label: Mealprep-geeignet
 timeToCook: 15 Minuten
 ---
 
-Dieser Austrich ist nicht nur mega lecker, sondern auch eine kleine Eiweißbombe. Außerdem kannst du ihn superflott zubereiten und ganz wunderbar variieren:
+Dieser Austrich ist nicht nur mega lecker, sondern auch eine kleine Eiweißbombe. Außerdem kannst du ihn superflott zubereiten und ganz wunderbar variieren. Er eignet sich sogar als Pastasauce - dazu einfach mit etwas Pastakochwasser verdünnen:
 
 <Ingredients yields="4 Personen">
 

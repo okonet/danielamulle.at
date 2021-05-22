@@ -2,6 +2,8 @@
 title: Couscoustorte mit Tahini & Pinienkernen
 date: 2020-07-27T06:03:51.116Z
 coverImage: /assets/couscoustorte.jpg
+coverImageAuthor: Andrey Okonechnikov
+coverImageLink: http://okonet.ru/
 categories:
   - value: Hauptspeisen
     label: Hauptspeisen
@@ -13,6 +15,8 @@ categories:
     label: fruktosefrei
   - value: laktosefrei
     label: laktosefrei
+  - value: Mealprep-geeignet
+    label: Mealprep-geeignet
 timeToCook: 30 Minuten vorbereiten + ca. 30 Minuten backen
 ---
 

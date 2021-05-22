@@ -2,6 +2,8 @@
 title: Cremige Mais-Kokos-Suppe
 date: 2020-07-26T05:06:34.205Z
 coverImage: /assets/maiskokossuppe.jpg
+coverImageAuthor: Andrey Okonechnikov
+coverImageLink: http://okonet.ru/
 categories:
   - value: Suppen
     label: Suppen
@@ -19,6 +21,10 @@ categories:
     label: histaminfrei
   - value: glutenfrei
     label: glutenfrei
+  - value: "schnell "
+    label: "schnell "
+  - value: Mealprep-geeignet
+    label: Mealprep-geeignet
 timeToCook: 15 Min vorbereiten + 20 Minuten köcheln
 ---
 

@@ -78,6 +78,14 @@
     {
       "id": "glutenfrei",
       "isTag": true
+    },
+    {
+      "isTag": true,
+      "id": "schnell "
+    },
+    {
+      "isTag": true,
+      "id": "Mealprep-geeignet"
     }
   ]
 }

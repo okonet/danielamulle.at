@@ -2,9 +2,11 @@
 title: Holler-Pancakes
 date: 2020-06-25T19:07:48.288Z
 coverImage: /assets/20200603-dsc02920.jpg
+coverImageAuthor: Andrey Okonechnikov
+coverImageLink: http://okonet.ru/
 categories:
-  - value: "Kuchen, Kekserl & Co"
-    label: "Kuchen, Kekserl & Co"
+  - value: Kuchen, Kekserl & Co
+    label: Kuchen, Kekserl & Co
   - value: vegan
     label: vegan
   - value: gut vorzubereiten
@@ -19,6 +21,10 @@ categories:
     label: laktosefrei
   - value: histaminfrei
     label: histaminfrei
+  - value: "schnell "
+    label: "schnell "
+  - value: Mealprep-geeignet
+    label: Mealprep-geeignet
 timeToCook: 15 Minuten vorbereiten + 15 Minuten braten
 ---
 

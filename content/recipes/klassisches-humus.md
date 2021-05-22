@@ -2,6 +2,8 @@
 title: Klassisches Humus
 date: 2020-07-31T13:59:42.818Z
 coverImage: /assets/humus.jpg
+coverImageAuthor: Andrey Okonechnikov
+coverImageLink: http://okonet.ru/
 categories:
   - value: Aufstriche/Saucen/Dips
     label: Aufstriche/Saucen/Dips
@@ -21,6 +23,10 @@ categories:
     label: histaminfrei
   - value: glutenfrei
     label: glutenfrei
+  - value: Mealprep-geeignet
+    label: Mealprep-geeignet
+  - value: "schnell "
+    label: "schnell "
 timeToCook: 15 Minuten
 ---
 

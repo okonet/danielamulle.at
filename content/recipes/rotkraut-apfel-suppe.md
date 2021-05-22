@@ -19,6 +19,8 @@ categories:
     label: glutenfrei
   - value: histaminarm
     label: histaminarm
+  - value: Mealprep-geeignet
+    label: Mealprep-geeignet
 timeToCook: 15 Minuten vorbereiten + 30 Minuten köcheln
 ---
 

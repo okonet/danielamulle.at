@@ -2,6 +2,8 @@
 title: Sommergemüse-Cheesecake
 date: 2020-07-13T14:39:17.332Z
 coverImage: /assets/20200522-DSC02826.jpg
+coverImageAuthor: Andrey Okonechnikov
+coverImageLink: http://okonet.ru/
 categories:
   - value: Hauptspeisen
     label: Hauptspeisen

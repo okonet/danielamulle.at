@@ -2,6 +2,8 @@
 title: Beerentiramisu
 date: 2020-07-27T05:52:52.401Z
 coverImage: /assets/beerentiramisu.jpg
+coverImageAuthor: Andrey Okonechnikov
+coverImageLink: http://okonet.ru/
 categories:
   - value: Snacks
     label: Snacks
@@ -19,6 +21,10 @@ categories:
     label: histaminarm
   - value: laktosefrei
     label: laktosefrei
+  - value: "schnell "
+    label: "schnell "
+  - value: Mealprep-geeignet
+    label: Mealprep-geeignet
 timeToCook: 20 Minuten + mehrere Stunden kühlen
 ---
 

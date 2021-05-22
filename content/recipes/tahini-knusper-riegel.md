@@ -21,6 +21,8 @@ categories:
     label: histaminfrei
   - value: glutenfrei
     label: glutenfrei
+  - value: Mealprep-geeignet
+    label: Mealprep-geeignet
 timeToCook: 15 Minuten vorbereiten + 20 Minuten backen
 ---
 

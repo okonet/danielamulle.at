@@ -19,6 +19,10 @@ categories:
     label: glutenfrei
   - value: zum Mitnehmen
     label: zum Mitnehmen
+  - value: Mealprep-geeignet
+    label: Mealprep-geeignet
+  - value: "schnell "
+    label: "schnell "
 timeToCook: 30 Minuten
 ---
 

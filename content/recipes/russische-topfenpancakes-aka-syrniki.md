@@ -2,9 +2,11 @@
 title: Russische Topfenpancakes aka Syrniki
 date: 2020-06-25T19:12:01.011Z
 coverImage: /assets/20200606-dsc02978.jpg
+coverImageAuthor: Andrey Okonechnikov
+coverImageLink: http://okonet.ru/
 categories:
-  - value: "Kuchen, Kekserl & Co"
-    label: "Kuchen, Kekserl & Co"
+  - value: Kuchen, Kekserl & Co
+    label: Kuchen, Kekserl & Co
   - value: vegetarisch
     label: vegetarisch
   - value: gut vorzubereiten
@@ -19,6 +21,10 @@ categories:
     label: fruktosefrei
   - value: histaminfrei
     label: histaminfrei
+  - value: "schnell "
+    label: "schnell "
+  - value: Mealprep-geeignet
+    label: Mealprep-geeignet
 timeToCook: 15 Minuten vorbereiten + 15 Minuten braten
 ---
 

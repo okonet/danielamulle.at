@@ -2,6 +2,8 @@
 title: Brokkoli-Nuss-Gratin
 date: 2020-07-11T14:07:38.003Z
 coverImage: /assets/20200528-DSC02869.jpg
+coverImageAuthor: Andrey Okonechnikov
+coverImageLink: http://okonet.ru/
 categories:
   - value: Hauptspeisen
     label: Hauptspeisen
@@ -15,6 +17,8 @@ categories:
     label: laktosefrei
   - value: histaminfrei
     label: histaminfrei
+  - value: Mealprep-geeignet
+    label: Mealprep-geeignet
 timeToCook: 30 Minuten vorbereiten + 50 Minuten backen
 ---
 

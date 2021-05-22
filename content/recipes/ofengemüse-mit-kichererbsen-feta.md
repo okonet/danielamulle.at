@@ -2,6 +2,8 @@
 title: Ofengemüse mit Kichererbsen & Feta
 date: 2020-07-21T12:27:04.746Z
 coverImage: /assets/DSC03494.jpg
+coverImageAuthor: Andrey Okonechnikov
+coverImageLink: http://okonet.ru/
 categories:
   - value: Hauptspeisen
     label: Hauptspeisen
@@ -21,6 +23,8 @@ categories:
     label: histaminfrei
   - value: glutenfrei
     label: glutenfrei
+  - value: Mealprep-geeignet
+    label: Mealprep-geeignet
 timeToCook: 20 Minuten vorbereiten + ca. 35 Minuten backen
 ---
 

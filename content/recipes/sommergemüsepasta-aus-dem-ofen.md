@@ -1,7 +1,26 @@
 ---
+ingredients:
+  - "für 4 Personen:"
+  - 1 große Aubergine (ca. 300 g)
+  - 4 mittelgroße Karotten (ca. 300 g)
+  - 4 Selleriestangen (ca. 200 g)
+  - 1 große Zwiebel (ca. 170 g)
+  - 3 Knoblauchzehen
+  - 250 g kleine Pasta (Risoni, Fleckerl,..) bei Bedarf glutenfrei
+  - 1 TL Tomatenmark
+  - 350 ml Gemüsesuppe
+  - 3 EL frischen Oregano der Thymian
+  - abgeriebene Schale von 1 Zitrone
+  - 200 g geriebener Mozzarella
+  - 40 g geriebener Parmesan
+  - 3 mittelgroße Tomaten (400 g)
+  - Olivenöl und Rapsöl
+  - Salz und Pfeffer
 title: Sommergemüsepasta aus dem Ofen
 date: 2020-06-29T10:09:36.298Z
 coverImage: /assets/20200601-DSC02914.jpg
+coverImageAuthor: Andrey Okonechnikov
+coverImageLink: http://okonet.ru/
 categories:
   - value: Hauptspeisen
     label: Hauptspeisen
@@ -15,24 +34,9 @@ categories:
     label: laktosearm
   - value: glutenfrei
     label: glutenfrei
+  - value: Mealprep-geeignet
+    label: Mealprep-geeignet
 timeToCook: 40 Minuten vorbereiten + 45 Minuten backen
-ingredients:
-  - "für 4 Personen:"
-  - 1 große Aubergine (ca. 300 g)
-  - 4 mittelgroße Karotten (ca. 300 g)
-  - 4 Selleriestangen (ca. 200 g)
-  - 1 große Zwiebel (ca. 170 g)
-  - 3 Knoblauchzehen
-  - "250 g kleine Pasta (Risoni, Fleckerl,..) bei Bedarf glutenfrei"
-  - 1 TL Tomatenmark
-  - 350 ml Gemüsesuppe
-  - 3 EL frischen Oregano der Thymian
-  - abgeriebene Schale von 1 Zitrone
-  - 200 g geriebener Mozzarella
-  - 40 g geriebener Parmesan
-  - 3 mittelgroße Tomaten (400 g)
-  - Olivenöl und Rapsöl
-  - Salz und Pfeffer
 ---
 
 Bei diesem Rezept kochen die Nudeln im Backofen, in exzellenter Gesellschaft!

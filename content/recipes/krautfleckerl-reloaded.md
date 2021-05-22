@@ -21,6 +21,10 @@ categories:
     label: histaminfrei
   - value: glutenfrei
     label: glutenfrei
+  - value: "schnell "
+    label: "schnell "
+  - value: Mealprep-geeignet
+    label: Mealprep-geeignet
 timeToCook: 30 Minuten
 ---
 

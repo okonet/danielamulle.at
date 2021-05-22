@@ -2,6 +2,8 @@
 title: Blitzschnelles Mischgemüse-Pesto
 date: 2020-07-13T15:08:50.755Z
 coverImage: /assets/20200524-DSC02853.jpg
+coverImageAuthor: Andrey Okonechnikov
+coverImageLink: http://okonet.ru/
 categories:
   - value: Hauptspeisen
     label: Hauptspeisen
@@ -17,6 +19,10 @@ categories:
     label: laktosefrei
   - value: glutenfrei
     label: glutenfrei
+  - value: "schnell "
+    label: "schnell "
+  - value: Mealprep-geeignet
+    label: Mealprep-geeignet
 timeToCook: 15 Minuten
 ---
 

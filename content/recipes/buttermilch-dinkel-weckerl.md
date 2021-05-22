@@ -15,6 +15,8 @@ categories:
     label: gut vorzubereiten
   - value: zum Mitnehmen
     label: zum Mitnehmen
+  - value: Mealprep-geeignet
+    label: Mealprep-geeignet
 timeToCook: 10 Minuten vorbereiten, ca. 40 Minuten aufgehen + 20 Minuten backen
 ---
 

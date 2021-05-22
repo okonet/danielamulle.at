@@ -2,9 +2,11 @@
 title: Gebackene Apfelrollen
 date: 2020-07-10T12:01:12.643Z
 coverImage: /assets/20200523-DSC02846.jpg
+coverImageAuthor: Andrey Okonechnikov
+coverImageLink: http://okonet.ru/
 categories:
-  - value: "Kuchen, Kekserl & Co"
-    label: "Kuchen, Kekserl & Co"
+  - value: Kuchen, Kekserl & Co
+    label: Kuchen, Kekserl & Co
   - value: vegetarisch
     label: vegetarisch
   - value: zum Mitnehmen
@@ -15,6 +17,8 @@ categories:
     label: laktosefrei
   - value: histaminfrei
     label: histaminfrei
+  - value: Mealprep-geeignet
+    label: Mealprep-geeignet
 timeToCook: 30 Minuten vorbereiten + ca. 40 Minuten backen
 ---
 

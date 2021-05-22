@@ -62,7 +62,7 @@ Ballaststoffe aus Vollkorn, Obst, Gemüse und Hülsenfrüchten können dich nach
 
 ### 4. Du fütterst deinen Darmbakterienzoo.
 
-Hast du gewusst, dass in deinem Darm 1-2 kg Bakterien wohnen? Würdest du aus deinen Darmbakterien eine Kette basteln, so ginge diese [2,5 Mal um die Erde.](http://www.gutmicrobiotaforhealth.com/wp-content/uploads/2015/10/Getting-to-know-your-gut-microbiota_EN.jpg) Beeindruckend, oder? Diese Tierchen leben mit dir in Symbiose, und unterstützen dich, ohne das du's überhaupt merkst, z.B. bei der Immunabwehr. Trotz der tollen Arbeit, die sie leisten sind sie sehr bescheiden. Sie geben sich mit Ballaststoffen zufrieden, die du sowieso nicht verdauen kannst. Aber genau das wird bei Low Carb zum Problem, denn ohne Carbs keine Ballaststoffe, ohne Ballaststoffe kein Futter für deinen Darmbakterienzoo.
+Hast du gewusst, dass das in Deinem Darm hunderte Trillionen Bakterien wohnen? Würdest du aus deinen Darmbakterien eine Kette basteln, so ginge diese [2,5 Mal um die Erde.](http://www.gutmicrobiotaforhealth.com/wp-content/uploads/2015/10/Getting-to-know-your-gut-microbiota_EN.jpg) Beeindruckend, oder? Diese "Tierchen" leben mit dir in Symbiose, und unterstützen dich, ohne das du's überhaupt merkst, z.B. bei der Immunabwehr. Trotz der tollen Arbeit, die sie leisten sind sie sehr bescheiden. Sie geben sich mit Ballaststoffen zufrieden, die du sowieso nicht verdauen kannst. Aber genau das wird bei Low Carb zum Problem, denn ohne Carbs keine Ballaststoffe, ohne Ballaststoffe kein Futter für deinen Darmbakterienzoo.
 
 ### 5. Du gehst schonend mit den Ressourcen unseres Planeten um.
 

@@ -17,6 +17,10 @@ categories:
     label: laktosefrei
   - value: histaminarm
     label: histaminarm
+  - value: "schnell "
+    label: "schnell "
+  - value: Mealprep-geeignet
+    label: Mealprep-geeignet
 timeToCook: 30 Minuten
 ---
 

@@ -19,7 +19,9 @@ Ernährungsberater, Ernährungscoach, Ernährungstherapeut, TCM-Ernährungsexper
 
 Das ist die wichtigste Frage! Wenn es dir um Vorbeugung oder Information zu _gesunder Ernährung_ geht, hast du die "Qual der Wahl": Gerade im Internet finden sich zahlreiche "Experten" deren Ausbildung, Kompetenz & Qualifikation meist nicht überprüft wird. In Österreich ist zur Ernährungsberatung ein abgeschlossenes Ernährungswissenschaftsstudium inklusive Gewerbeschein oder ein Diätologiestudium gesetzliche Voraussetzung.
 
-Fühlst du dich _krank_ oder hast bereits eine _ärztliche Diagnose_, z.B. krankhaftes Übergewicht (BMI > 30), Reizdarm, Laktoseintoleranz, erhöhte Blutfette & Cholesterin, Diabetes, etc. ist die Wahl klar & einfach: Nur Diätologen & Ärzte mit der Zusatzausbildung Ernährungsmedizin können und dürfen dir dann nämlich weiterhelfen. Das Gesetz schreibt klipp & klar vor, dass Kranke & Krankheitsgefährdete nur von diesen beiden Expertengruppen betreut werden dürfen. Warum ist das so?
+Fühlst du dich _krank_ oder hast bereits eine _ärztliche Diagnose_, z.B. krankhaftes Übergewicht (BMI > 30), Reizdarm, Laktoseintoleranz, erhöhte Blutfette & Cholesterin, Diabetes, etc. ist die Wahl klar & einfach: Nur Diätologen & Ärzte mit der Zusatzausbildung Ernährungsmedizin können und dürfen dir dann nämlich weiterhelfen.
+
+Das [Gesetz](https://www.ris.bka.gv.at/Dokumente/BgblPdf/1998_169_1/1998_169_1.pdf) schreibt klipp & klar vor, dass Kranke & Krankheitsgefährdete nur von Diätologen und Ärzten betreut werden dürfen. Warum ist das so?
 
 ## "Better safe than sorry" oder auf gut Deutsch "Sicher ist sicher"
 

@@ -23,6 +23,8 @@ categories:
     label: glutenfrei
   - value: fruktosefrei
     label: fruktosefrei
+  - value: Mealprep-geeignet
+    label: Mealprep-geeignet
 timeToCook: 5 Minuten vorbereiten + ca. 2 Stunden köcheln
 ---
 

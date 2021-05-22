@@ -2,6 +2,8 @@
 title: Chili sin carne
 date: 2020-06-23T07:06:28.618Z
 coverImage: /assets/img_6070.jpg
+coverImageAuthor: Andrey Okonechnikov
+coverImageLink: http://okonet.ru/
 categories:
   - value: Hauptspeisen
     label: Hauptspeisen
@@ -19,6 +21,8 @@ categories:
     label: laktosefrei
   - value: glutenfrei
     label: glutenfrei
+  - value: Mealprep-geeignet
+    label: Mealprep-geeignet
 timeToCook: 20 Min zubereiten + 60 Min kochen
 ---
 

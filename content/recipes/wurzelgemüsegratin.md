@@ -17,6 +17,8 @@ categories:
     label: laktosefrei
   - value: glutenfrei
     label: glutenfrei
+  - value: Mealprep-geeignet
+    label: Mealprep-geeignet
 timeToCook: 20 Minuten vorbereiten + 35 Minuten backen
 ---
 

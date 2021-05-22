@@ -2,6 +2,8 @@
 title: Rote Linsensuppe
 date: 2020-07-15T11:50:48.570Z
 coverImage: /assets/DSC03515.jpg
+coverImageAuthor: Andrey Okonechnikov
+coverImageLink: http://okonet.ru/
 categories:
   - value: Suppen
     label: Suppen
@@ -19,7 +21,11 @@ categories:
     label: laktosefrei
   - value: glutenfrei
     label: glutenfrei
-timeToCook: 15 Minuten vorbereiten + 20 Minuten köcheln
+  - value: "schnell "
+    label: "schnell "
+  - value: Mealprep-geeignet
+    label: Mealprep-geeignet
+timeToCook: 15 Minuten vorbereiten + 15 Minuten köcheln
 ---
 
 Ich liebe dieses türkische Rezept mit dem du dir im Nu eine superleckere Eiweißbombe zum Löffeln zaubern kannst. Kreuzkümmel, Pfefferminze & frischer Zitronensaft verleihen dabei der Suppe das "gewisse Etwas":
@@ -49,7 +55,7 @@ Ich liebe dieses türkische Rezept mit dem du dir im Nu eine superleckere Eiwei�
 5. Linsen dazugeben und 1 Minute unter Rühren anrösten.
 6. Karottenwürfel, Tomatenviertel, Tomatenmark und ggf. Kreuzkümmel unterrühren und kurz mitrösten.
 7. Mit Suppe oder Wasser ablöschen und aufkochen.
-8. Alles zugedeckt ca. 20 Minuten bei schwacher Hitze köcheln lassen.
+8. Alles zugedeckt ca. 15 Minuten bei schwacher Hitze köcheln lassen.
 9. Getrocknete Minze hinzufügen und mit Chiliflocken, Salz und Pfeffer abschmecken.
 10. Falls dir die Suppe zu dickflüssig ist, noch etwas Wasser zugeben.
 11. Mit Zitronensaft verfeinern und mit frischem Vollkornbrot oder -gebäck servieren.
