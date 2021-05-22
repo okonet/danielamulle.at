@@ -30,7 +30,7 @@ Das Trendgericht darf auch unter meinen Rezepten nicht fehlen. Ich hab es sofort
 - Schale von 1/2 Bio-Zitrone
 - Salz und Pfeffer
 - 50 ml Oliven- oder Rapsöl
-- 250 g Fetakäse
+- 200 g Fetakäse
 - 4 EL Pinienkerne
 - 350 g Vollkornpasta (bei Bedarf glutenfrei)
 
