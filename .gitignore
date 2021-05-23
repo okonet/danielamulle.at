@@ -18,3 +18,5 @@ yarn-error.log*
 
 # GQL plugin for webstorm
 schema.graphql
+
+.vercel
