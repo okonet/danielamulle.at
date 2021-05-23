@@ -68,10 +68,10 @@ export async function getStaticProps() {
 
   return {
     props: {
-      section,
-      collection,
-      posts: recipesWithIngredients,
       categories,
+      collection,
+      post: section,
+      posts: recipesWithIngredients,
       searchIndex: index.export(),
       searchDoc,
     },
