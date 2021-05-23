@@ -59,7 +59,8 @@ export async function getStaticPaths() {
       .filter(
         (collection) =>
           collection !== config.collections.recipes &&
-          collection !== config.collections.resources
+          collection !== config.collections.resources &&
+          collection !== config.collections.legal
       )
       .map((collection) => {
         return {
