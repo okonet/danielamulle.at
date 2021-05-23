@@ -2,7 +2,7 @@ backend:
   name: github
   repo: okonet/danielamulle.at
   branch: master
-  base_url: https://danielamulle-at-m4muyvkfs-okonet.vercel.app
+  base_url: https://www.danielamulle.at
   auth_endpoint: api/auth
 
 local_backend: true
