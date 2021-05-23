@@ -12,6 +12,7 @@ import {
 import config from "../../../site.config"
 import components from "../../gatsby-plugin-theme-ui/components"
 
+const DefaultPage = dynamic(() => import("../../components/DefaultPage"))
 const BlogPostPage = dynamic(() => import("../../components/BlogPostPage"))
 const RecipePage = dynamic(() => import("../../components/RecipesPost"))
 const ResourcePostPage = dynamic(() =>
@@ -107,6 +108,9 @@ function SinglePostPage(props) {
     }
     case "resources": {
       return <ResourcePostPage {...props} />
+    }
+    case "legal": {
+      return <DefaultPage {...props} shouldShowSubscribe={false} />
     }
     default:
       return <h1>No page for this collection is defined</h1>

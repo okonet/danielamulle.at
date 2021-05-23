@@ -7,10 +7,10 @@ import PostCard from "./PostCard"
 import hydrate from "next-mdx-remote/hydrate"
 import components from "../gatsby-plugin-theme-ui/components"
 
-const ProjectsPosts = ({ categories, section }) => {
+const ProjectsPosts = ({ categories, post }) => {
   return (
-    <PageLayout theme={projectsTheme} title={section.title}>
-      {section.body && hydrate(section.body, { components })}
+    <PageLayout theme={projectsTheme} title={post.title}>
+      {post.body && hydrate(post.body, { components })}
       {categories.length > 0 && (
         <Grid as="ul" columns={[1, 2]} sx={{ p: 0 }}>
           {categories.map((project) => (

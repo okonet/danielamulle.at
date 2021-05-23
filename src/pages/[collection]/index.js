@@ -17,8 +17,8 @@ export async function getStaticProps({ params, locale }) {
   const [posts, categories] = getAllPostsAndCategories(collection)
 
   // Get section and parse section content as MDX
-  let section = getSection(collection)
-  const { content } = section
+  let post = getSection(collection)
+  const { content } = post
   if (content) {
     const sectionMDX = await renderToString(content, {
       components,
@@ -26,8 +26,8 @@ export async function getStaticProps({ params, locale }) {
         remarkPlugins: [smartypants],
       },
     })
-    section = {
-      ...section,
+    post = {
+      ...post,
       body: sectionMDX,
     }
   }
@@ -36,15 +36,15 @@ export async function getStaticProps({ params, locale }) {
 
   return {
     props: {
-      section,
+      categories,
       collection,
+      post,
       posts: posts.map((post) => ({
         ...post,
         date: new Intl.DateTimeFormat(locale, {
           dateStyle: "long",
         }).format(new Date(post.date)),
       })),
-      categories,
     },
   }
 }

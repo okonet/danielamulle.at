@@ -17,7 +17,6 @@ export default {
     blog: "posts",
     projects: "projects",
     resources: "resources",
-    impressum: "impressum",
-    datenschutz: "datenschutz",
+    legal: "legal",
   },
 }

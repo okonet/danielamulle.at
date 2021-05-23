@@ -124,6 +124,18 @@ collections:
       - { label: "Body", name: "body", widget: "markdown", required: false }
       - { label: "Link to a post", name: "linkedPost", widget: "string", required: false }
 
+  - name: "legal"
+    label: "Legal"
+    folder: "content/legal"
+    create: true
+    slug: "{{slug}}"
+    editor:
+      preview: false
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Body", name: "body", widget: "markdown", required: false }
+
   - name: config
     label: Config
     format: json

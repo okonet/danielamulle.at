@@ -32,13 +32,7 @@ export const useFlexSearch = (query, providedIndex, doc, searchOptions) => {
   }, [query, index])
 }
 
-const RecipesPosts = ({
-  categories,
-  posts,
-  searchIndex,
-  searchDoc,
-  section,
-}) => {
+const RecipesPosts = ({ categories, posts, searchIndex, searchDoc, post }) => {
   const router = useRouter()
   const { query } = router
   const { q: searchQuery = "" } = query
@@ -71,8 +65,8 @@ const RecipesPosts = ({
   }
 
   return (
-    <PageLayout theme={recipesTheme} title={section.title}>
-      {hydrate(section.body, { components })}
+    <PageLayout theme={recipesTheme} title={post.title}>
+      {hydrate(post.body, { components })}
       <Flex
         as="aside"
         sx={{

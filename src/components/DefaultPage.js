@@ -5,10 +5,13 @@ import defaultTheme from "../theme"
 import hydrate from "next-mdx-remote/hydrate"
 import components from "../gatsby-plugin-theme-ui/components"
 
-export default function DefaultPage(props) {
-  const post = props.section
+export default function DefaultPage({ post, ...props }) {
   return (
-    <PageLayout title={post.title} theme={themes[post.theme] || defaultTheme}>
+    <PageLayout
+      title={post.title}
+      theme={themes[post.theme] || defaultTheme}
+      {...props}
+    >
       {hydrate(post.body, { components })}
     </PageLayout>
   )

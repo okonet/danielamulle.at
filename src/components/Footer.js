@@ -62,11 +62,14 @@ function Footer() {
                 }}
               >
                 <Group as="nav" separator=" • ">
-                  <Link href="/impressum" passHref>
+                  <Link href="/legal/impressum" passHref>
                     <Styled.a>Impressum</Styled.a>
                   </Link>
-                  <Link href="/datenschutz" passHref>
+                  <Link href="/legal/datenschutz" passHref>
                     <Styled.a>Datenschutz</Styled.a>
+                  </Link>
+                  <Link href="/legal/agb-und-widerruf" passHref>
+                    <Styled.a>AGB & Widerruf</Styled.a>
                   </Link>
                 </Group>
               </Box>
