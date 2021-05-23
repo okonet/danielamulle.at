@@ -8,6 +8,7 @@ import ContactInfo from "./ContactInfo"
 import FacebookIcon from "./FacebookIcon"
 import InstagramIcon from "./InstagramIcon"
 import config from "../../site.config"
+import YoutubeIcon from "./YoutubeIcon"
 
 function Footer() {
   const { socialHandle, author, authorDegree } = config
@@ -19,7 +20,7 @@ function Footer() {
           sx={{ bg: "transparent", color: "secondary", fontSize: 0 }}
         >
           <Box sx={{ display: ["block", "flex"], alignItems: "flex-end" }}>
-            <Grid gap={1} sx={{ flex: 1, "> p": { m: 0 } }}>
+            <Grid gap={2} sx={{ flex: 1, "> p": { m: 0 }, mb: [3, 0] }}>
               <Styled.p>
                 <ContactInfo type="phone" />
               </Styled.p>
@@ -27,14 +28,17 @@ function Footer() {
                 <ContactInfo type="email" />
               </Styled.p>
               <Styled.p>
-                <Styled.a href={`https://facebook.com/${socialHandle}`}>
-                  <FacebookIcon /> {socialHandle}
-                </Styled.a>
-              </Styled.p>
-              <Styled.p>
-                <Styled.a href={`https://instagram.com/${socialHandle}`}>
-                  <InstagramIcon /> {socialHandle}
-                </Styled.a>
+                <Group separator={" • "}>
+                  <Styled.a href={`https://facebook.com/${socialHandle}`}>
+                    <FacebookIcon /> {socialHandle}
+                  </Styled.a>
+                  <Styled.a href={`https://instagram.com/${socialHandle}`}>
+                    <InstagramIcon /> {socialHandle}
+                  </Styled.a>
+                  <Styled.a href="https://www.youtube.com/channel/UCv9D25wFLYm-lFJRexwqhoA">
+                    <YoutubeIcon /> YouTube
+                  </Styled.a>
+                </Group>
               </Styled.p>
             </Grid>
             <Grid
