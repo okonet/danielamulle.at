@@ -43,7 +43,7 @@ function Footer() {
             >
               <Styled.p>
                 Made with ♡ by{" "}
-                <Styled.a href="https://component-driven.io">
+                <Styled.a href="https://www.component-driven.dev">
                   Component-Driven
                 </Styled.a>
               </Styled.p>
