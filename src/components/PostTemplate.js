@@ -1,6 +1,8 @@
 /** @jsx jsx */
 import React from "react"
 import { Box, Grid, jsx } from "theme-ui"
+import ThemeUIProvider from "./ThemeUIProvider"
+import { sideBarTheme } from "../theme"
 
 export default function PostTemplate({ main, sidebar }) {
   return (
@@ -24,7 +26,7 @@ export default function PostTemplate({ main, sidebar }) {
           gridColumn: [1, 1, "10 / span 3"],
         }}
       >
-        {sidebar}
+        <ThemeUIProvider theme={sideBarTheme}>{sidebar}</ThemeUIProvider>
       </Box>
     </Grid>
   )

@@ -23,7 +23,7 @@ const ShareButtons = ({ pageUrl, title }) => {
         },
       }}
     >
-      <Styled.h3 sx={{ mb: 2 }}>Teilen</Styled.h3>
+      <Styled.h3>Teilen</Styled.h3>
       <Grid
         gap={1}
         sx={{

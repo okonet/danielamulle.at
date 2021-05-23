@@ -169,8 +169,9 @@ const theme = {
     },
     sectionTitle: {
       m: 0,
-      color: "secondary",
-      fontSize: 0,
+      mt: 4,
+      fontSize: 2,
+      color: "primary",
       fontWeight: "bold",
       fontFamily: "body",
       lineHeight: "body",
@@ -265,7 +266,6 @@ const theme = {
     },
     h3: {
       variant: "textStyles.sectionTitle",
-      mt: 3,
     },
     p: {
       my: 3,
@@ -446,6 +446,31 @@ export const footerTheme = {
     accent: palette.gray[1],
     secondary: palette.gray[3],
     muted: palette.gray[5],
+  },
+}
+
+export const sideBarTheme = {
+  ...theme,
+  textStyles: {
+    ...theme.textStyles,
+    sectionTitle: {
+      m: 0,
+      mb: 1,
+      color: "secondary",
+      fontSize: 0,
+      fontWeight: "bold",
+      fontStyle: "italic",
+      fontFamily: "body",
+      lineHeight: "body",
+    },
+    body: {
+      my: 0,
+      color: "text",
+      fontSize: 0,
+      fontFamily: "body",
+      fontWeight: "normal",
+      lineHeight: "body",
+    },
   },
 }
 
