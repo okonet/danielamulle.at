@@ -39,9 +39,9 @@ export default function Styleguide({ posts }) {
             <Swatches
               theme={theme}
               items={{
-                png: "/logo/logo.png",
-                "png@2x": "/logo/logo@2x.png",
-                svg: "/logo/logo.svg",
+                png: "/images/logo/logo.png",
+                "png@2x": "/images/logo/logo@2x.png",
+                svg: "/images/logo/logo.svg",
               }}
             >
               {(token, value) => (
