@@ -18,7 +18,7 @@ import SubscribeForm from "./SubscribeForm"
 import Modal from "react-modal"
 import { useRouter } from "next/router"
 import hydrate from "next-mdx-remote/hydrate"
-import components from "../gatsby-plugin-theme-ui/components"
+import components from "./mdx-components"
 
 Modal.setAppElement(`#__next`)
 Modal.defaultStyles.overlay.zIndex = 2

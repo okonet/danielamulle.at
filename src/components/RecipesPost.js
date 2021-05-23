@@ -14,7 +14,7 @@ import PostTemplate from "./PostTemplate"
 import config from "../../site.config"
 import { useRouter } from "next/router"
 import hydrate from "next-mdx-remote/hydrate"
-import components from "../gatsby-plugin-theme-ui/components"
+import components from "./mdx-components"
 
 export default function RecipesPost({ post }) {
   const { asPath } = useRouter()

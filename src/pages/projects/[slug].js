@@ -3,7 +3,7 @@ import { jsx } from "theme-ui"
 import React from "react"
 import renderToString from "next-mdx-remote/render-to-string"
 import { getAllPostsAndCategories } from "../api/posts"
-import components from "../../gatsby-plugin-theme-ui/components"
+import components from "../../components/mdx-components"
 import smartypants from "@silvenon/remark-smartypants"
 import dynamic from "next/dynamic"
 

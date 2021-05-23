@@ -13,7 +13,7 @@ import config from "../../site.config"
 import renderToString from "next-mdx-remote/render-to-string"
 import hydrate from "next-mdx-remote/hydrate"
 import smartypants from "@silvenon/remark-smartypants"
-import components from "../gatsby-plugin-theme-ui/components"
+import components from "../components/mdx-components"
 
 export async function getStaticProps() {
   const [recipes] = getAllPostsAndCategories(config.collections.recipes)

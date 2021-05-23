@@ -8,7 +8,7 @@ import fromMarkdown from "mdast-util-from-markdown"
 import syntax from "micromark-extension-mdxjs"
 import mdx from "mdast-util-mdx"
 import renderToString from "next-mdx-remote/render-to-string"
-import components from "../../gatsby-plugin-theme-ui/components"
+import components from "../../components/mdx-components"
 import { getSection } from "../api/sections"
 import smartypants from "@silvenon/remark-smartypants"
 

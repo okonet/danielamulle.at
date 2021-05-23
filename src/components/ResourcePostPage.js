@@ -4,7 +4,7 @@ import { jsx } from "theme-ui"
 import { testimonialsTheme } from "../theme"
 import LeadLayout from "./LeadLayout"
 import hydrate from "next-mdx-remote/hydrate"
-import components from "../gatsby-plugin-theme-ui/components"
+import components from "./mdx-components"
 
 export default function ResourcePostPage({ post }) {
   const {

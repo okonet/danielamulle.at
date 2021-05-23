@@ -12,7 +12,7 @@ import RecipesList from "./RecipesList"
 import PageLayout from "./PageLayout"
 import { useRouter } from "next/router"
 import hydrate from "next-mdx-remote/hydrate"
-import components from "../gatsby-plugin-theme-ui/components"
+import components from "./mdx-components"
 
 export const useFlexSearch = (query, providedIndex, doc, searchOptions) => {
   const [index, setIndex] = useState(null)

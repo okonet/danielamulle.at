@@ -9,7 +9,7 @@ import PageLayout from "./PageLayout"
 import PostTemplate from "./PostTemplate"
 import config from "../../site.config"
 import hydrate from "next-mdx-remote/hydrate"
-import components from "../gatsby-plugin-theme-ui/components"
+import components from "./mdx-components"
 
 const ProjectsPostPage = ({ post }) => {
   const { asPath } = useRouter()

@@ -3,7 +3,7 @@ import PageLayout from "./PageLayout"
 import * as themes from "../theme"
 import defaultTheme from "../theme"
 import hydrate from "next-mdx-remote/hydrate"
-import components from "../gatsby-plugin-theme-ui/components"
+import components from "./mdx-components"
 
 export default function DefaultPage({ post, ...props }) {
   return (

@@ -4,7 +4,7 @@ import renderToString from "next-mdx-remote/render-to-string"
 import smartypants from "@silvenon/remark-smartypants"
 import { getAllPostsAndCategories } from "../api/posts"
 import config from "../../../site.config"
-import components from "../../gatsby-plugin-theme-ui/components"
+import components from "../../components/mdx-components"
 import { getSection } from "../api/sections"
 
 const DefaultPage = dynamic(() => import("../../components/DefaultPage"))

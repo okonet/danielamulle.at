@@ -5,7 +5,7 @@ import { blogTheme } from "../theme"
 import PostCard from "./PostCard"
 import PageLayout from "./PageLayout"
 import hydrate from "next-mdx-remote/hydrate"
-import components from "../gatsby-plugin-theme-ui/components"
+import components from "./mdx-components"
 
 const BlogPosts = ({ posts, post }) => {
   return (

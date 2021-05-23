@@ -11,7 +11,7 @@ import PostTemplate from "./PostTemplate"
 import { useRouter } from "next/router"
 import config from "../../site.config"
 import hydrate from "next-mdx-remote/hydrate"
-import components from "../gatsby-plugin-theme-ui/components"
+import components from "./mdx-components"
 
 export default function BlogPostPage({ post }) {
   const { asPath } = useRouter()

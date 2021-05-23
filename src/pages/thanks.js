@@ -2,7 +2,7 @@ import React from "react"
 import PageLayout from "../components/PageLayout"
 import { getPostBySlug } from "./api/posts"
 import renderToString from "next-mdx-remote/render-to-string"
-import components from "../gatsby-plugin-theme-ui/components"
+import components from "../components/mdx-components"
 import smartypants from "@silvenon/remark-smartypants"
 import hydrate from "next-mdx-remote/hydrate"
 

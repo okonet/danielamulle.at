@@ -10,7 +10,7 @@ import {
   getPostBySlug,
 } from "../api/posts"
 import config from "../../../site.config"
-import components from "../../gatsby-plugin-theme-ui/components"
+import components from "../../components/mdx-components"
 
 const DefaultPage = dynamic(() => import("../../components/DefaultPage"))
 const BlogPostPage = dynamic(() => import("../../components/BlogPostPage"))

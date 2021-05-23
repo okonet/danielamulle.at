@@ -5,7 +5,7 @@ import { projectsTheme } from "../theme"
 import PageLayout from "./PageLayout"
 import PostCard from "./PostCard"
 import hydrate from "next-mdx-remote/hydrate"
-import components from "../gatsby-plugin-theme-ui/components"
+import components from "./mdx-components"
 
 const ProjectsPosts = ({ categories, post }) => {
   return (
