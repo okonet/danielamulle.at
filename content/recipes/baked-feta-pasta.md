@@ -1,7 +1,7 @@
 ---
 title: Baked Feta Pasta
 date: 2021-05-22T19:07:14.772Z
-coverImage: ../assets/DSC05286.jpg
+coverImage: /assets/DSC05286.jpg
 coverImageAuthor: Andrey Okonetchnikov
 coverImageLink: https://okonet.ru
 categories:
@@ -19,7 +19,8 @@ categories:
     label: "schnell "
 timeToCook: 10 Minuten vorbereiten + 30 Minuten backen.
 ---
-Das Trendgericht darf auch unter meinen Rezepten nicht fehlen. Ich hab es sofort in mein kulinarisches Herz geschlossen, denn es ist nicht nur verblüffend simpel sondern auch mega köstlich und außerdem super wandelbar: als Partner von Tomaten und Feta machen sich auch Auberginen, Paprika, Erbsen, Mangold, Spinat, Mais, Kichererbsen, Schwammerl (Pilze) ganz toll. Und auch bei den Kräutern, Gewürzen und Samen kannst du verwenden worauf du grad Lust hast: Petersilie, Basilikum, Koriander, Thymian, Rosmarin,  Paprika, Kurkuma, Currypulver, Chili, Sesam, Sonnenblumen- oder Kürbiskerne. Lass' deiner Phantasie freien Lauf!
+
+Das Trendgericht darf auch unter meinen Rezepten nicht fehlen. Ich hab es sofort in mein kulinarisches Herz geschlossen, denn es ist nicht nur verblüffend simpel sondern auch mega köstlich und außerdem super wandelbar: als Partner von Tomaten und Feta machen sich auch Auberginen, Paprika, Erbsen, Mangold, Spinat, Mais, Kichererbsen, Schwammerl (Pilze) ganz toll. Und auch bei den Kräutern, Gewürzen und Samen kannst du verwenden worauf du grad Lust hast: Petersilie, Basilikum, Koriander, Thymian, Rosmarin, Paprika, Kurkuma, Currypulver, Chili, Sesam, Sonnenblumen- oder Kürbiskerne. Lass' deiner Phantasie freien Lauf!
 
 <Ingredients yields="4 Personen">
 
