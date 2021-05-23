@@ -1,7 +1,7 @@
 ---
 title: Bärlauchcremesuppe mit Linsen
 date: 2021-04-21T14:12:35.469Z
-coverImage: ../assets/20210314-DSC05010.jpg
+coverImage: /assets/20210314-DSC05010.jpg
 coverImageAuthor: Andrey Okonetchnikov
 coverImageLink: https://okonet.ru
 categories:
@@ -29,12 +29,10 @@ categories:
     label: histaminfrei
 timeToCook: 25 Minuten
 ---
+
 Natürlich kannst du diese Suppe auch außerhalb der Bärlauchsaison zubereiten: nimm' dann einfach Blattspinat, Mangold oder auch Rucola. Die Suppe schmeckt nicht nur herrlich cremig, sondern ist auch im Handumdrehen fertig. Und mit Vollkornbrot als Beilage hast du eine komplette, gesunde Mahlzeit am Tisch, mit allem was dein Körper braucht.
- 
 
 <Ingredients yields="4 Personen">
-
-
 
 - 200 g Bärlauch
 - 250 g gelbe oder rote Linsen
@@ -44,12 +42,8 @@ Natürlich kannst du diese Suppe auch außerhalb der Bärlauchsaison zubereiten:
 - 1 TL Salz
 - Pfeffer
 
-
-
 </Ingredients>
 <Preparation>
-
-
 
 1. Bärlauch waschen und ganz grob in Streifen schneiden
 2. Kartoffel waschen und mit der Schale in große Würfel schneiden.
@@ -60,7 +54,5 @@ Natürlich kannst du diese Suppe auch außerhalb der Bärlauchsaison zubereiten:
 7. Auf niedrige Hitze zurückschalten und ca. 15 Minuten zugedeckt köcheln lassen, bis die Linsen und Kartoffelstücke weich sind.
 8. Pürieren und Soja creme cuisine oder Sauerrahm untermixen.
 9. Mit Salz und Pfeffer abschmecken und servieren.
-
-
 
 </Preparation>

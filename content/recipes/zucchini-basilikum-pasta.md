@@ -1,7 +1,7 @@
 ---
 title: Zucchini-Basilikum-Pasta
 date: 2020-07-28T06:17:54.368Z
-coverImage: ../assets/zucchini-pasta.jpg
+coverImage: /assets/zucchini-pasta.jpg
 coverImageAuthor: Andrey Okonechnikov
 coverImageLink: http://okonet.ru/
 categories:

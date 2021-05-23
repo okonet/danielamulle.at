@@ -1,7 +1,7 @@
 ---
 title: Gebackene Apfelrollen
 date: 2020-07-10T12:01:12.643Z
-coverImage: ../assets/20200523-DSC02846.jpg
+coverImage: /assets/20200523-DSC02846.jpg
 coverImageAuthor: Andrey Okonechnikov
 coverImageLink: http://okonet.ru/
 categories:

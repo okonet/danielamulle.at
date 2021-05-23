@@ -1,0 +1,18 @@
+---
+title: 👋, ich bin Daniela
+---
+
+Bauchdetektivin mit Herz und Hirn.
+
+- _Du suchst rasche Hilfe bei Darmproblemen?_
+- _Dein Gewicht macht dir schon länger Sorgen?_
+
+Perfekt, denn genau das ist meine Spezialität!
+
+Ich helfe dir, dich rasch wieder wohl zu fühlen. Gemeinsam lüften wir die Ursache, und finden deine Lösung. Dabei arbeiten wir mit meinen Erfahrungsschatz aus 8 Jahren Ausbildung und > 15 Jahren Berufstätigkeit, verfeinert mit einer großen Portion Einfühlungsvermögen, Engagement & Leidenschaft.
+
+Warum du bei mir in den allerbesten Händen bist, erfährst du in [diesem Artikel](https://www.danielamulle.at/posts/2020-08-17-von-ern%C3%A4hrungsberatern-ern%C3%A4hrungscoaches-ern%C3%A4hrungswissenschaftlern-di%C3%A4tologen-co-ein-wegweiser-durch-den-ern%C3%A4hrungsdschungel/).
+
+Vereinbare doch gleich deinen [Wunschtermin](https://mednanny.doctena.at/servlet/customer.DocAppointmentHP?p_id=58889&res_id=2339&dedicated_htx=doc58889/DocAppointmentHP_58889de.htx). Ich freue mich auf dich!
+
+Du erreichst mich auch jederzeit unter <ContactInfo type="phone" /> oder <ContactInfo type="email" />.

@@ -4,7 +4,7 @@ categories:
     label: Diätologischer Jahresstart 2021
 title: "Diabetes: Darf Süßes noch sein?"
 date: 2021-01-18T05:00:00.000Z
-coverImage: ../assets/ramsebner_s_rezept.jpg
+coverImage: /assets/ramsebner_s_rezept.jpg
 coverImageAuthor: Sarah Ramsebner
 .coverImageLink: https://www.sr-diaetologin.at
 coverImageLink: http://www.sr-diaetologin.at

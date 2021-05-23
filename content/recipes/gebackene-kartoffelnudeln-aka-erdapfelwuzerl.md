@@ -1,7 +1,7 @@
 ---
 title: Gebackene Kartoffelnudeln aka Erdapfelwuzerl
 date: 2020-08-17T21:15:13.545Z
-coverImage: ../assets/20200523-DSC02839.jpg
+coverImage: /assets/20200523-DSC02839.jpg
 coverImageAuthor: Andrey Okonetchnikov
 coverImageLink: https://okonet.ru
 categories:

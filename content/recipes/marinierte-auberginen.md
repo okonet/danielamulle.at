@@ -1,7 +1,7 @@
 ---
 title: Marinierte Auberginen
 date: 2020-06-25T18:55:38.238Z
-coverImage: ../assets/DSC03126.jpg
+coverImage: /assets/DSC03126.jpg
 coverImageAuthor: Andrey Okonechnikov
 coverImageLink: http://okonet.ru/
 categories:

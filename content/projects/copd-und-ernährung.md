@@ -4,7 +4,7 @@ categories:
     label: Diätologischer Jahresstart 2021
 title: COPD und Ernährung
 date: 2021-01-12T05:00:00.000Z
-coverImage: ../assets/millonig_m_rezept.jpg
+coverImage: /assets/millonig_m_rezept.jpg
 coverImageAuthor: Melissa Millonig
 .coverImageLink: https://www.teambesseressen.at
 coverImageLink: https://www.teambesseressen.at/das-team

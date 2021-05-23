@@ -10,7 +10,7 @@ ingredients:
   - je 1/2 TL Salz und Pfeffer
 title: Alpenhumus
 date: 2020-06-29T09:23:31.562Z
-coverImage: ../assets/DSC03444.jpg
+coverImage: /assets/DSC03444.jpg
 coverImageAuthor: Andrey Okonechnikov
 coverImageLink: www.okonet.ru
 categories:

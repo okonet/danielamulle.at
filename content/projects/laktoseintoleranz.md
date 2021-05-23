@@ -4,7 +4,7 @@ categories:
     label: Diätologischer Jahresstart 2021
 title: Laktoseintoleranz
 date: 2021-01-13T05:00:00.000Z
-coverImage: ../assets/mitterschiffthaler_s-rezept.jpg
+coverImage: /assets/mitterschiffthaler_s-rezept.jpg
 coverImageAuthor: Sophie Mitterschiffthaler
 .coverImageLink: https://www.danielamulle.at
 coverImageLink: https://www.instagram.com/philowsophie01/
@@ -73,8 +73,6 @@ Milch und Milchprodukte sind erstklassige Calciumquellen, wenn man nun auf diese
 Die Fragezeichen in deinen Augen sind mittlerweile verschwunden. Nun sehen mich zwei müde Augen an. „Lass uns auf einen Kaffee gehen!“, fragst du hoffnungsvoll. „Ja klar, aber für dich laktosefrei“.
 
 Und hier hab ich noch ein tolles, laktosefreies Rezept zum Nachbacken für dich, das perfekt zum deinem Kaffee passt:
-
-
 
 ## Vegane Apfel-Bananen-Muffins
 

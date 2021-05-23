@@ -1,47 +1,78 @@
 /* @jsx jsx */
-import React, { useCallback } from "react"
+import * as React from "react"
+import { useEffect, useMemo, useState } from "react"
 import { Flex, Input, jsx, Text } from "theme-ui"
-import { useFlexSearch } from "react-use-flexsearch"
-import groupBy from "lodash.groupby"
+import FlexSearch from "flexsearch"
+import { groupBy } from "lodash"
 import Group from "react-group"
 import { recipesTheme } from "../theme"
 import Link from "./Link"
 import Tag from "./Tag"
-import Content, * as meta from "../../content/sections/recipes.mdx"
 import RecipesList from "./RecipesList"
 import PageLayout from "./PageLayout"
+import { useRouter } from "next/router"
+import hydrate from "next-mdx-remote/hydrate"
+import components from "../gatsby-plugin-theme-ui/components"
 
-const RecipesPosts = ({ data, location, navigate }) => {
-  const { recipesCategories, recipes, localSearchRecipes } = data
-  const searchParams = new URLSearchParams(location.search)
-  const query = searchParams.get("q") || ""
-  const { index, store } = localSearchRecipes
-  const results = useFlexSearch(query, index, JSON.parse(store))
-  const resIds = results.map((res) => res.id)
-  const tags = recipesCategories.nodes
-  const filteredRecipes = query
-    ? recipes.nodes.filter((recipe) => resIds.includes(recipe.id))
-    : recipes.nodes
-  const groupedRecipes = groupBy(
-    filteredRecipes,
-    (node) => node.categories[0].id
-  )
+export const useFlexSearch = (query, providedIndex, doc, searchOptions) => {
+  const [index, setIndex] = useState(null)
 
-  const handleChange = useCallback((event) => {
-    const searchQuery = event.target.value
-    searchParams.set("q", searchQuery)
-    const nextUrl =
-      searchQuery !== ""
-        ? `${location.pathname}?${searchParams.toString()}`
-        : location.pathname
-    navigate(nextUrl, {
-      replace: true,
-    })
+  useEffect(() => {
+    const importedIndex = FlexSearch.create({ doc })
+    importedIndex.import(providedIndex)
+
+    setIndex(importedIndex)
+  }, [providedIndex])
+
+  return useMemo(() => {
+    if (!query || !index) return []
+
+    const rawResults = index.search(query, searchOptions)
+    return rawResults.map((res) => res.id)
+  }, [query, index])
+}
+
+const RecipesPosts = ({
+  categories,
+  posts,
+  searchIndex,
+  searchDoc,
+  section,
+}) => {
+  const router = useRouter()
+  const { query } = router
+  const { q: searchQuery = "" } = query
+  const matches = useFlexSearch(searchQuery, searchIndex, searchDoc, {
+    field: "ingredients",
   })
 
+  const filteredRecipes = searchQuery
+    ? posts.filter((recipe) => matches.includes(recipe.id))
+    : posts
+
+  const groupedRecipes = groupBy(
+    filteredRecipes,
+    (post) => post.categories[0].id
+  )
+
+  const handleChange = (event) => {
+    router.replace(
+      {
+        query: {
+          q: event.target.value,
+        },
+      },
+      undefined,
+      {
+        scroll: false,
+        shallow: true,
+      }
+    )
+  }
+
   return (
-    <PageLayout theme={recipesTheme} title={meta._frontmatter.title}>
-      <Content />
+    <PageLayout theme={recipesTheme} title={section.title}>
+      {hydrate(section.body, { components })}
       <Flex
         as="aside"
         sx={{
@@ -52,7 +83,7 @@ const RecipesPosts = ({ data, location, navigate }) => {
       >
         <Input
           type="search"
-          value={query}
+          value={searchQuery}
           onChange={handleChange}
           placeholder="Filter nach Zutaten..."
           sx={{
@@ -71,9 +102,9 @@ const RecipesPosts = ({ data, location, navigate }) => {
         >
           {" oder wähle eine Kategorie: "}
         </Text>
-        {tags && (
+        {categories && (
           <Group as="nav" separator={" "}>
-            {tags.map((tag) => (
+            {categories.map((tag) => (
               <Tag key={tag.id} sx={{ my: 1, mr: 2, color: "text" }}>
                 <Link to={tag.slug} key={tag.id}>
                   {tag.id}

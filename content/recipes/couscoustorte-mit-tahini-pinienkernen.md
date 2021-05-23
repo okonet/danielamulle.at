@@ -1,7 +1,7 @@
 ---
 title: Couscoustorte mit Tahini & Pinienkernen
 date: 2020-07-27T06:03:51.116Z
-coverImage: ../assets/couscoustorte.jpg
+coverImage: /assets/couscoustorte.jpg
 coverImageAuthor: Andrey Okonechnikov
 coverImageLink: http://okonet.ru/
 categories:

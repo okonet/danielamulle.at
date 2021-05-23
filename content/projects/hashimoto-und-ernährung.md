@@ -4,7 +4,7 @@ categories:
     label: Diätologischer Jahresstart 2021
 title: Hashimoto und Ernährung
 date: 2021-01-16T05:00:00.000Z
-coverImage: ../assets/nussbaumer_s_rezept.jpg
+coverImage: /assets/nussbaumer_s_rezept.jpg
 coverImageAuthor: Sabine Nußbaumer
 .coverImageLink: https://www.diaetbefreit.com
 coverImageLink: https://www.diaetbefreit.com/

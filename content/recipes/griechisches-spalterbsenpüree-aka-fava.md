@@ -1,7 +1,7 @@
 ---
 title: Griechisches Spalterbsenpüree aka Fava
 date: 2020-06-25T19:21:15.530Z
-coverImage: ../assets/20200605-dsc02939.jpg
+coverImage: /assets/20200605-dsc02939.jpg
 coverImageAuthor: Andrey Okonechnikov
 coverImageLink: http://okonet.ru/
 categories:

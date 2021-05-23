@@ -4,7 +4,7 @@ categories:
     label: Diätologischer Jahresstart 2021
 title: Ernährung bei Kinderwunsch
 date: 2021-01-10T05:00:00.000Z
-coverImage: ../assets/koller_f-rezept.jpg
+coverImage: /assets/koller_f-rezept.jpg
 coverImageAuthor: Flora Koller
 .coverImageLink: https://www.flora-koller.at
 coverImageLink: https://www.flora-koller.at/
@@ -38,7 +38,7 @@ Eine ausgewogene Ernährung bei Kinderwunsch und in der Schwangerschaft sollte t
 
 ## Schwanger werden nach der Pille?
 
-Hormonelle Verhütungsmethoden wirken wie Mikronährstoff-Räuber auf den Körper. Bei Einnahmen über einen längeren Zeitraum, vor allem wenn schon in jungen Jahren damit begonnen wurde, kann es sogar zum sogenannten **„Post-Pill-Syndrom“** mit Zyklusschwankungen, ausbleibendem Eisprung, PMS und vaginalen Infektionen führen. Vor allem B-Vitamine, Magnesium, Zink, Vitamin C und Jod werden verbraucht oder vermehrt ausgeschieden, diese sollten dann gezielt mit einer nährstoffreichen Kost oder speziellen Präparaten aufgefüllt werden (z.B. Gonadosan Resilovit®pill, NICApur mediBalance® PILCO). 
+Hormonelle Verhütungsmethoden wirken wie Mikronährstoff-Räuber auf den Körper. Bei Einnahmen über einen längeren Zeitraum, vor allem wenn schon in jungen Jahren damit begonnen wurde, kann es sogar zum sogenannten **„Post-Pill-Syndrom“** mit Zyklusschwankungen, ausbleibendem Eisprung, PMS und vaginalen Infektionen führen. Vor allem B-Vitamine, Magnesium, Zink, Vitamin C und Jod werden verbraucht oder vermehrt ausgeschieden, diese sollten dann gezielt mit einer nährstoffreichen Kost oder speziellen Präparaten aufgefüllt werden (z.B. Gonadosan Resilovit®pill, NICApur mediBalance® PILCO).
 
 Strikte Diäten und Ernährungsrichtlinien zur Beschleunigung einer Empfängnis sind nicht notwendig und verursachen häufig unnötigen Stress. Gesunde Ernährung und ein guter Lebensstil sollen Spaß, ein angenehmes Körpergefühl und mehr Lust auf Sex machen. Denn Liebe geht auch ein bisschen durch den Magen.
 

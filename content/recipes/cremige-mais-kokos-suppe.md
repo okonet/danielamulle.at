@@ -1,7 +1,7 @@
 ---
 title: Cremige Mais-Kokos-Suppe
 date: 2020-07-26T05:06:34.205Z
-coverImage: ../assets/maiskokossuppe.jpg
+coverImage: /assets/maiskokossuppe.jpg
 coverImageAuthor: Andrey Okonechnikov
 coverImageLink: http://okonet.ru/
 categories:

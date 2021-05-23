@@ -1,7 +1,7 @@
 ---
 title: Grünkernsalat
 date: 2020-09-29T09:01:32.534Z
-coverImage: ../assets/DSC03551.jpg
+coverImage: /assets/DSC03551.jpg
 coverImageAuthor: Andrey Okonetchnikov
 coverImageLink: https://okonet.ru
 categories:
@@ -23,6 +23,7 @@ categories:
     label: Mealprep-geeignet
 timeToCook: 20 Minuten vorbereiten + ca. 40 Minuten Kochzeit
 ---
+
 Grünkern ist keine eigene Getreideart, sondern unreif geernteter Dinkel. Er wird durch Trocknen (Darren) haltbar gemacht, und entwickelt dabei seinen typischen Geschmack und die olivgrüne Farbe. In diesem Salat kommen die nussig-würzigen Körner herrlich zur Geltung.
 
 <Ingredients yields="4 Personen als Hauptspeise">

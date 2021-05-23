@@ -1,20 +1,9 @@
 /* @jsx jsx */
 import * as React from "react"
+import Image from "next/image"
 import { Box, Flex, jsx } from "theme-ui"
-import { graphql, useStaticQuery } from "gatsby"
 
 export default function AboutBlock({ children, ...props }) {
-  const data = useStaticQuery(graphql`
-    query {
-      portraitImage: file(relativePath: { eq: "portrait.png" }) {
-        childImageSharp {
-          resize(width: 400, quality: 100) {
-            src
-          }
-        }
-      }
-    }
-  `)
   return (
     <Flex
       sx={{
@@ -43,9 +32,11 @@ export default function AboutBlock({ children, ...props }) {
             objectFit: "cover",
           }}
         >
-          <img
-            src={data.portraitImage.childImageSharp.resize.src}
+          <Image
+            src="/images/portrait.png"
             alt="Portrait von Daniela Mulle"
+            width={400}
+            height={600}
             sx={{ width: "100%", verticalAlign: "top" }}
           />
         </Box>

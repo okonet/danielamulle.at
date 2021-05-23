@@ -1,7 +1,7 @@
 ---
 title: Dattel-Walnuss-Ecken
 date: 2020-07-06T12:56:16.991Z
-coverImage: ../assets/20200521-DSC02820.jpg
+coverImage: /assets/20200521-DSC02820.jpg
 coverImageAuthor: Andrey Okonechnikov
 coverImageLink: http://okonet.ru/
 categories:

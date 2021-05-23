@@ -1,7 +1,7 @@
 import React from "react"
 import { Box } from "theme-ui"
 
-export default function(props) {
+export default function Tag(props) {
   return (
     <Box
       as="span"

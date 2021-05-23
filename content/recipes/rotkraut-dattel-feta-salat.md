@@ -1,7 +1,7 @@
 ---
 title: Rotkraut-Dattel-Feta-Salat
 date: 2020-06-18T08:57:17.575Z
-coverImage: ../assets/20200407-dsc02417.jpeg
+coverImage: /assets/20200407-dsc02417.jpeg
 coverImageAuthor: Andrey Okonechnikov
 coverImageLink: https://okonet.ru/
 categories:

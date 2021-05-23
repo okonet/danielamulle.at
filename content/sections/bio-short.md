@@ -1,0 +1,14 @@
+---
+title: Warum du mir vertrauen kannst
+---
+
+## Ich bin Daniela und weiß, wovon ich rede...
+
+denn ich bin Diätologin & Ernährungswissenschafterin.
+
+Ich helfe meinen KundInnen mit Gewichtsproblemen oder Darmbeschwerden dabei, sich in ihrem Körper endlich wieder wohlzufühlen. Je kniffeliger der Fall, umso besser, denn schließlich bin ich ja eine Bauchdetektivin.
+
+- Von wem also könntest du besser lernen, was auch wirklich funktioniert?
+- Wer könnte dir bessere Tipps & Tricks für deine Ernährung geben?
+
+**Hol dir meine kostenlose Email-Miniserie und überzeuge dich selbst!**

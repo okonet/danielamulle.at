@@ -1,7 +1,7 @@
 ---
 title: Würziger Tofu-Stirfry mit Reis
 date: 2020-06-21T14:32:10.571Z
-coverImage: ../assets/20200512-dsc02747.jpg
+coverImage: /assets/20200512-dsc02747.jpg
 coverImageAuthor: Andrey Okonechnikov
 coverImageLink: http://okonet.ru/
 categories:

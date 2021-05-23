@@ -1,7 +1,7 @@
 ---
 title: Rote Linsensuppe
 date: 2020-07-15T11:50:48.570Z
-coverImage: ../assets/DSC03515.jpg
+coverImage: /assets/DSC03515.jpg
 coverImageAuthor: Andrey Okonechnikov
 coverImageLink: http://okonet.ru/
 categories:

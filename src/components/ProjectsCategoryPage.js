@@ -11,16 +11,16 @@ import {
   isWeekend,
 } from "date-fns"
 import { de } from "date-fns/locale"
-import { MDXRenderer } from "gatsby-plugin-mdx"
-import { globalHistory, navigate } from "@reach/router"
 import { projectsTheme } from "../theme"
 import PageLayout from "./PageLayout"
 import CalendarCard from "./CalendarCard"
 import SubscribeForm from "./SubscribeForm"
 import Modal from "react-modal"
-import Thanks from "../../content/sections/thanks.mdx"
+import { useRouter } from "next/router"
+import hydrate from "next-mdx-remote/hydrate"
+import components from "../gatsby-plugin-theme-ui/components"
 
-Modal.setAppElement(`#___gatsby`)
+Modal.setAppElement(`#__next`)
 Modal.defaultStyles.overlay.zIndex = 2
 
 const modalStyles = {
@@ -65,42 +65,40 @@ function getDays({ startDate, endDate, events = [], locale = de }) {
   })
 }
 
-const ProjectsCategoryPage = ({ data, location }) => {
-  const { category, projectPosts } = data
+const ProjectsCategoryPage = ({ post, posts }) => {
+  const { replace, query } = useRouter()
   const {
+    title,
+    body,
     coverImage,
     coverImageAuthor,
     coverImageLink,
     startDate,
     endDate,
-    description,
     listId,
-  } = category
+  } = post
   const days = getDays({
     startDate: new Date(startDate),
     endDate: new Date(endDate),
-    events: projectPosts.nodes,
+    events: posts,
   })
   const [isOpen, setIsOpen] = useState(false)
-  const closeModal = () => {
-    navigate(location.pathname, { replace: true })
-    setIsOpen(false)
+  const closeModal = async () => {
+    await replace({ query: { slug: post.rawSlug } }, undefined, {
+      shallow: true,
+    })
   }
-  const signupComplete = location.search.includes("thanks")
+  const signupComplete = "thanks" in query
 
   useEffect(() => {
-    return globalHistory.listen(({ location }) => {
-      // Show a modal when we have a signup in the search part of URL
-      if (location.search.includes("signup")) {
-        setIsOpen(true)
-      }
-    })
-  }, [])
+    // Toggle modal when we have a signup in the search part of URL
+    setIsOpen("signup" in query)
+  }, [query])
 
   return (
     <PageLayout
       theme={projectsTheme}
-      title={`${category.id}`}
+      title={title}
       shouldShowSubscribe={false}
       coverImage={coverImage}
       coverImageAuthor={coverImageAuthor}
@@ -135,13 +133,7 @@ const ProjectsCategoryPage = ({ data, location }) => {
         </Box>
       </Modal>
 
-      {signupComplete && (
-        <Box sx={{ my: 4 }}>
-          <Thanks />
-        </Box>
-      )}
-
-      <MDXRenderer>{description}</MDXRenderer>
+      {hydrate(body, { components })}
 
       {!signupComplete && <SubscribeForm listId={listId} />}
 
@@ -152,8 +144,8 @@ const ProjectsCategoryPage = ({ data, location }) => {
         sx={{ p: 0, mt: 3, mb: 4, mx: [0, 0, -5], px: [0, 0, 2] }}
       >
         {days.map((day) => (
-          <Box as="li" sx={{ m: 0, p: 0, listStyle: "none" }}>
-            <CalendarCard day={day} key={day.date} />
+          <Box key={day.date} as="li" sx={{ m: 0, p: 0, listStyle: "none" }}>
+            <CalendarCard day={day} post={day.dayEvents[0] || {}} />
           </Box>
         ))}
       </Grid>

@@ -1,0 +1,17 @@
+---
+title: Hurra, es hat funktioniert!
+---
+
+<Flex sx={{ p: 4, mt: -4, bg: "background", alignItems:"center", flexDirection: "column" }}>
+
+<CheckCircleIcon width={128} height={128} sx={{
+    color: "primary",
+    stroke: "sectionBg",
+    strokeWidth: "1px",
+  }} />
+
+# Hurra, es hat funktioniert!
+
+Vielen Dank für Deine Bestätigung, wir lesen uns bald wieder!
+
+</Flex>

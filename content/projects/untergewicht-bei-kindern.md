@@ -4,17 +4,18 @@ categories:
     label: Diätologischer Jahresstart 2021
 title: Untergewicht bei Kindern
 date: 2021-01-01T05:00:00.000Z
-coverImage: ../assets/böhm-klabischnig_brigitte-rezept.jpg
+coverImage: /assets/böhm-klabischnig_brigitte-rezept.jpg
 coverImageAuthor: Brigitte Böhm-Klabischnig
 coverImageLink: https://klabischnig.at/
 ---
+
 Ist mein Kind untergewichtig? Dein Kind isst gerade Miniportionen. Oder es mag nur mehr eine bestimmte Speise und sonst nix. Und warum ist das Kind meiner Freundin so ein guter Esser? Viele Eltern machen sich Sorgen, weil ihr Kind vermeintlich nicht gut isst und ihnen untergewichtig erscheint.
 
 ## Ist mein Kind untergewichtig?
 
 Dein Kind isst gerade Miniportionen. Oder es mag nur mehr eine bestimmte Speise und sonst nix. Und warum ist das Kind meiner Freundin so ein guter Esser?
 
-Viele Eltern machen sich Sorgen, weil ihr Kind vermeintlich nicht gut isst und ihnen untergewichtig erscheint. Solange Kinder munter und aktiv sind, brauchen sich Eltern meist nicht allzuviele Sorgen machen. Phasen mit „Essproblemen“ gehören zur kindlichen Entwicklung. 
+Viele Eltern machen sich Sorgen, weil ihr Kind vermeintlich nicht gut isst und ihnen untergewichtig erscheint. Solange Kinder munter und aktiv sind, brauchen sich Eltern meist nicht allzuviele Sorgen machen. Phasen mit „Essproblemen“ gehören zur kindlichen Entwicklung.
 
 ## Wann ist meine Sorge berechtigt?
 
@@ -24,11 +25,9 @@ Wenn dich der Gewichtsverlauf deines Kindes über längere Zeit beunruhigt und d
 
 Dein Kinderarzt wird nach dem Grund des Untergewichtes suchen. Es können nämlich auch Allergien, chronische Erkrankungen, Fütter- und Essstörungen dafür verantwortlich sein.
 
-Von Fütterstörung spricht man im Säuglings- oder Kleinkindalter, wenn Verhaltensweisen wie z.B. starke Nahrungsvorlieben, Essverweigerung oder das Ausspucken von Nahrung auftreten.
-Unter einer Essstörung versteht man z.B. Magersucht. Diese beginnt oft in der Pubertät und kommt gehäuft bei Mädchen vor.
+Von Fütterstörung spricht man im Säuglings- oder Kleinkindalter, wenn Verhaltensweisen wie z.B. starke Nahrungsvorlieben, Essverweigerung oder das Ausspucken von Nahrung auftreten. Unter einer Essstörung versteht man z.B. Magersucht. Diese beginnt oft in der Pubertät und kommt gehäuft bei Mädchen vor.
 
-Es kann aber auch einfach nur sein, dass dein Kind gerade sehr stark wächst und wirklich zu wenig oder eher einseitig isst. 
-Und sehr neugierige Kinder haben häufig einfach keine Zeit zum Essen.
+Es kann aber auch einfach nur sein, dass dein Kind gerade sehr stark wächst und wirklich zu wenig oder eher einseitig isst. Und sehr neugierige Kinder haben häufig einfach keine Zeit zum Essen.
 
 Vergleiche das Essverhalten deines Kindes auch nicht mit anderen Kindern. Je nach Genen, Körperbau, Bewegungsdrang und Temperament variiert die individuelle Essmenge.
 
@@ -38,20 +37,19 @@ Sollte der Arzt eine der oben genannten Erkrankungen diagnostizieren, kannst du 
 
 Bei Fütter- und Essstörungen wird der Arzt eine Psychotherapie empfehlen. Als Diätologin kann ich euch dabei begleiten, wieder zu einem altersentsprechenden nährstoffdeckenden Wohlfühl-Speiseplan zu finden.
 
-Schließt aber der Arzt medizinische Ursachen aus, hier 
+Schließt aber der Arzt medizinische Ursachen aus, hier
 
 ## ein paar gewichtssteigernde Tipps:
 
-- Gestalte den Speiseplan vielfältig und bunt. 
+- Gestalte den Speiseplan vielfältig und bunt.
 - Organisiere regelmäßige Mahlzeiten in der Familie oder mit Freunden.
 - Verwende ausreichend hochwertige Fette bei der Zubereitung.
 - Snacks wie Nüsse, Trockenfrüchte, Obst, Süßes und Säfte erhöhen die Energiezufuhr.
-- Die Eiweißversorgung optimierst du mit  Milchprodukten, Fleisch, Fisch, Ei und Käse.
+- Die Eiweißversorgung optimierst du mit Milchprodukten, Fleisch, Fisch, Ei und Käse.
 - „Schwierige“ Esser brauchen vielleicht Ruhe, Zeit und kleine Portionen.
 - Aber mache Essen nicht zum Dauerthema.
 
-Möchtest du eine individuellere, zu deinem Kind passende Ernährungsberatung? 
-Melde dich einfach unter brigitte-boehm@klabischnig.at.
+Möchtest du eine individuellere, zu deinem Kind passende Ernährungsberatung? Melde dich einfach unter brigitte-boehm@klabischnig.at.
 
 Für eine leichtere Lesbarkeit habe ich auf Nennung beider Geschlechter verzichtet.
 

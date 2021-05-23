@@ -1,7 +1,7 @@
 ---
 title: Russische Topfenpancakes aka Syrniki
 date: 2020-06-25T19:12:01.011Z
-coverImage: ../assets/20200606-dsc02978.jpg
+coverImage: /assets/20200606-dsc02978.jpg
 coverImageAuthor: Andrey Okonechnikov
 coverImageLink: http://okonet.ru/
 categories:

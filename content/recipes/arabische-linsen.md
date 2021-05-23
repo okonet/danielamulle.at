@@ -1,7 +1,7 @@
 ---
 title: Arabische Linsen
 date: 2020-07-02T12:54:19.633Z
-coverImage: ../assets/20200523-DSC02836.jpg
+coverImage: /assets/20200523-DSC02836.jpg
 coverImageAuthor: Andrey Okonechnikov
 coverImageLink: http://okonet.ru/
 categories:

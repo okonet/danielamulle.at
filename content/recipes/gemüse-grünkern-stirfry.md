@@ -1,7 +1,7 @@
 ---
 title: Gemüse-Grünkern-Stirfry
 date: 2021-01-20T20:57:54.278Z
-coverImage: ../assets/dsc04924.jpg
+coverImage: /assets/dsc04924.jpg
 coverImageAuthor: Andrey Okonetchnikov
 coverImageLink: https://okonet.ru
 categories:
@@ -23,6 +23,7 @@ categories:
     label: Mealprep-geeignet
 timeToCook: 30 Minuten
 ---
+
 Für dieses Gericht kannst du wirklich jegliches Gemüse und auch Getreide verwenden, das dir schmeckt und du gerade zuhause hast. Es ist somit auch eine tolle Möglichkeit zur Resteverwertung.
 
 <Ingredients yields="4 Personen">

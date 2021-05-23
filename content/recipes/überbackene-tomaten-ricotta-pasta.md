@@ -1,5 +1,5 @@
 ---
-coverImage: ../assets/tomatenricottapasta.jpg
+coverImage: /assets/tomatenricottapasta.jpg
 .coverImageLink: https://okonet.ru
 title: Überbackene Tomaten-Ricotta-Pasta
 date: 2020-07-26T05:14:12.515Z

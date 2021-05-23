@@ -1,7 +1,7 @@
 ---
 title: Beerentiramisu
 date: 2020-07-27T05:52:52.401Z
-coverImage: ../assets/beerentiramisu.jpg
+coverImage: /assets/beerentiramisu.jpg
 coverImageAuthor: Andrey Okonechnikov
 coverImageLink: http://okonet.ru/
 categories:

@@ -4,7 +4,7 @@ categories:
     label: Diätologischer Jahresstart 2021
 title: Ernährung bei Krebs
 date: 2021-01-05T05:00:00.000Z
-coverImage: ../assets/chmelar_s-rezept.jpg
+coverImage: /assets/chmelar_s-rezept.jpg
 coverImageAuthor: Sabine Chmelar
 .coverImageLink: https://www.ernährungswege.at
 coverImageLink: https://www.ernaehrungswege.at/

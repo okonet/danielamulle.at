@@ -1,7 +1,7 @@
 ---
 title: Erbsenaufstrich
 date: 2020-09-07T13:01:21.981Z
-coverImage: ../assets/DSC03524.jpg
+coverImage: /assets/DSC03524.jpg
 coverImageAuthor: Andrey Okonetchnikov
 coverImageLink: https://okonet.ru
 categories:
@@ -27,7 +27,8 @@ categories:
     label: Mealprep-geeignet
 timeToCook: 15 Minuten
 ---
-Dieser Austrich ist nicht nur mega lecker, sondern auch eine kleine Eiweißbombe. Außerdem kannst du ihn superflott zubereiten und ganz wunderbar variieren. Er eignet sich sogar als Pastasauce - dazu einfach mit etwas Pastakochwasser verdünnen: 
+
+Dieser Austrich ist nicht nur mega lecker, sondern auch eine kleine Eiweißbombe. Außerdem kannst du ihn superflott zubereiten und ganz wunderbar variieren. Er eignet sich sogar als Pastasauce - dazu einfach mit etwas Pastakochwasser verdünnen:
 
 <Ingredients yields="4 Personen">
 

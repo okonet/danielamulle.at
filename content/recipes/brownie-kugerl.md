@@ -1,7 +1,7 @@
 ---
 title: Brownie-Kugerl
 date: 2020-07-21T12:14:45.497Z
-coverImage: ../assets/img_2020.jpg
+coverImage: /assets/img_2020.jpg
 coverImageAuthor: Andrey Okonechnikov
 coverImageLink: http://okonet.ru/
 categories:

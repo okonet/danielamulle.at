@@ -1,7 +1,7 @@
 ---
 title: Tomatencremesuppe
 date: 2021-05-17T10:21:28.616Z
-coverImage: ../assets/dennis-klein-fzb_512zvp0-unsplash.jpg
+coverImage: /assets/dennis-klein-fzb_512zvp0-unsplash.jpg
 coverImageAuthor: Dennis Klein
 coverImageLink: https://unsplash.com/@klein2
 categories:
@@ -27,6 +27,7 @@ categories:
     label: zum Mitnehmen
 timeToCook: 20 Minuten
 ---
+
 Diese Suppe ist aus einer "Restlverwertungsaktion" von Koriander und Brokkoli entstanden. Sie hat uns so gut geschmeckt, dass ich sie unbedingt mit dir teilen muss - vielleicht verliebst du dich genauso wie wir. Natürlich klappt sie auch ohne Brokkoli, und falls du Koriander nicht magst, dann tausche ihn doch gegen Petersilie oder Basilikum.
 
 <Ingredients yields="4 Personen">

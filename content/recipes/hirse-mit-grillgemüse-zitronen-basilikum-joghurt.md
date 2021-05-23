@@ -1,7 +1,7 @@
 ---
 title: Hirse mit Grillgemüse & Zitronen-Basilikum-Joghurt
 date: 2020-06-23T07:19:34.582Z
-coverImage: ../assets/20200516-dsc02805.jpg
+coverImage: /assets/20200516-dsc02805.jpg
 coverImageAuthor: Andrey Okonechnikov
 coverImageLink: http://okonet.ru/
 categories:

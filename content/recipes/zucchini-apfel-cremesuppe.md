@@ -1,7 +1,7 @@
 ---
 title: Zucchini-Apfel-Cremesuppe
 date: 2020-07-10T11:54:22.915Z
-coverImage: ../assets/20200525-DSC02857.jpg
+coverImage: /assets/20200525-DSC02857.jpg
 coverImageAuthor: Andrey Okonechnikov
 coverImageLink: http://okonet.ru/
 categories:

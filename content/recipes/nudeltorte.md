@@ -1,5 +1,5 @@
 ---
-coverImage: ../assets/DSC03518.jpg
+coverImage: /assets/DSC03518.jpg
 .coverImageLink: https://www.danielamulle.at
 title: Nudeltorte
 date: 2020-08-27T13:20:19.439Z

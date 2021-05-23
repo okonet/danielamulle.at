@@ -1,15 +1,12 @@
 /** @jsx jsx */
 import React from "react"
-import { MDXRenderer } from "gatsby-plugin-mdx"
-import { Box, jsx } from "theme-ui"
+import { jsx } from "theme-ui"
 import { testimonialsTheme } from "../theme"
-import * as Content from "../../content/sections/thanks.mdx"
-import { useLocation } from "@reach/router"
 import LeadLayout from "./LeadLayout"
+import hydrate from "next-mdx-remote/hydrate"
+import components from "../gatsby-plugin-theme-ui/components"
 
-export default function ResourcePostPage({ data }) {
-  const { search } = useLocation()
-  const { post } = data
+export default function ResourcePostPage({ post }) {
   const {
     body,
     coverImage,
@@ -19,7 +16,6 @@ export default function ResourcePostPage({ data }) {
     title,
     subtitle,
   } = post
-  let isThanksPage = search.includes("thanks")
   return (
     <LeadLayout
       theme={testimonialsTheme}
@@ -30,13 +26,7 @@ export default function ResourcePostPage({ data }) {
       coverImageLink={coverImageLink}
       socialImage={socialImage}
     >
-      {isThanksPage ? (
-        <Box sx={{ mt: 4 }}>
-          <Content.default />
-        </Box>
-      ) : (
-        <MDXRenderer>{body}</MDXRenderer>
-      )}
+      {hydrate(body, { components })}
     </LeadLayout>
   )
 }

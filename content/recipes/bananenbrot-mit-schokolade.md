@@ -1,7 +1,7 @@
 ---
 title: Bananenbrot mit Schokolade
 date: 2021-04-06T15:30:21.849Z
-coverImage: ../assets/20210314-DSC04983.jpg
+coverImage: /assets/20210314-DSC04983.jpg
 coverImageAuthor: Andrey Okonetchnikov
 coverImageLink: https://okonet.ru
 categories:
@@ -25,13 +25,10 @@ categories:
     label: Mealprep-geeignet
 timeToCook: 15 Minuten + 50 Minuten backen
 ---
-Dieses Bananenbrot ist unglaublich saftig, obwohl es ganz ohne Eier auskommt. Kakao und  Schokostückchen sind optional: wenn du Lust auf ein klassisches Bananenbrot hast, dann lasse sie einfach weg. Für eine vegetarische Variante nimm' einfach 3 Eier statt den Chiasamen.
 
-
+Dieses Bananenbrot ist unglaublich saftig, obwohl es ganz ohne Eier auskommt. Kakao und Schokostückchen sind optional: wenn du Lust auf ein klassisches Bananenbrot hast, dann lasse sie einfach weg. Für eine vegetarische Variante nimm' einfach 3 Eier statt den Chiasamen.
 
 <Ingredients yields="1 Kastenform">
-
-
 
 - 150 g weiche Margarine
 - 60 g brauner Zucker
@@ -45,13 +42,9 @@ Dieses Bananenbrot ist unglaublich saftig, obwohl es ganz ohne Eier auskommt. Ka
 - 3 gehäufte EL Kakaopulver (optional)
 - 60 g gehackte Bitterschokolade mit mindestens 70 % Kakaoanteil (optional)
 
-
-
 </Ingredients>
 
 <Preparation>
-
-
 
 1. Eine Kastenform mit Margarine ausfetten und mit Mehl ausstreuen.
 2. Chiasamen mit Wasser verrühren und ca. 5 Minuten stehen lassen.
@@ -59,12 +52,10 @@ Dieses Bananenbrot ist unglaublich saftig, obwohl es ganz ohne Eier auskommt. Ka
 4. Vollkornmehl sorgfältig mit dem Backpulver und dem Kakao vermischen.
 5. Margarine, Zucker und Bananenstücke mixen.
 6. Chiasamen, Salz und Walnüsse unterrühren.
-7. Vollkornmehl und Pflanzendrink untermixen. 
+7. Vollkornmehl und Pflanzendrink untermixen.
 8. Falls der Teig sehr fest ist, dann gibt noch etwas mehr Pflanzendrink dazu.
 9. Schokostücke unterheben.
 10. In die befettete Kastenform füllen.
 11. Bei 170 Grad Heißluft 50 Minuten backen.
-
-
 
 </Preparation>

@@ -1,7 +1,7 @@
 ---
 title: Flammkuchen
 date: 2020-09-26T07:48:32.646Z
-coverImage: ../assets/DSC03542.jpg
+coverImage: /assets/DSC03542.jpg
 coverImageAuthor: Andrey Okonetchnikov
 coverImageLink: https://okonet.ru
 categories:
@@ -23,6 +23,7 @@ categories:
     label: "schnell "
 timeToCook: 20 Minuten vorbereiten + 10-15 Minuten backen
 ---
+
 Dieses leckere Gericht hast du im Nu fertig. Je nach Lust & Saison kannst du unzählige Varianten kreieren: Beim Belegen sind deiner Kreativität wirklich keine Grenzen gesetzt.
 
 <Ingredients yields="4 Personen">

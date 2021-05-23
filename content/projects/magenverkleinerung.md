@@ -4,7 +4,7 @@ categories:
     label: Diätologischer Jahresstart 2021
 title: Magenverkleinerung
 date: 2021-01-20T05:00:00.000Z
-coverImage: ../assets/spindelberger_s-rezept.jpg
+coverImage: /assets/spindelberger_s-rezept.jpg
 coverImageAuthor: Sandra Spindelberger
 .coverImageLink: https://www.ernährungswissen.at
 coverImageLink: https://ernährungswissen.at/ueber-mich/

@@ -1,28 +1,16 @@
 /* @jsx jsx */
 import React from "react"
 import { footerTheme } from "../theme"
-import { Box, Container, jsx, Styled, ThemeProvider } from "theme-ui"
+import { Box, Grid, Container, jsx, Styled, ThemeProvider } from "theme-ui"
 import Group from "react-group"
-import Link from "./Link"
-import { graphql, useStaticQuery } from "gatsby"
+import Link from "next/link"
 import ContactInfo from "./ContactInfo"
-import { Grid } from "@theme-ui/components"
 import FacebookIcon from "./FacebookIcon"
 import InstagramIcon from "./InstagramIcon"
+import config from "../../site.config"
 
 function Footer() {
-  const { site } = useStaticQuery(graphql`
-    query FooterQuery {
-      site {
-        siteMetadata {
-          title
-          author
-          authorDegree
-          socialHandle
-        }
-      }
-    }
-  `)
+  const { socialHandle, author, authorDegree } = config
   return (
     <ThemeProvider theme={footerTheme}>
       <Box as="footer" sx={{ flexShrink: 1, bg: "background" }}>
@@ -39,17 +27,13 @@ function Footer() {
                 <ContactInfo type="email" />
               </Styled.p>
               <Styled.p>
-                <Styled.a
-                  href={`https://facebook.com/${site.siteMetadata.socialHandle}`}
-                >
-                  <FacebookIcon /> {site.siteMetadata.socialHandle}
+                <Styled.a href={`https://facebook.com/${socialHandle}`}>
+                  <FacebookIcon /> {socialHandle}
                 </Styled.a>
               </Styled.p>
               <Styled.p>
-                <Styled.a
-                  href={`https://instagram.com/${site.siteMetadata.socialHandle}`}
-                >
-                  <InstagramIcon /> {site.siteMetadata.socialHandle}
+                <Styled.a href={`https://instagram.com/${socialHandle}`}>
+                  <InstagramIcon /> {socialHandle}
                 </Styled.a>
               </Styled.p>
             </Grid>
@@ -59,13 +43,12 @@ function Footer() {
             >
               <Styled.p>
                 Made with ♡ by{" "}
-                <Styled.a href="https://component-driven.io">
+                <Styled.a href="https://www.component-driven.dev">
                   Component-Driven
                 </Styled.a>
               </Styled.p>
               <Styled.p>
-                © {site.siteMetadata.authorDegree} {site.siteMetadata.author},{" "}
-                {new Date().getFullYear()}
+                © {authorDegree} {author}, {new Date().getFullYear()}
               </Styled.p>
               <Box
                 css={{
@@ -75,8 +58,12 @@ function Footer() {
                 }}
               >
                 <Group as="nav" separator=" • ">
-                  <Link to="/impressum">Impressum</Link>
-                  <Link to="/datenschutz">Datenschutz</Link>
+                  <Link href="/impressum" passHref>
+                    <Styled.a>Impressum</Styled.a>
+                  </Link>
+                  <Link href="/datenschutz" passHref>
+                    <Styled.a>Datenschutz</Styled.a>
+                  </Link>
                 </Group>
               </Box>
             </Grid>

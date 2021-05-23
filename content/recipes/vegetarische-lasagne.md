@@ -1,7 +1,7 @@
 ---
 title: Vegetarische Lasagne
 date: 2020-08-03T15:53:39.609Z
-coverImage: ../assets/img_6225.jpeg
+coverImage: /assets/img_6225.jpeg
 coverImageAuthor: Andrey Okonechnikov
 coverImageLink: http://okonet.ru/
 categories:

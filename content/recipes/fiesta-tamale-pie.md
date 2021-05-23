@@ -1,7 +1,7 @@
 ---
 title: Fiesta Tamale Pie
 date: 2020-06-16T15:19:11.375Z
-coverImage: ../assets/DSC03026.jpg
+coverImage: /assets/DSC03026.jpg
 coverImageAuthor: Andrey Okonechnikov
 coverImageLink: http://okonet.ru/
 categories:

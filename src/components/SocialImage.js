@@ -1,11 +1,11 @@
 /* @jsx jsx */
 import React from "react"
-import Img from "gatsby-image"
-import { graphql, useStaticQuery } from "gatsby"
+import Img from "next/image"
 import { AspectRatio, Box, Flex, Styled, jsx } from "theme-ui"
 import { transparentize } from "@theme-ui/color"
 import ThemeUIProvider from "./ThemeUIProvider"
 import theme, { palette } from "../theme"
+import Logo from "./Logo"
 
 export default function SocialImage({
   image,
@@ -14,17 +14,6 @@ export default function SocialImage({
   width = "100vw",
   height = "100vh",
 }) {
-  const { logo } = useStaticQuery(graphql`
-    query {
-      logo: file(relativePath: { eq: "logo@2x.png" }) {
-        childImageSharp {
-          fixed(width: 256) {
-            ...GatsbyImageSharpFixed
-          }
-        }
-      }
-    }
-  `)
   const gradient = () => (theme) => {
     return `linear-gradient(
             ${transparentize("text", 1)(theme)} 30%, 
@@ -42,10 +31,10 @@ export default function SocialImage({
       <AspectRatio ratio={width / height} sx={{ width, height }}>
         <Img
           alt={title}
-          loading="eager"
-          fadeIn={false}
-          fixed={image.childImageSharp.fixed}
-          style={{ width: "100%", height: "100%" }}
+          src={image}
+          width={width}
+          height={height}
+          objectFit="cover"
         />
 
         <Flex
@@ -62,12 +51,7 @@ export default function SocialImage({
             backgroundImage: title ? gradient : "none",
           }}
         >
-          <Img
-            loading="eager"
-            fadeIn={false}
-            fixed={logo.childImageSharp.fixed}
-            alt="Logo"
-          />
+          <Logo variant="logo" size={100} />
           <Box sx={{}}>
             {title && (
               <Styled.h1

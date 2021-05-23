@@ -2,19 +2,21 @@
 import React from "react"
 import {
   Box,
+  Button,
   Container,
   Flex,
   Grid,
+  jsx,
   Label,
   Radio,
-  jsx,
   Styled,
-  Button,
 } from "theme-ui"
+import { useRouter } from "next/router"
 import theme from "../theme"
-import { graphql, useStaticQuery } from "gatsby"
 import Link from "../components/Link"
 import ThemeUIProvider from "../components/ThemeUIProvider"
+import { getAllPostsAndCategories } from "./api/posts"
+import config from "../../site.config"
 
 const initialVersion = 2
 
@@ -36,7 +38,20 @@ const IMAGE_TYPES = [
   },
 ]
 
-function Post({ id, title, slug, imageType = "instagram", version }) {
+export async function getStaticProps() {
+  const posts = Object.values(config.collections).flatMap((collection) => {
+    const [posts] = getAllPostsAndCategories(collection)
+    return posts
+  })
+
+  return {
+    props: {
+      posts,
+    },
+  }
+}
+
+function Post({ title, slug, imageType = "instagram", version }) {
   const selectedImageType = IMAGE_TYPES.find((type) => type.name === imageType)
   const { width, height } = selectedImageType
   const queryParams = new URLSearchParams("")
@@ -45,7 +60,7 @@ function Post({ id, title, slug, imageType = "instagram", version }) {
   queryParams.set("version", version)
   queryParams.set("url", `https://danielamulle.at${slug}?${imageType}`)
   return (
-    <Box key={id}>
+    <Box>
       <Box sx={{ mb: 3 }}>
         <Styled.h2 sx={{ m: 0 }}>{title}</Styled.h2>
         <Link to={`${slug}?${imageType}`}>{slug}</Link>
@@ -60,44 +75,32 @@ function Post({ id, title, slug, imageType = "instagram", version }) {
   )
 }
 
-export default ({ location, navigate }) => {
-  const { posts } = useStaticQuery(
-    graphql`
-      query {
-        posts: allPost {
-          nodes {
-            ...PostMeta
-          }
-        }
-      }
-    `
-  )
-  const searchParams = new URLSearchParams(location.search)
-  const selectedPostSlug = searchParams.get("post")
-  const version = searchParams.get("v") || initialVersion
-  const imageType = searchParams.get("type") || IMAGE_TYPES[0].name
-  const selectedPost = posts.nodes.find(
-    (post) => post.slug === selectedPostSlug
-  )
+export default function SocialImagesPage({ posts }) {
+  const { query, replace } = useRouter()
+  const selectedPostSlug = query.post
+  const version = query.v || initialVersion
+  const imageType = query.type || IMAGE_TYPES[0].name
+  const selectedPost = posts.find((post) => post.slug === selectedPostSlug)
+
   const handleFormChange = (event) => {
-    const value = event.target.value
-    searchParams.set("type", value)
-    const nextUrl =
-      value !== ""
-        ? `${location.pathname}?${searchParams.toString()}`
-        : location.pathname
-    navigate(nextUrl, {
-      replace: true,
+    replace({
+      query: {
+        ...query,
+        type: event.target.value,
+      },
     })
   }
+
   const handleRefresh = (event) => {
     event.preventDefault()
-    searchParams.set("v", Date.now())
-    const nextUrl = `${location.pathname}?${searchParams.toString()}`
-    navigate(nextUrl, {
-      replace: true,
+    replace({
+      query: {
+        ...query,
+        v: Date.now(),
+      },
     })
   }
+
   return (
     <ThemeUIProvider theme={theme}>
       <Container
@@ -120,9 +123,9 @@ export default ({ location, navigate }) => {
               }}
             >
               <Styled.ul sx={{ flexDirection: "column" }}>
-                {posts.nodes.map(({ slug, title }) => (
-                  <Styled.li>
-                    <Link to={`?post=${slug}`}>{title}</Link>
+                {posts.map(({ slug, title }) => (
+                  <Styled.li key={slug}>
+                    <Link to={`/social-images?post=${slug}`}>{title}</Link>
                   </Styled.li>
                 ))}
               </Styled.ul>
@@ -138,7 +141,6 @@ export default ({ location, navigate }) => {
                 <>
                   <Flex
                     as="form"
-                    onChange={handleFormChange}
                     sx={{
                       alignItems: "center",
                       justifyContent: "flex-start",
@@ -147,11 +149,12 @@ export default ({ location, navigate }) => {
                     {IMAGE_TYPES.map((type) => {
                       const isChecked = imageType === type.name
                       return (
-                        <Label sx={{ width: "auto", mr: 4 }}>
+                        <Label key={type.name} sx={{ width: "auto", mr: 4 }}>
                           <Radio
                             name={type.name}
                             value={type.name}
                             checked={isChecked}
+                            onChange={handleFormChange}
                           />
                           {type.name}
                         </Label>

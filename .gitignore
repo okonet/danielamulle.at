@@ -6,13 +6,12 @@
 # testing
 /coverage
 
-# production
-.cache
-/public
+# next.js
+.next
 
 # misc
 .DS_Store
-.env
+.env.local
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*

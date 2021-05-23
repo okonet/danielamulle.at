@@ -4,7 +4,7 @@ categories:
     label: Diätologischer Jahresstart 2021
 title: Entzündungshemmende Ernährung
 date: 2021-01-02T05:00:00.000Z
-coverImage: ../assets/böhm_l-rezept.jpg
+coverImage: /assets/böhm_l-rezept.jpg
 coverImageAuthor: Lena Böhm
 coverImageLink: https://www.lb-diaetologie.com
 ---

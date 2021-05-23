@@ -1,7 +1,7 @@
 ---
 title: Hirsepizza
 date: 2020-07-25T05:31:14.234Z
-coverImage: ../assets/hirsepizza.jpg
+coverImage: /assets/hirsepizza.jpg
 coverImageAuthor: Andrey Okonechnikov
 coverImageLink: http://okonet.ru/
 categories:

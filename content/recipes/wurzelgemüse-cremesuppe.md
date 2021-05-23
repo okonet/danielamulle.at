@@ -1,7 +1,7 @@
 ---
 title: Wurzelgemüse-Cremesuppe
 date: 2021-01-19T14:24:22.608Z
-coverImage: ../assets/dsc04953.jpg
+coverImage: /assets/dsc04953.jpg
 coverImageAuthor: Andrey Okonetchnikov
 coverImageLink: https://okonet.ru
 categories:
@@ -29,6 +29,7 @@ categories:
     label: Mealprep-geeignet
 timeToCook: 15 Minuten vorbereiten + ca. 15 Minuten köcheln
 ---
+
 Diese cremige Suppe schmeckt herrlich, ganz besonders an einem kühlen Herbst- oder Wintertag. Eine komplette, gesunde Mahlzeit die du im Handumdrehen fertig hast. Falls du Sellerie oder Pastinaken nicht magst, dann ersetze sie einfach durch anderes Gemüse, z.B. Karotten, Karfiol (Blumenkohl) oder Kürbis.
 
 <Ingredients yields="4 Personen">
@@ -58,4 +59,4 @@ Diese cremige Suppe schmeckt herrlich, ganz besonders an einem kühlen Herbst- o
 
 </Preparation>
 
-*Tipp*: Ich koche bei Suppen gerne noch 100 g gelbe oder rote Linsen mit: Sie liefern dir noch eine kleine Extraportion sättigendes Eiweiß und machen die Suppe auch ohne Rahm oder Obers wunderbar cremig.
+_Tipp_: Ich koche bei Suppen gerne noch 100 g gelbe oder rote Linsen mit: Sie liefern dir noch eine kleine Extraportion sättigendes Eiweiß und machen die Suppe auch ohne Rahm oder Obers wunderbar cremig.

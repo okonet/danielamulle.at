@@ -1,5 +1,5 @@
 ---
-coverImage: ../assets/shakshuka.jpg
+coverImage: /assets/shakshuka.jpg
 .coverImageLink: https://www.danielamulle.at
 title: Klassische Shakshuka
 date: 2020-08-25T11:30:09.988Z

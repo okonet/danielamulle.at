@@ -10,11 +10,10 @@ ingredients:
   - ca. 100 g Fetakäse
   - je 15 ml Olivenöl und Walnussöl
   - Salz und Pfeffer
-  - "optional: gemörserte Mischung aus 2 Gewürznelken, 1 TL Kreuzkümmel, 1/2 TL
-    Koriandersamen, Prise Muskatnuss"
+  - "optional: gemörserte Mischung aus 2 Gewürznelken, 1 TL Kreuzkümmel, 1/2 TL Koriandersamen, Prise Muskatnuss"
 title: Buchweizen-Tabouleh
 date: 2020-06-29T09:42:02.549Z
-coverImage: ../assets/20200603-DSC02918.jpg
+coverImage: /assets/20200603-DSC02918.jpg
 coverImageAuthor: Andrey Okonechnikov
 coverImageLink: http://okonet.ru/
 categories:

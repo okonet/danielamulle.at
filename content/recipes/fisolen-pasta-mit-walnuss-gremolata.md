@@ -1,7 +1,7 @@
 ---
 title: Fisolen-Pasta mit Walnuss-Gremolata
 date: 2020-09-07T12:44:07.984Z
-coverImage: ../assets/DSC03581.jpg
+coverImage: /assets/DSC03581.jpg
 coverImageAuthor: Andrey Okonetchnikov
 coverImageLink: https://okonet.ru
 categories:
@@ -25,6 +25,7 @@ categories:
     label: "schnell "
 timeToCook: 30 Minuten
 ---
+
 In diesem flotten Pastagericht habe ich die klassiche lombardische Kräuter-Würzmischung "Gremolata" etwas abgewandelt, und dadurch mit omega-3-Fetten gepimt - das geht auch ganz ohne Fisch.
 
 <Ingredients yields="4 Personen">

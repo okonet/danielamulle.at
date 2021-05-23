@@ -1,7 +1,7 @@
 ---
 title: Erdnuss-Schoko-Riegel
 date: 2021-04-05T05:25:11.964Z
-coverImage: ../assets/20210314-DSC04997.jpg
+coverImage: /assets/20210314-DSC04997.jpg
 coverImageAuthor: Andrey Okonechnikov
 coverImageLink: http://okonet.ru/
 categories:
@@ -27,13 +27,10 @@ categories:
     label: "schnell "
 timeToCook: 20 Minuten + 1 Stunde kühlen
 ---
+
 In unserer Familie heißt diese kleine Köstlichkeit auch "Snickers Reloaded": Schokoladig, karamellig, erdnussig und ungleich gesünder als das Original. Die Inspiration zum Rezept stammt von der Foodbloggerin & Ernährungspädagogin [Vera Hood](https://verahood.com/).
 
-
-
 <Ingredients yields="4 Personen">
-
-
 
 - 200 g Datteln
 - 125 g Erdnussmus natur
@@ -42,12 +39,8 @@ In unserer Familie heißt diese kleine Köstlichkeit auch "Snickers Reloaded": S
 - 2 EL Honig, Ahornsirup oder Reissirup (fruchtzuckerfrei)
 - 100 g Bitterschokolade mit mindestens 70 % Kakaoanteil
 
-
-
 </Ingredients>
 <Preparation>
-
-
 
 1. Datteln ca. 10 Minuten mit heißem Wasser bedeckt einweichen.
 2. Einstweilen Schokolade in der Mikrowelle oder im Wasserbad schmelzen.
@@ -57,7 +50,5 @@ In unserer Familie heißt diese kleine Köstlichkeit auch "Snickers Reloaded": S
 6. Schokolade über die Masse streichen.
 7. 20 Minuten in den Tiefkühler oder mind. 1 Stunde in den Kühlschrank stellen.
 8. In Stücke schneiden und genießen.
-
-
 
 </Preparation>

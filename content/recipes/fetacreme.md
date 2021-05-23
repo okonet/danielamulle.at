@@ -1,7 +1,7 @@
 ---
 title: Fetacreme
 date: 2020-06-23T12:59:17.409Z
-coverImage: ../assets/20200515-dsc02768.jpg
+coverImage: /assets/20200515-dsc02768.jpg
 coverImageAuthor: Andrey Okonechnikov
 coverImageLink: http://okonet.ru/
 categories:
@@ -49,4 +49,3 @@ Ob als Sauce zu Gegrilltem, als Dip, Aufstrich, zum Aufpeppen von Suppen oder Sa
 </Preparation>
 
 Du kannst die Kräuter nach deinem Geschmack variieren: auch Schnittlauch mit Petersilie oder Basilikum sind eine tolle Kombination.
-

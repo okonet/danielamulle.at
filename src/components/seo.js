@@ -1,129 +1,52 @@
-/**
- * SEO component that queries for data with
- *  Gatsby's useStaticQuery React hook
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
+/** @jsx jsx */
+import { jsx } from "theme-ui"
 import React from "react"
 import PropTypes from "prop-types"
-import Helmet from "react-helmet"
-import { useStaticQuery, graphql } from "gatsby"
-import { useLocation } from "@reach/router"
+import { useRouter } from "next/router"
+import { DefaultSeo } from "next-seo"
+import config from "../../site.config"
 
 const openGraphService = "https://shotter.component-driven.dev/"
 
-function SEO({ description, lang, meta, title, ogImage }) {
-  const { site, defaultImage } = useStaticQuery(
-    graphql`
-      query {
-        site {
-          siteMetadata {
-            title
-            description
-            author
-            url
-            lang
-            locale
-          }
-        }
-        defaultImage: file(relativePath: { eq: "og-image.png" }) {
-          childImageSharp {
-            original {
-              src
-            }
-          }
-        }
-      }
-    `
-  )
-  const location = useLocation()
-  const metaDescription = description || site.siteMetadata.description
-  const canonicalURL = new URL(location.pathname, site.siteMetadata.url)
-  const { src } = defaultImage.childImageSharp.original
-  const ogImagePath = ogImage
-    ? `${openGraphService}api/screenshot?url=${canonicalURL}?ogImage`
-    : src
-
-  const siteTitle = title || site.siteMetadata.title
-  return (
-    <Helmet
-      htmlAttributes={{
-        lang: lang || site.siteMetadata.lang,
-      }}
-      title={siteTitle}
-      titleTemplate={title ? `%s | ${site.siteMetadata.title}` : undefined}
-      meta={[
-        {
-          name: "viewport",
-          content: "width=device-width, initial-scale=1.0, user-scalable=0",
-        },
-        {
-          name: "title",
-          property: "og:title",
-          content: site.siteMetadata.title,
-        },
-        {
-          name: "description",
-          content: metaDescription,
-        },
-        {
-          name: "author",
-          content: site.siteMetadata.author,
-        },
-        {
-          property: "og:description",
-          content: metaDescription,
-        },
-        {
-          property: "og:type",
-          content: "website",
-        },
-        {
-          property: "og:locale",
-          content: site.siteMetadata.locale,
-        },
-        {
-          name: "image",
-          property: "og:image",
-          content: ogImagePath,
-        },
-        {
-          name: "twitter:card",
-          content: "summary_large_image",
-        },
-        {
-          name: "twitter:creator",
-          content: site.siteMetadata.author,
-        },
-        {
-          name: "twitter:title",
-          content: siteTitle,
-        },
-        {
-          name: "twitter:description",
-          content: site.siteMetadata.description,
-        },
-        {
-          name: "twitter:image",
-          content: ogImagePath,
-        },
-      ].concat(meta)}
-    >
-      <script async src="https://cdn.splitbee.io/sb.js" />
-    </Helmet>
-  )
+export function useCanonical() {
+  const router = useRouter()
+  return new URL(router.asPath, config.homepage)
 }
 
-SEO.defaultProps = {
-  meta: [],
-  description: "",
+function SEO({ description = config.description, title, ogImage }) {
+  const { homepage, locale } = config
+  const canonicalURL = useCanonical()
+  const ogImagePath = ogImage
+    ? `${openGraphService}api/screenshot?url=${canonicalURL}?ogImage`
+    : `${homepage}/images/og-image.png`
+
+  return (
+    <DefaultSeo
+      title={[title, config.title].join(" : ")}
+      description={description}
+      canonical={homepage}
+      openGraph={{
+        url: homepage,
+        title: title,
+        description,
+        type: "website",
+        locale,
+        site_name: title,
+        images: [
+          {
+            url: ogImagePath,
+            width: 1200,
+            height: 630,
+            alt: title,
+          },
+        ],
+      }}
+    />
+  )
 }
 
 SEO.propTypes = {
   description: PropTypes.string,
-  lang: PropTypes.string,
-  meta: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string,
   ogImage: PropTypes.bool,
 }

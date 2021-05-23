@@ -1,42 +1,49 @@
 /* @jsx jsx */
 import * as React from "react"
-import { Box, Flex, Grid, jsx, Styled, ThemeProvider } from "theme-ui"
-import { graphql, useStaticQuery } from "gatsby"
-import Home, { _frontmatter } from "../../content/sections/home.mdx"
+import { Grid, jsx, Styled, ThemeProvider } from "theme-ui"
+import { take } from "lodash"
 import { blogTheme, homeTheme, recipesTheme } from "../theme"
 import PostCard from "../components/PostCard"
 import Link from "../components/Link"
 import { blogPath, recipesPath } from "../../paths"
 import PageLayout from "../components/PageLayout"
 import AboutBlock from "../components/AboutBlock"
+import { getAllPostsAndCategories, getPostBySlug } from "./api/posts"
+import config from "../../site.config"
+import renderToString from "next-mdx-remote/render-to-string"
+import hydrate from "next-mdx-remote/hydrate"
+import smartypants from "@silvenon/remark-smartypants"
+import components from "../gatsby-plugin-theme-ui/components"
 
-const IndexPage = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      latestRecipes: allPost(
-        filter: { collection: { eq: "recipes" } }
-        limit: 3
-        sort: { fields: [date], order: [DESC] }
-      ) {
-        nodes {
-          ...PostMeta
-        }
-      }
-      latestBlogPosts: allPost(
-        filter: { collection: { eq: "posts" } }
-        limit: 3
-        sort: { fields: [date], order: [DESC] }
-      ) {
-        nodes {
-          ...PostMeta
-        }
-      }
-    }
-  `)
+export async function getStaticProps() {
+  const [recipes] = getAllPostsAndCategories(config.collections.recipes)
+  const [posts] = getAllPostsAndCategories(config.collections.blog)
+  const pagePost = getPostBySlug("sections", "home")
+
+  const mdxSource = await renderToString(pagePost.content, {
+    components,
+    mdxOptions: {
+      remarkPlugins: [smartypants],
+    },
+  })
+
+  return {
+    props: {
+      post: {
+        ...pagePost,
+        body: mdxSource,
+      },
+      latestRecipes: take(recipes, 3),
+      latestPosts: take(posts, 3),
+    },
+  }
+}
+
+export default function IndexPage({ post, latestRecipes, latestPosts }) {
   return (
-    <PageLayout theme={homeTheme} title={_frontmatter.title}>
+    <PageLayout theme={homeTheme} title={post.title}>
       <AboutBlock sx={{ mt: [0, -5] }}>
-        <Home />
+        {hydrate(post.body, { components })}
       </AboutBlock>
 
       <ThemeProvider theme={recipesTheme}>
@@ -47,7 +54,7 @@ const IndexPage = () => {
           </Link>
         </Styled.h2>
         <Grid gap={3} columns={[1, 3]} sx={{ my: 3, mx: [0, 0, -4] }}>
-          {data.latestRecipes.nodes.map(({ slug, coverImage, title }) => (
+          {latestRecipes.map(({ slug, coverImage, title }) => (
             <PostCard
               key={slug}
               slug={slug}
@@ -66,7 +73,7 @@ const IndexPage = () => {
           </Link>
         </Styled.h2>
         <Grid gap={3} columns={[1, 3]} sx={{ my: 3, mx: [0, 0, -4] }}>
-          {data.latestBlogPosts.nodes.map(({ slug, coverImage, title }) => (
+          {latestPosts.map(({ slug, coverImage, title }) => (
             <PostCard
               key={slug}
               slug={slug}
@@ -79,5 +86,3 @@ const IndexPage = () => {
     </PageLayout>
   )
 }
-
-export default IndexPage

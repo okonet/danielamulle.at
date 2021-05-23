@@ -1,7 +1,7 @@
 ---
 title: Bohnen-Zucchini-Eintopf mit gerösteten Knoblauchtomaten
 date: 2020-07-13T14:23:04.588Z
-coverImage: ../assets/20200519-DSC02810.jpg
+coverImage: /assets/20200519-DSC02810.jpg
 coverImageAuthor: Andrey Okonechnikov
 coverImageLink: http://okonet.ru/
 categories:

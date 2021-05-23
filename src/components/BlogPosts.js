@@ -3,22 +3,21 @@ import React from "react"
 import { Grid, jsx } from "theme-ui"
 import { blogTheme } from "../theme"
 import PostCard from "./PostCard"
-import Content, * as meta from "../../content/sections/blog.mdx"
 import PageLayout from "./PageLayout"
+import hydrate from "next-mdx-remote/hydrate"
+import components from "../gatsby-plugin-theme-ui/components"
 
-const BlogPosts = ({ data }) => {
-  const { posts } = data
-
+const BlogPosts = ({ posts, section }) => {
   return (
-    <PageLayout theme={blogTheme} title={meta._frontmatter.title}>
-      <Content />
+    <PageLayout theme={blogTheme} title={section.title}>
+      {hydrate(section.body, { components })}
       <Grid
         gap={3}
         columns={[1, 2, 3]}
         sx={{ my: 4, mx: [0, 0, -5], px: [0, 0, 2] }}
       >
-        {posts.nodes.map((post) => (
-          <PostCard {...post} key={post.id} />
+        {posts.map((post) => (
+          <PostCard {...post} key={post.slug} />
         ))}
       </Grid>
     </PageLayout>

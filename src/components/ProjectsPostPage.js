@@ -1,17 +1,20 @@
 /** @jsx jsx */
 import React from "react"
-import { MDXRenderer } from "gatsby-plugin-mdx"
-import { Box, Grid, jsx, Styled } from "theme-ui"
-import Link from "./Link"
+import { useRouter } from "next/router"
+import { Box, jsx, Styled } from "theme-ui"
 import { projectsTheme } from "../theme"
 import InfoIcon from "./InfoIcon"
 import ShareButtons from "./ShareButtons"
-import TagList from "./TagList"
 import PageLayout from "./PageLayout"
 import PostTemplate from "./PostTemplate"
+import config from "../../site.config"
+import hydrate from "next-mdx-remote/hydrate"
+import components from "../gatsby-plugin-theme-ui/components"
 
-const ProjectsPostPage = ({ data, location }) => {
-  const { post, site } = data
+const ProjectsPostPage = ({ post }) => {
+  const { asPath } = useRouter()
+  const pageUrl = `${config.homepage}/${asPath}`
+
   const {
     body,
     coverImage,
@@ -21,9 +24,6 @@ const ProjectsPostPage = ({ data, location }) => {
     title,
     categories,
   } = post
-
-  const project = categories[0]
-  const pageUrl = location.href ? location.href : site.siteMetadata.url
 
   return (
     <PageLayout
@@ -36,18 +36,6 @@ const ProjectsPostPage = ({ data, location }) => {
       socialImage={socialImage}
       heading={
         <Box sx={{ mx: [0, 0, -4] }}>
-          <Box
-            as="nav"
-            sx={{
-              color: "muted",
-              fontSize: 0,
-              "@media print": {
-                visibility: "hidden",
-              },
-            }}
-          >
-            <Link to={project.slug}>← {project.id}</Link>
-          </Box>
           <Styled.h1
             sx={{
               mt: 1,
@@ -60,7 +48,7 @@ const ProjectsPostPage = ({ data, location }) => {
       }
     >
       <PostTemplate
-        main={<MDXRenderer>{body}</MDXRenderer>}
+        main={hydrate(body, { components })}
         sidebar={
           <>
             <Styled.h3>

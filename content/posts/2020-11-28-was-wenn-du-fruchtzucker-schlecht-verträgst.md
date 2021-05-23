@@ -1,7 +1,7 @@
 ---
 title: Was, wenn du Fruchtzucker schlecht verträgst?
 date: 2020-11-28T06:37:46.730Z
-coverImage: ../assets/randy-fath_fma.jpg
+coverImage: /assets/randy-fath_fma.jpg
 coverImageAuthor: Randy Fath
 coverImageLink: https://unsplash.com/@randyfath
 categories:
@@ -55,5 +55,5 @@ Sobald deine Beschwerden verschwunden sind, erweiterst du deinen Speiseplan vors
 Wenn du deine Liste durchgetestet hast, gib deinen "Positiv-Kandidaten" wieder einen fixen Platz in deinem Speiseplan. Fruchtzucker total zu streichen ist keine gute Idee: Du bekommst dadurch schon bei Minimengen arge Probleme: In deinem Bauch gibt es nämlich „Fruchtzucker-Schaufeln“ die den Fruchtzucker ins Blut transportieren. Ohne Arbeit „verkümmern“ sie. Gehe deswegen unbedingt alle drei Schritte.
 
 ## Werde ein Teil meiner Community!
-Falls du keinen Blogartikel mehr verpassen möchtest, dann melde dich hier unten für meinen Newsletter an. Einmal pro Woche bekommst du außerdem Tipps und Tricks, interessanten Infos und köstliche Rezepte direkt in deine Email-Inbox. Ich freue mich auf dich!
 
+Falls du keinen Blogartikel mehr verpassen möchtest, dann melde dich hier unten für meinen Newsletter an. Einmal pro Woche bekommst du außerdem Tipps und Tricks, interessanten Infos und köstliche Rezepte direkt in deine Email-Inbox. Ich freue mich auf dich!
