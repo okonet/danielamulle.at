@@ -11,8 +11,8 @@ media_folder: public/assets
 public_folder: /assets
 
 collections:
-  - name: "blog"
-    label: "Blog"
+  - name: "posts"
+    label: "Posts"
     folder: "content/posts"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
@@ -28,7 +28,7 @@ collections:
         name: 'categories'
         widget: 'file-relation'
         collection: config
-        file: tags
+        file: posts
         target_field: categories
         id_field: id
         required: false
@@ -52,24 +52,12 @@ collections:
         name: 'categories'
         widget: 'file-relation'
         collection: config
-        file: categories
+        file: recipes
         target_field: categories
         id_field: id
         required: true
         multiple: true
       - { label: "Time to prepare", name: "timeToCook", widget: "string", required: false }
-      - { label: "Body", name: "body", widget: "markdown" }
-
-  - name: "testimonials"
-    label: "Testimonials"
-    folder: "content/testimonials"
-    create: true
-    slug: "{{slug}}"
-    editor:
-      preview: false
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Body", name: "body", widget: "markdown" }
 
   - name: "resources"
@@ -125,28 +113,57 @@ collections:
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Body", name: "body", widget: "markdown", required: false }
 
+  - name: "sections"
+    label: "Sections"
+    folder: "content/sections"
+    create: false
+    slug: "{{slug}}"
+    editor:
+      preview: false
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
   - name: config
-    label: Config
+    label: Pages & Categories
     format: json
     editor:
       preview: false
     files:
-      - label: "Recipe Categories"
-        name: "categories"
+      - label: "About"
+        name: "about"
+        file: "content/about/categories.json"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "content", widget: "markdown", required: false }
+
+      - label: "Offers"
+        name: "offers"
+        file: "content/offers/categories.json"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "content", widget: "markdown", required: false }
+
+      - label: "Recipes"
+        name: "recipes"
         file: "content/recipes/categories.json"
         fields:
-          - label: "Recipe Category Items"
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "content", widget: "markdown", required: false }
+          - label: "Categories"
             widget: "list"
             name: "categories"
             fields:
-              - {label: Name, name: id, widget: "string"}
-              - {label: Tag, name: isTag, widget: "boolean", default: true}
+              - { label: Name, name: id, widget: "string" }
+              - { label: Tag, name: isTag, widget: "boolean", default: true }
 
-      - label: "Blog Tags"
-        name: "tags"
+      - label: "Posts"
+        name: "posts"
         file: "content/posts/categories.json"
         fields:
-          - label: "Blog Category Items"
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "content", widget: "markdown", required: false }
+          - label: "Categories"
             widget: "list"
             name: "categories"
             fields:
@@ -157,7 +174,8 @@ collections:
         name: "projects"
         file: "content/projects/categories.json"
         fields:
-          - label: "Project Items"
+          - { label: "Title", name: "title", widget: "string" }
+          - label: "Projects"
             widget: "list"
             name: "categories"
             fields:
@@ -171,3 +189,9 @@ collections:
               - { label: Body, name: description, widget: "markdown" }
               - { label: "Active Campaign List", name: "listId", widget: "string", required: false }
               - { label: Tag, name: isTag, widget: "hidden", default: false }
+      - label: "Resources"
+        name: "resources"
+        file: "content/resources/categories.json"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "content", widget: "markdown", required: false }
