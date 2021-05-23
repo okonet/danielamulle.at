@@ -1,7 +1,15 @@
 /* @jsx jsx */
 import React from "react"
 import { footerTheme } from "../theme"
-import { Box, Grid, Container, jsx, Styled, ThemeProvider } from "theme-ui"
+import {
+  Box,
+  Grid,
+  Container,
+  jsx,
+  Styled,
+  ThemeProvider,
+  Flex,
+} from "theme-ui"
 import Group from "react-group"
 import Link from "next/link"
 import ContactInfo from "./ContactInfo"
@@ -27,19 +35,44 @@ function Footer() {
               <Styled.p>
                 <ContactInfo type="email" />
               </Styled.p>
-              <Styled.p>
-                <Group separator={" • "}>
-                  <Styled.a href={`https://facebook.com/${socialHandle}`}>
-                    <FacebookIcon /> {socialHandle}
-                  </Styled.a>
-                  <Styled.a href={`https://instagram.com/${socialHandle}`}>
-                    <InstagramIcon /> {socialHandle}
-                  </Styled.a>
-                  <Styled.a href="https://www.youtube.com/channel/UCv9D25wFLYm-lFJRexwqhoA">
-                    <YoutubeIcon /> YouTube
-                  </Styled.a>
-                </Group>
-              </Styled.p>
+              <Flex as="p" sx={{ "* + *": { marginLeft: 1 } }}>
+                <Styled.a
+                  href={`https://facebook.com/${socialHandle}`}
+                  title={`Facebook: ${socialHandle}`}
+                  sx={{
+                    display: "inline-flex",
+                    ":hover": {
+                      color: "accent",
+                    },
+                  }}
+                >
+                  <FacebookIcon width="2em" height="2em" />
+                </Styled.a>
+                <Styled.a
+                  href={`https://instagram.com/${socialHandle}`}
+                  title={`Instagram: ${socialHandle}`}
+                  sx={{
+                    display: "inline-flex",
+                    ":hover": {
+                      color: "accent",
+                    },
+                  }}
+                >
+                  <InstagramIcon width="2em" height="2em" />
+                </Styled.a>
+                <Styled.a
+                  href="https://www.youtube.com/channel/UCv9D25wFLYm-lFJRexwqhoA"
+                  title="My YouTube Channel"
+                  sx={{
+                    display: "inline-flex",
+                    ":hover": {
+                      color: "accent",
+                    },
+                  }}
+                >
+                  <YoutubeIcon width="2em" height="2em" />
+                </Styled.a>
+              </Flex>
             </Grid>
             <Grid
               gap={2}
