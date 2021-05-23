@@ -246,11 +246,11 @@ const theme = {
     },
     a: {
       color: "primary",
-      textDecoration: "none",
-      borderBottom: "thin",
-      borderBottomColor: transparentize("primary", 0.75),
+      textDecorationColor: transparentize("primary", 0.75),
+      textUnderlinePosition: "under",
       ":hover": {
-        borderBottomColor: transparentize("primary", 0.25),
+        color: "accent",
+        textDecorationColor: transparentize("accent", 0.5),
       },
       ".active": {
         color: "accent",
