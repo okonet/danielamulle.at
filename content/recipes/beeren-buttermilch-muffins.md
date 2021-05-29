@@ -7,8 +7,6 @@ coverImageLink: https://okonet.ru
 categories:
   - value: Kuchen, Kekserl & Co
     label: Kuchen, Kekserl & Co
-  - value: Snacks
-    label: Snacks
   - value: vegetarisch
     label: vegetarisch
   - value: vegan
