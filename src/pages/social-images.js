@@ -58,12 +58,12 @@ function Post({ title, slug, imageType = "instagram", version }) {
   queryParams.set("width", width)
   queryParams.set("height", height)
   queryParams.set("version", version)
-  queryParams.set("url", `https://danielamulle.at${slug}?${imageType}`)
+  queryParams.set("url", `https://danielamulle.at${slug}/${imageType}`)
   return (
     <Box>
       <Box sx={{ mb: 3 }}>
         <Styled.h2 sx={{ m: 0 }}>{title}</Styled.h2>
-        <Link to={`${slug}?${imageType}`}>{slug}</Link>
+        <Link to={`${slug}/${imageType}`}>{slug}</Link>
       </Box>
       <img
         alt={`Instagram Image for ${title}`}
