@@ -2,54 +2,9 @@
 import { jsx } from "theme-ui"
 import Head from "next/head"
 import RootThemeProvider from "../components/ThemeUIProvider"
-import SocialImage from "../components/SocialImage"
 import CookieConsent from "../components/CookieConsent"
 
-function CustomApp({ Component, pageProps }) {
-  const { pageType, post } = pageProps
-
-  if (post) {
-    const { coverImage, author, title } = post
-
-    switch (pageType) {
-      case "ogImage": {
-        return (
-          <SocialImage
-            author={author}
-            title={title}
-            image={coverImage}
-            width={1012}
-            height={506}
-          />
-        )
-      }
-      case "instagramWithTitle": {
-        return (
-          <SocialImage
-            author={author}
-            title={title}
-            image={coverImage}
-            width={1080}
-            height={1080}
-          />
-        )
-      }
-      case "instagram": {
-        return (
-          <SocialImage
-            title={undefined}
-            image={coverImage}
-            width={1080}
-            height={1080}
-          />
-        )
-      }
-      default: {
-        // Use generic layout
-      }
-    }
-  }
-
+export default function CustomApp({ Component, pageProps }) {
   return (
     <RootThemeProvider>
       <Head>
@@ -64,5 +19,3 @@ function CustomApp({ Component, pageProps }) {
     </RootThemeProvider>
   )
 }
-
-export default CustomApp
