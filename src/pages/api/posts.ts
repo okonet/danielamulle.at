@@ -1,12 +1,12 @@
 import path from "path"
 import fs from "fs"
+import { NextApiRequest, NextApiResponse } from "next"
 import matter from "gray-matter"
 // @ts-ignore
 import slug from "slug"
 // @ts-ignore
 import yaml from "js-yaml"
 import { compareDesc } from "date-fns"
-import { VercelRequest, VercelResponse } from "@vercel/node"
 import { getSection } from "./sections"
 
 const BASE_PATH = path.join(process.cwd(), "content")
@@ -117,7 +117,10 @@ export function getAllPostsAndCategories(
   return [posts, categories]
 }
 
-export default async function handler(req: VercelRequest, res: VercelResponse) {
+export default async function handler(
+  req: NextApiRequest,
+  res: NextApiResponse
+) {
   const { collection } = req.query
   if (!collection) {
     return res.status(500).json({ error: "Please specify a collection" })

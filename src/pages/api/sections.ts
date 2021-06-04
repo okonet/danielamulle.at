@@ -1,4 +1,4 @@
-import { VercelRequest, VercelResponse } from "@vercel/node"
+import { NextApiRequest, NextApiResponse } from "next"
 import { Category, getCollectionPath } from "./posts"
 import path from "path"
 import fs from "fs"
@@ -32,7 +32,10 @@ export function getSection(slug: string): Section {
   }
 }
 
-export default async function handler(req: VercelRequest, res: VercelResponse) {
+export default async function handler(
+  req: NextApiRequest,
+  res: NextApiResponse
+) {
   const { slug } = req.query
   if (!slug) {
     return res.status(500).json({ error: "Please specify a section' slug" })

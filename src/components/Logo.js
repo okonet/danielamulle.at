@@ -1,8 +1,7 @@
 /* @jsx jsx */
 import React from "react"
-import { Box, jsx, Text } from "theme-ui"
+import { Box, jsx, Text, Image } from "theme-ui"
 import Link from "next/link"
-import Img from "next/image"
 import config from "../../site.config"
 
 function Logo({ variant = "full", size = 64 }) {
@@ -23,12 +22,11 @@ function Logo({ variant = "full", size = 64 }) {
           },
         }}
       >
-        <Img
+        <Image
           alt="Logo"
           src="/images/logo@2x.png"
           width={size}
           height={size}
-          layout="fixed"
         />
         {variant === "full" && (
           <Box sx={{ ml: 1, position: "relative" }}>
