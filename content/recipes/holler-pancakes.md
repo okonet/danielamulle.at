@@ -44,12 +44,12 @@ Diese Pancakes kannst du dir zu Frühstück, Jause aber auch zum Nachmittagskaff
 </Ingredients>
 <Preparation>
 
-1. Vollkornmehl, Zucker, Backpulver, Salz und Hollerblüten in einer Rührschüssel gut vermischen.
+1. Vollkornmehl, Zucker, Backpulver, Salz und gewaschene Hollerblüten in einer Rührschüssel gut vermischen.
 2. Pflanzendrink oder Milch zugeben und mit dem Schneebesen gut verrühren, bis alle Klümpchen verschwunden sind.
 3. Fertigen Teig ca. 10 Minuten rasten lassen.
-4. Palatschinkenpfanne erhitzen und falls sie nicht beschichtet ist 1-2 EL Rapsöl hineingeben.
+4. Crêpespfanne erhitzen und falls sie nicht beschichtet ist 1-2 EL Rapsöl hineingeben.
 5. Pancakes aus 2 EL Teig in die Pfanne geben und einige Minuten braten.
-6. Wenn sich auf der Oberfläche viele Bläschen gebilden haben kannst du deine Pancakes umdrehen.
+6. Wenn sich auf der Oberfläche viele Bläschen gebildet haben kannst du deine Pancakes umdrehen.
 7. Auch die zweite Seite einige Minuten goldbraun fertigbacken.
 8. Pancakes mit Staubzucker & frischem Obst genießen.
 
