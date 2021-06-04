@@ -6,10 +6,10 @@ import config from "../../../../../../site.config"
 import SocialImage from "../../../../../components/SocialImage"
 
 export async function getStaticProps({ params }) {
-  const { collection, slug, format: pageType } = params
+  const { collection, slug, format } = params
   const post = getPostBySlug(collection, slug)
 
-  if (!post) {
+  if (!collection || !slug || !format || !post) {
     return {
       notFound: true,
     }
@@ -19,74 +19,74 @@ export async function getStaticProps({ params }) {
     props: {
       collection,
       post,
-      pageType,
+      format,
     },
   }
 }
 
 export async function getStaticPaths() {
   const allFormats = ["instagram", "instagramWithTitle", "ogImage"]
-  const collectionsWithPosts = Object.values(config.collections)
-    .filter((collection) => collection !== config.collections.projects)
-    .flatMap((collection) => {
+  const collectionsWithPosts = Object.values(config.collections).flatMap(
+    (collection) => {
       const [allPosts] = getAllPostsAndCategories(collection)
-      return allPosts.flatMap((post) => {
-        return allFormats.map((format) => ({
-          params: {
-            collection,
-            slug: post.rawSlug,
-            format,
-          },
-        }))
-      })
-    })
+      return allPosts
+        .filter((post) => "coverImage" in post)
+        .flatMap((post) => {
+          return allFormats.flatMap((format) => ({
+            params: {
+              collection,
+              slug: post.rawSlug,
+              format,
+            },
+          }))
+        })
+    }
+  )
 
   return {
     paths: collectionsWithPosts,
-    fallback: true,
+    fallback: false,
   }
 }
 
-export default function PreviewPostPage({ post, pageType }) {
-  if (post) {
-    const { coverImage, author, title } = post
+export default function PreviewPostPage({ post, format }) {
+  const { coverImage, author, title } = post
 
-    switch (pageType) {
-      case "ogImage": {
-        return (
-          <SocialImage
-            author={author}
-            title={title}
-            image={coverImage}
-            width={1012}
-            height={506}
-          />
-        )
-      }
-      case "instagramWithTitle": {
-        return (
-          <SocialImage
-            author={author}
-            title={title}
-            image={coverImage}
-            width={1080}
-            height={1080}
-          />
-        )
-      }
-      case "instagram": {
-        return (
-          <SocialImage
-            title={undefined}
-            image={coverImage}
-            width={1080}
-            height={1080}
-          />
-        )
-      }
-      default: {
-        return `Unknown page type "${pageType}".`
-      }
+  switch (format) {
+    case "ogImage": {
+      return (
+        <SocialImage
+          author={author}
+          title={title}
+          image={coverImage}
+          width={1012}
+          height={506}
+        />
+      )
+    }
+    case "instagramWithTitle": {
+      return (
+        <SocialImage
+          author={author}
+          title={title}
+          image={coverImage}
+          width={1080}
+          height={1080}
+        />
+      )
+    }
+    case "instagram": {
+      return (
+        <SocialImage
+          title={undefined}
+          image={coverImage}
+          width={1080}
+          height={1080}
+        />
+      )
+    }
+    default: {
+      return `Unknown page format "${format}".`
     }
   }
 }
