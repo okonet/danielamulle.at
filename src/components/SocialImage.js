@@ -1,7 +1,6 @@
 /* @jsx jsx */
 import React from "react"
-import Img from "next/image"
-import { AspectRatio, Box, Flex, Styled, jsx } from "theme-ui"
+import { AspectRatio, Box, Flex, Styled, Image, jsx } from "theme-ui"
 import { transparentize } from "@theme-ui/color"
 import ThemeUIProvider from "./ThemeUIProvider"
 import theme, { palette } from "../theme"
@@ -29,12 +28,14 @@ export default function SocialImage({
   return (
     <ThemeUIProvider theme={ogTheme}>
       <AspectRatio ratio={width / height} sx={{ width, height }}>
-        <Img
+        <Image
           alt={title}
           src={image}
-          width={width}
-          height={height}
-          objectFit="cover"
+          sx={{
+            width,
+            height,
+            objectFit: "cover",
+          }}
         />
 
         <Flex
