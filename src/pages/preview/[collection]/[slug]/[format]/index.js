@@ -2,7 +2,7 @@
 import { jsx } from "theme-ui"
 import React from "react"
 import { getAllPostsAndCategories, getPostBySlug } from "../../../../api/posts"
-import config from "../../../../../../site.config"
+import siteConfig from "../../../../../../site.config"
 import SocialImage from "../../../../../components/SocialImage"
 
 export async function getStaticProps({ params }) {
@@ -26,7 +26,7 @@ export async function getStaticProps({ params }) {
 
 export async function getStaticPaths() {
   const allFormats = ["instagram", "instagramWithTitle", "ogImage"]
-  const collectionsWithPosts = Object.values(config.collections).flatMap(
+  const collectionsWithPosts = Object.values(siteConfig.collections).flatMap(
     (collection) => {
       const [allPosts] = getAllPostsAndCategories(collection)
       return allPosts
@@ -47,6 +47,10 @@ export async function getStaticPaths() {
     paths: collectionsWithPosts,
     fallback: false,
   }
+}
+
+export const config = {
+  unstable_runtimeJS: false,
 }
 
 export default function PreviewPostPage({ post, format }) {
