@@ -9,7 +9,7 @@ categories:
     label: Trinken
 ---
 
-Dein Körper besteht zu mehr als 50 % aus Wasser. Es spielt eine unverzichtbare Rolle: als Transporter, Lösungsmittel aber auch zur Kühlung durch Schwitzen.
+Dein Körper besteht zu mehr als 50 % aus Wasser. Es spielt dort eine unverzichtbare Rolle: als Transporter, Lösungsmittel aber auch zur Kühlung durch Schwitzen.
 
 Trinkst du zu wenig,
 
@@ -21,9 +21,11 @@ Trinkst du zu wenig,
 
 ## Wieviel solltest du täglich trinken?
 
-Dein Körper erinnert dich durch Durst ans Trinken. Beim konzentrierten Arbeiten oder im stressigen Alltag kann es leicht passieren, dass du dieses Signal überhörst. Auch ältere Menschen verspüren oft nur selten Durst, obwohl gerade bei SeniorInnen ausreichend Flüssigkeit wichtig ist, um körperlich & geistig fit zu bleiben.
+Dein Körper erinnert dich durch Durst ans Trinken. Wenn du konzentriert arbeitest oder gestresst bist, kann es leicht passieren, dass du dieses Signal überhörst. 
 
-Dein Körpergewicht mal 35 ergibt die Menge in Milliliter, die du pro Tag brauchst. Angenommen, du hast 70 kg, dann wären das insgesamt 70 x 35 = 2.450 ml. Du solltest also mindestens 2 Liter gut über den Tag verteilt trinken, den Rest bekommst du über's Essen, z.B. Suppen, Saucen, Dressings, Joghurt, Gurken, Melonen usw.).
+Auch ältere Menschen verspüren oft nur selten Durst, obwohl gerade bei SeniorInnen ausreichend Flüssigkeit wichtig ist, um körperlich & geistig fit zu bleiben.
+
+Dein Körpergewicht mal 35 ergibt die Menge in Milliliter, die du pro Tag brauchst. Angenommen, du hast 70 kg, dann wären das insgesamt 70 x 35 = 2.450 ml. Du solltest also mindestens 2 Liter gut über den Tag verteilt trinken, den Rest bekommst du übers Essen, z.B. Suppen, Saucen, Dressings, Joghurt, Gurken, Melonen, Tomaten usw.).
 
 Wenn du viel schwitzt, z.B. Sport, Hitze oder Fieber, brauchst du natürlich noch mehr. Gewöhne dir unbedingt an, deine Trinkmenge wirklich gut über den ganzen Tag zu verteilen, zum Beispiel:
 
@@ -56,7 +58,7 @@ Etwa 1 Liter Mineral- oder Leitungswasser plus
 - 1 Handvoll Beeren und 1 Stängel Melisse
 - 4-5 Wassermelonenstücke und 2 Stängel Basilikum
 
-„Infused“ bedeutet „aufgegossen“: Du lässt dazu Obst, Gemüse oder diverse Kräuter eine Weile ziehen, damit die Aromen der Zutaten ins Wasser übergehen. Deiner Fantasie sind dabei keine Grenzen gesetzt. Wasche alles gründlich und verwende idealerweise Bio-Produkte. Das Ergebnis schmeckt jedenfalls köstlich, und ist auch optisch ein Genuss.
+Du lässt das Obst, Gemüse oder die Kräuter eine Weile ziehen, damit die Aromen ins Wasser übergehen. Deiner Fantasie sind dabei keine Grenzen gesetzt. Wasche alles gründlich und verwende idealerweise Bio-Produkte. Das Ergebnis schmeckt jedenfalls köstlich, und ist auch optisch ein Genuss.
 
 ## Acht Tipps damit du nicht aufs Trinken vergisst:
 
