@@ -45,7 +45,9 @@ _Limonaden, Wellnessgetränke, Energydrinks und Sirupe_ enthalten leider meist _
 
 Auch _Milch oder Alkohol sind keine Durstlöscher_. Genieße auch _Fruchtsäfte und Smoothies_ nur ab und zu - Säfte am besten großzügig (1:3) mit Wasser verdünnt. Generell hat dein Körper Obst im Ganzen viel lieber als flüssig.
 
-Falls dir Wasser zu fad ist, sind _ungezuckerte Kräuter- und Früchtetees_ eine gute Abwechslung, oder _Infused Water_: „Infused“ bedeutet „aufgegossen“: Dabei gibst du Obst, Gemüse und diverse Kräuter einfach in frisches Wasser. Diese Mischung lässt du eine Weile ziehen, damit die Aromen der Zutaten ins Wasser übergehen. Deiner Fantasie sind dabei keine Grenzen gesetzt. Wasche alles gründlich und verwende idealerweise Bio-Produkte. Das Ergebnis schmeckt jedenfalls köstlich, und ist auch optisch ein Genuss.
+Falls dir Wasser zu fad ist, sind _ungezuckerte Kräuter- und Früchtetees_ eine gute Abwechslung, oder _Infused Water_: 
+
+„Infused“ bedeutet „aufgegossen“: Dabei gibst du Obst, Gemüse und diverse Kräuter einfach in frisches Wasser. Diese Mischung lässt du eine Weile ziehen, damit die Aromen der Zutaten ins Wasser übergehen. Deiner Fantasie sind dabei keine Grenzen gesetzt. Wasche alles gründlich und verwende idealerweise Bio-Produkte. Das Ergebnis schmeckt jedenfalls köstlich, und ist auch optisch ein Genuss.
 
 ## Hier hab ich vier Infused-Water-Ideen für dich:
 
@@ -55,6 +57,18 @@ Etwa 1 Liter Mineral- oder Leitungswasser plus
 - 4-5 Gurkenscheiben und 1 Stück frischer Ingwer (geschält)
 - 1 Handvoll Beeren und 1 Stängel Melisse
 - 4-5 Wassermelonenstücke und 2 Stängel Basilikum
+
+## Acht Tipps damit du nicht aufs Trinken vergisst:
+
+
+1. Gewöhne dir an, beim Zähneputzen immer auch einen Becher Wasser zu trinken.
+2. Verteile Wasserflaschen in deiner Wohnung und auf deinem Schreibtisch. 
+3. Richte dir eine Kanne mit deinem Lieblingstee her - egal ob kalt oder warm, aber am besten ungezuckert.
+4. Starte jedes Essen mit einem Glas Wasser.
+5. Trinke zu deinem Kaffee immer ein kleines Glas Wasser.
+6. Stelle dir einen Trinkwecker auf deinem Handy ein.
+7. Setze dir Erinnerungen in deinem online-Kalender, die immer wieder aufpoppen.
+8. Nütze eine Trink-App auf deinem Smartphone, die dich regelmäßig ans Trinken erinnert.
 
 ## Werde ein Teil meiner Community!
 
