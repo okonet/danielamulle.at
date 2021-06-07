@@ -47,8 +47,6 @@ Auch _Milch oder Alkohol sind keine Durstlöscher_. Genieße auch _Fruchtsäfte 
 
 Falls dir Wasser zu fad ist, sind _ungezuckerte Kräuter- und Früchtetees_ eine gute Abwechslung, oder _Infused Water_: 
 
-„Infused“ bedeutet „aufgegossen“: Dabei gibst du Obst, Gemüse und diverse Kräuter einfach in frisches Wasser. Diese Mischung lässt du eine Weile ziehen, damit die Aromen der Zutaten ins Wasser übergehen. Deiner Fantasie sind dabei keine Grenzen gesetzt. Wasche alles gründlich und verwende idealerweise Bio-Produkte. Das Ergebnis schmeckt jedenfalls köstlich, und ist auch optisch ein Genuss.
-
 ## Hier hab ich vier Infused-Water-Ideen für dich:
 
 Etwa 1 Liter Mineral- oder Leitungswasser plus
@@ -57,6 +55,8 @@ Etwa 1 Liter Mineral- oder Leitungswasser plus
 - 4-5 Gurkenscheiben und 1 Stück frischer Ingwer (geschält)
 - 1 Handvoll Beeren und 1 Stängel Melisse
 - 4-5 Wassermelonenstücke und 2 Stängel Basilikum
+
+„Infused“ bedeutet „aufgegossen“: Du lässt dazu Obst, Gemüse oder diverse Kräuter eine Weile ziehen, damit die Aromen der Zutaten ins Wasser übergehen. Deiner Fantasie sind dabei keine Grenzen gesetzt. Wasche alles gründlich und verwende idealerweise Bio-Produkte. Das Ergebnis schmeckt jedenfalls köstlich, und ist auch optisch ein Genuss.
 
 ## Acht Tipps damit du nicht aufs Trinken vergisst:
 
