@@ -5,7 +5,7 @@ categories:
 title: Gicht
 date: 2021-01-22T05:00:00.000Z
 coverImage: /assets/benjamin-manley-paxu2_st5jo-unsplash.jpg
-coverImageAuthor: Benjamin Manley
+coverImageAuthor: Maria Kiener
 coverImageLink: https://unsplash.com/@benjaminmanley
 ---
 
@@ -48,7 +48,7 @@ Auch folgende Faktoren Gicht auslösen:
 7. Achte auf die Portionsgröße: auch eine fleischlose Mahlzeit kann schnell durch zu große Mengen zu einer purinreichen Mahlzeit werden z.B.: bei großen Mengen an Hülsenfrüchten.
 8. Schränke den Genuss von fruktosehaltigen Getränken und mit Fructosesirup (Maissirup) gesüßte Lebensmittel stark ein, da beim Abbau von Fruktose auch mehr Harnsäure gebildet wird.
 
-Ziel ist es, den Harnsäurespiegel auf Dauer zu senken, und zwar durch gezielte Ernährungsumstellung. Eine purinarme Ernährung sorgt dafür, dass weniger Harnsäure gebildet wird, und ist damit die essentielle Basis für die Therapie bei Hyperurikämie und Gicht. Eine konsequente Ernährungstherapie mit Unterstützung von deinen DiätologInnen hilft dir, Medikamente zu sparen bzw. überhaupt darauf zu verzichten. Literatur schicke ich dir gerne, schreib mir einfach unter info@diaetologie.at
+Ziel ist es, den Harnsäurespiegel auf Dauer zu senken, und zwar durch gezielte Ernährungsumstellung. Eine purinarme Ernährung sorgt dafür, dass weniger Harnsäure gebildet wird, und ist damit die essentielle Basis für die Therapie bei Hyperurikämie und Gicht. Eine konsequente Ernährungstherapie mit Unterstützung von deinen DiätologInnen hilft dir, Medikamente zu sparen bzw. überhaupt darauf zu verzichten. Literatur schicke ich dir gerne, schreib mir einfach an maria_kiener@hotmail.com
 
 Hier noch ein super einfaches, schnelles, vegetarisches und vor allem gesundes Rezept. Ideal wenn es mittags schnell gehen muss, perfekt versorgt mit wichtigen Nährstoffen. Durch die im Leinöl enthaltenen Omega 3 Fettsäuren wirkt diese Speise auch antientzündlich und gefäßstärkend. Die Kräuter können je nach Saison und Geschmack variieren, jedoch je frischer umso besser und umso mehr gesundheitsfördernde Vitamine und Mineralstoffe sind noch enthalten.
 
