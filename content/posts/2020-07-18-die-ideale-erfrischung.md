@@ -91,11 +91,12 @@ Damit kannst Du zwei Dinge optimal ersetzen:
 *Isoton bedeutet, dass die Teilchenkonzentration des Getränks gleich ist wie die in Deinem Blut. Dadurch fällt es Deinem Körper leichter, die Elektrolyte und Zucker aus dem Darm in Dein Blut aufzunehmen.*
 
 **Ein isotonisches Sportgetränk kannst Du ganz einfach selber machen:**
+
 Für einen Liter mischt du:
 
 - 500 ml stilles Mineralwasser: liefert Dir Elektrolyte
-- mit 500 ml milden Fruchtsaft, z.B. Multivitamin, Marille, Birne, Traube: liefert Kalium, Frucht- und Traubenzucker 
-- und 1 g Kochsalz (ca. 1 Messerspitze): liefert Dir die Elektrolyte Natrium und Chlorid
+- 500 ml milder Fruchtsaft, z.B. Multivitamin, Marille, Birne, Traube: liefert Kalium, Frucht- und Traubenzucker 
+- 1 g Kochsalz (ca. 1 Messerspitze): liefert Dir die Elektrolyte Natrium und Chlorid
 
 ## Zum Abschluss acht Tipps damit du nicht aufs Trinken vergisst:
 
