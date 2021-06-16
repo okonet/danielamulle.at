@@ -24,10 +24,11 @@ Dein Körper erinnert dich durch Durst ans Trinken. Wenn du konzentriert arbeite
 
 Auch ältere Menschen verspüren oft nur selten Durst, obwohl gerade bei SeniorInnen ausreichend Flüssigkeit wichtig ist, um körperlich & geistig fit zu bleiben.
 
-**Dein Körpergewicht mal 35 ergibt die Flüssigkeitsmenge in Milliliter, die du pro Tag brauchst.
+**Dein Körpergewicht mal 35 ergibt die Flüssigkeitsmenge in Milliliter, die du pro Tag brauchst.**
 Ca. zwei Drittel davon solltest du trinken, den Rest bekommst du mit deinem Essen.
 
-*Angenommen, du hast 70 kg, dann wären das insgesamt 70 x 35 = 2.450 ml. Du solltest also mindestens 2 Liter gut über den Tag verteilt trinken, den Rest bekommst du übers Essen, z.B. Suppen, Saucen, Dressings, Joghurt, Gurken, Melonen, Tomaten usw.).*
+
+Angenommen, du hast 70 kg, dann wären das insgesamt 70 x 35 = 2.450 ml. Du solltest also mindestens 2 Liter gut über den Tag verteilt trinken, den Rest bekommst du übers Essen, z.B. Suppen, Saucen, Dressings, Joghurt, Gurken, Melonen, Tomaten usw.).*
 
 Wenn du viel schwitzt, z.B. bei großer Hitze oder wenn du Fieber hast brauchst du natürlich noch mehr. 
 
