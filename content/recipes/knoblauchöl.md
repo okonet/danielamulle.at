@@ -27,7 +27,7 @@ categories:
     label: Mealprep-geeignet
 timeToCook: 15 Minuten
 ---
-Selbstgemachtes Knoblauchöl ist eine super Alternative, wenn du Knoblauch nicht gut verträgst oder in der ersten Phase einer FODMAP-armen Ernährung auf Knoblauch verzichten musst: Mit deinem Knoblauchöl bekommst du zwar den Knoblauchgeschmack in dein Essen, nicht aber die Fruktane, die für etwaige Bauchbeschwerden verantwortliche sind.
+Selbstgemachtes Knoblauchöl ist eine super Alternative, wenn du Knoblauch nicht gut verträgst oder in der ersten Phase einer FODMAP-armen Ernährung auf Knoblauch verzichten musst: Damit bekommst du zwar den typischen Knoblauchgeschmack in dein Essen, nicht aber die Fruktane, die oft für Bauchbeschwerden wie Blähungen, Bauchweh oder Durchfall verantwortlich sind.
 
 
 
