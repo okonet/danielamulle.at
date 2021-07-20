@@ -8,8 +8,6 @@ categories:
   - value: Gewicht
     label: Gewicht
 ---
-<!--StartFragment-->
-
 Im Urlaub esse ich immer viel mehr als sonst.\\
 Nach meinem Urlaub passe ich kaum mehr in meine Hosen.\\
 Sobald ich wieder nach Hause komme beginnen ich mit einer neuen Diät.\
@@ -32,5 +30,3 @@ Schau' doch gleich rein, denn ich bin sicher, es sind einige Tipps & Tricks für
 \
 ## Werde ein Teil meiner Community!\
 Falls du keinen Blogartikel mehr verpassen möchtest, dann melde dich hier unten für mein Mittwochsmail an. Jeden Mittwoch Morgen bekommst dann Tipps und Tricks, interessanten Infos und köstliche Rezepte direkt in deine Email-Inbox. Ich freue mich auf dich!
-
-<!--EndFragment-->
