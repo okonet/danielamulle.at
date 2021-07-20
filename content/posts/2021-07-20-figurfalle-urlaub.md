@@ -8,13 +8,13 @@ categories:
   - value: Gewicht
     label: Gewicht
 ---
-Im Urlaub esse ich immer viel mehr als sonst.
+Im Urlaub esse ich immer viel mehr als sonst. 
 
 Nach meinem Urlaub passe ich kaum mehr in meine Hosen.
 
 Sobald ich wieder nach Hause komme beginnen ich mit einer neuen Diät.
 
-## Falls dir diese oder ähnlich Sätze durch den Kopf gehen kann ich dir sagen: Du bist nicht allein!
+## Falls dir das oder ähnliches durch den Kopf geht kann ich dir sagen: Du bist nicht allein!
 
 Genau deswegen hat mich die Bewegungsexpertin [Béatrice Drach](https://www.beatrice-drach.com/) zu diesem Thema für ihren Podcast BeActive interviewt.
 
@@ -30,9 +30,9 @@ Ich spreche mit ihr über drei vermeintliche "Figurfallen" im Urlaub:
 * warum das für Dich gar keine Fallen sein müssen.
 * wie Du im Urlaub sogar positive Essroutinen für Dich starten kannst.
 
-**Du findest das [Interview auf meinen YouTube-Kanal](https://youtu.be/b6fj3_oXovM).**
+## Du findest das Interview auf [meinen YouTube-Kanal](https://youtu.be/b6fj3_oXovM)
 
-Schau' doch gleich rein, denn ich bin sicher, es sind einige Tipps & Tricks für Dich dabei!
+Schau' am besten gleich rein: Ich bin mir sicher, es sind einige Tipps für Dich dabei!
 
 ## Werde ein Teil meiner Community!
 
