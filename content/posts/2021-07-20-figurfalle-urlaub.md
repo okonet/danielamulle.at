@@ -22,7 +22,7 @@ Ich spreche mit ihr über drei vermeintliche "Figurfallen" im Urlaub:
 * Buffets
 * Naschereien und Snacks
 
-## Ich erkläre dir im Interview
+## Ich erkläre dir im Interview...
 
 * wie Du möglichst entspannt damit umgehst.
 * warum das für Dich gar keine Fallen sein müssen.
