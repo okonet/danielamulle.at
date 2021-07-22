@@ -15,25 +15,25 @@ categories:
     label: zum Mitnehmen
   - value: fruktosefrei
     label: fruktosefrei
-  - value: laktosearm
-    label: laktosearm
   - value: histaminfrei
     label: histaminfrei
   - value: glutenfrei
     label: glutenfrei
   - value: Mealprep-geeignet
     label: Mealprep-geeignet
-timeToCook: 30 Minuten kochen + 20 Minuten zubereiten
+  - value: laktosefrei
+    label: laktosefrei
+timeToCook: 30 Minuten kochen + 15 Minuten zubereiten
 ---
 
-Dieser Aufstrich ist in Oberösterreich so bekannt, wie die Sachertorte in Wien. Das Rezept ist von meiner Mutter mündlich überliefert, mit meinen kleinen ernährungstechnischen Optimierungen.
+Dieser Aufstrich ist in Oberösterreich so bekannt, wie die Sachertorte in Wien. Das Rezept ist von meiner Mutter mündlich überliefert. Hier findest du "meine" Version mit kleinen ernährungswissenschaftlichen Optimierungen.
 
-<Ingredients yields="4 Personen">
+<Ingredients yields="5 Personen">
 
 - 500 g Kartoffeln
-- 1 mittelgroße Zwiebel
-- 1 Becher Sauerrahm
-- 2 EL Rapsöl oder Walnussöl
+- 1 mittelgroße Zwiebel*
+- 1 Becher Sauerrahm (bei Bedarf laktosefrei)
+- 2 EL Raps- oder Walnussöl
 - 2 TL Kümmel
 - Salz und Pfeffer
 - etwas Paprikapulver und Kräuter zum Garnieren
@@ -42,13 +42,14 @@ Dieser Aufstrich ist in Oberösterreich so bekannt, wie die Sachertorte in Wien.
 <Preparation>
 
 1. Kartoffeln weichkochen.
-2. einstweilen Zwiebel schälen und sehr fein hacken.
+2. Einstweilen die Zwiebel schälen und sehr fein hacken.
 3. Kartoffeln noch heiß schälen.
-4. In eine Schüssel geben, und mit einer Gabel oder einem Kartoffelstampfer grob zerdrücken
-5. Mit Zwiebel, Sauerrahm, Kümmel, 1 TL Salz und 1/2 TL frisch gemahlenen Pfeffer gut vermischen.
+4. In eine Schüssel geben, und mit einer Gabel oder Kartoffelstampfer grob zerdrücken.
+5. Mit Zwiebeln, Sauerrahm, Kümmel, 1 TL Salz und 1/2 TL frisch gemahlenen Pfeffer gut vermischen.
 6. Mindestens 3 Stunden im Kühlschrank durchziehen lassen.
 7. Mit Paprikapulver & Kräutern bestreut servieren.
 
 </Preparation>
 
-Perfekter Begleiter ist ein Stück Vollkornbrot. Erdapfelkas ist aber auch eine tolle Beilage zu gegrilltem oder gebratenem Fleisch, schmeckt zur Brettljause oder als Dip für verschiedenes Gemüse.
+Perfekter Begleiter ist ein Stück Vollkornbrot. Erdapfelkas ist eine tolle Beilage zu gegrilltem oder gebratenem Fleisch, schmeckt toll zur Jause oder als Dip für verschiedenes Gemüse. 
+*Falls du Zwiebel schlecht verträgst: Verwende den grünen Teil von Frühlingszwiebeln oder Lauch.
