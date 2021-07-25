@@ -117,7 +117,7 @@ Falls deine Beschwerden nicht besser werden prüfe, ob noch andere Gründe auf D
 - Viele Getränke mit Kohlensäure.
 - Rauchen oder Alkohol.
 - Die Bauchspeicheldrüse produziert zu wenig Besteck (Verdauungsenzyme), um dein Essen chemisch zu zerkleinern.
-- Der Dünndarm kann Milchzucker, [Fruchtzucker](<* https://www.danielamulle.at/posts/2020-11-28-was-wenn-du-fruchtzucker-schlecht-vertr%C3%A4gst>), [Fruktane](<* https://www.danielamulle.at/posts/2021-06-16-wenn-gluten-nicht-das-problem-ist-ist-glutenfrei-nicht-die-l%C3%B6sung>), Zuckeralkohole (Sorbit, Mannit, Xylit,...), etc. nicht spalten und ins Blut aufnehmen.
+- Der Dünndarm kann Milchzucker, [Fruchtzucker](https://www.danielamulle.at/posts/2020-11-28-was-wenn-du-fruchtzucker-schlecht-vertr%C3%A4gst), [Fruktane](https://www.danielamulle.at/posts/2021-06-16-wenn-gluten-nicht-das-problem-ist-ist-glutenfrei-nicht-die-l%C3%B6sung), Zuckeralkohole (Sorbit, Mannit, Xylit,...), etc. nicht spalten und ins Blut aufnehmen.
 
 ### Sobald deine Beschwerden weg sind geht's los mit dem Austesten:
 - Schreibe dir eine kleine Prioritätenliste, und starte mit den Lebensmitteln, die dir am wichtigsten sind.
