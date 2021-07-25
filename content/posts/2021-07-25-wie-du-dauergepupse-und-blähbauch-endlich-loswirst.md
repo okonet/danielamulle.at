@@ -64,10 +64,10 @@ Hier ein paar Beispiele:
 Natürlich hilft das erst mal, keine Frage!
 
 Ich sehe in der Praxis aber sehr oft zwei Verhaltensweisen als Folge:
-1. Zu starke Einschränkung
+**1. Zu starke Einschränkung:**
 Du hältst dich strikt an die Verbotsliste und lässt eisern alles weg. Du schränkst damit deine Speisen- und Lebensmittelauswahl unnötig ein. Gleichzeitig bekommt dein Körper auf Dauer oft nicht alle Nährstoffe, die er bräuchte.
 
-2. Zu locker und dann wieder Beschwerden
+**2. Zu locker und dann wieder Beschwerden:**
 Du hältst dich anfangs zwar brav an die Verbote, nach einigen Wochen wird es dir zu anstrengend. Du beginnst wieder zu essen wie früher, und schwupps sind auch Blähungen, Blähbauch und Schmerzen wieder deine ständigen Begleiter.
 
 >Es gibt aber einen Weg wie du dir das ersparst, und den möchte ich dir hier gerne aufzeigen.
@@ -77,12 +77,14 @@ Manche Lebensmittel blähen uns. Bohnen und andere Hülsenfrüchte zum Beispiel,
 
 ## Was sind Galaktane?
 Galaktane sind kurze Kohlenhydratketten aus drei bis vier Zuckerbausteinen. Sie werden von verschiedenen Pflanzen statt Stärke als Energiespeicher oder auch als Transporter verwendet. 
-Zwei wichtigsten Galaktane bei Blähungen sind
+
+
+Zwei der wichtigsten Galaktane bei Blähungen sind:
 - Raffinose = Fruchtzucker + Traubenzucker + Schleimzucker
 - Stachyose = Fruchtzucker + Traubenzucker + zwei Schleimzucker
 
 ## Warum sind Galaktane für deinen Körper problematisch?
-Galaktane sind für alle Menschen Ballaststoffe.
+Galaktane sind für alle Menschen Ballaststoffe:
 - Sie können im Dünndarm nicht zerkleinert werden, weil uns die passenden Scheren (Verdauungsenzyme) fehlen. 
 - Deswegen werden sie dort auch nicht ins Blut aufgenommen, sondern schwimmen weiter in deinen Dickdarm. Dort freut sich dein Darmbakterienzoo darüber, denn sie haben die richtigen Scheren parat. 
 - Beim Zerschneiden und Verspeisen bilden manche deiner Darmbakterien Stoffe, die Blähungen, Bauchweh, Durchfall, etc. verursachen können. 
@@ -115,7 +117,7 @@ Falls deine Beschwerden nicht besser werden prüfe, ob noch andere Gründe auf D
 - Viele Getränke mit Kohlensäure.
 - Rauchen oder Alkohol.
 - Die Bauchspeicheldrüse produziert zu wenig Besteck (Verdauungsenzyme), um dein Essen chemisch zu zerkleinern.
-- Der Dünndarm kann Milchzucker, [Fruchtzucker](<* https://www.danielamulle.at/posts/2020-11-28-was-wenn-du-fruchtzucker-schlecht-vertr%C3%A4gst>), [Fruktane](<* https://www.danielamulle.at/posts/2021-06-16-wenn-gluten-nicht-das-problem-ist-ist-glutenfrei-nicht-die-l%C3%B6sung>) , Zuckeralkohole (Sorbit, Mannit, Xylit,...), etc. nicht spalten und ins Blut aufnehmen.
+- Der Dünndarm kann Milchzucker, [Fruchtzucker](<* https://www.danielamulle.at/posts/2020-11-28-was-wenn-du-fruchtzucker-schlecht-vertr%C3%A4gst>), [Fruktane](<* https://www.danielamulle.at/posts/2021-06-16-wenn-gluten-nicht-das-problem-ist-ist-glutenfrei-nicht-die-l%C3%B6sung>), Zuckeralkohole (Sorbit, Mannit, Xylit,...), etc. nicht spalten und ins Blut aufnehmen.
 
 ### Sobald deine Beschwerden weg sind geht's los mit dem Austesten:
 - Schreibe dir eine kleine Prioritätenliste, und starte mit den Lebensmitteln, die dir am wichtigsten sind.
