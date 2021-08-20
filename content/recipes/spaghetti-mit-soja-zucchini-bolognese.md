@@ -30,7 +30,7 @@ Meine Zucchinipflanze meint es dieses Jahr besonders gut. So wanderten Zucchini 
 <Ingredients yields="5 Personen">
 
 - 500 g Vollkorn-Spaghetti (bei Bedarf glutenfrei)
-- 250 g Zucchini
+- 200 g Zucchini
 - 70 g Sojagranulat
 - 2 Knoblauchzehen
 - 1 mittelgroße Zwiebel
@@ -49,10 +49,10 @@ Meine Zucchinipflanze meint es dieses Jahr besonders gut. So wanderten Zucchini 
 3. Zucchini waschen und mit der Hand oder der Küchenmaschine in dünne Streifen raspeln.
 4. 4 EL Rapsöl in einer hohen Pfanne oder einem Topf erhitzen.
 5. Knoblauch und Zwiebel bei mittlerer Hitze braten, bis sie weich sind und Farbe bekommen.
-6. Sojagranulat zugeben, und bei hoher Temperatur ca. 5 Minuten braten.
+6. Sojagranulat zugeben und ca. 5 Minuten braten.
 7. Mit Zimt, den Kräutern, 1 TL Salz und etwas Pfeffer würzen.
 8. Zucchiniraspeln und passierte Tomaten dazugeben und gut vermischen.
-9. Zudecken und auf niederiger Stufe ca. 15 Minuten köcheln lassen.
+9. Zudecken und auf niedriger Stufe ca. 15 Minuten köcheln lassen.
 10. Einstweilen die Spaghetti al dente kochen, abseihen und mit der Bolognese vermischen.
 11. Mit frischem Basilikum und Parmesan bestreut und etwas Olivenöl beträufelt servieren.
 
